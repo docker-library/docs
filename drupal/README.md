@@ -24,29 +24,29 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.3.2-php8.5-apache-trixie`, `11.3-php8.5-apache-trixie`, `11-php8.5-apache-trixie`, `php8.5-apache-trixie`, `11.3.2-php8.5-apache`, `11.3-php8.5-apache`, `11-php8.5-apache`, `php8.5-apache`, `11.3.2-php8.5`, `11.3-php8.5`, `11-php8.5`, `php8.5`](https://github.com/docker-library/drupal/blob/8527ca0412b456cd3719cb8719bfb83da5d530a7/11.3/php8.5/apache-trixie/Dockerfile)
+-	[`11.3.3-php8.5-apache-trixie`, `11.3-php8.5-apache-trixie`, `11-php8.5-apache-trixie`, `php8.5-apache-trixie`, `11.3.3-php8.5-apache`, `11.3-php8.5-apache`, `11-php8.5-apache`, `php8.5-apache`, `11.3.3-php8.5`, `11.3-php8.5`, `11-php8.5`, `php8.5`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.5/apache-trixie/Dockerfile)
 
--	[`11.3.2-php8.5-fpm-trixie`, `11.3-php8.5-fpm-trixie`, `11-php8.5-fpm-trixie`, `php8.5-fpm-trixie`, `11.3.2-php8.5-fpm`, `11.3-php8.5-fpm`, `11-php8.5-fpm`, `php8.5-fpm`](https://github.com/docker-library/drupal/blob/8527ca0412b456cd3719cb8719bfb83da5d530a7/11.3/php8.5/fpm-trixie/Dockerfile)
+-	[`11.3.3-php8.5-fpm-trixie`, `11.3-php8.5-fpm-trixie`, `11-php8.5-fpm-trixie`, `php8.5-fpm-trixie`, `11.3.3-php8.5-fpm`, `11.3-php8.5-fpm`, `11-php8.5-fpm`, `php8.5-fpm`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.5/fpm-trixie/Dockerfile)
 
--	[`11.3.2-php8.5-apache-bookworm`, `11.3-php8.5-apache-bookworm`, `11-php8.5-apache-bookworm`, `php8.5-apache-bookworm`](https://github.com/docker-library/drupal/blob/8527ca0412b456cd3719cb8719bfb83da5d530a7/11.3/php8.5/apache-bookworm/Dockerfile)
+-	[`11.3.3-php8.5-apache-bookworm`, `11.3-php8.5-apache-bookworm`, `11-php8.5-apache-bookworm`, `php8.5-apache-bookworm`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.5/apache-bookworm/Dockerfile)
 
--	[`11.3.2-php8.5-fpm-bookworm`, `11.3-php8.5-fpm-bookworm`, `11-php8.5-fpm-bookworm`, `php8.5-fpm-bookworm`](https://github.com/docker-library/drupal/blob/8527ca0412b456cd3719cb8719bfb83da5d530a7/11.3/php8.5/fpm-bookworm/Dockerfile)
+-	[`11.3.3-php8.5-fpm-bookworm`, `11.3-php8.5-fpm-bookworm`, `11-php8.5-fpm-bookworm`, `php8.5-fpm-bookworm`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.5/fpm-bookworm/Dockerfile)
 
--	[`11.3.2-php8.5-fpm-alpine3.23`, `11.3-php8.5-fpm-alpine3.23`, `11-php8.5-fpm-alpine3.23`, `php8.5-fpm-alpine3.23`, `11.3.2-php8.5-fpm-alpine`, `11.3-php8.5-fpm-alpine`, `11-php8.5-fpm-alpine`, `php8.5-fpm-alpine`](https://github.com/docker-library/drupal/blob/8527ca0412b456cd3719cb8719bfb83da5d530a7/11.3/php8.5/fpm-alpine3.23/Dockerfile)
+-	[`11.3.3-php8.5-fpm-alpine3.23`, `11.3-php8.5-fpm-alpine3.23`, `11-php8.5-fpm-alpine3.23`, `php8.5-fpm-alpine3.23`, `11.3.3-php8.5-fpm-alpine`, `11.3-php8.5-fpm-alpine`, `11-php8.5-fpm-alpine`, `php8.5-fpm-alpine`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.5/fpm-alpine3.23/Dockerfile)
 
--	[`11.3.2-php8.5-fpm-alpine3.22`, `11.3-php8.5-fpm-alpine3.22`, `11-php8.5-fpm-alpine3.22`, `php8.5-fpm-alpine3.22`](https://github.com/docker-library/drupal/blob/8527ca0412b456cd3719cb8719bfb83da5d530a7/11.3/php8.5/fpm-alpine3.22/Dockerfile)
+-	[`11.3.3-php8.5-fpm-alpine3.22`, `11.3-php8.5-fpm-alpine3.22`, `11-php8.5-fpm-alpine3.22`, `php8.5-fpm-alpine3.22`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.5/fpm-alpine3.22/Dockerfile)
 
--	[`11.3.2-php8.4-apache-trixie`, `11.3-php8.4-apache-trixie`, `11-php8.4-apache-trixie`, `php8.4-apache-trixie`, `11.3.2-php8.4-apache`, `11.3-php8.4-apache`, `11-php8.4-apache`, `php8.4-apache`, `11.3.2-php8.4`, `11.3-php8.4`, `11-php8.4`, `php8.4`, `11.3.2-apache-trixie`, `11.3-apache-trixie`, `11-apache-trixie`, `apache-trixie`, `11.3.2-apache`, `11.3-apache`, `11-apache`, `apache`, `11.3.2`, `11.3`, `11`, `latest`](https://github.com/docker-library/drupal/blob/e8b27a2e8d52a3f7dc131fa382bb263bcdbcd21e/11.3/php8.4/apache-trixie/Dockerfile)
+-	[`11.3.3-php8.4-apache-trixie`, `11.3-php8.4-apache-trixie`, `11-php8.4-apache-trixie`, `php8.4-apache-trixie`, `11.3.3-php8.4-apache`, `11.3-php8.4-apache`, `11-php8.4-apache`, `php8.4-apache`, `11.3.3-php8.4`, `11.3-php8.4`, `11-php8.4`, `php8.4`, `11.3.3-apache-trixie`, `11.3-apache-trixie`, `11-apache-trixie`, `apache-trixie`, `11.3.3-apache`, `11.3-apache`, `11-apache`, `apache`, `11.3.3`, `11.3`, `11`, `latest`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.4/apache-trixie/Dockerfile)
 
--	[`11.3.2-php8.4-fpm-trixie`, `11.3-php8.4-fpm-trixie`, `11-php8.4-fpm-trixie`, `php8.4-fpm-trixie`, `11.3.2-php8.4-fpm`, `11.3-php8.4-fpm`, `11-php8.4-fpm`, `php8.4-fpm`, `11.3.2-fpm-trixie`, `11.3-fpm-trixie`, `11-fpm-trixie`, `fpm-trixie`, `11.3.2-fpm`, `11.3-fpm`, `11-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/e8b27a2e8d52a3f7dc131fa382bb263bcdbcd21e/11.3/php8.4/fpm-trixie/Dockerfile)
+-	[`11.3.3-php8.4-fpm-trixie`, `11.3-php8.4-fpm-trixie`, `11-php8.4-fpm-trixie`, `php8.4-fpm-trixie`, `11.3.3-php8.4-fpm`, `11.3-php8.4-fpm`, `11-php8.4-fpm`, `php8.4-fpm`, `11.3.3-fpm-trixie`, `11.3-fpm-trixie`, `11-fpm-trixie`, `fpm-trixie`, `11.3.3-fpm`, `11.3-fpm`, `11-fpm`, `fpm`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.4/fpm-trixie/Dockerfile)
 
--	[`11.3.2-php8.4-apache-bookworm`, `11.3-php8.4-apache-bookworm`, `11-php8.4-apache-bookworm`, `php8.4-apache-bookworm`, `11.3.2-apache-bookworm`, `11.3-apache-bookworm`, `11-apache-bookworm`, `apache-bookworm`](https://github.com/docker-library/drupal/blob/e8b27a2e8d52a3f7dc131fa382bb263bcdbcd21e/11.3/php8.4/apache-bookworm/Dockerfile)
+-	[`11.3.3-php8.4-apache-bookworm`, `11.3-php8.4-apache-bookworm`, `11-php8.4-apache-bookworm`, `php8.4-apache-bookworm`, `11.3.3-apache-bookworm`, `11.3-apache-bookworm`, `11-apache-bookworm`, `apache-bookworm`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.4/apache-bookworm/Dockerfile)
 
--	[`11.3.2-php8.4-fpm-bookworm`, `11.3-php8.4-fpm-bookworm`, `11-php8.4-fpm-bookworm`, `php8.4-fpm-bookworm`, `11.3.2-fpm-bookworm`, `11.3-fpm-bookworm`, `11-fpm-bookworm`, `fpm-bookworm`](https://github.com/docker-library/drupal/blob/e8b27a2e8d52a3f7dc131fa382bb263bcdbcd21e/11.3/php8.4/fpm-bookworm/Dockerfile)
+-	[`11.3.3-php8.4-fpm-bookworm`, `11.3-php8.4-fpm-bookworm`, `11-php8.4-fpm-bookworm`, `php8.4-fpm-bookworm`, `11.3.3-fpm-bookworm`, `11.3-fpm-bookworm`, `11-fpm-bookworm`, `fpm-bookworm`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.4/fpm-bookworm/Dockerfile)
 
--	[`11.3.2-php8.4-fpm-alpine3.23`, `11.3-php8.4-fpm-alpine3.23`, `11-php8.4-fpm-alpine3.23`, `php8.4-fpm-alpine3.23`, `11.3.2-php8.4-fpm-alpine`, `11.3-php8.4-fpm-alpine`, `11-php8.4-fpm-alpine`, `php8.4-fpm-alpine`, `11.3.2-fpm-alpine3.23`, `11.3-fpm-alpine3.23`, `11-fpm-alpine3.23`, `fpm-alpine3.23`, `11.3.2-fpm-alpine`, `11.3-fpm-alpine`, `11-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/e8b27a2e8d52a3f7dc131fa382bb263bcdbcd21e/11.3/php8.4/fpm-alpine3.23/Dockerfile)
+-	[`11.3.3-php8.4-fpm-alpine3.23`, `11.3-php8.4-fpm-alpine3.23`, `11-php8.4-fpm-alpine3.23`, `php8.4-fpm-alpine3.23`, `11.3.3-php8.4-fpm-alpine`, `11.3-php8.4-fpm-alpine`, `11-php8.4-fpm-alpine`, `php8.4-fpm-alpine`, `11.3.3-fpm-alpine3.23`, `11.3-fpm-alpine3.23`, `11-fpm-alpine3.23`, `fpm-alpine3.23`, `11.3.3-fpm-alpine`, `11.3-fpm-alpine`, `11-fpm-alpine`, `fpm-alpine`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.4/fpm-alpine3.23/Dockerfile)
 
--	[`11.3.2-php8.4-fpm-alpine3.22`, `11.3-php8.4-fpm-alpine3.22`, `11-php8.4-fpm-alpine3.22`, `php8.4-fpm-alpine3.22`, `11.3.2-fpm-alpine3.22`, `11.3-fpm-alpine3.22`, `11-fpm-alpine3.22`, `fpm-alpine3.22`](https://github.com/docker-library/drupal/blob/e8b27a2e8d52a3f7dc131fa382bb263bcdbcd21e/11.3/php8.4/fpm-alpine3.22/Dockerfile)
+-	[`11.3.3-php8.4-fpm-alpine3.22`, `11.3-php8.4-fpm-alpine3.22`, `11-php8.4-fpm-alpine3.22`, `php8.4-fpm-alpine3.22`, `11.3.3-fpm-alpine3.22`, `11.3-fpm-alpine3.22`, `11-fpm-alpine3.22`, `fpm-alpine3.22`](https://github.com/docker-library/drupal/blob/2f4df566155f5d23c3b4ed9f8fbcb41f6061d8b7/11.3/php8.4/fpm-alpine3.22/Dockerfile)
 
 -	[`11.2.10-php8.4-apache-trixie`, `11.2-php8.4-apache-trixie`, `11.2.10-php8.4-apache`, `11.2-php8.4-apache`, `11.2.10-php8.4`, `11.2-php8.4`, `11.2.10-apache-trixie`, `11.2-apache-trixie`, `11.2.10-apache`, `11.2-apache`, `11.2.10`, `11.2`](https://github.com/docker-library/drupal/blob/a0d9b553e28d816166cd59f3971b6c6c6b11351b/11.2/php8.4/apache-trixie/Dockerfile)
 
@@ -72,29 +72,29 @@ WARNING:
 
 -	[`11.2.10-php8.3-fpm-alpine3.22`, `11.2-php8.3-fpm-alpine3.22`](https://github.com/docker-library/drupal/blob/a0d9b553e28d816166cd59f3971b6c6c6b11351b/11.2/php8.3/fpm-alpine3.22/Dockerfile)
 
--	[`10.6.2-php8.4-apache-trixie`, `10.6-php8.4-apache-trixie`, `10-php8.4-apache-trixie`, `10.6.2-php8.4-apache`, `10.6-php8.4-apache`, `10-php8.4-apache`, `10.6.2-php8.4`, `10.6-php8.4`, `10-php8.4`, `10.6.2-apache-trixie`, `10.6-apache-trixie`, `10-apache-trixie`, `10.6.2-apache`, `10.6-apache`, `10-apache`, `10.6.2`, `10.6`, `10`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.4/apache-trixie/Dockerfile)
+-	[`10.6.3-php8.4-apache-trixie`, `10.6-php8.4-apache-trixie`, `10-php8.4-apache-trixie`, `10.6.3-php8.4-apache`, `10.6-php8.4-apache`, `10-php8.4-apache`, `10.6.3-php8.4`, `10.6-php8.4`, `10-php8.4`, `10.6.3-apache-trixie`, `10.6-apache-trixie`, `10-apache-trixie`, `10.6.3-apache`, `10.6-apache`, `10-apache`, `10.6.3`, `10.6`, `10`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.4/apache-trixie/Dockerfile)
 
--	[`10.6.2-php8.4-fpm-trixie`, `10.6-php8.4-fpm-trixie`, `10-php8.4-fpm-trixie`, `10.6.2-php8.4-fpm`, `10.6-php8.4-fpm`, `10-php8.4-fpm`, `10.6.2-fpm-trixie`, `10.6-fpm-trixie`, `10-fpm-trixie`, `10.6.2-fpm`, `10.6-fpm`, `10-fpm`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.4/fpm-trixie/Dockerfile)
+-	[`10.6.3-php8.4-fpm-trixie`, `10.6-php8.4-fpm-trixie`, `10-php8.4-fpm-trixie`, `10.6.3-php8.4-fpm`, `10.6-php8.4-fpm`, `10-php8.4-fpm`, `10.6.3-fpm-trixie`, `10.6-fpm-trixie`, `10-fpm-trixie`, `10.6.3-fpm`, `10.6-fpm`, `10-fpm`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.4/fpm-trixie/Dockerfile)
 
--	[`10.6.2-php8.4-apache-bookworm`, `10.6-php8.4-apache-bookworm`, `10-php8.4-apache-bookworm`, `10.6.2-apache-bookworm`, `10.6-apache-bookworm`, `10-apache-bookworm`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.4/apache-bookworm/Dockerfile)
+-	[`10.6.3-php8.4-apache-bookworm`, `10.6-php8.4-apache-bookworm`, `10-php8.4-apache-bookworm`, `10.6.3-apache-bookworm`, `10.6-apache-bookworm`, `10-apache-bookworm`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.4/apache-bookworm/Dockerfile)
 
--	[`10.6.2-php8.4-fpm-bookworm`, `10.6-php8.4-fpm-bookworm`, `10-php8.4-fpm-bookworm`, `10.6.2-fpm-bookworm`, `10.6-fpm-bookworm`, `10-fpm-bookworm`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.4/fpm-bookworm/Dockerfile)
+-	[`10.6.3-php8.4-fpm-bookworm`, `10.6-php8.4-fpm-bookworm`, `10-php8.4-fpm-bookworm`, `10.6.3-fpm-bookworm`, `10.6-fpm-bookworm`, `10-fpm-bookworm`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.4/fpm-bookworm/Dockerfile)
 
--	[`10.6.2-php8.4-fpm-alpine3.23`, `10.6-php8.4-fpm-alpine3.23`, `10-php8.4-fpm-alpine3.23`, `10.6.2-php8.4-fpm-alpine`, `10.6-php8.4-fpm-alpine`, `10-php8.4-fpm-alpine`, `10.6.2-fpm-alpine3.23`, `10.6-fpm-alpine3.23`, `10-fpm-alpine3.23`, `10.6.2-fpm-alpine`, `10.6-fpm-alpine`, `10-fpm-alpine`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.4/fpm-alpine3.23/Dockerfile)
+-	[`10.6.3-php8.4-fpm-alpine3.23`, `10.6-php8.4-fpm-alpine3.23`, `10-php8.4-fpm-alpine3.23`, `10.6.3-php8.4-fpm-alpine`, `10.6-php8.4-fpm-alpine`, `10-php8.4-fpm-alpine`, `10.6.3-fpm-alpine3.23`, `10.6-fpm-alpine3.23`, `10-fpm-alpine3.23`, `10.6.3-fpm-alpine`, `10.6-fpm-alpine`, `10-fpm-alpine`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.4/fpm-alpine3.23/Dockerfile)
 
--	[`10.6.2-php8.4-fpm-alpine3.22`, `10.6-php8.4-fpm-alpine3.22`, `10-php8.4-fpm-alpine3.22`, `10.6.2-fpm-alpine3.22`, `10.6-fpm-alpine3.22`, `10-fpm-alpine3.22`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.4/fpm-alpine3.22/Dockerfile)
+-	[`10.6.3-php8.4-fpm-alpine3.22`, `10.6-php8.4-fpm-alpine3.22`, `10-php8.4-fpm-alpine3.22`, `10.6.3-fpm-alpine3.22`, `10.6-fpm-alpine3.22`, `10-fpm-alpine3.22`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.4/fpm-alpine3.22/Dockerfile)
 
--	[`10.6.2-php8.3-apache-trixie`, `10.6-php8.3-apache-trixie`, `10-php8.3-apache-trixie`, `10.6.2-php8.3-apache`, `10.6-php8.3-apache`, `10-php8.3-apache`, `10.6.2-php8.3`, `10.6-php8.3`, `10-php8.3`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.3/apache-trixie/Dockerfile)
+-	[`10.6.3-php8.3-apache-trixie`, `10.6-php8.3-apache-trixie`, `10-php8.3-apache-trixie`, `10.6.3-php8.3-apache`, `10.6-php8.3-apache`, `10-php8.3-apache`, `10.6.3-php8.3`, `10.6-php8.3`, `10-php8.3`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.3/apache-trixie/Dockerfile)
 
--	[`10.6.2-php8.3-fpm-trixie`, `10.6-php8.3-fpm-trixie`, `10-php8.3-fpm-trixie`, `10.6.2-php8.3-fpm`, `10.6-php8.3-fpm`, `10-php8.3-fpm`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.3/fpm-trixie/Dockerfile)
+-	[`10.6.3-php8.3-fpm-trixie`, `10.6-php8.3-fpm-trixie`, `10-php8.3-fpm-trixie`, `10.6.3-php8.3-fpm`, `10.6-php8.3-fpm`, `10-php8.3-fpm`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.3/fpm-trixie/Dockerfile)
 
--	[`10.6.2-php8.3-apache-bookworm`, `10.6-php8.3-apache-bookworm`, `10-php8.3-apache-bookworm`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.3/apache-bookworm/Dockerfile)
+-	[`10.6.3-php8.3-apache-bookworm`, `10.6-php8.3-apache-bookworm`, `10-php8.3-apache-bookworm`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.3/apache-bookworm/Dockerfile)
 
--	[`10.6.2-php8.3-fpm-bookworm`, `10.6-php8.3-fpm-bookworm`, `10-php8.3-fpm-bookworm`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.3/fpm-bookworm/Dockerfile)
+-	[`10.6.3-php8.3-fpm-bookworm`, `10.6-php8.3-fpm-bookworm`, `10-php8.3-fpm-bookworm`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.3/fpm-bookworm/Dockerfile)
 
--	[`10.6.2-php8.3-fpm-alpine3.23`, `10.6-php8.3-fpm-alpine3.23`, `10-php8.3-fpm-alpine3.23`, `10.6.2-php8.3-fpm-alpine`, `10.6-php8.3-fpm-alpine`, `10-php8.3-fpm-alpine`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.3/fpm-alpine3.23/Dockerfile)
+-	[`10.6.3-php8.3-fpm-alpine3.23`, `10.6-php8.3-fpm-alpine3.23`, `10-php8.3-fpm-alpine3.23`, `10.6.3-php8.3-fpm-alpine`, `10.6-php8.3-fpm-alpine`, `10-php8.3-fpm-alpine`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.3/fpm-alpine3.23/Dockerfile)
 
--	[`10.6.2-php8.3-fpm-alpine3.22`, `10.6-php8.3-fpm-alpine3.22`, `10-php8.3-fpm-alpine3.22`](https://github.com/docker-library/drupal/blob/bf34400624ce02035c1d8d799a4edddbce2b375d/10.6/php8.3/fpm-alpine3.22/Dockerfile)
+-	[`10.6.3-php8.3-fpm-alpine3.22`, `10.6-php8.3-fpm-alpine3.22`, `10-php8.3-fpm-alpine3.22`](https://github.com/docker-library/drupal/blob/b9d661d90bec4f22be893b149b1073c5d838007a/10.6/php8.3/fpm-alpine3.22/Dockerfile)
 
 -	[`10.5.8-php8.4-apache-trixie`, `10.5-php8.4-apache-trixie`, `10.5.8-php8.4-apache`, `10.5-php8.4-apache`, `10.5.8-php8.4`, `10.5-php8.4`, `10.5.8-apache-trixie`, `10.5-apache-trixie`, `10.5.8-apache`, `10.5-apache`, `10.5.8`, `10.5`](https://github.com/docker-library/drupal/blob/4a684115b7703293a77e383381f19a23b2212b3d/10.5/php8.4/apache-trixie/Dockerfile)
 
