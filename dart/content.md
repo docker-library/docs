@@ -1,6 +1,8 @@
 # What is Dart?
 
-Dart is a client-optimized language for developing fast apps on any platform. Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks. For more details, see https://dart.dev.
+Dart is an approachable, portable, and productive language for high-quality apps on any platform.
+
+Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks, and support for full-stack development. For more details, see https://dart.dev.
 
 By utilizing Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe), you can create very small runtime images (~10 MB).
 
