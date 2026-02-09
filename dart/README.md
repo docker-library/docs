@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.10.9-sdk`, `3.10-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.10.9`, `3.10`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/c36fb3c05f1aea1eb90baef61a57306d78377954/stable/trixie/Dockerfile)
+-	[`3.11.0-sdk`, `3.11-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.11.0`, `3.11`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/108955120adc74050105a0f98da2a9d8c4fe6d46/stable/trixie/Dockerfile)
 
--	[`3.11.0-296.5.beta-sdk`, `beta-sdk`, `3.11.0-296.5.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/c36fb3c05f1aea1eb90baef61a57306d78377954/beta/trixie/Dockerfile)
+-	[`3.12.0-113.1.beta-sdk`, `beta-sdk`, `3.12.0-113.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/108955120adc74050105a0f98da2a9d8c4fe6d46/beta/trixie/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -49,7 +49,9 @@ WARNING:
 
 # What is Dart?
 
-Dart is a client-optimized language for developing fast apps on any platform. Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks. For more details, see https://dart.dev.
+Dart is an approachable, portable, and productive language for high-quality apps on any platform.
+
+Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks, and support for full-stack development. For more details, see https://dart.dev.
 
 By utilizing Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe), you can create very small runtime images (~10 MB).
 
