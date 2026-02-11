@@ -14,21 +14,17 @@ WARNING:
 
 -->
 
-# **DEPRECATION NOTICE**
-
-This image is deprecated due to maintainer inactivity (last updated Sep 2023; [docker-library/official-images#15332](https://github.com/docker-library/official-images/pull/15332)).
-
 # Quick reference
 
 -	**Maintained by**:  
-	TeamSpeak Developers [nwerensteijn](https://github.com/nwerensteijn) and [muenchow](https://github.com/muenchow)
+	TeamSpeak Developers [HuppiN](https://github.com/HuppiN) and [achimklittich](https://github.com/achimklittich)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
-**No supported tags**
+-	[`3.13`, `3.13.7`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/e17fc2b955883f6ee1334d43a05208a7276d81d2/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -36,7 +32,7 @@ This image is deprecated due to maintainer inactivity (last updated Sep 2023; [d
 	[https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/issues](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	**No supported architectures**
+	[`amd64`](https://hub.docker.com/r/amd64/teamspeak/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/teamspeak/` directory](https://github.com/docker-library/repo-info/blob/master/repos/teamspeak) ([history](https://github.com/docker-library/repo-info/commits/master/repos/teamspeak))  
