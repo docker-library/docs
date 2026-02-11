@@ -1,1 +1,1 @@
-TeamSpeak Developers [nwerensteijn](https://github.com/nwerensteijn) and [muenchow](https://github.com/muenchow)
+TeamSpeak Developers [HuppiN](https://github.com/HuppiN) and [achimklittich](https://github.com/achimklittich)
