@@ -24,17 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.35`, `1.35.4`](https://github.com/influxdata/influxdata-docker/blob/5d5103d7d6b8add87cc756e0b2b29ab2c161f653/telegraf/1.35/Dockerfile)
+-	[`1.35`, `1.35.4`](https://github.com/influxdata/influxdata-docker/blob/aa791f833450a6ee40ee16ac83623741fef184f0/telegraf/1.35/Dockerfile)
 
--	[`1.35-alpine`, `1.35.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/5d5103d7d6b8add87cc756e0b2b29ab2c161f653/telegraf/1.35/alpine/Dockerfile)
+-	[`1.35-alpine`, `1.35.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/aa791f833450a6ee40ee16ac83623741fef184f0/telegraf/1.35/alpine/Dockerfile)
 
--	[`1.36`, `1.36.4`](https://github.com/influxdata/influxdata-docker/blob/5d5103d7d6b8add87cc756e0b2b29ab2c161f653/telegraf/1.36/Dockerfile)
+-	[`1.36`, `1.36.4`](https://github.com/influxdata/influxdata-docker/blob/aa791f833450a6ee40ee16ac83623741fef184f0/telegraf/1.36/Dockerfile)
 
--	[`1.36-alpine`, `1.36.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/5d5103d7d6b8add87cc756e0b2b29ab2c161f653/telegraf/1.36/alpine/Dockerfile)
+-	[`1.36-alpine`, `1.36.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/aa791f833450a6ee40ee16ac83623741fef184f0/telegraf/1.36/alpine/Dockerfile)
 
--	[`1.37`, `1.37.1`, `latest`](https://github.com/influxdata/influxdata-docker/blob/5d5103d7d6b8add87cc756e0b2b29ab2c161f653/telegraf/1.37/Dockerfile)
+-	[`1.37`, `1.37.2`, `latest`](https://github.com/influxdata/influxdata-docker/blob/aa791f833450a6ee40ee16ac83623741fef184f0/telegraf/1.37/Dockerfile)
 
--	[`1.37-alpine`, `1.37.1-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/5d5103d7d6b8add87cc756e0b2b29ab2c161f653/telegraf/1.37/alpine/Dockerfile)
+-	[`1.37-alpine`, `1.37.2-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/aa791f833450a6ee40ee16ac83623741fef184f0/telegraf/1.37/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
