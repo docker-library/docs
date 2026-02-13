@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `yourls` official image](https://hub.docker.com/_/yourls) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -23,10 +25,6 @@ WARNING:
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
-
--	[`1.10.3-apache`, `1.10-apache`, `1-apache`, `apache`, `1.10.3`, `1.10`, `1`, `latest`](https://github.com/YOURLS/containers/blob/1839562c06c847bc7931bd8b9387881b3d52841b/apache/Dockerfile)
-
--	[`1.10.3-fpm`, `1.10-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/containers/blob/1839562c06c847bc7931bd8b9387881b3d52841b/fpm/Dockerfile)
 
 -	[`1.10.3-fpm-alpine`, `1.10-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/containers/blob/1839562c06c847bc7931bd8b9387881b3d52841b/fpm-alpine/Dockerfile)
 
@@ -59,7 +57,7 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 
 # How to use this image
 
-## Start a `yourls` server instance
+## Start a `arm32v6/yourls` server instance
 
 ```bash
 docker run \
@@ -69,7 +67,7 @@ docker run \
     --env YOURLS_SITE="https://example.com" \
     --env YOURLS_USER="example_username" \
     --env YOURLS_PASS="example_password" \
-    yourls
+    arm32v6/yourls
 ```
 
 The YOURLS instance accepts a number of environment variables for configuration, see *Environment Variables* section below.
@@ -83,7 +81,7 @@ docker run \
     --env YOURLS_DB_HOST=... \
     --env YOURLS_DB_USER=... \
     --env YOURLS_DB_PASS=... \
-    yourls
+    arm32v6/yourls
 ```
 
 ## Connect to the YOURLS administration interface
@@ -96,7 +94,7 @@ docker run \
     --detach \
     --network some-network \
     --publish 8080:8080 \
-    yourls
+    arm32v6/yourls
 ```
 
 Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/admin/` in a browser.
@@ -155,7 +153,7 @@ docker run \
     --name some-yourls \
     --detach \
     --env YOURLS_DB_PASS_FILE=/run/secrets/mysql-root \
-    yourls
+    arm32v6/yourls
 ```
 
 Currently, this is supported for `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`, `YOURLS_DB_NAME`, `YOURLS_DB_PREFIX`, `YOURLS_SITE`, `YOURLS_USER`, and `YOURLS_PASS`.
@@ -209,13 +207,13 @@ If you wish to provide additional content in an image for deploying in multiple 
 
 # Image Variants
 
-The `yourls` images come in many flavors, each designed for a specific use case.
+The `arm32v6/yourls` images come in many flavors, each designed for a specific use case.
 
-## `yourls:<version>`
+## `arm32v6/yourls:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `yourls:<version>-fpm`
+## `arm32v6/yourls:<version>-fpm`
 
 This variant contains [PHP's FastCGI Process Manager (FPM)](https://www.php.net/fpm), which is the recommended FastCGI implementation for PHP.
 
