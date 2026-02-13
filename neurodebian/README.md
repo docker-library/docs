@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `neurodebian` official image](https://hub.docker.com/_/neurodebian) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -23,18 +25,6 @@ WARNING:
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
-
--	[`jammy`, `nd22.04`](https://github.com/neurodebian/dockerfiles/blob/763e5953e63f2e0f46d2304dfd6c2f051ca378ca/dockerfiles/jammy/Dockerfile)
-
--	[`jammy-non-free`, `nd22.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/763e5953e63f2e0f46d2304dfd6c2f051ca378ca/dockerfiles/jammy-non-free/Dockerfile)
-
--	[`noble`, `nd24.04`](https://github.com/neurodebian/dockerfiles/blob/763e5953e63f2e0f46d2304dfd6c2f051ca378ca/dockerfiles/noble/Dockerfile)
-
--	[`noble-non-free`, `nd24.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/763e5953e63f2e0f46d2304dfd6c2f051ca378ca/dockerfiles/noble-non-free/Dockerfile)
-
--	[`plucky`, `nd25.04`](https://github.com/neurodebian/dockerfiles/blob/763e5953e63f2e0f46d2304dfd6c2f051ca378ca/dockerfiles/plucky/Dockerfile)
-
--	[`plucky-non-free`, `nd25.04-non-free`](https://github.com/neurodebian/dockerfiles/blob/763e5953e63f2e0f46d2304dfd6c2f051ca378ca/dockerfiles/plucky-non-free/Dockerfile)
 
 -	[`bullseye`, `nd110`](https://github.com/neurodebian/dockerfiles/blob/763e5953e63f2e0f46d2304dfd6c2f051ca378ca/dockerfiles/bullseye/Dockerfile)
 
@@ -89,14 +79,14 @@ NeuroDebian images only add NeuroDebian repository and repository's GPG key. No 
 
 `nd` tags are used to reflect suffixes used in versions of packages available from NeuroDebian.
 
-The `neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
+The `i386/neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
 
 ## sources.list
 
 NeuroDebian APT file is installed under `/etc/apt/sources.list.d/neurodebian.sources.list` and currently enables only `main` (DFSG-compliant) area of the archive:
 
 ```console
-$ docker run neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
+$ docker run i386/neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
 deb http://neuro.debian.net/debian wheezy main
 deb http://neuro.debian.net/debian data main
 #deb-src http://neuro.debian.net/debian-devel wheezy main
