@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `arangodb` official image](https://hub.docker.com/_/arangodb) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.12`, `3.12.7`, `3.12.7.2`, `latest`](https://github.com/arangodb/arangodb-docker/blob/e066520e4660de822967cb7e7fc3f1447d224585/alpine/3.12.7.2/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -75,16 +77,16 @@ ArangoDB runs everywhere: On-prem, in the cloud, and as a managed cloud service:
 In order to start an ArangoDB instance, run:
 
 ```console
-docker run -d -p 8529:8529 -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name arangodb-instance arangodb
+docker run -d -p 8529:8529 -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name arangodb-instance arm32v7/arangodb
 ```
 
 Docker chooses the processor architecture for the image that matches your host CPU by default. If this is not the case, for example, because you have the `DOCKER_DEFAULT_PLATFORM` environment variable set to a different architecture, you can pass the `--platform` flag to the `docker run` command to specify the appropriate operating system and architecture for the container. For x86-64, use `linux/amd64`. On ARM, especially Apple silicon with no emulation for the required AVX instruction set extension, use `linux/arm64/v8`:
 
 ```console
-docker run -d -p 8529:8529 -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name arangodb-instance --platform linux/arm64/v8 arangodb
+docker run -d -p 8529:8529 -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name arangodb-instance --platform linux/arm64/v8 arm32v7/arangodb
 ```
 
-This creates and launches the arangodb Docker instance as a background process. The Identifier of the process is printed. By default, ArangoDB listens on port `8529` for requests.
+This creates and launches the arm32v7/arangodb Docker instance as a background process. The Identifier of the process is printed. By default, ArangoDB listens on port `8529` for requests.
 
 In order to get the IP ArangoDB listens on, run:
 
@@ -107,7 +109,7 @@ If you don't specify a language explicitly, the default is `en_US` up to ArangoD
 To use the running instance from an application, link the container:
 
 ```console
-docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name my-app --link arangodb-instance:db-link arangodb
+docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --name my-app --link arangodb-instance:db-link arm32v7/arangodb
 ```
 
 This uses the instance named `arangodb-instance` and links it into the application container. The application container contains environment variables, which can be used to access the database.
@@ -123,7 +125,7 @@ This uses the instance named `arangodb-instance` and links it into the applicati
 If you want to expose the port to the outside world, run:
 
 ```console
-docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d arangodb
+docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d arm32v7/arangodb
 ```
 
 ArangoDB listen on port 8529 for request and the image includes `EXPOSE
@@ -154,7 +156,7 @@ Note: this way of specifying logins only applies to single server installations.
 You can pass arguments to the ArangoDB server by appending them to the end of the Docker command:
 
 ```console
-docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb --help
+docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arm32v7/arangodb --help
 ```
 
 The entrypoint script starts the `arangod` binary by default and forwards your arguments.
@@ -162,7 +164,7 @@ The entrypoint script starts the `arangod` binary by default and forwards your a
 You may also start other binaries, such as the ArangoShell:
 
 ```console
-docker run -it arangodb arangosh --server.database myDB ...
+docker run -it arm32v7/arangodb arangosh --server.database myDB ...
 ```
 
 Note that you need to set up networking for containers if `arangod` runs in one container and you want to access it with `arangosh` running in another container. It is easier to execute it in the same container instead. Use `docker ps` to find out the container ID / name of a running container:
@@ -215,7 +217,7 @@ ArangoDB supports two different storage engines from version 3.2 to 3.6. You can
 
 ArangoDB uses the volume `/var/lib/arangodb3` as database directory to store the collection data and the volume `/var/lib/arangodb3-apps` as apps directory to store any extensions. These directories are marked as docker volumes.
 
-See `docker inspect --format "{{ .Config.Volumes }}" arangodb` for all volumes.
+See `docker inspect --format "{{ .Config.Volumes }}" arm32v7/arangodb` for all volumes.
 
 A good explanation about persistence and docker container can be found here: [Docker In-depth: Volumes](http://container42.com/2014/11/03/docker-indepth-volumes/), [Why Docker Data Containers are Good](https://medium.com/@ramangupta/why-docker-data-containers-are-good-589b3c6c749e)
 
@@ -227,7 +229,7 @@ You can map the container's volumes to a directory on the host, so that the data
 unix> mkdir /tmp/arangodb
 unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 -p 8529:8529 -d \
         -v /tmp/arangodb:/var/lib/arangodb3 \
-        arangodb
+        arm32v7/arangodb
 ```
 
 This will use the `/tmp/arangodb` directory of the host as database directory for ArangoDB inside the container.
@@ -237,13 +239,13 @@ This will use the `/tmp/arangodb` directory of the host as database directory fo
 Alternatively you can create a container holding the data.
 
 ```console
-docker create --name arangodb-persist arangodb true
+docker create --name arangodb-persist arm32v7/arangodb true
 ```
 
 And use this data container in your ArangoDB container.
 
 ```console
-docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --volumes-from arangodb-persist -p 8529:8529 arangodb
+docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 --volumes-from arangodb-persist -p 8529:8529 arm32v7/arangodb
 ```
 
 If want to save a few bytes you can alternatively use [busybox](https://hub.docker.com/_/busybox) or [alpine](https://hub.docker.com/_/alpine) for creating the volume only containers. Please note that you need to provide the used volumes in this case. For example
