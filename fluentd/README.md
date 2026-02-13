@@ -26,7 +26,7 @@ WARNING:
 
 -	[`v1.16.11-debian-1.0`, `v1.16-debian-1`](https://github.com/fluent/fluentd-docker-image/blob/f1cc6c311f673af8d4d68c7cbe97e5b0831511bc/v1.16/debian/Dockerfile)
 
--	[`v1.19.1-debian-1.0`, `v1.19-debian-1`, `v1.19.0-1.0`, `v1.19-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/1e7ff373975402c1e5b10e9b2ae41e50b3d273a3/v1.19/debian/Dockerfile)
+-	[`v1.19.2-debian-1.0`, `v1.19-debian-1`, `v1.19.2-1.0`, `v1.19-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/162a49598542a981bbf73470f0bba815dc4dbf0e/v1.19/debian/Dockerfile)
 
 # Quick reference (cont.)
 
