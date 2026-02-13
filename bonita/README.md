@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `bonita` official image](https://hub.docker.com/_/bonita) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2025.2-u3`, `2025.2`, `10.4.3`, `10.4`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/d6dff60f00ceb3f4faef6b37318f15c845319369/docker/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm64v8` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -58,7 +60,7 @@ Bonita is an open-source business process management and workflow suite created 
 ## Quick start
 
 ```console
-$ docker run --name bonita -d -p 8080:8080 bonita
+$ docker run --name bonita -d -p 8080:8080 arm64v8/bonita
 ```
 
 This will start a container running [Bonita runtime](https://documentation.bonitasoft.com/bonita/latest/tomcat-bundle): a Tomcat bundle with Bonita Engine + Bonita Portal. With no environment variables specified, it's as if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
@@ -143,13 +145,13 @@ BIZ_DB_PASS=custombusinesspass
 ```
 
 ```bash
-docker run --name=bonita -h <hostname> --env-file=env.txt -d -p 8080:8080 bonita
+docker run --name=bonita -h <hostname> --env-file=env.txt -d -p 8080:8080 arm64v8/bonita
 ```
 
 ## Start Bonita with custom security credentials
 
 ```bash
-docker run --name=bonita -h <hostname> -e "BONITA_RUNTIME_ADMIN_USERNAME=tech_user" -e "BONITA_RUNTIME_ADMIN_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 bonita
+docker run --name=bonita -h <hostname> -e "BONITA_RUNTIME_ADMIN_USERNAME=tech_user" -e "BONITA_RUNTIME_ADMIN_PASSWORD=secret" -e "PLATFORM_LOGIN=pfadmin" -e "PLATFORM_PASSWORD=pfsecret" -d -p 8080:8080 arm64v8/bonita
 ```
 
 Now you can access the Bonita Runtime on localhost:8080/bonita and login using: tech_user / secret
@@ -290,7 +292,7 @@ This Docker image activates both static and dynamic authorization checks by defa
 For specific needs you can override this behavior by setting HTTP_API to true:
 
 ```console
-$ docker run  -e HTTP_API=true -e HTTP_API_PASSWORD="My-Cust0m_S3cR3T" --name bonita -d -p 8080:8080 bonita
+$ docker run  -e HTTP_API=true -e HTTP_API_PASSWORD="My-Cust0m_S3cR3T" --name bonita -d -p 8080:8080 arm64v8/bonita
 ```
 
 ## Update from an earlier version of Bonita
@@ -367,7 +369,7 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Launch the new container pointing towards the copy of the database.
 
 	```console
-	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2025.2-u3
+	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 arm64v8/bonita:2025.2-u3
 	```
 
 For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita).
