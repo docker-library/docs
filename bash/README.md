@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `bash` official image](https://hub.docker.com/_/bash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,31 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`devel-20260209`, `devel`, `devel-20260209-alpine3.23`, `devel-alpine3.23`](https://github.com/tianon/docker-bash/blob/761a12eea6ddde91f4f71e0a3217f8c603fa5355/devel/Dockerfile)
-
--	[`5.3.9`, `5.3`, `5`, `latest`, `5.3.9-alpine3.23`, `5.3-alpine3.23`, `5-alpine3.23`, `alpine3.23`](https://github.com/tianon/docker-bash/blob/59999c513d9e7bddb3972d38aa112af045cb0e80/5.3/Dockerfile)
-
--	[`5.2.37`, `5.2`, `5.2.37-alpine3.22`, `5.2-alpine3.22`](https://github.com/tianon/docker-bash/blob/9fc164bd1a8e4bfe16c517623ce935dc821bbb08/5.2/Dockerfile)
-
--	[`5.1.16`, `5.1`, `5.1.16-alpine3.22`, `5.1-alpine3.22`](https://github.com/tianon/docker-bash/blob/8ba8423bc0d3339722d4ba2d1af1f53fd179f506/5.1/Dockerfile)
-
--	[`5.0.18`, `5.0`, `5.0.18-alpine3.22`, `5.0-alpine3.22`](https://github.com/tianon/docker-bash/blob/5f58d08f8ee4a558b8302ef22352af99d4beedfd/5.0/Dockerfile)
-
--	[`4.4.23`, `4.4`, `4`, `4.4.23-alpine3.22`, `4.4-alpine3.22`, `4-alpine3.22`](https://github.com/tianon/docker-bash/blob/099d6114cbdb9b016fb8c4beb653187df002f66f/4.4/Dockerfile)
-
--	[`4.3.48`, `4.3`, `4.3.48-alpine3.22`, `4.3-alpine3.22`](https://github.com/tianon/docker-bash/blob/099d6114cbdb9b016fb8c4beb653187df002f66f/4.3/Dockerfile)
-
--	[`4.2.53`, `4.2`, `4.2.53-alpine3.22`, `4.2-alpine3.22`](https://github.com/tianon/docker-bash/blob/8556e37dc74a044cfd6e8255acfd116a5bdb8588/4.2/Dockerfile)
-
--	[`4.1.17`, `4.1`, `4.1.17-alpine3.22`, `4.1-alpine3.22`](https://github.com/tianon/docker-bash/blob/099d6114cbdb9b016fb8c4beb653187df002f66f/4.1/Dockerfile)
-
--	[`4.0.44`, `4.0`, `4.0.44-alpine3.22`, `4.0-alpine3.22`](https://github.com/tianon/docker-bash/blob/099d6114cbdb9b016fb8c4beb653187df002f66f/4.0/Dockerfile)
-
--	[`3.2.57`, `3.2`, `3`, `3.2.57-alpine3.22`, `3.2-alpine3.22`, `3-alpine3.22`](https://github.com/tianon/docker-bash/blob/099d6114cbdb9b016fb8c4beb653187df002f66f/3.2/Dockerfile)
-
--	[`3.1.23`, `3.1`, `3.1.23-alpine3.22`, `3.1-alpine3.22`](https://github.com/tianon/docker-bash/blob/099d6114cbdb9b016fb8c4beb653187df002f66f/3.1/Dockerfile)
-
--	[`3.0.22`, `3.0`, `3.0.22-alpine3.22`, `3.0-alpine3.22`](https://github.com/tianon/docker-bash/blob/5ffa8349006e790fe3534d0a6c3100fd6d725407/3.0/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -92,7 +70,7 @@ There are a few main things that are important to note regarding this image:
 ## Interactive shell
 
 ```console
-$ docker run -it --rm bash:4.4
+$ docker run -it --rm arm32v5/bash:4.4
 bash-4.4# which bash
 /usr/local/bin/bash
 bash-4.4# echo $BASH_VERSION
@@ -102,16 +80,16 @@ bash-4.4# echo $BASH_VERSION
 ## Testing scripts via bind-mount
 
 ```console
-$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro bash:4.4 bash /script.sh
+$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro arm32v5/bash:4.4 bash /script.sh
 ...
-$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro bash:3.2 bash /script.sh
+$ docker run -it --rm -v /path/to/script.sh:/script.sh:ro arm32v5/bash:3.2 bash /script.sh
 ...
 ```
 
 ## Testing scripts via `Dockerfile`
 
 ```dockerfile
-FROM bash:4.4
+FROM arm32v5/bash:4.4
 
 COPY script.sh /
 
