@@ -42,11 +42,11 @@ WARNING:
 
 -	[`17.4-mariadb-tomcat`, `17.4.9-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/a072e83efeb49b9a537cab0b57482ae6d956f572/17.4/mariadb-tomcat/Dockerfile)
 
--	[`16`, `16.10`, `16.10.16`, `16-mysql-tomcat`, `16.10-mysql-tomcat`, `16.10.16-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/94c6de808dce8af709a7f422837cc0b44e428bc8/16/mysql-tomcat/Dockerfile)
+-	[`16`, `16.10`, `16.10.17`, `16-mysql-tomcat`, `16.10-mysql-tomcat`, `16.10.17-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/8ce19d8b799ac7b59c2c50da5f10574b0375c762/16/mysql-tomcat/Dockerfile)
 
--	[`16-postgres-tomcat`, `16.10-postgres-tomcat`, `16.10.16-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/94c6de808dce8af709a7f422837cc0b44e428bc8/16/postgres-tomcat/Dockerfile)
+-	[`16-postgres-tomcat`, `16.10-postgres-tomcat`, `16.10.17-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/8ce19d8b799ac7b59c2c50da5f10574b0375c762/16/postgres-tomcat/Dockerfile)
 
--	[`16-mariadb-tomcat`, `16.10-mariadb-tomcat`, `16.10.16-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/94c6de808dce8af709a7f422837cc0b44e428bc8/16/mariadb-tomcat/Dockerfile)
+-	[`16-mariadb-tomcat`, `16.10-mariadb-tomcat`, `16.10.17-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/8ce19d8b799ac7b59c2c50da5f10574b0375c762/16/mariadb-tomcat/Dockerfile)
 
 # Quick reference (cont.)
 
