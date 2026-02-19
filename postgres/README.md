@@ -28,9 +28,9 @@ WARNING:
 
 -	[`18.2-bookworm`, `18-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/12eb5762e3cf3c44440ed078b59843b5dfbde570/18/bookworm/Dockerfile)
 
--	[`18.2-alpine3.23`, `18-alpine3.23`, `alpine3.23`, `18.2-alpine`, `18-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/12eb5762e3cf3c44440ed078b59843b5dfbde570/18/alpine3.23/Dockerfile)
+-	[`18.2-alpine3.23`, `18-alpine3.23`, `alpine3.23`, `18.2-alpine`, `18-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/2c9ee2611e4988031a207ec97b69ab213b20b95c/18/alpine3.23/Dockerfile)
 
--	[`18.2-alpine3.22`, `18-alpine3.22`, `alpine3.22`](https://github.com/docker-library/postgres/blob/12eb5762e3cf3c44440ed078b59843b5dfbde570/18/alpine3.22/Dockerfile)
+-	[`18.2-alpine3.22`, `18-alpine3.22`, `alpine3.22`](https://github.com/docker-library/postgres/blob/2c9ee2611e4988031a207ec97b69ab213b20b95c/18/alpine3.22/Dockerfile)
 
 -	[`17.8`, `17`, `17.8-trixie`, `17-trixie`](https://github.com/docker-library/postgres/blob/fd482cfacff9eaef8e0833084d4f2407f8078c58/17/trixie/Dockerfile)
 
