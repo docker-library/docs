@@ -158,7 +158,7 @@ $ docker run -it --rm mysql:tag --verbose --help
 
 When you start the `mysql` image, you can adjust the configuration of the MySQL instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
 
-See also https://dev.mysql.com/doc/refman/5.7/en/environment-variables.html for documentation of environment variables which MySQL itself respects (especially variables like `MYSQL_HOST`, which is known to cause issues when used with this image).
+See also [documentation of environment variables](https://dev.mysql.com/doc/refman/8.0/en/environment-variables.html) which MySQL itself respects (especially variables like `MYSQL_HOST`, which is known to cause issues when used with this image).
 
 ### `MYSQL_ROOT_PASSWORD`
 
