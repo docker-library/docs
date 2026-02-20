@@ -18,7 +18,7 @@ To learn more about the programming language, visit [swift.org](https://swift.or
 Swift requires [a little bit of extra security privilege](https://github.com/apple/swift-docker/issues/9#issuecomment-272527182) to run the REPL. The following command creates an ephemeral container, attaches your terminal to it and starts the Swift REPL. A great way to try out pre-release builds!
 
 ```bash
-docker run --cap-add sys_ptrace -it --rm %%IMAGE%% swift
+docker run --privileged -it --rm %%IMAGE%% swift
 ```
 
 ##### Pull the Docker Image From Docker Hub:
