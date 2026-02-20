@@ -10,6 +10,12 @@ Elixir leverages the Erlang VM, known for running low-latency, distributed and f
 
 # How to use this image
 
+## Consider alternatives
+
+The image tags are retroactively updated when there are changes to the upstream images this image depends on. This means that if the same tag is pulled at different points in time, the base Erlang or OS version could be different.
+
+There are [alternative Docker images](https://hub.docker.com/r/hexpm/elixir) produced by the team behind Hex, Elixir's official package manager. These images are built and tagged automatically for each Elixir/Erlang/OS combination and are never updated once tagged.
+
 ## Run it as the REPL
 
 ```console
