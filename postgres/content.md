@@ -1,3 +1,7 @@
+**Tags and versioning warning:**
+
+Pinning a tag (even to the patch level) does not prevent breaking changes.  See [Avoiding Breaking Changes](#avoiding-breaking-changes) below.
+
 # What is PostgreSQL?
 
 PostgreSQL, often simply "Postgres", is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance. As a database server, its primary function is to store data, securely and supporting best practices, and retrieve it later, as requested by other software applications, be it those on the same computer or those running on another computer across a network (including the Internet). It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. Recent versions also provide replication of the database itself for security and scalability.
@@ -39,6 +43,24 @@ postgres=# SELECT 1;
 ## %%COMPOSE%%
 
 Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
+
+# Avoiding Breaking Changes
+
+### Pin a digest to avoid breaking changes
+Docker "Official Images" use tags that correspond to the version of the application they run (in our case, Postgres) and therefore do not typically have any way of indicating changes (even breaking changes) to the image configuration in their tags or "version numbers".  Because of this, it is highly recommended that you "pin" a specific SHA digest of this image wherever it is used if you need to avoid breaking changes.
+
+The digest for every tag is available on Docker Hub.  For instance, if you visit the [tags page for Postgres](https://hub.docker.com/_/postgres?tab=tags), and click on "12.2" you will see the sha256-digest for the most recent build of "12.2" at the top of the page.  This can be used to pin your image reference to that specific build of the image so that nothing will ever change in your environment unless you explicitly update it.  For instance, in a Docker Compose configuration, you might use something like:
+
+```yaml
+# docker-compose.yaml
+version: '3.3'
+services:
+  db:
+    image: postgres:12.2@sha256:b2f01d9d6928992adc1b96cc57ea350ecd131f9f580961c4a95fc8c58553e3b5
+    ...
+```
+
+Note: This also prevents you from receiving important security and bug-fix updates, so you'll have to remember to update the digest yourself on a regular basis.  Choose your poison wisely ;)
 
 # How to extend this image
 
