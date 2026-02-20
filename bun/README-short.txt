@@ -1,0 +1,1 @@
+Bun is a fast all-in-one JavaScript runtime, package manager, bundler, and test runner.
