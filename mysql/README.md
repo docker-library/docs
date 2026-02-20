@@ -164,6 +164,9 @@ See also https://dev.mysql.com/doc/refman/5.7/en/environment-variables.html for 
 
 This variable is mandatory and specifies the password that will be set for the MySQL `root` superuser account. In the above example, it was set to `my-secret-pw`.
 
+### `MYSQL_ROOT_HOST`
+This variable is optional. It allows you to use root connections from outside the container (for example from your host or remote machine). To allow root connections from your host machine set this value to `host.docker.internal`. The variable accepts only one entry, but wildcards are allowed (for example, `MYSQL_ROOT_HOST=172.*.*.*` or `MYSQL_ROOT_HOST=%`). If the variable is set a second root account will be created for the value you used, so you'll have `'root'@'localhost'` and `'root'@'${MYSQL_ROOT_HOST}'`.
+
 ### `MYSQL_DATABASE`
 
 This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access ([corresponding to `GRANT ALL`](https://dev.mysql.com/doc/refman/en/creating-accounts.html)) to this database.
