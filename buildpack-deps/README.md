@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `buildpack-deps` official image](https://hub.docker.com/_/buildpack-deps) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -23,18 +25,6 @@ WARNING:
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
-
--	[`bookworm-curl`, `oldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/3e18c3af1f5dce6a48abf036857f9097b6bd79cc/debian/bookworm/curl/Dockerfile)
-
--	[`bookworm-scm`, `oldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bookworm/scm/Dockerfile)
-
--	[`bookworm`, `oldstable`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bookworm/Dockerfile)
-
--	[`bullseye-curl`, `oldoldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/debian/bullseye/curl/Dockerfile)
-
--	[`bullseye-scm`, `oldoldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bullseye/scm/Dockerfile)
-
--	[`bullseye`, `oldoldstable`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bullseye/Dockerfile)
 
 -	[`forky-curl`, `testing-curl`](https://github.com/docker-library/buildpack-deps/blob/6fbd1fd6aa17031b10f11a97c31b9da1ac09db76/debian/forky/curl/Dockerfile)
 
@@ -65,18 +55,6 @@ WARNING:
 -	[`noble-scm`, `24.04-scm`](https://github.com/docker-library/buildpack-deps/blob/60dc5f9555c521de086b2f5770514faf69ee2cc4/ubuntu/noble/scm/Dockerfile)
 
 -	[`noble`, `24.04`](https://github.com/docker-library/buildpack-deps/blob/60dc5f9555c521de086b2f5770514faf69ee2cc4/ubuntu/noble/Dockerfile)
-
--	[`questing-curl`, `25.10-curl`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/curl/Dockerfile)
-
--	[`questing-scm`, `25.10-scm`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/scm/Dockerfile)
-
--	[`questing`, `25.10`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/Dockerfile)
-
--	[`resolute-curl`, `26.04-curl`](https://github.com/docker-library/buildpack-deps/blob/8330ca1d2319b779c8b7a8aa64bb40dbe568e1e2/ubuntu/resolute/curl/Dockerfile)
-
--	[`resolute-scm`, `26.04-scm`](https://github.com/docker-library/buildpack-deps/blob/8330ca1d2319b779c8b7a8aa64bb40dbe568e1e2/ubuntu/resolute/scm/Dockerfile)
-
--	[`resolute`, `26.04`](https://github.com/docker-library/buildpack-deps/blob/8330ca1d2319b779c8b7a8aa64bb40dbe568e1e2/ubuntu/resolute/Dockerfile)
 
 # Quick reference (cont.)
 

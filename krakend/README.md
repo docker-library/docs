@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `krakend` official image](https://hub.docker.com/_/krakend) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.13.1`, `2.13`, `2`, `latest`](https://github.com/krakend/docker-library/blob/740c6d87249e2d0331ffe3f9e37054e5d939f850/2.13.1/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -68,7 +70,7 @@ To use the image, `COPY` your `krakend.json` file inside the container or mount 
 You can start an empty gateway with a health check with the following commands:
 
 ```bash
-docker run -d -p 8080:8080 -v "$PWD:/etc/krakend/" krakend
+docker run -d -p 8080:8080 -v "$PWD:/etc/krakend/" riscv64/krakend
 
 curl http://localhost:8080/__health
 {"agents":{},"now":"2024-05-23 14:35:55.552591448 +0000 UTC m=+26.856583003","status":"ok"}
@@ -85,7 +87,7 @@ The configuration files are taken from the current directory (`$PWD`). Therefore
 This flag is **SAFE to use in production**. It's meant to enable KrakenD as a fake backend itself by enabling a [`/__debug` endpoint](https://www.krakend.io/docs/endpoints/debug-endpoint/)
 
 ```bash
-docker run -p 8080:8080 -v "${PWD}:/etc/krakend/" krakend run -d -c /etc/krakend/krakend.json
+docker run -p 8080:8080 -v "${PWD}:/etc/krakend/" riscv64/krakend run -d -c /etc/krakend/krakend.json
 ```
 
 #### Checking the syntax of your configuration file
@@ -93,23 +95,23 @@ docker run -p 8080:8080 -v "${PWD}:/etc/krakend/" krakend run -d -c /etc/krakend
 See the [check command](https://www.krakend.io/docs/commands/check/)
 
 ```bash
-docker run -it -v $PWD:/etc/krakend/ krakend check --config krakend.json
+docker run -it -v $PWD:/etc/krakend/ riscv64/krakend check --config krakend.json
 ```
 
 #### Show the help:
 
 ```bash
-docker run --rm -it krakend help
+docker run --rm -it riscv64/krakend help
 ```
 
 ### Building your custom KrakenD image
 
-Most production deployments will not want to rely on mounting a volume for the container but to use their image based on `krakend`:
+Most production deployments will not want to rely on mounting a volume for the container but to use their image based on `riscv64/krakend`:
 
 Your `Dockerfile` could look like this:
 
 ```Dockerfile
-FROM krakend:<version>
+FROM riscv64/krakend:<version>
 # NOTE: Avoid using :latest image on production. Stick to a major version instead.
 
 COPY krakend.json ./
@@ -121,7 +123,7 @@ RUN krakend check -t --lint-no-network -c krakend.json
 If you want to manage your KrakenD configuration using multiple files and folders, reusing templates, and distributing the configuration amongst your teams, you can use the [flexible configuration (FC)](https://www.krakend.io/docs/configuration/flexible-config/). The following `Dockerfile` combines FC, the `krakend check` command, and a 2-step build.
 
 ```Dockerfile
-FROM krakend:<version> as builder
+FROM riscv64/krakend:<version> as builder
 
 COPY krakend.tmpl .
 COPY config .
@@ -135,7 +137,7 @@ RUN FC_ENABLE=1 \
     krakend check -d -t -c krakend.tmpl
 
 # Copy the output file only and discard any other files
-FROM krakend:<version>
+FROM riscv64/krakend:<version>
 COPY --from=builder /tmp/krakend.json .
 ```
 
@@ -160,7 +162,7 @@ Finally, a simple `docker compose` file to start KrakenD with your API would be:
 ```yaml
 services:
   krakend:
-    image: krakend:<version>
+    image: riscv64/krakend:<version>
     ports:
       - "8080:8080"
     volumes:
@@ -172,7 +174,7 @@ And another one that uses the flexible configuration and a custom template filen
 ```yaml
 services:
   krakend:
-    image: krakend:<version>
+    image: riscv64/krakend:<version>
     ports:
       - "8080:8080"
     volumes:
@@ -194,8 +196,8 @@ All `krakend` commands are executed as `krakend` user (uid=1000), and the rest o
 You can directly use sub-commands of `krakend` like `run`, `help`, `version`, `check`, `check-plugin`, or `test-plugin` as the entrypoint will add the `krakend` command automatically. For example, the following lines are equivalent:
 
 ```bash
-docker run --rm -it krakend help
-docker run --rm -it krakend krakend help
+docker run --rm -it riscv64/krakend help
+docker run --rm -it riscv64/krakend krakend help
 ```
 
 # License

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `redmine` official image](https://hub.docker.com/_/redmine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,23 +28,17 @@ WARNING:
 
 -	[`6.1.1`, `6.1`, `6`, `latest`, `6.1.1-trixie`, `6.1-trixie`, `6-trixie`, `trixie`](https://github.com/docker-library/redmine/blob/3230e2b4d5cb3ff26b2a9fe016ff7f6727bfd485/6.1/trixie/Dockerfile)
 
--	[`6.1.1-bookworm`, `6.1-bookworm`, `6-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/3230e2b4d5cb3ff26b2a9fe016ff7f6727bfd485/6.1/bookworm/Dockerfile)
-
 -	[`6.1.1-alpine3.23`, `6.1-alpine3.23`, `6-alpine3.23`, `alpine3.23`, `6.1.1-alpine`, `6.1-alpine`, `6-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/3230e2b4d5cb3ff26b2a9fe016ff7f6727bfd485/6.1/alpine3.23/Dockerfile)
 
 -	[`6.1.1-alpine3.22`, `6.1-alpine3.22`, `6-alpine3.22`, `alpine3.22`](https://github.com/docker-library/redmine/blob/3230e2b4d5cb3ff26b2a9fe016ff7f6727bfd485/6.1/alpine3.22/Dockerfile)
 
 -	[`6.0.8`, `6.0`, `6.0.8-trixie`, `6.0-trixie`](https://github.com/docker-library/redmine/blob/f216e86f5049c2f7b2c2c276c80dbcbad6b09b80/6.0/trixie/Dockerfile)
 
--	[`6.0.8-bookworm`, `6.0-bookworm`](https://github.com/docker-library/redmine/blob/f216e86f5049c2f7b2c2c276c80dbcbad6b09b80/6.0/bookworm/Dockerfile)
-
 -	[`6.0.8-alpine3.23`, `6.0-alpine3.23`, `6.0.8-alpine`, `6.0-alpine`](https://github.com/docker-library/redmine/blob/f216e86f5049c2f7b2c2c276c80dbcbad6b09b80/6.0/alpine3.23/Dockerfile)
 
 -	[`6.0.8-alpine3.22`, `6.0-alpine3.22`](https://github.com/docker-library/redmine/blob/f216e86f5049c2f7b2c2c276c80dbcbad6b09b80/6.0/alpine3.22/Dockerfile)
 
 -	[`5.1.11`, `5.1`, `5`, `5.1.11-trixie`, `5.1-trixie`, `5-trixie`](https://github.com/docker-library/redmine/blob/9526f1d90613fe28167fd025ec0e42344a97e745/5.1/trixie/Dockerfile)
-
--	[`5.1.11-bookworm`, `5.1-bookworm`, `5-bookworm`](https://github.com/docker-library/redmine/blob/9526f1d90613fe28167fd025ec0e42344a97e745/5.1/bookworm/Dockerfile)
 
 -	[`5.1.11-alpine3.23`, `5.1-alpine3.23`, `5-alpine3.23`, `5.1.11-alpine`, `5.1-alpine`, `5-alpine`](https://github.com/docker-library/redmine/blob/9526f1d90613fe28167fd025ec0e42344a97e745/5.1/alpine3.23/Dockerfile)
 
@@ -82,7 +78,7 @@ Redmine is a free and open source, web-based project management and issue tracki
 This is the simplest setup; just run redmine.
 
 ```console
-$ docker run -d --name some-redmine redmine
+$ docker run -d --name some-redmine riscv64/redmine
 ```
 
 > not for multi-user production use ([redmine wiki](http://www.redmine.org/projects/redmine/wiki/RedmineInstall#Supported-database-back-ends))
@@ -108,7 +104,7 @@ Running Redmine with a database server is the recommended way.
 2.	start redmine
 
 	```console
-	$ docker run -d --name some-redmine --network some-network -e REDMINE_DB_POSTGRES=some-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret redmine
+	$ docker run -d --name some-redmine --network some-network -e REDMINE_DB_POSTGRES=some-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret riscv64/redmine
 	```
 
 ## ... via [`docker compose`](https://github.com/docker/compose)
@@ -155,7 +151,7 @@ The Docker documentation is a good starting point for understanding the differen
 2.	Start your `redmine` container like this:
 
 	```console
-	$ docker run -d --name some-redmine -v /my/own/datadir:/usr/src/redmine/files --link some-postgres:postgres redmine
+	$ docker run -d --name some-redmine -v /my/own/datadir:/usr/src/redmine/files --link some-postgres:postgres riscv64/redmine
 	```
 
 The `-v /my/own/datadir:/usr/src/redmine/files` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/usr/src/redmine/files` inside the container, where Redmine will store uploaded files.
@@ -219,22 +215,22 @@ You can use the [`--user`](https://docs.docker.com/engine/reference/run/#user) f
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run -d --name some-redmine -e REDMINE_DB_MYSQL_FILE=/run/secrets/mysql-host -e REDMINE_DB_PASSWORD_FILE=/run/secrets/mysql-root redmine:tag
+$ docker run -d --name some-redmine -e REDMINE_DB_MYSQL_FILE=/run/secrets/mysql-host -e REDMINE_DB_PASSWORD_FILE=/run/secrets/mysql-root riscv64/redmine:tag
 ```
 
 Currently, this is only supported for `REDMINE_DB_MYSQL`, `REDMINE_DB_POSTGRES`, `REDMINE_DB_PORT`, `REDMINE_DB_USERNAME`, `REDMINE_DB_PASSWORD`, `REDMINE_DB_DATABASE`, `REDMINE_DB_ENCODING`, and `REDMINE_SECRET_KEY_BASE`.
 
 # Image Variants
 
-The `redmine` images come in many flavors, each designed for a specific use case.
+The `riscv64/redmine` images come in many flavors, each designed for a specific use case.
 
-## `redmine:<version>`
+## `riscv64/redmine:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `redmine:<version>-alpine`
+## `riscv64/redmine:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
