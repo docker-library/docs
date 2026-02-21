@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `httpd` official image](https://hub.docker.com/_/httpd) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -23,8 +25,6 @@ WARNING:
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
-
--	[`2.4.66`, `2.4`, `2`, `latest`, `2.4.66-trixie`, `2.4-trixie`, `2-trixie`, `trixie`](https://github.com/docker-library/httpd/blob/b8bf24dec3fb94efd3d81ac495bea8247d5115d9/2.4/Dockerfile)
 
 -	[`2.4.66-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.66-alpine3.23`, `2.4-alpine3.23`, `2-alpine3.23`, `alpine3.23`](https://github.com/docker-library/httpd/blob/c9c8c54099b541910797a90ca9b406e76966902f/2.4/alpine/Dockerfile)
 
@@ -62,7 +62,7 @@ This image only contains Apache httpd with the defaults from upstream. There is 
 ### Create a `Dockerfile` in your project
 
 ```dockerfile
-FROM httpd:2.4
+FROM arm32v6/httpd:2.4
 COPY ./public-html/ /usr/local/apache2/htdocs/
 ```
 
@@ -80,7 +80,7 @@ Visit http://localhost:8080 and you will see It works!
 If you don't want to include a `Dockerfile` in your project, it is sufficient to do the following:
 
 ```console
-$ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.4
+$ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ arm32v6/httpd:2.4
 ```
 
 ### Configuration
@@ -88,13 +88,13 @@ $ docker run -dit --name my-apache-app -p 8080:80 -v "$PWD":/usr/local/apache2/h
 To customize the configuration of the httpd server, first obtain the upstream default configuration from the container:
 
 ```console
-$ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
+$ docker run --rm arm32v6/httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
 ```
 
 You can then `COPY` your custom configuration in as `/usr/local/apache2/conf/httpd.conf`:
 
 ```dockerfile
-FROM httpd:2.4
+FROM arm32v6/httpd:2.4
 COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 ```
 
@@ -128,15 +128,13 @@ The previous steps should work well for development, but we recommend customizin
 
 # Image Variants
 
-The `httpd` images come in many flavors, each designed for a specific use case.
+The `arm32v6/httpd` images come in many flavors, each designed for a specific use case.
 
-## `httpd:<version>`
+## `arm32v6/httpd:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `httpd:<version>-alpine`
+## `arm32v6/httpd:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

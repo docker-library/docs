@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `postfixadmin` official image](https://hub.docker.com/_/postfixadmin) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -23,10 +25,6 @@ WARNING:
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
-
--	[`4.0.1-apache`, `4.0-apache`, `4-apache`, `apache`, `4.0.1`, `4.0`, `4`, `latest`](https://github.com/postfixadmin/docker/blob/f7a67465b3b4a6b930cc98be5d04cdad2292609a/apache/Dockerfile)
-
--	[`4.0.1-fpm`, `4.0-fpm`, `4-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/f7a67465b3b4a6b930cc98be5d04cdad2292609a/fpm/Dockerfile)
 
 -	[`4.0.1-fpm-alpine`, `4.0-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/f7a67465b3b4a6b930cc98be5d04cdad2292609a/fpm-alpine/Dockerfile)
 
@@ -68,7 +66,7 @@ $ docker run -e POSTFIXADMIN_DB_TYPE=mysqli \
            -e POSTFIXADMIN_DB_PASSWORD=topsecret \
            -e POSTFIXADMIN_DB_NAME=postfixadmin \
            --name some-postfixadmin \
-        postfixadmin
+        arm32v6/postfixadmin
 ```
 
 `POSTFIXADMIN_DB_TYPE` can be one of :
@@ -91,7 +89,7 @@ $ docker run -e POSTFIXADMIN_DB_TYPE=mysqli \
            -e POSTFIXADMIN_DB_NAME=postfixadmin \
            --name some-postfixadmin \
            -p 8080:80
-        postfixadmin
+        arm32v6/postfixadmin
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -102,7 +100,7 @@ Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browse
 $ docker run -v /local/path/to/config.local.php:/var/www/html/config.local.php \
            --name some-postfixadmin \
            -p 8080:80 \
-        postfixadmin
+        arm32v6/postfixadmin
 ```
 
 ... via [`docker compose`](https://github.com/docker/compose)
@@ -139,15 +137,11 @@ Run `docker compose up`, wait for it to initialize completely, and visit `http:/
 
 # Image Variants
 
-The `postfixadmin` images come in many flavors, each designed for a specific use case.
+The `arm32v6/postfixadmin` images come in many flavors, each designed for a specific use case.
 
-## `postfixadmin:<version>`
+## `arm32v6/postfixadmin:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-### apache
-
-This starts an Apache webserver with PHP, so you can use `postfixadmin` out of the box.
 
 ### fpm
 

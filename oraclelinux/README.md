@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `oraclelinux` official image](https://hub.docker.com/_/oraclelinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,27 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/10/Dockerfile)
-
--	[`10-slim`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/10-slim/Dockerfile)
-
--	[`9`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/9/Dockerfile)
-
--	[`9-slim`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/9-slim/Dockerfile)
-
--	[`9-slim-fips`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/9-slim-fips/Dockerfile)
-
--	[`8.10`, `8`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/8/Dockerfile)
-
--	[`8-slim`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/8-slim/Dockerfile)
-
--	[`8-slim-fips`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/8-slim-fips/Dockerfile)
-
--	[`7.9`, `7`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/7/Dockerfile)
-
--	[`7-slim`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/7-slim/Dockerfile)
-
--	[`7-slim-fips`](https://github.com/oracle/container-images/blob/b1a164628accea5dee53fd949bb56a15186ecfe8/7-slim-fips/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -75,7 +57,7 @@ Oracle Linux is an open-source operating system available under the GNU General 
 
 ## How to use these images
 
-The Oracle Linux images are intended for use in the **FROM** field of a downstream `Dockerfile`. For example, to use the latest optimized Oracle Linux 8 image, specify `FROM oraclelinux:8`.
+The Oracle Linux images are intended for use in the **FROM** field of a downstream `Dockerfile`. For example, to use the latest optimized Oracle Linux 8 image, specify `FROM arm32v6/oraclelinux:8`.
 
 ## Removal of `latest` tag
 
