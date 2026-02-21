@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `tomee` official image](https://hub.docker.com/_/tomee) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -79,14 +81,6 @@ WARNING:
 -	[`10.1.4-jre17-Temurin-ubuntu-plus`, `10.1.4-jre17-ubuntu-plus`, `10.1.4-jre17-Temurin-plus`, `10.1.4-jre17-plus`, `10.1-jre17-Temurin-ubuntu-plus`, `10.1-jre17-ubuntu-plus`, `10.1-jre17-Temurin-plus`, `10.1-jre17-plus`, `10-jre17-Temurin-ubuntu-plus`, `10-jre17-ubuntu-plus`, `10-jre17-Temurin-plus`, `10-jre17-plus`, `jre17-Temurin-ubuntu-plus`, `jre17-ubuntu-plus`, `jre17-Temurin-plus`, `jre17-plus`](https://github.com/tomitribe/docker-tomee/blob/724664015cf5e7ade6122d2acb8b398c342303b5/TomEE-10.1/jre17/Temurin/ubuntu/plus/Dockerfile)
 
 -	[`10.1.4-jre17-Temurin-ubuntu-webprofile`, `10.1.4-jre17-ubuntu-webprofile`, `10.1.4-jre17-Temurin-webprofile`, `10.1.4-jre17-webprofile`, `10.1-jre17-Temurin-ubuntu-webprofile`, `10.1-jre17-ubuntu-webprofile`, `10.1-jre17-Temurin-webprofile`, `10.1-jre17-webprofile`, `10-jre17-Temurin-ubuntu-webprofile`, `10-jre17-ubuntu-webprofile`, `10-jre17-Temurin-webprofile`, `10-jre17-webprofile`, `jre17-Temurin-ubuntu-webprofile`, `jre17-ubuntu-webprofile`, `jre17-Temurin-webprofile`, `jre17-webprofile`](https://github.com/tomitribe/docker-tomee/blob/724664015cf5e7ade6122d2acb8b398c342303b5/TomEE-10.1/jre17/Temurin/ubuntu/webprofile/Dockerfile)
-
--	[`10.1.4-jre17-Temurin-alpine-microprofile`, `10.1.4-jre17-alpine-microprofile`, `10.1.4-jre17-Temurin-alpine`, `10.1.4-jre17-alpine`, `10.1-jre17-Temurin-alpine-microprofile`, `10.1-jre17-alpine-microprofile`, `10.1-jre17-Temurin-alpine`, `10.1-jre17-alpine`, `10-jre17-Temurin-alpine-microprofile`, `10-jre17-alpine-microprofile`, `10-jre17-Temurin-alpine`, `10-jre17-alpine`, `jre17-Temurin-alpine-microprofile`, `jre17-alpine-microprofile`, `jre17-Temurin-alpine`, `jre17-alpine`](https://github.com/tomitribe/docker-tomee/blob/724664015cf5e7ade6122d2acb8b398c342303b5/TomEE-10.1/jre17/Temurin/alpine/microprofile/Dockerfile)
-
--	[`10.1.4-jre17-Temurin-alpine-plume`, `10.1.4-jre17-alpine-plume`, `10.1-jre17-Temurin-alpine-plume`, `10.1-jre17-alpine-plume`, `10-jre17-Temurin-alpine-plume`, `10-jre17-alpine-plume`, `jre17-Temurin-alpine-plume`, `jre17-alpine-plume`](https://github.com/tomitribe/docker-tomee/blob/724664015cf5e7ade6122d2acb8b398c342303b5/TomEE-10.1/jre17/Temurin/alpine/plume/Dockerfile)
-
--	[`10.1.4-jre17-Temurin-alpine-plus`, `10.1.4-jre17-alpine-plus`, `10.1-jre17-Temurin-alpine-plus`, `10.1-jre17-alpine-plus`, `10-jre17-Temurin-alpine-plus`, `10-jre17-alpine-plus`, `jre17-Temurin-alpine-plus`, `jre17-alpine-plus`](https://github.com/tomitribe/docker-tomee/blob/724664015cf5e7ade6122d2acb8b398c342303b5/TomEE-10.1/jre17/Temurin/alpine/plus/Dockerfile)
-
--	[`10.1.4-jre17-Temurin-alpine-webprofile`, `10.1.4-jre17-alpine-webprofile`, `10.1-jre17-Temurin-alpine-webprofile`, `10.1-jre17-alpine-webprofile`, `10-jre17-Temurin-alpine-webprofile`, `10-jre17-alpine-webprofile`, `jre17-Temurin-alpine-webprofile`, `jre17-alpine-webprofile`](https://github.com/tomitribe/docker-tomee/blob/724664015cf5e7ade6122d2acb8b398c342303b5/TomEE-10.1/jre17/Temurin/alpine/webprofile/Dockerfile)
 
 -	[`10.1.4-jre17-Semeru-ubuntu-microprofile`, `10.1.4-jre17-Semeru-microprofile`, `10.1.4-jre17-Semeru-ubuntu`, `10.1.4-jre17-Semeru`, `10.1-jre17-Semeru-ubuntu-microprofile`, `10.1-jre17-Semeru-microprofile`, `10.1-jre17-Semeru-ubuntu`, `10.1-jre17-Semeru`, `10-jre17-Semeru-ubuntu-microprofile`, `10-jre17-Semeru-microprofile`, `10-jre17-Semeru-ubuntu`, `10-jre17-Semeru`, `jre17-Semeru-ubuntu-microprofile`, `jre17-Semeru-microprofile`, `jre17-Semeru-ubuntu`, `jre17-Semeru`](https://github.com/tomitribe/docker-tomee/blob/724664015cf5e7ade6122d2acb8b398c342303b5/TomEE-10.1/jre17/Semeru/ubuntu/microprofile/Dockerfile)
 
@@ -154,19 +148,19 @@ ManageCat is a cloud management and service platform for Apache Tomcat and Apach
 Run the default TomEE server (`CMD ["catalina.sh", "run"]`):
 
 ```console
-$ docker run -it --rm tomee:<java-version>\-<tomeeversion>\-<flavour>
+$ docker run -it --rm arm64v8/tomee:<java-version>\-<tomeeversion>\-<flavour>
 ```
 
 For example running Apache TomEE 1.7.2 with JRE 8 and Webprofile flavour will be:
 
 ```console
-$ docker run -it --rm tomee:8-jre-1.7.2-webprofile
+$ docker run -it --rm arm64v8/tomee:8-jre-1.7.2-webprofile
 ```
 
 You can test it by visiting `http://container-ip:8080` in a browser or, if you need access outside the host, on port 8888:
 
 ```console
-$ docker run -it --rm -p 8888:8080 tomee:<java-version>\-<tomeeversion>\-<flavour>
+$ docker run -it --rm -p 8888:8080 arm64v8/tomee:<java-version>\-<tomeeversion>\-<flavour>
 ```
 
 You can then go to `http://localhost:8888` or `http://host-ip:8888` in a browser.
@@ -181,13 +175,13 @@ COPY <locationofapplication>/<warfile> /usr/local/tomee/webapps/<warfile>
 
 # Image Variants
 
-The `tomee` images come in many flavors, each designed for a specific use case.
+The `arm64v8/tomee` images come in many flavors, each designed for a specific use case.
 
-## `tomee:<version>`
+## `arm64v8/tomee:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `tomee:<version>-alpine`
+## `arm64v8/tomee:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

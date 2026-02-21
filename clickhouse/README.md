@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `clickhouse` official image](https://hub.docker.com/_/clickhouse) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -82,7 +84,7 @@ For more information and documentation see https://clickhouse.com/.
 ### start server instance
 
 ```bash
-docker run -d --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+docker run -d --name some-clickhouse-server --ulimit nofile=262144:262144 arm64v8/clickhouse
 ```
 
 By default, ClickHouse will be accessible only via the Docker network. See the **networking** section below.
@@ -92,7 +94,7 @@ By default, starting above server instance will be run as the `default` user wit
 ### connect to it from a native client
 
 ```bash
-docker run -it --rm --network=container:some-clickhouse-server --entrypoint clickhouse-client clickhouse
+docker run -it --rm --network=container:some-clickhouse-server --entrypoint clickhouse-client arm64v8/clickhouse
 # OR
 docker exec -it some-clickhouse-server clickhouse-client
 ```
@@ -121,7 +123,7 @@ docker rm some-clickhouse-server
 You can expose your ClickHouse running in docker by [mapping a particular port](https://docs.docker.com/config/containers/container-networking/) from inside the container using host ports:
 
 ```bash
-docker run -d -p 18123:8123 -p 19000:9000 -e CLICKHOUSE_PASSWORD=changeme --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+docker run -d -p 18123:8123 -p 19000:9000 -e CLICKHOUSE_PASSWORD=changeme --name some-clickhouse-server --ulimit nofile=262144:262144 arm64v8/clickhouse
 echo 'SELECT version()' | curl 'http://localhost:18123/?password=changeme' --data-binary @-
 ```
 
@@ -130,7 +132,7 @@ echo 'SELECT version()' | curl 'http://localhost:18123/?password=changeme' --dat
 Or by allowing the container to use [host ports directly](https://docs.docker.com/network/host/) using `--network=host` (also allows achieving better network performance):
 
 ```bash
-docker run -d --network=host --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+docker run -d --network=host --name some-clickhouse-server --ulimit nofile=262144:262144 arm64v8/clickhouse
 echo 'SELECT version()' | curl 'http://localhost:8123/' --data-binary @-
 ```
 
@@ -149,7 +151,7 @@ Typically you may want to mount the following folders inside your container to a
 docker run -d \
     -v "$PWD/ch_data:/var/lib/clickhouse/" \
     -v "$PWD/ch_logs:/var/log/clickhouse-server/" \
-    --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+    --name some-clickhouse-server --ulimit nofile=262144:262144 arm64v8/clickhouse
 ```
 
 You may also want to mount:
@@ -167,7 +169,7 @@ They are optional and can be enabled using the following [docker command-line ar
 ```bash
 docker run -d \
     --cap-add=SYS_NICE --cap-add=NET_ADMIN --cap-add=IPC_LOCK \
-    --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+    --name some-clickhouse-server --ulimit nofile=262144:262144 arm64v8/clickhouse
 ```
 
 Read more in [knowledge base](https://clickhouse.com/docs/knowledgebase/configure_cap_ipc_lock_and_cap_sys_nice_in_docker).
@@ -181,14 +183,14 @@ ClickHouse configuration is represented with a file "config.xml" ([documentation
 ### Start server instance with custom configuration
 
 ```bash
-docker run -d --name some-clickhouse-server --ulimit nofile=262144:262144 -v /path/to/your/config.xml:/etc/clickhouse-server/config.xml clickhouse
+docker run -d --name some-clickhouse-server --ulimit nofile=262144:262144 -v /path/to/your/config.xml:/etc/clickhouse-server/config.xml arm64v8/clickhouse
 ```
 
 ### Start server as custom user
 
 ```bash
 # $PWD/data/clickhouse should exist and be owned by current user
-docker run --rm --user "${UID}:${GID}" --name some-clickhouse-server --ulimit nofile=262144:262144 -v "$PWD/logs/clickhouse:/var/log/clickhouse-server" -v "$PWD/data/clickhouse:/var/lib/clickhouse" clickhouse
+docker run --rm --user "${UID}:${GID}" --name some-clickhouse-server --ulimit nofile=262144:262144 -v "$PWD/logs/clickhouse:/var/log/clickhouse-server" -v "$PWD/data/clickhouse:/var/lib/clickhouse" arm64v8/clickhouse
 ```
 
 When you use the image with local directories mounted, you probably want to specify the user to maintain the proper file ownership. Use the `--user` argument and mount `/var/lib/clickhouse` and `/var/log/clickhouse-server` inside the container. Otherwise, the image will complain and not start.
@@ -196,7 +198,7 @@ When you use the image with local directories mounted, you probably want to spec
 ### Start server from root (useful in case of enabled user namespace)
 
 ```bash
-docker run --rm -e CLICKHOUSE_RUN_AS_ROOT=1 --name clickhouse-server-userns -v "$PWD/logs/clickhouse:/var/log/clickhouse-server" -v "$PWD/data/clickhouse:/var/lib/clickhouse" clickhouse
+docker run --rm -e CLICKHOUSE_RUN_AS_ROOT=1 --name clickhouse-server-userns -v "$PWD/logs/clickhouse:/var/log/clickhouse-server" -v "$PWD/data/clickhouse:/var/lib/clickhouse" arm64v8/clickhouse
 ```
 
 ### How to create default database and user on starting
@@ -204,7 +206,7 @@ docker run --rm -e CLICKHOUSE_RUN_AS_ROOT=1 --name clickhouse-server-userns -v "
 Sometimes you may want to create a user (user named `default` is used by default) and database on a container start. You can do it using environment variables `CLICKHOUSE_DB`, `CLICKHOUSE_USER`, `CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT` and `CLICKHOUSE_PASSWORD`:
 
 ```bash
-docker run --rm -e CLICKHOUSE_DB=my_database -e CLICKHOUSE_USER=username -e CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1 -e CLICKHOUSE_PASSWORD=password -p 9000:9000/tcp clickhouse
+docker run --rm -e CLICKHOUSE_DB=my_database -e CLICKHOUSE_USER=username -e CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1 -e CLICKHOUSE_PASSWORD=password -p 9000:9000/tcp arm64v8/clickhouse
 ```
 
 #### Managing `default` user
@@ -214,7 +216,7 @@ The user `default` has disabled network access by default in the case none of `C
 There's a way to make `default` user insecurely available by setting environment variable `CLICKHOUSE_SKIP_USER_SETUP` to 1:
 
 ```bash
-docker run --rm -e CLICKHOUSE_SKIP_USER_SETUP=1 -p 9000:9000/tcp clickhouse
+docker run --rm -e CLICKHOUSE_SKIP_USER_SETUP=1 -p 9000:9000/tcp arm64v8/clickhouse
 ```
 
 ## How to extend this image

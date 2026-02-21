@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `kong` official image](https://hub.docker.com/_/kong) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -29,8 +31,6 @@ WARNING:
 -	[`3.8.0-ubuntu`, `3.8-ubuntu`, `3.8.0`, `3.8`](https://github.com/Kong/docker-kong/blob/1f5199f7da45c17f4344b811397e89899a160040/ubuntu/Dockerfile)
 
 -	[`3.4.2-ubuntu`, `3.4-ubuntu`, `3.4.2`, `3.4`](https://github.com/Kong/docker-kong/blob/e07de903edf213445a0540172d51529ac344b448/ubuntu/Dockerfile)
-
--	[`2.8.5-ubuntu`, `2.8-ubuntu`](https://github.com/Kong/docker-kong/blob/cdf93ae2106f998a2245a3eee6814b1ae68781af/ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 
