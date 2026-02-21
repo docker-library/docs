@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `phpmyadmin` official image](https://hub.docker.com/_/phpmyadmin) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.2.3-apache`, `5.2-apache`, `5-apache`, `apache`, `5.2.3`, `5.2`, `5`, `latest`](https://github.com/phpmyadmin/docker/blob/452a995fe6c90b96473fc17c3d704786c33d42bc/apache/Dockerfile)
-
--	[`5.2.3-fpm`, `5.2-fpm`, `5-fpm`, `fpm`](https://github.com/phpmyadmin/docker/blob/452a995fe6c90b96473fc17c3d704786c33d42bc/fpm/Dockerfile)
-
--	[`5.2.3-fpm-alpine`, `5.2-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/phpmyadmin/docker/blob/452a995fe6c90b96473fc17c3d704786c33d42bc/fpm-alpine/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -94,7 +92,7 @@ We provide three variations:
 First you need to run a MySQL or MariaDB server in Docker, and the phpMyAdmin image needs to be linked to the running database container:
 
 ```sh
-docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 winamd64/phpmyadmin
 ```
 
 ## Usage with external server
@@ -102,7 +100,7 @@ docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 phpmyadmin
 You can specify a MySQL host in the `PMA_HOST` environment variable. You can also use `PMA_PORT` to specify the port of the server in case it's not the default one:
 
 ```sh
-docker run --name phpmyadmin -d -e PMA_HOST=dbhost -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d -e PMA_HOST=dbhost -p 8080:80 winamd64/phpmyadmin
 ```
 
 ## Usage with arbitrary server
@@ -110,7 +108,7 @@ docker run --name phpmyadmin -d -e PMA_HOST=dbhost -p 8080:80 phpmyadmin
 You can use arbitrary servers by adding the environment variable `PMA_ARBITRARY=1` to the startup command:
 
 ```sh
-docker run --name phpmyadmin -d -e PMA_ARBITRARY=1 -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d -e PMA_ARBITRARY=1 -p 8080:80 winamd64/phpmyadmin
 ```
 
 ## Usage with `docker compose` and an arbitrary server
@@ -149,7 +147,7 @@ You can add your own custom config.inc.php settings (such as Configuration Stora
 On the `docker run` line like this:
 
 ```sh
-docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php phpmyadmin
+docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php winamd64/phpmyadmin
 ```
 
 Be sure to have `<?php` as your first line of the configuration file or the contents will not be detected as PHP code.
@@ -174,7 +172,7 @@ you can also consider storing your custom configuration files in the folder `/et
 On the `docker run` line like this:
 
 ```sh
-docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/conf.d:/etc/phpmyadmin/conf.d:ro phpmyadmin
+docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/conf.d:/etc/phpmyadmin/conf.d:ro winamd64/phpmyadmin
 ```
 
 ## Usage behind a reverse proxy
@@ -194,11 +192,11 @@ In order to keep your sessions active between container updates you will need to
 Set the variable `PMA_SSL` to `1` to enable SSL usage from phpMyAdmin to the MySQL server. The default value is `0`. The variable `PMA_SSLS` can be used as a comma seperated sequence of `0` and `1` where multiple hosts are mentioned. Values order must follow the `PMA_HOSTS` and will be computed accordingly.
 
 ```sh
-docker run --name phpmyadmin -d -e PMA_HOSTS=sslhost -e PMA_SSL=1 -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d -e PMA_HOSTS=sslhost -e PMA_SSL=1 -p 8080:80 winamd64/phpmyadmin
 ```
 
 ```sh
-docker run --name phpmyadmin -d -e PMA_HOSTS='sslhost,nosslhost' -e PMA_SSLS='1,0' -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d -e PMA_HOSTS='sslhost,nosslhost' -e PMA_SSLS='1,0' -p 8080:80 winamd64/phpmyadmin
 ```
 
 ## Environment variables summary
@@ -246,7 +244,7 @@ docker run --name phpmyadmin -d -e PMA_HOSTS='sslhost,nosslhost' -e PMA_SSLS='1,
 For usage with Docker secrets, appending `_FILE` to the `PMA_PASSWORD` environment variable is allowed (it overrides `PMA_PASSWORD` if it is set):
 
 ```sh
-docker run --name phpmyadmin -d -e PMA_PASSWORD_FILE=/run/secrets/db_password.txt -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d -e PMA_PASSWORD_FILE=/run/secrets/db_password.txt -p 8080:80 winamd64/phpmyadmin
 ```
 
 #### Variables that can store the file contents using `_BASE64`
@@ -279,22 +277,6 @@ For more detailed documentation see https://docs.phpmyadmin.net/en/latest/setup.
 Please report any issues with the Docker container to https://github.com/phpmyadmin/docker/issues
 
 Please report any issues with phpMyAdmin to https://github.com/phpmyadmin/phpmyadmin/issues
-
-# Image Variants
-
-The `phpmyadmin` images come in many flavors, each designed for a specific use case.
-
-## `phpmyadmin:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `phpmyadmin:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

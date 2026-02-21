@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `postfixadmin` official image](https://hub.docker.com/_/postfixadmin) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.1-apache`, `4.0-apache`, `4-apache`, `apache`, `4.0.1`, `4.0`, `4`, `latest`](https://github.com/postfixadmin/docker/blob/f7a67465b3b4a6b930cc98be5d04cdad2292609a/apache/Dockerfile)
-
--	[`4.0.1-fpm`, `4.0-fpm`, `4-fpm`, `fpm`](https://github.com/postfixadmin/docker/blob/f7a67465b3b4a6b930cc98be5d04cdad2292609a/fpm/Dockerfile)
-
--	[`4.0.1-fpm-alpine`, `4.0-fpm-alpine`, `4-fpm-alpine`, `fpm-alpine`](https://github.com/postfixadmin/docker/blob/f7a67465b3b4a6b930cc98be5d04cdad2292609a/fpm-alpine/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -68,7 +66,7 @@ $ docker run -e POSTFIXADMIN_DB_TYPE=mysqli \
            -e POSTFIXADMIN_DB_PASSWORD=topsecret \
            -e POSTFIXADMIN_DB_NAME=postfixadmin \
            --name some-postfixadmin \
-        postfixadmin
+        winamd64/postfixadmin
 ```
 
 `POSTFIXADMIN_DB_TYPE` can be one of :
@@ -91,7 +89,7 @@ $ docker run -e POSTFIXADMIN_DB_TYPE=mysqli \
            -e POSTFIXADMIN_DB_NAME=postfixadmin \
            --name some-postfixadmin \
            -p 8080:80
-        postfixadmin
+        winamd64/postfixadmin
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -102,7 +100,7 @@ Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browse
 $ docker run -v /local/path/to/config.local.php:/var/www/html/config.local.php \
            --name some-postfixadmin \
            -p 8080:80 \
-        postfixadmin
+        winamd64/postfixadmin
 ```
 
 ... via [`docker compose`](https://github.com/docker/compose)
@@ -136,26 +134,6 @@ services:
 ```
 
 Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
-
-# Image Variants
-
-The `postfixadmin` images come in many flavors, each designed for a specific use case.
-
-## `postfixadmin:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-### apache
-
-This starts an Apache webserver with PHP, so you can use `postfixadmin` out of the box.
-
-### fpm
-
-This image starts only a PHP FPM container. Use this variant if you already have a seperate webserver.
-
-### fpm-alpine
-
-This image has a very small footprint. It is based on Alpine Linux and starts only a PHP FPM process. Use this variant if you already have a seperate webserver. If you need more tools, that are not available on Alpine Linux, use the `fpm` image instead.
 
 # License
 
