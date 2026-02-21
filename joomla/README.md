@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `joomla` official image](https://hub.docker.com/_/joomla) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,29 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.3-php8.3-apache`, `6.0-php8.3-apache`, `6-php8.3-apache`, `php8.3-apache`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/6.0/php8.3/apache/Dockerfile)
-
--	[`6.0.3-php8.3-fpm-alpine`, `6.0-php8.3-fpm-alpine`, `6-php8.3-fpm-alpine`, `php8.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/6.0/php8.3/fpm-alpine/Dockerfile)
-
--	[`6.0.3-php8.3-fpm`, `6.0-php8.3-fpm`, `6-php8.3-fpm`, `php8.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/6.0/php8.3/fpm/Dockerfile)
-
--	[`6.0.3`, `6.0`, `6`, `latest`, `6.0.3-apache`, `6.0-apache`, `6-apache`, `apache`, `6.0.3-php8.4`, `6.0-php8.4`, `6-php8.4`, `php8.4`, `6.0.3-php8.4-apache`, `6.0-php8.4-apache`, `6-php8.4-apache`, `php8.4-apache`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/6.0/php8.4/apache/Dockerfile)
-
--	[`6.0.3-php8.4-fpm-alpine`, `6.0-php8.4-fpm-alpine`, `6-php8.4-fpm-alpine`, `php8.4-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/6.0/php8.4/fpm-alpine/Dockerfile)
-
--	[`6.0.3-php8.4-fpm`, `6.0-php8.4-fpm`, `6-php8.4-fpm`, `php8.4-fpm`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/6.0/php8.4/fpm/Dockerfile)
-
--	[`5.4.3-php8.2-apache`, `5.4-php8.2-apache`, `5-php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/5.4/php8.2/apache/Dockerfile)
-
--	[`5.4.3-php8.2-fpm-alpine`, `5.4-php8.2-fpm-alpine`, `5-php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/5.4/php8.2/fpm-alpine/Dockerfile)
-
--	[`5.4.3-php8.2-fpm`, `5.4-php8.2-fpm`, `5-php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/5.4/php8.2/fpm/Dockerfile)
-
--	[`5.4.3`, `5.4`, `5`, `5.4.3-apache`, `5.4-apache`, `5-apache`, `5.4.3-php8.3`, `5.4-php8.3`, `5-php8.3`, `5.4.3-php8.3-apache`, `5.4-php8.3-apache`, `5-php8.3-apache`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/5.4/php8.3/apache/Dockerfile)
-
--	[`5.4.3-php8.3-fpm-alpine`, `5.4-php8.3-fpm-alpine`, `5-php8.3-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/5.4/php8.3/fpm-alpine/Dockerfile)
-
--	[`5.4.3-php8.3-fpm`, `5.4-php8.3-fpm`, `5-php8.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/3f4f203e035f1175c40cfea25e0db404ba3baa6b/5.4/php8.3/fpm/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -78,7 +58,7 @@ Joomla is a free and open-source content management system (CMS) for publishing 
 # How to use this image
 
 ```console
-$ docker run --name some-joomla --network some-network -d joomla
+$ docker run --name some-joomla --network some-network -d mips64le/joomla
 ```
 
 The following environment variables are honored for configuring your Joomla instance:
@@ -107,7 +87,7 @@ The following environment variables are also honored for configuring auto deploy
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-joomla --network some-network -p 8080:80 -d joomla
+$ docker run --name some-joomla --network some-network -p 8080:80 -d mips64le/joomla
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -116,7 +96,7 @@ If you'd like to use an external database instead of a MySQL container, specify 
 
 ```console
 $ docker run --name some-joomla --network some-network -e JOOMLA_DB_HOST=10.1.2.3:3306 \
-    -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d joomla
+    -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d mips64le/joomla
 ```
 
 ## ... via [`docker compose`](https://github.com/docker/compose)
@@ -178,22 +158,6 @@ If you need additional PHP extensions, you'll need to create your own image `FRO
 The following Docker Hub features can help with the task of keeping your dependent images up-to-date:
 
 -	[Automated Builds](https://docs.docker.com/docker-hub/builds/) let Docker Hub automatically build your Dockerfile each time you push changes to it.
-
-# Image Variants
-
-The `joomla` images come in many flavors, each designed for a specific use case.
-
-## `joomla:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `joomla:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

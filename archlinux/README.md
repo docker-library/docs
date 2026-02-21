@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `archlinux` official image](https://hub.docker.com/_/archlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`, `base-20260215.0.490969`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/4d96f7165bd7477c8145ddd38a5182b0f961b5f7/Dockerfile.base)
-
--	[`base-devel`, `base-devel-20260215.0.490969`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/4d96f7165bd7477c8145ddd38a5182b0f961b5f7/Dockerfile.base-devel)
-
--	[`multilib-devel`, `multilib-devel-20260215.0.490969`](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/4d96f7165bd7477c8145ddd38a5182b0f961b5f7/Dockerfile.multilib-devel)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -61,7 +59,7 @@ Our strong community is diverse and helpful, and we pride ourselves on the range
 
 # About this image
 
-The root filesystem tarball for this image is auto-generated weekly at 00:00 UTC on Sunday in Arch Linux infrastructure. Given the rolling-release nature of Arch Linux, images are tagged with the included meta package and the timestamp of the date they were generated. For example, `archlinux:base-20201101.0.7893` was generated the First of November 2020 in [CI job #7893](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/jobs/7893). The `latest` tag will always match the latest `base` tag.
+The root filesystem tarball for this image is auto-generated weekly at 00:00 UTC on Sunday in Arch Linux infrastructure. Given the rolling-release nature of Arch Linux, images are tagged with the included meta package and the timestamp of the date they were generated. For example, `mips64le/archlinux:base-20201101.0.7893` was generated the First of November 2020 in [CI job #7893](https://gitlab.archlinux.org/archlinux/archlinux-docker/-/jobs/7893). The `latest` tag will always match the latest `base` tag.
 
 Besides `base` we also provide images for the `base-devel` and `multilib-devel` meta packages.
 

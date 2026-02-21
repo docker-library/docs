@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `postgres` official image](https://hub.docker.com/_/postgres) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,45 +26,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.2`, `18`, `latest`, `18.2-trixie`, `18-trixie`, `trixie`](https://github.com/docker-library/postgres/blob/12eb5762e3cf3c44440ed078b59843b5dfbde570/18/trixie/Dockerfile)
-
 -	[`18.2-bookworm`, `18-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/12eb5762e3cf3c44440ed078b59843b5dfbde570/18/bookworm/Dockerfile)
-
--	[`18.2-alpine3.23`, `18-alpine3.23`, `alpine3.23`, `18.2-alpine`, `18-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/2c9ee2611e4988031a207ec97b69ab213b20b95c/18/alpine3.23/Dockerfile)
-
--	[`18.2-alpine3.22`, `18-alpine3.22`, `alpine3.22`](https://github.com/docker-library/postgres/blob/2c9ee2611e4988031a207ec97b69ab213b20b95c/18/alpine3.22/Dockerfile)
-
--	[`17.8`, `17`, `17.8-trixie`, `17-trixie`](https://github.com/docker-library/postgres/blob/fd482cfacff9eaef8e0833084d4f2407f8078c58/17/trixie/Dockerfile)
 
 -	[`17.8-bookworm`, `17-bookworm`](https://github.com/docker-library/postgres/blob/fd482cfacff9eaef8e0833084d4f2407f8078c58/17/bookworm/Dockerfile)
 
--	[`17.8-alpine3.23`, `17-alpine3.23`, `17.8-alpine`, `17-alpine`](https://github.com/docker-library/postgres/blob/fd482cfacff9eaef8e0833084d4f2407f8078c58/17/alpine3.23/Dockerfile)
-
--	[`17.8-alpine3.22`, `17-alpine3.22`](https://github.com/docker-library/postgres/blob/fd482cfacff9eaef8e0833084d4f2407f8078c58/17/alpine3.22/Dockerfile)
-
--	[`16.12`, `16`, `16.12-trixie`, `16-trixie`](https://github.com/docker-library/postgres/blob/bf13909eb3ce10ecf5b24ec40069ebd6091e2347/16/trixie/Dockerfile)
-
 -	[`16.12-bookworm`, `16-bookworm`](https://github.com/docker-library/postgres/blob/bf13909eb3ce10ecf5b24ec40069ebd6091e2347/16/bookworm/Dockerfile)
-
--	[`16.12-alpine3.23`, `16-alpine3.23`, `16.12-alpine`, `16-alpine`](https://github.com/docker-library/postgres/blob/bf13909eb3ce10ecf5b24ec40069ebd6091e2347/16/alpine3.23/Dockerfile)
-
--	[`16.12-alpine3.22`, `16-alpine3.22`](https://github.com/docker-library/postgres/blob/bf13909eb3ce10ecf5b24ec40069ebd6091e2347/16/alpine3.22/Dockerfile)
-
--	[`15.16`, `15`, `15.16-trixie`, `15-trixie`](https://github.com/docker-library/postgres/blob/2c1a455e1e9e5f0f0a791264c2eec5ef36e1e36f/15/trixie/Dockerfile)
 
 -	[`15.16-bookworm`, `15-bookworm`](https://github.com/docker-library/postgres/blob/2c1a455e1e9e5f0f0a791264c2eec5ef36e1e36f/15/bookworm/Dockerfile)
 
--	[`15.16-alpine3.23`, `15-alpine3.23`, `15.16-alpine`, `15-alpine`](https://github.com/docker-library/postgres/blob/2c1a455e1e9e5f0f0a791264c2eec5ef36e1e36f/15/alpine3.23/Dockerfile)
-
--	[`15.16-alpine3.22`, `15-alpine3.22`](https://github.com/docker-library/postgres/blob/2c1a455e1e9e5f0f0a791264c2eec5ef36e1e36f/15/alpine3.22/Dockerfile)
-
--	[`14.21`, `14`, `14.21-trixie`, `14-trixie`](https://github.com/docker-library/postgres/blob/9cd7083435c29ac323e890883415520b08458939/14/trixie/Dockerfile)
-
 -	[`14.21-bookworm`, `14-bookworm`](https://github.com/docker-library/postgres/blob/9cd7083435c29ac323e890883415520b08458939/14/bookworm/Dockerfile)
-
--	[`14.21-alpine3.23`, `14-alpine3.23`, `14.21-alpine`, `14-alpine`](https://github.com/docker-library/postgres/blob/9cd7083435c29ac323e890883415520b08458939/14/alpine3.23/Dockerfile)
-
--	[`14.21-alpine3.22`, `14-alpine3.22`](https://github.com/docker-library/postgres/blob/9cd7083435c29ac323e890883415520b08458939/14/alpine3.22/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -98,7 +70,7 @@ PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant a
 ## start a postgres instance
 
 ```console
-$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+$ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d mips64le/postgres
 ```
 
 The default `postgres` user and database are created in the entrypoint with `initdb`.
@@ -110,7 +82,7 @@ The default `postgres` user and database are created in the entrypoint with `ini
 ## ... or via `psql`
 
 ```console
-$ docker run -it --rm --network some-network postgres psql -h some-postgres -U postgres
+$ docker run -it --rm --network some-network mips64le/postgres psql -h some-postgres -U postgres
 psql (14.3)
 Type "help" for help.
 
@@ -222,7 +194,7 @@ This (`PGDATA`) is an environment variable that is not Docker specific. Because 
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to some of the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-postgres -e POSTGRES_PASSWORD_FILE=/run/secrets/postgres-passwd -d postgres
+$ docker run --name some-postgres -e POSTGRES_PASSWORD_FILE=/run/secrets/postgres-passwd -d mips64le/postgres
 ```
 
 Currently, this is only supported for `POSTGRES_INITDB_ARGS`, `POSTGRES_PASSWORD`, `POSTGRES_USER`, and `POSTGRES_DB`.
@@ -265,13 +237,13 @@ There are many ways to set PostgreSQL server configuration. For information on w
 	$ # customize the config
 
 	$ # run postgres with custom config
-	$ docker run -d --name some-postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf -e POSTGRES_PASSWORD=mysecretpassword postgres -c 'config_file=/etc/postgresql/postgresql.conf'
+	$ docker run -d --name some-postgres -v "$PWD/my-postgres.conf":/etc/postgresql/postgresql.conf -e POSTGRES_PASSWORD=mysecretpassword mips64le/postgres -c 'config_file=/etc/postgresql/postgresql.conf'
 	```
 
 -	Set options directly on the run line. The entrypoint script is made so that any options passed to the docker command will be passed along to the `postgres` server daemon. From the [PostgreSQL docs](https://www.postgresql.org/docs/14/app-postgres.html#id-1.9.5.14.6.3) we see that any option available in a `.conf` file can be set via `-c`.
 
 	```console
-	$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword postgres -c shared_buffers=256MB -c max_connections=200
+	$ docker run -d --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword mips64le/postgres -c shared_buffers=256MB -c max_connections=200
 	```
 
 ## Locale Customization
@@ -279,7 +251,7 @@ There are many ways to set PostgreSQL server configuration. For information on w
 You can extend the Debian-based images with a simple `Dockerfile` to set a different locale. The following example will set the default locale to `de_DE.utf8`:
 
 ```dockerfile
-FROM postgres:14.3
+FROM mips64le/postgres:14.3
 RUN localedef -i de_DE -c -f UTF-8 -A /usr/share/locale/locale.alias de_DE.UTF-8
 ENV LANG de_DE.utf8
 ```
@@ -291,7 +263,7 @@ Also of note, Alpine-based variants starting with Postgres 15 support [ICU local
 You can set locales in the Alpine-based images with `POSTGRES_INITDB_ARGS` to set a different locale. The following example will set the default locale for a newly initialized database to `de_DE.utf8`:
 
 ```console
-$ docker run -d -e LANG=de_DE.utf8 -e POSTGRES_INITDB_ARGS="--locale-provider=icu --icu-locale=de-DE" -e POSTGRES_PASSWORD=mysecretpassword postgres:15-alpine 
+$ docker run -d -e LANG=de_DE.utf8 -e POSTGRES_INITDB_ARGS="--locale-provider=icu --icu-locale=de-DE" -e POSTGRES_PASSWORD=mysecretpassword mips64le/postgres:15-alpine 
 ```
 
 ## Additional Extensions
@@ -307,11 +279,11 @@ As of [docker-library/postgres#253](https://github.com/docker-library/postgres/p
 The main caveat to note is that `postgres` doesn't care what UID it runs as (as long as the owner of `PGDATA` matches), but `initdb` *does* care (and needs the user to exist in `/etc/passwd`):
 
 ```console
-$ docker run -it --rm --user www-data -e POSTGRES_PASSWORD=mysecretpassword postgres
+$ docker run -it --rm --user www-data -e POSTGRES_PASSWORD=mysecretpassword mips64le/postgres
 The files belonging to this database system will be owned by user "www-data".
 ...
 
-$ docker run -it --rm --user 1000:1000 -e POSTGRES_PASSWORD=mysecretpassword postgres
+$ docker run -it --rm --user 1000:1000 -e POSTGRES_PASSWORD=mysecretpassword mips64le/postgres
 initdb: could not look up effective user ID 1000: user does not exist
 ```
 
@@ -322,7 +294,7 @@ The three easiest ways to get around this:
 2.	bind-mount `/etc/passwd` read-only from the host (if the UID you desire is a valid user on your host):
 
 	```console
-	$ docker run -it --rm --user "$(id -u):$(id -g)" -v /etc/passwd:/etc/passwd:ro -e POSTGRES_PASSWORD=mysecretpassword postgres
+	$ docker run -it --rm --user "$(id -u):$(id -g)" -v /etc/passwd:/etc/passwd:ro -e POSTGRES_PASSWORD=mysecretpassword mips64le/postgres
 	The files belonging to this database system will be owned by user "jsmith".
 	...
 	```
@@ -331,12 +303,12 @@ The three easiest ways to get around this:
 
 	```console
 	$ docker volume create pg
-	$ docker run -it --rm -v pg:/var/lib/postgresql -e POSTGRES_PASSWORD=mysecretpassword postgres
+	$ docker run -it --rm -v pg:/var/lib/postgresql -e POSTGRES_PASSWORD=mysecretpassword mips64le/postgres
 	The files belonging to this database system will be owned by user "postgres".
 	...
 	( once it's finished initializing successfully and is waiting for connections, stop it )
 	$ docker run -it --rm -v pg:/var/lib/postgresql bash chown -R 1000:1000 /var/lib/postgresql
-	$ docker run -it --rm --user 1000:1000 -v pg:/var/lib/postgresql postgres
+	$ docker run -it --rm --user 1000:1000 -v pg:/var/lib/postgresql mips64le/postgres
 	LOG:  database system was shut down at 2017-01-20 00:03:23 UTC
 	LOG:  MultiXact member wraparound protections are now enabled
 	LOG:  autovacuum launcher started
@@ -351,7 +323,7 @@ Also note that the default `/dev/shm` size for containers is 64MB. If the shared
 
 ## Where to Store Data
 
-**Important note:** There are several ways to store data used by applications that run in Docker containers. We encourage users of the `postgres` images to familiarize themselves with the options available, including:
+**Important note:** There are several ways to store data used by applications that run in Docker containers. We encourage users of the `mips64le/postgres` images to familiarize themselves with the options available, including:
 
 -	Let Docker manage the storage of your database data [by writing the database files to disk on the host system using its own internal volume management](https://docs.docker.com/storage/volumes/). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
 -	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/storage/bind-mounts/). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
@@ -359,31 +331,13 @@ Also note that the default `/dev/shm` size for containers is 64MB. If the shared
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
 1.	Create a data directory on a suitable volume on your host system, e.g. `/my/own/datadir`.
-2.	Start your `postgres` container like this:
+2.	Start your `mips64le/postgres` container like this:
 
 	```console
-	$ docker run --name some-postgres -v /my/own/datadir:/var/lib/postgresql -e POSTGRES_PASSWORD=mysecretpassword -d postgres:tag
+	$ docker run --name some-postgres -v /my/own/datadir:/var/lib/postgresql -e POSTGRES_PASSWORD=mysecretpassword -d mips64le/postgres:tag
 	```
 
 The `-v /my/own/datadir:/var/lib/postgresql` part of the command mounts the `/my/own/datadir` directory from the underlying host system as `/var/lib/postgresql` inside the container, where PostgreSQL by default will write its data files.
-
-# Image Variants
-
-The `postgres` images come in many flavors, each designed for a specific use case.
-
-## `postgres:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `postgres:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
