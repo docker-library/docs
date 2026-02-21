@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `elixir` official image](https://hub.docker.com/_/elixir) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -154,14 +156,14 @@ Elixir leverages the Erlang VM, known for running low-latency, distributed and f
 ## Run it as the REPL
 
 ```console
-➸ docker run -it --rm elixir
+➸ docker run -it --rm amd64/elixir
 Erlang/OTP 18 [erts-7.2.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
 
 Interactive Elixir (1.2.1) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> System.version
 "1.2.1"
 iex(2)>
-➸ docker run -it --rm -h elixir.local elixir iex --sname snode
+➸ docker run -it --rm -h elixir.local amd64/elixir iex --sname snode
 Erlang/OTP 18 [erts-7.2.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false]
 
 Interactive Elixir (1.2.1) - press Ctrl+C to exit (type h() ENTER for help)
@@ -175,22 +177,22 @@ iex(snode@elixir)2> :c.uptime
 ## Run a single Elixir exs script
 
 ```console
-$ docker run -it --rm --name elixir-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp elixir elixir your-escript.exs
+$ docker run -it --rm --name elixir-inst1 -v "$PWD":/usr/src/myapp -w /usr/src/myapp amd64/elixir elixir your-escript.exs
 ```
 
 # Image Variants
 
-The `elixir` images come in many flavors, each designed for a specific use case.
+The `amd64/elixir` images come in many flavors, each designed for a specific use case.
 
-## `elixir:<version>`
+## `amd64/elixir:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `elixir:<version>-slim`
+## `amd64/elixir:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `elixir`. Unless you are working in an environment where *only* the `elixir` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `amd64/elixir`. Unless you are working in an environment where *only* the `amd64/elixir` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
-## `elixir:<version>-alpine`
+## `amd64/elixir:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 

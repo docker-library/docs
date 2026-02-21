@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `neurodebian` official image](https://hub.docker.com/_/neurodebian) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -89,14 +91,14 @@ NeuroDebian images only add NeuroDebian repository and repository's GPG key. No 
 
 `nd` tags are used to reflect suffixes used in versions of packages available from NeuroDebian.
 
-The `neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
+The `amd64/neurodebian:latest` tag will always point the Neurodebian-enabled latest stable release of Debian (which is, at the time of this writing, `debian:wheezy`).
 
 ## sources.list
 
 NeuroDebian APT file is installed under `/etc/apt/sources.list.d/neurodebian.sources.list` and currently enables only `main` (DFSG-compliant) area of the archive:
 
 ```console
-$ docker run neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
+$ docker run amd64/neurodebian cat /etc/apt/sources.list.d/neurodebian.sources.list
 deb http://neuro.debian.net/debian wheezy main
 deb http://neuro.debian.net/debian data main
 #deb-src http://neuro.debian.net/debian-devel wheezy main
