@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `eggdrop` official image](https://hub.docker.com/_/eggdrop) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/037d27fee1499a17a1062efcba0213801d82c405/develop/Dockerfile)
-
--	[`1.9`, `1.9.5`](https://github.com/eggheads/eggdrop-docker/blob/57fb1652a1880665b12e9f51775f173ecde24285/1.9/Dockerfile)
-
--	[`1.10`, `1.10.0`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/2861815d67478e41667b8ed2cf9d3f13a5e755c1/1.10/Dockerfile)
-
--	[`1.10.1rc1`](https://github.com/eggheads/eggdrop-docker/blob/fa9fab693902545745642c75650b56379d17b16b/1.10.1rc1/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -64,7 +60,7 @@ Eggdrop is the world's most popular Open Source IRC bot, designed for flexibilit
 To run this container the first time, you'll need to pass in, at minimum, a nickname and server via Environmental Variables. At minimum, a docker run command similar to
 
 ```console
-$ docker run -ti -e NICK=FooBot -e SERVER=irc.libera.chat -v /path/for/host/data:/home/eggdrop/eggdrop/data eggdrop
+$ docker run -ti -e NICK=FooBot -e SERVER=irc.libera.chat -v /path/for/host/data:/home/eggdrop/eggdrop/data ppc64le/eggdrop
 ```
 
 should be used. This will modify the appropriate values within the config file, then start your bot with the nickname FooBot and connect it to irc.libera.chat. These variables are only needed for your first run- after the first use, you can edit the config file directly. Additional configuration options are listed in the following sections.
@@ -118,13 +114,13 @@ If you use a config file from a previous eggdrop install (ie, you don't use the 
 To do this, start your container with something similar to
 
 ```console
-$ docker run -i -e NICK=FooBot -e SERVER=irc.libera.chat -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop
+$ docker run -i -e NICK=FooBot -e SERVER=irc.libera.chat -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d ppc64le/eggdrop
 ```
 
 If you provide your own config file, place it in the data dir and specify it as the argument to the docker container:
 
 ```console
-$ docker run -i -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d eggdrop mybot.conf
+$ docker run -i -v /path/to/eggdrop/files:/home/eggdrop/eggdrop/data -d ppc64le/eggdrop mybot.conf
 ```
 
 Any config file used with docker MUST end in .conf, such as eggdrop.conf or mybot.conf

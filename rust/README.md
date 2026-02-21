@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `rust` official image](https://hub.docker.com/_/rust) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -23,10 +25,6 @@ WARNING:
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
-
--	[`1-bullseye`, `1.93-bullseye`, `1.93.1-bullseye`, `bullseye`](https://github.com/rust-lang/docker-rust/blob/a67145c24ae0a04790c9d7b5289beb103e35e95e/stable/bullseye/Dockerfile)
-
--	[`1-slim-bullseye`, `1.93-slim-bullseye`, `1.93.1-slim-bullseye`, `slim-bullseye`](https://github.com/rust-lang/docker-rust/blob/a67145c24ae0a04790c9d7b5289beb103e35e95e/stable/bullseye/slim/Dockerfile)
 
 -	[`1-bookworm`, `1.93-bookworm`, `1.93.1-bookworm`, `bookworm`](https://github.com/rust-lang/docker-rust/blob/a67145c24ae0a04790c9d7b5289beb103e35e95e/stable/bookworm/Dockerfile)
 
@@ -78,7 +76,7 @@ Rust is a systems programming language sponsored by Mozilla Research. It is desi
 The most straightforward way to use this image is to use a Rust container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM rust:1.67
+FROM ppc64le/rust:1.67
 
 WORKDIR /usr/src/myapp
 COPY . .
@@ -120,28 +118,28 @@ See https://docs.docker.com/develop/develop-images/multistage-build/ for more in
 There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp rust:1.23.0 cargo build --release
+$ docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD":/usr/src/myapp -w /usr/src/myapp ppc64le/rust:1.23.0 cargo build --release
 ```
 
 This will add your current directory, as a volume, to the container, set the working directory to the volume, and run the command `cargo build --release`. This tells Cargo, Rust's build system, to compile the crate in `myapp` and output the executable to `target/release/myapp`.
 
 # Image Variants
 
-The `rust` images come in many flavors, each designed for a specific use case.
+The `ppc64le/rust` images come in many flavors, each designed for a specific use case.
 
-## `rust:<version>`
+## `ppc64le/rust:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm, bullseye, or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `rust:<version>-slim`
+## `ppc64le/rust:<version>-slim`
 
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `rust`. Unless you are working in an environment where *only* the `rust` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
+This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `ppc64le/rust`. Unless you are working in an environment where *only* the `ppc64le/rust` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
-## `rust:<version>-alpine`
+## `ppc64le/rust:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
