@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `elasticsearch` official image](https://hub.docker.com/_/elasticsearch) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.19.11`](https://github.com/elastic/dockerfiles/blob/f7772a32e16a4867434d723b232842eec7393b9c/elasticsearch/Dockerfile)
-
--	[`9.2.5`](https://github.com/elastic/dockerfiles/blob/8a655bd2337a6f9f6f7ad3f3847b32bb4f698676/elasticsearch/Dockerfile)
-
--	[`9.3.0`](https://github.com/elastic/dockerfiles/blob/e4f56cd49d21682fdfd7ee0c457de67360479d9c/elasticsearch/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
 
 # Quick reference (cont.)
 
