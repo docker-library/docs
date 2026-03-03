@@ -16,11 +16,11 @@ Azul Zulu images on Docker Hub are available for different combinations of versi
 
 The following Long Term Support (LTS) versions are available:
 
-- 8
-- 11
-- 17
-- 21
-- 25
+-	8
+-	11
+-	17
+-	21
+-	25
 
 Short Term Support (STS) versions are available for six months after their initial release.
 
@@ -28,16 +28,16 @@ Short Term Support (STS) versions are available for six months after their initi
 
 The following package types are available:
 
-- jdk (default)
-- jdk-headless
-- jre
-- jre-headless
+-	jdk (default)
+-	jdk-headless
+-	jre
+-	jre-headless
 
 ### Systems
 
-Images based on the following base systems are available :
+Images based on the following base systems are available:
 
-- Debian (apt)
+-	Debian (apt)
 
 ## Usage
 
@@ -45,8 +45,9 @@ Images based on the following base systems are available :
 
 To run a container of your choice and validate its version, use the command below as an example.
 
-Using Azul Zulu based on Debian: 
-```
+Using Azul Zulu based on Debian:
+
+```bash
 docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
 ```
 
