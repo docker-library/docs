@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `25.11`, `25.11-jammy`, `25.11.2`, `25.11.2-jammy`, `25.11.2.24`, `25.11.2.24-jammy`](https://github.com/ClickHouse/docker-library/blob/d64425f973f90e8f3c96cd1391127e649d0fcee8/server/25.11.2.24/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `26.1`, `26.1-jammy`, `26.1.3`, `26.1.3-jammy`, `26.1.3.52`, `26.1.3.52-jammy`](https://github.com/ClickHouse/docker-library/blob/5efe2795fa728dd0cc056d26a99f703558a31d45/server/26.1.3.52/Dockerfile.ubuntu)
 
--	[`25.10`, `25.10-jammy`, `25.10.3`, `25.10.3-jammy`, `25.10.3.100`, `25.10.3.100-jammy`](https://github.com/ClickHouse/docker-library/blob/d64425f973f90e8f3c96cd1391127e649d0fcee8/server/25.10.3.100/Dockerfile.ubuntu)
+-	[`25.12`, `25.12-jammy`, `25.12.7`, `25.12.7-jammy`, `25.12.7.21`, `25.12.7.21-jammy`](https://github.com/ClickHouse/docker-library/blob/5efe2795fa728dd0cc056d26a99f703558a31d45/server/25.12.7.21/Dockerfile.ubuntu)
 
--	[`25.9`, `25.9-jammy`, `25.9.6`, `25.9.6-jammy`, `25.9.6.117`, `25.9.6.117-jammy`](https://github.com/ClickHouse/docker-library/blob/d64425f973f90e8f3c96cd1391127e649d0fcee8/server/25.9.6.117/Dockerfile.ubuntu)
+-	[`25.11`, `25.11-jammy`, `25.11.9`, `25.11.9-jammy`, `25.11.9.34`, `25.11.9.34-jammy`](https://github.com/ClickHouse/docker-library/blob/5efe2795fa728dd0cc056d26a99f703558a31d45/server/25.11.9.34/Dockerfile.ubuntu)
 
--	[`lts`, `lts-jammy`, `25.8`, `25.8-jammy`, `25.8.12`, `25.8.12-jammy`, `25.8.12.129`, `25.8.12.129-jammy`](https://github.com/ClickHouse/docker-library/blob/d64425f973f90e8f3c96cd1391127e649d0fcee8/server/25.8.12.129/Dockerfile.ubuntu)
+-	[`lts`, `lts-jammy`, `25.8`, `25.8-jammy`, `25.8.16`, `25.8.16-jammy`, `25.8.16.34`, `25.8.16.34-jammy`](https://github.com/ClickHouse/docker-library/blob/5efe2795fa728dd0cc056d26a99f703558a31d45/server/25.8.16.34/Dockerfile.ubuntu)
 
--	[`25.3`, `25.3-jammy`, `25.3.9`, `25.3.9-jammy`, `25.3.9.72`, `25.3.9.72-jammy`](https://github.com/ClickHouse/docker-library/blob/d64425f973f90e8f3c96cd1391127e649d0fcee8/server/25.3.9.72/Dockerfile.ubuntu)
+-	[`25.3`, `25.3-jammy`, `25.3.14`, `25.3.14-jammy`, `25.3.14.14`, `25.3.14.14-jammy`](https://github.com/ClickHouse/docker-library/blob/5efe2795fa728dd0cc056d26a99f703558a31d45/server/25.3.14.14/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
@@ -121,7 +121,7 @@ docker rm some-clickhouse-server
 You can expose your ClickHouse running in docker by [mapping a particular port](https://docs.docker.com/config/containers/container-networking/) from inside the container using host ports:
 
 ```bash
-docker run -d -p 18123:8123 -p19000:9000 -e CLICKHOUSE_PASSWORD=changeme --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
+docker run -d -p 18123:8123 -p 19000:9000 -e CLICKHOUSE_PASSWORD=changeme --name some-clickhouse-server --ulimit nofile=262144:262144 clickhouse
 echo 'SELECT version()' | curl 'http://localhost:18123/?password=changeme' --data-binary @-
 ```
 

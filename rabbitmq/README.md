@@ -24,37 +24,29 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.1`, `4.2`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/72351b5bcd09512d263e92f2ca97a85d8d8a040b/4.2/ubuntu/Dockerfile)
+-	[`4.2.4`, `4.2`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/812cf8218aecfc0da875317f8814a0048ba35145/4.2/ubuntu/Dockerfile)
 
--	[`4.2.1-management`, `4.2-management`, `4-management`, `management`](https://github.com/docker-library/rabbitmq/blob/6b8d927a4f6a170d0cf962a2dd796815b19c05c3/4.2/ubuntu/management/Dockerfile)
+-	[`4.2.4-management`, `4.2-management`, `4-management`, `management`](https://github.com/docker-library/rabbitmq/blob/b5ae37fa3abb4e303994dd8d46187e4f31ff1f81/4.2/ubuntu/management/Dockerfile)
 
--	[`4.2.1-alpine`, `4.2-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/72351b5bcd09512d263e92f2ca97a85d8d8a040b/4.2/alpine/Dockerfile)
+-	[`4.2.4-alpine`, `4.2-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/812cf8218aecfc0da875317f8814a0048ba35145/4.2/alpine/Dockerfile)
 
--	[`4.2.1-management-alpine`, `4.2-management-alpine`, `4-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/6b8d927a4f6a170d0cf962a2dd796815b19c05c3/4.2/alpine/management/Dockerfile)
+-	[`4.2.4-management-alpine`, `4.2-management-alpine`, `4-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/b5ae37fa3abb4e303994dd8d46187e4f31ff1f81/4.2/alpine/management/Dockerfile)
 
--	[`4.1.6`, `4.1`](https://github.com/docker-library/rabbitmq/blob/72351b5bcd09512d263e92f2ca97a85d8d8a040b/4.1/ubuntu/Dockerfile)
+-	[`4.1.8`, `4.1`](https://github.com/docker-library/rabbitmq/blob/15751795452057e03e4770bbd3cb030ba85d2bd8/4.1/ubuntu/Dockerfile)
 
--	[`4.1.6-management`, `4.1-management`](https://github.com/docker-library/rabbitmq/blob/01055a3ed6f0a7a40d4ff1d17d3f0758039e431f/4.1/ubuntu/management/Dockerfile)
+-	[`4.1.8-management`, `4.1-management`](https://github.com/docker-library/rabbitmq/blob/1a6beaa46bfab3a6c7a692dfa01a8067a53c185b/4.1/ubuntu/management/Dockerfile)
 
--	[`4.1.6-alpine`, `4.1-alpine`](https://github.com/docker-library/rabbitmq/blob/72351b5bcd09512d263e92f2ca97a85d8d8a040b/4.1/alpine/Dockerfile)
+-	[`4.1.8-alpine`, `4.1-alpine`](https://github.com/docker-library/rabbitmq/blob/15751795452057e03e4770bbd3cb030ba85d2bd8/4.1/alpine/Dockerfile)
 
--	[`4.1.6-management-alpine`, `4.1-management-alpine`](https://github.com/docker-library/rabbitmq/blob/01055a3ed6f0a7a40d4ff1d17d3f0758039e431f/4.1/alpine/management/Dockerfile)
+-	[`4.1.8-management-alpine`, `4.1-management-alpine`](https://github.com/docker-library/rabbitmq/blob/1a6beaa46bfab3a6c7a692dfa01a8067a53c185b/4.1/alpine/management/Dockerfile)
 
--	[`4.0.9`, `4.0`](https://github.com/docker-library/rabbitmq/blob/72351b5bcd09512d263e92f2ca97a85d8d8a040b/4.0/ubuntu/Dockerfile)
+-	[`4.0.9`, `4.0`](https://github.com/docker-library/rabbitmq/blob/644f5c62deffef436823f552874e6b434f5a8e31/4.0/ubuntu/Dockerfile)
 
--	[`4.0.9-management`, `4.0-management`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/4.0/ubuntu/management/Dockerfile)
+-	[`4.0.9-management`, `4.0-management`](https://github.com/docker-library/rabbitmq/blob/1784862d26af52bee1d9ec593a0b707e1ed85989/4.0/ubuntu/management/Dockerfile)
 
--	[`4.0.9-alpine`, `4.0-alpine`](https://github.com/docker-library/rabbitmq/blob/72351b5bcd09512d263e92f2ca97a85d8d8a040b/4.0/alpine/Dockerfile)
+-	[`4.0.9-alpine`, `4.0-alpine`](https://github.com/docker-library/rabbitmq/blob/644f5c62deffef436823f552874e6b434f5a8e31/4.0/alpine/Dockerfile)
 
--	[`4.0.9-management-alpine`, `4.0-management-alpine`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/4.0/alpine/management/Dockerfile)
-
--	[`3.13.7`, `3.13`, `3`](https://github.com/docker-library/rabbitmq/blob/72351b5bcd09512d263e92f2ca97a85d8d8a040b/3.13/ubuntu/Dockerfile)
-
--	[`3.13.7-management`, `3.13-management`, `3-management`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/3.13/ubuntu/management/Dockerfile)
-
--	[`3.13.7-alpine`, `3.13-alpine`, `3-alpine`](https://github.com/docker-library/rabbitmq/blob/72351b5bcd09512d263e92f2ca97a85d8d8a040b/3.13/alpine/Dockerfile)
-
--	[`3.13.7-management-alpine`, `3.13-management-alpine`, `3-management-alpine`](https://github.com/docker-library/rabbitmq/blob/36e4d246e934a96b1c3a920e398f96434f3fc34c/3.13/alpine/management/Dockerfile)
+-	[`4.0.9-management-alpine`, `4.0-management-alpine`](https://github.com/docker-library/rabbitmq/blob/1784862d26af52bee1d9ec593a0b707e1ed85989/4.0/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -136,10 +128,15 @@ RABBITMQ_VM_MEMORY_HIGH_WATERMARK
 If you wish to change the default username and password of `guest` / `guest`, you can do so with the `RABBITMQ_DEFAULT_USER` and `RABBITMQ_DEFAULT_PASS` environmental variables. These variables were available previously in the docker-specific entrypoint shell script but are now available in RabbitMQ directly.
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password rabbitmq:3-management
+$ docker run --detach --hostname my-rabbit --name some-rabbit \
+    --env RABBITMQ_DEFAULT_USER=user \
+    --env RABBITMQ_DEFAULT_PASS=password \
+    --publish 15672:15672 \
+    --publish 5672:5672 \
+     rabbitmq:management
 ```
 
-You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser and use `user`/`password` to gain access to the management console
+You can then go to `http://localhost:15672` or `http://host-ip:15672` in a browser and use `user`/`password` to gain access to the [management UI](https://www.rabbitmq.com/docs/management).
 
 ### Setting default vhost
 

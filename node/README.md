@@ -24,69 +24,69 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`25-alpine3.22`, `25.2-alpine3.22`, `25.2.1-alpine3.22`, `alpine3.22`, `current-alpine3.22`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/alpine3.22/Dockerfile)
+-	[`25-alpine3.22`, `25.7-alpine3.22`, `25.7.0-alpine3.22`, `alpine3.22`, `current-alpine3.22`](https://github.com/nodejs/docker-node/blob/4cdc1588a00d87009420fbe89abb009dbc24c091/25/alpine3.22/Dockerfile)
 
--	[`25-alpine`, `25-alpine3.23`, `25.2-alpine`, `25.2-alpine3.23`, `25.2.1-alpine`, `25.2.1-alpine3.23`, `alpine`, `alpine3.23`, `current-alpine`, `current-alpine3.23`](https://github.com/nodejs/docker-node/blob/8874b155122c3e130f8104f57bd56696dab77cb6/25/alpine3.23/Dockerfile)
+-	[`25-alpine`, `25-alpine3.23`, `25.7-alpine`, `25.7-alpine3.23`, `25.7.0-alpine`, `25.7.0-alpine3.23`, `alpine`, `alpine3.23`, `current-alpine`, `current-alpine3.23`](https://github.com/nodejs/docker-node/blob/4cdc1588a00d87009420fbe89abb009dbc24c091/25/alpine3.23/Dockerfile)
 
--	[`25`, `25-bookworm`, `25.2`, `25.2-bookworm`, `25.2.1`, `25.2.1-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/bookworm/Dockerfile)
+-	[`25`, `25-bookworm`, `25.7`, `25.7-bookworm`, `25.7.0`, `25.7.0-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/4cdc1588a00d87009420fbe89abb009dbc24c091/25/bookworm/Dockerfile)
 
--	[`25-bookworm-slim`, `25-slim`, `25.2-bookworm-slim`, `25.2-slim`, `25.2.1-bookworm-slim`, `25.2.1-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/bookworm-slim/Dockerfile)
+-	[`25-bookworm-slim`, `25-slim`, `25.7-bookworm-slim`, `25.7-slim`, `25.7.0-bookworm-slim`, `25.7.0-slim`, `bookworm-slim`, `current-bookworm-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/4cdc1588a00d87009420fbe89abb009dbc24c091/25/bookworm-slim/Dockerfile)
 
--	[`25-bullseye`, `25.2-bullseye`, `25.2.1-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/bullseye/Dockerfile)
+-	[`25-bullseye`, `25.7-bullseye`, `25.7.0-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/4cdc1588a00d87009420fbe89abb009dbc24c091/25/bullseye/Dockerfile)
 
--	[`25-bullseye-slim`, `25.2-bullseye-slim`, `25.2.1-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/bullseye-slim/Dockerfile)
+-	[`25-bullseye-slim`, `25.7-bullseye-slim`, `25.7.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/4cdc1588a00d87009420fbe89abb009dbc24c091/25/bullseye-slim/Dockerfile)
 
--	[`25-trixie`, `25.2-trixie`, `25.2.1-trixie`, `current-trixie`, `trixie`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/trixie/Dockerfile)
+-	[`25-trixie`, `25.7-trixie`, `25.7.0-trixie`, `current-trixie`, `trixie`](https://github.com/nodejs/docker-node/blob/4cdc1588a00d87009420fbe89abb009dbc24c091/25/trixie/Dockerfile)
 
--	[`25-trixie-slim`, `25.2-trixie-slim`, `25.2.1-trixie-slim`, `current-trixie-slim`, `trixie-slim`](https://github.com/nodejs/docker-node/blob/25e49232583710c7f70df7258d904861bec73b73/25/trixie-slim/Dockerfile)
+-	[`25-trixie-slim`, `25.7-trixie-slim`, `25.7.0-trixie-slim`, `current-trixie-slim`, `trixie-slim`](https://github.com/nodejs/docker-node/blob/4cdc1588a00d87009420fbe89abb009dbc24c091/25/trixie-slim/Dockerfile)
 
--	[`24-alpine3.22`, `24.11-alpine3.22`, `24.11.1-alpine3.22`, `krypton-alpine3.22`, `lts-alpine3.22`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/24/alpine3.22/Dockerfile)
+-	[`24-alpine3.22`, `24.14-alpine3.22`, `24.14.0-alpine3.22`, `krypton-alpine3.22`, `lts-alpine3.22`](https://github.com/nodejs/docker-node/blob/62ab97e3a124eeaa6e12aa36815f5d71d498ce29/24/alpine3.22/Dockerfile)
 
--	[`24-alpine`, `24-alpine3.23`, `24.11-alpine`, `24.11-alpine3.23`, `24.11.1-alpine`, `24.11.1-alpine3.23`, `krypton-alpine`, `krypton-alpine3.23`, `lts-alpine`, `lts-alpine3.23`](https://github.com/nodejs/docker-node/blob/8874b155122c3e130f8104f57bd56696dab77cb6/24/alpine3.23/Dockerfile)
+-	[`24-alpine`, `24-alpine3.23`, `24.14-alpine`, `24.14-alpine3.23`, `24.14.0-alpine`, `24.14.0-alpine3.23`, `krypton-alpine`, `krypton-alpine3.23`, `lts-alpine`, `lts-alpine3.23`](https://github.com/nodejs/docker-node/blob/62ab97e3a124eeaa6e12aa36815f5d71d498ce29/24/alpine3.23/Dockerfile)
 
--	[`24`, `24-bookworm`, `24.11`, `24.11-bookworm`, `24.11.1`, `24.11.1-bookworm`, `krypton`, `krypton-bookworm`, `lts`, `lts-bookworm`, `lts-krypton`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/24/bookworm/Dockerfile)
+-	[`24`, `24-bookworm`, `24.14`, `24.14-bookworm`, `24.14.0`, `24.14.0-bookworm`, `krypton`, `krypton-bookworm`, `lts`, `lts-bookworm`, `lts-krypton`](https://github.com/nodejs/docker-node/blob/62ab97e3a124eeaa6e12aa36815f5d71d498ce29/24/bookworm/Dockerfile)
 
--	[`24-bookworm-slim`, `24-slim`, `24.11-bookworm-slim`, `24.11-slim`, `24.11.1-bookworm-slim`, `24.11.1-slim`, `krypton-bookworm-slim`, `krypton-slim`, `lts-bookworm-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/24/bookworm-slim/Dockerfile)
+-	[`24-bookworm-slim`, `24-slim`, `24.14-bookworm-slim`, `24.14-slim`, `24.14.0-bookworm-slim`, `24.14.0-slim`, `krypton-bookworm-slim`, `krypton-slim`, `lts-bookworm-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/62ab97e3a124eeaa6e12aa36815f5d71d498ce29/24/bookworm-slim/Dockerfile)
 
--	[`24-bullseye`, `24.11-bullseye`, `24.11.1-bullseye`, `krypton-bullseye`, `lts-bullseye`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/24/bullseye/Dockerfile)
+-	[`24-bullseye`, `24.14-bullseye`, `24.14.0-bullseye`, `krypton-bullseye`, `lts-bullseye`](https://github.com/nodejs/docker-node/blob/62ab97e3a124eeaa6e12aa36815f5d71d498ce29/24/bullseye/Dockerfile)
 
--	[`24-bullseye-slim`, `24.11-bullseye-slim`, `24.11.1-bullseye-slim`, `krypton-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/24/bullseye-slim/Dockerfile)
+-	[`24-bullseye-slim`, `24.14-bullseye-slim`, `24.14.0-bullseye-slim`, `krypton-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/62ab97e3a124eeaa6e12aa36815f5d71d498ce29/24/bullseye-slim/Dockerfile)
 
--	[`24-trixie`, `24.11-trixie`, `24.11.1-trixie`, `krypton-trixie`, `lts-trixie`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/24/trixie/Dockerfile)
+-	[`24-trixie`, `24.14-trixie`, `24.14.0-trixie`, `krypton-trixie`, `lts-trixie`](https://github.com/nodejs/docker-node/blob/62ab97e3a124eeaa6e12aa36815f5d71d498ce29/24/trixie/Dockerfile)
 
--	[`24-trixie-slim`, `24.11-trixie-slim`, `24.11.1-trixie-slim`, `krypton-trixie-slim`, `lts-trixie-slim`](https://github.com/nodejs/docker-node/blob/a364e16a23fb97ea9768e5adbae36f1de63f44e9/24/trixie-slim/Dockerfile)
+-	[`24-trixie-slim`, `24.14-trixie-slim`, `24.14.0-trixie-slim`, `krypton-trixie-slim`, `lts-trixie-slim`](https://github.com/nodejs/docker-node/blob/62ab97e3a124eeaa6e12aa36815f5d71d498ce29/24/trixie-slim/Dockerfile)
 
--	[`22-alpine3.22`, `22.21-alpine3.22`, `22.21.1-alpine3.22`, `jod-alpine3.22`](https://github.com/nodejs/docker-node/blob/bf78d7603fbea92cd3652edb3b2edadd6f5a3fe8/22/alpine3.22/Dockerfile)
+-	[`22-alpine3.22`, `22.22-alpine3.22`, `22.22.0-alpine3.22`, `jod-alpine3.22`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/22/alpine3.22/Dockerfile)
 
--	[`22-alpine`, `22-alpine3.23`, `22.21-alpine`, `22.21-alpine3.23`, `22.21.1-alpine`, `22.21.1-alpine3.23`, `jod-alpine`, `jod-alpine3.23`](https://github.com/nodejs/docker-node/blob/8874b155122c3e130f8104f57bd56696dab77cb6/22/alpine3.23/Dockerfile)
+-	[`22-alpine`, `22-alpine3.23`, `22.22-alpine`, `22.22-alpine3.23`, `22.22.0-alpine`, `22.22.0-alpine3.23`, `jod-alpine`, `jod-alpine3.23`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/22/alpine3.23/Dockerfile)
 
--	[`22`, `22-bookworm`, `22.21`, `22.21-bookworm`, `22.21.1`, `22.21.1-bookworm`, `jod`, `jod-bookworm`](https://github.com/nodejs/docker-node/blob/bf78d7603fbea92cd3652edb3b2edadd6f5a3fe8/22/bookworm/Dockerfile)
+-	[`22`, `22-bookworm`, `22.22`, `22.22-bookworm`, `22.22.0`, `22.22.0-bookworm`, `jod`, `jod-bookworm`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/22/bookworm/Dockerfile)
 
--	[`22-bookworm-slim`, `22-slim`, `22.21-bookworm-slim`, `22.21-slim`, `22.21.1-bookworm-slim`, `22.21.1-slim`, `jod-bookworm-slim`, `jod-slim`](https://github.com/nodejs/docker-node/blob/bf78d7603fbea92cd3652edb3b2edadd6f5a3fe8/22/bookworm-slim/Dockerfile)
+-	[`22-bookworm-slim`, `22-slim`, `22.22-bookworm-slim`, `22.22-slim`, `22.22.0-bookworm-slim`, `22.22.0-slim`, `jod-bookworm-slim`, `jod-slim`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/22/bookworm-slim/Dockerfile)
 
--	[`22-bullseye`, `22.21-bullseye`, `22.21.1-bullseye`, `jod-bullseye`](https://github.com/nodejs/docker-node/blob/bf78d7603fbea92cd3652edb3b2edadd6f5a3fe8/22/bullseye/Dockerfile)
+-	[`22-bullseye`, `22.22-bullseye`, `22.22.0-bullseye`, `jod-bullseye`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/22/bullseye/Dockerfile)
 
--	[`22-bullseye-slim`, `22.21-bullseye-slim`, `22.21.1-bullseye-slim`, `jod-bullseye-slim`](https://github.com/nodejs/docker-node/blob/bf78d7603fbea92cd3652edb3b2edadd6f5a3fe8/22/bullseye-slim/Dockerfile)
+-	[`22-bullseye-slim`, `22.22-bullseye-slim`, `22.22.0-bullseye-slim`, `jod-bullseye-slim`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/22/bullseye-slim/Dockerfile)
 
--	[`22-trixie`, `22.21-trixie`, `22.21.1-trixie`, `jod-trixie`](https://github.com/nodejs/docker-node/blob/bf78d7603fbea92cd3652edb3b2edadd6f5a3fe8/22/trixie/Dockerfile)
+-	[`22-trixie`, `22.22-trixie`, `22.22.0-trixie`, `jod-trixie`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/22/trixie/Dockerfile)
 
--	[`22-trixie-slim`, `22.21-trixie-slim`, `22.21.1-trixie-slim`, `jod-trixie-slim`](https://github.com/nodejs/docker-node/blob/bf78d7603fbea92cd3652edb3b2edadd6f5a3fe8/22/trixie-slim/Dockerfile)
+-	[`22-trixie-slim`, `22.22-trixie-slim`, `22.22.0-trixie-slim`, `jod-trixie-slim`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/22/trixie-slim/Dockerfile)
 
--	[`20-alpine3.22`, `20.19-alpine3.22`, `20.19.6-alpine3.22`, `iron-alpine3.22`](https://github.com/nodejs/docker-node/blob/edcdc15af6dea5978e694a8efe90347925baafad/20/alpine3.22/Dockerfile)
+-	[`20-alpine3.22`, `20.20-alpine3.22`, `20.20.0-alpine3.22`, `iron-alpine3.22`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/20/alpine3.22/Dockerfile)
 
--	[`20-alpine`, `20-alpine3.23`, `20.19-alpine`, `20.19-alpine3.23`, `20.19.6-alpine`, `20.19.6-alpine3.23`, `iron-alpine`, `iron-alpine3.23`](https://github.com/nodejs/docker-node/blob/8874b155122c3e130f8104f57bd56696dab77cb6/20/alpine3.23/Dockerfile)
+-	[`20-alpine`, `20-alpine3.23`, `20.20-alpine`, `20.20-alpine3.23`, `20.20.0-alpine`, `20.20.0-alpine3.23`, `iron-alpine`, `iron-alpine3.23`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/20/alpine3.23/Dockerfile)
 
--	[`20`, `20-bookworm`, `20.19`, `20.19-bookworm`, `20.19.6`, `20.19.6-bookworm`, `iron`, `iron-bookworm`](https://github.com/nodejs/docker-node/blob/edcdc15af6dea5978e694a8efe90347925baafad/20/bookworm/Dockerfile)
+-	[`20`, `20-bookworm`, `20.20`, `20.20-bookworm`, `20.20.0`, `20.20.0-bookworm`, `iron`, `iron-bookworm`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/20/bookworm/Dockerfile)
 
--	[`20-bookworm-slim`, `20-slim`, `20.19-bookworm-slim`, `20.19-slim`, `20.19.6-bookworm-slim`, `20.19.6-slim`, `iron-bookworm-slim`, `iron-slim`](https://github.com/nodejs/docker-node/blob/edcdc15af6dea5978e694a8efe90347925baafad/20/bookworm-slim/Dockerfile)
+-	[`20-bookworm-slim`, `20-slim`, `20.20-bookworm-slim`, `20.20-slim`, `20.20.0-bookworm-slim`, `20.20.0-slim`, `iron-bookworm-slim`, `iron-slim`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/20/bookworm-slim/Dockerfile)
 
--	[`20-bullseye`, `20.19-bullseye`, `20.19.6-bullseye`, `iron-bullseye`](https://github.com/nodejs/docker-node/blob/edcdc15af6dea5978e694a8efe90347925baafad/20/bullseye/Dockerfile)
+-	[`20-bullseye`, `20.20-bullseye`, `20.20.0-bullseye`, `iron-bullseye`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/20/bullseye/Dockerfile)
 
--	[`20-bullseye-slim`, `20.19-bullseye-slim`, `20.19.6-bullseye-slim`, `iron-bullseye-slim`](https://github.com/nodejs/docker-node/blob/edcdc15af6dea5978e694a8efe90347925baafad/20/bullseye-slim/Dockerfile)
+-	[`20-bullseye-slim`, `20.20-bullseye-slim`, `20.20.0-bullseye-slim`, `iron-bullseye-slim`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/20/bullseye-slim/Dockerfile)
 
--	[`20-trixie`, `20.19-trixie`, `20.19.6-trixie`, `iron-trixie`](https://github.com/nodejs/docker-node/blob/edcdc15af6dea5978e694a8efe90347925baafad/20/trixie/Dockerfile)
+-	[`20-trixie`, `20.20-trixie`, `20.20.0-trixie`, `iron-trixie`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/20/trixie/Dockerfile)
 
--	[`20-trixie-slim`, `20.19-trixie-slim`, `20.19.6-trixie-slim`, `iron-trixie-slim`](https://github.com/nodejs/docker-node/blob/edcdc15af6dea5978e694a8efe90347925baafad/20/trixie-slim/Dockerfile)
+-	[`20-trixie-slim`, `20.20-trixie-slim`, `20.20.0-trixie-slim`, `iron-trixie-slim`](https://github.com/nodejs/docker-node/blob/893511202f3e478d6b23e76b5658b93be6e906b7/20/trixie-slim/Dockerfile)
 
 # Quick reference (cont.)
 

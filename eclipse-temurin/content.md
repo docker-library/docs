@@ -19,7 +19,7 @@ Yes, it's possible for all image flavors except for Windows-based images. The fo
 You need to put your CA certificates into `/certificates` directory inside the container (e.g. by using a volume) and opt-in into CA certificate processing by setting the environment variable `USE_SYSTEM_CA_CERTS` on the container to any value (if you are overriding the entrypoint script, please make sure you call `/__cacert_entrypoint.sh` to enable the processing). Using Docker CLI this might look like this:
 
 ```console
-$ docker run -v $(pwd)/certs:/certificates/ -e USE_SYSTEM_CA_CERTS=1 %%IMAGE%%:21
+$ docker run -v $(pwd)/certs:/certificates/ -e USE_SYSTEM_CA_CERTS=1 %%IMAGE%%:25
 ```
 
 When run like this, your certificates will get added to both the JVM truststore and to the system CA store (e.g. for use by `curl` and other CLI tools). However, if you are running your containers in a restricted-by-default environment (such as Red Hat OpenShift), there will be some small differences:
@@ -32,10 +32,10 @@ While this feature has been tested in multiple scenarios, there is always a chan
 
 # How to use this Image
 
-To run a pre-built jar file with the latest OpenJDK 21, use the following Dockerfile:
+To run a pre-built jar file with the latest OpenJDK 25, use the following Dockerfile:
 
 ```dockerfile
-FROM %%IMAGE%%:21
+FROM %%IMAGE%%:25
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -56,7 +56,7 @@ If you are using a distribution that we don't provide an image for you can copy 
 # Example
 FROM <base image>
 ENV JAVA_HOME=/opt/java/openjdk
-COPY --from=%%IMAGE%%:21 $JAVA_HOME $JAVA_HOME
+COPY --from=%%IMAGE%%:25 $JAVA_HOME $JAVA_HOME
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
 ```
 
@@ -66,7 +66,7 @@ On OpenJDK 21+, a JRE can be generated using `jlink`, see the following Dockerfi
 
 ```dockerfile
 # Example of custom Java runtime using jlink in a multi-stage container build
-FROM %%IMAGE%%:21 as jre-build
+FROM %%IMAGE%%:25 as jre-build
 
 # Create a custom Java runtime
 RUN $JAVA_HOME/bin/jlink \
@@ -92,7 +92,7 @@ CMD ["java", "-jar", "/opt/app/japp.jar"]
 If you want to place the jar file on the host file system instead of inside the container, you can mount the host path onto the container by using the following commands:
 
 ```dockerfile
-FROM %%IMAGE%%:21.0.2_13-jdk
+FROM %%IMAGE%%:25
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 

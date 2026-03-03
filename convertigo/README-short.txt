@@ -1,1 +1,1 @@
-Enterprise grade full-stack Open source Low Code & No Code Platform for web & mobile application
+Enterprise-grade full-stack open-source AI-driven Low Code & No Code platform for web & mobile apps

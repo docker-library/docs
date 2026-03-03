@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`fresh`, `8.0.0`, `8`, `8.0`, `latest`](https://github.com/varnish/docker-varnish/blob/ec128addad8eb92680ac7adb2f00f6a679a48be5/fresh/debian/Dockerfile)
+-	[`fresh`, `8.0.0`, `8`, `8.0`, `latest`](https://github.com/varnish/docker-varnish/blob/9a68f156ac2fa5d6c2d08ebca5cd80fa7f5a4623/fresh/debian/Dockerfile)
 
--	[`fresh-alpine`, `8.0.0-alpine`, `8-alpine`, `8.0-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/ec128addad8eb92680ac7adb2f00f6a679a48be5/fresh/alpine/Dockerfile)
+-	[`fresh-alpine`, `8.0.0-alpine`, `8-alpine`, `8.0-alpine`, `alpine`](https://github.com/varnish/docker-varnish/blob/d80cb1ac78089dfa29cb2148c3b3cc5e196757c6/fresh/alpine/Dockerfile)
 
--	[`old`, `7.7.3`, `7.7`](https://github.com/varnish/docker-varnish/blob/ec128addad8eb92680ac7adb2f00f6a679a48be5/old/debian/Dockerfile)
+-	[`old`, `7.7.3`, `7.7`](https://github.com/varnish/docker-varnish/blob/b341feabd8feeafaa2d25d35fdf44eb27a2eaaa1/old/debian/Dockerfile)
 
--	[`old-alpine`, `7.7.3-alpine`, `7.7-alpine`](https://github.com/varnish/docker-varnish/blob/ec128addad8eb92680ac7adb2f00f6a679a48be5/old/alpine/Dockerfile)
+-	[`old-alpine`, `7.7.3-alpine`, `7.7-alpine`](https://github.com/varnish/docker-varnish/blob/68b666606150f9aa637a23d4358906eb6a409252/old/alpine/Dockerfile)
 
--	[`stable`, `6.0.16`, `6.0`](https://github.com/varnish/docker-varnish/blob/2c2b9d92008b7623bd837cbb542ae02061d9a598/stable/debian/Dockerfile)
+-	[`stable`, `6.0.16`, `6.0`](https://github.com/varnish/docker-varnish/blob/d41acec41c1251d0b512023abc7fd9cfd4a1490f/stable/debian/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -40,7 +40,7 @@ WARNING:
 	[https://github.com/varnish/docker-varnish/issues](https://github.com/varnish/docker-varnish/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/varnish/), [`arm32v7`](https://hub.docker.com/r/arm32v7/varnish/), [`arm64v8`](https://hub.docker.com/r/arm64v8/varnish/), [`i386`](https://hub.docker.com/r/i386/varnish/), [`ppc64le`](https://hub.docker.com/r/ppc64le/varnish/), [`s390x`](https://hub.docker.com/r/s390x/varnish/)
+	[`amd64`](https://hub.docker.com/r/amd64/varnish/), [`arm64v8`](https://hub.docker.com/r/arm64v8/varnish/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/varnish/` directory](https://github.com/docker-library/repo-info/blob/master/repos/varnish) ([history](https://github.com/docker-library/repo-info/commits/master/repos/varnish))  

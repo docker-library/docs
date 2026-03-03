@@ -24,15 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.17.29`](https://github.com/elastic/dockerfiles/blob/28b876f2aaba7bc27d76a1acd55cbc8ada9b5dea/kibana/Dockerfile)
+-	[`8.19.12`](https://github.com/elastic/dockerfiles/blob/5d0e6c12928c399d149b3c401bb1f6877051739c/kibana/Dockerfile)
 
--	[`8.18.8`](https://github.com/elastic/dockerfiles/blob/6a7937aa369e0368020bcff78884c2b3645c50dd/kibana/Dockerfile)
+-	[`9.2.6`](https://github.com/elastic/dockerfiles/blob/f1a5963f6249ea2c80d3bfea77aeefc8f7fdde4c/kibana/Dockerfile)
 
--	[`8.19.8`](https://github.com/elastic/dockerfiles/blob/7aa29efed80c36cf3e8a5fb2f4042003c337d180/kibana/Dockerfile)
-
--	[`9.1.8`](https://github.com/elastic/dockerfiles/blob/40dc26ca4f199d80a86f605b408cea7ebcf6d9ec/kibana/Dockerfile)
-
--	[`9.2.2`](https://github.com/elastic/dockerfiles/blob/00d6bf1aa50c5ee8262940a79f08ed9d8d954794/kibana/Dockerfile)
+-	[`9.3.1`](https://github.com/elastic/dockerfiles/blob/a7f458cf3ade50bae8f393c21e33d2b0030454fd/kibana/Dockerfile)
 
 # Quick reference (cont.)
 

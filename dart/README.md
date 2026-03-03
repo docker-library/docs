@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.10.3-sdk`, `3.10-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.10.3`, `3.10`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/630db39b919e7a225a8ca1a4f6e285fd2c947513/stable/trixie/Dockerfile)
+-	[`3.11.1-sdk`, `3.11-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.11.1`, `3.11`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/157b87887f8dd887a2204f46be69fe8f4e4ea55f/stable/trixie/Dockerfile)
 
--	[`3.11.0-200.1.beta-sdk`, `beta-sdk`, `3.11.0-200.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/630db39b919e7a225a8ca1a4f6e285fd2c947513/beta/trixie/Dockerfile)
+-	[`3.12.0-113.2.beta-sdk`, `beta-sdk`, `3.12.0-113.2.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/157b87887f8dd887a2204f46be69fe8f4e4ea55f/beta/trixie/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -49,13 +49,15 @@ WARNING:
 
 # What is Dart?
 
-Dart is a client-optimized language for developing fast apps on any platform. Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks. For more details, see https://dart.dev.
+Dart is an approachable, portable, and productive language for high-quality apps on any platform.
+
+Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks, and support for full-stack development. For more details, see https://dart.dev.
 
 By utilizing Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe), you can create very small runtime images (~10 MB).
 
 ## Using this image
 
-We recommend using small runtime images that leverage Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe). This enables creating small runtime images (~10 MB).
+We recommend using small runtime images that leverage Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-build#build-a-cli-application). This enables creating small runtime images (~10 MB).
 
 ### Creating a Dart server app
 
@@ -91,7 +93,7 @@ The `Dockerfile` created by the `dart` tool performs two steps:
 2.	Assembles the runtime image by combining the compiled server with the Dart VM runtime and it's needed dependencies located in `/runtime/`.
 
 ```Dockerfile
-# Specify the Dart SDK base image version using dart:<version> (ex: dart:2.12)
+# Specify the Dart SDK base image version using dart:<version> (ex: dart:3.10)
 FROM dart:stable AS build
 
 # Resolve app dependencies.
@@ -103,13 +105,13 @@ RUN dart pub get
 COPY . .
 # Ensure packages are still up-to-date if anything has changed
 RUN dart pub get --offline
-RUN dart compile exe bin/server.dart -o bin/server
+RUN dart build cli --target bin/server.dart -o output
 
 # Build minimal serving image from AOT-compiled `/server` and required system
 # libraries and configuration files stored in `/runtime/` from the build stage.
 FROM scratch
 COPY --from=build /runtime/ /
-COPY --from=build /app/bin/server /app/bin/
+COPY --from=build /app/output/bundle/ /app/
 
 # Start server.
 EXPOSE 8080

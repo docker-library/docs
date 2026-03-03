@@ -24,9 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.12.2-bookworm`, `9.12-bookworm`, `9-bookworm`, `bookworm`, `9.12.2`, `9.12`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.12/bookworm/Dockerfile)
+-	[`9.14.1-bookworm`, `9.14-bookworm`, `9-bookworm`, `bookworm`, `9.14.1`, `9.14`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/507dcd550c1eb050a5839572f74b908e3a3e306b/9.14/bookworm/Dockerfile)
 
--	[`9.12.2-slim-bookworm`, `9.12-slim-bookworm`, `9-slim-bookworm`, `slim-bookworm`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.12/slim-bookworm/Dockerfile)
+-	[`9.14.1-slim-bookworm`, `9.14-slim-bookworm`, `9-slim-bookworm`, `slim-bookworm`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/507dcd550c1eb050a5839572f74b908e3a3e306b/9.14/slim-bookworm/Dockerfile)
+
+-	[`9.12.2-bookworm`, `9.12-bookworm`, `9.12.2`, `9.12`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.12/bookworm/Dockerfile)
+
+-	[`9.12.2-slim-bookworm`, `9.12-slim-bookworm`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.12/slim-bookworm/Dockerfile)
 
 -	[`9.10.3-bookworm`, `9.10-bookworm`](https://github.com/haskell/docker-haskell/blob/d478ceb8ff33f6208db87008e48cd084fd9747a1/9.10/bookworm/Dockerfile)
 

@@ -24,15 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22.04`, `jammy-20251013`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20251013-b40e3010&id=b40e301002ccc279d4014443ac99c4a4bf12bc9e)
+-	[`22.04`, `jammy-20260210.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20260210.1-3c7694ee&id=3c7694ee72385dbbf896c67b32a634705ce91c66)
 
--	[`24.04`, `noble-20251013`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20251013-6177ca63&id=6177ca63f5beee0b6d2993721a62850b9146e474)
+-	[`24.04`, `noble-20260210.1`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20260210.1-38538451&id=385384516f9bf26ae3520bb32aa512c4c5bdfb68)
 
--	[`25.04`, `plucky-20251001`, `plucky`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-plucky-amd64-20251001-547c400a&id=547c400a291828191316040f3e41e24b971efb8e)
+-	[`25.10`, `questing-20251217`, `questing`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20251217-883bce4d&id=883bce4d25b37c4c52e6d25bcd3f2961671ce1c7)
 
--	[`25.10`, `questing-20251029`, `questing`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20251029-91c87e7b&id=91c87e7b5197434a1a7673d8f49ba82206aba0da)
-
--	[`26.04`, `resolute-20251130`, `resolute`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-amd64-20251130-aa0cefe8&id=aa0cefe8d5889d04980a54b03c0508e12eba2315)
+-	[`26.04`, `resolute-20260108`, `resolute`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-amd64-20260108-9f123886&id=9f123886b68e14781c19fe584ac24e9303815afd)
 
 # Quick reference (cont.)
 
@@ -93,8 +91,8 @@ The tarballs published by Canonical, referenced by `dist-*` tags in https://git.
 
 -	[Jammy](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/jammy/ubuntu-oci)
 -	[Noble](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/noble/ubuntu-oci)
--	[Plucky](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/plucky/ubuntu-oci)
 -	[Questing](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/questing/ubuntu-oci)
+-	[Resolute](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/resolute/ubuntu-oci)
 
 # License
 
