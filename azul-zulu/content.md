@@ -16,11 +16,11 @@ Azul Zulu images on Docker Hub are available for different combinations of versi
 
 The following Long Term Support (LTS) versions are available:
 
--	8
--	11
--	17
--	21
--	25
+- 8
+- 11
+- 17
+- 21
+- 25
 
 Short Term Support (STS) versions are available for six months after their initial release.
 
@@ -28,34 +28,27 @@ Short Term Support (STS) versions are available for six months after their initi
 
 The following package types are available:
 
--	jdk (default)
--	jdk-headless
--	jre
--	jre-headless
+- jdk (default)
+- jdk-headless
+- jre
+- jre-headless
 
 ### Systems
 
 Images based on the following base systems are available :
 
--	Debian (apt)
--	Alpine (apk)
--	Rocky Linux (yum)
+- Debian (apt)
 
 ## Usage
 
 ### Running a Container
 
-To run a container of your choice and validate its version, use the commands below as an example.
+To run a container of your choice and validate its version, use the command below as an example.
 
--	Azul Zulu based on Debian: `
-	docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
-	`
--	Azul Zulu based on Alpine: `
-	docker run -it --rm azul-zulu:<ZULU_VERSION>-alpine<DISTRO_VERSION> java -version
-	`
--	Azul Zulu based on Rocky Linux: `
-	docker run -it --rm azul-zulu:<ZULU_VERSION>-rockylinux<DISTRO_VERSION> java --version
-	`
+Using Azul Zulu based on Debian: 
+```
+docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
+```
 
 ### Building a Container With Your Own Application
 
@@ -64,7 +57,7 @@ To build a Debian Docker container with a pre-built jar file with, use the follo
 ```text
 FROM azul-zulu:<VERSION>
 RUN mkdir /opt/my-app
-COPY my-app.jar /opt/may-app
+COPY my-app.jar /opt/my-app
 CMD ["java", "-jar", "/opt/my-app/my-app.jar"]
 ```
 
