@@ -24,77 +24,85 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `10`, `10.0`, `10.0.3`, `10.0-jre`, `10.0-jre21`, `10.0.3-jre`, `10.0.3-jre21`, `10.0.3.0`, `10.0.3.0-jre`, `10.0.3.0-jre21`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/10.0/jre21/Dockerfile)
+-	[`latest`, `10`, `10.0`, `10.0.4`, `10.0-jre`, `10.0-jre21`, `10.0.4-jre`, `10.0.4-jre21`, `10.0.4.0`, `10.0.4.0-jre`, `10.0.4.0-jre21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.0/jre21/Dockerfile)
 
--	[`10-jdk`, `10-jdk21`, `10.0-jdk`, `10.0-jdk21`, `10.0.3-jdk`, `10.0.3-jdk21`, `10.0.3.0-jdk`, `10.0.3.0-jdk21`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/10.0/jdk21/Dockerfile)
+-	[`10-jdk`, `10-jdk21`, `10.0-jdk`, `10.0-jdk21`, `10.0.4-jdk`, `10.0.4-jdk21`, `10.0.4.0-jdk`, `10.0.4.0-jdk21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.0/jdk21/Dockerfile)
 
--	[`10.0-jre25`, `10.0.3-jre25`, `10.0.3.0-jre25`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/10.0/jre25/Dockerfile)
+-	[`10.0-jre25`, `10.0.4-jre25`, `10.0.4.0-jre25`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.0/jre25/Dockerfile)
 
--	[`10.0-jdk25`, `10.0.3-jdk25`, `10.0.3.0-jdk25`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/10.0/jdk25/Dockerfile)
+-	[`10.0-jdk25`, `10.0.4-jdk25`, `10.0.4.0-jdk25`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.0/jdk25/Dockerfile)
 
--	[`9`, `9.4`, `9.4.14`, `9.4-jre`, `9.4-jre8`, `9.4.14-jre`, `9.4.14-jre8`, `9.4.14.0`, `9.4.14.0-jre`, `9.4.14.0-jre8`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4/jre8/Dockerfile)
+-	[`9`, `9.4`, `9.4.14`, `9.4-jre`, `9.4-jre8`, `9.4.14-jre`, `9.4.14-jre8`, `9.4.14.0`, `9.4.14.0-jre`, `9.4.14.0-jre8`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4/jre8/Dockerfile)
 
--	[`9-jdk`, `9-jdk8`, `9.4-jdk`, `9.4-jdk8`, `9.4.14-jdk`, `9.4.14-jdk8`, `9.4.14.0-jdk`, `9.4.14.0-jdk8`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4/jdk8/Dockerfile)
+-	[`9-jdk`, `9-jdk8`, `9.4-jdk`, `9.4-jdk8`, `9.4.14-jdk`, `9.4.14-jdk8`, `9.4.14.0-jdk`, `9.4.14.0-jdk8`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4/jdk8/Dockerfile)
 
--	[`9.4-jre11`, `9.4.14-jre11`, `9.4.14.0-jre11`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4/jre11/Dockerfile)
+-	[`9.4-jre11`, `9.4.14-jre11`, `9.4.14.0-jre11`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4/jre11/Dockerfile)
 
--	[`9.4-jdk11`, `9.4.14-jdk11`, `9.4.14.0-jdk11`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4/jdk11/Dockerfile)
+-	[`9.4-jdk11`, `9.4.14-jdk11`, `9.4.14.0-jdk11`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4/jdk11/Dockerfile)
 
--	[`9.4-jdk17`, `9.4.14-jdk17`, `9.4.14.0-jdk17`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4/jdk17/Dockerfile)
+-	[`9.4-jdk17`, `9.4.14-jdk17`, `9.4.14.0-jdk17`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4/jdk17/Dockerfile)
 
--	[`9.4-jre17`, `9.4.14-jre17`, `9.4.14.0-jre17`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4/jre17/Dockerfile)
+-	[`9.4-jre17`, `9.4.14-jre17`, `9.4.14.0-jre17`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4/jre17/Dockerfile)
 
--	[`9.4-jdk21`, `9.4.14-jdk21`, `9.4.14.0-jdk21`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4/jdk21/Dockerfile)
+-	[`9.4-jdk21`, `9.4.14-jdk21`, `9.4.14.0-jdk21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4/jdk21/Dockerfile)
 
--	[`9.4-jre21`, `9.4.14-jre21`, `9.4.14.0-jre21`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4/jre21/Dockerfile)
+-	[`9.4-jre21`, `9.4.14-jre21`, `9.4.14.0-jre21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4/jre21/Dockerfile)
 
--	[`9.4-jdk25`, `9.4.14-jdk25`, `9.4.14.0-jdk25`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4/jdk25/Dockerfile)
+-	[`9.4-jdk25`, `9.4.14-jdk25`, `9.4.14.0-jdk25`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4/jdk25/Dockerfile)
 
--	[`9.4-jre25`, `9.4.14-jre25`, `9.4.14.0-jre25`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4/jre25/Dockerfile)
+-	[`9.4-jre25`, `9.4.14-jre25`, `9.4.14.0-jre25`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4/jre25/Dockerfile)
 
--	[`9.3`, `9.3.15`, `9.3-jre`, `9.3-jre8`, `9.3.15-jre`, `9.3.15-jre8`, `9.3.15.0`, `9.3.15.0-jre`, `9.3.15.0-jre8`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.3/jre8/Dockerfile)
+-	[`9.3`, `9.3.15`, `9.3-jre`, `9.3-jre8`, `9.3.15-jre`, `9.3.15-jre8`, `9.3.15.0`, `9.3.15.0-jre`, `9.3.15.0-jre8`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.3/jre8/Dockerfile)
 
--	[`9.3-jdk`, `9.3-jdk8`, `9.3.15-jdk`, `9.3.15-jdk8`, `9.3.15.0-jdk`, `9.3.15.0-jdk8`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.3/jdk8/Dockerfile)
+-	[`9.3-jdk`, `9.3-jdk8`, `9.3.15-jdk`, `9.3.15-jdk8`, `9.3.15.0-jdk`, `9.3.15.0-jdk8`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.3/jdk8/Dockerfile)
 
--	[`9.3-jre11`, `9.3.15-jre11`, `9.3.15.0-jre11`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.3/jre11/Dockerfile)
+-	[`9.3-jre11`, `9.3.15-jre11`, `9.3.15.0-jre11`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.3/jre11/Dockerfile)
 
--	[`9.3-jdk11`, `9.3.15-jdk11`, `9.3.15.0-jdk11`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.3/jdk11/Dockerfile)
+-	[`9.3-jdk11`, `9.3.15-jdk11`, `9.3.15.0-jdk11`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.3/jdk11/Dockerfile)
 
--	[`9.3-jdk17`, `9.3.15-jdk17`, `9.3.15.0-jdk17`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.3/jdk17/Dockerfile)
+-	[`9.3-jdk17`, `9.3.15-jdk17`, `9.3.15.0-jdk17`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.3/jdk17/Dockerfile)
 
--	[`9.3-jre17`, `9.3.15-jre17`, `9.3.15.0-jre17`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.3/jre17/Dockerfile)
+-	[`9.3-jre17`, `9.3.15-jre17`, `9.3.15.0-jre17`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.3/jre17/Dockerfile)
 
--	[`9.3-jdk21`, `9.3.15-jdk21`, `9.3.15.0-jdk21`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.3/jdk21/Dockerfile)
+-	[`9.3-jdk21`, `9.3.15-jdk21`, `9.3.15.0-jdk21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.3/jdk21/Dockerfile)
 
--	[`9.3-jre21`, `9.3.15-jre21`, `9.3.15.0-jre21`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.3/jre21/Dockerfile)
+-	[`9.3-jre21`, `9.3.15-jre21`, `9.3.15.0-jre21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.3/jre21/Dockerfile)
 
--	[`10.0-dev-jre21`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/10.0-dev/jre21/Dockerfile)
+-	[`10.0-dev-jre21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.0-dev/jre21/Dockerfile)
 
--	[`10.0-dev-jdk21`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/10.0-dev/jdk21/Dockerfile)
+-	[`10.0-dev-jdk21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.0-dev/jdk21/Dockerfile)
 
--	[`10.0-dev-jre25`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/10.0-dev/jre25/Dockerfile)
+-	[`10.0-dev-jre25`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.0-dev/jre25/Dockerfile)
 
--	[`10.0-dev-jdk25`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/10.0-dev/jdk25/Dockerfile)
+-	[`10.0-dev-jdk25`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.0-dev/jdk25/Dockerfile)
 
--	[`9.4-dev-jre8`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4-dev/jre8/Dockerfile)
+-	[`10.1-dev-jre21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.1-dev/jre21/Dockerfile)
 
--	[`9.4-dev-jdk8`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4-dev/jdk8/Dockerfile)
+-	[`10.1-dev-jdk21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.1-dev/jdk21/Dockerfile)
 
--	[`9.4-dev-jre11`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4-dev/jre11/Dockerfile)
+-	[`10.1-dev-jre25`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.1-dev/jre25/Dockerfile)
 
--	[`9.4-dev-jdk11`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4-dev/jdk11/Dockerfile)
+-	[`10.1-dev-jdk25`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/10.1-dev/jdk25/Dockerfile)
 
--	[`9.4-dev-jdk17`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4-dev/jdk17/Dockerfile)
+-	[`9.4-dev-jre8`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4-dev/jre8/Dockerfile)
 
--	[`9.4-dev-jre17`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4-dev/jre17/Dockerfile)
+-	[`9.4-dev-jdk8`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4-dev/jdk8/Dockerfile)
 
--	[`9.4-dev-jdk21`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4-dev/jdk21/Dockerfile)
+-	[`9.4-dev-jre11`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4-dev/jre11/Dockerfile)
 
--	[`9.4-dev-jre21`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4-dev/jre21/Dockerfile)
+-	[`9.4-dev-jdk11`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4-dev/jdk11/Dockerfile)
 
--	[`9.4-dev-jdk25`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4-dev/jdk25/Dockerfile)
+-	[`9.4-dev-jdk17`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4-dev/jdk17/Dockerfile)
 
--	[`9.4-dev-jre25`](https://github.com/jruby/docker-jruby/blob/abb1caf047a968985f0c60d73f4b2a8a09e8b060/9.4-dev/jre25/Dockerfile)
+-	[`9.4-dev-jre17`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4-dev/jre17/Dockerfile)
+
+-	[`9.4-dev-jdk21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4-dev/jdk21/Dockerfile)
+
+-	[`9.4-dev-jre21`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4-dev/jre21/Dockerfile)
+
+-	[`9.4-dev-jdk25`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4-dev/jdk25/Dockerfile)
+
+-	[`9.4-dev-jre25`](https://github.com/jruby/docker-jruby/blob/19b2eb743a76f23e95173f29944c3a07f8e24f5f/9.4-dev/jre25/Dockerfile)
 
 # Quick reference (cont.)
 
