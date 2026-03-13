@@ -48,7 +48,7 @@ To run a container of your choice and validate its version, use the command belo
 Using Azul Zulu based on Debian:
 
 ```bash
-docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
+docker run -it --rm %%IMAGE%%:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
 ```
 
 ### Building a Container With Your Own Application
