@@ -14,30 +14,15 @@ Azul Zulu images on Docker Hub are available for different combinations of versi
 
 ### Versions
 
-The following Long Term Support (LTS) versions are available:
-
--	8
--	11
--	17
--	21
--	25
-
-Short Term Support (STS) versions are available for six months after their initial release.
+Multiple Long Term Support (LTS) versions are available. For information on support duration and available versions, refer to the [Azul Support Roadmap](https://www.azul.com/products/azul-support-roadmap/).
 
 ### Packages
 
-The following package types are available:
-
--	jdk (default)
--	jdk-headless
--	jre
--	jre-headless
+Multiple package types are available, including JDK and JRE variants. See the list of available tags for the complete list of supported packages.
 
 ### Systems
 
-Images based on the following base systems are available:
-
--	Debian (apt)
+Images are available for multiple base systems. See the list of available tags for the complete list of supported base systems.
 
 ## Usage
 
