@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.13.1`, `2.13`, `2`, `latest`](https://github.com/krakend/docker-library/blob/740c6d87249e2d0331ffe3f9e37054e5d939f850/2.13.1/Dockerfile)
+-	[`2.13.2`, `2.13`, `2`, `latest`](https://github.com/krakend/docker-library/blob/06f5a5d88185e99c9477eb303c7e1445dbb39e5b/2.13.2/Dockerfile)
 
 # Quick reference (cont.)
 

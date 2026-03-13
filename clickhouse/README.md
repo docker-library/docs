@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `26.1`, `26.1-jammy`, `26.1.3`, `26.1.3-jammy`, `26.1.3.52`, `26.1.3.52-jammy`](https://github.com/ClickHouse/docker-library/blob/5efe2795fa728dd0cc056d26a99f703558a31d45/server/26.1.3.52/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `26.2`, `26.2-jammy`, `26.2.4`, `26.2.4-jammy`, `26.2.4.23`, `26.2.4.23-jammy`](https://github.com/ClickHouse/docker-library/blob/7697338ff98fafdedbaa5f0a6e77c8cf3321e775/server/26.2.4.23/Dockerfile.ubuntu)
 
--	[`25.12`, `25.12-jammy`, `25.12.7`, `25.12.7-jammy`, `25.12.7.21`, `25.12.7.21-jammy`](https://github.com/ClickHouse/docker-library/blob/5efe2795fa728dd0cc056d26a99f703558a31d45/server/25.12.7.21/Dockerfile.ubuntu)
+-	[`26.1`, `26.1-jammy`, `26.1.4`, `26.1.4-jammy`, `26.1.4.35`, `26.1.4.35-jammy`](https://github.com/ClickHouse/docker-library/blob/7697338ff98fafdedbaa5f0a6e77c8cf3321e775/server/26.1.4.35/Dockerfile.ubuntu)
 
--	[`25.11`, `25.11-jammy`, `25.11.9`, `25.11.9-jammy`, `25.11.9.34`, `25.11.9.34-jammy`](https://github.com/ClickHouse/docker-library/blob/5efe2795fa728dd0cc056d26a99f703558a31d45/server/25.11.9.34/Dockerfile.ubuntu)
+-	[`25.12`, `25.12-jammy`, `25.12.8`, `25.12.8-jammy`, `25.12.8.9`, `25.12.8.9-jammy`](https://github.com/ClickHouse/docker-library/blob/7697338ff98fafdedbaa5f0a6e77c8cf3321e775/server/25.12.8.9/Dockerfile.ubuntu)
 
--	[`lts`, `lts-jammy`, `25.8`, `25.8-jammy`, `25.8.16`, `25.8.16-jammy`, `25.8.16.34`, `25.8.16.34-jammy`](https://github.com/ClickHouse/docker-library/blob/5efe2795fa728dd0cc056d26a99f703558a31d45/server/25.8.16.34/Dockerfile.ubuntu)
+-	[`lts`, `lts-jammy`, `25.8`, `25.8-jammy`, `25.8.18`, `25.8.18-jammy`, `25.8.18.1`, `25.8.18.1-jammy`](https://github.com/ClickHouse/docker-library/blob/7697338ff98fafdedbaa5f0a6e77c8cf3321e775/server/25.8.18.1/Dockerfile.ubuntu)
 
--	[`25.3`, `25.3-jammy`, `25.3.14`, `25.3.14-jammy`, `25.3.14.14`, `25.3.14.14-jammy`](https://github.com/ClickHouse/docker-library/blob/5efe2795fa728dd0cc056d26a99f703558a31d45/server/25.3.14.14/Dockerfile.ubuntu)
+-	[`25.3`, `25.3-jammy`, `25.3.14`, `25.3.14-jammy`, `25.3.14.14`, `25.3.14.14-jammy`](https://github.com/ClickHouse/docker-library/blob/7697338ff98fafdedbaa5f0a6e77c8cf3321e775/server/25.3.14.14/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 

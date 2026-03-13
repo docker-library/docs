@@ -24,9 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.10.1`, `9.10`, `9`, `latest`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10/Dockerfile)
+-	[`10.0.0`, `10.0`, `10`, `latest`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0/Dockerfile)
 
--	[`9.10.1-slim`, `9.10-slim`, `9-slim`, `slim`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10-slim/Dockerfile)
+-	[`10.0.0-slim`, `10.0-slim`, `10-slim`, `slim`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0-slim/Dockerfile)
+
+-	[`9.10.1`, `9.10`, `9`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10/Dockerfile)
+
+-	[`9.10.1-slim`, `9.10-slim`, `9-slim`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10-slim/Dockerfile)
 
 -	[`9.9.0`, `9.9`](https://github.com/apache/solr-docker/blob/aa51c522c3e74cd1b2886209ea249358a34d324a/9.9/Dockerfile)
 
@@ -38,7 +42,7 @@ WARNING:
 	[The Solr Users mailing list](https://solr.apache.org/community.html#mailing-lists-chat)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/), [`ppc64le`](https://hub.docker.com/r/ppc64le/solr/), [`s390x`](https://hub.docker.com/r/s390x/solr/)
+	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/), [`ppc64le`](https://hub.docker.com/r/ppc64le/solr/), [`riscv64`](https://hub.docker.com/r/riscv64/solr/), [`s390x`](https://hub.docker.com/r/s390x/solr/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/solr/` directory](https://github.com/docker-library/repo-info/blob/master/repos/solr) ([history](https://github.com/docker-library/repo-info/commits/master/repos/solr))  
