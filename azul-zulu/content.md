@@ -56,9 +56,8 @@ docker run -it --rm %%IMAGE%%:<ZULU_VERSION>-debian<DISTRO_VERSION> java -versio
 To build a Debian Docker container with a pre-built jar file with, use the following example Dockerfile:
 
 ```text
-FROM azul-zulu:<VERSION>
-RUN mkdir /opt/my-app
-COPY my-app.jar /opt/my-app
+FROM %%IMAGE%%:<VERSION>
+COPY my-app.jar /opt/my-app/
 CMD ["java", "-jar", "/opt/my-app/my-app.jar"]
 ```
 
