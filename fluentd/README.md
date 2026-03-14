@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `fluentd` official image](https://hub.docker.com/_/fluentd) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.16.11-debian-1.0`, `v1.16-debian-1`](https://github.com/fluent/fluentd-docker-image/blob/f1cc6c311f673af8d4d68c7cbe97e5b0831511bc/v1.16/debian/Dockerfile)
-
--	[`v1.19.2-debian-1.0`, `v1.19-debian-1`, `v1.19.2-1.0`, `v1.19-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/162a49598542a981bbf73470f0bba815dc4dbf0e/v1.19/debian/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -58,7 +58,7 @@ For more information, check [official site](https://www.fluentd.org/) and [docum
 # How to run images
 
 ```bash
-$ docker run -p 24224:24224 -p 24224:24224/udp -u fluent -v /path/to/dir:/fluentd/log fluentd
+$ docker run -p 24224:24224 -p 24224:24224/udp -u fluent -v /path/to/dir:/fluentd/log arm32v6/fluentd
 2019-01-16 11:49:55 +0000 [info]: parsing config file is succeeded path="/fluentd/etc/fluent.conf"
 ...
 2019-01-16 11:58:27 +0000 [info]: #0 [input1] listening port port=24224 bind="0.0.0.0"
