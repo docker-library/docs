@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `ibm-semeru-runtimes` official image](https://hub.docker.com/_/ibm-semeru-runtimes) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -142,7 +144,7 @@ The IBM Semeru Runtimes are free production-ready open source binaries built wit
 To run a pre-built japp.jar file with the latest OpenJDK 11, use the following Dockerfile:
 
 ```dockerfile
-FROM ibm-semeru-runtimes:open-11-jdk
+FROM s390x/ibm-semeru-runtimes:open-11-jdk
 RUN mkdir /opt/app
 COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
@@ -163,7 +165,7 @@ If you are using a distribution that we don't provide an image for you can copy 
 # Example
 FROM <base image>
 ENV JAVA_HOME=/opt/java/openjdk
-COPY --from=ibm-semeru-runtimes:open-11-jdk $JAVA_HOME $JAVA_HOME
+COPY --from=s390x/ibm-semeru-runtimes:open-11-jdk $JAVA_HOME $JAVA_HOME
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
 ```
 
