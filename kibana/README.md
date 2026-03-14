@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `kibana` official image](https://hub.docker.com/_/kibana) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.19.12`](https://github.com/elastic/dockerfiles/blob/5d0e6c12928c399d149b3c401bb1f6877051739c/kibana/Dockerfile)
-
--	[`9.2.6`](https://github.com/elastic/dockerfiles/blob/f1a5963f6249ea2c80d3bfea77aeefc8f7fdde4c/kibana/Dockerfile)
-
--	[`9.3.1`](https://github.com/elastic/dockerfiles/blob/a7f458cf3ade50bae8f393c21e33d2b0030454fd/kibana/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 

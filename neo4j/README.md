@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `neo4j` official image](https://hub.docker.com/_/neo4j) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,41 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2026.02.2-community-trixie`, `2026.02-community-trixie`, `2026-community-trixie`, `2026.02.2-community`, `2026.02-community`, `2026-community`, `2026.02.2-trixie`, `2026.02-trixie`, `2026-trixie`, `2026.02.2`, `2026.02`, `2026`, `community-trixie`, `community`, `trixie`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/e2c37a8f3f80c632199fd1152581f5e856e1ecf3/2026.02.2/trixie/community/Dockerfile)
-
--	[`2026.02.2-enterprise-trixie`, `2026.02-enterprise-trixie`, `2026-enterprise-trixie`, `2026.02.2-enterprise`, `2026.02-enterprise`, `2026-enterprise`, `enterprise-trixie`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/e2c37a8f3f80c632199fd1152581f5e856e1ecf3/2026.02.2/trixie/enterprise/Dockerfile)
-
--	[`2026.02.2-community-ubi10`, `2026.02-community-ubi10`, `2026-community-ubi10`, `2026.02.2-ubi10`, `2026.02-ubi10`, `2026-ubi10`, `community-ubi10`, `ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/e2c37a8f3f80c632199fd1152581f5e856e1ecf3/2026.02.2/ubi10/community/Dockerfile)
-
--	[`2026.02.2-enterprise-ubi10`, `2026.02-enterprise-ubi10`, `2026-enterprise-ubi10`, `enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/e2c37a8f3f80c632199fd1152581f5e856e1ecf3/2026.02.2/ubi10/enterprise/Dockerfile)
-
--	[`2026.02.2-community-bullseye`, `2026.02-community-bullseye`, `2026-community-bullseye`, `2026.02.2-bullseye`, `2026.02-bullseye`, `2026-bullseye`, `community-bullseye`, `bullseye`](https://github.com/neo4j/docker-neo4j-publish/blob/e2c37a8f3f80c632199fd1152581f5e856e1ecf3/2026.02.2/bullseye/community/Dockerfile)
-
--	[`2026.02.2-enterprise-bullseye`, `2026.02-enterprise-bullseye`, `2026-enterprise-bullseye`, `enterprise-bullseye`](https://github.com/neo4j/docker-neo4j-publish/blob/e2c37a8f3f80c632199fd1152581f5e856e1ecf3/2026.02.2/bullseye/enterprise/Dockerfile)
-
--	[`2026.02.2-community-ubi9`, `2026.02-community-ubi9`, `2026-community-ubi9`, `2026.02.2-ubi9`, `2026.02-ubi9`, `2026-ubi9`, `community-ubi9`, `ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/e2c37a8f3f80c632199fd1152581f5e856e1ecf3/2026.02.2/ubi9/community/Dockerfile)
-
--	[`2026.02.2-enterprise-ubi9`, `2026.02-enterprise-ubi9`, `2026-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/e2c37a8f3f80c632199fd1152581f5e856e1ecf3/2026.02.2/ubi9/enterprise/Dockerfile)
-
--	[`5.26.22-community-trixie`, `5.26-community-trixie`, `5-community-trixie`, `5.26.22-community`, `5.26-community`, `5-community`, `5.26.22-trixie`, `5.26-trixie`, `5-trixie`, `5.26.22`, `5.26`, `5`](https://github.com/neo4j/docker-neo4j-publish/blob/fce023a649d17c1f9f1208fc38ae5bada246e6c0/5.26.22/trixie/community/Dockerfile)
-
--	[`5.26.22-enterprise-trixie`, `5.26-enterprise-trixie`, `5-enterprise-trixie`, `5.26.22-enterprise`, `5.26-enterprise`, `5-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/fce023a649d17c1f9f1208fc38ae5bada246e6c0/5.26.22/trixie/enterprise/Dockerfile)
-
--	[`5.26.22-community-bullseye`, `5.26-community-bullseye`, `5-community-bullseye`, `5.26.22-bullseye`, `5.26-bullseye`, `5-bullseye`](https://github.com/neo4j/docker-neo4j-publish/blob/fce023a649d17c1f9f1208fc38ae5bada246e6c0/5.26.22/bullseye/community/Dockerfile)
-
--	[`5.26.22-enterprise-bullseye`, `5.26-enterprise-bullseye`, `5-enterprise-bullseye`](https://github.com/neo4j/docker-neo4j-publish/blob/fce023a649d17c1f9f1208fc38ae5bada246e6c0/5.26.22/bullseye/enterprise/Dockerfile)
-
--	[`5.26.22-community-ubi10`, `5.26-community-ubi10`, `5-community-ubi10`, `5.26.22-ubi10`, `5.26-ubi10`, `5-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/fce023a649d17c1f9f1208fc38ae5bada246e6c0/5.26.22/ubi10/community/Dockerfile)
-
--	[`5.26.22-enterprise-ubi10`, `5.26-enterprise-ubi10`, `5-enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/fce023a649d17c1f9f1208fc38ae5bada246e6c0/5.26.22/ubi10/enterprise/Dockerfile)
-
--	[`5.26.22-community-ubi9`, `5.26-community-ubi9`, `5-community-ubi9`, `5.26.22-ubi9`, `5.26-ubi9`, `5-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/fce023a649d17c1f9f1208fc38ae5bada246e6c0/5.26.22/ubi9/community/Dockerfile)
-
--	[`5.26.22-enterprise-ubi9`, `5.26-enterprise-ubi9`, `5-enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/fce023a649d17c1f9f1208fc38ae5bada246e6c0/5.26.22/ubi9/enterprise/Dockerfile)
-
--	[`4.4.48`, `4.4.48-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/a3f58105abfd307a24467da003f46d4bd13813f3/4.4.48/bullseye/community/Dockerfile)
-
--	[`4.4.48-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/a3f58105abfd307a24467da003f46d4bd13813f3/4.4.48/bullseye/enterprise/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -93,7 +61,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    mips64le/neo4j
 ```
 
 which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).
