@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22.04`, `jammy-20260210.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20260210.1-3c7694ee&id=3c7694ee72385dbbf896c67b32a634705ce91c66)
+-	[`22.04`, `jammy-20260217`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20260217-61285503&id=61285503d167b52e9bab9e4d0e45136ae05ae1c9)
 
--	[`24.04`, `noble-20260210.1`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20260210.1-38538451&id=385384516f9bf26ae3520bb32aa512c4c5bdfb68)
+-	[`24.04`, `noble-20260217`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20260217-ccbfed8f&id=ccbfed8fb39874668fd747db8da268d2a03f3d50)
 
 -	[`25.10`, `questing-20251217`, `questing`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20251217-883bce4d&id=883bce4d25b37c4c52e6d25bcd3f2961671ce1c7)
 
--	[`26.04`, `resolute-20260108`, `resolute`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-amd64-20260108-9f123886&id=9f123886b68e14781c19fe584ac24e9303815afd)
+-	[`26.04`, `resolute-20260312`, `resolute`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-amd64-20260312-c212211a&id=c212211acb8c2ecbdaa75e68bd65804f6f5bb953)
 
 # Quick reference (cont.)
 
