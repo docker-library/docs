@@ -130,8 +130,6 @@ WARNING:
 
 -	[`3.9.14-amazoncorretto-8-debian`, `3.9.14-amazoncorretto-8-debian-trixie`, `3.9-amazoncorretto-8-debian`, `3.9-amazoncorretto-8-debian-trixie`, `3-amazoncorretto-8-debian`, `3-amazoncorretto-8-debian-trixie`](https://github.com/carlossg/docker-maven/blob/2de5f5e0b9b7a9dfab3aa5635fb533a9b269a11c/amazoncorretto-8-debian/Dockerfile)
 
--	[`3.9.14-sapmachine-11`, `3.9-sapmachine-11`, `3-sapmachine-11`](https://github.com/carlossg/docker-maven/blob/2de5f5e0b9b7a9dfab3aa5635fb533a9b269a11c/sapmachine-11/Dockerfile)
-
 -	[`3.9.14-sapmachine-17`, `3.9-sapmachine-17`, `3-sapmachine-17`](https://github.com/carlossg/docker-maven/blob/2de5f5e0b9b7a9dfab3aa5635fb533a9b269a11c/sapmachine-17/Dockerfile)
 
 -	[`4.0.0-rc-5-sapmachine-17`](https://github.com/carlossg/docker-maven/blob/46922cf792151295209364a0917ab106fea60692/sapmachine-17-maven-4/Dockerfile)
@@ -140,9 +138,13 @@ WARNING:
 
 -	[`4.0.0-rc-5-sapmachine-21`](https://github.com/carlossg/docker-maven/blob/46922cf792151295209364a0917ab106fea60692/sapmachine-21-maven-4/Dockerfile)
 
--	[`3.9.14-sapmachine-25`, `3.9.14-sapmachine`, `3.9-sapmachine-25`, `3.9-sapmachine`, `3-sapmachine-25`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/2de5f5e0b9b7a9dfab3aa5635fb533a9b269a11c/sapmachine-25/Dockerfile)
+-	[`3.9.14-sapmachine-25`, `3.9-sapmachine-25`, `3-sapmachine-25`](https://github.com/carlossg/docker-maven/blob/2de5f5e0b9b7a9dfab3aa5635fb533a9b269a11c/sapmachine-25/Dockerfile)
 
--	[`4.0.0-rc-5-sapmachine-25`, `4.0.0-rc-5-sapmachine`](https://github.com/carlossg/docker-maven/blob/46922cf792151295209364a0917ab106fea60692/sapmachine-25-maven-4/Dockerfile)
+-	[`4.0.0-rc-5-sapmachine-25`](https://github.com/carlossg/docker-maven/blob/46922cf792151295209364a0917ab106fea60692/sapmachine-25-maven-4/Dockerfile)
+
+-	[`3.9.14-sapmachine-26`, `3.9.14-sapmachine`, `3.9-sapmachine-26`, `3.9-sapmachine`, `3-sapmachine-26`, `3-sapmachine`, `sapmachine`](https://github.com/carlossg/docker-maven/blob/94e692921d4d62c0c584191e999372c8b1b5b7b7/sapmachine-26/Dockerfile)
+
+-	[`4.0.0-rc-5-sapmachine-26`, `4.0.0-rc-5-sapmachine`](https://github.com/carlossg/docker-maven/blob/94e692921d4d62c0c584191e999372c8b1b5b7b7/sapmachine-26-maven-4/Dockerfile)
 
 # Quick reference (cont.)
 

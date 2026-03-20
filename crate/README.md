@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.2.2`, `6.2`, `latest`](https://github.com/crate/docker-crate/blob/c210192bec4070537ef77b4e78447eb06a93da0b/Dockerfile)
+-	[`6.2.3`, `6.2`, `latest`](https://github.com/crate/docker-crate/blob/17626566ab1dbf78381aecf8d5af8dafcd21995c/Dockerfile)
 
 -	[`6.1.3`, `6.1`](https://github.com/crate/docker-crate/blob/ccb0a7319da7ba24513b443602c2ffd9d925850d/Dockerfile)
 
