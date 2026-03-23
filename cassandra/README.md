@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.6`, `5.0`, `5`, `latest`, `5.0.6-bookworm`, `5.0-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/cassandra/blob/7c5b1270f935620330a51c1658d2c0557432f4ac/5.0/Dockerfile)
+-	[`5.0.7`, `5.0`, `5`, `latest`, `5.0.7-bookworm`, `5.0-bookworm`, `5-bookworm`, `bookworm`](https://github.com/docker-library/cassandra/blob/cedb7139e880263c5b5257b37c3bff05440f9e18/5.0/Dockerfile)
 
--	[`4.1.10`, `4.1`, `4`, `4.1.10-bookworm`, `4.1-bookworm`, `4-bookworm`](https://github.com/docker-library/cassandra/blob/7c5b1270f935620330a51c1658d2c0557432f4ac/4.1/Dockerfile)
+-	[`4.1.11`, `4.1`, `4`, `4.1.11-bookworm`, `4.1-bookworm`, `4-bookworm`](https://github.com/docker-library/cassandra/blob/f304ac2a02e00150b7e6629a40fcbd2891a0ba62/4.1/Dockerfile)
 
--	[`4.0.19`, `4.0`, `4.0.19-bookworm`, `4.0-bookworm`](https://github.com/docker-library/cassandra/blob/7c5b1270f935620330a51c1658d2c0557432f4ac/4.0/Dockerfile)
+-	[`4.0.20`, `4.0`, `4.0.20-bookworm`, `4.0-bookworm`](https://github.com/docker-library/cassandra/blob/a99c4aa59e96ab881db88b13ca0d4fd086b9a4dd/4.0/Dockerfile)
 
 # Quick reference (cont.)
 
