@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.6.1`, `8.6`, `8`, `8.6.1-trixie`, `8.6-trixie`, `8-trixie`, `latest`, `trixie`](https://github.com/redis/docker-library-redis/blob/772020f24a0acb30ffaa6647f3c79a7f3932225d/debian/Dockerfile)
+-	[`8.6.2`, `8.6`, `8`, `8.6.2-trixie`, `8.6-trixie`, `8-trixie`, `latest`, `trixie`](https://github.com/redis/docker-library-redis/blob/8c81e2a44cae9258294718d767ce594e5cbbf20e/debian/Dockerfile)
 
--	[`8.6.1-alpine`, `8.6-alpine`, `8-alpine`, `8.6.1-alpine3.23`, `8.6-alpine3.23`, `8-alpine3.23`, `alpine`, `alpine3.23`](https://github.com/redis/docker-library-redis/blob/772020f24a0acb30ffaa6647f3c79a7f3932225d/alpine/Dockerfile)
+-	[`8.6.2-alpine`, `8.6-alpine`, `8-alpine`, `8.6.2-alpine3.23`, `8.6-alpine3.23`, `8-alpine3.23`, `alpine`, `alpine3.23`](https://github.com/redis/docker-library-redis/blob/8c81e2a44cae9258294718d767ce594e5cbbf20e/alpine/Dockerfile)
 
 -	[`8.4.2`, `8.4`, `8.4.2-trixie`, `8.4-trixie`](https://github.com/redis/docker-library-redis/blob/f57c53203ef603901bd75cbee76f1f5a5d56d8fa/debian/Dockerfile)
 
