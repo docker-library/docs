@@ -48,17 +48,17 @@ WARNING:
 
 -	[`3.4.9-alpine3.22`, `3.4-alpine3.22`, `3-alpine3.22`](https://github.com/docker-library/ruby/blob/5a670110fb6e65afa72ee9da2c65de377f589281/3.4/alpine3.22/Dockerfile)
 
--	[`3.3.10-trixie`, `3.3-trixie`, `3.3.10`, `3.3`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/trixie/Dockerfile)
+-	[`3.3.11-trixie`, `3.3-trixie`, `3.3.11`, `3.3`](https://github.com/docker-library/ruby/blob/d7aaaf1227ccf244c72405748a9ca5e026e75c63/3.3/trixie/Dockerfile)
 
--	[`3.3.10-slim-trixie`, `3.3-slim-trixie`, `3.3.10-slim`, `3.3-slim`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/slim-trixie/Dockerfile)
+-	[`3.3.11-slim-trixie`, `3.3-slim-trixie`, `3.3.11-slim`, `3.3-slim`](https://github.com/docker-library/ruby/blob/d7aaaf1227ccf244c72405748a9ca5e026e75c63/3.3/slim-trixie/Dockerfile)
 
--	[`3.3.10-bookworm`, `3.3-bookworm`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/bookworm/Dockerfile)
+-	[`3.3.11-bookworm`, `3.3-bookworm`](https://github.com/docker-library/ruby/blob/d7aaaf1227ccf244c72405748a9ca5e026e75c63/3.3/bookworm/Dockerfile)
 
--	[`3.3.10-slim-bookworm`, `3.3-slim-bookworm`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/slim-bookworm/Dockerfile)
+-	[`3.3.11-slim-bookworm`, `3.3-slim-bookworm`](https://github.com/docker-library/ruby/blob/d7aaaf1227ccf244c72405748a9ca5e026e75c63/3.3/slim-bookworm/Dockerfile)
 
--	[`3.3.10-alpine3.23`, `3.3-alpine3.23`, `3.3.10-alpine`, `3.3-alpine`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/alpine3.23/Dockerfile)
+-	[`3.3.11-alpine3.23`, `3.3-alpine3.23`, `3.3.11-alpine`, `3.3-alpine`](https://github.com/docker-library/ruby/blob/d7aaaf1227ccf244c72405748a9ca5e026e75c63/3.3/alpine3.23/Dockerfile)
 
--	[`3.3.10-alpine3.22`, `3.3-alpine3.22`](https://github.com/docker-library/ruby/blob/55e358c6dfe15e9513eb02725a983d4e9daf37d2/3.3/alpine3.22/Dockerfile)
+-	[`3.3.11-alpine3.22`, `3.3-alpine3.22`](https://github.com/docker-library/ruby/blob/d7aaaf1227ccf244c72405748a9ca5e026e75c63/3.3/alpine3.22/Dockerfile)
 
 -	[`3.2.10-trixie`, `3.2-trixie`, `3.2.10`, `3.2`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/trixie/Dockerfile)
 
