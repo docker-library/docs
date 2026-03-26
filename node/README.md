@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`25-alpine3.22`, `25.8-alpine3.22`, `25.8.1-alpine3.22`, `alpine3.22`, `current-alpine3.22`](https://github.com/nodejs/docker-node/blob/9efd3ef7e96790bbb4ec85800d8af55fb7c17bf1/25/alpine3.22/Dockerfile)
+-	[`25-alpine3.22`, `25.8-alpine3.22`, `25.8.2-alpine3.22`, `alpine3.22`, `current-alpine3.22`](https://github.com/nodejs/docker-node/blob/382996ae5ccb14e36e9487b25d8e7417feef5fbc/25/alpine3.22/Dockerfile)
 
--	[`25-alpine`, `25-alpine3.23`, `25.8-alpine`, `25.8-alpine3.23`, `25.8.1-alpine`, `25.8.1-alpine3.23`, `alpine`, `alpine3.23`, `current-alpine`, `current-alpine3.23`](https://github.com/nodejs/docker-node/blob/9efd3ef7e96790bbb4ec85800d8af55fb7c17bf1/25/alpine3.23/Dockerfile)
+-	[`25-alpine`, `25-alpine3.23`, `25.8-alpine`, `25.8-alpine3.23`, `25.8.2-alpine`, `25.8.2-alpine3.23`, `alpine`, `alpine3.23`, `current-alpine`, `current-alpine3.23`](https://github.com/nodejs/docker-node/blob/382996ae5ccb14e36e9487b25d8e7417feef5fbc/25/alpine3.23/Dockerfile)
 
 -	[`25`, `25-bookworm`, `25.8`, `25.8-bookworm`, `25.8.2`, `25.8.2-bookworm`, `bookworm`, `current`, `current-bookworm`, `latest`](https://github.com/nodejs/docker-node/blob/8e93bb03443b68eccbddc0f1e31a5e9756f7e70e/25/bookworm/Dockerfile)
 
