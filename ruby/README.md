@@ -60,17 +60,17 @@ WARNING:
 
 -	[`3.3.11-alpine3.22`, `3.3-alpine3.22`](https://github.com/docker-library/ruby/blob/d7aaaf1227ccf244c72405748a9ca5e026e75c63/3.3/alpine3.22/Dockerfile)
 
--	[`3.2.10-trixie`, `3.2-trixie`, `3.2.10`, `3.2`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/trixie/Dockerfile)
+-	[`3.2.11-trixie`, `3.2-trixie`, `3.2.11`, `3.2`](https://github.com/docker-library/ruby/blob/b4f30b5c440bdcbbb1fe582732f2eb02cb2e7f36/3.2/trixie/Dockerfile)
 
--	[`3.2.10-slim-trixie`, `3.2-slim-trixie`, `3.2.10-slim`, `3.2-slim`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/slim-trixie/Dockerfile)
+-	[`3.2.11-slim-trixie`, `3.2-slim-trixie`, `3.2.11-slim`, `3.2-slim`](https://github.com/docker-library/ruby/blob/b4f30b5c440bdcbbb1fe582732f2eb02cb2e7f36/3.2/slim-trixie/Dockerfile)
 
--	[`3.2.10-bookworm`, `3.2-bookworm`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/bookworm/Dockerfile)
+-	[`3.2.11-bookworm`, `3.2-bookworm`](https://github.com/docker-library/ruby/blob/b4f30b5c440bdcbbb1fe582732f2eb02cb2e7f36/3.2/bookworm/Dockerfile)
 
--	[`3.2.10-slim-bookworm`, `3.2-slim-bookworm`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/slim-bookworm/Dockerfile)
+-	[`3.2.11-slim-bookworm`, `3.2-slim-bookworm`](https://github.com/docker-library/ruby/blob/b4f30b5c440bdcbbb1fe582732f2eb02cb2e7f36/3.2/slim-bookworm/Dockerfile)
 
--	[`3.2.10-alpine3.23`, `3.2-alpine3.23`, `3.2.10-alpine`, `3.2-alpine`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/alpine3.23/Dockerfile)
+-	[`3.2.11-alpine3.23`, `3.2-alpine3.23`, `3.2.11-alpine`, `3.2-alpine`](https://github.com/docker-library/ruby/blob/b4f30b5c440bdcbbb1fe582732f2eb02cb2e7f36/3.2/alpine3.23/Dockerfile)
 
--	[`3.2.10-alpine3.22`, `3.2-alpine3.22`](https://github.com/docker-library/ruby/blob/af204e030006b9572c140a3eb353627ae4fcb625/3.2/alpine3.22/Dockerfile)
+-	[`3.2.11-alpine3.22`, `3.2-alpine3.22`](https://github.com/docker-library/ruby/blob/b4f30b5c440bdcbbb1fe582732f2eb02cb2e7f36/3.2/alpine3.22/Dockerfile)
 
 # Quick reference (cont.)
 
