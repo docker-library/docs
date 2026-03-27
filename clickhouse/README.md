@@ -24,15 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `26.2`, `26.2-jammy`, `26.2.4`, `26.2.4-jammy`, `26.2.4.23`, `26.2.4.23-jammy`](https://github.com/ClickHouse/docker-library/blob/7697338ff98fafdedbaa5f0a6e77c8cf3321e775/server/26.2.4.23/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `lts`, `lts-jammy`, `26.3`, `26.3-jammy`, `26.3.1`, `26.3.1-jammy`, `26.3.1.896`, `26.3.1.896-jammy`](https://github.com/ClickHouse/docker-library/blob/72ebb3fc40c3571a740ff96ff758998949f77f75/server/26.3.1.896/Dockerfile.ubuntu)
 
--	[`26.1`, `26.1-jammy`, `26.1.4`, `26.1.4-jammy`, `26.1.4.35`, `26.1.4.35-jammy`](https://github.com/ClickHouse/docker-library/blob/7697338ff98fafdedbaa5f0a6e77c8cf3321e775/server/26.1.4.35/Dockerfile.ubuntu)
+-	[`26.2`, `26.2-jammy`, `26.2.5`, `26.2.5-jammy`, `26.2.5.45`, `26.2.5.45-jammy`](https://github.com/ClickHouse/docker-library/blob/72ebb3fc40c3571a740ff96ff758998949f77f75/server/26.2.5.45/Dockerfile.ubuntu)
 
--	[`25.12`, `25.12-jammy`, `25.12.8`, `25.12.8-jammy`, `25.12.8.9`, `25.12.8.9-jammy`](https://github.com/ClickHouse/docker-library/blob/7697338ff98fafdedbaa5f0a6e77c8cf3321e775/server/25.12.8.9/Dockerfile.ubuntu)
+-	[`26.1`, `26.1-jammy`, `26.1.6`, `26.1.6-jammy`, `26.1.6.6`, `26.1.6.6-jammy`](https://github.com/ClickHouse/docker-library/blob/72ebb3fc40c3571a740ff96ff758998949f77f75/server/26.1.6.6/Dockerfile.ubuntu)
 
--	[`lts`, `lts-jammy`, `25.8`, `25.8-jammy`, `25.8.18`, `25.8.18-jammy`, `25.8.18.1`, `25.8.18.1-jammy`](https://github.com/ClickHouse/docker-library/blob/7697338ff98fafdedbaa5f0a6e77c8cf3321e775/server/25.8.18.1/Dockerfile.ubuntu)
-
--	[`25.3`, `25.3-jammy`, `25.3.14`, `25.3.14-jammy`, `25.3.14.14`, `25.3.14.14-jammy`](https://github.com/ClickHouse/docker-library/blob/7697338ff98fafdedbaa5f0a6e77c8cf3321e775/server/25.3.14.14/Dockerfile.ubuntu)
+-	[`25.8`, `25.8-jammy`, `25.8.20`, `25.8.20-jammy`, `25.8.20.4`, `25.8.20.4-jammy`](https://github.com/ClickHouse/docker-library/blob/72ebb3fc40c3571a740ff96ff758998949f77f75/server/25.8.20.4/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
