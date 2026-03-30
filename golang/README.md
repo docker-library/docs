@@ -60,13 +60,13 @@ WARNING:
 
 -	[`1.25.8-nanoserver-ltsc2022`, `1.25-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/f51096b5761d066ba6ead35d44179731a09c48e2/1.25/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`tip-20260321-trixie`, `tip-trixie`](https://github.com/docker-library/golang/blob/fcdb2dbdb88f2723229117d405f03e600545f4ad/tip/trixie/Dockerfile)
+-	[`tip-20260328-trixie`, `tip-trixie`](https://github.com/docker-library/golang/blob/16e0313f27337ce91ae2dfa790ddcee60c18a9af/tip/trixie/Dockerfile)
 
--	[`tip-20260321-bookworm`, `tip-bookworm`](https://github.com/docker-library/golang/blob/fcdb2dbdb88f2723229117d405f03e600545f4ad/tip/bookworm/Dockerfile)
+-	[`tip-20260328-bookworm`, `tip-bookworm`](https://github.com/docker-library/golang/blob/16e0313f27337ce91ae2dfa790ddcee60c18a9af/tip/bookworm/Dockerfile)
 
--	[`tip-20260321-alpine3.23`, `tip-alpine3.23`, `tip-20260321-alpine`, `tip-alpine`](https://github.com/docker-library/golang/blob/fcdb2dbdb88f2723229117d405f03e600545f4ad/tip/alpine3.23/Dockerfile)
+-	[`tip-20260328-alpine3.23`, `tip-alpine3.23`, `tip-20260328-alpine`, `tip-alpine`](https://github.com/docker-library/golang/blob/16e0313f27337ce91ae2dfa790ddcee60c18a9af/tip/alpine3.23/Dockerfile)
 
--	[`tip-20260321-alpine3.22`, `tip-alpine3.22`](https://github.com/docker-library/golang/blob/fcdb2dbdb88f2723229117d405f03e600545f4ad/tip/alpine3.22/Dockerfile)
+-	[`tip-20260328-alpine3.22`, `tip-alpine3.22`](https://github.com/docker-library/golang/blob/16e0313f27337ce91ae2dfa790ddcee60c18a9af/tip/alpine3.22/Dockerfile)
 
 ## Shared Tags
 
@@ -102,9 +102,9 @@ WARNING:
 	-	[`1.25.8-nanoserver-ltsc2025`](https://github.com/docker-library/golang/blob/f51096b5761d066ba6ead35d44179731a09c48e2/1.25/windows/nanoserver-ltsc2025/Dockerfile)
 	-	[`1.25.8-nanoserver-ltsc2022`](https://github.com/docker-library/golang/blob/f51096b5761d066ba6ead35d44179731a09c48e2/1.25/windows/nanoserver-ltsc2022/Dockerfile)
 
--	`tip-20260321`, `tip`:
+-	`tip-20260328`, `tip`:
 
-	-	[`tip-20260321-trixie`](https://github.com/docker-library/golang/blob/fcdb2dbdb88f2723229117d405f03e600545f4ad/tip/trixie/Dockerfile)
+	-	[`tip-20260328-trixie`](https://github.com/docker-library/golang/blob/16e0313f27337ce91ae2dfa790ddcee60c18a9af/tip/trixie/Dockerfile)
 
 # Quick reference (cont.)
 
