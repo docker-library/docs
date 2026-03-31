@@ -8,6 +8,8 @@ Varnish is an HTTP accelerator designed for content-heavy dynamic web sites as w
 
 # How to use this image.
 
+```console
+$ docker run -p 8080:80 --ulimit memlock=-1:-1 --tmpfs /var/lib/varnish/varnishd:exec %%IMAGE%%
 ```
 
 You can then visit [http://localhost:8080](http://localhost:8080) with your browser and be greeted by the default landing page.
