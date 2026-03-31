@@ -8,37 +8,51 @@ Varnish is an HTTP accelerator designed for content-heavy dynamic web sites as w
 
 # How to use this image.
 
+```console
+$ docker run -p 8080:80 --ulimit memlock=-1:-1 --tmpfs /var/lib/varnish/varnishd:exec %%IMAGE%%
+```
+
+You can then visit [http://localhost:8080](http://localhost:8080) with your browser and be greeted by the default landing page.
+
+**Note:** while the `--ulimit` and `--tmpfs` options aren't necessary, they are greatly recommended. More details are available at the end of this page.
+
 ## Basic usage
 
-### Using `VARNISH_BACKEND_HOST` and `VARNISH_BACKEND_PORT`
+### Simple cache
 
-You just need to know where your backend (the server that Varnish will accelerate) is:
+The default Varnish configuration will read the `VARNISH_BACKEND_HOST` environment variable which should be an HTTP or HTTPS URL, for example:
 
 ```console
-# we define VARNISH_BACKEND_HOST/VARNISH_BACKEND_PORT
-# our workdir has to be mounted as tmpfs to avoid disk I/O,
-# and we'll use port 8080 to talk to our container (internally listening on 80)
 $ docker run \
-    -e VARNISH_BACKEND_HOST=example.com -e VARNISH_BACKEND_PORT=80 \
+	--ulimit memlock=-1:-1 \
 	--tmpfs /var/lib/varnish/varnishd:exec \
 	-p 8080:80 \
+	-e VARNISH_BACKEND_HOST=https://example.com/ \
 	%%IMAGE%%
 ```
 
-From there, you can visit `localhost:8080` in your browser and see the example.com homepage.
+By default, Varnish is extremely careful regarding what it can and cannot cache by looking at the [client request](https://www.varnish-software.com/developers/tutorials/varnish-builtin-vcl/#1-vcl_recv) and at the [backend response](https://www.varnish-software.com/developers/tutorials/varnish-builtin-vcl/#11-vcl_backend_response).
 
-### Using a VCL file
+Notably, Varnish will not cache if:
+
+-	the request is not a `GET` or `HEAD`
+-	the request contains an `Authorization` or `Cookie` header
+-	the response status is not cacheable (i.e., not a 2xx or 4xx response)
+-	the response contains a `Set-Cookie` header
+-	the response contains headers indicating it is uncacheable
+
+These rules can, of course, be overridden by providing your own `VCL` file, as explained in the next section.
+
+### Custom caching logic
 
 If you already have a VCL file, you can directly mount it as `/etc/varnish/default.vcl`:
 
 ```console
-# we need the configuration file at /etc/varnish/default.vcl,
-# our workdir has to be mounted as tmpfs to avoid disk I/O,
-# and we'll use port 8080 to talk to our container (internally listening on 80)
 $ docker run \
-	-v /path/to/default.vcl:/etc/varnish/default.vcl:ro \
+	--ulimit memlock=-1:-1 \
 	--tmpfs /var/lib/varnish/varnishd:exec \
 	-p 8080:80 \
+	-v /path/to/default.vcl:/etc/varnish/default.vcl:ro \
 	%%IMAGE%%
 ```
 
@@ -53,12 +67,16 @@ COPY default.vcl /etc/varnish/
 Place this file in the same directory as your `default.vcl`, run `docker build -t my-varnish .`, then start your container:
 
 ```console
-$ docker --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 my-varnish
+$ docker \
+	--ulimit memlock=-1:-1 \
+	--tmpfs /var/lib/varnish/varnishd:exec \
+	-p 8080:80 \
+	my-varnish
 ```
 
 ## Reloading the configuration
 
-The images all ship with [varnishreload](https://github.com/varnishcache/pkg-varnish-cache/blob/master/systemd/varnishreload#L42) which allows you to easily update the running configuration without restarting the container (and therefore losing your cache). At its most basic, you just need this:
+The images all ship with [varnishreload](https://github.com/varnish/all-packager/blob/809d3c098d1cb84d1b85e18573121a3a3720c898/varnish/systemd/varnishreload#L48-L82) which allows you to easily update the running configuration without restarting the container (and therefore losing your cache). At its most basic, you just need this:
 
 ```console
 # update the default.vcl in your container
@@ -67,15 +85,39 @@ docker cp new_default.vcl running_container:/etc/varnish/default.vcl
 docker exec running_container varnishreload
 ```
 
-Note that `varnishreload` also supports reloading other files (it doesn't have to be `default.vcl`), labels (`l`), and garbage collection of old labeles (`-m`) among others. To know more, run
+Note that `varnishreload` also supports reloading other files (it doesn't have to be `default.vcl`), labels (`-l`), and garbage collection of old labels (`-m`), among others. To learn more, run
 
 ```console
-docker run varnish varnishreload -h
+$ docker run --rm %%IMAGE%% varnishreload -h
 ```
 
-## Additional configuration
+## File server
 
-### Cache size (VARNISH_SIZE)
+Using the included [vmod-fileserver](https://github.com/varnish-rs/vmod-fileserver), Varnish can be used as a file server. Just mount the directory you want to expose into the `/var/www/html` directory and set the `VARNISH_FILESERVER` variable to `true`:
+
+```console
+$ docker run \
+	--ulimit memlock=-1:-1 \
+	--tmpfs /var/lib/varnish/varnishd:exec \
+	-p 8080:80 \
+	-v /dir/to/expose:/var/www/html:ro \
+	-e VARNISH_FILESERVER=true \
+	%%IMAGE%%
+```
+
+**Note:** Varnish will reply with an empty 200 when trying to access folders instead of individual files.
+
+## Environment variables
+
+### Backend address (`VARNISH_BACKEND_HOST`)
+
+Set the backend address and protocol as explained above. This only works with the provided `VCL`, i.e. if you don't mount an `/etc/varnish/default.vcl` file, and if you don't set `VARNISH_VCL_FILE`
+
+### File server mode (`VARNISH_FILESERVER`)
+
+Also only valid with the default `VCL`. If `VARNISH_BACKEND_HOST` is unset and `VARNISH_FILESERVER` is set, Varnish will act as a server, using `/var/www/html` as its source.
+
+### Cache size (`VARNISH_SIZE`)
 
 By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
 
@@ -83,26 +125,30 @@ By default, the containers will use a cache size of 100MB, which is usually a bi
 $ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G %%IMAGE%%
 ```
 
-### Listening ports (VARNISH_HTTP_PORT/VARNISH_PROXY_PORT)
+### Listening ports (`VARNISH_HTTP_PORT`/`VARNISH_PROXY_PORT`)
 
-Varnish will listen to HTTP traffic on port `80`, and this can be overridden by setting the environment variable `VARNISH_HTTP_PORT`. Similarly, the variable `VARNISH_PROXY_PORT` (defaulting to `8443`) dictate the listening port for the [PROXY protocol](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) used notably to interact with [hitch](https://hub.docker.com/_/hitch) (which, coincidentally, uses `8443` as a default too!).
+Varnish will listen to HTTP traffic on port `80`, and this can be overridden by setting the environment variable `VARNISH_HTTP_PORT`. Similarly, the variable `VARNISH_PROXY_PORT` (defaulting to `8443`) dictates the listening port for the [PROXY protocol](https://www.haproxy.org/download/1.8/doc/proxy-protocol.txt) used notably to interact with [hitch](https://hub.docker.com/_/hitch) (which, coincidentally, uses `8443` as a default too!).
 
 ```console
-# instruct varnish to listening to port 7777 instead of 80
+# instruct varnish to listen on port 7777 instead of 80
 $ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:7777 -e VARNISH_HTTP_PORT=7777 %%IMAGE%%
 ```
 
-### VCL file path
+### VCL file (`VARNISH_VCL_FILE`)
 
 The default Varnish configuration file is `/etc/varnish/default.vcl`, but this can be overridden with the `VARNISH_VCL_FILE` environment variable. This is useful if you want a single image that can be deployed with different configurations baked in it.
 
 ### Extra arguments
 
-Additionally, you can add arguments to `docker run` after `%%IMAGE%%`, if the first argument starts with a `-`, the whole list will be appendend to the [default command](https://github.com/varnish/docker-varnish/blob/master/fresh/debian/scripts/docker-varnish-entrypoint):
+Additionally, you can add arguments to `docker run` after `%%IMAGE%%`, if the first argument starts with a `-`, the whole list will be appended to the [default command](https://github.com/varnish/docker-varnish/blob/master/fresh/debian/scripts/docker-varnish-entrypoint):
 
 ```console
 # extend the default keep period
-$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G %%IMAGE%% -p default_keep=300
+$ docker run \
+	--ulimit memlock=-1:-1 \
+	--tmpfs /var/lib/varnish/varnishd:exec \
+	-p 8080:80 \
+	%%IMAGE%% -p default_keep=300
 ```
 
 If your first argument after `%%IMAGE%%` doesn't start with `-`, it will be interpreted as a command to override the default one:
@@ -118,46 +164,15 @@ $ docker run %%IMAGE%% varnishd -x parameter
 $ docker run %%IMAGE%% varnishd -F -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
 ```
 
-## vmods (since 7.1)
+This can notably be used to extract logs using [varnishncsa or varnishlog](https://www.varnish-software.com/developers/tutorials/vsl-cheatsheet/), running `varnishstat -1` to extract metrics, and of course reloading the `VCL` with `varnishreload`.
 
-As mentioned above, you can use [vmod_dynamic](https://github.com/nigoroll/libvmod-dynamic) for backend resolution. The [varnish-modules](https://github.com/varnish/varnish-modules) collection is also included in the image. All the documentation regarding usage and syntax can be found in the [src/](https://github.com/varnish/varnish-modules/tree/master/src) directory of the repository.
+## Vmods
 
-On top of this, images include [install-vmod](https://github.com/varnish/toolbox/tree/master/install-vmod), a helper script to quickly download, compile and install vmods while creating your own images. Note that images set the `ENV` variable `VMOD_DEPS` to ease the task further.
+The docker image is built with a collection of "`VCL` modules" or "vmods" that extend Varnish capability. We've already covered `vmod-fileserver` (file backend) and `vmod-reqwest` (dynamic backends), but more are available and can be used in your custom `VCL` with `import <vmod_name>`. Please refer to the documentation of each vmod for more information.
 
-### Debian
+# ulimit and tmpfs notes
 
-```dockerfile
-FROM %%IMAGE%%:7.1
+Varnish uses [memory-mapped files](https://docs.varnish-software.com/varnish-enterprise/installation/#the-shared-memory-log) to log and store metrics for performance reasons. Those files are constantly written to, and to get the most out of your system, you should:
 
-# set the user to root, and install build dependencies
-USER root
-RUN set -e; \
-    apt-get update; \
-    apt-get -y install $VMOD_DEPS /pkgs/*.deb; \
-    \
-# install one, possibly multiple vmods
-   install-vmod https://github.com/varnish/varnish-modules/releases/download/0.20.0/varnish-modules-0.20.0.tar.gz; \
-    \
-# clean up and set the user back to varnish
-    apt-get -y purge --auto-remove $VMOD_DEPS varnish-dev; \
-    rm -rf /var/lib/apt/lists/*
-USER varnish
-```
-
-### Alpine
-
-```dockerfile
-FROM %%IMAGE%%:7.1-alpine
-
-# install build dependencies
-USER root
-RUN set -e; \
-    apk add --no-cache $VMOD_DEPS; \
-    \
-# install one, possibly multiple vmods
-    install-vmod https://github.com/varnish/varnish-modules/releases/download/0.20.0/varnish-modules-0.20.0.tar.gz; \
-    \
-# clean up
-    apk del --no-network $VMOD_DEPS
-USER varnish
-```
+-	mount the working directory as `tmpfs` to make sure disk I/O isn't a bottleneck; that's what the `--tmpfs` switch does
+-	allow Varnish to lock those memory-mapped files so they aren't paged out by the kernel; hence the `--ulimit` switch
