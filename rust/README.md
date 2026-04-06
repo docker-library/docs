@@ -36,8 +36,6 @@ WARNING:
 
 -	[`1-slim-trixie`, `1.94-slim-trixie`, `1.94.1-slim-trixie`, `slim-trixie`, `1-slim`, `1.94-slim`, `1.94.1-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/20c358f05538dc34ab5e2e586bd8f9229c49d51d/stable/trixie/slim/Dockerfile)
 
--	[`1-alpine3.20`, `1.94-alpine3.20`, `1.94.1-alpine3.20`, `alpine3.20`](https://github.com/rust-lang/docker-rust/blob/20c358f05538dc34ab5e2e586bd8f9229c49d51d/stable/alpine3.20/Dockerfile)
-
 -	[`1-alpine3.21`, `1.94-alpine3.21`, `1.94.1-alpine3.21`, `alpine3.21`](https://github.com/rust-lang/docker-rust/blob/20c358f05538dc34ab5e2e586bd8f9229c49d51d/stable/alpine3.21/Dockerfile)
 
 -	[`1-alpine3.22`, `1.94-alpine3.22`, `1.94.1-alpine3.22`, `alpine3.22`](https://github.com/rust-lang/docker-rust/blob/20c358f05538dc34ab5e2e586bd8f9229c49d51d/stable/alpine3.22/Dockerfile)
