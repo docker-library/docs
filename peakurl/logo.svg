@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">PeakURL</title>
+  <desc id="desc">PeakURL wordmark with link icon</desc>
+  <rect x="0" y="0" width="96" height="96" rx="22" fill="#2b3040"/>
+  <g fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" transform="translate(14 14)">
+    <path d="M28 40a18 18 0 0 0 27.14 1.94l10.8-10.8a18 18 0 0 0-25.46-25.46L34.3 11.86"/>
+    <path d="M40 28a18 18 0 0 0-27.14-1.94l-10.8 10.8a18 18 0 0 0 25.46 25.46l6.16-6.16"/>
+  </g>
+  <text x="120" y="59" fill="#2b3040" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700">PeakURL</text>
+</svg>
