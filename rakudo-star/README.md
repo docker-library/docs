@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`trixie`, `2026.02-trixie`](https://github.com/rakudo/docker/blob/a5cdf7eaf8cffe41195258f583fa79cc2cdeed39/2026.02/trixie/Dockerfile)
+-	[`trixie`, `latest`, `2026.03-trixie`](https://github.com/rakudo/docker/blob/f9a08f038e93fd6285a1c9a90f4d43ec75ba8807/2026.03/trixie/Dockerfile)
 
--	[`bookworm`, `2026.02-bookworm`](https://github.com/rakudo/docker/blob/a5cdf7eaf8cffe41195258f583fa79cc2cdeed39/2026.02/bookworm/Dockerfile)
+-	[`bookworm`, `2026.03-bookworm`](https://github.com/rakudo/docker/blob/f9a08f038e93fd6285a1c9a90f4d43ec75ba8807/2026.03/bookworm/Dockerfile)
 
--	[`alpine`, `2026.02-alpine`](https://github.com/rakudo/docker/blob/a5cdf7eaf8cffe41195258f583fa79cc2cdeed39/2026.02/alpine/Dockerfile)
+-	[`alpine`, `2026.03-alpine`](https://github.com/rakudo/docker/blob/f9a08f038e93fd6285a1c9a90f4d43ec75ba8807/2026.03/alpine/Dockerfile)
 
 # Quick reference (cont.)
 

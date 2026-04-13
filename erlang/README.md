@@ -36,17 +36,17 @@ WARNING:
 
 -	[`28.4.2.0-alpine`, `28.4.2-alpine`, `28.4-alpine`, `28-alpine`, `alpine`](https://github.com/erlang/docker-erlang-otp/blob/066abd098ef47737aeac042d97a2ad4be92956b3/28/alpine/Dockerfile)
 
--	[`27.3.4.9`, `27.3.4`, `27.3`, `27`](https://github.com/erlang/docker-erlang-otp/blob/49f5aa13960b10e514b314aef4082400270abbe3/27/Dockerfile)
+-	[`27.3.4.10`, `27.3.4`, `27.3`, `27`](https://github.com/erlang/docker-erlang-otp/blob/e5be003f1be78ea11ac3fcba2324adcd8bf3e12f/27/Dockerfile)
 
--	[`27.3.4.9-slim`, `27.3.4-slim`, `27.3-slim`, `27-slim`](https://github.com/erlang/docker-erlang-otp/blob/49f5aa13960b10e514b314aef4082400270abbe3/27/slim/Dockerfile)
+-	[`27.3.4.10-slim`, `27.3.4-slim`, `27.3-slim`, `27-slim`](https://github.com/erlang/docker-erlang-otp/blob/e5be003f1be78ea11ac3fcba2324adcd8bf3e12f/27/slim/Dockerfile)
 
--	[`27.3.4.9-alpine`, `27.3.4-alpine`, `27.3-alpine`, `27-alpine`](https://github.com/erlang/docker-erlang-otp/blob/49f5aa13960b10e514b314aef4082400270abbe3/27/alpine/Dockerfile)
+-	[`27.3.4.10-alpine`, `27.3.4-alpine`, `27.3-alpine`, `27-alpine`](https://github.com/erlang/docker-erlang-otp/blob/e5be003f1be78ea11ac3fcba2324adcd8bf3e12f/27/alpine/Dockerfile)
 
--	[`26.2.5.18`, `26.2.5`, `26.2`, `26`](https://github.com/erlang/docker-erlang-otp/blob/49f5aa13960b10e514b314aef4082400270abbe3/26/Dockerfile)
+-	[`26.2.5.19`, `26.2.5`, `26.2`, `26`](https://github.com/erlang/docker-erlang-otp/blob/e5be003f1be78ea11ac3fcba2324adcd8bf3e12f/26/Dockerfile)
 
--	[`26.2.5.18-slim`, `26.2.5-slim`, `26.2-slim`, `26-slim`](https://github.com/erlang/docker-erlang-otp/blob/49f5aa13960b10e514b314aef4082400270abbe3/26/slim/Dockerfile)
+-	[`26.2.5.19-slim`, `26.2.5-slim`, `26.2-slim`, `26-slim`](https://github.com/erlang/docker-erlang-otp/blob/e5be003f1be78ea11ac3fcba2324adcd8bf3e12f/26/slim/Dockerfile)
 
--	[`26.2.5.18-alpine`, `26.2.5-alpine`, `26.2-alpine`, `26-alpine`](https://github.com/erlang/docker-erlang-otp/blob/49f5aa13960b10e514b314aef4082400270abbe3/26/alpine/Dockerfile)
+-	[`26.2.5.19-alpine`, `26.2.5-alpine`, `26.2-alpine`, `26-alpine`](https://github.com/erlang/docker-erlang-otp/blob/e5be003f1be78ea11ac3fcba2324adcd8bf3e12f/26/alpine/Dockerfile)
 
 -	[`25.3.2.21`, `25.3.2`, `25.3`, `25`](https://github.com/erlang/docker-erlang-otp/blob/ed3c77d4426badd6646abb7aff04d38612918848/25/Dockerfile)
 
