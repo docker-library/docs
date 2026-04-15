@@ -26,7 +26,7 @@ WARNING:
 
 -	[`20260127`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/c5f299db02fde44c146488e2161773e1daebe581/x86_64/Dockerfile)
 
--	[`3.23.3`, `3.23`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/a037d70ba44f91b00dff940019d29a28f7ba1265/x86_64/Dockerfile)
+-	[`3.23.4`, `3.23`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/c68e08480b8fb053591ade7dbaffa2ea67db2f56/x86_64/Dockerfile)
 
 -	[`3.22.3`, `3.22`](https://github.com/alpinelinux/docker-alpine/blob/c65c121d664a527ec65e1fa4cecc9063fff656da/x86_64/Dockerfile)
 
