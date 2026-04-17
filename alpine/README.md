@@ -28,11 +28,11 @@ WARNING:
 
 -	[`3.23.4`, `3.23`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/c68e08480b8fb053591ade7dbaffa2ea67db2f56/x86_64/Dockerfile)
 
--	[`3.22.3`, `3.22`](https://github.com/alpinelinux/docker-alpine/blob/c65c121d664a527ec65e1fa4cecc9063fff656da/x86_64/Dockerfile)
+-	[`3.22.4`, `3.22`](https://github.com/alpinelinux/docker-alpine/blob/ce1b9f141bbd2d604064cae6a3f5309b4a2a40b9/x86_64/Dockerfile)
 
--	[`3.21.6`, `3.21`](https://github.com/alpinelinux/docker-alpine/blob/d9ff52957b2fe5361ffeb5d871db8c321e5605d8/x86_64/Dockerfile)
+-	[`3.21.7`, `3.21`](https://github.com/alpinelinux/docker-alpine/blob/52e3f9384ecbfe80a2d36bb344e464c0cf7c7507/x86_64/Dockerfile)
 
--	[`3.20.9`, `3.20`](https://github.com/alpinelinux/docker-alpine/blob/b3f87708e5052e29737a251b2e9865e182dafe0c/x86_64/Dockerfile)
+-	[`3.20.10`, `3.20`](https://github.com/alpinelinux/docker-alpine/blob/0db70ae354ee747109ce0b9a0cfbcd3c907bc822/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
