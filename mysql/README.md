@@ -26,7 +26,7 @@ WARNING:
 
 -	[`9.6.0`, `9.6`, `9`, `innovation`, `latest`, `9.6.0-oraclelinux9`, `9.6-oraclelinux9`, `9-oraclelinux9`, `innovation-oraclelinux9`, `oraclelinux9`, `9.6.0-oracle`, `9.6-oracle`, `9-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/f8c2facfccdc3c8b8b2c9b5a6aec31db3115105b/innovation/Dockerfile.oracle)
 
--	[`8.4.8`, `8.4`, `8`, `lts`, `8.4.8-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `lts-oraclelinux9`, `8.4.8-oracle`, `8.4-oracle`, `8-oracle`, `lts-oracle`](https://github.com/docker-library/mysql/blob/9dc8e79d60e4b10f30eb040ebd2d6c0f63b737bd/8.4/Dockerfile.oracle)
+-	[`8.4.9`, `8.4`, `8`, `lts`, `8.4.9-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `lts-oraclelinux9`, `8.4.9-oracle`, `8.4-oracle`, `8-oracle`, `lts-oracle`](https://github.com/docker-library/mysql/blob/7fcf7198cf8be286bae76a4b587ac206af3e7cd8/8.4/Dockerfile.oracle)
 
 -	[`8.0.45`, `8.0`, `8.0.45-oraclelinux9`, `8.0-oraclelinux9`, `8.0.45-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/7a8f81aad11e871baf1dbc755dbff1652e13cba5/8.0/Dockerfile.oracle)
 
