@@ -315,11 +315,13 @@ $ docker run -it --rm --user 1000:1000 -e POSTGRES_PASSWORD=mysecretpassword pos
 initdb: could not look up effective user ID 1000: user does not exist
 ```
 
-The three easiest ways to get around this:
+The four easiest ways to get around this:
 
-1.	allow the image to use [the `nss_wrapper` library](https://cwrap.org/nss_wrapper.html) to "fake" `/etc/passwd` contents for you (see [docker-library/postgres#448](https://github.com/docker-library/postgres/pull/448) for more details)
+1.	on the host, use the same UID:GID that the container defines for postgres user/group. These are 999:999 for Debian based containers and 70:70 for Alpine based containers.
 
-2.	bind-mount `/etc/passwd` read-only from the host (if the UID you desire is a valid user on your host):
+2.	allow the image to use [the `nss_wrapper` library](https://cwrap.org/nss_wrapper.html) to "fake" `/etc/passwd` contents for you (see [docker-library/postgres#448](https://github.com/docker-library/postgres/pull/448) for more details)
+
+3.	bind-mount `/etc/passwd` read-only from the host (if the UID you desire is a valid user on your host):
 
 	```console
 	$ docker run -it --rm --user "$(id -u):$(id -g)" -v /etc/passwd:/etc/passwd:ro -e POSTGRES_PASSWORD=mysecretpassword postgres
@@ -327,7 +329,7 @@ The three easiest ways to get around this:
 	...
 	```
 
-3.	initialize the target directory separately from the final runtime (with a `chown` in between):
+4.	initialize the target directory separately from the final runtime (with a `chown` in between):
 
 	```console
 	$ docker volume create pg
