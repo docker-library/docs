@@ -1,0 +1,46 @@
+name: peakurl
+services:
+  peakurl:
+    image: peakurl
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - 8080:80
+    environment:
+      APACHE_SERVER_NAME: example.com
+      PEAKURL_INSTALL_DB_HOST_DEFAULT: db
+      PEAKURL_INSTALL_DB_PORT_DEFAULT: '3306'
+      PEAKURL_INSTALL_DB_NAME_DEFAULT: peakurl
+      PEAKURL_INSTALL_DB_USER_DEFAULT: peakurl
+      PEAKURL_INSTALL_DB_PASSWORD_DEFAULT: change-this-password
+    volumes:
+      - peakurl:/var/www/html
+
+  db:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: peakurl
+      MYSQL_USER: peakurl
+      MYSQL_PASSWORD: change-this-password
+      MYSQL_ROOT_PASSWORD: change-this-root-password
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --skip-name-resolve
+    volumes:
+      - mysql:/var/lib/mysql
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - mysqladmin ping -h 127.0.0.1 -p$$MYSQL_ROOT_PASSWORD --silent
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+
+volumes:
+  peakurl:
+  mysql:
