@@ -6,185 +6,331 @@
 
 %%LOGO%%
 
+-	[Getting Started](#getting-started)
+	-	[Version Tags](#version-tags)
+	-	[Running an Aerospike Server node](#running-an-aerospike-server-node)
+	-	[Enterprise Edition](#enterprise-edition)
+	-	[Community Edition](#community-edition)
+-	[Connecting to your Aerospike Container](#connecting-to-your-aerospike-container)
+	-	[Using aql](#using-aql)
+	-	[Using asadm](#using-asadm)
+-	[Customizing the Default Developer nvironment](#customizing-the-default-developer-template)
+	-	[List of template variables](#list-of-template-variables)
+	-	[Preconfigured namespace](#preconfigured-namespace)
+-	[Advanced Configuration](#advanced-configuration)
+	-	[Persistent data directory](#persistent-data-directory)
+	-	[Block storage](#block-storage)
+	-	[Persistent Lua cache](#persistent-lua-cache)
+	-	[A note about security](#a-note-about-security)
+	-	[Networking](#networking)
+	-	[Configuring the node's access address](#configuring-the-nodes-access-address)
+	-	[Mesh clustering](#mesh-clustering)
+-	[Sending telemetry data to Aerospike](#sending-telemetry-data-to-aerospike)
+-	[Image Versions](#image-versions)
+-	[Reporting Issues](#reporting-issues)
+-	[License](#license)
+
 ## Getting Started
 
-Aerospike Enterprise Edition requires a feature key file to start and to ungate certain features in the database, such as compression. Enterprise customers can use their production or development keys.
+Aerospike Database Community Edition (CE) supports the same developer APIs as Aerospike Database Enterprise Edition (EE), except for durable deletes. They differ in ease of operation and [enterprise features](https://aerospike.com/products/features-and-editions/), such as compression.
 
-Anyone can [sign up](https://www.aerospike.com/lp/try-now/) to get an evaluation feature key file for a full-featured, single-node Aerospike Enterprise Edition.
+Since server version 6.1, Aerospike EE starts in a single-node cluster evaluation mode, with all its enterprise features available.
 
-Aerospike Community Edition supports the same developer APIs as Aerospike Enterprise Edition, and differs in ease of operation and enterprise features. See the [product matrix](https://www.aerospike.com/products/product-matrix/) for more.
+### Version Tags
 
-### Running an Aerospike EE node with a feature key file in a mapped directory
+The `ee-[version]` tags are for Aerospike EE images, and will require a feature key file, such as the one you get with the single-node EE evaluation, or one associated with a commercial enterprise license agreement.
 
-```console
-docker run -d -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version]
+The `ce-[version]` tags are for Aerospike CE images, and do not require a feature key file to start. As mentioned above, the developer API for both is the same, but the editions differ in operational features.
+
+### Running an Aerospike Server node
+
+#### Enterprise Edition
+
+Running Enterprise Edition with default evaluation feature key (versions 6.1+).
+
+```sh
+docker run -d --name aerospike -p 3000-3002:3000-3002 aerospike:ee-[version]
+```
+
+Running Enterprise Edition with a feature key file in a mapped directory:
+
+```sh
+docker run -d -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" --name aerospike -p 3000-3002:3000-3002 aerospike:ee-[version]
+```
+
+Running Enterprise Edition with a feature key file in an environment variable:
+
+```sh
+FEATKEY=$(base64 ~/Desktop/evaluation-features.conf)
+docker run -d -e "FEATURES=$FEATKEY" -e "FEATURE_KEY_FILE=env-b64:FEATURES" --name aerospike -p 3000-3002:3000-3002 aerospike:ee-[version]
 ```
 
 Above, *DIR* is a directory on your machine where you drop your feature key file. Make sure Docker Desktop has file sharing permission to bind mount it into Docker containers.
 
-### Running a node with a feature key file in an environment variable
+#### Community Edition
 
-```console
-FEATKEY=$(base64 ~/Desktop/evaluation-features.conf)
-docker run -d -e "FEATURES=$FEATKEY" -e "FEATURE_KEY_FILE=env-b64:FEATURES" --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version]
+By using Aerospike Community Edition you agree to the [COMMUNITY_LICENSE](community/COMMUNITY_LICENSE).
+
+Running Aerospike Community Edition:
+
+```sh
+docker run -d --name aerospike -p 3000-3002:3000-3002 aerospike:ce-[version]
 ```
 
-### Running an Aerospike CE node
+## Connecting to your Aerospike Container
 
-```console
-docker run -d --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ce-[version]
+You can use the latest aerospike-tools image to connect to your Aerospike container.
+
+### Using aql
+
+```sh
+docker run -ti aerospike/aerospike-tools:latest aql -h  $(docker inspect -f '{{.NetworkSettings.IPAddress }}' aerospike)
+
+Seed:         172.17.0.2
+User:         None
+Config File:  /etc/aerospike/astools.conf /root/.aerospike/astools.conf 
+Aerospike Query Client
+Version 7.0.4
+C Client Version 6.0.0
+Copyright 2012-2021 Aerospike. All rights reserved.
+aql> show namespaces
++------------+
+| namespaces |
++------------+
+| "test"     |
++------------+
+[172.17.0.2:3000] 1 row in set (0.002 secs)
+
+OK
+
+aql> 
 ```
+
+### Using asadm
+
+```sh
+docker run -ti aerospike/aerospike-tools:latest asadm -h  $(docker inspect -f '{{.NetworkSettings.IPAddress }}' aerospike)
+
+Seed:        [('172.17.0.2', 3000, None)]
+Config_file: /root/.aerospike/astools.conf, /etc/aerospike/astools.conf
+Aerospike Interactive Shell, version 2.10.0
+
+Found 1 nodes
+Online:  172.17.0.2:3000
+
+Admin> info
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Network Information (2022-11-01 00:48:05 UTC)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           Node|         Node ID|             IP|    Build|Migrations|~~~~~~~~~~~~~~~~~~Cluster~~~~~~~~~~~~~~~~~~|Client|  Uptime
+               |                |               |         |          |Size|         Key|Integrity|      Principal| Conns|        
+172.17.0.2:3000|*BB9020011AC4202|172.17.0.2:3000|E-6.1.0.3|   0.000  |   1|19E628721D9A|True     |BB9020011AC4202|     8|00:02:09
+Number of rows: 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Namespace Usage Information (2022-11-01 00:48:05 UTC)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Namespace|           Node|  Total|Expirations|Evictions|  Stop|~~~~~~~~~~Device~~~~~~~~~~|~~~~~~~~~~Memory~~~~~~~~~|~Primary~
+         |               |Records|           |         |Writes|    Used|Used%|HWM%|Avail%|    Used|Used%|HWM%|Stop%|~~Index~~
+         |               |       |           |         |      |        |     |    |      |        |     |    |     |     Type
+test     |172.17.0.2:3000|0.000  |    0.000  |  0.000  |False |0.000 B |  0.0|   0|    99|0.000 B |  0.0|   0|   90|shmem    
+test     |               |0.000  |    0.000  |  0.000  |      |0.000 B |  0.0|    |      |0.000 B |  0.0|    |     |         
+Number of rows: 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Namespace Object Information (2022-11-01 00:48:05 UTC)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Namespace|           Node|Rack|  Repl|  Total|~~~~~~~~~~Objects~~~~~~~~~~|~~~~~~~~~Tombstones~~~~~~~~|~~~~Pending~~~~
+         |               |  ID|Factor|Records| Master|  Prole|Non-Replica| Master|  Prole|Non-Replica|~~~~Migrates~~~
+         |               |    |      |       |       |       |           |       |       |           |     Tx|     Rx
+test     |172.17.0.2:3000|   0|     1|0.000  |0.000  |0.000  |    0.000  |0.000  |0.000  |    0.000  |0.000  |0.000  
+test     |               |    |      |0.000  |0.000  |0.000  |    0.000  |0.000  |0.000  |    0.000  |0.000  |0.000  
+Number of rows: 1
+
+Admin>
+```
+
+## Customizing the Default Developer Environment
+
+The Aerospike Docker image comes with a default configuration file, which sets up a single node, single namespace developer environment. Alternatively, you can provide your own configuration file (see below).
+
+You can inject parameters into the default configuration template using container-side environment variables with the `-e` flag.
+
+For example, to set the default [namespace](https://docs.aerospike.com/server/architecture/data-model) name to *demo*:
+
+```sh
+docker run -d --name aerospike -e "NAMESPACE=demo" -p 3000-3002:3000-3002 -v /my/dir:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" aerospike:ee-[version]
+```
+
+Injecting configuration parameters into the configuration template isn't compatible with providing a configuration file. You can use one or the other.
+
+### List of template variables
+
+#### `FEATURE_KEY_FILE`
+
+The [`feature_key_file`](https://docs.aerospike.com/server/operations/configure/feature-key) of the `service` context which is only applicable and to Enterprise editions and must be set to the empty string when running the Community edition. Default: */etc/aerospike/features.conf*.
+
+#### `LOGFILE`
+
+The [`file`](https://docs.aerospike.com/reference/configuration#file) param of the `logging` context. Default: *""*, do not log to file. The container will also log to `stdout`` regardless of what is configured here.
+
+#### `SERVICE_ADDRESS`
+
+The bind [`address`](https://docs.aerospike.com/reference/configuration#address) of the `networking.service` subcontext. Default: *any*
+
+#### `SERVICE_PORT`
+
+The [`port`](https://docs.aerospike.com/reference/configuration#port) of the `networking.service` subcontext. Default: *3000*
+
+### Preconfigured namespace
+
+The single preconfigured namespace has the following variables:
+
+#### `NAMESPACE`
+
+The name of the namespace. Default: *test*
+
+#### `DATA_IN_MEMORY`
+
+The storage-engine [`data-in-memory`](https://docs.aerospike.com/reference/configuration#data-in-memory) setting. If *false* (default), the namespace only stores the index in memory, and all reads and writes are served [from the filesystem](https://docs.aerospike.com/server/operations/configure/namespace/storage#recipe-for-a-persistent-memory-storage-engine). If *true* the namespace storage is [in-memory with filesystem persistence](https://docs.aerospike.com/server/operations/configure/namespace/storage#recipe-for-an-hdd-storage-engine-with-data-in-memory), meaning that reads and writes happen from a full in-memory copy, and a synchronous write persists to disk.
+
+#### `DEFAULT_TTL`
+
+The namespace [`default-ttl`](https://docs.aerospike.com/reference/configuration#default-ttl). Default: *0*
+
+#### `MEM_GB`
+
+The namespace [`memory-size`](https://docs.aerospike.com/reference/configuration#memory-size). Default: *1*, the unit is always `G` (GB)
+
+#### `NSUP_PERIOD`
+
+The namespace [`nsup-period`](https://docs.aerospike.com/reference/configuration#nsup-period). Default: *120* , nsup-period in seconds - also disabled when `default-ttl` is `0`.
+
+#### `STORAGE_GB`
+
+The namespace persistence `file` size. Default: *4*, the unit is always `G` (GB)
 
 ## Advanced Configuration
 
-The Aerospike Docker image has a default configuration file template that can be populated with individual configuration parameters, as we did before with `FEATURE_KEY_FILE`. Alternatively, it can be replaced with a custom configuration file.
+You can override the default configuration file by providing your own aerospike.conf, as described in [Configuring Aerospike Database](https://docs.aerospike.com/server/operations/configure).
 
-The following sections describe both advanced options.
-
-### Injecting configuration parameters
-
-You can inject parameters into the configuration template using container-side environment variables with the `-e` flag.
-
-For example, to set the default [namespace](https://www.aerospike.com/docs/architecture/data-model.html) name to *demo*:
-
-```console
-docker run -d --name aerospike -e "NAMESPACE=demo" -p 3000-3002:3000-3002 -v /my/dir:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" %%IMAGE%%:ee-[version]
-```
-
-Injecting configuration parameters into the configuration template isn't compatible with using a custom configuration file. You can use one or the other.
-
-#### List of template variables
-
--	`FEATURE_KEY_FILE` - the [`feature_key_file`](https://www.aerospike.com/docs/reference/configuration/index.html#feature-key-file) is only required for the EE image. Default: /etc/aerospike/features.conf
--	`SERVICE_THREADS` - the [`service_threads`](https://www.aerospike.com/docs/reference/configuration/index.html#service-threads). Default: Number of vCPUs
--	`LOGFILE` - the [`file`](https://www.aerospike.com/docs/reference/configuration/index.html#file) param of the `logging` context. Default: /dev/null, do not log to file, log to stdout
--	`SERVICE_ADDRESS` - the bind [`address`](https://www.aerospike.com/docs/reference/configuration/index.html#address) of the `networking.service` subcontext. Default: any
--	`SERVICE_PORT` - the [`port`](https://www.aerospike.com/docs/reference/configuration/index.html#port) of the `networking.service` subcontext. Default: 3000
--	`HB_ADDRESS` - the `networking.heartbeat` [`address`](https://www.aerospike.com/docs/reference/configuration/index.html#address) for cross cluster mesh. Default: any
--	`HB_PORT` - the [`port`](https://www.aerospike.com/docs/reference/configuration/index.html#port) for `networking.heartbeat` communications. Default: 3002
--	`FABRIC_ADDRESS` - the [`address`](https://www.aerospike.com/docs/reference/configuration/index.html#address) of the `networking.fabric` subcontext. Default: any
--	`FABRIC_PORT` - the [`port`](https://www.aerospike.com/docs/reference/configuration/index.html#port) of the `networking.fabric` subcontext. Default: 3001
-
-The single preconfigured namespace is [in-memory with filesystem persistence](https://www.aerospike.com/docs/operations/configure/namespace/storage/#recipe-for-a-hdd-storage-engine-with-data-in-index-engine)
-
--	`NAMESPACE` - the name of the namespace. Default: test
--	`REPL_FACTOR` - the namespace [`replication-factor`](https://www.aerospike.com/docs/reference/configuration/index.html#replication-factor). Default: 2
--	`MEM_GB` - the namespace [`memory-size`](https://www.aerospike.com/docs/reference/configuration/index.html#memory-size). Default: 1, the unit is always `G` (GB)
--	`DEFAULT_TTL` - the namespace [`default-ttl`](https://www.aerospike.com/docs/reference/configuration/index.html#default-ttl). Default: 30d
--	`STORAGE_GB` - the namespace persistence `file` size. Default: 4, the unit is always `G` (GB)
--	`NSUP_PERIOD` - the namespace [`nsup-period`](https://www.aerospike.com/docs/reference/configuration/index.html#nsup-period). Default: 120 , nsup-period in seconds
-
-### Using a custom configuration file
-
-You can override the use of the configuration file template by providing your own aerospike.conf, as described in [Configuring Aerospike Database](https://www.aerospike.com/docs/operations/configure/index.html).
-
-You should first `-v` map a local directory, which Docker will bind mount. Next, drop your aerospike.conf file into this directory. Finally, use the `--config-file` option to tell Aerospike where in the container the configuration file is (the default path is /etc/aerospike/aerospike.conf). Remember that the feature key file is required, so use `feature-key-file` in your config file to point to a mounted path (such as /opt/aerospike/etc/feature.conf).
+You should first `-v` map a local directory, which Docker will bind mount. Next, drop your aerospike.conf file into this directory. Finally, use the `--config-file` option to tell Aerospike where in the container the configuration file is (the default path is */etc/aerospike/aerospike.conf*). Remember that the feature key file is required, so use `feature-key-file` in your config file to point to a mounted path (such as */opt/aerospike/etc/feature.conf*).
 
 For example:
 
-```console
-docker run -d -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
+```sh
+docker run -d -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 aerospike/aerospike-server-enterprise --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
-### Persistent Data Directory
+### Persistent data directory
 
-With Docker, the files within the container are not persisted past the life of the container. To persist data, you will want to mount a directory from the host to the container's /opt/aerospike/data using the `-v` option:
+With Docker, the files within the container are not persisted past the life of the container. To persist data, you will want to mount a directory from the host to the container's */opt/aerospike/data* using the `-v` option:
 
 For example:
 
-```console
-docker run -d  -v /opt/aerospike/data:/opt/aerospike/data  -v /opt/aerospike/etc:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" %%IMAGE%%:ee-[version]
+```sh
+docker run -d  -v /opt/aerospike/data:/opt/aerospike/data  -v /opt/aerospike/etc:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" aerospike/aerospike-server-enterprise
 ```
 
-The example above uses the configuration template, where the single defined namespace is in-memory with file-based persistence. Just mounting the predefined /opt/aerospike/data directory enables the data to be persisted on the host.
+The example above uses the configuration template, where the single defined namespace is in-memory with file-based persistence. Just mounting the predefined */opt/aerospike/data* directory enables the data to be persisted on the host.
 
-Alternatively, a custom configuration file is used with the parameter `file` set to be a file in the mounted /opt/aerospike/data, such as in the following config snippet:
+Alternatively, your custom configuration file is used with the parameter `file` set to be a file in the mounted */opt/aerospike/data*, such as in the following config snippet:
 
-	namespace test {
-	    # :
-	    storage-engine device {
-	        file /opt/aerospike/data/test.dat
-	        filesize 4G
-	        data-in-memory true
-	    }
-	}
-
-In this example we also mount the data directory in a similar way, using a custom configuration file.
-
-```console
-docker run -d -v /opt/aerospike/data:/opt/aerospike/data -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
+```plaintext
+namespace test {
+    # :
+    storage-engine device {
+        file /opt/aerospike/data/test.dat
+        filesize 4G
+        data-in-memory true
+    }
+}
 ```
 
-### Block Storage
+In this example we also mount the data directory in a similar way, using a custom configuration file
+
+```sh
+docker run -d -v /opt/aerospike/data:/opt/aerospike/data -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 --config-file /opt/aerospike/etc/aerospike.conf aerospike/aerospike-server-enterprise
+```
+
+### Block storage
 
 Docker provides an ability to expose a host's block devices to a running container. The `--device` option can be used to map a host block device within a container.
 
-Update the `storage-engine device` section of the namespace in the custom aerospike configuration file.
+Update the `storage-engine device` section of the namespace in the custom Aerospike configuration file.
 
-	namespace test {
-	    # :
-	    storage-engine device {
-	        device /dev/xvdc
-	            write-block-size 128k
-	    }
-	}
+```plaintext
+namespace test {
+    # :
+    storage-engine device {
+        device /dev/xvdc
+        write-block-size 128k
+    }
+}
+```
 
 Now to map a host drive /dev/sdc to /dev/xvdc on a container
 
-```console
-docker run -d --device '/dev/sdc:/dev/xvdc' -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 %%IMAGE%%:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
+```sh
+docker run -d --device '/dev/sdc:/dev/xvdc' -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 --config-file /opt/aerospike/etc/aerospike.conf aerospike/aerospike-server-enterprise
 ```
 
-### Persistent Lua Cache
+### Persistent Lua cache
 
-Upon restart, your lua cache will become emptied. To persist the cache, you will want to mount a directory from the host to the container's `/opt/aerospike/usr/udf/lua` using the `-v` option:
+Upon restart, your Lua cache will become emptied. To persist the cache, you will want to mount a directory from the host to the container's */opt/aerospike/usr/udf/lua* using the `-v` option:
 
 ```sh
-docker run -d -v /opt/aerospike/lua:/opt/aerospike/usr/udf/lua -v /opt/aerospike/data:/opt/aerospike/data --name aerospike -p 3000-3002:3000-3002 -e "FEATURE_KEY_FILE=/opt/etc/aerospike/features.conf" %%IMAGE%%:ee-[version]
+docker run -d -v /opt/aerospike/lua:/opt/aerospike/usr/udf/lua -v /opt/aerospike/data:/opt/aerospike/data --name aerospike -p 3000-3002:3000-3002 --config-file /opt/aerospike/etc/aerospike.conf aerospike/aerospike-server-enterprise
 ```
 
-## Clustering
+### A note about security
 
-Developers using the Aerospike EE single-node evaluation, and most others using Docker Desktop on their machine for development, will not need to configure the node for clustering. If you're interested in using clustering and have a feature key file without a single node limit, read the following sections.
+For convenience, this image does not have security turned on by default, but it is a core Aerospike Enterprise Edition feature. The knowledge base article [How To secure Aerospike database servers](https://discuss.aerospike.com/t/how-to-secure-aerospike-database-servers/7804) covers the topic well.
 
-### Configuring the node's access address
+[And Now for a Security Reminder](https://www.aerospike.com/blog/and-now-for-a-security-reminder/) that bad things can happen to good people.
 
-In order for the Aerospike node to properly broadcast its address to the cluster and applications, the [`access-address`](https://www.aerospike.com/docs/reference/configuration/index.html#access-address) configuration parameter needs to be set in the configuration file. If it is not set, then the IP address within the container will be used, which is not accessible to other nodes.
+Also see the knowledge base article [How To secure Aerospike database servers](https://discuss.aerospike.com/t/how-to-secure-aerospike-database-servers/7804).
 
-	    network {
-	        service {
-	            address any                  # Listening IP Address
-	            port 3000                    # Listening Port
-	            access-address 192.168.1.100 # IP Address used by cluster nodes and applications
-	        }
+### Networking
 
-### Mesh Clustering
+Developers using the Aerospike Enterprise Edition single-node evaluation, and most others using Docker Desktop on their machine for development, will not need to configure the node for clustering. If you're interested in using clustering and have a feature key file without a single node limit or you are using the Community Edition, read the following sections.
 
-Mesh networking requires setting up links between each node in the cluster. This can be achieved in two ways:
+#### Configuring the node's access address
 
-1.	Add a configuration for each node in the cluster, as defined in [Network Heartbeat Configuration](http://www.aerospike.com/docs/operations/configure/network/heartbeat/#mesh-unicast-heartbeat).
-2.	Use `asinfo` to send the `tip` command, to make the node aware of another node, as defined in [tip command in asinfo](http://www.aerospike.com/docs/tools/asinfo/#tip).
+In order for the Aerospike node to properly broadcast its address to the cluster and applications, the [`access-address`](https://docs.aerospike.com/reference/configuration#access-address) configuration parameter needs to be set in the configuration file. If it is not set, then the IP address within the container will be used, which is not accessible to other nodes.
 
-For more, see [How do I get a 2 nodes Aerospike cluster running quickly in Docker without editing a single file?](https://medium.com/aerospike-developer-blog/how-do-i-get-a-2-node-aerospike-cluster-running-quickly-in-docker-without-editing-a-single-file-1c2a94564a99?source=friends_link&sk=4ff6a22f0106596c42aa4b77d6cdc3a5)
+```plaintext
+    network {
+        service {
+            address any                  # Listening IP Address
+            port 3000                    # Listening Port
+            access-address 192.168.1.100 # IP Address used by cluster nodes and applications
+        }
+
+    ...
+    }
+```
+
+#### Mesh clustering
+
+See [How do I get a 2 nodes Aerospike cluster running quickly in Docker without editing a single file?](https://medium.com/aerospike-developer-blog/how-do-i-get-a-2-node-aerospike-cluster-running-quickly-in-docker-without-editing-a-single-file-1c2a94564a99?source=friends_link&sk=4ff6a22f0106596c42aa4b77d6cdc3a5)
+
+## Sending telemetry data to Aerospike
+
+Aerospike Telemetry is a feature that allows us to collect certain anonymized usage data – not the database data – on your Aerospike Community Edition server use. [More Info](http://www.aerospike.com/aerospike-telemetry/)
+
+> [!TIP] Telemetry can be disabled by passing the environment variable `AEROSPIKE_TELEMETRY` to `FALSE` within the container's environment.
 
 ## Image Versions
 
-These images are based on [ubuntu:24.04](https://hub.docker.com/_/ubuntu).
-
-### ee-[version]
-
-These tags are for Aerospike EE images, and will require a feature key file, such as the one you get with the single-node EE evaluation, or one associated with a commercial enterprise license agreement.
-
-### ce-[version]
-
-These tags are for Aerospike CE images, and do not require a feature key file to start. As mentioned above, the developer API for both is the same, but the editions differ in operational features.
+These images are based on [debian:*-slim](https://hub.docker.com/_/debian).
 
 ## Reporting Issues
 
-If you have any problems with or questions about this image, please post on the [Aerospike discussion forum](https://discuss.aerospike.com).
+Aerospike Enterprise evaluation users, if you have any problems with or questions about this image, please post on the [Aerospike discussion forum](https://discuss.aerospike.com) or open an issue in [aerospike/aerospike-server-enterprise.docker](https://github.com/aerospike/aerospike-server-enterprise.docker/issues).
 
-Enterprise customers are welcome to participate in the community forum, but can also report issues through the enterprise support system.
+Enterprise customers are welcome to participate in the community forum, but can also report issues through the [enterprise support system](https://support.aerospike.com/).
 
-Aerospike EE evaluation users can open an issue in [aerospike/aerospike-server-enterprise.docker](https://github.com/aerospike/aerospike-server-enterprise.docker/issues).
+Community Edition users may report problems or ask questions about this image on the [Aerospike Forums](https://discuss.aerospike.com/) or open an issue in [aerospike/aerospike-server.docker](https://github.com/aerospike/aerospike-server.docker/issues).
 
-Aerospike CE users can open an issue in [aerospike/aerospike-server.docker](https://github.com/aerospike/aerospike-server.docker/issues).
+## License
+
+If you are using the Aerospike Database Enterprise Edition evaluation feature key file, you are operating under the [Aerospike Evaluation License Agreement](https://aerospike.com/legal/evaluation-license-agreement/).
+
+If you are using a feature key file you received as part of your commercial enterprise license, you are operating under the [Aerospike Master License Agreement](https://aerospike.com/legal/master-license-agreement/).
+
+If you are using Aerospike Database CE refer to the license information in the [aerospike/aerospike-server](https://github.com/aerospike/aerospike-server) repository.
