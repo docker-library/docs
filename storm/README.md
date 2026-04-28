@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8.5-jre17`, `2.8-jre17`, `2.8.5`, `2.8`, `latest`](https://github.com/apache/storm-docker/blob/6857a1bb349c6cad0dfc3e2c34aaa61e11ae213c/2.8.5/Dockerfile)
+-	[`2.8.7-jre17`, `2.8-jre17`, `2.8.7`, `2.8`, `latest`](https://github.com/apache/storm-docker/blob/625f431e16c92c9c76a6271326c920f844d487ab/2.8.7/Dockerfile)
 
--	[`2.8.5-jre21`, `2.8-jre21`](https://github.com/apache/storm-docker/blob/6857a1bb349c6cad0dfc3e2c34aaa61e11ae213c/2.8.5-jre21/Dockerfile)
+-	[`2.8.7-jre21`, `2.8-jre21`](https://github.com/apache/storm-docker/blob/625f431e16c92c9c76a6271326c920f844d487ab/2.8.7-jre21/Dockerfile)
 
 # Quick reference (cont.)
 
