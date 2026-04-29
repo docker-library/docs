@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2025.2-u5`, `2025.2`, `10.4.5`, `10.4`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/502b96e7666b6690d948aef91d4f1ac641e47611/docker/Dockerfile)
+-	[`2026.1-u0`, `2026.1`, `11.0.0`, `11.0`, `latest`](https://github.com/bonitasoft/bonita-distrib/blob/3d5c633763ceba1ac27f6874deec28178348e929/docker/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -338,13 +338,13 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Retrieve the last update tool archive from https://www.bonitasoft.com/downloads
 
 	```console
-	unzip bonita-update-tool-3.8.0.zip
+	unzip bonita-update-tool-3.9.0.zip
 	```
 
 -	Configure the update tool
 
 	```console
-	$ cd bonita-update-tool-3.8.0
+	$ cd bonita-update-tool-3.9.0
 	```
 
 	edit the update tool configuration file `Config.properties` to point towards the database.
@@ -373,7 +373,7 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 -	Launch the new container pointing towards the copy of the database.
 
 	```console
-	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2025.2-u5
+	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2026.1-u0
 	```
 
 For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita).
