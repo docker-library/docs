@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `sapmachine` official image](https://hub.docker.com/_/sapmachine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,117 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `ubuntu`, `jdk`, `jdk-ubuntu`, `26`, `26-ubuntu`, `26.0.1`, `26.0.1-ubuntu`, `26-jdk`, `26-jdk-ubuntu`, `26.0.1-jdk`, `26.0.1-jdk-ubuntu`, `ubuntu-noble`, `ubuntu-24.04`, `jdk-ubuntu-noble`, `jdk-ubuntu-24.04`, `26-ubuntu-noble`, `26-ubuntu-24.04`, `26-jdk-ubuntu-noble`, `26-jdk-ubuntu-24.04`, `26.0.1-ubuntu-noble`, `26.0.1-ubuntu-24.04`, `26.0.1-jdk-ubuntu-noble`, `26.0.1-jdk-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/ubuntu/24_04/jdk/Dockerfile)
-
--	[`jdk-headless`, `jdk-headless-ubuntu`, `26-jdk-headless`, `26-jdk-headless-ubuntu`, `26.0.1-jdk-headless`, `26.0.1-jdk-headless-ubuntu`, `jdk-headless-ubuntu-noble`, `jdk-headless-ubuntu-24.04`, `26-jdk-headless-ubuntu-noble`, `26-jdk-headless-ubuntu-24.04`, `26.0.1-jdk-headless-ubuntu-noble`, `26.0.1-jdk-headless-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/ubuntu/24_04/jdk-headless/Dockerfile)
-
--	[`jre`, `jre-ubuntu`, `26-jre`, `26-jre-ubuntu`, `26.0.1-jre`, `26.0.1-jre-ubuntu`, `jre-ubuntu-noble`, `jre-ubuntu-24.04`, `26-jre-ubuntu-noble`, `26-jre-ubuntu-24.04`, `26.0.1-jre-ubuntu-noble`, `26.0.1-jre-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/ubuntu/24_04/jre/Dockerfile)
-
--	[`jre-headless`, `jre-headless-ubuntu`, `26-jre-headless`, `26-jre-headless-ubuntu`, `26.0.1-jre-headless`, `26.0.1-jre-headless-ubuntu`, `jre-headless-ubuntu-noble`, `jre-headless-ubuntu-24.04`, `26-jre-headless-ubuntu-noble`, `26-jre-headless-ubuntu-24.04`, `26.0.1-jre-headless-ubuntu-noble`, `26.0.1-jre-headless-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/ubuntu/24_04/jre-headless/Dockerfile)
-
--	[`ubuntu-jammy`, `ubuntu-22.04`, `jdk-ubuntu-jammy`, `jdk-ubuntu-22.04`, `26-ubuntu-jammy`, `26-ubuntu-22.04`, `26-jdk-ubuntu-jammy`, `26-jdk-ubuntu-22.04`, `26.0.1-ubuntu-jammy`, `26.0.1-ubuntu-22.04`, `26.0.1-jdk-ubuntu-jammy`, `26.0.1-jdk-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/ubuntu/22_04/jdk/Dockerfile)
-
--	[`jdk-headless-ubuntu-jammy`, `jdk-headless-ubuntu-22.04`, `26-jdk-headless-ubuntu-jammy`, `26-jdk-headless-ubuntu-22.04`, `26.0.1-jdk-headless-ubuntu-jammy`, `26.0.1-jdk-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/ubuntu/22_04/jdk-headless/Dockerfile)
-
--	[`jre-ubuntu-jammy`, `jre-ubuntu-22.04`, `26-jre-ubuntu-jammy`, `26-jre-ubuntu-22.04`, `26.0.1-jre-ubuntu-jammy`, `26.0.1-jre-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/ubuntu/22_04/jre/Dockerfile)
-
--	[`jre-headless-ubuntu-jammy`, `jre-headless-ubuntu-22.04`, `26-jre-headless-ubuntu-jammy`, `26-jre-headless-ubuntu-22.04`, `26.0.1-jre-headless-ubuntu-jammy`, `26.0.1-jre-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/ubuntu/22_04/jre-headless/Dockerfile)
-
--	[`alpine`, `jdk-alpine`, `26-alpine`, `26.0.1-alpine`, `26-jdk-alpine`, `26.0.1-jdk-alpine`, `alpine-3.23`, `jdk-alpine-3.23`, `26-alpine-3.23`, `26-jdk-alpine-3.23`, `26.0.1-alpine-3.23`, `26.0.1-jdk-alpine-3.23`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/alpine/3_23/jdk/Dockerfile)
-
--	[`jre-alpine`, `26-jre-alpine`, `26.0.1-jre-alpine`, `jre-alpine-3.23`, `26-jre-alpine-3.23`, `26.0.1-jre-alpine-3.23`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/alpine/3_23/jre/Dockerfile)
-
--	[`alpine-3.22`, `jdk-alpine-3.22`, `26-alpine-3.22`, `26-jdk-alpine-3.22`, `26.0.1-alpine-3.22`, `26.0.1-jdk-alpine-3.22`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/alpine/3_22/jdk/Dockerfile)
-
--	[`jre-alpine-3.22`, `26-jre-alpine-3.22`, `26.0.1-jre-alpine-3.22`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/alpine/3_22/jre/Dockerfile)
-
--	[`alpine-3.21`, `jdk-alpine-3.21`, `26-alpine-3.21`, `26-jdk-alpine-3.21`, `26.0.1-alpine-3.21`, `26.0.1-jdk-alpine-3.21`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/alpine/3_21/jdk/Dockerfile)
-
--	[`jre-alpine-3.21`, `26-jre-alpine-3.21`, `26.0.1-jre-alpine-3.21`](https://github.com/SAP/SapMachine-infrastructure/blob/1f26335ea973ab72c80825cac4a24dcfbaaefb7f/dockerfiles/26/alpine/3_21/jre/Dockerfile)
-
--	[`lts`, `lts-ubuntu`, `25`, `25-ubuntu`, `25.0.3`, `25.0.3-ubuntu`, `25-jdk`, `25-jdk-ubuntu`, `25.0.3-jdk`, `25.0.3-jdk-ubuntu`, `lts-jdk-ubuntu`, `lts-ubuntu-noble`, `lts-ubuntu-24.04`, `lts-jdk-ubuntu-noble`, `lts-jdk-ubuntu-24.04`, `25-ubuntu-noble`, `25-ubuntu-24.04`, `25-jdk-ubuntu-noble`, `25-jdk-ubuntu-24.04`, `25.0.3-ubuntu-noble`, `25.0.3-ubuntu-24.04`, `25.0.3-jdk-ubuntu-noble`, `25.0.3-jdk-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/ubuntu/24_04/jdk/Dockerfile)
-
--	[`25-jdk-headless`, `25-jdk-headless-ubuntu`, `25.0.3-jdk-headless`, `25.0.3-jdk-headless-ubuntu`, `lts-jdk-headless-ubuntu`, `lts-jdk-headless-ubuntu-noble`, `lts-jdk-headless-ubuntu-24.04`, `25-jdk-headless-ubuntu-noble`, `25-jdk-headless-ubuntu-24.04`, `25.0.3-jdk-headless-ubuntu-noble`, `25.0.3-jdk-headless-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/ubuntu/24_04/jdk-headless/Dockerfile)
-
--	[`25-jre`, `25-jre-ubuntu`, `25.0.3-jre`, `25.0.3-jre-ubuntu`, `lts-jre-ubuntu`, `lts-jre-ubuntu-noble`, `lts-jre-ubuntu-24.04`, `25-jre-ubuntu-noble`, `25-jre-ubuntu-24.04`, `25.0.3-jre-ubuntu-noble`, `25.0.3-jre-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/ubuntu/24_04/jre/Dockerfile)
-
--	[`25-jre-headless`, `25-jre-headless-ubuntu`, `25.0.3-jre-headless`, `25.0.3-jre-headless-ubuntu`, `lts-jre-headless-ubuntu`, `lts-jre-headless-ubuntu-noble`, `lts-jre-headless-ubuntu-24.04`, `25-jre-headless-ubuntu-noble`, `25-jre-headless-ubuntu-24.04`, `25.0.3-jre-headless-ubuntu-noble`, `25.0.3-jre-headless-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/ubuntu/24_04/jre-headless/Dockerfile)
-
--	[`lts-ubuntu-jammy`, `lts-ubuntu-22.04`, `lts-jdk-ubuntu-jammy`, `lts-jdk-ubuntu-22.04`, `25-ubuntu-jammy`, `25-ubuntu-22.04`, `25-jdk-ubuntu-jammy`, `25-jdk-ubuntu-22.04`, `25.0.3-ubuntu-jammy`, `25.0.3-ubuntu-22.04`, `25.0.3-jdk-ubuntu-jammy`, `25.0.3-jdk-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/ubuntu/22_04/jdk/Dockerfile)
-
--	[`lts-jdk-headless-ubuntu-jammy`, `lts-jdk-headless-ubuntu-22.04`, `25-jdk-headless-ubuntu-jammy`, `25-jdk-headless-ubuntu-22.04`, `25.0.3-jdk-headless-ubuntu-jammy`, `25.0.3-jdk-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/ubuntu/22_04/jdk-headless/Dockerfile)
-
--	[`lts-jre-ubuntu-jammy`, `lts-jre-ubuntu-22.04`, `25-jre-ubuntu-jammy`, `25-jre-ubuntu-22.04`, `25.0.3-jre-ubuntu-jammy`, `25.0.3-jre-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/ubuntu/22_04/jre/Dockerfile)
-
--	[`lts-jre-headless-ubuntu-jammy`, `lts-jre-headless-ubuntu-22.04`, `25-jre-headless-ubuntu-jammy`, `25-jre-headless-ubuntu-22.04`, `25.0.3-jre-headless-ubuntu-jammy`, `25.0.3-jre-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/ubuntu/22_04/jre-headless/Dockerfile)
-
--	[`lts-alpine`, `25-alpine`, `25.0.3-alpine`, `lts-jdk-alpine`, `25-jdk-alpine`, `25.0.3-jdk-alpine`, `lts-alpine-3.23`, `lts-jdk-alpine-3.23`, `25-alpine-3.23`, `25-jdk-alpine-3.23`, `25.0.3-alpine-3.23`, `25.0.3-jdk-alpine-3.23`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/alpine/3_23/jdk/Dockerfile)
-
--	[`lts-jre-alpine`, `25-jre-alpine`, `25.0.3-jre-alpine`, `lts-jre-alpine-3.23`, `25-jre-alpine-3.23`, `25.0.3-jre-alpine-3.23`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/alpine/3_23/jre/Dockerfile)
-
--	[`lts-alpine-3.22`, `lts-jdk-alpine-3.22`, `25-alpine-3.22`, `25-jdk-alpine-3.22`, `25.0.3-alpine-3.22`, `25.0.3-jdk-alpine-3.22`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/alpine/3_22/jdk/Dockerfile)
-
--	[`lts-jre-alpine-3.22`, `25-jre-alpine-3.22`, `25.0.3-jre-alpine-3.22`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/alpine/3_22/jre/Dockerfile)
-
--	[`lts-alpine-3.21`, `lts-jdk-alpine-3.21`, `25-alpine-3.21`, `25-jdk-alpine-3.21`, `25.0.3-alpine-3.21`, `25.0.3-jdk-alpine-3.21`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/alpine/3_21/jdk/Dockerfile)
-
--	[`lts-jre-alpine-3.21`, `25-jre-alpine-3.21`, `25.0.3-jre-alpine-3.21`](https://github.com/SAP/SapMachine-infrastructure/blob/73134d1d0673ee093633e25170e31605389fb4de/dockerfiles/25/alpine/3_21/jre/Dockerfile)
-
--	[`21`, `21-ubuntu`, `21.0.11`, `21.0.11-ubuntu`, `21-jdk`, `21-jdk-ubuntu`, `21.0.11-jdk`, `21.0.11-jdk-ubuntu`, `21-ubuntu-noble`, `21-ubuntu-24.04`, `21-jdk-ubuntu-noble`, `21-jdk-ubuntu-24.04`, `21.0.11-ubuntu-noble`, `21.0.11-ubuntu-24.04`, `21.0.11-jdk-ubuntu-noble`, `21.0.11-jdk-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/ubuntu/24_04/jdk/Dockerfile)
-
--	[`21-jdk-headless`, `21-jdk-headless-ubuntu`, `21.0.11-jdk-headless`, `21.0.11-jdk-headless-ubuntu`, `21-jdk-headless-ubuntu-noble`, `21-jdk-headless-ubuntu-24.04`, `21.0.11-jdk-headless-ubuntu-noble`, `21.0.11-jdk-headless-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/ubuntu/24_04/jdk-headless/Dockerfile)
-
--	[`21-jre`, `21-jre-ubuntu`, `21.0.11-jre`, `21.0.11-jre-ubuntu`, `21-jre-ubuntu-noble`, `21-jre-ubuntu-24.04`, `21.0.11-jre-ubuntu-noble`, `21.0.11-jre-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/ubuntu/24_04/jre/Dockerfile)
-
--	[`21-jre-headless`, `21-jre-headless-ubuntu`, `21.0.11-jre-headless`, `21.0.11-jre-headless-ubuntu`, `21-jre-headless-ubuntu-noble`, `21-jre-headless-ubuntu-24.04`, `21.0.11-jre-headless-ubuntu-noble`, `21.0.11-jre-headless-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/ubuntu/24_04/jre-headless/Dockerfile)
-
--	[`21-ubuntu-jammy`, `21-ubuntu-22.04`, `21-jdk-ubuntu-jammy`, `21-jdk-ubuntu-22.04`, `21.0.11-ubuntu-jammy`, `21.0.11-ubuntu-22.04`, `21.0.11-jdk-ubuntu-jammy`, `21.0.11-jdk-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/ubuntu/22_04/jdk/Dockerfile)
-
--	[`21-jdk-headless-ubuntu-jammy`, `21-jdk-headless-ubuntu-22.04`, `21.0.11-jdk-headless-ubuntu-jammy`, `21.0.11-jdk-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/ubuntu/22_04/jdk-headless/Dockerfile)
-
--	[`21-jre-ubuntu-jammy`, `21-jre-ubuntu-22.04`, `21.0.11-jre-ubuntu-jammy`, `21.0.11-jre-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/ubuntu/22_04/jre/Dockerfile)
-
--	[`21-jre-headless-ubuntu-jammy`, `21-jre-headless-ubuntu-22.04`, `21.0.11-jre-headless-ubuntu-jammy`, `21.0.11-jre-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/ubuntu/22_04/jre-headless/Dockerfile)
-
--	[`21-alpine`, `21.0.11-alpine`, `21-jdk-alpine`, `21.0.11-jdk-alpine`, `21-alpine-3.23`, `21-jdk-alpine-3.23`, `21.0.11-alpine-3.23`, `21.0.11-jdk-alpine-3.23`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/alpine/3_23/jdk/Dockerfile)
-
--	[`21-jre-alpine`, `21.0.11-jre-alpine`, `21-jre-alpine-3.23`, `21.0.11-jre-alpine-3.23`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/alpine/3_23/jre/Dockerfile)
-
--	[`21-alpine-3.22`, `21-jdk-alpine-3.22`, `21.0.11-alpine-3.22`, `21.0.11-jdk-alpine-3.22`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/alpine/3_22/jdk/Dockerfile)
-
--	[`21-jre-alpine-3.22`, `21.0.11-jre-alpine-3.22`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/alpine/3_22/jre/Dockerfile)
-
--	[`21-alpine-3.21`, `21-jdk-alpine-3.21`, `21.0.11-alpine-3.21`, `21.0.11-jdk-alpine-3.21`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/alpine/3_21/jdk/Dockerfile)
-
--	[`21-jre-alpine-3.21`, `21.0.11-jre-alpine-3.21`](https://github.com/SAP/SapMachine-infrastructure/blob/b4834e4ac67a83161268945217d1cbfbc4619f65/dockerfiles/21/alpine/3_21/jre/Dockerfile)
-
--	[`17`, `17-ubuntu`, `17.0.19`, `17.0.19-ubuntu`, `17-jdk`, `17-jdk-ubuntu`, `17.0.19-jdk`, `17.0.19-jdk-ubuntu`, `17-ubuntu-noble`, `17-ubuntu-24.04`, `17-jdk-ubuntu-noble`, `17-jdk-ubuntu-24.04`, `17.0.19-ubuntu-noble`, `17.0.19-ubuntu-24.04`, `17.0.19-jdk-ubuntu-noble`, `17.0.19-jdk-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/ubuntu/24_04/jdk/Dockerfile)
-
--	[`17-jdk-headless`, `17-jdk-headless-ubuntu`, `17.0.19-jdk-headless`, `17.0.19-jdk-headless-ubuntu`, `17-jdk-headless-ubuntu-noble`, `17-jdk-headless-ubuntu-24.04`, `17.0.19-jdk-headless-ubuntu-noble`, `17.0.19-jdk-headless-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/ubuntu/24_04/jdk-headless/Dockerfile)
-
--	[`17-jre`, `17-jre-ubuntu`, `17.0.19-jre`, `17.0.19-jre-ubuntu`, `17-jre-ubuntu-noble`, `17-jre-ubuntu-24.04`, `17.0.19-jre-ubuntu-noble`, `17.0.19-jre-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/ubuntu/24_04/jre/Dockerfile)
-
--	[`17-jre-headless`, `17-jre-headless-ubuntu`, `17.0.19-jre-headless`, `17.0.19-jre-headless-ubuntu`, `17-jre-headless-ubuntu-noble`, `17-jre-headless-ubuntu-24.04`, `17.0.19-jre-headless-ubuntu-noble`, `17.0.19-jre-headless-ubuntu-24.04`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/ubuntu/24_04/jre-headless/Dockerfile)
-
--	[`17-ubuntu-jammy`, `17-ubuntu-22.04`, `17-jdk-ubuntu-jammy`, `17-jdk-ubuntu-22.04`, `17.0.19-ubuntu-jammy`, `17.0.19-ubuntu-22.04`, `17.0.19-jdk-ubuntu-jammy`, `17.0.19-jdk-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/ubuntu/22_04/jdk/Dockerfile)
-
--	[`17-jdk-headless-ubuntu-jammy`, `17-jdk-headless-ubuntu-22.04`, `17.0.19-jdk-headless-ubuntu-jammy`, `17.0.19-jdk-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/ubuntu/22_04/jdk-headless/Dockerfile)
-
--	[`17-jre-ubuntu-jammy`, `17-jre-ubuntu-22.04`, `17.0.19-jre-ubuntu-jammy`, `17.0.19-jre-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/ubuntu/22_04/jre/Dockerfile)
-
--	[`17-jre-headless-ubuntu-jammy`, `17-jre-headless-ubuntu-22.04`, `17.0.19-jre-headless-ubuntu-jammy`, `17.0.19-jre-headless-ubuntu-22.04`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/ubuntu/22_04/jre-headless/Dockerfile)
-
--	[`17-alpine`, `17.0.19-alpine`, `17-jdk-alpine`, `17.0.19-jdk-alpine`, `17-alpine-3.23`, `17-jdk-alpine-3.23`, `17.0.19-alpine-3.23`, `17.0.19-jdk-alpine-3.23`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/alpine/3_23/jdk/Dockerfile)
-
--	[`17-jre-alpine`, `17.0.19-jre-alpine`, `17-jre-alpine-3.23`, `17.0.19-jre-alpine-3.23`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/alpine/3_23/jre/Dockerfile)
-
--	[`17-alpine-3.22`, `17-jdk-alpine-3.22`, `17.0.19-alpine-3.22`, `17.0.19-jdk-alpine-3.22`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/alpine/3_22/jdk/Dockerfile)
-
--	[`17-jre-alpine-3.22`, `17.0.19-jre-alpine-3.22`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/alpine/3_22/jre/Dockerfile)
-
--	[`17-alpine-3.21`, `17-jdk-alpine-3.21`, `17.0.19-alpine-3.21`, `17.0.19-jdk-alpine-3.21`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/alpine/3_21/jdk/Dockerfile)
-
--	[`17-jre-alpine-3.21`, `17.0.19-jre-alpine-3.21`](https://github.com/SAP/SapMachine-infrastructure/blob/7ec104476583410abc8a50c8fb1e0851dfee4d36/dockerfiles/17/alpine/3_21/jre/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -172,14 +64,14 @@ Java and all Java-based trademarks and logos are trademarks or registered tradem
 You can pull and test the image with the following commands:
 
 ```console
-docker pull sapmachine:latest
-docker run -it sapmachine:latest java -version
+docker pull arm32v6/sapmachine:latest
+docker run -it arm32v6/sapmachine:latest java -version
 ```
 
 You can also use the SapMachine image as a base image to run your own jar file:
 
 ```dockerfile
-FROM sapmachine:latest
+FROM arm32v6/sapmachine:latest
 RUN mkdir /opt/myapp
 COPY myapp.jar /opt/myapp
 CMD ["java", "-jar", "/opt/myapp/myapp.jar"]
@@ -191,24 +83,6 @@ You can then build and run your own Docker image:
 docker build -t myapp .
 docker run -it --rm myapp
 ```
-
-# Image Variants
-
-The `sapmachine` images come in many flavors, each designed for a specific use case.
-
-## `sapmachine:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like jammy or noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
-
-## `sapmachine:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
