@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `varnish` official image](https://hub.docker.com/_/varnish) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`fresh`, `9.0.1`, `9`, `9.0`, `latest`](https://github.com/varnish/docker-varnish/blob/29c77e93eaf363a1353c3d39ef170ca1dc559f87/fresh/debian/Dockerfile)
-
--	[`old`, `8.0.1`, `8`, `8.0`](https://github.com/varnish/docker-varnish/blob/86705c07fadc4d579a6104250f958e493b4699a6/old/debian/Dockerfile)
-
--	[`old-alpine`, `8.0.1-alpine`, `8-alpine`, `8.0-alpine`](https://github.com/varnish/docker-varnish/blob/86705c07fadc4d579a6104250f958e493b4699a6/old/alpine/Dockerfile)
-
--	[`stable`, `6.0.17`, `6.0`](https://github.com/varnish/docker-varnish/blob/e049c0a37dec0db6f81bbab0aba45f8f238bd0f1/stable/debian/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -62,7 +58,7 @@ Varnish is an HTTP accelerator designed for content-heavy dynamic web sites as w
 # How to use this image.
 
 ```console
-$ docker run -p 8080:80 --ulimit memlock=-1:-1 --tmpfs /var/lib/varnish/varnishd:exec varnish
+$ docker run -p 8080:80 --ulimit memlock=-1:-1 --tmpfs /var/lib/varnish/varnishd:exec ppc64le/varnish
 ```
 
 You can then visit [http://localhost:8080](http://localhost:8080) with your browser and be greeted by the default landing page.
@@ -81,7 +77,7 @@ $ docker run \
 	--tmpfs /var/lib/varnish/varnishd:exec \
 	-p 8080:80 \
 	-e VARNISH_BACKEND_HOST=https://example.com/ \
-	varnish
+	ppc64le/varnish
 ```
 
 By default, Varnish is extremely careful regarding what it can and cannot cache by looking at the [client request](https://www.varnish-software.com/developers/tutorials/varnish-builtin-vcl/#1-vcl_recv) and at the [backend response](https://www.varnish-software.com/developers/tutorials/varnish-builtin-vcl/#11-vcl_backend_response).
@@ -106,13 +102,13 @@ $ docker run \
 	--tmpfs /var/lib/varnish/varnishd:exec \
 	-p 8080:80 \
 	-v /path/to/default.vcl:/etc/varnish/default.vcl:ro \
-	varnish
+	ppc64le/varnish
 ```
 
 Alternatively, a simple `Dockerfile` can be used to generate a new image that includes the necessary `default.vcl`:
 
 ```dockerfile
-FROM varnish
+FROM ppc64le/varnish
 
 COPY default.vcl /etc/varnish/
 ```
@@ -141,7 +137,7 @@ docker exec running_container varnishreload
 Note that `varnishreload` also supports reloading other files (it doesn't have to be `default.vcl`), labels (`-l`), and garbage collection of old labels (`-m`), among others. To learn more, run
 
 ```console
-$ docker run --rm varnish varnishreload -h
+$ docker run --rm ppc64le/varnish varnishreload -h
 ```
 
 ## File server
@@ -155,7 +151,7 @@ $ docker run \
 	-p 8080:80 \
 	-v /dir/to/expose:/var/www/html:ro \
 	-e VARNISH_FILESERVER=true \
-	varnish
+	ppc64le/varnish
 ```
 
 **Note:** Varnish will reply with an empty 200 when trying to access folders instead of individual files.
@@ -175,7 +171,7 @@ Also only valid with the default `VCL`. If `VARNISH_BACKEND_HOST` is unset and `
 By default, the containers will use a cache size of 100MB, which is usually a bit too small, but you can quickly set it through the `VARNISH_SIZE` environment variable:
 
 ```console
-$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G varnish
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:80 -e VARNISH_SIZE=2G ppc64le/varnish
 ```
 
 ### Listening ports (`VARNISH_HTTP_PORT`/`VARNISH_PROXY_PORT`)
@@ -184,7 +180,7 @@ Varnish will listen to HTTP traffic on port `80`, and this can be overridden by 
 
 ```console
 # instruct varnish to listen on port 7777 instead of 80
-$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:7777 -e VARNISH_HTTP_PORT=7777 varnish
+$ docker run --tmpfs /var/lib/varnish/varnishd:exec -p 8080:7777 -e VARNISH_HTTP_PORT=7777 ppc64le/varnish
 ```
 
 ### VCL file (`VARNISH_VCL_FILE`)
@@ -193,7 +189,7 @@ The default Varnish configuration file is `/etc/varnish/default.vcl`, but this c
 
 ### Extra arguments
 
-Additionally, you can add arguments to `docker run` after `varnish`, if the first argument starts with a `-`, the whole list will be appended to the [default command](https://github.com/varnish/docker-varnish/blob/master/fresh/debian/scripts/docker-varnish-entrypoint):
+Additionally, you can add arguments to `docker run` after `ppc64le/varnish`, if the first argument starts with a `-`, the whole list will be appended to the [default command](https://github.com/varnish/docker-varnish/blob/master/fresh/debian/scripts/docker-varnish-entrypoint):
 
 ```console
 # extend the default keep period
@@ -201,20 +197,20 @@ $ docker run \
 	--ulimit memlock=-1:-1 \
 	--tmpfs /var/lib/varnish/varnishd:exec \
 	-p 8080:80 \
-	varnish -p default_keep=300
+	ppc64le/varnish -p default_keep=300
 ```
 
-If your first argument after `varnish` doesn't start with `-`, it will be interpreted as a command to override the default one:
+If your first argument after `ppc64le/varnish` doesn't start with `-`, it will be interpreted as a command to override the default one:
 
 ```console
 # show the command-line options
-$ docker run varnish varnishd -?
+$ docker run ppc64le/varnish varnishd -?
 
 # list parameters usable with -p
-$ docker run varnish varnishd -x parameter
+$ docker run ppc64le/varnish varnishd -x parameter
 
 # run the server with your own parameters (don't forget -F to not daemonize)
-$ docker run varnish varnishd -F -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
+$ docker run ppc64le/varnish varnishd -F -a :8080 -b 127.0.0.1:8181 -t 600 -p feature=+http2
 ```
 
 This can notably be used to extract logs using [varnishncsa or varnishlog](https://www.varnish-software.com/developers/tutorials/vsl-cheatsheet/), running `varnishstat -1` to extract metrics, and of course reloading the `VCL` with `varnishreload`.
@@ -229,22 +225,6 @@ Varnish uses [memory-mapped files](https://docs.varnish-software.com/varnish-ent
 
 -	mount the working directory as `tmpfs` to make sure disk I/O isn't a bottleneck; that's what the `--tmpfs` switch does
 -	allow Varnish to lock those memory-mapped files so they aren't paged out by the kernel; hence the `--ulimit` switch
-
-# Image Variants
-
-The `varnish` images come in many flavors, each designed for a specific use case.
-
-## `varnish:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `varnish:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 

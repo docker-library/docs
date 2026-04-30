@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `elasticsearch` official image](https://hub.docker.com/_/elasticsearch) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.19.14`](https://github.com/elastic/dockerfiles/blob/dbc3a476a61cb0c51c072ed0c37281a1147fd00b/elasticsearch/Dockerfile)
-
--	[`9.2.8`](https://github.com/elastic/dockerfiles/blob/f365a5d7a0c03b5cb6df3cad5031fe5e2489f800/elasticsearch/Dockerfile)
-
--	[`9.3.3`](https://github.com/elastic/dockerfiles/blob/a1615a8e16daafa082073ae28ddf389bcbf6845c/elasticsearch/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
 # Quick reference (cont.)
 

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `neo4j` official image](https://hub.docker.com/_/neo4j) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,33 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2026.04.0-community-trixie`, `2026.04-community-trixie`, `2026-community-trixie`, `2026.04.0-community`, `2026.04-community`, `2026-community`, `2026.04.0-trixie`, `2026.04-trixie`, `2026-trixie`, `2026.04.0`, `2026.04`, `2026`, `community-trixie`, `community`, `trixie`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/trixie/community/Dockerfile)
-
--	[`2026.04.0-enterprise-trixie`, `2026.04-enterprise-trixie`, `2026-enterprise-trixie`, `2026.04.0-enterprise`, `2026.04-enterprise`, `2026-enterprise`, `enterprise-trixie`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/trixie/enterprise/Dockerfile)
-
--	[`2026.04.0-community-ubi10`, `2026.04-community-ubi10`, `2026-community-ubi10`, `2026.04.0-ubi10`, `2026.04-ubi10`, `2026-ubi10`, `community-ubi10`, `ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/ubi10/community/Dockerfile)
-
--	[`2026.04.0-enterprise-ubi10`, `2026.04-enterprise-ubi10`, `2026-enterprise-ubi10`, `enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/ubi10/enterprise/Dockerfile)
-
--	[`2026.04.0-community-bullseye`, `2026.04-community-bullseye`, `2026-community-bullseye`, `2026.04.0-bullseye`, `2026.04-bullseye`, `2026-bullseye`, `community-bullseye`, `bullseye`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/bullseye/community/Dockerfile)
-
--	[`2026.04.0-enterprise-bullseye`, `2026.04-enterprise-bullseye`, `2026-enterprise-bullseye`, `enterprise-bullseye`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/bullseye/enterprise/Dockerfile)
-
--	[`2026.04.0-community-ubi9`, `2026.04-community-ubi9`, `2026-community-ubi9`, `2026.04.0-ubi9`, `2026.04-ubi9`, `2026-ubi9`, `community-ubi9`, `ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/ubi9/community/Dockerfile)
-
--	[`2026.04.0-enterprise-ubi9`, `2026.04-enterprise-ubi9`, `2026-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/ubi9/enterprise/Dockerfile)
-
--	[`5.26.25-community-trixie`, `5.26-community-trixie`, `5-community-trixie`, `5.26.25-community`, `5.26-community`, `5-community`, `5.26.25-trixie`, `5.26-trixie`, `5-trixie`, `5.26.25`, `5.26`, `5`](https://github.com/neo4j/docker-neo4j-publish/blob/a7409e0160b1692f2530c1f306f2477913ea947f/5.26.25/trixie/community/Dockerfile)
-
--	[`5.26.25-enterprise-trixie`, `5.26-enterprise-trixie`, `5-enterprise-trixie`, `5.26.25-enterprise`, `5.26-enterprise`, `5-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/a7409e0160b1692f2530c1f306f2477913ea947f/5.26.25/trixie/enterprise/Dockerfile)
-
--	[`5.26.25-community-ubi10`, `5.26-community-ubi10`, `5-community-ubi10`, `5.26.25-ubi10`, `5.26-ubi10`, `5-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/a7409e0160b1692f2530c1f306f2477913ea947f/5.26.25/ubi10/community/Dockerfile)
-
--	[`5.26.25-enterprise-ubi10`, `5.26-enterprise-ubi10`, `5-enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/a7409e0160b1692f2530c1f306f2477913ea947f/5.26.25/ubi10/enterprise/Dockerfile)
-
--	[`4.4.48`, `4.4.48-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/a3f58105abfd307a24467da003f46d4bd13813f3/4.4.48/bullseye/community/Dockerfile)
-
--	[`4.4.48-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/a3f58105abfd307a24467da003f46d4bd13813f3/4.4.48/bullseye/enterprise/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `ppc64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -85,7 +61,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    ppc64le/neo4j
 ```
 
 This binds two ports (`7474` and `7687`) for HTTP and Bolt access to the Neo4j API. A volume is bound to `/data` to allow the database to be persisted outside the container. Once running, you can use the [Neo4j Aura console](https://console.neo4j.io/ce) which includes graph tools for visualizations, data exploration, and monitoring for free. No subscription is required. Simply create a self-managed instance and specify `bolt://localhost:7687` or `http://localhost:7474` in the "Add Deployment" UI.
