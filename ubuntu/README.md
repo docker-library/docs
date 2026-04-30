@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22.04`, `jammy-20260410`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20260410-9e6ed750&id=9e6ed75049b36863589a7c4e22342a3b2f097de9)
+-	[`22.04`, `jammy-20260410`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-arm64v8-20260410-38038615&id=3803861553d3001f15daf29c239ed31351468fc0)
 
--	[`24.04`, `noble-20260410`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20260410-a17a2429&id=a17a2429ff85ab773e86c558a75ae62053ef9936)
+-	[`24.04`, `noble-20260410`, `noble`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-arm64v8-20260410-011341ba&id=011341babd422d74a2d763388ab7e8634d81c300)
 
--	[`25.10`, `questing-20251217`, `questing`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20251217-883bce4d&id=883bce4d25b37c4c52e6d25bcd3f2961671ce1c7)
+-	[`25.10`, `questing-20251217`, `questing`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-arm64v8-20251217-41a75589&id=41a75589d45706ed8b39be5fa7224bec8f3ee8c3)
 
--	[`26.04`, `resolute-20260413`, `resolute`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-amd64-20260413-3a27d9e1&id=3a27d9e12a3e722b439d04aff7d74653817ec688)
+-	[`26.04`, `resolute-20260413`, `resolute`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-arm64v8-20260413-58a91651&id=58a9165196c719f9fd0e7e2f0fa845360dfb8a6b)
 
 # Quick reference (cont.)
 
@@ -65,9 +67,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `arm64v8/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `arm64v8/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `arm64v8/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 

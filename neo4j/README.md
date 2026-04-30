@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `neo4j` official image](https://hub.docker.com/_/neo4j) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -85,7 +87,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    arm64v8/neo4j
 ```
 
 This binds two ports (`7474` and `7687`) for HTTP and Bolt access to the Neo4j API. A volume is bound to `/data` to allow the database to be persisted outside the container. Once running, you can use the [Neo4j Aura console](https://console.neo4j.io/ce) which includes graph tools for visualizations, data exploration, and monitoring for free. No subscription is required. Simply create a self-managed instance and specify `bolt://localhost:7687` or `http://localhost:7474` in the "Add Deployment" UI.

@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `azul-zulu` official image](https://hub.docker.com/_/azul-zulu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -126,7 +128,7 @@ To run a container of your choice and validate its version, use the command belo
 Using Azul Zulu based on Debian:
 
 ```bash
-docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
+docker run -it --rm arm64v8/azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
 ```
 
 ### Building a Container With Your Own Application
@@ -134,7 +136,7 @@ docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -versio
 To build a Debian Docker container with a pre-built jar file with, use the following example Dockerfile:
 
 ```text
-FROM azul-zulu:<VERSION>
+FROM arm64v8/azul-zulu:<VERSION>
 COPY my-app.jar /opt/my-app/
 CMD ["java", "-jar", "/opt/my-app/my-app.jar"]
 ```
