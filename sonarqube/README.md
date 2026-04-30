@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `sonarqube` official image](https://hub.docker.com/_/sonarqube) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,39 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2026.2.1-developer`, `2026.2-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/46da64077d8567ace61a27c3e7c178b1f5511d05/commercial-editions/developer/Dockerfile)
-
--	[`2026.2.1-enterprise`, `2026.2-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/46da64077d8567ace61a27c3e7c178b1f5511d05/commercial-editions/enterprise/Dockerfile)
-
--	[`2026.2.1-datacenter-app`, `2026.2-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/46da64077d8567ace61a27c3e7c178b1f5511d05/commercial-editions/datacenter/app/Dockerfile)
-
--	[`2026.2.1-datacenter-search`, `2026.2-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/46da64077d8567ace61a27c3e7c178b1f5511d05/commercial-editions/datacenter/search/Dockerfile)
-
--	[`2026.1.2-developer`, `2026.1-developer`, `2026-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/59e7de50ef26f501eb09471f6d37588025ec9d7c/commercial-editions/developer/Dockerfile)
-
--	[`2026.1.2-enterprise`, `2026.1-enterprise`, `2026-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/59e7de50ef26f501eb09471f6d37588025ec9d7c/commercial-editions/enterprise/Dockerfile)
-
--	[`2026.1.2-datacenter-app`, `2026.1-datacenter-app`, `2026-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/59e7de50ef26f501eb09471f6d37588025ec9d7c/commercial-editions/datacenter/app/Dockerfile)
-
--	[`2026.1.2-datacenter-search`, `2026.1-datacenter-search`, `2026-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/59e7de50ef26f501eb09471f6d37588025ec9d7c/commercial-editions/datacenter/search/Dockerfile)
-
--	[`2025.4.6-developer`, `2025.4-developer`, `2025.4-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/e493ac520eba893f488a4980e6edb99128f08abb/commercial-editions/developer/Dockerfile)
-
--	[`2025.4.6-enterprise`, `2025.4-enterprise`, `2025.4-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/e493ac520eba893f488a4980e6edb99128f08abb/commercial-editions/enterprise/Dockerfile)
-
--	[`2025.4.6-datacenter-app`, `2025.4-datacenter-app`, `2025.4-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/e493ac520eba893f488a4980e6edb99128f08abb/commercial-editions/datacenter/app/Dockerfile)
-
--	[`2025.4.6-datacenter-search`, `2025.4-datacenter-search`, `2025.4-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/e493ac520eba893f488a4980e6edb99128f08abb/commercial-editions/datacenter/search/Dockerfile)
-
--	[`2025.1.7-developer`, `2025.1-developer`, `2025-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/81ba255ef68dcc154df0a5d1cb022419d8cfba77/commercial-editions/developer/Dockerfile)
-
--	[`2025.1.7-enterprise`, `2025.1-enterprise`, `2025-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/81ba255ef68dcc154df0a5d1cb022419d8cfba77/commercial-editions/enterprise/Dockerfile)
-
--	[`2025.1.7-datacenter-app`, `2025.1-datacenter-app`, `2025-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/81ba255ef68dcc154df0a5d1cb022419d8cfba77/commercial-editions/datacenter/app/Dockerfile)
-
--	[`2025.1.7-datacenter-search`, `2025.1-datacenter-search`, `2025-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/81ba255ef68dcc154df0a5d1cb022419d8cfba77/commercial-editions/datacenter/search/Dockerfile)
-
--	[`26.4.0.121862-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/3c72218664ce0438f30b81d942426d8316f2fa7c/community-build/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -125,7 +95,7 @@ To run a cluster with the SonarQube Server Data Center Edition, please refer to 
 By default, the server running within the container will listen on port 9000. You can expose the container port 9000 to the host port 9000 with the `-p 9000:9000` argument to `docker run`, like the command below:
 
 ```console
-docker run --name sonarqube-custom -p 9000:9000 sonarqube:community
+docker run --name sonarqube-custom -p 9000:9000 mips64le/sonarqube:community
 ```
 
 You can then browse to `http://localhost:9000` or `http://host-ip:9000` in your web browser to access the web interface.
@@ -161,7 +131,7 @@ For upgrade instructions, see Upgrading from the Docker Image on the [Upgrade th
 In some environments, it may make more sense to prepare a custom image containing your configuration. A `Dockerfile` to achieve this may be as simple as:
 
 ```dockerfile
-FROM sonarqube:community
+FROM mips64le/sonarqube:community
 COPY sonar-custom-plugin-1.0.jar /opt/sonarqube/extensions/
 ```
 
@@ -177,7 +147,7 @@ $ docker run -ti sonarqube-custom
 The instance will stop gracefully, waiting for any tasks in progress to finish. Waiting for in-progress tasks to finish can take a large amount of time, which the docker does not expect by default when stopping. To avoid having the instance killed by the Docker daemon after 10 seconds, it is best to configure a timeout to stop the container with `--stop-timeout`. For example:
 
 ```console
-docker run --stop-timeout 3600 sonarqube
+docker run --stop-timeout 3600 mips64le/sonarqube
 ```
 
 ## Administration

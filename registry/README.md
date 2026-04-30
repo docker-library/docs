@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `registry` official image](https://hub.docker.com/_/registry) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1.0`, `3.1`, `3`, `latest`](https://github.com/distribution/distribution-library-image/blob/6d24cf20fd78b55dd5d991f2f68bec1e86408609/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -54,7 +56,7 @@ This image contains an implementation of the OCI Distribution spec. See [github.
 ## Run a local registry: Quick Version
 
 ```console
-$ docker run -d -p 5000:5000 --restart always --name registry registry:3
+$ docker run -d -p 5000:5000 --restart always --name registry mips64le/registry:3
 ```
 
 Now, use it from within Docker:
