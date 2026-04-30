@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `azul-zulu` official image](https://hub.docker.com/_/azul-zulu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,53 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.94-8.0.492-jdk-debian13`, `8`, `8-jdk`, `8-jdk-debian`, `8-jdk-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/8/jdk/debian/Dockerfile)
-
--	[`8.94-8.0.492-jdk-headless-debian13`, `8-headless`, `8-headless-debian`, `8-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/8/jdk-headless/debian/Dockerfile)
-
--	[`8.94-8.0.492-jre-debian13`, `8-jre`, `8-jre-debian`, `8-jre-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/8/jre/debian/Dockerfile)
-
--	[`8.94-8.0.492-jre-headless-debian13`, `8-jre-headless`, `8-jre-headless-debian`, `8-jre-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/8/jre-headless/debian/Dockerfile)
-
--	[`11.88-11.0.31-jdk-debian13`, `11`, `11-jdk`, `11-jdk-debian`, `11-jdk-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/11/jdk/debian/Dockerfile)
-
--	[`11.88-11.0.31-jdk-headless-debian13`, `11-headless`, `11-headless-debian`, `11-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/11/jdk-headless/debian/Dockerfile)
-
--	[`11.88-11.0.31-jre-debian13`, `11-jre`, `11-jre-debian`, `11-jre-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/11/jre/debian/Dockerfile)
-
--	[`11.88-11.0.31-jre-headless-debian13`, `11-jre-headless`, `11-jre-headless-debian`, `11-jre-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/11/jre-headless/debian/Dockerfile)
-
--	[`17.66-17.0.19-jdk-debian13`, `17`, `17-jdk`, `17-jdk-debian`, `17-jdk-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/17/jdk/debian/Dockerfile)
-
--	[`17.66-17.0.19-jdk-headless-debian13`, `17-headless`, `17-headless-debian`, `17-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/17/jdk-headless/debian/Dockerfile)
-
--	[`17.66-17.0.19-jre-debian13`, `17-jre`, `17-jre-debian`, `17-jre-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/17/jre/debian/Dockerfile)
-
--	[`17.66-17.0.19-jre-headless-debian13`, `17-jre-headless`, `17-jre-headless-debian`, `17-jre-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/17/jre-headless/debian/Dockerfile)
-
--	[`21.50-21.0.11-jdk-debian13`, `21`, `21-jdk`, `21-jdk-debian`, `21-jdk-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/21/jdk/debian/Dockerfile)
-
--	[`21.50-21.0.11-jdk-headless-debian13`, `21-headless`, `21-headless-debian`, `21-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/21/jdk-headless/debian/Dockerfile)
-
--	[`21.50-21.0.11-jre-debian13`, `21-jre`, `21-jre-debian`, `21-jre-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/21/jre/debian/Dockerfile)
-
--	[`21.50-21.0.11-jre-headless-debian13`, `21-jre-headless`, `21-jre-headless-debian`, `21-jre-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/21/jre-headless/debian/Dockerfile)
-
--	[`25.34-25.0.3-jdk-debian13`, `25`, `25-jdk`, `25-jdk-debian`, `25-jdk-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/25/jdk/debian/Dockerfile)
-
--	[`25.34-25.0.3-jdk-headless-debian13`, `25-headless`, `25-headless-debian`, `25-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/25/jdk-headless/debian/Dockerfile)
-
--	[`25.34-25.0.3-jre-debian13`, `25-jre`, `25-jre-debian`, `25-jre-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/25/jre/debian/Dockerfile)
-
--	[`25.34-25.0.3-jre-headless-debian13`, `25-jre-headless`, `25-jre-headless-debian`, `25-jre-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/25/jre-headless/debian/Dockerfile)
-
--	[`26.30-26.0.1-jdk-debian13`, `26`, `26-jdk`, `26-jdk-debian`, `26-jdk-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/26/jdk/debian/Dockerfile)
-
--	[`26.30-26.0.1-jdk-headless-debian13`, `26-headless`, `26-headless-debian`, `26-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/26/jdk-headless/debian/Dockerfile)
-
--	[`26.30-26.0.1-jre-debian13`, `26-jre`, `26-jre-debian`, `26-jre-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/26/jre/debian/Dockerfile)
-
--	[`26.30-26.0.1-jre-headless-debian13`, `26-jre-headless`, `26-jre-headless-debian`, `26-jre-headless-debian13`](https://github.com/AzulSystems/azul-zulu-images/blob/53819781a6977fc2027c49f716184cf4694e1c3c/26/jre-headless/debian/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -126,7 +82,7 @@ To run a container of your choice and validate its version, use the command belo
 Using Azul Zulu based on Debian:
 
 ```bash
-docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
+docker run -it --rm arm32v7/azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
 ```
 
 ### Building a Container With Your Own Application
@@ -134,7 +90,7 @@ docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -versio
 To build a Debian Docker container with a pre-built jar file with, use the following example Dockerfile:
 
 ```text
-FROM azul-zulu:<VERSION>
+FROM arm32v7/azul-zulu:<VERSION>
 COPY my-app.jar /opt/my-app/
 CMD ["java", "-jar", "/opt/my-app/my-app.jar"]
 ```
