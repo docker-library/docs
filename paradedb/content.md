@@ -36,19 +36,19 @@ When you're ready to deploy, check out our [hosting options](https://docs.parade
 
 [ParadeDB](https://paradedb.com) is a PostgreSQL extension that brings Elastic-quality full-text search and analytics directly inside Postgres.
 
-- [x] [Full-Text Search](https://docs.paradedb.com/documentation/full-text/overview)
-  - [x] [BM25 Scoring](https://docs.paradedb.com/documentation/sorting/score)
-  - [x] [Top K](https://docs.paradedb.com/documentation/sorting/topk)
-  - [x] [Highlighting](https://docs.paradedb.com/documentation/full-text/highlight)
-  - [x] [Tokenizers & Token Filters](https://docs.paradedb.com/documentation/tokenizers/overview)
-- [x] [Filtering](https://docs.paradedb.com/documentation/filtering)
-- [x] [Aggregates](https://docs.paradedb.com/documentation/aggregates/overview)
-  - [x] [Columnar Storage](https://docs.paradedb.com/documentation/indexing/columnar)
-  - [x] [Bucket & Metrics](https://docs.paradedb.com/documentation/aggregates/overview)
-  - [x] [Facets](https://docs.paradedb.com/documentation/aggregates/facets)
-- [x] [JOINs](https://docs.paradedb.com/documentation/joins/overview)
-- [ ] Vector Search (coming soon)
-- [ ] Hybrid Search (coming soon)
+-	[x] [Full-Text Search](https://docs.paradedb.com/documentation/full-text/overview)
+	-	[x] [BM25 Scoring](https://docs.paradedb.com/documentation/sorting/score)
+	-	[x] [Top K](https://docs.paradedb.com/documentation/sorting/topk)
+	-	[x] [Highlighting](https://docs.paradedb.com/documentation/full-text/highlight)
+	-	[x] [Tokenizers & Token Filters](https://docs.paradedb.com/documentation/tokenizers/overview)
+-	[x] [Filtering](https://docs.paradedb.com/documentation/filtering)
+-	[x] [Aggregates](https://docs.paradedb.com/documentation/aggregates/overview)
+	-	[x] [Columnar Storage](https://docs.paradedb.com/documentation/indexing/columnar)
+	-	[x] [Bucket & Metrics](https://docs.paradedb.com/documentation/aggregates/overview)
+	-	[x] [Facets](https://docs.paradedb.com/documentation/aggregates/facets)
+-	[x] [JOINs](https://docs.paradedb.com/documentation/joins/overview)
+-	[ ] Vector Search (coming soon)
+-	[ ] Hybrid Search (coming soon)
 
 Star and watch this repository to follow along. See our [current projects](https://github.com/paradedb/paradedb/projects?query=is%3Aopen) and [long-term roadmap](https://docs.paradedb.com/welcome/roadmap).
 
@@ -56,9 +56,9 @@ Star and watch this repository to follow along. See our [current projects](https
 
 ParadeDB integrates battle-tested Rust libraries for search and analytics inside Postgres, contributing upstream whenever possible. Our primary dependencies are:
 
-- [pgrx](https://github.com/pgcentralfoundation/pgrx) — bridges Postgres and Rust
-- [Tantivy](https://github.com/quickwit-oss/tantivy) — powers full-text search
-- [Apache DataFusion](https://github.com/apache/datafusion) — handles OLAP processing
+-	[pgrx](https://github.com/pgcentralfoundation/pgrx) — bridges Postgres and Rust
+-	[Tantivy](https://github.com/quickwit-oss/tantivy) — powers full-text search
+-	[Apache DataFusion](https://github.com/apache/datafusion) — handles OLAP processing
 
 For a deeper dive, see our [architecture docs](https://docs.paradedb.com/welcome/architecture) or [CMU Database Group talk](https://db.cs.cmu.edu/events/building-blocks-paradedb-philippe-noel/).
 
@@ -68,29 +68,29 @@ ParadeDB integrates with the tools you already use, with more on the way.
 
 ### ORMs & Frameworks
 
-- [Django](https://github.com/paradedb/django-paradedb)
-- [SQLAlchemy](https://github.com/paradedb/sqlalchemy-paradedb)
-- [Rails](https://github.com/paradedb/rails-paradedb)
-- More coming (Prisma, and others)
+-	[Django](https://github.com/paradedb/django-paradedb)
+-	[SQLAlchemy](https://github.com/paradedb/sqlalchemy-paradedb)
+-	[Rails](https://github.com/paradedb/rails-paradedb)
+-	More coming (Prisma, and others)
 
 ### AI Agents
 
-- [Agent Skills](https://github.com/paradedb/agent-skills)
-- [MCP Integration](https://docs.paradedb.com/documentation/getting-started/ai-agents)
+-	[Agent Skills](https://github.com/paradedb/agent-skills)
+-	[MCP Integration](https://docs.paradedb.com/documentation/getting-started/ai-agents)
 
 ### PaaS & Cloud Platforms
 
-- [Railway](https://docs.paradedb.com/deploy/cloud-platforms/railway)
-- [Render](https://docs.paradedb.com/deploy/cloud-platforms/render)
-- [DigitalOcean](https://docs.paradedb.com/deploy/cloud-platforms/digitalocean)
-- More coming (Heroku, and others)
+-	[Railway](https://docs.paradedb.com/deploy/cloud-platforms/railway)
+-	[Render](https://docs.paradedb.com/deploy/cloud-platforms/render)
+-	[DigitalOcean](https://docs.paradedb.com/deploy/cloud-platforms/digitalocean)
+-	More coming (Heroku, and others)
 
 ## Community & Support
 
-- [Slack](https://paradedb.com/slack) — ask questions, share what you're building
-- [GitHub Discussions](https://github.com/paradedb/paradedb/discussions) — longer-form Q&A
-- [GitHub Issues](https://github.com/paradedb/paradedb/issues/new/choose) — bug reports and feature requests
-- [Email](mailto:sales@paradedb.com) — enterprise support and commercial licensing
+-	[Slack](https://paradedb.com/slack) — ask questions, share what you're building
+-	[GitHub Discussions](https://github.com/paradedb/paradedb/discussions) — longer-form Q&A
+-	[GitHub Issues](https://github.com/paradedb/paradedb/issues/new/choose) — bug reports and feature requests
+-	[Email](mailto:sales@paradedb.com) — enterprise support and commercial licensing
 
 ## Contributing
 
@@ -99,4 +99,3 @@ We welcome contributions of all sizes! Check out our [good first issues](https:/
 ## License
 
 ParadeDB Community is licensed under the [GNU Affero General Public License v3.0](LICENSE). For [ParadeDB Enterprise](https://docs.paradedb.com/deploy/enterprise) licensing, contact [sales@paradedb.com](mailto:sales@paradedb.com).
-
