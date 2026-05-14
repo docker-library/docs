@@ -1,0 +1,1 @@
+Nim is a statically typed compiled systems programming language combining Python-like syntax with C performance.
