@@ -32,13 +32,13 @@ WARNING:
 
 -	[`2026.3.0-datacenter-search`, `2026.3-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/405238a0ac06edb7b6a3a6658552e296e5f87bfe/commercial-editions/datacenter/search/Dockerfile)
 
--	[`2026.1.2-developer`, `2026.1-developer`, `2026-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/59e7de50ef26f501eb09471f6d37588025ec9d7c/commercial-editions/developer/Dockerfile)
+-	[`2026.1.3-developer`, `2026.1-developer`, `2026-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/21dbae3d7df8f96e641955104c459a18ad50c396/commercial-editions/developer/Dockerfile)
 
--	[`2026.1.2-enterprise`, `2026.1-enterprise`, `2026-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/59e7de50ef26f501eb09471f6d37588025ec9d7c/commercial-editions/enterprise/Dockerfile)
+-	[`2026.1.3-enterprise`, `2026.1-enterprise`, `2026-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/21dbae3d7df8f96e641955104c459a18ad50c396/commercial-editions/enterprise/Dockerfile)
 
--	[`2026.1.2-datacenter-app`, `2026.1-datacenter-app`, `2026-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/59e7de50ef26f501eb09471f6d37588025ec9d7c/commercial-editions/datacenter/app/Dockerfile)
+-	[`2026.1.3-datacenter-app`, `2026.1-datacenter-app`, `2026-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/21dbae3d7df8f96e641955104c459a18ad50c396/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2026.1.2-datacenter-search`, `2026.1-datacenter-search`, `2026-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/59e7de50ef26f501eb09471f6d37588025ec9d7c/commercial-editions/datacenter/search/Dockerfile)
+-	[`2026.1.3-datacenter-search`, `2026.1-datacenter-search`, `2026-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/21dbae3d7df8f96e641955104c459a18ad50c396/commercial-editions/datacenter/search/Dockerfile)
 
 -	[`2025.4.6-developer`, `2025.4-developer`, `2025.4-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/e493ac520eba893f488a4980e6edb99128f08abb/commercial-editions/developer/Dockerfile)
 
