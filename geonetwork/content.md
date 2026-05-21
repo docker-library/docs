@@ -45,13 +45,13 @@ To be sure about what Elasticsearch version to use you can check the [GeoNetwork
 The following table summarises the required Elasticsearch version for each GeoNetwork release series:
 
 | GeoNetwork version | Elasticsearch version |
-|---|---|
-| 4.0.0 - 4.0.5 | 7.9.2 |
-| 4.0.6 - 4.2.7 | 7.11.1 |
-| 4.2.8 - 4.4.2 | 7.17.x |
-| 4.4.3 - 4.4.5 | 8.11.3 |
-| 4.4.6 - 4.4.9 | 8.14.3 |
-| 4.4.10+ | 8.19.13 |
+|--------------------|-----------------------|
+| 4.0.0 - 4.0.5      | 7.9.2                 |
+| 4.0.6 - 4.2.7      | 7.11.1                |
+| 4.2.8 - 4.4.2      | 7.17.x                |
+| 4.4.3 - 4.4.5      | 8.11.3                |
+| 4.4.6 - 4.4.9      | 8.14.3                |
+| 4.4.10+            | 8.19.13               |
 
 ### Default credentials
 

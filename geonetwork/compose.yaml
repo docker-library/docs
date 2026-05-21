@@ -14,7 +14,7 @@ services:
   geonetwork:
     image: geonetwork:4.4
     healthcheck:
-      test: "curl -f http://localhost:8080/geonetwork/srv/eng/catalog.search || exit 1"
+      test: curl -f http://localhost:8080/geonetwork/srv/eng/catalog.search || exit 1
       interval: 10s
       timeout: 10s
       retries: 30
@@ -69,7 +69,7 @@ services:
       POSTGRES_PASSWORD: geonetwork
       POSTGRES_DB: geonetwork
     healthcheck:
-      test: [CMD-SHELL, "psql -U geonetwork -d geonetwork -c 'select 1' > /dev/null 2>&1 || exit 1"]
+      test: [CMD-SHELL, psql -U geonetwork -d geonetwork -c 'select 1' > /dev/null 2>&1 || exit 1]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -96,8 +96,8 @@ services:
     environment:
       ES_JAVA_OPTS: -Xms1G -Xmx1G
       discovery.type: single-node
-      xpack.security.enabled: "false"
-      xpack.security.enrollment.enabled: "false"
+      xpack.security.enabled: 'false'
+      xpack.security.enrollment.enabled: 'false'
     volumes:
       - esdata:/usr/share/elasticsearch/data
 
