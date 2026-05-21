@@ -137,6 +137,14 @@ docker run --name some-%%REPO%% -d -p 8080:8080 %%IMAGE%%
 
 Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork.
 
+### File permissions
+
+The Tomcat-based images (GN 3, 4.2.15+, and 4.4.10+) run as `root`, whereas the previous Jetty-based images (GN 4.0.0-4.2.14 and 4.4.0-4.4.9) ran as the `jetty` user. If you are **upgrading from a Jetty-based image** and mounting a host directory or named volume for the data directory, you may need to update the ownership of existing data to avoid permission errors:
+
+```console
+docker run --rm -v /host/%%REPO%%-docker:/catalogue-data busybox chown -R root:root /catalogue-data
+```
+
 ### Set the data directory and H2 db file
 
 The data directory is the location on the file system where the catalog stores much of its custom configuration and uploaded files. It is also where it stores a number of support files, used for various purposes (e.g.: spatial index, thumbnails). The default variant also uses a local H2 database to store the metadata catalog itself.
