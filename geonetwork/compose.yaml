@@ -36,9 +36,6 @@ services:
         --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
         -Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true
         -Xms512M -Xss512M -Xmx2G -XX:+UseConcMarkSweepGC
-        -Djetty.httpConfig.requestHeaderSize=32768
-        -Dorg.eclipse.jetty.server.Request.maxFormContentSize=500000
-        -Dorg.eclipse.jetty.server.Request.maxFormKeys=4000
       # For remote debug
       # -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
 
@@ -58,7 +55,7 @@ services:
         -Dgeonetwork.ESFeaturesProxy.targetUri=http://elasticsearch:9200/gn-features/{_}
         -Dgeonetwork.HttpDashboardProxy.targetUri=http://kibana:5601
 
-      GEONETWORK_DB_TYPE: postgres-postgis
+      GEONETWORK_DB_TYPE: postgres
       GEONETWORK_DB_HOST: database
       GEONETWORK_DB_PORT: 5432
       GEONETWORK_DB_NAME: geonetwork
@@ -66,12 +63,11 @@ services:
       GEONETWORK_DB_PASSWORD: geonetwork
 
   database:
-    image: postgis/postgis:16-3.4
+    image: postgis/postgis:17-3.5
     environment:
       POSTGRES_USER: geonetwork
       POSTGRES_PASSWORD: geonetwork
       POSTGRES_DB: geonetwork
-    command: [postgres, -c, log_statement=all, -c, logging_collector=true, -c, log_file_mode=0644, -c, log_directory=/var/log/postgresql, -c, log_filename=postgresql.log]
     healthcheck:
       test: [CMD-SHELL, pg_isready -U postgres]
       interval: 5s
@@ -82,7 +78,7 @@ services:
       - pglog:/var/log/postgresql
 
   elasticsearch:
-    image: elasticsearch:7.17.15
+    image: elasticsearch:8.14.3
     ports:
       - 9200:9200
     ulimits:
@@ -101,11 +97,13 @@ services:
     environment:
       ES_JAVA_OPTS: -Xms1G -Xmx1G
       discovery.type: single-node
+      xpack.security.enabled: "false"
+      xpack.security.enrollment.enabled: "false"
     volumes:
       - esdata:/usr/share/elasticsearch/data
 
   kibana:
-    image: kibana:7.17.15
+    image: kibana:8.14.3
     environment:
       SERVER_NAME: kibana
       ELASTICSEARCH_URL: http://elasticsearch:9200/
