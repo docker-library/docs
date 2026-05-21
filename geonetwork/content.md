@@ -19,12 +19,12 @@ GeoNetwork 4 uses an Elasticsearch server to store the index of the documents it
 This is a quick example of how to get GeoNetwork 4.4 Latest up and running for demo purposes. This configuration doesn't keep the data if containers are removed.
 
 ```console
-docker pull elasticsearch:8.14.3
+docker pull elasticsearch:8.19.13
 docker pull %%IMAGE%%:4
 
 docker network create gn-network
 
-docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.14.3
+docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.19.13
 docker run --name %%REPO%%-host --network gn-network -e GN_CONFIG_PROPERTIES="-Des.host=my-es-host -Des.protocol=http -Des.port=9200 -Des.url=http://my-es-host:9200" -p 8080:8080 %%IMAGE%%:4
 ```
 
@@ -67,10 +67,15 @@ Since GeoNetwork 4.4.0, use Java properties passed in the `GN_CONFIG_PROPERTIES`
 -	`es.port` *optional* (default `9200`): The port where Elasticsearch server is listening to.
 -	`es.protocol` *optional* (default `http`): The protocol used to talk to Elasticsearch. Can be `http` or `https`.
 -	`es.url`: **mandatory if host, port or protocol aren't the default values** (default `http://localhost:9200`): Full URL of the Elasticsearch server.
--	`es.index.records` *optional* (default `gn_records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
+-	`es.index.records` *optional* (default `gn-records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
 -	`es.username` *optional* (default empty): username used to connect to Elasticsearch.
 -	`es.password` *optional* (default empty): password used to connect to Elasticsearch.
 -	`kb.url` *optional* (default `http://localhost:5601`): The URL where Kibana is listening.
+
+The following environment variables are also available for 4.4.x images:
+
+-	`WEBAPP_CONTEXT_PATH` *optional* (default `/geonetwork`): The context path used to deploy GeoNetwork.
+-	`REMOTE_IP_INTERNAL_PROXIES` *optional* (since 4.4.10): Regular expression matching IP addresses of trusted reverse proxies. Enables `X-Forwarded-For` header processing for correct client IP detection behind a proxy. When not set, the RemoteIp Valve is disabled. Example: `192\.168\.0\.10|192\.168\.0\.11`.
 
 Example Docker Compose YAML snippet:
 
@@ -96,10 +101,11 @@ For versions older than 4.4.0, configure Elasticsearch using environment variabl
 -	`ES_HOST` **mandatory**: The host name of the Elasticsearch server.
 -	`ES_PORT` *optional* (default `9200`): The port where Elasticsearch server is listening to.
 -	`ES_PROTOCOL` *optional* (default `http`): The protocol used to talk to Elasticsearch. Can be `http` or `https`.
--	`ES_INDEX_RECORDS` *optional* (default `gn_records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
+-	`ES_INDEX_RECORDS` *optional* (default `gn-records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
 -	`ES_USERNAME` *optional* (default empty): username used to connect to Elasticsearch.
 -	`ES_PASSWORD` *optional* (default empty): password used to connect to Elasticsearch.
 -	`KB_URL` *Optional* (default `http://localhost:5601`): The URL where Kibana is listening.
+-	`REMOTE_IP_INTERNAL_PROXIES` *optional* (since 4.2.15): Regular expression matching IP addresses of trusted reverse proxies. Enables `X-Forwarded-For` header processing for correct client IP detection behind a proxy. When not set, the RemoteIp Valve is disabled. Example: `192\.168\.0\.10|192\.168\.0\.11`.
 
 ### Database configuration
 

@@ -77,7 +77,7 @@ services:
       - pgdata:/var/lib/postgresql/data
 
   elasticsearch:
-    image: elasticsearch:8.14.3
+    image: elasticsearch:8.19.13
     ports:
       - 9200:9200
     ulimits:
@@ -102,7 +102,7 @@ services:
       - esdata:/usr/share/elasticsearch/data
 
   kibana:
-    image: kibana:8.14.3
+    image: kibana:8.19.13
     environment:
       SERVER_NAME: kibana
       ELASTICSEARCH_URL: http://elasticsearch:9200/
