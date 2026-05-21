@@ -9,16 +9,16 @@ volumes:
   geonetwork:
   esdata:
   pgdata:
-  pglog:
 
 services:
   geonetwork:
     image: geonetwork:4.4
     healthcheck:
-      test: curl http://localhost:8080/
-      interval: 5s
-      timeout: 5s
+      test: "curl -f http://localhost:8080/geonetwork/srv/eng/catalog.search || exit 1"
+      interval: 10s
+      timeout: 10s
       retries: 30
+      start_period: 60s
     restart: always
     volumes:
       - geonetwork:/catalogue-data
@@ -63,19 +63,18 @@ services:
       GEONETWORK_DB_PASSWORD: geonetwork
 
   database:
-    image: postgis/postgis:17-3.5
+    image: postgres:17
     environment:
       POSTGRES_USER: geonetwork
       POSTGRES_PASSWORD: geonetwork
       POSTGRES_DB: geonetwork
     healthcheck:
-      test: [CMD-SHELL, pg_isready -U postgres]
+      test: [CMD-SHELL, "psql -U geonetwork -d geonetwork -c 'select 1' > /dev/null 2>&1 || exit 1"]
       interval: 5s
       timeout: 5s
       retries: 5
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - pglog:/var/log/postgresql
 
   elasticsearch:
     image: elasticsearch:8.14.3
