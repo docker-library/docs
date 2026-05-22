@@ -24,21 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1.1-scala2.13-java21-python3-ubuntu`, `4.1.1-java21-python3`, `4.1.1-java21`, `python3`, `latest`](https://github.com/apache/spark-docker/blob/b0876281ebd5ef739bf6103a5980b8a38cd957eb/4.1.1/scala2.13-java21-python3-ubuntu/Dockerfile)
+-	[`4.1.2-scala2.13-java21-python3-ubuntu`, `4.1.2-java21-python3`, `4.1.2-java21`, `python3`, `latest`](https://github.com/apache/spark-docker/blob/593280202af9dd8ca71ae8afa39698800d5670bc/4.1.2/scala2.13-java21-python3-ubuntu/Dockerfile)
 
--	[`4.1.1-scala2.13-java21-r-ubuntu`, `4.1.1-java21-r`](https://github.com/apache/spark-docker/blob/b0876281ebd5ef739bf6103a5980b8a38cd957eb/4.1.1/scala2.13-java21-r-ubuntu/Dockerfile)
+-	[`4.1.2-scala2.13-java21-r-ubuntu`, `4.1.2-java21-r`](https://github.com/apache/spark-docker/blob/593280202af9dd8ca71ae8afa39698800d5670bc/4.1.2/scala2.13-java21-r-ubuntu/Dockerfile)
 
--	[`4.1.1-scala2.13-java21-ubuntu`, `4.1.1-java21-scala`](https://github.com/apache/spark-docker/blob/b0876281ebd5ef739bf6103a5980b8a38cd957eb/4.1.1/scala2.13-java21-ubuntu/Dockerfile)
+-	[`4.1.2-scala2.13-java21-ubuntu`, `4.1.2-java21-scala`](https://github.com/apache/spark-docker/blob/593280202af9dd8ca71ae8afa39698800d5670bc/4.1.2/scala2.13-java21-ubuntu/Dockerfile)
 
--	[`4.1.1-scala2.13-java21-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/b0876281ebd5ef739bf6103a5980b8a38cd957eb/4.1.1/scala2.13-java21-python3-r-ubuntu/Dockerfile)
+-	[`4.1.2-scala2.13-java21-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/593280202af9dd8ca71ae8afa39698800d5670bc/4.1.2/scala2.13-java21-python3-r-ubuntu/Dockerfile)
 
--	[`4.1.1-scala2.13-java17-python3-ubuntu`, `4.1.1-python3`, `4.1.1`, `python3-java17`](https://github.com/apache/spark-docker/blob/b0876281ebd5ef739bf6103a5980b8a38cd957eb/4.1.1/scala2.13-java17-python3-ubuntu/Dockerfile)
+-	[`4.1.2-scala2.13-java17-python3-ubuntu`, `4.1.2-java17`, `4.1.2-python3`, `4.1.2`, `python3-java17`](https://github.com/apache/spark-docker/blob/593280202af9dd8ca71ae8afa39698800d5670bc/4.1.2/scala2.13-java17-python3-ubuntu/Dockerfile)
 
--	[`4.1.1-scala2.13-java17-r-ubuntu`, `4.1.1-r`, `r`](https://github.com/apache/spark-docker/blob/b0876281ebd5ef739bf6103a5980b8a38cd957eb/4.1.1/scala2.13-java17-r-ubuntu/Dockerfile)
+-	[`4.1.2-scala2.13-java17-r-ubuntu`, `4.1.2-java17-r`, `4.1.2-r`, `r-java17`, `r`](https://github.com/apache/spark-docker/blob/593280202af9dd8ca71ae8afa39698800d5670bc/4.1.2/scala2.13-java17-r-ubuntu/Dockerfile)
 
--	[`4.1.1-scala2.13-java17-ubuntu`, `4.1.1-scala`, `scala`](https://github.com/apache/spark-docker/blob/b0876281ebd5ef739bf6103a5980b8a38cd957eb/4.1.1/scala2.13-java17-ubuntu/Dockerfile)
+-	[`4.1.2-scala2.13-java17-ubuntu`, `4.1.2-scala-java17`, `scala-java17`, `4.1.2-scala`, `scala`](https://github.com/apache/spark-docker/blob/593280202af9dd8ca71ae8afa39698800d5670bc/4.1.2/scala2.13-java17-ubuntu/Dockerfile)
 
--	[`4.1.1-scala2.13-java17-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/b0876281ebd5ef739bf6103a5980b8a38cd957eb/4.1.1/scala2.13-java17-python3-r-ubuntu/Dockerfile)
+-	[`4.1.2-scala2.13-java17-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/593280202af9dd8ca71ae8afa39698800d5670bc/4.1.2/scala2.13-java17-python3-r-ubuntu/Dockerfile)
 
 -	[`4.0.2-scala2.13-java21-python3-ubuntu`, `4.0.2-java21-python3`, `4.0.2-java21`](https://github.com/apache/spark-docker/blob/1e6fe4d2c19bd4ac1bfd3b1ec7c1f90ccd25cf12/4.0.2/scala2.13-java21-python3-ubuntu/Dockerfile)
 
