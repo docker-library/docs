@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `3.5.1`, `3.5`, `3`](https://github.com/apache/couchdb-docker/blob/4c82ee090d6299c27616f30d93c9622f769431dd/3.5.1/Dockerfile)
+-	[`latest`, `3.5.2`, `3.5`, `3`](https://github.com/apache/couchdb-docker/blob/adcb4f73e8a3c6fb0e901ab88cab50d71f02937a/3.5.2/Dockerfile)
 
--	[`3.5.1-nouveau`, `3.5-nouveau`, `3-nouveau`](https://github.com/apache/couchdb-docker/blob/4c82ee090d6299c27616f30d93c9622f769431dd/3.5.1-nouveau/Dockerfile)
+-	[`3.5.2-nouveau`, `3.5-nouveau`, `3-nouveau`](https://github.com/apache/couchdb-docker/blob/adcb4f73e8a3c6fb0e901ab88cab50d71f02937a/3.5.2-nouveau/Dockerfile)
 
--	[`3.4.3`, `3.4`](https://github.com/apache/couchdb-docker/blob/4c82ee090d6299c27616f30d93c9622f769431dd/3.4.3/Dockerfile)
+-	[`3.4.3`, `3.4`](https://github.com/apache/couchdb-docker/blob/adcb4f73e8a3c6fb0e901ab88cab50d71f02937a/3.4.3/Dockerfile)
 
--	[`3.4.3-nouveau`, `3.4-nouveau`](https://github.com/apache/couchdb-docker/blob/4c82ee090d6299c27616f30d93c9622f769431dd/3.4.3-nouveau/Dockerfile)
+-	[`3.4.3-nouveau`, `3.4-nouveau`](https://github.com/apache/couchdb-docker/blob/adcb4f73e8a3c6fb0e901ab88cab50d71f02937a/3.4.3-nouveau/Dockerfile)
 
 # Quick reference (cont.)
 
