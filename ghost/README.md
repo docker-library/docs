@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.41.1-bookworm`, `6.41.1`, `6.41-bookworm`, `6.41`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/docker-library/ghost/blob/bd6fb90eff9c5f905ae9a2a3dfbdf22a6684ed9f/6/bookworm/Dockerfile)
+-	[`6.42.0-bookworm`, `6.42.0`, `6.42-bookworm`, `6.42`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/docker-library/ghost/blob/b4bd19feaf7ad19d3f136c271baa91e7d9eb50fa/6/bookworm/Dockerfile)
 
--	[`6.41.1-alpine3.23`, `6.41.1-alpine`, `6.41-alpine3.23`, `6.41-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/docker-library/ghost/blob/bd6fb90eff9c5f905ae9a2a3dfbdf22a6684ed9f/6/alpine3.23/Dockerfile)
+-	[`6.42.0-alpine3.23`, `6.42.0-alpine`, `6.42-alpine3.23`, `6.42-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/docker-library/ghost/blob/b4bd19feaf7ad19d3f136c271baa91e7d9eb50fa/6/alpine3.23/Dockerfile)
 
 # Quick reference (cont.)
 
