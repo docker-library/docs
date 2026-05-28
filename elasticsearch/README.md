@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.19.15`](https://github.com/elastic/dockerfiles/blob/0160f81459263c51ec69192c639c7f7cf8b77778/elasticsearch/Dockerfile)
+-	[`8.19.16`](https://github.com/elastic/dockerfiles/blob/d3f7abab13470dd73b839511b9041d18f8e7de2a/elasticsearch/Dockerfile)
 
--	[`9.3.4`](https://github.com/elastic/dockerfiles/blob/82d52284ccbfe049efc893d110b35ccde03235fa/elasticsearch/Dockerfile)
+-	[`9.3.5`](https://github.com/elastic/dockerfiles/blob/bc45b0a40d0cf09bb9bb229a6ce6947f3f5ccbf4/elasticsearch/Dockerfile)
 
--	[`9.4.1`](https://github.com/elastic/dockerfiles/blob/85b4ccd5da0f28db24ad3871335cfe2ed7f8aebb/elasticsearch/Dockerfile)
+-	[`9.4.2`](https://github.com/elastic/dockerfiles/blob/6245ba340217b06d8c51bd1221245e90914604bb/elasticsearch/Dockerfile)
 
 # Quick reference (cont.)
 
