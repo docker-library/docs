@@ -26,29 +26,29 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.3.1-ubi10-rc`, `12.3-ubi10-rc`, `12.3.1-ubi-rc`, `12.3-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/769f60ce827e3465281d184080727f3f13f3f61e/12.3-ubi/Dockerfile)
+-	[`12.3.1-ubi10-rc`, `12.3-ubi10-rc`, `12.3.1-ubi-rc`, `12.3-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/53935c78b82bff912b361357d59db11d7246ea96/12.3-ubi/Dockerfile)
 
--	[`12.3.1-noble-rc`, `12.3-noble-rc`, `12.3.1-rc`, `12.3-rc`](https://github.com/MariaDB/mariadb-docker/blob/a681c62cf8d84fc614e648776992733cdca60983/12.3/Dockerfile)
+-	[`12.3.1-noble-rc`, `12.3-noble-rc`, `12.3.1-rc`, `12.3-rc`](https://github.com/MariaDB/mariadb-docker/blob/1b6429ba3544e134715c15f8c56cc6f665f827c9/12.3/Dockerfile)
 
--	[`12.2.2-ubi10`, `12.2-ubi10`, `12-ubi10`, `12.2.2-ubi`, `12.2-ubi`, `12-ubi`](https://github.com/MariaDB/mariadb-docker/blob/604617ddd4d241538390b0bb97bf4cd92e5f4c6f/12.2-ubi/Dockerfile)
+-	[`12.2.2-ubi10`, `12.2-ubi10`, `12-ubi10`, `12.2.2-ubi`, `12.2-ubi`, `12-ubi`](https://github.com/MariaDB/mariadb-docker/blob/1b6429ba3544e134715c15f8c56cc6f665f827c9/12.2-ubi/Dockerfile)
 
--	[`12.2.2-noble`, `12.2-noble`, `12-noble`, `noble`, `12.2.2`, `12.2`, `12`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/604617ddd4d241538390b0bb97bf4cd92e5f4c6f/12.2/Dockerfile)
+-	[`12.2.2-noble`, `12.2-noble`, `12-noble`, `noble`, `12.2.2`, `12.2`, `12`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/1b6429ba3544e134715c15f8c56cc6f665f827c9/12.2/Dockerfile)
 
--	[`11.8.7-ubi9`, `11.8-ubi9`, `11-ubi9`, `lts-ubi9`, `11.8.7-ubi`, `11.8-ubi`, `11-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/cfc6a068e6d6418b22e3f0e498c243c2279a118a/11.8-ubi/Dockerfile)
+-	[`11.8.8-ubi9`, `11.8-ubi9`, `11-ubi9`, `lts-ubi9`, `11.8.8-ubi`, `11.8-ubi`, `11-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/53935c78b82bff912b361357d59db11d7246ea96/11.8-ubi/Dockerfile)
 
--	[`11.8.7-noble`, `11.8-noble`, `11-noble`, `lts-noble`, `11.8.7`, `11.8`, `11`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/cfc6a068e6d6418b22e3f0e498c243c2279a118a/11.8/Dockerfile)
+-	[`11.8.8-noble`, `11.8-noble`, `11-noble`, `lts-noble`, `11.8.8`, `11.8`, `11`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/53935c78b82bff912b361357d59db11d7246ea96/11.8/Dockerfile)
 
--	[`11.4.11-ubi9`, `11.4-ubi9`, `11.4.11-ubi`, `11.4-ubi`](https://github.com/MariaDB/mariadb-docker/blob/cfc6a068e6d6418b22e3f0e498c243c2279a118a/11.4-ubi/Dockerfile)
+-	[`11.4.12-ubi9`, `11.4-ubi9`, `11.4.12-ubi`, `11.4-ubi`](https://github.com/MariaDB/mariadb-docker/blob/53935c78b82bff912b361357d59db11d7246ea96/11.4-ubi/Dockerfile)
 
--	[`11.4.11-noble`, `11.4-noble`, `11.4.11`, `11.4`](https://github.com/MariaDB/mariadb-docker/blob/cfc6a068e6d6418b22e3f0e498c243c2279a118a/11.4/Dockerfile)
+-	[`11.4.12-noble`, `11.4-noble`, `11.4.12`, `11.4`](https://github.com/MariaDB/mariadb-docker/blob/53935c78b82bff912b361357d59db11d7246ea96/11.4/Dockerfile)
 
--	[`10.11.17-ubi9`, `10.11-ubi9`, `10-ubi9`, `10.11.17-ubi`, `10.11-ubi`, `10-ubi`](https://github.com/MariaDB/mariadb-docker/blob/cfc6a068e6d6418b22e3f0e498c243c2279a118a/10.11-ubi/Dockerfile)
+-	[`10.11.18-ubi9`, `10.11-ubi9`, `10-ubi9`, `10.11.18-ubi`, `10.11-ubi`, `10-ubi`](https://github.com/MariaDB/mariadb-docker/blob/53935c78b82bff912b361357d59db11d7246ea96/10.11-ubi/Dockerfile)
 
--	[`10.11.17-jammy`, `10.11-jammy`, `10-jammy`, `10.11.17`, `10.11`, `10`](https://github.com/MariaDB/mariadb-docker/blob/cfc6a068e6d6418b22e3f0e498c243c2279a118a/10.11/Dockerfile)
+-	[`10.11.18-jammy`, `10.11-jammy`, `10-jammy`, `10.11.18`, `10.11`, `10`](https://github.com/MariaDB/mariadb-docker/blob/53935c78b82bff912b361357d59db11d7246ea96/10.11/Dockerfile)
 
--	[`10.6.26-ubi9`, `10.6-ubi9`, `10.6.26-ubi`, `10.6-ubi`](https://github.com/MariaDB/mariadb-docker/blob/cfc6a068e6d6418b22e3f0e498c243c2279a118a/10.6-ubi/Dockerfile)
+-	[`10.6.27-ubi9`, `10.6-ubi9`, `10.6.27-ubi`, `10.6-ubi`](https://github.com/MariaDB/mariadb-docker/blob/53935c78b82bff912b361357d59db11d7246ea96/10.6-ubi/Dockerfile)
 
--	[`10.6.26-jammy`, `10.6-jammy`, `10.6.26`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/cfc6a068e6d6418b22e3f0e498c243c2279a118a/10.6/Dockerfile)
+-	[`10.6.27-jammy`, `10.6-jammy`, `10.6.27`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/53935c78b82bff912b361357d59db11d7246ea96/10.6/Dockerfile)
 
 # Quick reference (cont.)
 
