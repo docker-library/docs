@@ -32,7 +32,7 @@ WARNING:
 
 -	[`jazzy-ros-core`, `jazzy-ros-core-noble`](https://github.com/osrf/docker_images/blob/58af41813ba67f611943c35c551387d652fcdbde/ros/jazzy/ubuntu/noble/ros-core/Dockerfile)
 
--	[`jazzy-ros-base`, `jazzy-ros-base-noble`, `jazzy`, `latest`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/ros-base/Dockerfile)
+-	[`jazzy-ros-base`, `jazzy-ros-base-noble`, `jazzy`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/ros-base/Dockerfile)
 
 -	[`jazzy-perception`, `jazzy-perception-noble`](https://github.com/osrf/docker_images/blob/0038f1c3a11aa0fc573d698b39ab5c204aad5a40/ros/jazzy/ubuntu/noble/perception/Dockerfile)
 
@@ -42,9 +42,9 @@ WARNING:
 
 -	[`kilted-perception`, `kilted-perception-noble`](https://github.com/osrf/docker_images/blob/b835a530495c0b411a0d15db858710a2748ee0a0/ros/kilted/ubuntu/noble/perception/Dockerfile)
 
--	[`lyrical-ros-core`, `lyrical-ros-core-resolute`](https://github.com/osrf/docker_images/blob/0d65786f3d9bb10d55dc28ccd5b87da204240d1a/ros/lyrical/ubuntu/resolute/ros-core/Dockerfile)
+-	[`lyrical-ros-core`, `lyrical-ros-core-resolute`](https://github.com/osrf/docker_images/blob/54c9478ffafa47e2e65a90a20ebd5412009a35b0/ros/lyrical/ubuntu/resolute/ros-core/Dockerfile)
 
--	[`lyrical-ros-base`, `lyrical-ros-base-resolute`, `lyrical`](https://github.com/osrf/docker_images/blob/0d65786f3d9bb10d55dc28ccd5b87da204240d1a/ros/lyrical/ubuntu/resolute/ros-base/Dockerfile)
+-	[`lyrical-ros-base`, `lyrical-ros-base-resolute`, `lyrical`, `latest`](https://github.com/osrf/docker_images/blob/0d65786f3d9bb10d55dc28ccd5b87da204240d1a/ros/lyrical/ubuntu/resolute/ros-base/Dockerfile)
 
 -	[`lyrical-perception`, `lyrical-perception-resolute`](https://github.com/osrf/docker_images/blob/0d65786f3d9bb10d55dc28ccd5b87da204240d1a/ros/lyrical/ubuntu/resolute/perception/Dockerfile)
 

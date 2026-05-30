@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `26.5`, `26.5-jammy`, `26.5.1`, `26.5.1-jammy`, `26.5.1.882`, `26.5.1.882-jammy`](https://github.com/ClickHouse/docker-library/blob/5050291e15d20980c0b292cf994528559b0fce41/server/26.5.1.882/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `26.5`, `26.5-jammy`, `26.5.1`, `26.5.1-jammy`, `26.5.1.882`, `26.5.1.882-jammy`](https://github.com/ClickHouse/docker-library/blob/f57f1d188763aecf7d0c8e26a5d9684c28f2a4a0/server/26.5.1.882/Dockerfile.ubuntu)
 
--	[`26.4`, `26.4-jammy`, `26.4.3`, `26.4.3-jammy`, `26.4.3.37`, `26.4.3.37-jammy`](https://github.com/ClickHouse/docker-library/blob/5050291e15d20980c0b292cf994528559b0fce41/server/26.4.3.37/Dockerfile.ubuntu)
+-	[`26.4`, `26.4-jammy`, `26.4.3`, `26.4.3-jammy`, `26.4.3.37`, `26.4.3.37-jammy`](https://github.com/ClickHouse/docker-library/blob/f57f1d188763aecf7d0c8e26a5d9684c28f2a4a0/server/26.4.3.37/Dockerfile.ubuntu)
 
--	[`lts`, `lts-jammy`, `26.3`, `26.3-jammy`, `26.3.10`, `26.3.10-jammy`, `26.3.10.62`, `26.3.10.62-jammy`](https://github.com/ClickHouse/docker-library/blob/5050291e15d20980c0b292cf994528559b0fce41/server/26.3.10.62/Dockerfile.ubuntu)
+-	[`lts`, `lts-jammy`, `26.3`, `26.3-jammy`, `26.3.12`, `26.3.12-jammy`, `26.3.12.3`, `26.3.12.3-jammy`](https://github.com/ClickHouse/docker-library/blob/f57f1d188763aecf7d0c8e26a5d9684c28f2a4a0/server/26.3.12.3/Dockerfile.ubuntu)
 
--	[`25.8`, `25.8-jammy`, `25.8.24`, `25.8.24-jammy`, `25.8.24.21`, `25.8.24.21-jammy`](https://github.com/ClickHouse/docker-library/blob/5050291e15d20980c0b292cf994528559b0fce41/server/25.8.24.21/Dockerfile.ubuntu)
+-	[`25.8`, `25.8-jammy`, `25.8.24`, `25.8.24-jammy`, `25.8.24.21`, `25.8.24.21-jammy`](https://github.com/ClickHouse/docker-library/blob/f57f1d188763aecf7d0c8e26a5d9684c28f2a4a0/server/25.8.24.21/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
