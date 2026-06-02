@@ -26,7 +26,7 @@ WARNING:
 
 -	[`22.04`, `jammy-20260509`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20260509-64196f4d&id=64196f4d48be3c0a3eb429067c1a8dd995cf2308)
 
--	[`24.04`, `noble-20260410`, `noble`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20260410-a17a2429&id=a17a2429ff85ab773e86c558a75ae62053ef9936)
+-	[`24.04`, `noble-20260509.1`, `noble`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20260509.1-943646da&id=943646da3fefbea780df18d35ec1329bd7618256)
 
 -	[`25.10`, `questing-20251217`, `questing`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20251217-883bce4d&id=883bce4d25b37c4c52e6d25bcd3f2961671ce1c7)
 
