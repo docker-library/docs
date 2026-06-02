@@ -40,22 +40,6 @@ WARNING:
 
 -	[`26-slim`, `26-trixie-slim`, `26.3-slim`, `26.3-trixie-slim`, `26.3.0-slim`, `26.3.0-trixie-slim`, `current-slim`, `current-trixie-slim`, `slim`, `trixie-slim`](https://github.com/nodejs/docker-node/blob/3284b1de84697b6b732b095ad416ee71f74cbd8b/26/trixie-slim/Dockerfile)
 
--	[`25-alpine3.22`, `25.9-alpine3.22`, `25.9.0-alpine3.22`](https://github.com/nodejs/docker-node/blob/f10204b756360aa4c4913b444b591b69dd8fbd8b/25/alpine3.22/Dockerfile)
-
--	[`25-alpine`, `25-alpine3.23`, `25.9-alpine`, `25.9-alpine3.23`, `25.9.0-alpine`, `25.9.0-alpine3.23`](https://github.com/nodejs/docker-node/blob/f10204b756360aa4c4913b444b591b69dd8fbd8b/25/alpine3.23/Dockerfile)
-
--	[`25`, `25-bookworm`, `25.9`, `25.9-bookworm`, `25.9.0`, `25.9.0-bookworm`](https://github.com/nodejs/docker-node/blob/f10204b756360aa4c4913b444b591b69dd8fbd8b/25/bookworm/Dockerfile)
-
--	[`25-bookworm-slim`, `25-slim`, `25.9-bookworm-slim`, `25.9-slim`, `25.9.0-bookworm-slim`, `25.9.0-slim`](https://github.com/nodejs/docker-node/blob/f10204b756360aa4c4913b444b591b69dd8fbd8b/25/bookworm-slim/Dockerfile)
-
--	[`25-bullseye`, `25.9-bullseye`, `25.9.0-bullseye`](https://github.com/nodejs/docker-node/blob/f10204b756360aa4c4913b444b591b69dd8fbd8b/25/bullseye/Dockerfile)
-
--	[`25-bullseye-slim`, `25.9-bullseye-slim`, `25.9.0-bullseye-slim`](https://github.com/nodejs/docker-node/blob/f10204b756360aa4c4913b444b591b69dd8fbd8b/25/bullseye-slim/Dockerfile)
-
--	[`25-trixie`, `25.9-trixie`, `25.9.0-trixie`](https://github.com/nodejs/docker-node/blob/f10204b756360aa4c4913b444b591b69dd8fbd8b/25/trixie/Dockerfile)
-
--	[`25-trixie-slim`, `25.9-trixie-slim`, `25.9.0-trixie-slim`](https://github.com/nodejs/docker-node/blob/f10204b756360aa4c4913b444b591b69dd8fbd8b/25/trixie-slim/Dockerfile)
-
 -	[`24-alpine3.22`, `24.16-alpine3.22`, `24.16.0-alpine3.22`, `krypton-alpine3.22`, `lts-alpine3.22`](https://github.com/nodejs/docker-node/blob/b23e34b9691e4e98543a9e70e9df831a6c050f0f/24/alpine3.22/Dockerfile)
 
 -	[`24-alpine`, `24-alpine3.23`, `24.16-alpine`, `24.16-alpine3.23`, `24.16.0-alpine`, `24.16.0-alpine3.23`, `krypton-alpine`, `krypton-alpine3.23`, `lts-alpine`, `lts-alpine3.23`](https://github.com/nodejs/docker-node/blob/b23e34b9691e4e98543a9e70e9df831a6c050f0f/24/alpine3.23/Dockerfile)
