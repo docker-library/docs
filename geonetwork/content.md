@@ -74,7 +74,7 @@ Since GeoNetwork 4.4.0, use Java properties passed in the `GN_CONFIG_PROPERTIES`
 
 The following environment variables are also available for 4.4.x images:
 
--	`WEBAPP_CONTEXT_PATH` *optional* (default `/geonetwork`): The context path used to deploy GeoNetwork.
+-	`WEBAPP_CONTEXT_PATH` *optional* (default `/geonetwork`): The context path used to deploy GeoNetwork. Since 4.4.11, the value must start with `/` followed by one or more letters, digits, hyphens, or underscores (e.g. `/geonetwork`); an invalid value causes the container to exit with an error at startup.
 -	`REMOTE_IP_INTERNAL_PROXIES` *optional* (since 4.4.10): Regular expression matching IP addresses of trusted reverse proxies. Enables `X-Forwarded-For` header processing for correct client IP detection behind a proxy. When not set, the RemoteIp Valve is disabled. Example: `192\.168\.0\.10|192\.168\.0\.11`.
 
 Example Docker Compose YAML snippet:
@@ -144,6 +144,14 @@ The Tomcat-based images (GN 3, 4.2.15+, and 4.4.10+) run as `root`, whereas the 
 ```console
 docker run --rm -v /host/%%REPO%%-docker:/catalogue-data busybox chown -R root:root /catalogue-data
 ```
+
+### Upgrading from Jetty-based images
+
+The switch from Jetty to Tomcat (GN 4.2.15+ and 4.4.10+) introduces additional breaking changes beyond file ownership for users who extend these images or reference Jetty-specific paths in custom scripts:
+
+-	`$JETTY_HOME` and `$JETTY_BASE` environment variables are no longer set.
+-	The GeoNetwork web application path changed: it is now at `/usr/local/tomcat/webapps/geonetwork/` (GN 4.2.x) or `/opt/geonetwork/` (GN 4.4.10+), replacing the previous `/var/lib/jetty/webapps/geonetwork/`.
+-	The container startup command is now `catalina.sh run` instead of `java -jar /usr/local/jetty/start.jar`.
 
 ### Set the data directory and H2 db file
 
