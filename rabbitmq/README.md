@@ -26,35 +26,35 @@ WARNING:
 
 -	[`4.3.1`, `4.3`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/e72c658a466b6eee4c381396f5a6e01e9dea733f/4.3/ubuntu/Dockerfile)
 
--	[`4.3.1-management`, `4.3-management`, `4-management`, `management`](https://github.com/docker-library/rabbitmq/blob/fd9df7cc75e342e30c08c08edb3a93fb28826c7c/4.3/ubuntu/management/Dockerfile)
+-	[`4.3.1-management`, `4.3-management`, `4-management`, `management`](https://github.com/docker-library/rabbitmq/blob/7e83ecd7bb6404c334f92d9f71a2c49527e265db/4.3/ubuntu/management/Dockerfile)
 
 -	[`4.3.1-alpine`, `4.3-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/e72c658a466b6eee4c381396f5a6e01e9dea733f/4.3/alpine/Dockerfile)
 
--	[`4.3.1-management-alpine`, `4.3-management-alpine`, `4-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/fd9df7cc75e342e30c08c08edb3a93fb28826c7c/4.3/alpine/management/Dockerfile)
+-	[`4.3.1-management-alpine`, `4.3-management-alpine`, `4-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/7e83ecd7bb6404c334f92d9f71a2c49527e265db/4.3/alpine/management/Dockerfile)
 
 -	[`4.2.7`, `4.2`](https://github.com/docker-library/rabbitmq/blob/6c9428b8f6c1026b1fa9910adceec59301f34d76/4.2/ubuntu/Dockerfile)
 
--	[`4.2.7-management`, `4.2-management`](https://github.com/docker-library/rabbitmq/blob/472c38537ee5d4c5926b741d3580a68057c7675a/4.2/ubuntu/management/Dockerfile)
+-	[`4.2.7-management`, `4.2-management`](https://github.com/docker-library/rabbitmq/blob/aadf274f3109618ecf1e4a42053eb081c05648a5/4.2/ubuntu/management/Dockerfile)
 
 -	[`4.2.7-alpine`, `4.2-alpine`](https://github.com/docker-library/rabbitmq/blob/6c9428b8f6c1026b1fa9910adceec59301f34d76/4.2/alpine/Dockerfile)
 
--	[`4.2.7-management-alpine`, `4.2-management-alpine`](https://github.com/docker-library/rabbitmq/blob/472c38537ee5d4c5926b741d3580a68057c7675a/4.2/alpine/management/Dockerfile)
+-	[`4.2.7-management-alpine`, `4.2-management-alpine`](https://github.com/docker-library/rabbitmq/blob/aadf274f3109618ecf1e4a42053eb081c05648a5/4.2/alpine/management/Dockerfile)
 
 -	[`4.1.8`, `4.1`](https://github.com/docker-library/rabbitmq/blob/0cef4ca4c4d996a43ca7aefc1b1fb81f88f02bbd/4.1/ubuntu/Dockerfile)
 
--	[`4.1.8-management`, `4.1-management`](https://github.com/docker-library/rabbitmq/blob/c8470dfc79235d385cbf54fdac0c04df18562d6c/4.1/ubuntu/management/Dockerfile)
+-	[`4.1.8-management`, `4.1-management`](https://github.com/docker-library/rabbitmq/blob/d54bc9eb77df22cf91cea8d385c7cc0f5f5a8ab2/4.1/ubuntu/management/Dockerfile)
 
 -	[`4.1.8-alpine`, `4.1-alpine`](https://github.com/docker-library/rabbitmq/blob/0cef4ca4c4d996a43ca7aefc1b1fb81f88f02bbd/4.1/alpine/Dockerfile)
 
--	[`4.1.8-management-alpine`, `4.1-management-alpine`](https://github.com/docker-library/rabbitmq/blob/c8470dfc79235d385cbf54fdac0c04df18562d6c/4.1/alpine/management/Dockerfile)
+-	[`4.1.8-management-alpine`, `4.1-management-alpine`](https://github.com/docker-library/rabbitmq/blob/d54bc9eb77df22cf91cea8d385c7cc0f5f5a8ab2/4.1/alpine/management/Dockerfile)
 
 -	[`4.0.9`, `4.0`](https://github.com/docker-library/rabbitmq/blob/45fd8b549f23e4cb00f7784ff68cd69da1a9570d/4.0/ubuntu/Dockerfile)
 
--	[`4.0.9-management`, `4.0-management`](https://github.com/docker-library/rabbitmq/blob/3a17bd460a5a3e95585d0a33c9ede609b52fedf2/4.0/ubuntu/management/Dockerfile)
+-	[`4.0.9-management`, `4.0-management`](https://github.com/docker-library/rabbitmq/blob/1d1229619e01506aef0a3bdbae090f3a94512a5e/4.0/ubuntu/management/Dockerfile)
 
 -	[`4.0.9-alpine`, `4.0-alpine`](https://github.com/docker-library/rabbitmq/blob/45fd8b549f23e4cb00f7784ff68cd69da1a9570d/4.0/alpine/Dockerfile)
 
--	[`4.0.9-management-alpine`, `4.0-management-alpine`](https://github.com/docker-library/rabbitmq/blob/3a17bd460a5a3e95585d0a33c9ede609b52fedf2/4.0/alpine/management/Dockerfile)
+-	[`4.0.9-management-alpine`, `4.0-management-alpine`](https://github.com/docker-library/rabbitmq/blob/1d1229619e01506aef0a3bdbae090f3a94512a5e/4.0/alpine/management/Dockerfile)
 
 # Quick reference (cont.)
 
