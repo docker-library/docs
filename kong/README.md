@@ -24,13 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.9.1-ubuntu`, `3.9-ubuntu`, `3.9.1`, `3.9`, `3`, `latest`, `ubuntu`](https://github.com/Kong/docker-kong/blob/af96ffd89b75f2e7a68cb90d0a3c4b4cd30d53fc/ubuntu/Dockerfile)
+-	[`3.9.2-ubuntu`, `3.9-ubuntu`, `3.9.2`, `3.9`, `3`, `latest`, `ubuntu`](https://github.com/Kong/docker-kong/blob/b64fa89e30713ec2004c9cd57be5b2ff9687d21c/ubuntu/Dockerfile)
 
 -	[`3.8.0-ubuntu`, `3.8-ubuntu`, `3.8.0`, `3.8`](https://github.com/Kong/docker-kong/blob/1f5199f7da45c17f4344b811397e89899a160040/ubuntu/Dockerfile)
 
 -	[`3.4.2-ubuntu`, `3.4-ubuntu`, `3.4.2`, `3.4`](https://github.com/Kong/docker-kong/blob/e07de903edf213445a0540172d51529ac344b448/ubuntu/Dockerfile)
-
--	[`2.8.5-ubuntu`, `2.8-ubuntu`](https://github.com/Kong/docker-kong/blob/cdf93ae2106f998a2245a3eee6814b1ae68781af/ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 
