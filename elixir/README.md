@@ -24,23 +24,41 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.19.5`, `1.19`, `latest`, `1.19.5-otp-28`, `1.19-otp-28`, `otp-28`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/Dockerfile)
+-	[`1.20.0`, `1.20`, `latest`, `1.20.0-otp-29`, `1.20-otp-29`, `otp-29`](https://github.com/erlef/docker-elixir/blob/513c49afa264a6c7e3d4cd24f587c2c4d4f845cc/1.20/Dockerfile)
 
--	[`1.19.5-slim`, `1.19-slim`, `slim`, `1.19.5-otp-28-slim`, `1.19-otp-28-slim`, `otp-28-slim`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/slim/Dockerfile)
+-	[`1.20.0-slim`, `1.20-slim`, `slim`, `1.20.0-otp-29-slim`, `1.20-otp-29-slim`, `otp-29-slim`](https://github.com/erlef/docker-elixir/blob/513c49afa264a6c7e3d4cd24f587c2c4d4f845cc/1.20/slim/Dockerfile)
 
--	[`1.19.5-alpine`, `1.19-alpine`, `alpine`, `1.19.5-otp-28-alpine`, `1.19-otp-28-alpine`, `otp-28-alpine`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/alpine/Dockerfile)
+-	[`1.20.0-alpine`, `1.20-alpine`, `alpine`, `1.20.0-otp-29-alpine`, `1.20-otp-29-alpine`, `otp-29-alpine`](https://github.com/erlef/docker-elixir/blob/513c49afa264a6c7e3d4cd24f587c2c4d4f845cc/1.20/alpine/Dockerfile)
 
--	[`1.19.5-otp-26`, `1.19-otp-26`, `otp-26`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-26/Dockerfile)
+-	[`1.20.0-otp-27`, `1.20-otp-27`, `otp-27`](https://github.com/erlef/docker-elixir/blob/513c49afa264a6c7e3d4cd24f587c2c4d4f845cc/1.20/otp-27/Dockerfile)
 
--	[`1.19.5-otp-26-alpine`, `1.19-otp-26-alpine`, `otp-26-alpine`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-26-alpine/Dockerfile)
+-	[`1.20.0-otp-27-alpine`, `1.20-otp-27-alpine`, `otp-27-alpine`](https://github.com/erlef/docker-elixir/blob/513c49afa264a6c7e3d4cd24f587c2c4d4f845cc/1.20/otp-27-alpine/Dockerfile)
 
--	[`1.19.5-otp-26-slim`, `1.19-otp-26-slim`, `otp-26-slim`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-26-slim/Dockerfile)
+-	[`1.20.0-otp-27-slim`, `1.20-otp-27-slim`, `otp-27-slim`](https://github.com/erlef/docker-elixir/blob/513c49afa264a6c7e3d4cd24f587c2c4d4f845cc/1.20/otp-27-slim/Dockerfile)
 
--	[`1.19.5-otp-27`, `1.19-otp-27`, `otp-27`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-27/Dockerfile)
+-	[`1.20.0-otp-28`, `1.20-otp-28`, `otp-28`](https://github.com/erlef/docker-elixir/blob/513c49afa264a6c7e3d4cd24f587c2c4d4f845cc/1.20/otp-28/Dockerfile)
 
--	[`1.19.5-otp-27-alpine`, `1.19-otp-27-alpine`, `otp-27-alpine`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-27-alpine/Dockerfile)
+-	[`1.20.0-otp-28-alpine`, `1.20-otp-28-alpine`, `otp-28-alpine`](https://github.com/erlef/docker-elixir/blob/513c49afa264a6c7e3d4cd24f587c2c4d4f845cc/1.20/otp-28-alpine/Dockerfile)
 
--	[`1.19.5-otp-27-slim`, `1.19-otp-27-slim`, `otp-27-slim`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-27-slim/Dockerfile)
+-	[`1.20.0-otp-28-slim`, `1.20-otp-28-slim`, `otp-28-slim`](https://github.com/erlef/docker-elixir/blob/513c49afa264a6c7e3d4cd24f587c2c4d4f845cc/1.20/otp-28-slim/Dockerfile)
+
+-	[`1.19.5`, `1.19`, `1.19.5-otp-28`, `1.19-otp-28`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/Dockerfile)
+
+-	[`1.19.5-slim`, `1.19-slim`, `1.19.5-otp-28-slim`, `1.19-otp-28-slim`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/slim/Dockerfile)
+
+-	[`1.19.5-alpine`, `1.19-alpine`, `1.19.5-otp-28-alpine`, `1.19-otp-28-alpine`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/alpine/Dockerfile)
+
+-	[`1.19.5-otp-26`, `1.19-otp-26`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-26/Dockerfile)
+
+-	[`1.19.5-otp-26-alpine`, `1.19-otp-26-alpine`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-26-alpine/Dockerfile)
+
+-	[`1.19.5-otp-26-slim`, `1.19-otp-26-slim`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-26-slim/Dockerfile)
+
+-	[`1.19.5-otp-27`, `1.19-otp-27`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-27/Dockerfile)
+
+-	[`1.19.5-otp-27-alpine`, `1.19-otp-27-alpine`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-27-alpine/Dockerfile)
+
+-	[`1.19.5-otp-27-slim`, `1.19-otp-27-slim`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/otp-27-slim/Dockerfile)
 
 -	[`1.18.4`, `1.18`, `1.18.4-otp-28`, `1.18-otp-28`](https://github.com/erlef/docker-elixir/blob/1e80f1b239228598d4d086882e92a9cfe585c1b2/1.18/Dockerfile)
 
@@ -101,24 +119,6 @@ WARNING:
 -	[`1.16.3-otp-25-alpine`, `1.16-otp-25-alpine`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.16/otp-25-alpine/Dockerfile)
 
 -	[`1.16.3-otp-25-slim`, `1.16-otp-25-slim`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.16/otp-25-slim/Dockerfile)
-
--	[`1.15.8`, `1.15`, `1.15.8-otp-26`, `1.15-otp-26`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/Dockerfile)
-
--	[`1.15.8-slim`, `1.15-slim`, `1.15.8-otp-26-slim`, `1.15-otp-26-slim`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/slim/Dockerfile)
-
--	[`1.15.8-alpine`, `1.15-alpine`, `1.15.8-otp-26-alpine`, `1.15-otp-26-alpine`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/alpine/Dockerfile)
-
--	[`1.15.8-otp-24`, `1.15-otp-24`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-24/Dockerfile)
-
--	[`1.15.8-otp-24-alpine`, `1.15-otp-24-alpine`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-24-alpine/Dockerfile)
-
--	[`1.15.8-otp-24-slim`, `1.15-otp-24-slim`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-24-slim/Dockerfile)
-
--	[`1.15.8-otp-25`, `1.15-otp-25`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-25/Dockerfile)
-
--	[`1.15.8-otp-25-alpine`, `1.15-otp-25-alpine`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-25-alpine/Dockerfile)
-
--	[`1.15.8-otp-25-slim`, `1.15-otp-25-slim`](https://github.com/erlef/docker-elixir/blob/f749dfb8a5b1e6945b2369e143107b9ad3b16664/1.15/otp-25-slim/Dockerfile)
 
 # Quick reference (cont.)
 
