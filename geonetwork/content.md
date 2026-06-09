@@ -19,25 +19,25 @@ GeoNetwork 4 uses an Elasticsearch server to store the index of the documents it
 This is a quick example of how to get GeoNetwork 4.4 Latest up and running for demo purposes. This configuration doesn't keep the data if containers are removed.
 
 ```console
-docker pull elasticsearch:8.19.13
-docker pull %%IMAGE%%:4
+$ docker pull elasticsearch:8.19.13
+$ docker pull %%IMAGE%%:4
 
-docker network create gn-network
+$ docker network create gn-network
 
-docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.19.13
-docker run --name %%REPO%%-host --network gn-network -e GN_CONFIG_PROPERTIES="-Des.host=my-es-host -Des.protocol=http -Des.port=9200 -Des.url=http://my-es-host:9200" -p 8080:8080 %%IMAGE%%:4
+$ docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.19.13
+$ docker run --name %%REPO%%-host --network gn-network -e GN_CONFIG_PROPERTIES="-Des.host=my-es-host -Des.protocol=http -Des.port=9200 -Des.url=http://my-es-host:9200" -p 8080:8080 %%IMAGE%%:4
 ```
 
 For GeoNetwork 4.2 Stable:
 
 ```console
-docker pull elasticsearch:7.17.15
-docker pull %%IMAGE%%:4.2
+$ docker pull elasticsearch:7.17.15
+$ docker pull %%IMAGE%%:4.2
 
-docker network create gn-network
+$ docker network create gn-network
 
-docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" elasticsearch:7.17.15
-docker run --name %%REPO%%-host --network gn-network -e ES_HOST=my-es-host -e ES_PROTOCOL=http  -e ES_PORT=9200 -p 8080:8080 %%IMAGE%%:4.2
+$ docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" elasticsearch:7.17.15
+$ docker run --name %%REPO%%-host --network gn-network -e ES_HOST=my-es-host -e ES_PROTOCOL=http  -e ES_PORT=9200 -p 8080:8080 %%IMAGE%%:4.2
 ```
 
 To be sure about what Elasticsearch version to use you can check the [GeoNetwork documentation](https://docs.geonetwork-opensource.org/4.4/install-guide/installing-index/) for your GN version or the `es.version` property in the [`pom.xml`](https://github.com/geonetwork/core-geonetwork/blob/main/pom.xml#L1528C17-L1528C24) file of the GeoNetwork release used.
@@ -124,7 +124,7 @@ By default GeoNetwork uses a local **H2 database** for demo use (this one is **n
 This command will start a Debian-based container, running a Tomcat web server, with a GeoNetwork WAR deployed on the server. Note: GeoNetwork 4.0.0-4.2.14 and 4.4.0-4.4.9 used Jetty 9 instead of Tomcat.
 
 ```console
-docker run --name some-%%REPO%% -d %%IMAGE%%
+$ docker run --name some-%%REPO%% -d %%IMAGE%%
 ```
 
 ### Publish port
@@ -132,7 +132,7 @@ docker run --name some-%%REPO%% -d %%IMAGE%%
 GeoNetwork listens on port `8080`. If you want to access the container at the host, **you must publish this port**. For instance, this, will redirect all the container traffic on port 8080, to the same port on the host:
 
 ```console
-docker run --name some-%%REPO%% -d -p 8080:8080 %%IMAGE%%
+$ docker run --name some-%%REPO%% -d -p 8080:8080 %%IMAGE%%
 ```
 
 Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork.
@@ -162,7 +162,7 @@ By default, GeoNetwork sets the data directory on `/opt/geonetwork/WEB-INF/data`
 Since version 4.4.0 the data directory needs to be configued using Java properties passed in the `GN_CONFIG_PROPERTIES` environment variable. For example:
 
 ```console
-docker run --name some-%%REPO%% -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn %%IMAGE%%
+$ docker run --name some-%%REPO%% -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn %%IMAGE%%
 ```
 
 ### Persisting data
@@ -172,13 +172,13 @@ To set the data directory to `/catalogue-data/data` and H2 database file to `/ca
 -	GeoNetwork 4.2 and older
 
 ```console
-docker run --name some-%%REPO%% -d -p 8080:8080 -e DATA_DIR=/catalogue-data/data -e GEONETWORK_DB_NAME=/catalogue-data/db/gn %%IMAGE%%:3
+$ docker run --name some-%%REPO%% -d -p 8080:8080 -e DATA_DIR=/catalogue-data/data -e GEONETWORK_DB_NAME=/catalogue-data/db/gn %%IMAGE%%:3
 ```
 
 -	Since GeoNetwork 4.4.0
 
 ```console
-docker run --name some-%%REPO%% -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn %%IMAGE%%
+$ docker run --name some-%%REPO%% -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn %%IMAGE%%
 ```
 
 If you want the data directory to live beyond restarts, or even destruction of the container, you can mount a directory from the docker engine's host into the container. - `-v /host/path:/path/to/data/directory`. For instance this, will mount the host directory `/host/%%REPO%%-docker` into `/catalogue-data` on the container:
@@ -186,13 +186,13 @@ If you want the data directory to live beyond restarts, or even destruction of t
 -	GeoNetwork 4.2 and older
 
 ```console
-docker run --name some-%%REPO%% -d -p 8080:8080 -e DATA_DIR=/catalogue-data/data -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/%%REPO%%-docker:/catalogue-data %%IMAGE%%:3
+$ docker run --name some-%%REPO%% -d -p 8080:8080 -e DATA_DIR=/catalogue-data/data -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/%%REPO%%-docker:/catalogue-data %%IMAGE%%:3
 ```
 
 -	GeoNetwork 4.4.0 and newer
 
 ```console
-docker run --name some-%%REPO%% -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/%%REPO%%-docker:/catalogue-data %%IMAGE%%
+$ docker run --name some-%%REPO%% -d -p 8080:8080  -e GN_CONFIG_PROPERTIES="-Dgeonetwork.dir=/catalogue-data" -e GEONETWORK_DB_NAME=/catalogue-data/db/gn -v /host/%%REPO%%-docker:/catalogue-data %%IMAGE%%
 ```
 
 ### %%COMPOSE%%
