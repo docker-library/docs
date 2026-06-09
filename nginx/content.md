@@ -112,6 +112,9 @@ This behavior can be changed via the following environment variables:
 	-	The output filename is the template filename with the suffix removed.
 		-	ex.) `/etc/nginx/templates/default.conf.template` will be output with the filename `/etc/nginx/conf.d/default.conf`.
 	-	This directory must be writable by the user running a container.
+-	`NGINX_ENVSUBST_FILTER`
+	-	A regular expression to filter environment variable names passed to `envsubst` (default: empty string)
+	-	When set, only variables whose names match this pattern are available for substitution.
 
 ## Running %%IMAGE%% in read-only mode
 
