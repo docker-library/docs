@@ -142,7 +142,7 @@ Then, if you are running docker on Linux, you may access geonetwork at http://lo
 The Tomcat-based images (GN 3, 4.2.15+, and 4.4.10+) run as `root`, whereas the previous Jetty-based images (GN 4.0.0-4.2.14 and 4.4.0-4.4.9) ran as the `jetty` user. If you are **upgrading from a Jetty-based image** and mounting a host directory or named volume for the data directory, you may need to update the ownership of existing data to avoid permission errors:
 
 ```console
-docker run --rm -v /host/%%REPO%%-docker:/catalogue-data busybox chown -R root:root /catalogue-data
+$ docker run --rm -v /host/%%REPO%%-docker:/catalogue-data busybox chown -R root:root /catalogue-data
 ```
 
 ### Upgrading from Jetty-based images
