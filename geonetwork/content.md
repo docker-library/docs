@@ -19,12 +19,12 @@ GeoNetwork 4 uses an Elasticsearch server to store the index of the documents it
 This is a quick example of how to get GeoNetwork 4.4 Latest up and running for demo purposes. This configuration doesn't keep the data if containers are removed.
 
 ```console
-docker pull elasticsearch:7.17.15
+docker pull elasticsearch:8.19.13
 docker pull %%IMAGE%%:4
 
 docker network create gn-network
 
-docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" elasticsearch:7.17.15
+docker run -d --name my-es-host --network gn-network -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.19.13
 docker run --name %%REPO%%-host --network gn-network -e GN_CONFIG_PROPERTIES="-Des.host=my-es-host -Des.protocol=http -Des.port=9200 -Des.url=http://my-es-host:9200" -p 8080:8080 %%IMAGE%%:4
 ```
 
@@ -42,6 +42,17 @@ docker run --name %%REPO%%-host --network gn-network -e ES_HOST=my-es-host -e ES
 
 To be sure about what Elasticsearch version to use you can check the [GeoNetwork documentation](https://docs.geonetwork-opensource.org/4.4/install-guide/installing-index/) for your GN version or the `es.version` property in the [`pom.xml`](https://github.com/geonetwork/core-geonetwork/blob/main/pom.xml#L1528C17-L1528C24) file of the GeoNetwork release used.
 
+The following table summarises the required Elasticsearch version for each GeoNetwork release series:
+
+| GeoNetwork version | Elasticsearch version |
+|--------------------|-----------------------|
+| 4.0.0 - 4.0.5      | 7.9.2                 |
+| 4.0.6 - 4.2.7      | 7.11.1                |
+| 4.2.8 - 4.4.2      | 7.17.x                |
+| 4.4.3 - 4.4.5      | 8.11.3                |
+| 4.4.6 - 4.4.9      | 8.14.3                |
+| 4.4.10+            | 8.19.13               |
+
 ### Default credentials
 
 After installation, use the default credentials: **`admin`** (username) and **`admin`** (password). It is recommended to update the default password after installation.
@@ -56,10 +67,15 @@ Since GeoNetwork 4.4.0, use Java properties passed in the `GN_CONFIG_PROPERTIES`
 -	`es.port` *optional* (default `9200`): The port where Elasticsearch server is listening to.
 -	`es.protocol` *optional* (default `http`): The protocol used to talk to Elasticsearch. Can be `http` or `https`.
 -	`es.url`: **mandatory if host, port or protocol aren't the default values** (default `http://localhost:9200`): Full URL of the Elasticsearch server.
--	`es.index.records` *optional* (default `gn_records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
+-	`es.index.records` *optional* (default `gn-records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
 -	`es.username` *optional* (default empty): username used to connect to Elasticsearch.
 -	`es.password` *optional* (default empty): password used to connect to Elasticsearch.
 -	`kb.url` *optional* (default `http://localhost:5601`): The URL where Kibana is listening.
+
+The following environment variables are also available for 4.4.x images:
+
+-	`WEBAPP_CONTEXT_PATH` *optional* (default `/geonetwork`): The context path used to deploy GeoNetwork. Since 4.4.11, the value must start with `/` followed by one or more letters, digits, hyphens, or underscores (e.g. `/geonetwork`); an invalid value causes the container to exit with an error at startup.
+-	`REMOTE_IP_INTERNAL_PROXIES` *optional* (since 4.4.10): Regular expression matching IP addresses of trusted reverse proxies. Enables `X-Forwarded-For` header processing for correct client IP detection behind a proxy. When not set, the RemoteIp Valve is disabled. Example: `192\.168\.0\.10|192\.168\.0\.11`.
 
 Example Docker Compose YAML snippet:
 
@@ -85,10 +101,11 @@ For versions older than 4.4.0, configure Elasticsearch using environment variabl
 -	`ES_HOST` **mandatory**: The host name of the Elasticsearch server.
 -	`ES_PORT` *optional* (default `9200`): The port where Elasticsearch server is listening to.
 -	`ES_PROTOCOL` *optional* (default `http`): The protocol used to talk to Elasticsearch. Can be `http` or `https`.
--	`ES_INDEX_RECORDS` *optional* (default `gn_records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
+-	`ES_INDEX_RECORDS` *optional* (default `gn-records`): In case you have more than GeoNetwork instance using the same Elasticsearch cluster each one needs to use a different index name. Use this variable to define the name of the index used by each GeoNetwork.
 -	`ES_USERNAME` *optional* (default empty): username used to connect to Elasticsearch.
 -	`ES_PASSWORD` *optional* (default empty): password used to connect to Elasticsearch.
 -	`KB_URL` *Optional* (default `http://localhost:5601`): The URL where Kibana is listening.
+-	`REMOTE_IP_INTERNAL_PROXIES` *optional* (since 4.2.15): Regular expression matching IP addresses of trusted reverse proxies. Enables `X-Forwarded-For` header processing for correct client IP detection behind a proxy. When not set, the RemoteIp Valve is disabled. Example: `192\.168\.0\.10|192\.168\.0\.11`.
 
 ### Database configuration
 
@@ -104,7 +121,7 @@ By default GeoNetwork uses a local **H2 database** for demo use (this one is **n
 
 ### Start GeoNetwork
 
-This command will start a debian-based container, running a Tomcat (GN 3) or Jetty (GN 4) web server, with a GeoNetwork WAR deployed on the server:
+This command will start a Debian-based container, running a Tomcat web server, with a GeoNetwork WAR deployed on the server. Note: GeoNetwork 4.0.0-4.2.14 and 4.4.0-4.4.9 used Jetty 9 instead of Tomcat.
 
 ```console
 docker run --name some-%%REPO%% -d %%IMAGE%%
@@ -120,11 +137,27 @@ docker run --name some-%%REPO%% -d -p 8080:8080 %%IMAGE%%
 
 Then, if you are running docker on Linux, you may access geonetwork at http://localhost:8080/geonetwork.
 
+### File permissions
+
+The Tomcat-based images (GN 3, 4.2.15+, and 4.4.10+) run as `root`, whereas the previous Jetty-based images (GN 4.0.0-4.2.14 and 4.4.0-4.4.9) ran as the `jetty` user. If you are **upgrading from a Jetty-based image** and mounting a host directory or named volume for the data directory, you may need to update the ownership of existing data to avoid permission errors:
+
+```console
+$ docker run --rm -v /host/%%REPO%%-docker:/catalogue-data busybox chown -R root:root /catalogue-data
+```
+
+### Upgrading from Jetty-based images
+
+The switch from Jetty to Tomcat (GN 4.2.15+ and 4.4.10+) introduces additional breaking changes beyond file ownership for users who extend these images or reference Jetty-specific paths in custom scripts:
+
+-	`$JETTY_HOME` and `$JETTY_BASE` environment variables are no longer set.
+-	The GeoNetwork web application path changed: it is now at `/usr/local/tomcat/webapps/geonetwork/` (GN 4.2.x) or `/opt/geonetwork/` (GN 4.4.10+), replacing the previous `/var/lib/jetty/webapps/geonetwork/`.
+-	The container startup command is now `catalina.sh run` instead of `java -jar /usr/local/jetty/start.jar`.
+
 ### Set the data directory and H2 db file
 
 The data directory is the location on the file system where the catalog stores much of its custom configuration and uploaded files. It is also where it stores a number of support files, used for various purposes (e.g.: spatial index, thumbnails). The default variant also uses a local H2 database to store the metadata catalog itself.
 
-By default, GeoNetwork sets the data directory on `/opt/geonetwork/WEB-INF/data` and H2 database file to the Jetty dir `/var/lib/jetty/gn.h2.db` (since GN 4.0.0) or Tomcat `/usr/local/tomcat/gn.h2.db` (for GN 3), but you may override these values by injecting environment variables into the container: - `-e DATA_DIR=...` (defaults to `/opt/geonetwork/WEB-INF/data`) and `-e GEONETWORK_DB_NAME=...` (defaults to `gn` which sets up database `gn.h2.db` in tomcat bin dir `/usr/local/tomcat`). Note that setting the database location via `GEONETWORK_DB_NAME` only works from version 3.10.3 onwards.
+By default, GeoNetwork sets the data directory on `/opt/geonetwork/WEB-INF/data` and the H2 database file to `/usr/local/tomcat/gn.h2.db` (Tomcat-based images: GN 3, 4.2.15+, and 4.4.10+) or `/var/lib/jetty/gn.h2.db` (Jetty-based images: GN 4.0.0-4.2.14 and 4.4.0-4.4.9), but you may override these values by injecting environment variables into the container: - `-e DATA_DIR=...` (defaults to `/opt/geonetwork/WEB-INF/data`) and `-e GEONETWORK_DB_NAME=...` (defaults to `gn` which sets up database `gn.h2.db` in tomcat bin dir `/usr/local/tomcat`). Note that setting the database location via `GEONETWORK_DB_NAME` only works from version 3.10.3 onwards.
 
 Since version 4.4.0 the data directory needs to be configued using Java properties passed in the `GN_CONFIG_PROPERTIES` environment variable. For example:
 
