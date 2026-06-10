@@ -32,9 +32,9 @@ WARNING:
 
 -	[`1.26.4-bookworm`, `1.26-bookworm`, `1-bookworm`, `bookworm`](https://github.com/docker-library/golang/blob/06d3b7744447bbfe4679ad0b53c8ddd260e04190/1.26/bookworm/Dockerfile)
 
--	[`1.26.4-alpine3.23`, `1.26-alpine3.23`, `1-alpine3.23`, `alpine3.23`, `1.26.4-alpine`, `1.26-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/golang/blob/06d3b7744447bbfe4679ad0b53c8ddd260e04190/1.26/alpine3.23/Dockerfile)
+-	[`1.26.4-alpine3.24`, `1.26-alpine3.24`, `1-alpine3.24`, `alpine3.24`, `1.26.4-alpine`, `1.26-alpine`, `1-alpine`, `alpine`](https://github.com/docker-library/golang/blob/34bfa3703c98a3f4e7dcc808a5b0a754faecb5ef/1.26/alpine3.24/Dockerfile)
 
--	[`1.26.4-alpine3.22`, `1.26-alpine3.22`, `1-alpine3.22`, `alpine3.22`](https://github.com/docker-library/golang/blob/06d3b7744447bbfe4679ad0b53c8ddd260e04190/1.26/alpine3.22/Dockerfile)
+-	[`1.26.4-alpine3.23`, `1.26-alpine3.23`, `1-alpine3.23`, `alpine3.23`](https://github.com/docker-library/golang/blob/06d3b7744447bbfe4679ad0b53c8ddd260e04190/1.26/alpine3.23/Dockerfile)
 
 -	[`1.26.4-windowsservercore-ltsc2025`, `1.26-windowsservercore-ltsc2025`, `1-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/golang/blob/06d3b7744447bbfe4679ad0b53c8ddd260e04190/1.26/windows/windowsservercore-ltsc2025/Dockerfile)
 
@@ -48,9 +48,9 @@ WARNING:
 
 -	[`1.25.11-bookworm`, `1.25-bookworm`](https://github.com/docker-library/golang/blob/0cacb947ea370f10d4d343bdfecf8de26333cabf/1.25/bookworm/Dockerfile)
 
--	[`1.25.11-alpine3.23`, `1.25-alpine3.23`, `1.25.11-alpine`, `1.25-alpine`](https://github.com/docker-library/golang/blob/0cacb947ea370f10d4d343bdfecf8de26333cabf/1.25/alpine3.23/Dockerfile)
+-	[`1.25.11-alpine3.24`, `1.25-alpine3.24`, `1.25.11-alpine`, `1.25-alpine`](https://github.com/docker-library/golang/blob/34bfa3703c98a3f4e7dcc808a5b0a754faecb5ef/1.25/alpine3.24/Dockerfile)
 
--	[`1.25.11-alpine3.22`, `1.25-alpine3.22`](https://github.com/docker-library/golang/blob/0cacb947ea370f10d4d343bdfecf8de26333cabf/1.25/alpine3.22/Dockerfile)
+-	[`1.25.11-alpine3.23`, `1.25-alpine3.23`](https://github.com/docker-library/golang/blob/0cacb947ea370f10d4d343bdfecf8de26333cabf/1.25/alpine3.23/Dockerfile)
 
 -	[`1.25.11-windowsservercore-ltsc2025`, `1.25-windowsservercore-ltsc2025`](https://github.com/docker-library/golang/blob/0cacb947ea370f10d4d343bdfecf8de26333cabf/1.25/windows/windowsservercore-ltsc2025/Dockerfile)
 
@@ -64,9 +64,9 @@ WARNING:
 
 -	[`tip-20260606-bookworm`, `tip-bookworm`](https://github.com/docker-library/golang/blob/b98889267ab52f936ba8974d98974a627fd084ca/tip/bookworm/Dockerfile)
 
--	[`tip-20260606-alpine3.23`, `tip-alpine3.23`, `tip-20260606-alpine`, `tip-alpine`](https://github.com/docker-library/golang/blob/b98889267ab52f936ba8974d98974a627fd084ca/tip/alpine3.23/Dockerfile)
+-	[`tip-20260606-alpine3.24`, `tip-alpine3.24`, `tip-20260606-alpine`, `tip-alpine`](https://github.com/docker-library/golang/blob/34bfa3703c98a3f4e7dcc808a5b0a754faecb5ef/tip/alpine3.24/Dockerfile)
 
--	[`tip-20260606-alpine3.22`, `tip-alpine3.22`](https://github.com/docker-library/golang/blob/b98889267ab52f936ba8974d98974a627fd084ca/tip/alpine3.22/Dockerfile)
+-	[`tip-20260606-alpine3.23`, `tip-alpine3.23`](https://github.com/docker-library/golang/blob/b98889267ab52f936ba8974d98974a627fd084ca/tip/alpine3.23/Dockerfile)
 
 ## Shared Tags
 

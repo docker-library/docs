@@ -40,7 +40,9 @@ WARNING:
 
 -	[`1-alpine3.22`, `1.96-alpine3.22`, `1.96.0-alpine3.22`, `alpine3.22`](https://github.com/rust-lang/docker-rust/blob/7502a8239b3db41eda6017b17aa50067d140d2a7/stable/alpine3.22/Dockerfile)
 
--	[`1-alpine3.23`, `1.96-alpine3.23`, `1.96.0-alpine3.23`, `alpine3.23`, `1-alpine`, `1.96-alpine`, `1.96.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/7502a8239b3db41eda6017b17aa50067d140d2a7/stable/alpine3.23/Dockerfile)
+-	[`1-alpine3.23`, `1.96-alpine3.23`, `1.96.0-alpine3.23`, `alpine3.23`](https://github.com/rust-lang/docker-rust/blob/7502a8239b3db41eda6017b17aa50067d140d2a7/stable/alpine3.23/Dockerfile)
+
+-	[`1-alpine3.24`, `1.96-alpine3.24`, `1.96.0-alpine3.24`, `alpine3.24`, `1-alpine`, `1.96-alpine`, `1.96.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/75656a9a1a93c5c8a537af4b9598580f5da9090e/stable/alpine3.24/Dockerfile)
 
 # Quick reference (cont.)
 
