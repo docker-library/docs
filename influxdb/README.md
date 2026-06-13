@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `influxdb` official image](https://hub.docker.com/_/influxdb) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -126,7 +128,7 @@ Alternatively, you can use the following command to start InfluxDB 3 Core:
 docker run --rm -p 8181:8181 \
   -v $PWD/data:/var/lib/influxdb3/data \
   -v $PWD/plugins:/var/lib/influxdb3/plugins \
-  influxdb:3-core influxdb3 serve \
+  amd64/influxdb:3-core influxdb3 serve \
     --node-id=my-node-0 \
     --object-store=file \
     --data-dir=/var/lib/influxdb3/data \
@@ -156,16 +158,16 @@ Use the following tools with InfluxDB 3 Core:
 Customize your instance with available [server options](https://docs.influxdata.com/influxdb3/core/reference/clis/influxdb3/serve/):
 
 ```bash
-   docker run --rm influxdb:3-core influxdb3 serve --help
+   docker run --rm amd64/influxdb:3-core influxdb3 serve --help
 ```
 
 ## Available InfluxDB variants
 
--	`influxdb:3-core` - **Latest InfluxDB OSS** (InfluxDB 3 Core)
--	`influxdb:2` - Previous generation OSS (InfluxDB v2)
--	`influxdb:1.11` - InfluxDB v1
+-	`amd64/influxdb:3-core` - **Latest InfluxDB OSS** (InfluxDB 3 Core)
+-	`amd64/influxdb:2` - Previous generation OSS (InfluxDB v2)
+-	`amd64/influxdb:1.11` - InfluxDB v1
 
-### InfluxDB 3 Core (`influxdb:3-core`) - Latest OSS
+### InfluxDB 3 Core (`amd64/influxdb:3-core`) - Latest OSS
 
 -	**Latest generation** using object storage with the InfluxDB 3 storage engine, Apache Arrow, and DataFusion SQL
 -	Sub-10ms queries and unlimited cardinality
@@ -174,20 +176,20 @@ Customize your instance with available [server options](https://docs.influxdata.
 -	Designed for real-time monitoring and recent data
 -	Includes InfluxDB v1 and v2 compatibility APIs
 
-### InfluxDB v2 (`influxdb:2`)
+### InfluxDB v2 (`amd64/influxdb:2`)
 
 -	Built on the TSM storage engine
 -	Supports Flux query language
 -	Integrated UI and dashboards
 -	Includes v1 compatibility API that supports InfluxQL
 
-### InfluxDB v1 (`influxdb:1.11`)
+### InfluxDB v1 (`amd64/influxdb:1.11`)
 
 -	Built on the TSM storage engine
 -	Original version with InfluxQL query language
 -	Proven stability for existing deployments
 
-### InfluxDB 3 Enterprise (license required) (`influxdb:3-enterprise`)
+### InfluxDB 3 Enterprise (license required) (`amd64/influxdb:3-enterprise`)
 
 Adds unlimited data retention, compaction, clustering, and high availability to InfluxDB 3 Core.
 
@@ -195,8 +197,8 @@ For setup instructions, see the [InfluxDB 3 Enterprise installation documentatio
 
 ### InfluxDB v1 Enterprise (license required)
 
--	`influxdb:1.11-data` - Data nodes for clustering
--	`influxdb:1.11-meta` - Meta nodes for cluster coordination (port 8091)
+-	`amd64/influxdb:1.11-data` - Data nodes for clustering
+-	`amd64/influxdb:1.11-meta` - Meta nodes for cluster coordination (port 8091)
 
 For setup instructions, see the [InfluxDB v1 Enterprise Docker documentation](https://docs.influxdata.com/enterprise_influxdb/v1/introduction/installation/docker/).
 
@@ -224,7 +226,7 @@ docker run -d -p 8086:8086 \
   -e DOCKER_INFLUXDB_INIT_PASSWORD=my-password \
   -e DOCKER_INFLUXDB_INIT_ORG=my-org \
   -e DOCKER_INFLUXDB_INIT_BUCKET=my-bucket \
-  influxdb:2
+  amd64/influxdb:2
 ```
 
 After the container starts, visit [http://localhost:8086](http://localhost:8086) to view the UI.
@@ -238,7 +240,7 @@ For detailed instructions, see the [InfluxDB v2 Docker Compose documentation](ht
 ```bash
 docker run -d -p 8086:8086 \
   -v $PWD:/var/lib/influxdb \
-  influxdb:1.11
+  amd64/influxdb:1.11
 ```
 
 This starts InfluxDB v1 with:
@@ -250,13 +252,13 @@ For more information, see the [InfluxDB v1 Docker documentation](https://docs.in
 
 # Image Variants
 
-The `influxdb` images come in many flavors, each designed for a specific use case.
+The `amd64/influxdb` images come in many flavors, each designed for a specific use case.
 
-## `influxdb:<version>`
+## `amd64/influxdb:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `influxdb:<version>-alpine`
+## `amd64/influxdb:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
