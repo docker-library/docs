@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `drupal` official image](https://hub.docker.com/_/drupal) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -152,13 +154,13 @@ Drupal is a free and open-source content-management framework written in PHP and
 The basic pattern for starting a `drupal` instance is:
 
 ```console
-$ docker run --name some-drupal -d drupal
+$ docker run --name some-drupal -d i386/drupal
 ```
 
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-drupal -p 8080:80 -d drupal
+$ docker run --name some-drupal -p 8080:80 -d i386/drupal
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -212,7 +214,7 @@ There is consensus that `/var/www/html/modules`, `/var/www/html/profiles`, and `
 If using bind-mounts, one way to accomplish pre-seeding your local `sites` directory would be something like the following:
 
 ```console
-$ docker run --rm drupal tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
+$ docker run --rm i386/drupal tar -cC /var/www/html/sites . | tar -xC /path/on/host/sites
 ```
 
 This can then be bind-mounted into a new container:
@@ -223,20 +225,20 @@ $ docker run --name some-drupal --network some-network -d \
 	-v /path/on/host/profiles:/var/www/html/profiles \
 	-v /path/on/host/sites:/var/www/html/sites \
 	-v /path/on/host/themes:/var/www/html/themes \
-	drupal
+	i386/drupal
 ```
 
 Another solution using Docker Volumes:
 
 ```console
 $ docker volume create drupal-sites
-$ docker run --rm -v drupal-sites:/temporary/sites drupal cp -aRT /var/www/html/sites /temporary/sites
+$ docker run --rm -v drupal-sites:/temporary/sites i386/drupal cp -aRT /var/www/html/sites /temporary/sites
 $ docker run --name some-drupal --network some-network -d \
 	-v drupal-modules:/var/www/html/modules \
 	-v drupal-profiles:/var/www/html/profiles \
 	-v drupal-sites:/var/www/html/sites \
 	-v drupal-themes:/var/www/html/themes \
-	drupal
+	i386/drupal
 ```
 
 ## ... via [`docker compose`](https://github.com/docker/compose)
@@ -296,15 +298,15 @@ See [the "Running as an arbitrary user" section of the `php` image documentation
 
 # Image Variants
 
-The `drupal` images come in many flavors, each designed for a specific use case.
+The `i386/drupal` images come in many flavors, each designed for a specific use case.
 
-## `drupal:<version>`
+## `i386/drupal:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `drupal:<version>-fpm`
+## `i386/drupal:<version>-fpm`
 
 This variant contains [PHP's FastCGI Process Manager (FPM)](https://www.php.net/fpm), which is the recommended FastCGI implementation for PHP.
 
