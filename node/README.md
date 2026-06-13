@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `node` official image](https://hub.docker.com/_/node) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,53 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`26-alpine3.23`, `26.3-alpine3.23`, `26.3.0-alpine3.23`, `alpine3.23`, `current-alpine3.23`](https://github.com/nodejs/docker-node/blob/3284b1de84697b6b732b095ad416ee71f74cbd8b/26/alpine3.23/Dockerfile)
-
--	[`26-alpine`, `26-alpine3.24`, `26.3-alpine`, `26.3-alpine3.24`, `26.3.0-alpine`, `26.3.0-alpine3.24`, `alpine`, `alpine3.24`, `current-alpine`, `current-alpine3.24`](https://github.com/nodejs/docker-node/blob/c94b4249a1a1bfb2ebb05fac9012cd34fecc2db7/26/alpine3.24/Dockerfile)
-
--	[`26-bookworm`, `26.3-bookworm`, `26.3.0-bookworm`, `bookworm`, `current-bookworm`](https://github.com/nodejs/docker-node/blob/3284b1de84697b6b732b095ad416ee71f74cbd8b/26/bookworm/Dockerfile)
-
--	[`26-bookworm-slim`, `26.3-bookworm-slim`, `26.3.0-bookworm-slim`, `bookworm-slim`, `current-bookworm-slim`](https://github.com/nodejs/docker-node/blob/3284b1de84697b6b732b095ad416ee71f74cbd8b/26/bookworm-slim/Dockerfile)
-
--	[`26-bullseye`, `26.3-bullseye`, `26.3.0-bullseye`, `bullseye`, `current-bullseye`](https://github.com/nodejs/docker-node/blob/3284b1de84697b6b732b095ad416ee71f74cbd8b/26/bullseye/Dockerfile)
-
--	[`26-bullseye-slim`, `26.3-bullseye-slim`, `26.3.0-bullseye-slim`, `bullseye-slim`, `current-bullseye-slim`](https://github.com/nodejs/docker-node/blob/3284b1de84697b6b732b095ad416ee71f74cbd8b/26/bullseye-slim/Dockerfile)
-
--	[`26`, `26-trixie`, `26.3`, `26.3-trixie`, `26.3.0`, `26.3.0-trixie`, `current`, `current-trixie`, `latest`, `trixie`](https://github.com/nodejs/docker-node/blob/3284b1de84697b6b732b095ad416ee71f74cbd8b/26/trixie/Dockerfile)
-
--	[`26-slim`, `26-trixie-slim`, `26.3-slim`, `26.3-trixie-slim`, `26.3.0-slim`, `26.3.0-trixie-slim`, `current-slim`, `current-trixie-slim`, `slim`, `trixie-slim`](https://github.com/nodejs/docker-node/blob/3284b1de84697b6b732b095ad416ee71f74cbd8b/26/trixie-slim/Dockerfile)
-
--	[`24-alpine3.23`, `24.16-alpine3.23`, `24.16.0-alpine3.23`, `krypton-alpine3.23`, `lts-alpine3.23`](https://github.com/nodejs/docker-node/blob/b23e34b9691e4e98543a9e70e9df831a6c050f0f/24/alpine3.23/Dockerfile)
-
--	[`24-alpine`, `24-alpine3.24`, `24.16-alpine`, `24.16-alpine3.24`, `24.16.0-alpine`, `24.16.0-alpine3.24`, `krypton-alpine`, `krypton-alpine3.24`, `lts-alpine`, `lts-alpine3.24`](https://github.com/nodejs/docker-node/blob/c94b4249a1a1bfb2ebb05fac9012cd34fecc2db7/24/alpine3.24/Dockerfile)
-
--	[`24`, `24-bookworm`, `24.16`, `24.16-bookworm`, `24.16.0`, `24.16.0-bookworm`, `krypton`, `krypton-bookworm`, `lts`, `lts-bookworm`, `lts-krypton`](https://github.com/nodejs/docker-node/blob/b23e34b9691e4e98543a9e70e9df831a6c050f0f/24/bookworm/Dockerfile)
-
--	[`24-bookworm-slim`, `24-slim`, `24.16-bookworm-slim`, `24.16-slim`, `24.16.0-bookworm-slim`, `24.16.0-slim`, `krypton-bookworm-slim`, `krypton-slim`, `lts-bookworm-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/b23e34b9691e4e98543a9e70e9df831a6c050f0f/24/bookworm-slim/Dockerfile)
-
--	[`24-bullseye`, `24.16-bullseye`, `24.16.0-bullseye`, `krypton-bullseye`, `lts-bullseye`](https://github.com/nodejs/docker-node/blob/b23e34b9691e4e98543a9e70e9df831a6c050f0f/24/bullseye/Dockerfile)
-
--	[`24-bullseye-slim`, `24.16-bullseye-slim`, `24.16.0-bullseye-slim`, `krypton-bullseye-slim`, `lts-bullseye-slim`](https://github.com/nodejs/docker-node/blob/b23e34b9691e4e98543a9e70e9df831a6c050f0f/24/bullseye-slim/Dockerfile)
-
--	[`24-trixie`, `24.16-trixie`, `24.16.0-trixie`, `krypton-trixie`, `lts-trixie`](https://github.com/nodejs/docker-node/blob/b23e34b9691e4e98543a9e70e9df831a6c050f0f/24/trixie/Dockerfile)
-
--	[`24-trixie-slim`, `24.16-trixie-slim`, `24.16.0-trixie-slim`, `krypton-trixie-slim`, `lts-trixie-slim`](https://github.com/nodejs/docker-node/blob/b23e34b9691e4e98543a9e70e9df831a6c050f0f/24/trixie-slim/Dockerfile)
-
 -	[`22-alpine3.23`, `22.22-alpine3.23`, `22.22.3-alpine3.23`, `jod-alpine3.23`](https://github.com/nodejs/docker-node/blob/d6fbc9438ddf8569cbe5ac5031a2555fadb522a6/22/alpine3.23/Dockerfile)
 
 -	[`22-alpine`, `22-alpine3.24`, `22.22-alpine`, `22.22-alpine3.24`, `22.22.3-alpine`, `22.22.3-alpine3.24`, `jod-alpine`, `jod-alpine3.24`](https://github.com/nodejs/docker-node/blob/c94b4249a1a1bfb2ebb05fac9012cd34fecc2db7/22/alpine3.24/Dockerfile)
-
--	[`22`, `22-bookworm`, `22.22`, `22.22-bookworm`, `22.22.3`, `22.22.3-bookworm`, `jod`, `jod-bookworm`](https://github.com/nodejs/docker-node/blob/d6fbc9438ddf8569cbe5ac5031a2555fadb522a6/22/bookworm/Dockerfile)
-
--	[`22-bookworm-slim`, `22-slim`, `22.22-bookworm-slim`, `22.22-slim`, `22.22.3-bookworm-slim`, `22.22.3-slim`, `jod-bookworm-slim`, `jod-slim`](https://github.com/nodejs/docker-node/blob/d6fbc9438ddf8569cbe5ac5031a2555fadb522a6/22/bookworm-slim/Dockerfile)
-
--	[`22-bullseye`, `22.22-bullseye`, `22.22.3-bullseye`, `jod-bullseye`](https://github.com/nodejs/docker-node/blob/d6fbc9438ddf8569cbe5ac5031a2555fadb522a6/22/bullseye/Dockerfile)
-
--	[`22-bullseye-slim`, `22.22-bullseye-slim`, `22.22.3-bullseye-slim`, `jod-bullseye-slim`](https://github.com/nodejs/docker-node/blob/d6fbc9438ddf8569cbe5ac5031a2555fadb522a6/22/bullseye-slim/Dockerfile)
-
--	[`22-trixie`, `22.22-trixie`, `22.22.3-trixie`, `jod-trixie`](https://github.com/nodejs/docker-node/blob/d6fbc9438ddf8569cbe5ac5031a2555fadb522a6/22/trixie/Dockerfile)
-
--	[`22-trixie-slim`, `22.22-trixie-slim`, `22.22.3-trixie-slim`, `jod-trixie-slim`](https://github.com/nodejs/docker-node/blob/d6fbc9438ddf8569cbe5ac5031a2555fadb522a6/22/trixie-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -109,27 +67,21 @@ See [How To Use This Image](https://github.com/nodejs/docker-node/blob/master/RE
 
 # Image Variants
 
-The `node` images come in many flavors, each designed for a specific use case.
+The `arm32v6/node` images come in many flavors, each designed for a specific use case.
 
-## `node:<version>`
+## `arm32v6/node:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm, bullseye, or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
-## `node:<version>-alpine`
+## `arm32v6/node:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
 This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `node:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the `node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
 
 # License
 
