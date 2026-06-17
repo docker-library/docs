@@ -26,7 +26,7 @@ WARNING:
 
 -	[`16.1.0`, `16.1`, `16`, `latest`, `16.1.0-trixie`, `16.1-trixie`, `16-trixie`, `trixie`](https://github.com/docker-library/gcc/blob/24fb071be01a0e6241fbbabd59a3dd07d31b80f5/16/Dockerfile)
 
--	[`15.2.0`, `15.2`, `15`, `15.2.0-trixie`, `15.2-trixie`, `15-trixie`](https://github.com/docker-library/gcc/blob/915af5ccbb6b09575e244f280c26925e77172039/15/Dockerfile)
+-	[`15.3.0`, `15.3`, `15`, `15.3.0-trixie`, `15.3-trixie`, `15-trixie`](https://github.com/docker-library/gcc/blob/3b87fe3e286f7aa21ed5d69fd5c39e1b4fb02057/15/Dockerfile)
 
 -	[`14.3.0`, `14.3`, `14`, `14.3.0-trixie`, `14.3-trixie`, `14-trixie`](https://github.com/docker-library/gcc/blob/280306a58a2ff0c21a95ed8abe882ac483d03c8b/14/Dockerfile)
 
