@@ -118,6 +118,35 @@ EXPOSE 8080
 CMD ["/app/bin/server"]
 ```
 
+You can also compile a jit snapshot with the following Dockerfile:
+```Dockerfile
+# Specify the Dart SDK base image version using dart:<version> (ex: dart:2.12)
+FROM dart:stable AS build
+
+# Resolve app dependencies.
+WORKDIR /app
+COPY pubspec.* ./
+RUN dart pub get
+
+# Copy app source code and JIT compile it.
+COPY . .
+# Ensure packages are still up-to-date if anything has changed
+RUN dart pub get --offline
+RUN dart compile jit-snapshot bin/server.dart
+
+# Build minimal serving image from JIT-snaphot-compiled `/server.jit` and required system
+# libraries and configuration files stored in `/runtime/` from the build stage.
+# Also copies over the dart binary.
+FROM scratch
+COPY --from=build /runtime/ /
+COPY --from=build /app/bin/server.jit app/bin/
+COPY --from=build /usr/lib/dart/bin/dart /usr/bin/
+
+# Start server.
+EXPOSE 8080
+ENTRYPOINT ["dart", "/app/bin/server.jit"]
+```
+
 ### `.dockerignore`
 
 Additionally it creates a recommended `.dockerignore` file, which enumarates files that should be omitted from the built Docker image:
