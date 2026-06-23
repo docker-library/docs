@@ -1,7 +1,7 @@
 services:
 
   ghost:
-    image: ghost:5-alpine
+    image: ghost:6-alpine
     restart: always
     ports:
       - 8080:2368
