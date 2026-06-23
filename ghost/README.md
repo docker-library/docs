@@ -17,7 +17,7 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/ghost)
+	[Ghost Foundation](https://ghost.org)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
@@ -31,7 +31,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/ghost/issues](https://github.com/docker-library/ghost/issues?q=)
+	[https://github.com/TryGhost/docker-library-ghost/issues](https://github.com/TryGhost/docker-library-ghost/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
@@ -146,7 +146,7 @@ Example `compose.yaml` for `ghost`:
 services:
 
   ghost:
-    image: ghost:5-alpine
+    image: ghost:6-alpine
     restart: always
     ports:
       - 8080:2368
