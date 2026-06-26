@@ -24,13 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `26.5`, `26.5-jammy`, `26.5.1`, `26.5.1-jammy`, `26.5.1.882`, `26.5.1.882-jammy`](https://github.com/ClickHouse/docker-library/blob/f57f1d188763aecf7d0c8e26a5d9684c28f2a4a0/server/26.5.1.882/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `26.6`, `26.6-jammy`, `26.6.1`, `26.6.1-jammy`, `26.6.1.1193`, `26.6.1.1193-jammy`](https://github.com/ClickHouse/docker-library/blob/89514f0ecaf42c8ab1cda9c4d821af78f97bf115/server/26.6.1.1193/Dockerfile.ubuntu)
 
--	[`26.4`, `26.4-jammy`, `26.4.3`, `26.4.3-jammy`, `26.4.3.37`, `26.4.3.37-jammy`](https://github.com/ClickHouse/docker-library/blob/f57f1d188763aecf7d0c8e26a5d9684c28f2a4a0/server/26.4.3.37/Dockerfile.ubuntu)
+-	[`26.5`, `26.5-jammy`, `26.5.3`, `26.5.3-jammy`, `26.5.3.52`, `26.5.3.52-jammy`](https://github.com/ClickHouse/docker-library/blob/89514f0ecaf42c8ab1cda9c4d821af78f97bf115/server/26.5.3.52/Dockerfile.ubuntu)
 
--	[`lts`, `lts-jammy`, `26.3`, `26.3-jammy`, `26.3.12`, `26.3.12-jammy`, `26.3.12.3`, `26.3.12.3-jammy`](https://github.com/ClickHouse/docker-library/blob/f57f1d188763aecf7d0c8e26a5d9684c28f2a4a0/server/26.3.12.3/Dockerfile.ubuntu)
+-	[`26.4`, `26.4-jammy`, `26.4.4`, `26.4.4-jammy`, `26.4.4.38`, `26.4.4.38-jammy`](https://github.com/ClickHouse/docker-library/blob/89514f0ecaf42c8ab1cda9c4d821af78f97bf115/server/26.4.4.38/Dockerfile.ubuntu)
 
--	[`25.8`, `25.8-jammy`, `25.8.24`, `25.8.24-jammy`, `25.8.24.21`, `25.8.24.21-jammy`](https://github.com/ClickHouse/docker-library/blob/f57f1d188763aecf7d0c8e26a5d9684c28f2a4a0/server/25.8.24.21/Dockerfile.ubuntu)
+-	[`lts`, `lts-jammy`, `26.3`, `26.3-jammy`, `26.3.15`, `26.3.15-jammy`, `26.3.15.4`, `26.3.15.4-jammy`](https://github.com/ClickHouse/docker-library/blob/89514f0ecaf42c8ab1cda9c4d821af78f97bf115/server/26.3.15.4/Dockerfile.ubuntu)
+
+-	[`25.8`, `25.8-jammy`, `25.8.24`, `25.8.24-jammy`, `25.8.24.21`, `25.8.24.21-jammy`](https://github.com/ClickHouse/docker-library/blob/89514f0ecaf42c8ab1cda9c4d821af78f97bf115/server/25.8.24.21/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
