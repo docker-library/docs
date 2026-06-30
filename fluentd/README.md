@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v1.19.2-debian-1.0`, `v1.19-debian-1`, `v1.19.2-1.0`, `v1.19-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/162a49598542a981bbf73470f0bba815dc4dbf0e/v1.19/debian/Dockerfile)
+-	[`v1.19.3-debian-1.0`, `v1.19-debian-1`, `v1.19.3-1.0`, `v1.19-1`, `latest`](https://github.com/fluent/fluentd-docker-image/blob/4df4b2131322b81e39ae41a30a2d6231a385fda4/v1.19/debian/Dockerfile)
 
 # Quick reference (cont.)
 
