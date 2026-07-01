@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`ee-8.1.2.2`, `ee-8.1.2.2_1`](https://github.com/aerospike/aerospike-server.docker/blob/bbf7b1fefe8c44c46d9a9a35e44dd126a1c2e18e/releases/8.1/enterprise/ubuntu24.04/Dockerfile)
+-	[`ee-8.1.2.3`, `ee-8.1.2.3_1`](https://github.com/aerospike/aerospike-server.docker/blob/1f82d24dcc97510e511dc9acea78fe10df94e9f3/releases/8.1/enterprise/ubuntu24.04/Dockerfile)
 
--	[`ce-8.1.2.2`, `ce-8.1.2.2_1`](https://github.com/aerospike/aerospike-server.docker/blob/bbf7b1fefe8c44c46d9a9a35e44dd126a1c2e18e/releases/8.1/community/ubuntu24.04/Dockerfile)
+-	[`ce-8.1.2.3`, `ce-8.1.2.3_1`](https://github.com/aerospike/aerospike-server.docker/blob/1f82d24dcc97510e511dc9acea78fe10df94e9f3/releases/8.1/community/ubuntu24.04/Dockerfile)
 
 # Quick reference (cont.)
 
