@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `redis` official image](https://hub.docker.com/_/redis) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,31 +26,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.8.0`, `8.8`, `8`, `8.8.0-trixie`, `8.8-trixie`, `8-trixie`, `latest`, `trixie`](https://github.com/redis/docker-library-redis/blob/40511fc518c300f3b48059daf43c7ac2ef97550b/debian/Dockerfile)
-
 -	[`8.8.0-alpine`, `8.8-alpine`, `8-alpine`, `8.8.0-alpine3.23`, `8.8-alpine3.23`, `8-alpine3.23`, `alpine`, `alpine3.23`](https://github.com/redis/docker-library-redis/blob/40511fc518c300f3b48059daf43c7ac2ef97550b/alpine/Dockerfile)
-
--	[`8.6.4`, `8.6`, `8.6.4-trixie`, `8.6-trixie`](https://github.com/redis/docker-library-redis/blob/0076c90a8028d29b25313f7272fa2d1245c3be76/debian/Dockerfile)
 
 -	[`8.6.4-alpine`, `8.6-alpine`, `8.6.4-alpine3.23`, `8.6-alpine3.23`](https://github.com/redis/docker-library-redis/blob/0076c90a8028d29b25313f7272fa2d1245c3be76/alpine/Dockerfile)
 
--	[`8.4.4`, `8.4`, `8.4.4-trixie`, `8.4-trixie`](https://github.com/redis/docker-library-redis/blob/75ad715d290fef57489d801696d4c75ceb97e1fe/debian/Dockerfile)
-
 -	[`8.4.4-alpine`, `8.4-alpine`, `8.4.4-alpine3.22`, `8.4-alpine3.22`](https://github.com/redis/docker-library-redis/blob/75ad715d290fef57489d801696d4c75ceb97e1fe/alpine/Dockerfile)
-
--	[`8.2.7`, `8.2`, `8.2.7-bookworm`, `8.2-bookworm`](https://github.com/redis/docker-library-redis/blob/75cd859f27eb5b534583eac9f4c166a87160192a/debian/Dockerfile)
 
 -	[`8.2.7-alpine`, `8.2-alpine`, `8.2.7-alpine3.22`, `8.2-alpine3.22`](https://github.com/redis/docker-library-redis/blob/75cd859f27eb5b534583eac9f4c166a87160192a/alpine/Dockerfile)
 
--	[`7.4.9`, `7.4`, `7`, `7.4.9-bookworm`, `7.4-bookworm`, `7-bookworm`](https://github.com/redis/docker-library-redis/blob/2b76f51f4af2f8586e137c49c55bfedb41d6751c/debian/Dockerfile)
-
 -	[`7.4.9-alpine`, `7.4-alpine`, `7-alpine`, `7.4.9-alpine3.21`, `7.4-alpine3.21`, `7-alpine3.21`](https://github.com/redis/docker-library-redis/blob/2b76f51f4af2f8586e137c49c55bfedb41d6751c/alpine/Dockerfile)
 
--	[`7.2.14`, `7.2`, `7.2.14-bookworm`, `7.2-bookworm`](https://github.com/redis/docker-library-redis/blob/0a362f52c58445de1faf950919711fd1afab319a/debian/Dockerfile)
-
 -	[`7.2.14-alpine`, `7.2-alpine`, `7.2.14-alpine3.21`, `7.2-alpine3.21`](https://github.com/redis/docker-library-redis/blob/0a362f52c58445de1faf950919711fd1afab319a/alpine/Dockerfile)
-
--	[`6.2.22`, `6.2`, `6`, `6.2.22-bookworm`, `6.2-bookworm`, `6-bookworm`](https://github.com/redis/docker-library-redis/blob/2598ca399aad20a20058ba8d043f4ac54207d994/debian/Dockerfile)
 
 -	[`6.2.22-alpine`, `6.2-alpine`, `6-alpine`, `6.2.22-alpine3.21`, `6.2-alpine3.21`, `6-alpine3.21`](https://github.com/redis/docker-library-redis/blob/2598ca399aad20a20058ba8d043f4ac54207d994/alpine/Dockerfile)
 
@@ -98,13 +86,13 @@ Note: Using `SKIP_DROP_PRIVS` is not recommended, as it reduces the container's 
 ## Start a redis instance
 
 ```console
-$ docker run --name some-redis -d redis
+$ docker run --name some-redis -d arm32v6/redis
 ```
 
 ## Start with persistent storage
 
 ```console
-$ docker run --name some-redis -d redis redis-server --save 60 1 --loglevel warning
+$ docker run --name some-redis -d arm32v6/redis redis-server --save 60 1 --loglevel warning
 ```
 
 There are several different persistence strategies to choose from. This one will save a snapshot of the DB every 60 seconds if at least 1 write operation was performed (it will also lead to more logs, so the `loglevel` option may be desirable). If persistence is enabled, data is stored in the `VOLUME /data`, which can be used with `--volumes-from some-volume-container` or `-v /docker/host/dir:/data` (see [docs.docker volumes](https://docs.docker.com/engine/tutorials/dockervolumes/)).
@@ -122,13 +110,13 @@ You can skip this step by setting the `SKIP_FIX_PERMS=1`(since 8.0.2) environmen
 If you prefer to handle file permissions yourself, you can use a `docker run` command to set the correct ownership on mounted volumes. For example:
 
 ```console
-$ docker run --rm -v /your/host/path:/data redis chown -R redis:redis /data
+$ docker run --rm -v /your/host/path:/data arm32v6/redis chown -R redis:redis /data
 ```
 
 ## Connecting via `redis-cli`
 
 ```console
-$ docker run -it --network some-network --rm redis redis-cli -h some-redis
+$ docker run -it --network some-network --rm arm32v6/redis redis-cli -h some-redis
 ```
 
 ## Additionally, if you want to use your own redis.conf ...
@@ -136,7 +124,7 @@ $ docker run -it --network some-network --rm redis redis-cli -h some-redis
 You can create your own Dockerfile that adds a redis.conf from the context into /data/, like so.
 
 ```dockerfile
-FROM redis
+FROM arm32v6/redis
 COPY redis.conf /usr/local/etc/redis/redis.conf
 CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
 ```
@@ -144,7 +132,7 @@ CMD [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
 Alternatively, you can specify something along the same lines with `docker run` options.
 
 ```console
-$ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis redis redis-server /usr/local/etc/redis/redis.conf
+$ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis arm32v6/redis redis-server /usr/local/etc/redis/redis.conf
 ```
 
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
@@ -153,15 +141,13 @@ The mapped directory should be writable, as depending on the configuration and m
 
 # Image Variants
 
-The `redis` images come in many flavors, each designed for a specific use case.
+The `arm32v6/redis` images come in many flavors, each designed for a specific use case.
 
-## `redis:<version>`
+## `arm32v6/redis:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `redis:<version>-alpine`
+## `arm32v6/redis:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
