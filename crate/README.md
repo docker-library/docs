@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `crate` official image](https://hub.docker.com/_/crate) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.3.4`, `6.3`, `latest`](https://github.com/crate/docker-crate/blob/f65790b35dc2883fb3719fe5d381220f70223acc/Dockerfile)
-
--	[`6.2.10`, `6.2`](https://github.com/crate/docker-crate/blob/441069b7211e54f0b9af2c91398420ce55fee2b4/Dockerfile)
-
--	[`6.1.5`, `6.1`](https://github.com/crate/docker-crate/blob/aa00f0724feac7292e80b1c71a350ff3027d272e/Dockerfile)
-
--	[`6.0.7`, `6.0`](https://github.com/crate/docker-crate/blob/8b55770d25e60182ccf1b294ac7a6c60c4c89022/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -81,7 +77,7 @@ CrateDB provides an [Admin UI](https://crate.io/docs/crate/admin-ui/):
 Spin up this Docker image like so:
 
 ```console
-$ docker run --publish 4200:4200 --publish 5432:5432 crate -Cdiscovery.type=single-node
+$ docker run --publish 4200:4200 --publish 5432:5432 arm32v5/crate -Cdiscovery.type=single-node
 ```
 
 Visit the [getting started](https://crate.io/docs/crate/tutorials/en/latest/install-run/) page to see all the available download and install options.
