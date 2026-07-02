@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `alpine` official image](https://hub.docker.com/_/alpine) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20260127`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/c5f299db02fde44c146488e2161773e1daebe581/x86_64/Dockerfile)
-
--	[`3.24.1`, `3.24`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/398ff0c866d27e9f46f53e48184fe36c674b8897/x86_64/Dockerfile)
-
--	[`3.23.5`, `3.23`](https://github.com/alpinelinux/docker-alpine/blob/4ad948cca27e7a605aa63ae1c59c22081a2c6d13/x86_64/Dockerfile)
-
--	[`3.22.5`, `3.22`](https://github.com/alpinelinux/docker-alpine/blob/aff8a4cfde38012a59285f21c8820777acd6033b/x86_64/Dockerfile)
-
--	[`3.21.7`, `3.21`](https://github.com/alpinelinux/docker-alpine/blob/52e3f9384ecbfe80a2d36bb344e464c0cf7c7507/x86_64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `mips64le` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -66,7 +60,7 @@ WARNING:
 Use like you would any other base image:
 
 ```dockerfile
-FROM alpine:3.14
+FROM mips64le/alpine:3.14
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
