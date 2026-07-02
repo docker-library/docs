@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `logstash` official image](https://hub.docker.com/_/logstash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.19.18`](https://github.com/elastic/dockerfiles/blob/678cb3dec276345642c650a9fe910f722b5d0466/logstash/Dockerfile)
-
--	[`9.3.7`](https://github.com/elastic/dockerfiles/blob/08231a4aa56c7a41ce0f39dc5bf8c2766f255aac/logstash/Dockerfile)
-
--	[`9.4.3`](https://github.com/elastic/dockerfiles/blob/d0a6fe43d575bac9bce0433f27d5d1bb0177a2d2/logstash/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
 # Quick reference (cont.)
 
