@@ -1,0 +1,1 @@
+Nim is a statically typed, imperative programming language focusing on efficiency and elegance.
