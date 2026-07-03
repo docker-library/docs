@@ -27,6 +27,15 @@
 #
 #   docker run -p 5555:4444 %%IMAGE%% -p 4444
 #
+# To enable NATS JetStream, use the -js flag:
+#
+#   docker run -p 4222:4222 %%IMAGE%% -js
+#
+# And, to persist JetStream data to a volume you can use the -v and -sd flags.
+# Keep in mind that -v is a Docker flag, while -js and -sd are NATS Server flags:
+#
+#   docker run -p 4222:4222 -v nats:/data %%IMAGE%% -js -sd /data
+#
 # Check "docker run" for more information.
 
 $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%%

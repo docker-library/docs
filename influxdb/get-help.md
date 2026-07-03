@@ -1,0 +1,1 @@
+[InfluxDB Discord Server](https://discord.gg/9zaNCW2PRT) *(preferred for **InfluxDB 3 Core**, **InfluxDB 3 Enterprise**)*, [InfluxDB Community Slack](https://influxdata.com/slack) *(preferred for **InfluxDB v2**, **v1**)\*

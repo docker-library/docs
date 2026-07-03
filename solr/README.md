@@ -24,12 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.6.0`, `9.6`, `9`, `latest`](https://github.com/apache/solr-docker/blob/2031434cdf7b2c00a718e204b0c20e5eb74b84af/9.6/Dockerfile)
--	[`9.6.0-slim`, `9.6-slim`, `9-slim`, `slim`](https://github.com/apache/solr-docker/blob/2031434cdf7b2c00a718e204b0c20e5eb74b84af/9.6-slim/Dockerfile)
--	[`9.5.0`, `9.5`](https://github.com/apache/solr-docker/blob/2031434cdf7b2c00a718e204b0c20e5eb74b84af/9.5/Dockerfile)
--	[`9.5.0-slim`, `9.5-slim`](https://github.com/apache/solr-docker/blob/2031434cdf7b2c00a718e204b0c20e5eb74b84af/9.5-slim/Dockerfile)
--	[`8.11.3`, `8.11`, `8`](https://github.com/apache/solr-docker/blob/2031434cdf7b2c00a718e204b0c20e5eb74b84af/8.11/Dockerfile)
--	[`8.11.3-slim`, `8.11-slim`, `8-slim`](https://github.com/apache/solr-docker/blob/2031434cdf7b2c00a718e204b0c20e5eb74b84af/8.11-slim/Dockerfile)
+-	[`10.0.0`, `10.0`, `10`, `latest`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0/Dockerfile)
+
+-	[`10.0.0-slim`, `10.0-slim`, `10-slim`, `slim`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0-slim/Dockerfile)
+
+-	[`9.10.1`, `9.10`, `9`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10/Dockerfile)
+
+-	[`9.10.1-slim`, `9.10-slim`, `9-slim`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10-slim/Dockerfile)
+
+-	[`9.9.0`, `9.9`](https://github.com/apache/solr-docker/blob/aa51c522c3e74cd1b2886209ea249358a34d324a/9.9/Dockerfile)
+
+-	[`9.9.0-slim`, `9.9-slim`](https://github.com/apache/solr-docker/blob/aa51c522c3e74cd1b2886209ea249358a34d324a/9.9-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -37,7 +42,7 @@ WARNING:
 	[The Solr Users mailing list](https://solr.apache.org/community.html#mailing-lists-chat)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm32v7`](https://hub.docker.com/r/arm32v7/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/), [`ppc64le`](https://hub.docker.com/r/ppc64le/solr/), [`s390x`](https://hub.docker.com/r/s390x/solr/)
+	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/), [`ppc64le`](https://hub.docker.com/r/ppc64le/solr/), [`riscv64`](https://hub.docker.com/r/riscv64/solr/), [`s390x`](https://hub.docker.com/r/s390x/solr/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/solr/` directory](https://github.com/docker-library/repo-info/blob/master/repos/solr) ([history](https://github.com/docker-library/repo-info/commits/master/repos/solr))  
@@ -52,7 +57,7 @@ WARNING:
 
 # What is Solr?
 
-Apache Solr™ is the popular, blazing fast, open source NoSQL search platform. Its major features include powerful full-text search, hit highlighting, faceted search, dynamic clustering, database integration, rich document handling, and geospatial search. Solr is highly scalable, providing fault tolerant distributed search and indexing, and powers the search and navigation features of many of the world's largest websites.
+Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, analytics, and geospatial search at many of the world's largest organizations. Other major features include Kubernetes integration, streaming, highlighting, faceting, and spellchecking.
 
 Learn more on [Apache Solr homepage](http://solr.apache.org/) and in the [Apache Solr Reference Guide](https://solr.apache.org/guide/).
 

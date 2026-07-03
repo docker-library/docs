@@ -14,6 +14,12 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+As of October 2025, NGINX Unit is archived and unmaintained. The images will not receive release or security updates.
+
+https://github.com/nginx/unit?tab=readme-ov-file#note-this-repository-has-been-archived-there-will-likely-be-no-further-development-at-this-repo-and-security-vulnerabilities-may-be-unaddressed
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +30,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.32.1-go1.22`, `go1.22`, `go1`, `go`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.go1.22)
--	[`1.32.1-go1.21`, `go1.21`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.go1.21)
--	[`1.32.1-jsc11`, `jsc11`, `jsc`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.jsc11)
--	[`1.32.1-node21`, `node21`, `node`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.node21)
--	[`1.32.1-node20`, `node20`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.node20)
--	[`1.32.1-perl5.38`, `perl5.38`, `perl5`, `perl`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.perl5.38)
--	[`1.32.1-perl5.36`, `perl5.36`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.perl5.36)
--	[`1.32.1-php8.3`, `php8.3`, `php8`, `php`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.php8.3)
--	[`1.32.1-php8.2`, `php8.2`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.php8.2)
--	[`1.32.1-python3.12`, `python3.12`, `python3`, `python`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.python3.12)
--	[`1.32.1-python3.11`, `python3.11`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.python3.11)
--	[`1.32.1-ruby3.3`, `ruby3.3`, `ruby3`, `ruby`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.ruby3.3)
--	[`1.32.1-ruby3.2`, `ruby3.2`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.ruby3.2)
--	[`1.32.1-wasm`, `wasm`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.wasm)
--	[`1.32.1-minimal`, `minimal`, `latest`](https://github.com/nginx/unit/blob/0e79d961bb1ea68674961da1703ffedb1ddf6e43/pkg/docker/Dockerfile.minimal)
+**No supported tags**
 
 # Quick reference (cont.)
 
@@ -46,7 +38,7 @@ WARNING:
 	[https://github.com/nginx/unit/issues](https://github.com/nginx/unit/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/unit/), [`arm64v8`](https://hub.docker.com/r/arm64v8/unit/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/unit/` directory](https://github.com/docker-library/repo-info/blob/master/repos/unit) ([history](https://github.com/docker-library/repo-info/commits/master/repos/unit))  

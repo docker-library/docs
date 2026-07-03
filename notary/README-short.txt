@@ -1,1 +1,1 @@
-Notary server and signer cooperatively handle signing and distribution of notary repositories.
+DEPRECATED; Notary server and signer cooperatively handle signing and distribution

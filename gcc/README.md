@@ -24,11 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`14.1.0`, `14.1`, `14`, `latest`, `14.1.0-bookworm`, `14.1-bookworm`, `14-bookworm`, `bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/14/Dockerfile)
--	[`13.2.0`, `13.2`, `13`, `13.2.0-bookworm`, `13.2-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/13/Dockerfile)
--	[`12.3.0`, `12.3`, `12`, `12.3.0-bookworm`, `12.3-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/12/Dockerfile)
--	[`11.4.0`, `11.4`, `11`, `11.4.0-bullseye`, `11.4-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/11/Dockerfile)
--	[`10.5.0`, `10.5`, `10`, `10.5.0-bullseye`, `10.5-bullseye`, `10-bullseye`](https://github.com/docker-library/gcc/blob/b1e7fc69e4021bab505d420fddc57002ef04939e/10/Dockerfile)
+-	[`16.1.0`, `16.1`, `16`, `latest`, `16.1.0-trixie`, `16.1-trixie`, `16-trixie`, `trixie`](https://github.com/docker-library/gcc/blob/24fb071be01a0e6241fbbabd59a3dd07d31b80f5/16/Dockerfile)
+
+-	[`15.2.0`, `15.2`, `15`, `15.2.0-trixie`, `15.2-trixie`, `15-trixie`](https://github.com/docker-library/gcc/blob/915af5ccbb6b09575e244f280c26925e77172039/15/Dockerfile)
+
+-	[`14.3.0`, `14.3`, `14`, `14.3.0-trixie`, `14.3-trixie`, `14-trixie`](https://github.com/docker-library/gcc/blob/280306a58a2ff0c21a95ed8abe882ac483d03c8b/14/Dockerfile)
+
+-	[`13.4.0`, `13.4`, `13`, `13.4.0-bookworm`, `13.4-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/118c07a8e6467baababb4634b6cfde14a67c24b0/13/Dockerfile)
+
+-	[`12.5.0`, `12.5`, `12`, `12.5.0-bookworm`, `12.5-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/7070981b23d22d3ca790f87bff26f13f3614dd4c/12/Dockerfile)
 
 # Quick reference (cont.)
 

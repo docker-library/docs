@@ -1,1 +1,1 @@
-SonarQube is an open source platform for continuous inspection of code quality.
+Official images for SonarQube, code analysis tool for code quality and security

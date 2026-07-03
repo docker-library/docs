@@ -59,10 +59,15 @@ RABBITMQ_VM_MEMORY_HIGH_WATERMARK
 If you wish to change the default username and password of `guest` / `guest`, you can do so with the `RABBITMQ_DEFAULT_USER` and `RABBITMQ_DEFAULT_PASS` environmental variables. These variables were available previously in the docker-specific entrypoint shell script but are now available in RabbitMQ directly.
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=password %%IMAGE%%:3-management
+$ docker run --detach --hostname my-rabbit --name some-rabbit \
+    --env RABBITMQ_DEFAULT_USER=user \
+    --env RABBITMQ_DEFAULT_PASS=password \
+    --publish 15672:15672 \
+    --publish 5672:5672 \
+     %%IMAGE%%:management
 ```
 
-You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser and use `user`/`password` to gain access to the management console
+You can then go to `http://localhost:15672` or `http://host-ip:15672` in a browser and use `user`/`password` to gain access to the [management UI](https://www.rabbitmq.com/docs/management).
 
 ### Setting default vhost
 
@@ -88,7 +93,7 @@ For example, you can provide the cookie via a file (such as with [Docker Secrets
 docker service create ... --secret source=my-erlang-cookie,target=/var/lib/rabbitmq/.erlang.cookie ... %%IMAGE%%
 ```
 
-(Note that it will likely also be necessary to specify `uid=XXX,gid=XXX,mode=0600` in order for Erlang in the container to be able to read the cookie file properly. See [Docker's `--secret` documentation for more details](https://docs.docker.com/engine/reference/commandline/service_create/#create-a-service-with-secrets).)
+(Note that it will likely also be necessary to specify `uid=XXX,gid=XXX,mode=0600` in order for Erlang in the container to be able to read the cookie file properly. See [Docker's `--secret` documentation for more details](https://docs.docker.com/reference/cli/docker/service/create/#secret).)
 
 ### Management Plugin
 

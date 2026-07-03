@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.6.1-ubuntu`, `3.6-ubuntu`, `3.6.1`, `3.6`, `3`, `latest`, `ubuntu`](https://github.com/Kong/docker-kong/blob/4dec46ee7e14ddd3a10692814728ff85adb77f25/ubuntu/Dockerfile)
--	[`3.5.0-ubuntu`, `3.5-ubuntu`, `3.5.0`, `3.5`](https://github.com/Kong/docker-kong/blob/e4ba2e351f3da34727fd016409a2669004b3fce0/ubuntu/Dockerfile)
--	[`3.4.2-ubuntu`, `3.4-ubuntu`, `3.4.2`, `3.4`](https://github.com/Kong/docker-kong/blob/2ccc1a4cc237f2cbe85e9226c8d0fa1e70f1d612/ubuntu/Dockerfile)
--	[`3.3.1-alpine`, `alpine`](https://github.com/Kong/docker-kong/blob/2207aa20530f8a04290c82c9c2258717f7795080/Dockerfile.apk)
--	[`3.3.1-ubuntu`, `3.3-ubuntu`, `3.3.1`, `3.3`](https://github.com/Kong/docker-kong/blob/2207aa20530f8a04290c82c9c2258717f7795080/ubuntu/Dockerfile)
--	[`2.8.4-alpine`, `2.8.4`, `2.8`](https://github.com/Kong/docker-kong/blob/1c31704cdc9bbd2c0a20e5479eb307140339582b/alpine/Dockerfile)
--	[`2.8.4-ubuntu`, `2.8-ubuntu`](https://github.com/Kong/docker-kong/blob/1c31704cdc9bbd2c0a20e5479eb307140339582b/ubuntu/Dockerfile)
+-	[`3.9.1-ubuntu`, `3.9-ubuntu`, `3.9.1`, `3.9`, `3`, `latest`, `ubuntu`](https://github.com/Kong/docker-kong/blob/af96ffd89b75f2e7a68cb90d0a3c4b4cd30d53fc/ubuntu/Dockerfile)
+
+-	[`3.8.0-ubuntu`, `3.8-ubuntu`, `3.8.0`, `3.8`](https://github.com/Kong/docker-kong/blob/1f5199f7da45c17f4344b811397e89899a160040/ubuntu/Dockerfile)
+
+-	[`3.4.2-ubuntu`, `3.4-ubuntu`, `3.4.2`, `3.4`](https://github.com/Kong/docker-kong/blob/e07de903edf213445a0540172d51529ac344b448/ubuntu/Dockerfile)
+
+-	[`2.8.5-ubuntu`, `2.8-ubuntu`](https://github.com/Kong/docker-kong/blob/cdf93ae2106f998a2245a3eee6814b1ae68781af/ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -63,25 +63,9 @@ Kong's official documentation can be found at [docs.konghq.com](https://docs.kon
 
 Please refer to the [installation section](https://docs.konghq.com/gateway/latest/install/docker/#main) on our documentation website to learn how to use this image.
 
-# Image Variants
-
-The `kong` images come in many flavors, each designed for a specific use case.
-
-## `kong:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `kong:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
 # License
 
-View [license information](https://konghq.com/kong/license/) for the software contained in this image.
+View [license information](https://github.com/Kong/kong/blob/master/LICENSE) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

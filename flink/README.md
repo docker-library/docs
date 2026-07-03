@@ -24,14 +24,29 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.19.0-scala_2.12-java8`, `1.19-scala_2.12-java8`, `scala_2.12-java8`, `1.19.0-java8`, `1.19-java8`, `java8`](https://github.com/apache/flink-docker/blob/20017e8f0e81d54fe74c0f9f6a3a988ea609be8f/1.19/scala_2.12-java8-ubuntu/Dockerfile)
--	[`1.19.0-scala_2.12-java17`, `1.19-scala_2.12-java17`, `scala_2.12-java17`, `1.19.0-java17`, `1.19-java17`, `java17`](https://github.com/apache/flink-docker/blob/20017e8f0e81d54fe74c0f9f6a3a988ea609be8f/1.19/scala_2.12-java17-ubuntu/Dockerfile)
--	[`1.19.0-scala_2.12-java11`, `1.19-scala_2.12-java11`, `scala_2.12-java11`, `1.19.0-scala_2.12`, `1.19-scala_2.12`, `scala_2.12`, `1.19.0-java11`, `1.19-java11`, `java11`, `1.19.0`, `1.19`, `latest`](https://github.com/apache/flink-docker/blob/20017e8f0e81d54fe74c0f9f6a3a988ea609be8f/1.19/scala_2.12-java11-ubuntu/Dockerfile)
--	[`1.18.1-scala_2.12-java8`, `1.18-scala_2.12-java8`, `1.18.1-java8`, `1.18-java8`](https://github.com/apache/flink-docker/blob/8eb7ea1a0e668146b2da1dcd08e311e7f7f318f1/1.18/scala_2.12-java8-ubuntu/Dockerfile)
--	[`1.18.1-scala_2.12-java17`, `1.18-scala_2.12-java17`, `1.18.1-java17`, `1.18-java17`](https://github.com/apache/flink-docker/blob/8eb7ea1a0e668146b2da1dcd08e311e7f7f318f1/1.18/scala_2.12-java17-ubuntu/Dockerfile)
--	[`1.18.1-scala_2.12-java11`, `1.18-scala_2.12-java11`, `1.18.1-scala_2.12`, `1.18-scala_2.12`, `1.18.1-java11`, `1.18-java11`, `1.18.1`, `1.18`](https://github.com/apache/flink-docker/blob/8eb7ea1a0e668146b2da1dcd08e311e7f7f318f1/1.18/scala_2.12-java11-ubuntu/Dockerfile)
--	[`1.17.2-scala_2.12-java8`, `1.17-scala_2.12-java8`, `1.17.2-java8`, `1.17-java8`](https://github.com/apache/flink-docker/blob/8eb7ea1a0e668146b2da1dcd08e311e7f7f318f1/1.17/scala_2.12-java8-ubuntu/Dockerfile)
--	[`1.17.2-scala_2.12-java11`, `1.17-scala_2.12-java11`, `1.17.2-scala_2.12`, `1.17-scala_2.12`, `1.17.2-java11`, `1.17-java11`, `1.17.2`, `1.17`](https://github.com/apache/flink-docker/blob/8eb7ea1a0e668146b2da1dcd08e311e7f7f318f1/1.17/scala_2.12-java11-ubuntu/Dockerfile)
+-	[`2.2.0-scala_2.12-java21`, `2.2-scala_2.12-java21`, `scala_2.12-java21`, `2.2.0-java21`, `2.2-java21`, `java21`](https://github.com/apache/flink-docker/blob/fbe91e0c410a77c7c894786fdf9d118b804eb2e7/2.2/scala_2.12-java21-ubuntu/Dockerfile)
+
+-	[`2.2.0-scala_2.12-java17`, `2.2-scala_2.12-java17`, `scala_2.12-java17`, `2.2.0-scala_2.12`, `2.2-scala_2.12`, `scala_2.12`, `2.2.0-java17`, `2.2-java17`, `java17`, `2.2.0`, `2.2`, `latest`](https://github.com/apache/flink-docker/blob/fbe91e0c410a77c7c894786fdf9d118b804eb2e7/2.2/scala_2.12-java17-ubuntu/Dockerfile)
+
+-	[`2.2.0-scala_2.12-java11`, `2.2-scala_2.12-java11`, `scala_2.12-java11`, `2.2.0-java11`, `2.2-java11`, `java11`](https://github.com/apache/flink-docker/blob/fbe91e0c410a77c7c894786fdf9d118b804eb2e7/2.2/scala_2.12-java11-ubuntu/Dockerfile)
+
+-	[`2.1.1-scala_2.12-java21`, `2.1-scala_2.12-java21`, `2.1.1-java21`, `2.1-java21`](https://github.com/apache/flink-docker/blob/cfeea17390958606ec56ffd7caaf24dd44263743/2.1/scala_2.12-java21-ubuntu/Dockerfile)
+
+-	[`2.1.1-scala_2.12-java17`, `2.1-scala_2.12-java17`, `2.1.1-scala_2.12`, `2.1-scala_2.12`, `2.1.1-java17`, `2.1-java17`, `2.1.1`, `2.1`](https://github.com/apache/flink-docker/blob/cfeea17390958606ec56ffd7caaf24dd44263743/2.1/scala_2.12-java17-ubuntu/Dockerfile)
+
+-	[`2.1.1-scala_2.12-java11`, `2.1-scala_2.12-java11`, `2.1.1-java11`, `2.1-java11`](https://github.com/apache/flink-docker/blob/cfeea17390958606ec56ffd7caaf24dd44263743/2.1/scala_2.12-java11-ubuntu/Dockerfile)
+
+-	[`2.0.1-scala_2.12-java21`, `2.0-scala_2.12-java21`, `2.0.1-java21`, `2.0-java21`](https://github.com/apache/flink-docker/blob/cfeea17390958606ec56ffd7caaf24dd44263743/2.0/scala_2.12-java21-ubuntu/Dockerfile)
+
+-	[`2.0.1-scala_2.12-java17`, `2.0-scala_2.12-java17`, `2.0.1-scala_2.12`, `2.0-scala_2.12`, `2.0.1-java17`, `2.0-java17`, `2.0.1`, `2.0`](https://github.com/apache/flink-docker/blob/cfeea17390958606ec56ffd7caaf24dd44263743/2.0/scala_2.12-java17-ubuntu/Dockerfile)
+
+-	[`2.0.1-scala_2.12-java11`, `2.0-scala_2.12-java11`, `2.0.1-java11`, `2.0-java11`](https://github.com/apache/flink-docker/blob/cfeea17390958606ec56ffd7caaf24dd44263743/2.0/scala_2.12-java11-ubuntu/Dockerfile)
+
+-	[`1.20.4-scala_2.12-java8`, `1.20-scala_2.12-java8`, `1.20.4-java8`, `1.20-java8`](https://github.com/apache/flink-docker/blob/126315d425a224b3a5784696b16a79242ca22988/1.20/scala_2.12-java8-ubuntu/Dockerfile)
+
+-	[`1.20.4-scala_2.12-java17`, `1.20-scala_2.12-java17`, `1.20.4-java17`, `1.20-java17`](https://github.com/apache/flink-docker/blob/126315d425a224b3a5784696b16a79242ca22988/1.20/scala_2.12-java17-ubuntu/Dockerfile)
+
+-	[`1.20.4-scala_2.12-java11`, `1.20-scala_2.12-java11`, `1.20.4-scala_2.12`, `1.20-scala_2.12`, `1.20.4-java11`, `1.20-java11`, `1.20.4`, `1.20`](https://github.com/apache/flink-docker/blob/126315d425a224b3a5784696b16a79242ca22988/1.20/scala_2.12-java11-ubuntu/Dockerfile)
 
 # Quick reference (cont.)
 

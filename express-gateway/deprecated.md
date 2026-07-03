@@ -1,1 +1,0 @@
-This project is no longer maintained. Read [here](https://github.com/ExpressGateway/express-gateway/issues/1011#issuecomment-748354599) for more details or if you're interested in taking over the project.

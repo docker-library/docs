@@ -1,1 +1,1 @@
-Ghost is a free and open source blogging platform written in JavaScript
+Publish by web and email newsletter, with member signups and subscription payments.

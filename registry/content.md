@@ -7,7 +7,7 @@ This image contains an implementation of the OCI Distribution spec. See [github.
 ## Run a local registry: Quick Version
 
 ```console
-$ docker run -d -p 5000:5000 --restart always --name registry %%IMAGE%%:2
+$ docker run -d -p 5000:5000 --restart always --name registry %%IMAGE%%:3
 ```
 
 Now, use it from within Docker:

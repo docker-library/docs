@@ -17,14 +17,14 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	TeamSpeak Developers [nwerensteijn](https://github.com/nwerensteijn) and [muenchow](https://github.com/muenchow)
+	TeamSpeak Developers [HuppiN](https://github.com/HuppiN) and [achimklittich](https://github.com/achimklittich)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.13`, `3.13.7`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/f5f1e7f6142e8eeebb8d46d7b493b5d3ec01d599/alpine/Dockerfile)
+-	[`3.13`, `3.13.7`, `latest`](https://github.com/TeamSpeak-Systems/teamspeak-linux-docker-images/blob/e17fc2b955883f6ee1334d43a05208a7276d81d2/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -83,12 +83,11 @@ The TeamSpeak server log is available through Docker's container log:
 $ docker logs some-teamspeak
 ```
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `teamspeak`:
+Example `compose.yaml` for `teamspeak`:
 
 ```yaml
-version: '3.1'
 services:
   teamspeak:
     image: teamspeak
@@ -114,9 +113,7 @@ services:
       MYSQL_DATABASE: teamspeak
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/0975c9ae2481c3f988c17d01d62075c9bf772ebb/teamspeak/stack.yml)
-
-Run `docker stack deploy -c stack.yml teamspeak` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `swarm-ip:9987`, `localhost:9987`, or `host-ip:9987` (as appropriate) with a TeamSpeak client.
+Run `docker compose up`, wait for it to initialize completely, and visit `localhost:9987` or `host-ip:9987` (as appropriate) with a TeamSpeak client.
 
 ## Environment Variables
 

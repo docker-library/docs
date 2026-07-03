@@ -17,20 +17,21 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server-enterprise.docker)
+	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server.docker)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`ee-7.0.0.9`, `ee-7.0.0.9_1`](https://github.com/aerospike/aerospike-server.docker/blob/0e3d45027a31f3753283d1f92f94c86739f5103a/enterprise/debian12/Dockerfile)
--	[`ce-7.0.0.9`, `ce-7.0.0.9_1`](https://github.com/aerospike/aerospike-server.docker/blob/0e3d45027a31f3753283d1f92f94c86739f5103a/community/debian12/Dockerfile)
+-	[`ee-8.1.2.1`, `ee-8.1.2.1_1`](https://github.com/aerospike/aerospike-server.docker/blob/aec0c99077f83d63733665e153487edfa6c0d033/releases/8.1/enterprise/ubuntu24.04/Dockerfile)
+
+-	[`ce-8.1.2.1`, `ce-8.1.2.1_1`](https://github.com/aerospike/aerospike-server.docker/blob/aec0c99077f83d63733665e153487edfa6c0d033/releases/8.1/community/ubuntu24.04/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server-enterprise.docker/issues)
+	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server.docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/aerospike/), [`arm64v8`](https://hub.docker.com/r/arm64v8/aerospike/)
@@ -52,7 +53,7 @@ WARNING:
 
 [Aerospike](http://aerospike.com) is a distributed NoSQL database purposefully designed for high performance web scale applications. Aerospike supports key-value and document data models, and has multiple data types including List, Map, HyperLogLog, GeoJSON, and Blob. Aerospike's patented hybrid memory architecture delivers predictable high performance at scale and high data density per node.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/9944063c59872460e15f6ecb19c1419c8124752f/aerospike/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/42ae663b4b922326e5c55c7c513c8d04a11f9aaf/aerospike/logo.png)
 
 ## Getting Started
 
@@ -217,7 +218,7 @@ For more, see [How do I get a 2 nodes Aerospike cluster running quickly in Docke
 
 ## Image Versions
 
-These images are based on [debian:*-slim](https://hub.docker.com/_/debian).
+These images are based on [ubuntu:24.04](https://hub.docker.com/_/ubuntu).
 
 ### ee-[version]
 

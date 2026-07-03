@@ -26,15 +26,29 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`11.4.1-rc-jammy`, `11.4-rc-jammy`, `11.4.1-rc`, `11.4-rc`](https://github.com/MariaDB/mariadb-docker/blob/d7a950d41e9347ac94ad2d2f28469bff74858db7/11.4/Dockerfile)
--	[`11.3.2-jammy`, `11.3-jammy`, `11-jammy`, `jammy`, `11.3.2`, `11.3`, `11`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/d7a950d41e9347ac94ad2d2f28469bff74858db7/11.3/Dockerfile)
--	[`11.2.3-jammy`, `11.2-jammy`, `11.2.3`, `11.2`](https://github.com/MariaDB/mariadb-docker/blob/d7a950d41e9347ac94ad2d2f28469bff74858db7/11.2/Dockerfile)
--	[`11.1.4-jammy`, `11.1-jammy`, `11.1.4`, `11.1`](https://github.com/MariaDB/mariadb-docker/blob/d7a950d41e9347ac94ad2d2f28469bff74858db7/11.1/Dockerfile)
--	[`11.0.5-jammy`, `11.0-jammy`, `11.0.5`, `11.0`](https://github.com/MariaDB/mariadb-docker/blob/d7a950d41e9347ac94ad2d2f28469bff74858db7/11.0/Dockerfile)
--	[`10.11.7-jammy`, `10.11-jammy`, `10-jammy`, `lts-jammy`, `10.11.7`, `10.11`, `10`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/d7a950d41e9347ac94ad2d2f28469bff74858db7/10.11/Dockerfile)
--	[`10.6.17-focal`, `10.6-focal`, `10.6.17`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/d7a950d41e9347ac94ad2d2f28469bff74858db7/10.6/Dockerfile)
--	[`10.5.24-focal`, `10.5-focal`, `10.5.24`, `10.5`](https://github.com/MariaDB/mariadb-docker/blob/d7a950d41e9347ac94ad2d2f28469bff74858db7/10.5/Dockerfile)
--	[`10.4.33-focal`, `10.4-focal`, `10.4.33`, `10.4`](https://github.com/MariaDB/mariadb-docker/blob/1d95dfc811b0666ab39cecdbf88c4d956e74f765/10.4/Dockerfile)
+-	[`12.3.1-ubi10-rc`, `12.3-ubi10-rc`, `12.3.1-ubi-rc`, `12.3-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/fff6ab37913bbbe25bfc6c6ea6f095e4ad7a039c/12.3-ubi/Dockerfile)
+
+-	[`12.3.1-noble-rc`, `12.3-noble-rc`, `12.3.1-rc`, `12.3-rc`](https://github.com/MariaDB/mariadb-docker/blob/3fbf86c7b9301bcb6b0dc0f4f478800ee458224f/12.3/Dockerfile)
+
+-	[`12.2.2-ubi10`, `12.2-ubi10`, `12-ubi10`, `12.2.2-ubi`, `12.2-ubi`, `12-ubi`](https://github.com/MariaDB/mariadb-docker/blob/fff6ab37913bbbe25bfc6c6ea6f095e4ad7a039c/12.2-ubi/Dockerfile)
+
+-	[`12.2.2-noble`, `12.2-noble`, `12-noble`, `noble`, `12.2.2`, `12.2`, `12`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/3fbf86c7b9301bcb6b0dc0f4f478800ee458224f/12.2/Dockerfile)
+
+-	[`11.8.6-ubi9`, `11.8-ubi9`, `11-ubi9`, `lts-ubi9`, `11.8.6-ubi`, `11.8-ubi`, `11-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/fff6ab37913bbbe25bfc6c6ea6f095e4ad7a039c/11.8-ubi/Dockerfile)
+
+-	[`11.8.6-noble`, `11.8-noble`, `11-noble`, `lts-noble`, `11.8.6`, `11.8`, `11`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/66972bc2e0c6fd33dcd5d98de0653c5696a1166e/11.8/Dockerfile)
+
+-	[`11.4.10-ubi9`, `11.4-ubi9`, `11.4.10-ubi`, `11.4-ubi`](https://github.com/MariaDB/mariadb-docker/blob/fff6ab37913bbbe25bfc6c6ea6f095e4ad7a039c/11.4-ubi/Dockerfile)
+
+-	[`11.4.10-noble`, `11.4-noble`, `11.4.10`, `11.4`](https://github.com/MariaDB/mariadb-docker/blob/66972bc2e0c6fd33dcd5d98de0653c5696a1166e/11.4/Dockerfile)
+
+-	[`10.11.16-ubi9`, `10.11-ubi9`, `10-ubi9`, `10.11.16-ubi`, `10.11-ubi`, `10-ubi`](https://github.com/MariaDB/mariadb-docker/blob/fff6ab37913bbbe25bfc6c6ea6f095e4ad7a039c/10.11-ubi/Dockerfile)
+
+-	[`10.11.16-jammy`, `10.11-jammy`, `10-jammy`, `10.11.16`, `10.11`, `10`](https://github.com/MariaDB/mariadb-docker/blob/66972bc2e0c6fd33dcd5d98de0653c5696a1166e/10.11/Dockerfile)
+
+-	[`10.6.25-ubi9`, `10.6-ubi9`, `10.6.25-ubi`, `10.6-ubi`](https://github.com/MariaDB/mariadb-docker/blob/fff6ab37913bbbe25bfc6c6ea6f095e4ad7a039c/10.6-ubi/Dockerfile)
+
+-	[`10.6.25-jammy`, `10.6-jammy`, `10.6.25`, `10.6`](https://github.com/MariaDB/mariadb-docker/blob/66972bc2e0c6fd33dcd5d98de0653c5696a1166e/10.6/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -69,35 +83,44 @@ The mariadb has a number of tags, and of note is `latest`, as the latest stable 
 
 ## Running the container
 
+### Configuration
+
+#### Port binding
+
+By default, the database running within the container will listen on port 3306. You can expose the container port 3306 to the host port 3306 with the `-p 3306:3306` argument to `docker run`, like the command below:
+
+```console
+$ docker run --name some-mariadb -p 3306:3306 mariadb:latest
+```
+
 ### Starting using a minimal configuration
 
 The environment variables required to use this image involves the setting of the root user password:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:latest
 ```
 
 or:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1 mariadb:latest
 ```
 
 or:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_RANDOM_ROOT_PASSWORD=1  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_RANDOM_ROOT_PASSWORD=1 mariadb:latest
 ```
 
 ... where the container logs will contain the generated root password.
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `mariadb`:
+Example `compose.yaml` for `mariadb`:
 
 ```yaml
 # Use root/example as user/password credentials
-version: '3.1'
 
 services:
 
@@ -114,16 +137,14 @@ services:
       - 8080:8080
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/cf3a7fba4dfd134e3f7f5921b580c71e0fd8bc24/mariadb/stack.yml)
-
-Run `docker stack deploy -c stack.yml mariadb` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ### Start a `mariadb` server instance with user, password and database
 
 Starting a MariaDB instance with a user, password, and a database:
 
 ```console
-$ docker run --detach --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
+$ docker run --detach --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_DATABASE=exmple-database --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:latest
 ```
 
 ### Start a `mariadb` server instance in a network
@@ -132,8 +153,8 @@ As applications talk to MariaDB, MariaDB needs to start in the same network as t
 
 ```console
 $ docker network create some-network 
-$ docker run --detach --network some-network --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw  mariadb:latest
-$ docker run --detach --network some-network --name some-application --env APP_DB_HOST=some-mariadb  --env APP_DB_USER=example-user --env APP_DB_PASSWD=my_cool_secret some-application
+$ docker run --detach --network some-network --name some-mariadb --env MARIADB_USER=example-user --env MARIADB_PASSWORD=my_cool_secret --env MARIADB_ROOT_PASSWORD=my-secret-pw mariadb:latest
+$ docker run --detach --network some-network --name some-application --env APP_DB_HOST=some-mariadb --env APP_DB_USER=example-user --env APP_DB_PASSWD=my_cool_secret some-application
 ```
 
 ... where `some-network` is a newly created network (other than `bridge` as the default network), `some-mariadb` is the name you want to assign to your container, `my-secret-pw` is the password to be set for the MariaDB root user. See the list above for relevant tags to match your needs and environment. `some-application` and then environment variable `APP_DB_HOST`, `APP_DB_USER` and `APP_DB_PASSWD` are the application's configuration for its database connection.
@@ -143,7 +164,7 @@ $ docker run --detach --network some-network --name some-application --env APP_D
 The following command starts another `mariadb` container instance and runs the `mariadb` command line client against your original `mariadb` container, allowing you to execute SQL statements against your database instance:
 
 ```console
-$ docker run -it --network some-network --rm mariadb mariadb -hsome-mariadb -uexample-user -p
+$ docker run -it --network some-network --rm mariadb mariadb -h some-mariadb -u example-user
 ```
 
 ... where `some-mariadb` is the name of your original `mariadb` container (connected to the `some-network` Docker network).
@@ -217,8 +238,8 @@ Custom configuration files should end in `.cnf` and be mounted read only at the 
 
 The `mariadb` image configuration contains the Ubuntu MariaDB variables with two custom changes for the container:
 
-	[host-cache-size=0](https://mariadb.com/kb/en/server-system-variables/#host_cache_size)
-	[skip-name-resolve](https://mariadb.com/kb/en/server-system-variables/#skip_name_resolve)
+-	[`host-cache-size=0`](https://mariadb.com/kb/en/server-system-variables/#host_cache_size)
+-	[`skip-name-resolve`](https://mariadb.com/kb/en/server-system-variables/#skip_name_resolve)
 
 These disable the authentication of `user@hostname` users. To re-enable the `skip-name-resolve` use `disable-skip-name-resolve` as variable or argument. When enabled, the `host-cache-size` should be sufficient for the number of containers connecting to the `mariadb`.
 
@@ -288,7 +309,7 @@ The `-v /my/own/datadir:/var/lib/mysql:Z` part of the command mounts the `/my/ow
 
 ## No connections until MariaDB init completes
 
-If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
+If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker compose`, which start several containers simultaneously.
 
 ## Health/Liveness/Readiness Checking
 

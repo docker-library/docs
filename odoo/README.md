@@ -24,9 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`17.0`, `17`, `latest`](https://github.com/odoo/docker/blob/28c9d0656e8d39f27dedf7ccccf243477626e807/17.0/Dockerfile)
--	[`16.0`, `16`](https://github.com/odoo/docker/blob/28c9d0656e8d39f27dedf7ccccf243477626e807/16.0/Dockerfile)
--	[`15.0`, `15`](https://github.com/odoo/docker/blob/28c9d0656e8d39f27dedf7ccccf243477626e807/15.0/Dockerfile)
+-	[`19.0-20260504`, `19.0`, `19`, `latest`](https://github.com/odoo/docker/blob/7b39d976b8d5a0ad59bcf39642a27e6c9062b35b/19.0/Dockerfile)
+
+-	[`18.0-20260504`, `18.0`, `18`](https://github.com/odoo/docker/blob/7b39d976b8d5a0ad59bcf39642a27e6c9062b35b/18.0/Dockerfile)
+
+-	[`17.0-20260504`, `17.0`, `17`](https://github.com/odoo/docker/blob/7b39d976b8d5a0ad59bcf39642a27e6c9062b35b/17.0/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -150,10 +152,9 @@ Tweak these environment variables to easily connect to a postgres server:
 
 ## Docker Compose examples
 
-The simplest `docker-compose.yml` file would be:
+The simplest `compose.yaml` file would be:
 
 ```yml
-version: '3.1'
 services:
   web:
     image: odoo:17.0
@@ -172,7 +173,6 @@ services:
 If the default postgres credentials does not suit you, tweak the environment variables:
 
 ```yml
-version: '3.1'
 services:
   web:
     image: odoo:17.0
@@ -181,9 +181,9 @@ services:
     ports:
       - "8069:8069"
     environment:
-    - HOST=mydb
-    - USER=odoo
-    - PASSWORD=myodoo
+      - HOST=mydb
+      - USER=odoo
+      - PASSWORD=myodoo
   mydb:
     image: postgres:15
     environment:
@@ -200,7 +200,6 @@ Here's a last example showing you how to
 -	use a `secrets` file named `odoo_pg_pass` that contains the postgreql password shared by both services
 
 ```yml
-version: '3.1'
 services:
   web:
     image: odoo:17.0
@@ -236,10 +235,10 @@ secrets:
     file: odoo_pg_pass
 ```
 
-To start your Odoo instance, go in the directory of the `docker-compose.yml` file you created from the previous examples and type:
+To start your Odoo instance, go in the directory of the `compose.yaml` file you created from the previous examples and type:
 
 ```console
-docker-compose up -d
+docker compose up -d
 ```
 
 # How to upgrade this image

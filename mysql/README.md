@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.4.0`, `8.4`, `8`, `lts`, `latest`, `innovation`, `8.4.0-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `lts-oraclelinux9`, `oraclelinux9`, `innovation-oraclelinux9`, `8.4.0-oracle`, `8.4-oracle`, `8-oracle`, `lts-oracle`, `oracle`, `innovation-oracle`](https://github.com/docker-library/mysql/blob/a15b34a032f48089ee7b02d307d8f89a96b3bb76/8.4/Dockerfile.oracle)
--	[`8.0.37`, `8.0`, `8.0.37-oraclelinux9`, `8.0-oraclelinux9`, `8.0.37-oracle`, `8.0-oracle`](https://github.com/docker-library/mysql/blob/a15b34a032f48089ee7b02d307d8f89a96b3bb76/8.0/Dockerfile.oracle)
--	[`8.0.37-bookworm`, `8.0-bookworm`, `8.0.37-debian`, `8.0-debian`](https://github.com/docker-library/mysql/blob/5fe2b708e9734809d7f6554c131f0371d517bb22/8.0/Dockerfile.debian)
+-	[`9.7.0`, `9.7`, `9`, `lts`, `latest`, `9.7.0-oraclelinux9`, `9.7-oraclelinux9`, `9-oraclelinux9`, `lts-oraclelinux9`, `oraclelinux9`, `9.7.0-oracle`, `9.7-oracle`, `9-oracle`, `lts-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/f59266f3ec6f1ddfc66d1db613430d9dcc52419b/9.7/Dockerfile.oracle)
+
+-	[`8.4.9`, `8.4`, `8`, `8.4.9-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `8.4.9-oracle`, `8.4-oracle`, `8-oracle`](https://github.com/docker-library/mysql/blob/f59266f3ec6f1ddfc66d1db613430d9dcc52419b/8.4/Dockerfile.oracle)
 
 # Quick reference (cont.)
 
@@ -85,13 +85,12 @@ $ docker run -it --rm mysql mysql -hsome.mysql.host -usome-mysql-user -p
 
 More information about the MySQL command line client can be found in the [MySQL documentation](http://dev.mysql.com/doc/en/mysql.html)
 
-## ... via [`docker-compose`](https://github.com/docker/compose) or [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `docker-compose.yml` for `mysql`:
+Example `compose.yaml` for `mysql`:
 
 ```yaml
 # Use root/example as user/password credentials
-version: '3.1'
 
 services:
 
@@ -103,9 +102,7 @@ services:
     # (this is just an example, not intended to be a production configuration)
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/869019c74d53153ad95bf9f6ff285d215c95e3ac/mysql/stack.yml)
-
-Run `docker stack deploy -c stack.yml mysql` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ## Container shell access and viewing MySQL logs
 
@@ -123,7 +120,13 @@ $ docker logs some-mysql
 
 ## Using a custom MySQL configuration file
 
-The default configuration for MySQL can be found in `/etc/mysql/my.cnf`, which may `!includedir` additional directories such as `/etc/mysql/conf.d` or `/etc/mysql/mysql.conf.d`. Please inspect the relevant files and directories within the `mysql` image itself for more details.
+The default configuration for MySQL varies depending on the base image:
+
+**Oracle-based images (default):** The default configuration is located at `/etc/my.cnf`, which may `!includedir` additional directories such as `/etc/mysql/conf.d`.
+
+**Debian-based MySQL 8 images:** The default configuration can be found in `/etc/mysql/my.cnf`, which may `!includedir` additional directories such as `/etc/mysql/conf.d`.
+
+Please inspect the relevant files and directories within the `mysql` image itself for more details.
 
 If `/my/custom/config-file.cnf` is the path and name of your custom configuration file, you can start your `mysql` container like this (note that only the directory path of the custom config file is used in this command):
 
@@ -131,7 +134,7 @@ If `/my/custom/config-file.cnf` is the path and name of your custom configuratio
 $ docker run --name some-mysql -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 ```
 
-This will start a new container `some-mysql` where the MySQL instance uses the combined startup settings from `/etc/mysql/my.cnf` and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
+This will start a new container `some-mysql` where the MySQL instance uses the combined startup settings from the default configuration file and `/etc/mysql/conf.d/config-file.cnf`, with settings from the latter taking precedence.
 
 ### Configuration without a `cnf` file
 
@@ -173,7 +176,7 @@ This is an optional variable. Set to a non-empty value, like `yes`, to allow the
 
 ### `MYSQL_RANDOM_ROOT_PASSWORD`
 
-This is an optional variable. Set to a non-empty value, like `yes`, to generate a random initial password for the root user (using `pwgen`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
+This is an optional variable. Set to a non-empty value, like `yes`, to generate a random initial password for the root user (using `openssl`). The generated root password will be printed to stdout (`GENERATED ROOT PASSWORD: .....`).
 
 ### `MYSQL_ONETIME_PASSWORD`
 
@@ -195,7 +198,9 @@ Currently, this is only supported for `MYSQL_ROOT_PASSWORD`, `MYSQL_ROOT_HOST`, 
 
 # Initializing a fresh instance
 
-When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql` and `.sql.gz` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. You can easily populate your `mysql` services by [mounting a SQL dump into that directory](https://docs.docker.com/storage/bind-mounts/) and provide [custom images](https://docs.docker.com/reference/dockerfile/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
+When a container is started for the first time, a new database with the specified name will be created and initialized with the provided configuration variables. Furthermore, it will execute files with extensions `.sh`, `.sql`, `.sql.gz`, `.sql.bz2`, `.sql.xz`, and `.sql.zst` that are found in `/docker-entrypoint-initdb.d`. Files will be executed in alphabetical order. When parsing `.sh` files without the execute bit set, they are `source`d rather than executed.
+
+You can easily populate your `mysql` services by [mounting a SQL dump into that directory](https://docs.docker.com/storage/bind-mounts/) and provide [custom images](https://docs.docker.com/reference/dockerfile/) with contributed data. SQL files will be imported by default to the database specified by the `MYSQL_DATABASE` variable.
 
 # Caveats
 
@@ -219,7 +224,7 @@ The `-v /my/own/datadir:/var/lib/mysql` part of the command mounts the `/my/own/
 
 ## No connections until MySQL init completes
 
-If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as `docker-compose`, which start several containers simultaneously.
+If there is no database initialized when the container starts, then a default database will be created. While this is the expected behavior, this means that it will not accept incoming connections until such initialization completes. This may cause issues when using automation tools, such as Docker Compose, which start several containers simultaneously.
 
 If the application you're trying to connect to MySQL does not handle MySQL downtime or waiting for MySQL to start gracefully, then putting a connect-retry loop before the service starts might be necessary. For an example of such an implementation in the official images, see [WordPress](https://github.com/docker-library/wordpress/blob/1b48b4bccd7adb0f7ea1431c7b470a40e186f3da/docker-entrypoint.sh#L195-L235) or [Bonita](https://github.com/docker-library/docs/blob/9660a0cccb87d8db842f33bc0578d769caaf3ba9/bonita/stack.yml#L28-L44).
 

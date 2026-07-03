@@ -35,14 +35,18 @@ $ curl http://localhost/
 hello world
 ```
 
-To override the default [`Caddyfile`](https://github.com/caddyserver/dist/blob/master/config/Caddyfile), you can mount a new one at `/etc/caddy/Caddyfile`:
+To override the default [`Caddyfile`](https://github.com/caddyserver/dist/blob/master/config/Caddyfile), you can create one in the subfolder `conf` at `$PWD/conf/Caddyfile` and mount this folder at `/etc/caddy`:
 
 ```console
 $ docker run -d -p 80:80 \
-    -v $PWD/Caddyfile:/etc/caddy/Caddyfile \
+    -v $PWD/conf:/etc/caddy \
     -v caddy_data:/data \
     %%IMAGE%%
 ```
+
+#### ⚠️ Do not mount the Caddyfile directly at `/etc/caddy/Caddyfile`
+
+If vim or another editor is used that changes the inode of the edited file, the changes will only be applied within the container when the container is recreated, which is explained in detail in this [Medium article](https://medium.com/@jonsbun/why-need-to-be-careful-when-mounting-single-files-into-a-docker-container-4f929340834). When using such an editor, Caddy's graceful reload functionality might not work as expected, as described in [this issue](https://github.com/caddyserver/caddy/issues/5735#issuecomment-1675896585).
 
 ### Automatic TLS with the Caddy image
 
@@ -119,11 +123,9 @@ See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for more details.
 
 ### Docker Compose example
 
-If you prefer to use `docker-compose` to run your stack, here's a sample service definition.
+If you prefer to use `docker compose` to run your stack, here's a sample service definition which goes in a file named `compose.yaml`. The configuration assumes you put a custom Caddyfile into `$PWD/conf` as described [above](#basic-usage).
 
 ```yaml
-version: "3.7"
-
 services:
   caddy:
     image: %%IMAGE%%:<version>
@@ -135,15 +137,14 @@ services:
       - "443:443"
       - "443:443/udp"
     volumes:
-      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - $PWD/conf:/etc/caddy
       - $PWD/site:/srv
       - caddy_data:/data
       - caddy_config:/config
 
 volumes:
   caddy_data:
-    external: true
   caddy_config:
 ```
 
-Defining the data volume as [`external`](https://docs.docker.com/compose/compose-file/compose-file-v3/#external) makes sure `docker-compose down` does not delete the volume. You may need to create it manually using `docker volume create [project-name]_caddy_data`.
+Graceful reloads can then be conducted via `docker compose exec -w /etc/caddy caddy caddy reload`.

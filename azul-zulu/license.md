@@ -1,0 +1,1 @@
+View the [Azul Docker license information](https://github.com/AzulSystems/azul-zulu-images/blob/HEAD/LICENSE.txt) and [OpenJDK License](https://openjdk.org/legal/gplv2+ce.html) for the software contained in this image.

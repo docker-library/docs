@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/ffa90b0ffecc389997799f525e32f45f60b4897a/develop/Dockerfile)
--	[`1.9`, `1.9.5`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/80fba087712325adc72a96265d4984c6760aff1a/1.9/Dockerfile)
+-	[`develop`](https://github.com/eggheads/eggdrop-docker/blob/345ea3bed15c248f9d27ea78bb74bdd13b52637f/develop/Dockerfile)
+
+-	[`1.10`, `1.10.1`, `stable`, `latest`](https://github.com/eggheads/eggdrop-docker/blob/4d59ce8afdc7fc78b6e7aa1c88b1cb693b6945da/1.10/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -152,13 +153,13 @@ to your docker run command line.
 
 ## Common Errors
 
-# docker-compose.yml
+# compose.yaml
 
-A docker-compose.yml example is hosted at https://github.com/eggheads/eggdrop-docker/blob/master/docker-compose.yml . A common error creating your own docker-compose.yml file from scratch is not adding
+A `docker-compose.yml` example is hosted at https://github.com/eggheads/eggdrop-docker/blob/master/docker-compose.yml. A common error creating your own Docker Compose file from scratch is not adding:
 
 	stdin_open: true
 
-to the docker-compose.yml file. Without it, Eggdrop will give you an "END OF FILE ON TERMINAL" error and not start.
+Without it, Eggdrop will give you an "END OF FILE ON TERMINAL" error and not start.
 
 ## Troubleshooting / Support
 

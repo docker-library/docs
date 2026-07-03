@@ -14,6 +14,12 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+https://community.clearlinux.org/t/all-good-things-come-to-an-end-shutting-down-clear-linux-os/10716
+
+> Effective immediately [2025-07-18], Intel will no longer provide security patches, updates, or maintenance for Clear Linux OS, and the Clear Linux OS GitHub repository will be archived in read-only mode. So, if you’re currently using Clear Linux OS, we strongly recommend planning your migration to another actively maintained Linux distribution as soon as possible to ensure ongoing security and stability.
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +30,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/0a57e13031956cb4c3c4329a45a9c557d5fd7186/Dockerfile)
+-	[`latest`, `base`](https://github.com/clearlinux/docker-brew-clearlinux/blob/03e2dcd390233733b398e72ce2382e54b5ef48a4/Dockerfile)
 
 # Quick reference (cont.)
 

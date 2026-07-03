@@ -24,7 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.2.7`, `8.2`, `latest`](https://github.com/convertigo/convertigo/blob/24ab4a5de17fd3de5adf1b12c1fa447400be22a0/docker/default/Dockerfile)
+-	[`8.4.2`, `8.4`, `latest`](https://github.com/convertigo/convertigo/blob/e858e10da3fcec033c75fdfeca963613e0504ebb/docker/default/Dockerfile)
+
+-	[`8.3.13`, `8.3`](https://github.com/convertigo/convertigo/blob/b2d70389f013d3ccb4e50e4388f2a0603015768f/docker/default/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -32,7 +34,7 @@ WARNING:
 	[https://github.com/convertigo/docker/issues](https://github.com/convertigo/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/convertigo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/convertigo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/convertigo/)
+	[`amd64`](https://hub.docker.com/r/amd64/convertigo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/convertigo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/convertigo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/convertigo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/convertigo))  
@@ -47,13 +49,13 @@ WARNING:
 
 # What is Convertigo Low Code Platform ?
 
-Convertigo is an open source fullstack Low Code & No Code platform. The platform is used to build Enterprise Web & Mobile apps in a few days. Convertigo platform is composed of several components:
+Convertigo is an open source fullstack AI driven Low Code & No Code platform. The platform is used to build Enterprise Web & Mobile apps in a few days. Convertigo platform is composed of several components:
 
 1.	**Convertigo Server**: The back-end server part. Handles back-end connectors, micro-services execution, offline data device synchronization and serves Web & Mobile Web apps. Runs as a Docker container with the `convertigo` image
-2.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program Back-end micro-services workflows and use the "Mobile Builder" edition to build Mobile & Web apps UIs in a MXDP (Multi eXperience Development Platform) Low code mode. Can be directly downloaded from [Sourceforge.net](https://sourceforge.net/projects/convertigo/files/latest/download)
+2.	**Convertigo Studio**: Runs on a Windows or a MacOS workstation, Eclipse based IDE, used to program Back-end micro-services workflows and use the "Mobile Builder" edition to build Mobile & Web apps UIs with AI assistance Low code mode. Can be directly downloaded from [Convertigo](https://www.convertigo.com/get-started-page)
 3.	**Convertigo NoCode Studio**: The No Code App Builder to build form based apps as PWAs or Web applications with a Web Based NoCode studio intented for non technical developpers (Citizen Developpers)
 
-Convertigo Community edition brought to you by Convertigo SA (Paris & San Francisco). The platform is currently used by more than 100K developers worldwide, building enterprise class mobile apps.
+Convertigo Community edition brought to you by Convertigo SA. The platform is currently used by more than 150K developers worldwide, building enterprise class business apps.
 
 > [www.convertigo.com](https://www.convertigo.com)
 
@@ -143,6 +145,15 @@ COPY myProject.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_wor
 COPY myDependency.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/projects/
 ```
 
+## Make image with pre-deployed configuration
+
+You can add a set of preconfigured symbols to your image by copying the `global_symbols.properties` file. Make sure this file is located in the same directory as your `Dockerfile`:
+
+```console
+FROM convertigo
+COPY global_symbols.properties /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_workspace/configuration/global_symbols.properties
+```
+
 ## Migrate from an earlier version of Convertigo Low Code Platform
 
 -	Stop the container to perform a backup. And just back the workspace directory. This will backup all the projects definitions and some project data.
@@ -151,7 +162,7 @@ COPY myDependency.car /usr/local/tomcat/webapps/convertigo/WEB-INF/default_user_
 
 ## Security
 
-The default administration account of a Convertigo server is **admin** / **admin** and the **testplatform** is anonymous.
+The default administration account of a Convertigo server is **admin** / **admin**.
 
 These accounts can be configured through the **administration console** and saved in the **workspace**.
 
@@ -163,12 +174,12 @@ You can change the default administration account :
 $ docker run -d --name C8O -e CONVERTIGO_ADMIN_USER=administrator -e CONVERTIGO_ADMIN_PASSWORD=s3cret -p 28080:28080 convertigo
 ```
 
-### `CONVERTIGO_TESTPLATFORM_USER` and `CONVERTIGO_TESTPLATFORM_PASSWORD` Environment variables
+### `CONVERTIGO_ANONYMOUS_DASHBOARD` Environment variable
 
-You can lock the **testplatform** by setting the account :
+You can allow anonymous access to `/convertigo/dashboard/` by setting:
 
 ```console
-$ docker run -d --name C8O -e CONVERTIGO_TESTPLATFORM_USER=tp_user -e CONVERTIGO_TESTPLATFORM_PASSWORD=s3cret -p 28080:28080 convertigo
+$ docker run -d --name C8O -e CONVERTIGO_ANONYMOUS_DASHBOARD=true -p 28080:28080 convertigo
 ```
 
 ## HTTPS / SSL Configuration
@@ -322,16 +333,20 @@ The default `ENABLE_JDWP_DEBUG` value is **false** and can be defined this way:
 $ docker run -d –name C8O -e ENABLE_JDWP_DEBUG=true -p 28080:28080 convertigo
 ```
 
-## Pre configurated Docker compose stack
+## Pre configurated `docker compose` stack
 
-You can use this [stack](https://github.com/convertigo/docker/blob/master/compose/mbaas/docker-compose.yml) to run a complete Convertigo Low Code server with FullSync repository and MySQL analytics in a few command lines.
+You can use this [README](https://github.com/convertigo/docker/tree/compose) to run a complete Convertigo Low Code server.
 
 ```console
-$ mkdir c8oMBaaS
-$ cd c8oMBaaS
-$ wget https://raw.githubusercontent.com/convertigo/docker/master/compose/mbaas/docker-compose.yml
-$ docker-compose up -d
+$ mkdir convertigo
+$ cd convertigo
+$ curl -sL https://github.com/convertigo/docker/archive/refs/heads/compose.tar.gz | tar xvz --strip-components=1
+$ docker compose up -d
 ```
+
+## Convertigo Helm chart
+
+You can find the [Convertigo Helm chart](https://artifacthub.io/packages/helm/convertigo/convertigo) and its documentation on ArtifactHUB.
 
 # License
 

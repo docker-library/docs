@@ -1,1 +1,1 @@
-Gradle is a build tool with a focus on build automation and support for multi-language development.
+Gradle is a fast, reliable, and flexible open-source build tool with an elegant, extensible DSL.

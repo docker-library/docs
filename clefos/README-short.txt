@@ -1,1 +1,1 @@
-The official build of ClefOS.
+DEPRECATED; The official build of ClefOS.

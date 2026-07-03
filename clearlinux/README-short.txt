@@ -1,1 +1,1 @@
-Official docker build of Clear Linux OS for Intel Architecture
+DEPRECATED; Official docker build of Clear Linux OS for Intel Architecture

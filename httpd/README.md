@@ -24,8 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.59`, `2.4`, `2`, `latest`, `2.4.59-bookworm`, `2.4-bookworm`, `2-bookworm`, `bookworm`](https://github.com/docker-library/httpd/blob/b1cb5ded14f70d67aaa987d3267036884a7320ef/2.4/Dockerfile)
--	[`2.4.59-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.59-alpine3.19`, `2.4-alpine3.19`, `2-alpine3.19`, `alpine3.19`](https://github.com/docker-library/httpd/blob/082047ae2f5373e3f542f983a7997b8f957ed518/2.4/alpine/Dockerfile)
+-	[`2.4.67`, `2.4`, `2`, `latest`, `2.4.67-trixie`, `2.4-trixie`, `2-trixie`, `trixie`](https://github.com/docker-library/httpd/blob/80149d966fac4bf538fd5209a793c586c4c7f5f2/2.4/Dockerfile)
+
+-	[`2.4.67-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.67-alpine3.23`, `2.4-alpine3.23`, `2-alpine3.23`, `alpine3.23`](https://github.com/docker-library/httpd/blob/80149d966fac4bf538fd5209a793c586c4c7f5f2/2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +34,7 @@ WARNING:
 	[https://github.com/docker-library/httpd/issues](https://github.com/docker-library/httpd/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/httpd/), [`arm32v5`](https://hub.docker.com/r/arm32v5/httpd/), [`arm32v6`](https://hub.docker.com/r/arm32v6/httpd/), [`arm32v7`](https://hub.docker.com/r/arm32v7/httpd/), [`arm64v8`](https://hub.docker.com/r/arm64v8/httpd/), [`i386`](https://hub.docker.com/r/i386/httpd/), [`mips64le`](https://hub.docker.com/r/mips64le/httpd/), [`ppc64le`](https://hub.docker.com/r/ppc64le/httpd/), [`s390x`](https://hub.docker.com/r/s390x/httpd/)
+	[`amd64`](https://hub.docker.com/r/amd64/httpd/), [`arm32v5`](https://hub.docker.com/r/arm32v5/httpd/), [`arm32v6`](https://hub.docker.com/r/arm32v6/httpd/), [`arm32v7`](https://hub.docker.com/r/arm32v7/httpd/), [`arm64v8`](https://hub.docker.com/r/arm64v8/httpd/), [`i386`](https://hub.docker.com/r/i386/httpd/), [`ppc64le`](https://hub.docker.com/r/ppc64le/httpd/), [`riscv64`](https://hub.docker.com/r/riscv64/httpd/), [`s390x`](https://hub.docker.com/r/s390x/httpd/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/httpd/` directory](https://github.com/docker-library/repo-info/blob/master/repos/httpd) ([history](https://github.com/docker-library/repo-info/commits/master/repos/httpd))  
@@ -52,7 +53,7 @@ The Apache HTTP Server, colloquially called Apache, is a Web server application 
 
 > [wikipedia.org/wiki/Apache_HTTP_Server](http://en.wikipedia.org/wiki/Apache_HTTP_Server)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/8e367edd887f5fe876890a0ab4d08806527a1571/httpd/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/a009666e9e666a3051a1f04127fd9464da692fc1/httpd/logo.svg?sanitize=true)
 
 # How to use this image.
 
@@ -133,7 +134,7 @@ The `httpd` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `httpd:<version>-alpine`
 

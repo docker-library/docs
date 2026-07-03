@@ -17,21 +17,40 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Neo4j](https://github.com/neo4j/docker-neo4j)
+	[Neo4j](https://www.neo4j.com)
 
 -	**Where to get help**:  
-	[Neo4j Community Forums](https://community.neo4j.com)
+	[Neo4j Community Forums](https://community.neo4j.com), [Neo4j Docker Documentation](https://neo4j.com/docs/operations-manual/current/docker/), [Discord](https://discord.gg/neo4j)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.19.0-community-bullseye`, `5.19-community-bullseye`, `5-community-bullseye`, `5.19.0-community`, `5.19-community`, `5-community`, `5.19.0-bullseye`, `5.19-bullseye`, `5-bullseye`, `5.19.0`, `5.19`, `5`, `community-bullseye`, `community`, `bullseye`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/7c6df60835e7d09c6c21f9885bd802a45c6eb31f/5.19.0/bullseye/community/Dockerfile)
--	[`5.19.0-enterprise-bullseye`, `5.19-enterprise-bullseye`, `5-enterprise-bullseye`, `5.19.0-enterprise`, `5.19-enterprise`, `5-enterprise`, `enterprise-bullseye`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/7c6df60835e7d09c6c21f9885bd802a45c6eb31f/5.19.0/bullseye/enterprise/Dockerfile)
--	[`5.19.0-community-ubi9`, `5.19-community-ubi9`, `5-community-ubi9`, `5.19.0-ubi9`, `5.19-ubi9`, `5-ubi9`, `community-ubi9`, `ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/7c6df60835e7d09c6c21f9885bd802a45c6eb31f/5.19.0/ubi9/community/Dockerfile)
--	[`5.19.0-enterprise-ubi9`, `5.19-enterprise-ubi9`, `5-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/7c6df60835e7d09c6c21f9885bd802a45c6eb31f/5.19.0/ubi9/enterprise/Dockerfile)
--	[`5.19.0-community-ubi8`, `5.19-community-ubi8`, `5-community-ubi8`, `5.19.0-ubi8`, `5.19-ubi8`, `5-ubi8`, `community-ubi8`, `ubi8`](https://github.com/neo4j/docker-neo4j-publish/blob/7c6df60835e7d09c6c21f9885bd802a45c6eb31f/5.19.0/ubi8/community/Dockerfile)
--	[`5.19.0-enterprise-ubi8`, `5.19-enterprise-ubi8`, `5-enterprise-ubi8`, `enterprise-ubi8`](https://github.com/neo4j/docker-neo4j-publish/blob/7c6df60835e7d09c6c21f9885bd802a45c6eb31f/5.19.0/ubi8/enterprise/Dockerfile)
--	[`4.4.33`, `4.4.33-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/4ec712022a9c5c99e7e869571bb6f4df744c3c21/4.4.33/bullseye/community/Dockerfile)
--	[`4.4.33-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/4ec712022a9c5c99e7e869571bb6f4df744c3c21/4.4.33/bullseye/enterprise/Dockerfile)
+-	[`2026.04.0-community-trixie`, `2026.04-community-trixie`, `2026-community-trixie`, `2026.04.0-community`, `2026.04-community`, `2026-community`, `2026.04.0-trixie`, `2026.04-trixie`, `2026-trixie`, `2026.04.0`, `2026.04`, `2026`, `community-trixie`, `community`, `trixie`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/trixie/community/Dockerfile)
+
+-	[`2026.04.0-enterprise-trixie`, `2026.04-enterprise-trixie`, `2026-enterprise-trixie`, `2026.04.0-enterprise`, `2026.04-enterprise`, `2026-enterprise`, `enterprise-trixie`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/trixie/enterprise/Dockerfile)
+
+-	[`2026.04.0-community-ubi10`, `2026.04-community-ubi10`, `2026-community-ubi10`, `2026.04.0-ubi10`, `2026.04-ubi10`, `2026-ubi10`, `community-ubi10`, `ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/ubi10/community/Dockerfile)
+
+-	[`2026.04.0-enterprise-ubi10`, `2026.04-enterprise-ubi10`, `2026-enterprise-ubi10`, `enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/ubi10/enterprise/Dockerfile)
+
+-	[`2026.04.0-community-bullseye`, `2026.04-community-bullseye`, `2026-community-bullseye`, `2026.04.0-bullseye`, `2026.04-bullseye`, `2026-bullseye`, `community-bullseye`, `bullseye`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/bullseye/community/Dockerfile)
+
+-	[`2026.04.0-enterprise-bullseye`, `2026.04-enterprise-bullseye`, `2026-enterprise-bullseye`, `enterprise-bullseye`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/bullseye/enterprise/Dockerfile)
+
+-	[`2026.04.0-community-ubi9`, `2026.04-community-ubi9`, `2026-community-ubi9`, `2026.04.0-ubi9`, `2026.04-ubi9`, `2026-ubi9`, `community-ubi9`, `ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/ubi9/community/Dockerfile)
+
+-	[`2026.04.0-enterprise-ubi9`, `2026.04-enterprise-ubi9`, `2026-enterprise-ubi9`, `enterprise-ubi9`](https://github.com/neo4j/docker-neo4j-publish/blob/ae06064fb16112cbf1fd11ed327240dfc27d3d5c/2026.04.0/ubi9/enterprise/Dockerfile)
+
+-	[`5.26.25-community-trixie`, `5.26-community-trixie`, `5-community-trixie`, `5.26.25-community`, `5.26-community`, `5-community`, `5.26.25-trixie`, `5.26-trixie`, `5-trixie`, `5.26.25`, `5.26`, `5`](https://github.com/neo4j/docker-neo4j-publish/blob/a7409e0160b1692f2530c1f306f2477913ea947f/5.26.25/trixie/community/Dockerfile)
+
+-	[`5.26.25-enterprise-trixie`, `5.26-enterprise-trixie`, `5-enterprise-trixie`, `5.26.25-enterprise`, `5.26-enterprise`, `5-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/a7409e0160b1692f2530c1f306f2477913ea947f/5.26.25/trixie/enterprise/Dockerfile)
+
+-	[`5.26.25-community-ubi10`, `5.26-community-ubi10`, `5-community-ubi10`, `5.26.25-ubi10`, `5.26-ubi10`, `5-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/a7409e0160b1692f2530c1f306f2477913ea947f/5.26.25/ubi10/community/Dockerfile)
+
+-	[`5.26.25-enterprise-ubi10`, `5.26-enterprise-ubi10`, `5-enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/a7409e0160b1692f2530c1f306f2477913ea947f/5.26.25/ubi10/enterprise/Dockerfile)
+
+-	[`4.4.48`, `4.4.48-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/a3f58105abfd307a24467da003f46d4bd13813f3/4.4.48/bullseye/community/Dockerfile)
+
+-	[`4.4.48-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/a3f58105abfd307a24467da003f46d4bd13813f3/4.4.48/bullseye/enterprise/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -54,7 +73,7 @@ WARNING:
 
 # What is Neo4j?
 
-Neo4j is the world's leading graph database, with native graph storage and processing. You can learn more [here](http://neo4j.com/developer).
+Neo4j is the world's leading graph database, with native graph storage and processing. You can learn more [here](http://neo4j.com).
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/56823e63d5b6dd7ddbb9d5d3c4a8947778055d8e/neo4j/logo.png)
 
@@ -69,11 +88,11 @@ docker run \
     neo4j
 ```
 
-which allows you to access neo4j through your browser at [http://localhost:7474](http://localhost:7474).
+This binds two ports (`7474` and `7687`) for HTTP and Bolt access to the Neo4j API. A volume is bound to `/data` to allow the database to be persisted outside the container. Once running, you can use the [Neo4j Aura console](https://console.neo4j.io/ce) which includes graph tools for visualizations, data exploration, and monitoring for free. No subscription is required. Simply create a self-managed instance and specify `bolt://localhost:7687` or `http://localhost:7474` in the "Add Deployment" UI.
 
-This binds two ports (`7474` and `7687`) for HTTP and Bolt access to the Neo4j API. A volume is bound to `/data` to allow the database to be persisted outside the container.
+Alternatively, you can use the Neo4j Browser, a web-based user interface for interacting with Neo4j that is included with the Neo4j installation. To access the Neo4j Browser, open a web browser and navigate to http://localhost:7474.
 
-By default, this requires you to login with `neo4j/neo4j` and change the password. You can, for development purposes, disable authentication by passing `--env=NEO4J_AUTH=none` to docker run.
+Your default credentials are neo4j/neo4j. You will be prompted to change the password upon first login. For development purposes, you can disable authentication by passing `--env=NEO4J_AUTH=none` to docker run.
 
 # Documentation
 

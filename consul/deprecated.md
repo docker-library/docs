@@ -1,1 +1,0 @@
-Upcoming in Consul 1.16, we will stop publishing official Dockerhub images and publish only our Verified Publisher images. Users of Docker images should pull from [hashicorp/consul](https://hub.docker.com/r/hashicorp/consul) instead of [consul](https://hub.docker.com/_/consul). Verified Publisher images can be found at https://hub.docker.com/r/hashicorp/consul.

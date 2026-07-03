@@ -24,9 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.3-apache`, `5.0-apache`, `5-apache`, `apache`, `5.0.3`, `5.0`, `5`, `latest`](https://github.com/matomo-org/docker/blob/8137a7127656d793a7da44fdef7b147b931ba68f/apache/Dockerfile)
--	[`5.0.3-fpm`, `5.0-fpm`, `5-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/8137a7127656d793a7da44fdef7b147b931ba68f/fpm/Dockerfile)
--	[`5.0.3-fpm-alpine`, `5.0-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/8137a7127656d793a7da44fdef7b147b931ba68f/fpm-alpine/Dockerfile)
+-	[`5.10.0-apache`, `5.10-apache`, `5-apache`, `apache`, `5.10.0`, `5.10`, `5`, `latest`](https://github.com/matomo-org/docker/blob/adb618afe1527cfed9655983fe79a6275b65ad1b/apache/Dockerfile)
+
+-	[`5.10.0-fpm`, `5.10-fpm`, `5-fpm`, `fpm`](https://github.com/matomo-org/docker/blob/adb618afe1527cfed9655983fe79a6275b65ad1b/fpm/Dockerfile)
+
+-	[`5.10.0-fpm-alpine`, `5.10-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`](https://github.com/matomo-org/docker/blob/adb618afe1527cfed9655983fe79a6275b65ad1b/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -34,7 +36,7 @@ WARNING:
 	[https://github.com/matomo-org/docker/issues](https://github.com/matomo-org/docker/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/matomo/), [`arm32v5`](https://hub.docker.com/r/arm32v5/matomo/), [`arm32v6`](https://hub.docker.com/r/arm32v6/matomo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/matomo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/matomo/), [`i386`](https://hub.docker.com/r/i386/matomo/), [`mips64le`](https://hub.docker.com/r/mips64le/matomo/), [`ppc64le`](https://hub.docker.com/r/ppc64le/matomo/), [`s390x`](https://hub.docker.com/r/s390x/matomo/)
+	[`amd64`](https://hub.docker.com/r/amd64/matomo/), [`arm32v5`](https://hub.docker.com/r/arm32v5/matomo/), [`arm32v6`](https://hub.docker.com/r/arm32v6/matomo/), [`arm32v7`](https://hub.docker.com/r/arm32v7/matomo/), [`arm64v8`](https://hub.docker.com/r/arm64v8/matomo/), [`i386`](https://hub.docker.com/r/i386/matomo/), [`ppc64le`](https://hub.docker.com/r/ppc64le/matomo/), [`riscv64`](https://hub.docker.com/r/riscv64/matomo/), [`s390x`](https://hub.docker.com/r/s390x/matomo/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/matomo/` directory](https://github.com/docker-library/repo-info/blob/master/repos/matomo) ([history](https://github.com/docker-library/repo-info/commits/master/repos/matomo))  
@@ -57,7 +59,7 @@ WARNING:
 -	User-centric insights
 -	Customisable and extensible
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/955ef68222b4466509ca877daab484bc0095afcf/matomo/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/1553a3fe5fc08c4619fcacb51e61e33f3495e26d/matomo/logo.svg?sanitize=true)
 
 # How to use this image
 
@@ -103,9 +105,9 @@ The PHP memory limit can be configured with the following environment variable:
 
 -	`PHP_MEMORY_LIMIT`
 
-## Docker-compose examples and log import instructions
+## Docker Compose examples and log import instructions
 
-A minimal set-up using docker-compose is available in the [.examples folder](https://github.com/matomo-org/docker/tree/master/.examples).
+A minimal set-up using Docker Compose is available in the [.examples folder](https://github.com/matomo-org/docker/tree/master/.examples).
 
 If you want to use the import logs script, you can then run the following container as needed, in order to execute the python import logs script:
 

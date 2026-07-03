@@ -24,8 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.0.0-alpha.1`](https://github.com/docker/distribution-library-image/blob/6356e8dbe1969f7340ca25a9874faa26e6e6f71d/Dockerfile)
--	[`2.8.3`, `2.8`, `2`, `latest`](https://github.com/docker/distribution-library-image/blob/39dd72feaab7066334829d6945c54bc51a0aee98/Dockerfile)
+-	[`3.1.1`, `3.1`, `3`, `latest`](https://github.com/distribution/distribution-library-image/blob/0c2328319a030d953c159f57e4ad7693a9a08a8a/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -33,7 +32,7 @@ WARNING:
 	[https://github.com/distribution/distribution-library-image/issues](https://github.com/distribution/distribution-library-image/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/registry/), [`arm32v6`](https://hub.docker.com/r/arm32v6/registry/), [`arm32v7`](https://hub.docker.com/r/arm32v7/registry/), [`arm64v8`](https://hub.docker.com/r/arm64v8/registry/), [`ppc64le`](https://hub.docker.com/r/ppc64le/registry/), [`s390x`](https://hub.docker.com/r/s390x/registry/)
+	[`amd64`](https://hub.docker.com/r/amd64/registry/), [`arm32v6`](https://hub.docker.com/r/arm32v6/registry/), [`arm32v7`](https://hub.docker.com/r/arm32v7/registry/), [`arm64v8`](https://hub.docker.com/r/arm64v8/registry/), [`ppc64le`](https://hub.docker.com/r/ppc64le/registry/), [`riscv64`](https://hub.docker.com/r/riscv64/registry/), [`s390x`](https://hub.docker.com/r/s390x/registry/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/registry/` directory](https://github.com/docker-library/repo-info/blob/master/repos/registry) ([history](https://github.com/docker-library/repo-info/commits/master/repos/registry))  
@@ -55,7 +54,7 @@ This image contains an implementation of the OCI Distribution spec. See [github.
 ## Run a local registry: Quick Version
 
 ```console
-$ docker run -d -p 5000:5000 --restart always --name registry registry:2
+$ docker run -d -p 5000:5000 --restart always --name registry registry:3
 ```
 
 Now, use it from within Docker:
