@@ -48,10 +48,6 @@ WARNING:
 
 -	[`2.6.31-alpine`, `2.6-alpine`, `2.6.31-alpine3.24`, `2.6-alpine3.24`](https://github.com/docker-library/haproxy/blob/d41dc8229f8615343f080f84cd4ebb9f3500b98d/2.6/alpine/Dockerfile)
 
--	[`2.4.36`, `2.4`, `2.4.36-trixie`, `2.4-trixie`](https://github.com/docker-library/haproxy/blob/ae7d6be4c656eaa0731b39802fe81ea34cd7ac19/2.4/Dockerfile)
-
--	[`2.4.36-alpine`, `2.4-alpine`, `2.4.36-alpine3.24`, `2.4-alpine3.24`](https://github.com/docker-library/haproxy/blob/ae7d6be4c656eaa0731b39802fe81ea34cd7ac19/2.4/alpine/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
