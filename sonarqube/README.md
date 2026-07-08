@@ -56,7 +56,7 @@ WARNING:
 
 -	[`2025.1.8-datacenter-search`, `2025.1-datacenter-search`, `2025-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/24038659701d0a53c0f494d57f09c4da67274020/commercial-editions/datacenter/search/Dockerfile)
 
--	[`26.6.0.123539-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/2820b787cfd098c13fd6505626cf27fce2dc66e8/community-build/Dockerfile)
+-	[`26.7.0.124771-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/8de5d6138eb883e4225b6a264a5117a8ce117eb9/community-build/Dockerfile)
 
 # Quick reference (cont.)
 

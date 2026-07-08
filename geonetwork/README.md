@@ -28,9 +28,9 @@ WARNING:
 
 -	[`3.12.12-postgres`, `3.12-postgres`, `3-postgres`](https://github.com/geonetwork/docker-geonetwork/blob/17278beab34080c90454c0b7059bd6b49701f979/3.12.12/postgres/Dockerfile)
 
--	[`4.2.16`, `4.2`](https://github.com/geonetwork/docker-geonetwork/blob/4941b6a2f4f16c44bf0fe219feadc36bc4f3aea9/4.2.16/Dockerfile)
+-	[`4.2.17`, `4.2`](https://github.com/geonetwork/docker-geonetwork/blob/e9f63f420e69b4652657811fbbda2bd08250d3cb/4.2.17/Dockerfile)
 
--	[`4.4.11`, `4.4`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/491f3faf9465394003e24fba6f74fb51b9e24069/4.4.11/Dockerfile)
+-	[`4.4.12`, `4.4`, `4`, `latest`](https://github.com/geonetwork/docker-geonetwork/blob/2951781f87c63b1a69a1def46c8b3605de843870/4.4.12/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -307,6 +307,7 @@ services:
         -Des.url=http://elasticsearch:9200
         -Des.username=
         -Des.password=
+        -Dkb.url=http://kibana:5601
         -Dgeonetwork.ESFeaturesProxy.targetUri=http://elasticsearch:9200/gn-features/{_}
         -Dgeonetwork.HttpDashboardProxy.targetUri=http://kibana:5601
 
@@ -363,7 +364,6 @@ services:
       ELASTICSEARCH_URL: http://elasticsearch:9200/
       SERVER_BASEPATH: /geonetwork/dashboards
       SERVER_REWRITEBASEPATH: 'false'
-      KIBANA_INDEX: .dashboards
       XPACK_MONITORING_UI_CONTAINER_ELASTICSEARCH_ENABLED: 'true'
     depends_on:
       elasticsearch:
