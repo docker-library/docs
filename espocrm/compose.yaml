@@ -4,10 +4,10 @@ services:
     image: mariadb:latest
     container_name: espocrm-db
     environment:
-      MARIADB_ROOT_PASSWORD: root_password
+      MARIADB_ROOT_PASSWORD: your_root_password
       MARIADB_DATABASE: espocrm
       MARIADB_USER: espocrm
-      MARIADB_PASSWORD: database_password
+      MARIADB_PASSWORD: your_database_password
     volumes:
       - espocrm-db:/var/lib/mysql
     restart: unless-stopped
@@ -24,9 +24,9 @@ services:
     environment:
       ESPOCRM_DATABASE_HOST: espocrm-db
       ESPOCRM_DATABASE_USER: espocrm
-      ESPOCRM_DATABASE_PASSWORD: database_password
+      ESPOCRM_DATABASE_PASSWORD: your_database_password
       ESPOCRM_ADMIN_USERNAME: admin
-      ESPOCRM_ADMIN_PASSWORD: password
+      ESPOCRM_ADMIN_PASSWORD: your_admin_password
       ESPOCRM_SITE_URL: "http://localhost:8080"
     volumes:
       - espocrm-data:/var/www/html/data

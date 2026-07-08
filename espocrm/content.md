@@ -20,78 +20,64 @@ Start by creating a dedicated Docker network for the containers:
 $ docker network create some-network
 ```
 
-The EspoCRM image requires a MariaDB or MySQL server:
+This image requires a running MariaDB or MySQL server:
 
 ```
 $ docker run \
   --name espocrm-db \
   --network some-network \
-  -e MARIADB_ROOT_PASSWORD=password \
+  -e MARIADB_ROOT_PASSWORD=your_root_password \
   -e MARIADB_DATABASE=espocrm \
   -e MARIADB_USER=espocrm \
-  -e MARIADB_PASSWORD=database_password \
+  -e MARIADB_PASSWORD=your_database_password \
   -d mariadb
 ```
 
-- `MARIADB_ROOT_PASSWORD=password` — root password,
-- `MARIADB_DATABASE=espocrm` — database name,
-- `MARIADB_USER=espocrm` — database username,
-- `MARIADB_PASSWORD=database_password` — database username password.
-
-Run EspoCRM container:
+Then, run EspoCRM container:
 
 ```
 $ docker run \
   --name %%REPO%% \
   --network some-network \
-  -e ESPOCRM_DATABASE_HOST=espocrm-db \
   -e ESPOCRM_DATABASE_USER=espocrm \
-  -e ESPOCRM_DATABASE_PASSWORD=database_password \
+  -e ESPOCRM_DATABASE_PASSWORD=your_database_password \
   -e ESPOCRM_ADMIN_USERNAME=admin \
-  -e ESPOCRM_ADMIN_PASSWORD=password \
+  -e ESPOCRM_ADMIN_PASSWORD=your_admin_password \
   -d %%IMAGE%%
 ```
 
-- `ESPOCRM_DATABASE_HOST=espocrm-db` - database container name,
-- `ESPOCRM_DATABASE_USER=espocrm` - database user,
-- `ESPOCRM_DATABASE_PASSWORD=database_password` - database user password,
-- `ESPOCRM_ADMIN_USERNAME=admin` - admin username,
-- `ESPOCRM_ADMIN_PASSWORD=password` - admin password.
-
-### Run EspoCRM container via a specific port:
+### Run container via a specific port
 
 ```
 $ docker run \
   --name %%REPO%% \
   --network some-network \
   -p 8080:80 \
-  -e ESPOCRM_DATABASE_HOST=espocrm-db \
   -e ESPOCRM_DATABASE_USER=espocrm \
-  -e ESPOCRM_DATABASE_PASSWORD=database_password \
+  -e ESPOCRM_DATABASE_PASSWORD=your_database_password \
   -e ESPOCRM_ADMIN_USERNAME=admin \
-  -e ESPOCRM_ADMIN_PASSWORD=password \
+  -e ESPOCRM_ADMIN_PASSWORD=your_admin_password \
   -d %%IMAGE%%
 ```
 
-Then access it at `http://localhost:8080` with the `admin` and `password` credentials.
+Then access it at `http://localhost:8080` with the `admin` and `your_admin_password` credentials.
 
-### Run EspoCRM via a specific IP or a domain with a port:
+### Run container via a specific IP or a domain with a port
 
 ```
 $ docker run \
   --name %%REPO%% \
   --network some-network \
   -p 8080:80 \
-  -e ESPOCRM_DATABASE_HOST=espocrm-db \
   -e ESPOCRM_DATABASE_USER=espocrm \
-  -e ESPOCRM_DATABASE_PASSWORD=database_password \
+  -e ESPOCRM_DATABASE_PASSWORD=your_database_password \
   -e ESPOCRM_ADMIN_USERNAME=admin \
-  -e ESPOCRM_ADMIN_PASSWORD=password \
-  -e ESPOCRM_SITE_URL=http://172.20.0.100:8080 \
+  -e ESPOCRM_ADMIN_PASSWORD=your_admin_password \
+  -e ESPOCRM_SITE_URL=http://192.168.0.100:8080 \
   -d %%IMAGE%%
 ```
 
-Then access it at `http://172.20.0.100:8080` with the `admin` and `password` credentials.
+Then access it at `http://192.168.0.100:8080` with the `admin` and `your_admin_password` credentials.
 
 ## Installing with Traefik
 
@@ -108,9 +94,9 @@ To upgrade the container created by `docker-compose.yml`:
 1. Open your EspoCRM container directory.
 2. Run the command:
 
-  ```
-  $ docker compose pull && docker compose up -d
-  ```
+```
+$ docker compose pull && docker compose up -d
+```
 
 The container will be upgraded to the latest version within a few minutes.
 
@@ -143,6 +129,10 @@ Database platform. The possible values: `Mysql` or `Postgresql`. The default val
 
 Database host name for EspoCRM. The default value is `espocrm-db`.
 
+#### ESPOCRM_DATABASE_PORT
+
+Database port for EspoCRM. The default value is empty.
+
 #### ESPOCRM_DATABASE_NAME
 
 Database name for EspoCRM. The default value is `espocrm`.
@@ -165,11 +155,11 @@ User password for an administrator of EspoCRM. The default value is `password`.
 
 #### ESPOCRM_SITE_URL
 
-The URL of EspoCRM. This option is very important for normal operating of EspoCRM. Examples: `http://172.20.0.100:8080`, `http://my-crm.local`.
+The URL of EspoCRM. This option is very important for normal operating of EspoCRM. Examples: `http://192.168.0.100:8080`, `http://my-crm.local`.
 
 ### Other optional options
 
-The list of possible values and their default values can be found in the EspoCRM Administrator panel under Settings.
+The list of possible values and their default values can be found in EspoCRM Administrator panel > Settings.
 
 -	`ESPOCRM_LANGUAGE`
 -	`ESPOCRM_DATE_FORMAT`
