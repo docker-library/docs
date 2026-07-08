@@ -52,6 +52,7 @@ services:
         -Des.url=http://elasticsearch:9200
         -Des.username=
         -Des.password=
+        -Dkb.url=http://kibana:5601
         -Dgeonetwork.ESFeaturesProxy.targetUri=http://elasticsearch:9200/gn-features/{_}
         -Dgeonetwork.HttpDashboardProxy.targetUri=http://kibana:5601
 
@@ -108,7 +109,6 @@ services:
       ELASTICSEARCH_URL: http://elasticsearch:9200/
       SERVER_BASEPATH: /geonetwork/dashboards
       SERVER_REWRITEBASEPATH: 'false'
-      KIBANA_INDEX: .dashboards
       XPACK_MONITORING_UI_CONTAINER_ELASTICSEARCH_ENABLED: 'true'
     depends_on:
       elasticsearch:
