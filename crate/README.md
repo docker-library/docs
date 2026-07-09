@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.3.4`, `6.3`, `latest`](https://github.com/crate/docker-crate/blob/f65790b35dc2883fb3719fe5d381220f70223acc/Dockerfile)
+-	[`6.3.5`, `6.3`, `latest`](https://github.com/crate/docker-crate/blob/ccd9a41f0c3aa6591726561a984a26c29111c39e/Dockerfile)
 
--	[`6.2.10`, `6.2`](https://github.com/crate/docker-crate/blob/441069b7211e54f0b9af2c91398420ce55fee2b4/Dockerfile)
+-	[`6.2.11`, `6.2`](https://github.com/crate/docker-crate/blob/76ff6f9140b594332ece2d66c71c016fe2153699/Dockerfile)
 
--	[`6.1.5`, `6.1`](https://github.com/crate/docker-crate/blob/aa00f0724feac7292e80b1c71a350ff3027d272e/Dockerfile)
+-	[`6.1.6`, `6.1`](https://github.com/crate/docker-crate/blob/04e070dd4bb72d7e8a4f31950b8cf63f88605311/Dockerfile)
 
--	[`6.0.7`, `6.0`](https://github.com/crate/docker-crate/blob/8b55770d25e60182ccf1b294ac7a6c60c4c89022/Dockerfile)
+-	[`6.0.8`, `6.0`](https://github.com/crate/docker-crate/blob/6830c7f8fb59561f4937c763849ecb0140b1250c/Dockerfile)
 
 # Quick reference (cont.)
 

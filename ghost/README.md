@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.51.0-bookworm`, `6.51.0`, `6.51-bookworm`, `6.51`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/TryGhost/docker-library-ghost/blob/b50dfc2e43e689f5bf8f4891fbc4cf38400a625b/6/bookworm/Dockerfile)
+-	[`6.52.0-bookworm`, `6.52.0`, `6.52-bookworm`, `6.52`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/TryGhost/docker-library-ghost/blob/2e666928621693be8331aaf9b7d7b42186053a6a/6/bookworm/Dockerfile)
 
--	[`6.51.0-alpine3.23`, `6.51.0-alpine`, `6.51-alpine3.23`, `6.51-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/TryGhost/docker-library-ghost/blob/b50dfc2e43e689f5bf8f4891fbc4cf38400a625b/6/alpine3.23/Dockerfile)
+-	[`6.52.0-alpine3.23`, `6.52.0-alpine`, `6.52-alpine3.23`, `6.52-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/TryGhost/docker-library-ghost/blob/2e666928621693be8331aaf9b7d7b42186053a6a/6/alpine3.23/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -34,7 +34,7 @@ WARNING:
 	[https://github.com/TryGhost/docker-library-ghost/issues](https://github.com/TryGhost/docker-library-ghost/issues?q=)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/), [`s390x`](https://hub.docker.com/r/s390x/ghost/)
+	[`amd64`](https://hub.docker.com/r/amd64/ghost/), [`arm32v7`](https://hub.docker.com/r/arm32v7/ghost/), [`arm64v8`](https://hub.docker.com/r/arm64v8/ghost/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/ghost/` directory](https://github.com/docker-library/repo-info/blob/master/repos/ghost) ([history](https://github.com/docker-library/repo-info/commits/master/repos/ghost))  
