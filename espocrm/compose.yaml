@@ -19,7 +19,7 @@ services:
       retries: 3
 
   espocrm:
-    image: espocrm/espocrm:latest
+    image: espocrm:latest
     container_name: espocrm
     environment:
       ESPOCRM_DATABASE_HOST: espocrm-db
@@ -46,7 +46,7 @@ services:
       - 8080:80
 
   espocrm-daemon:
-    image: espocrm/espocrm:latest
+    image: espocrm:latest
     container_name: espocrm-daemon
     volumes_from:
       - espocrm
@@ -55,15 +55,9 @@ services:
     depends_on:
       espocrm:
         condition: service_healthy
-    healthcheck:
-      test: ["CMD", "bin/command", "app-check"]
-      start_period: 20s
-      interval: 180s
-      timeout: 20s
-      retries: 3
 
   espocrm-websocket:
-    image: espocrm/espocrm:latest
+    image: espocrm:latest
     container_name: espocrm-websocket
     environment:
       ESPOCRM_CONFIG_USE_WEB_SOCKET: "true"
@@ -77,12 +71,6 @@ services:
     depends_on:
       espocrm:
         condition: service_healthy
-    healthcheck:
-      test: ["CMD", "bin/command", "app-check"]
-      start_period: 20s
-      interval: 180s
-      timeout: 20s
-      retries: 3
     ports:
       - 8081:8080
 
