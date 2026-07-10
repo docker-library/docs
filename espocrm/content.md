@@ -12,93 +12,120 @@ The basic pattern for starting an `%%REPO%%` instance is:
 $ docker run --name some-%%REPO%% -d %%IMAGE%%
 ```
 
-## Complete configuration
+## Quick start
 
-Start by creating a dedicated Docker network for the containers:
-
-```
-$ docker network create some-network
-```
-
-This image requires a running MariaDB or MySQL server:
-
-```
-$ docker run \
+```bash
+docker network create espocrm-network && \
+docker volume create espocrm-db && \
+docker volume create espocrm-data && \
+docker volume create espocrm-custom && \
+docker volume create espocrm-custom-client && \
+docker run \
   --name espocrm-db \
-  --network some-network \
-  -e MARIADB_ROOT_PASSWORD=your_root_password \
+  --network espocrm-network \
+  --restart unless-stopped \
   -e MARIADB_DATABASE=espocrm \
   -e MARIADB_USER=espocrm \
   -e MARIADB_PASSWORD=your_database_password \
-  -d mariadb
-```
-
-Then, run EspoCRM container:
-
-```
-$ docker run \
-  --name %%REPO%% \
-  --network some-network \
-  -e ESPOCRM_DATABASE_USER=espocrm \
+  -e MARIADB_ROOT_PASSWORD=your_root_password \
+  -v espocrm-db:/var/lib/mysql \
+  -d mariadb && \
+docker run \
+  --name espocrm \
+  --network espocrm-network \
+  --restart unless-stopped \
   -e ESPOCRM_DATABASE_PASSWORD=your_database_password \
   -e ESPOCRM_ADMIN_USERNAME=admin \
   -e ESPOCRM_ADMIN_PASSWORD=your_admin_password \
-  -d %%IMAGE%%
-```
-
-### Run container via a specific port
-
-```
-$ docker run \
-  --name %%REPO%% \
-  --network some-network \
+  -v espocrm-data:/var/www/html/data \
+  -v espocrm-custom:/var/www/html/custom \
+  -v espocrm-custom-client:/var/www/html/client/custom \
   -p 8080:80 \
-  -e ESPOCRM_DATABASE_USER=espocrm \
-  -e ESPOCRM_DATABASE_PASSWORD=your_database_password \
-  -e ESPOCRM_ADMIN_USERNAME=admin \
-  -e ESPOCRM_ADMIN_PASSWORD=your_admin_password \
-  -d %%IMAGE%%
+  -d %%REPO%% && \
+docker run \
+  --name espocrm-daemon \
+  --network espocrm-network \
+  --restart unless-stopped \
+  --volumes-from espocrm \
+  --entrypoint docker-daemon.sh \
+  -d %%REPO%%
 ```
 
-Then access it at `http://localhost:8080` with the `admin` and `your_admin_password` credentials.
+Then, access it via `http://localhost:8080` or `http://YOUR_IP_ADDRESS:8080` with credentials `admin` and `your_admin_password`.
 
-### Run container via a specific IP or a domain with a port
+### Custom site URL
 
-```
-$ docker run \
-  --name %%REPO%% \
-  --network some-network \
+To set a custom IP address or domain, pass the `ESPOCRM_SITE_URL` environment variable when running the container.
+
+```bash
+docker run \
+  --name espocrm \
+  --network espocrm-network \
   -p 8080:80 \
   -e ESPOCRM_DATABASE_USER=espocrm \
   -e ESPOCRM_DATABASE_PASSWORD=your_database_password \
   -e ESPOCRM_ADMIN_USERNAME=admin \
   -e ESPOCRM_ADMIN_PASSWORD=your_admin_password \
   -e ESPOCRM_SITE_URL=http://192.168.0.100:8080 \
-  -d %%IMAGE%%
+  -d %%REPO%%
 ```
 
-Then access it at `http://192.168.0.100:8080` with the `admin` and `your_admin_password` credentials.
+Then, access it via `http://192.168.0.100:8080` with credentials `admin` and `your_admin_password`.
 
-## Installing with Traefik
+## %%COMPOSE%%
+
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://YOUR_IP_ADDRESS:8080` (as appropriate).
+
+## Traefik
 
 You can read the instructions for installing EspoCRM in conjunction with Traefik in the Docker Compose environment [here](https://docs.espocrm.com/administration/docker/traefik/).
 
-## Installing with Caddy
+## Caddy
 
 You can read the instructions for installing EspoCRM in conjunction with Caddy in the Docker Compose environment [here](https://docs.espocrm.com/administration/docker/caddy/).
 
 ## Upgrading
 
-To upgrade the container created by `docker-compose.yml`:
+Keeping your EspoCRM installation updated ensures you have the latest features, security patches, and bug fixes. The upgrade process differs depending on whether you're using Docker Run or Docker Compose.
 
-1. Open your EspoCRM container directory.
-2. Run the command:
+### Docker Run
 
+To upgrade EspoCRM when using Docker Run:
+
+1\. Pull the latest images:
+
+```bash
+docker pull mariadb
+docker pull %%REPO%%
 ```
-$ docker compose pull && docker compose up -d
+
+2\. Stop all running containers:
+
+```bash
+docker stop espocrm espocrm-db espocrm-daemon
 ```
 
-The container will be upgraded to the latest version within a few minutes.
+3\. Remove the old containers:
+
+```bash
+docker rm espocrm espocrm-db espocrm-daemon
+```
+
+4\. Run the containers again with the same configuration as your original deployment (using the quick start or step by step commands from the [Docker Run](#quick-start) section).
+
+### Docker Compose
+
+To upgrade EspoCRM when using Docker Compose:
+
+1\. Navigate to your EspoCRM container directory.
+
+2\. Run the command:
+
+```bash
+docker compose pull && docker compose up -d
+```
+
+Within a few minutes the container will be upgraded to the latest version.
 
 ## Docker Secrets
 
@@ -112,10 +139,6 @@ $ docker run \
   -e ESPOCRM_ADMIN_PASSWORD_FILE=/run/secrets/espocrm_admin_password \
   -d %%IMAGE%%
 ```
-
-## %%COMPOSE%%
-
-Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ## Environment variables
 
