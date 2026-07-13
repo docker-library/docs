@@ -1,10 +1,11 @@
 <h1 align="center">
-  <a href="https://paradedb.com"><img src="docs/logo/readme.svg" alt="ParadeDB"></a>
+  <a href="https://paradedb.com"><img src="https://raw.githubusercontent.com/paradedb/paradedb/main/docs/logo/paradedb-logo-light-large.svg" alt="ParadeDB"></a>
 <br>
 </h1>
 
 <p align="center">
-  <b>Simple, Elastic-quality search for Postgres</b><br/>
+  <b>Search without a second system.</b><br/>
+  One Postgres for your application data, full-text search, vector retrieval, and aggregations.
 </p>
 
 <h3 align="center">
@@ -26,6 +27,8 @@
 
 ## Installation
 
+To install ParadeDB locally in a fresh Docker container and drop straight into a `psql` session:
+
 ```bash
 curl -fsSL https://paradedb.com/install.sh | sh
 ```
@@ -34,7 +37,9 @@ When you're ready to deploy, check out our [hosting options](https://docs.parade
 
 ## What is ParadeDB?
 
-[ParadeDB](https://paradedb.com) is a PostgreSQL extension that brings Elastic-quality full-text search and analytics directly inside Postgres.
+[ParadeDB](https://paradedb.com) adds Elastic-quality full-text search, vector retrieval, and aggregations to Postgres with the `pg_search` extension. Your application data and your search engine live in one database, with no second system to deploy and nothing to sync.
+
+Vectors are currently indexed using the [pgvector](https://github.com/pgvector/pgvector) extension, but native vector support is coming to our search index soon.
 
 -	[Full-Text Search](https://docs.paradedb.com/documentation/full-text/overview)
 	-	[BM25 Scoring](https://docs.paradedb.com/documentation/sorting/score)
@@ -66,14 +71,18 @@ ParadeDB integrates with the tools you already use, with more on the way.
 
 ### ORMs & Frameworks
 
+-	[Drizzle](https://github.com/paradedb/drizzle-paradedb)
 -	[Django](https://github.com/paradedb/django-paradedb)
 -	[SQLAlchemy](https://github.com/paradedb/sqlalchemy-paradedb)
 -	[Rails](https://github.com/paradedb/rails-paradedb)
+-	[EF Core](https://github.com/paradedb/efcore-paradedb)
+-	More coming (Prisma, and others)
 
 ### AI Agents
 
 -	[Agent Skills](https://github.com/paradedb/agent-skills)
 -	[MCP Integration](https://docs.paradedb.com/documentation/getting-started/ai-agents)
+-	[Cursor Plugin](https://cursor.com/marketplace/parade-db)
 
 ### PaaS & Cloud Platforms
 

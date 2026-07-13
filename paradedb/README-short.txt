@@ -1,1 +1,1 @@
-ParadeDB brings Elastic-quality full-text search and analytics directly inside Postgres.
+Search without a second system: full-text search, vector retrieval, and aggregations in Postgres.
