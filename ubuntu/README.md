@@ -28,11 +28,9 @@ WARNING:
 
 -	[`24.04`, `noble-20260610`, `noble`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20260610-016d915d&id=016d915dacc912df85f759ff39bc7186cea33904)
 
--	[`25.10`, `questing-20260610`, `questing`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-questing-amd64-20260610-d2564901&id=d256490116bd2d08f8784d7b7dde786c38f347fe)
+-	[`26.04`, `resolute-20260707`, `resolute`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-amd64-20260707-015357ff&id=015357ffd9d3421779a700b0860571b41d9cb4bc)
 
--	[`26.04`, `resolute-20260627`, `resolute`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-amd64-20260627-f7fb8e5b&id=f7fb8e5bfa00cb38fee35a0126dc0f453ba54a16)
-
--	[`26.10`, `stonking-20260622`, `stonking`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-stonking-amd64-20260622-e7fe4d68&id=e7fe4d688a1ff7d6c8c4d54f7d5b303091dc3cf4)
+-	[`26.10`, `stonking-20260705`, `stonking`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-stonking-amd64-20260705-883cd8fd&id=883cd8fda06c4d4bb2afca19d23a9018fc62db7e)
 
 # Quick reference (cont.)
 
