@@ -41,14 +41,14 @@ docker run \
   -v espocrm-custom:/var/www/html/custom \
   -v espocrm-custom-client:/var/www/html/client/custom \
   -p 8080:80 \
-  -d %%REPO%% && \
+  -d %%IMAGE%% && \
 docker run \
   --name espocrm-daemon \
   --network espocrm-network \
   --restart unless-stopped \
   --volumes-from espocrm \
   --entrypoint docker-daemon.sh \
-  -d %%REPO%%
+  -d %%IMAGE%%
 ```
 
 Then, access it via `http://localhost:8080` or `http://YOUR_IP_ADDRESS:8080` with credentials `admin` and `your_admin_password`.
@@ -67,7 +67,7 @@ docker run \
   -e ESPOCRM_ADMIN_USERNAME=admin \
   -e ESPOCRM_ADMIN_PASSWORD=your_admin_password \
   -e ESPOCRM_SITE_URL=http://192.168.0.100:8080 \
-  -d %%REPO%%
+  -d %%IMAGE%%
 ```
 
 Then, access it via `http://192.168.0.100:8080` with credentials `admin` and `your_admin_password`.
@@ -96,7 +96,7 @@ To upgrade EspoCRM when using Docker Run:
 
 ```bash
 docker pull mariadb
-docker pull %%REPO%%
+docker pull %%IMAGE%%
 ```
 
 2\. Stop all running containers:
