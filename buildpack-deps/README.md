@@ -66,17 +66,17 @@ WARNING:
 
 -	[`noble`, `24.04`](https://github.com/docker-library/buildpack-deps/blob/60dc5f9555c521de086b2f5770514faf69ee2cc4/ubuntu/noble/Dockerfile)
 
--	[`questing-curl`, `25.10-curl`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/curl/Dockerfile)
-
--	[`questing-scm`, `25.10-scm`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/scm/Dockerfile)
-
--	[`questing`, `25.10`](https://github.com/docker-library/buildpack-deps/blob/99e7dc24c50c0a7be371ea9e6aed6134ce4cbfeb/ubuntu/questing/Dockerfile)
-
 -	[`resolute-curl`, `26.04-curl`](https://github.com/docker-library/buildpack-deps/blob/8330ca1d2319b779c8b7a8aa64bb40dbe568e1e2/ubuntu/resolute/curl/Dockerfile)
 
 -	[`resolute-scm`, `26.04-scm`](https://github.com/docker-library/buildpack-deps/blob/8330ca1d2319b779c8b7a8aa64bb40dbe568e1e2/ubuntu/resolute/scm/Dockerfile)
 
 -	[`resolute`, `26.04`](https://github.com/docker-library/buildpack-deps/blob/8330ca1d2319b779c8b7a8aa64bb40dbe568e1e2/ubuntu/resolute/Dockerfile)
+
+-	[`stonking-curl`, `26.10-curl`](https://github.com/docker-library/buildpack-deps/blob/5ae2506d6a74c9814762adc724c8a84564a0b2ca/ubuntu/stonking/curl/Dockerfile)
+
+-	[`stonking-scm`, `26.10-scm`](https://github.com/docker-library/buildpack-deps/blob/5ae2506d6a74c9814762adc724c8a84564a0b2ca/ubuntu/stonking/scm/Dockerfile)
+
+-	[`stonking`, `26.10`](https://github.com/docker-library/buildpack-deps/blob/5ae2506d6a74c9814762adc724c8a84564a0b2ca/ubuntu/stonking/Dockerfile)
 
 # Quick reference (cont.)
 
