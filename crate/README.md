@@ -28,12 +28,6 @@ WARNING:
 
 -	[`6.3.5`, `6.3`](https://github.com/crate/docker-crate/blob/ccd9a41f0c3aa6591726561a984a26c29111c39e/Dockerfile)
 
--	[`6.2.11`, `6.2`](https://github.com/crate/docker-crate/blob/76ff6f9140b594332ece2d66c71c016fe2153699/Dockerfile)
-
--	[`6.1.6`, `6.1`](https://github.com/crate/docker-crate/blob/04e070dd4bb72d7e8a4f31950b8cf63f88605311/Dockerfile)
-
--	[`6.0.8`, `6.0`](https://github.com/crate/docker-crate/blob/6830c7f8fb59561f4937c763849ecb0140b1250c/Dockerfile)
-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
