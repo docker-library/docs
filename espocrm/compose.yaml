@@ -1,0 +1,81 @@
+services:
+
+  espocrm-db:
+    image: mariadb:latest
+    container_name: espocrm-db
+    environment:
+      MARIADB_ROOT_PASSWORD: your_root_password
+      MARIADB_DATABASE: espocrm
+      MARIADB_USER: espocrm
+      MARIADB_PASSWORD: your_database_password
+    volumes:
+      - espocrm-db:/var/lib/mysql
+    restart: unless-stopped
+    healthcheck:
+      test: [CMD, healthcheck.sh, --connect, --innodb_initialized]
+      interval: 20s
+      start_period: 10s
+      timeout: 10s
+      retries: 3
+
+  espocrm:
+    image: espocrm:latest
+    container_name: espocrm
+    environment:
+      ESPOCRM_DATABASE_HOST: espocrm-db
+      ESPOCRM_DATABASE_USER: espocrm
+      ESPOCRM_DATABASE_PASSWORD: your_database_password
+      ESPOCRM_ADMIN_USERNAME: admin
+      ESPOCRM_ADMIN_PASSWORD: your_admin_password
+      ESPOCRM_SITE_URL: http://localhost:8080
+    volumes:
+      - espocrm-data:/var/www/html/data
+      - espocrm-custom:/var/www/html/custom
+      - espocrm-custom-client:/var/www/html/client/custom
+    restart: unless-stopped
+    depends_on:
+      espocrm-db:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, bin/command, app-check]
+      start_period: 20s
+      interval: 60s
+      timeout: 20s
+      retries: 3
+    ports:
+      - 8080:80
+
+  espocrm-daemon:
+    image: espocrm:latest
+    container_name: espocrm-daemon
+    volumes_from:
+      - espocrm
+    restart: unless-stopped
+    entrypoint: docker-daemon.sh
+    depends_on:
+      espocrm:
+        condition: service_healthy
+
+  espocrm-websocket:
+    image: espocrm:latest
+    container_name: espocrm-websocket
+    environment:
+      ESPOCRM_CONFIG_USE_WEB_SOCKET: 'true'
+      ESPOCRM_CONFIG_WEB_SOCKET_URL: ws://localhost:8081
+      ESPOCRM_CONFIG_WEB_SOCKET_ZERO_M_Q_SUBSCRIBER_DSN: tcp://*:7777
+      ESPOCRM_CONFIG_WEB_SOCKET_ZERO_M_Q_SUBMISSION_DSN: tcp://espocrm-websocket:7777
+    volumes_from:
+      - espocrm
+    restart: unless-stopped
+    entrypoint: docker-websocket.sh
+    depends_on:
+      espocrm:
+        condition: service_healthy
+    ports:
+      - 8081:8080
+
+volumes:
+  espocrm-db:
+  espocrm-data:
+  espocrm-custom:
+  espocrm-custom-client:
