@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `nim` official image](https://hub.docker.com/_/nim) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,7 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.10`, `2.2`, `2`, `latest`](https://github.com/nim-lang/docker-images/blob/c8df5e79155477e213137e4e42a7ea422d2a3851/dockerfiles/2.2.10/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -60,7 +62,7 @@ WARNING:
 To compile a file named `main.nim` and execute it immediately:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim c -r main.nim
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app arm32v7/nim nim c -r main.nim
 ```
 
 ## Compile to JavaScript
@@ -68,7 +70,7 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim c -r main.nim
 Nim can compile to JavaScript. This image includes Node.js to serve as the runtime:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim js -r main.nim
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app arm32v7/nim nim js -r main.nim
 ```
 
 ## Managing packages with Nimble
@@ -76,13 +78,13 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim js -r main.nim
 The image is configured with SSL support to allow Nimble to install packages from remote repositories:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nimble install -y
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app arm32v7/nim nimble install -y
 ```
 
 ## Dockerfile example
 
 ```dockerfile
-FROM nim
+FROM arm32v7/nim
 
 WORKDIR /usr/src/app
 
