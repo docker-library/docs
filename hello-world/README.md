@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `hello-world` official image](https://hub.docker.com/_/hello-world) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,24 +30,13 @@ WARNING:
 
 ## Simple Tags
 
--	[`linux`](https://github.com/docker-library/hello-world/blob/0b0efba82b82ace81ab2fb42d25116f9488e6cb4/amd64/Dockerfile)
-
--	[`nanoserver-ltsc2025`](https://github.com/docker-library/hello-world/blob/0b0efba82b82ace81ab2fb42d25116f9488e6cb4/amd64/nanoserver-ltsc2025/Dockerfile)
-
--	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/0b0efba82b82ace81ab2fb42d25116f9488e6cb4/amd64/nanoserver-ltsc2022/Dockerfile)
+-	[`linux`](https://github.com/docker-library/hello-world/blob/0b0efba82b82ace81ab2fb42d25116f9488e6cb4/ppc64le/Dockerfile)
 
 ## Shared Tags
 
 -	`latest`:
 
-	-	[`linux`](https://github.com/docker-library/hello-world/blob/0b0efba82b82ace81ab2fb42d25116f9488e6cb4/amd64/Dockerfile)
-	-	[`nanoserver-ltsc2025`](https://github.com/docker-library/hello-world/blob/0b0efba82b82ace81ab2fb42d25116f9488e6cb4/amd64/nanoserver-ltsc2025/Dockerfile)
-	-	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/0b0efba82b82ace81ab2fb42d25116f9488e6cb4/amd64/nanoserver-ltsc2022/Dockerfile)
-
--	`nanoserver`:
-
-	-	[`nanoserver-ltsc2025`](https://github.com/docker-library/hello-world/blob/0b0efba82b82ace81ab2fb42d25116f9488e6cb4/amd64/nanoserver-ltsc2025/Dockerfile)
-	-	[`nanoserver-ltsc2022`](https://github.com/docker-library/hello-world/blob/0b0efba82b82ace81ab2fb42d25116f9488e6cb4/amd64/nanoserver-ltsc2022/Dockerfile)
+	-	[`linux`](https://github.com/docker-library/hello-world/blob/0b0efba82b82ace81ab2fb42d25116f9488e6cb4/ppc64le/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -69,7 +60,7 @@ WARNING:
 # Example output
 
 ```console
-$ docker run hello-world
+$ docker run ppc64le/hello-world
 
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -93,7 +84,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 
 
-$ docker images hello-world
+$ docker images ppc64le/hello-world
 REPOSITORY    TAG       IMAGE ID       SIZE
 hello-world   latest    e2ac70e7319a   10.07kB
 ```
@@ -104,7 +95,7 @@ hello-world   latest    e2ac70e7319a   10.07kB
 
 This image is a prime example of using the [`scratch`](https://hub.docker.com/_/scratch/) image effectively. See [`hello.c`](https://github.com/docker-library/hello-world/blob/master/hello.c) in https://github.com/docker-library/hello-world for the source code of the `hello` binary included in this image.
 
-Because this image consists of nothing but a single static binary which prints some text to standard output, it can trivially be run as any arbitrary user (`docker run --user $RANDOM:$RANDOM hello-world`, for example).
+Because this image consists of nothing but a single static binary which prints some text to standard output, it can trivially be run as any arbitrary user (`docker run --user $RANDOM:$RANDOM ppc64le/hello-world`, for example).
 
 # License
 
