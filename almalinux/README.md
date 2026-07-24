@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v5` builds of [the `almalinux` official image](https://hub.docker.com/_/almalinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10-kitten`, `10-kitten-20260602`](https://github.com/AlmaLinux/container-images/blob/10e06ab3d50749d63b5a2476f21d7138b56ee9a1/default/amd64/Dockerfile)
-
--	[`10-kitten-minimal`, `10-kitten-minimal-20260602`](https://github.com/AlmaLinux/container-images/blob/10e06ab3d50749d63b5a2476f21d7138b56ee9a1/minimal/amd64/Dockerfile)
-
--	[`latest`, `10`, `10.2`, `10.2-20260602`](https://github.com/AlmaLinux/container-images/blob/cd5582c41aaf7f695b2473264b322f4080066796/default/amd64/Dockerfile)
-
--	[`minimal`, `10-minimal`, `10.2-minimal`, `10.2-minimal-20260602`](https://github.com/AlmaLinux/container-images/blob/cd5582c41aaf7f695b2473264b322f4080066796/minimal/amd64/Dockerfile)
-
--	[`8`, `8.10`, `8.10-20260602`](https://github.com/AlmaLinux/container-images/blob/69926cfadb0deb9b470ee4047cd578c7e01ac075/default/amd64/Dockerfile)
-
--	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20260602`](https://github.com/AlmaLinux/container-images/blob/69926cfadb0deb9b470ee4047cd578c7e01ac075/minimal/amd64/Dockerfile)
-
--	[`9`, `9.8`, `9.8-20260602`](https://github.com/AlmaLinux/container-images/blob/299151668ae7a80775e6b9a1bef80de971e0bbcf/default/amd64/Dockerfile)
-
--	[`9-minimal`, `9.8-minimal`, `9.8-minimal-20260602`](https://github.com/AlmaLinux/container-images/blob/299151668ae7a80775e6b9a1bef80de971e0bbcf/minimal/amd64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -71,13 +59,13 @@ WARNING:
 
 The default (platform) image is a general-purpose image with a full DNF stack and basic tools like find, tar, vi, etc.
 
-The `almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `almalinux:8` or `almalinux:8.4`).
+The `arm32v5/almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `arm32v5/almalinux:8` or `arm32v5/almalinux:8.4`).
 
 ## Minimal image
 
 The minimal image is a stripped-down image that uses the microdnf package manager and contains a very limited package set. It is designed for applications that come with their own dependencies bundled (e.g. NodeJS, Python).
 
-The `almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `almalinux:8-minimal`) and minor (e.g. `almalinux:8.4-minimal`) releases are also available.
+The `arm32v5/almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `arm32v5/almalinux:8-minimal`) and minor (e.g. `arm32v5/almalinux:8.4-minimal`) releases are also available.
 
 ### Upgrade policy
 
