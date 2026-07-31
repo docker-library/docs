@@ -32,11 +32,20 @@ ENV LANG en_US.utf8
 
 Starting from [Ubuntu 24.10 "Oracular Oriole"](https://discourse.ubuntu.com/t/oracular-oriole-release-notes/44878#unminimize), the `unminimize` command will no longer be shipped by default on minimal images. It has now been moved to a dedicated package which can be installed via `apt-get install -y unminimize`.
 
+## Pebble
+
+Starting from Ubuntu 26.04 LTS "Resolute Raccoon", these images are built as [rocks](https://github.com/canonical/rockcraft) and therefore bundle [Pebble](https://github.com/canonical/pebble), a lightweight, API-driven service manager, at `/usr/bin/pebble`. Note that Pebble is not set as the image's default entrypoint: the entrypoint is left empty and the default command is `/bin/bash`, preserving the existing entrypoint behavior.
+
 # How is the rootfs built?
+
+## Ubuntu 25.10 "Questing Quokka" and earlier
 
 The tarballs published by Canonical, referenced by `dist-*` tags in https://git.launchpad.net/cloud-images/+oci/ubuntu-base Git repository, are built from scripts that live in [the livecd-rootfs project](https://code.launchpad.net/~ubuntu-core-dev/livecd-rootfs/+git/livecd-rootfs/+ref/ubuntu/master), especially `live-build/auto/build`. The builds are run on Launchpad. For build history see `livefs` build pages of individual releases on Launchpad:
 
 -	[Jammy](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/jammy/ubuntu-oci)
 -	[Noble](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/noble/ubuntu-oci)
 -	[Questing](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/questing/ubuntu-oci)
--	[Resolute](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/resolute/ubuntu-oci)
+
+## Ubuntu 26.04 LTS "Resolute Raccoon" and later
+
+Starting from Ubuntu 26.04 LTS, the rootfs is no longer built via `livefs`. Instead, it is built directly with [Rockcraft](https://github.com/canonical/rockcraft) from the recipe on the `main` branch of the same [ubuntu-base repo](https://git.launchpad.net/cloud-images/+oci/ubuntu-base). Rockcraft runs the build on Launchpad via `rockcraft remote-build`, producing a `.rock` OCI archive that is then unpacked into the rootfs tarball published under the `dist-*` tags.
