@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `nim` official image](https://hub.docker.com/_/nim) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -86,7 +88,7 @@ WARNING:
 To compile a file named `main.nim` and execute it immediately:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim c -r main.nim
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app amd64/nim nim c -r main.nim
 ```
 
 ## Compile to JavaScript
@@ -94,13 +96,13 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim c -r main.nim
 Nim can compile to JavaScript:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim js main.nim
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app amd64/nim nim js main.nim
 ```
 
 To compile and run, use a multi-stage Dockerfile with Node.js:
 
 ```dockerfile
-FROM nim AS builder
+FROM amd64/nim AS builder
 COPY . .
 RUN nim js -o:app.js src/app.nim
 
@@ -114,13 +116,13 @@ CMD ["node", "app.js"]
 The image is configured with SSL support to allow Nimble to install packages from remote repositories:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nimble install -y
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app amd64/nim nimble install -y
 ```
 
 ## Dockerfile example
 
 ```dockerfile
-FROM nim
+FROM amd64/nim
 
 WORKDIR /usr/src/app
 
