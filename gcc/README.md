@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `gcc` official image](https://hub.docker.com/_/gcc) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,15 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`16.1.0`, `16.1`, `16`, `latest`, `16.1.0-trixie`, `16.1-trixie`, `16-trixie`, `trixie`](https://github.com/docker-library/gcc/blob/24fb071be01a0e6241fbbabd59a3dd07d31b80f5/16/Dockerfile)
-
--	[`15.3.0`, `15.3`, `15`, `15.3.0-trixie`, `15.3-trixie`, `15-trixie`](https://github.com/docker-library/gcc/blob/3b87fe3e286f7aa21ed5d69fd5c39e1b4fb02057/15/Dockerfile)
-
--	[`14.4.0`, `14.4`, `14`, `14.4.0-trixie`, `14.4-trixie`, `14-trixie`](https://github.com/docker-library/gcc/blob/d0fb67beca5c8248b88c7e5271ab34b4fdb279a0/14/Dockerfile)
-
--	[`13.4.0`, `13.4`, `13`, `13.4.0-bookworm`, `13.4-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/118c07a8e6467baababb4634b6cfde14a67c24b0/13/Dockerfile)
-
--	[`12.5.0`, `12.5`, `12`, `12.5.0-bookworm`, `12.5-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/7070981b23d22d3ca790f87bff26f13f3614dd4c/12/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -68,7 +62,7 @@ The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Proje
 The most straightforward way to use this image is to use a gcc container as both the build and runtime environment. In your `Dockerfile`, writing something along the lines of the following will compile and run your project:
 
 ```dockerfile
-FROM gcc:4.9
+FROM riscv64/gcc:4.9
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN gcc -o myapp main.c
@@ -87,13 +81,13 @@ $ docker run -it --rm --name my-running-app my-gcc-app
 There may be occasions where it is not appropriate to run your app inside a container. To compile, but not run your app inside the Docker instance, you can write something like:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gcc:4.9 gcc -o myapp myapp.c
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp riscv64/gcc:4.9 gcc -o myapp myapp.c
 ```
 
 This will add your current directory, as a volume, to the container, set the working directory to the volume, and run the command `gcc -o myapp myapp.c.` This tells gcc to compile the code in `myapp.c` and output the executable to myapp. Alternatively, if you have a `Makefile`, you can instead run the `make` command inside your container:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gcc:4.9 make
+$ docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp riscv64/gcc:4.9 make
 ```
 
 # License
