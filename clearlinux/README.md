@@ -35,7 +35,7 @@ https://community.clearlinux.org/t/all-good-things-come-to-an-end-shutting-down-
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/clearlinux/docker-brew-clearlinux/issues](https://github.com/clearlinux/docker-brew-clearlinux/issues?q=)
+	[https://github.com/clearlinux/docker-brew-clearlinux/issues](https://github.com/clearlinux/docker-brew-clearlinux/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/clearlinux/)

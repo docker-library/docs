@@ -51,7 +51,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/joomla-docker/docker-joomla/issues](https://github.com/joomla-docker/docker-joomla/issues?q=)
+	[https://github.com/joomla-docker/docker-joomla/issues](https://github.com/joomla-docker/docker-joomla/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/joomla/), [`arm32v5`](https://hub.docker.com/r/arm32v5/joomla/), [`arm32v6`](https://hub.docker.com/r/arm32v6/joomla/), [`arm32v7`](https://hub.docker.com/r/arm32v7/joomla/), [`arm64v8`](https://hub.docker.com/r/arm64v8/joomla/), [`i386`](https://hub.docker.com/r/i386/joomla/), [`ppc64le`](https://hub.docker.com/r/ppc64le/joomla/), [`riscv64`](https://hub.docker.com/r/riscv64/joomla/), [`s390x`](https://hub.docker.com/r/s390x/joomla/)

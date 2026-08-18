@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`devel-20260701`, `devel`, `devel-20260701-alpine3.24`, `devel-alpine3.24`](https://github.com/tianon/docker-bash/blob/cd784eb57336e28e452a0d8887b9c37da561ed00/devel/Dockerfile)
+-	[`devel-20260817`, `devel`, `devel-20260817-alpine3.24`, `devel-alpine3.24`](https://github.com/tianon/docker-bash/blob/4dcfd4fb0c04be24897982851683a85145f8b910/devel/Dockerfile)
 
 -	[`5.3.15`, `5.3`, `5`, `latest`, `5.3.15-alpine3.24`, `5.3-alpine3.24`, `5-alpine3.24`, `alpine3.24`](https://github.com/tianon/docker-bash/blob/2b927ed0d7d1da8a5ed0cd5fc90213065d502401/5.3/Dockerfile)
 
@@ -53,7 +53,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/tianon/docker-bash/issues](https://github.com/tianon/docker-bash/issues?q=)
+	[https://github.com/tianon/docker-bash/issues](https://github.com/tianon/docker-bash/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/bash/), [`arm32v6`](https://hub.docker.com/r/arm32v6/bash/), [`arm32v7`](https://hub.docker.com/r/arm32v7/bash/), [`arm64v8`](https://hub.docker.com/r/arm64v8/bash/), [`i386`](https://hub.docker.com/r/i386/bash/), [`ppc64le`](https://hub.docker.com/r/ppc64le/bash/), [`riscv64`](https://hub.docker.com/r/riscv64/bash/), [`s390x`](https://hub.docker.com/r/s390x/bash/)

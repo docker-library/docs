@@ -35,7 +35,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/cassandra/issues](https://github.com/docker-library/cassandra/issues?q=)
+	[https://github.com/docker-library/cassandra/issues](https://github.com/docker-library/cassandra/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/cassandra/), [`arm32v7`](https://hub.docker.com/r/arm32v7/cassandra/), [`arm64v8`](https://hub.docker.com/r/arm64v8/cassandra/), [`ppc64le`](https://hub.docker.com/r/ppc64le/cassandra/), [`s390x`](https://hub.docker.com/r/s390x/cassandra/)

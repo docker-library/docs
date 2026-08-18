@@ -31,7 +31,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/memcached/issues](https://github.com/docker-library/memcached/issues?q=)
+	[https://github.com/docker-library/memcached/issues](https://github.com/docker-library/memcached/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/memcached/), [`arm32v5`](https://hub.docker.com/r/arm32v5/memcached/), [`arm32v6`](https://hub.docker.com/r/arm32v6/memcached/), [`arm32v7`](https://hub.docker.com/r/arm32v7/memcached/), [`arm64v8`](https://hub.docker.com/r/arm64v8/memcached/), [`i386`](https://hub.docker.com/r/i386/memcached/), [`ppc64le`](https://hub.docker.com/r/ppc64le/memcached/), [`riscv64`](https://hub.docker.com/r/riscv64/memcached/), [`s390x`](https://hub.docker.com/r/s390x/memcached/)

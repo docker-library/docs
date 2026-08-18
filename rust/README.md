@@ -47,7 +47,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/rust-lang/docker-rust/issues](https://github.com/rust-lang/docker-rust/issues?q=)
+	[https://github.com/rust-lang/docker-rust/issues](https://github.com/rust-lang/docker-rust/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rust/), [`arm32v7`](https://hub.docker.com/r/arm32v7/rust/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rust/), [`i386`](https://hub.docker.com/r/i386/rust/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rust/), [`riscv64`](https://hub.docker.com/r/riscv64/rust/), [`s390x`](https://hub.docker.com/r/s390x/rust/)

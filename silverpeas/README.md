@@ -31,7 +31,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/Silverpeas/docker-silverpeas-prod/issues](https://github.com/Silverpeas/docker-silverpeas-prod/issues?q=)
+	[https://github.com/Silverpeas/docker-silverpeas-prod/issues](https://github.com/Silverpeas/docker-silverpeas-prod/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/silverpeas/)

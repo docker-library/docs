@@ -35,7 +35,7 @@ https://github.com/nginx/unit?tab=readme-ov-file#note-this-repository-has-been-a
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/nginx/unit/issues](https://github.com/nginx/unit/issues?q=)
+	[https://github.com/nginx/unit/issues](https://github.com/nginx/unit/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	**No supported architectures**

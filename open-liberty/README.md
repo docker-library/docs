@@ -93,7 +93,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/OpenLiberty/ci.docker/issues](https://github.com/OpenLiberty/ci.docker/issues?q=)
+	[https://github.com/OpenLiberty/ci.docker/issues](https://github.com/OpenLiberty/ci.docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/open-liberty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/open-liberty/), [`ppc64le`](https://hub.docker.com/r/ppc64le/open-liberty/), [`s390x`](https://hub.docker.com/r/s390x/open-liberty/)

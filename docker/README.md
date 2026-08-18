@@ -48,7 +48,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues?q=)
+	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm32v7`](https://hub.docker.com/r/arm32v7/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)

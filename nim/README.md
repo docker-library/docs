@@ -55,7 +55,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/nim-lang/docker-images/issues](https://github.com/nim-lang/docker-images/issues?q=)
+	[https://github.com/nim-lang/docker-images/issues](https://github.com/nim-lang/docker-images/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/nim/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nim/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nim/), [`i386`](https://hub.docker.com/r/i386/nim/)

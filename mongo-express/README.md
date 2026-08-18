@@ -33,7 +33,7 @@ This image is deprecated due to maintainer inactivity (last updated Apr 2024; [d
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/mongo-express/mongo-express-docker/issues](https://github.com/mongo-express/mongo-express-docker/issues?q=)
+	[https://github.com/mongo-express/mongo-express-docker/issues](https://github.com/mongo-express/mongo-express-docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	**No supported architectures**

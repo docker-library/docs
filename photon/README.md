@@ -33,7 +33,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/vmware/photon-docker-image/issues](https://github.com/vmware/photon-docker-image/issues?q=)
+	[https://github.com/vmware/photon-docker-image/issues](https://github.com/vmware/photon-docker-image/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/photon/), [`arm64v8`](https://hub.docker.com/r/arm64v8/photon/)

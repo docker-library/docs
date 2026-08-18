@@ -43,7 +43,7 @@ For Docker image usage, see [Plone 6 Documentation](https://6.docs.plone.org/ins
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/plone/plone.docker/issues](https://github.com/plone/plone.docker/issues?q=)
+	[https://github.com/plone/plone.docker/issues](https://github.com/plone/plone.docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	**No supported architectures**

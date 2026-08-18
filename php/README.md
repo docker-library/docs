@@ -223,7 +223,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/php/issues](https://github.com/docker-library/php/issues?q=)
+	[https://github.com/docker-library/php/issues](https://github.com/docker-library/php/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/php/), [`arm32v5`](https://hub.docker.com/r/arm32v5/php/), [`arm32v6`](https://hub.docker.com/r/arm32v6/php/), [`arm32v7`](https://hub.docker.com/r/arm32v7/php/), [`arm64v8`](https://hub.docker.com/r/arm64v8/php/), [`i386`](https://hub.docker.com/r/i386/php/), [`ppc64le`](https://hub.docker.com/r/ppc64le/php/), [`riscv64`](https://hub.docker.com/r/riscv64/php/), [`s390x`](https://hub.docker.com/r/s390x/php/)

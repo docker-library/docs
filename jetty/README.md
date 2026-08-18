@@ -83,7 +83,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/eclipse/jetty.docker/issues](https://github.com/eclipse/jetty.docker/issues?q=)
+	[https://github.com/eclipse/jetty.docker/issues](https://github.com/eclipse/jetty.docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/jetty/), [`arm64v8`](https://hub.docker.com/r/arm64v8/jetty/)

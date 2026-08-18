@@ -42,7 +42,7 @@ As of Liquibase 5.0, the Community edition and the official Docker Community liq
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/liquibase/docker/issues](https://github.com/liquibase/docker/issues?q=)
+	[https://github.com/liquibase/docker/issues](https://github.com/liquibase/docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/liquibase/), [`arm64v8`](https://hub.docker.com/r/arm64v8/liquibase/)

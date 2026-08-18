@@ -29,7 +29,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/distribution/distribution-library-image/issues](https://github.com/distribution/distribution-library-image/issues?q=)
+	[https://github.com/distribution/distribution-library-image/issues](https://github.com/distribution/distribution-library-image/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/registry/), [`arm32v6`](https://hub.docker.com/r/arm32v6/registry/), [`arm32v7`](https://hub.docker.com/r/arm32v7/registry/), [`arm64v8`](https://hub.docker.com/r/arm64v8/registry/), [`ppc64le`](https://hub.docker.com/r/ppc64le/registry/), [`riscv64`](https://hub.docker.com/r/riscv64/registry/), [`s390x`](https://hub.docker.com/r/s390x/registry/)
