@@ -24,23 +24,23 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`29.0.4.0`, `29.0.4`, `29.0`, `29`, `latest`](https://github.com/erlang/docker-erlang-otp/blob/023b069bdcc139d8b85bead3e93a73b01192a12d/29/Dockerfile)
+-	[`29.0.5.0`, `29.0.5`, `29.0`, `29`, `latest`](https://github.com/erlang/docker-erlang-otp/blob/097d328ca6fb3a9fbcdf1971ea74a39c24370c01/29/Dockerfile)
 
--	[`29.0.4.0-slim`, `29.0.4-slim`, `29.0-slim`, `29-slim`, `slim`](https://github.com/erlang/docker-erlang-otp/blob/023b069bdcc139d8b85bead3e93a73b01192a12d/29/slim/Dockerfile)
+-	[`29.0.5.0-slim`, `29.0.5-slim`, `29.0-slim`, `29-slim`, `slim`](https://github.com/erlang/docker-erlang-otp/blob/097d328ca6fb3a9fbcdf1971ea74a39c24370c01/29/slim/Dockerfile)
 
--	[`29.0.4.0-alpine`, `29.0.4-alpine`, `29.0-alpine`, `29-alpine`, `alpine`](https://github.com/erlang/docker-erlang-otp/blob/023b069bdcc139d8b85bead3e93a73b01192a12d/29/alpine/Dockerfile)
+-	[`29.0.5.0-alpine`, `29.0.5-alpine`, `29.0-alpine`, `29-alpine`, `alpine`](https://github.com/erlang/docker-erlang-otp/blob/097d328ca6fb3a9fbcdf1971ea74a39c24370c01/29/alpine/Dockerfile)
 
--	[`28.5.0.4`, `28.5.0`, `28.5`, `28`](https://github.com/erlang/docker-erlang-otp/blob/023b069bdcc139d8b85bead3e93a73b01192a12d/28/Dockerfile)
+-	[`28.5.0.5`, `28.5.0`, `28.5`, `28`](https://github.com/erlang/docker-erlang-otp/blob/097d328ca6fb3a9fbcdf1971ea74a39c24370c01/28/Dockerfile)
 
--	[`28.5.0.4-slim`, `28.5.0-slim`, `28.5-slim`, `28-slim`](https://github.com/erlang/docker-erlang-otp/blob/023b069bdcc139d8b85bead3e93a73b01192a12d/28/slim/Dockerfile)
+-	[`28.5.0.5-slim`, `28.5.0-slim`, `28.5-slim`, `28-slim`](https://github.com/erlang/docker-erlang-otp/blob/097d328ca6fb3a9fbcdf1971ea74a39c24370c01/28/slim/Dockerfile)
 
--	[`28.5.0.4-alpine`, `28.5.0-alpine`, `28.5-alpine`, `28-alpine`](https://github.com/erlang/docker-erlang-otp/blob/023b069bdcc139d8b85bead3e93a73b01192a12d/28/alpine/Dockerfile)
+-	[`28.5.0.5-alpine`, `28.5.0-alpine`, `28.5-alpine`, `28-alpine`](https://github.com/erlang/docker-erlang-otp/blob/097d328ca6fb3a9fbcdf1971ea74a39c24370c01/28/alpine/Dockerfile)
 
--	[`27.3.4.15`, `27.3.4`, `27.3`, `27`](https://github.com/erlang/docker-erlang-otp/blob/023b069bdcc139d8b85bead3e93a73b01192a12d/27/Dockerfile)
+-	[`27.3.4.16`, `27.3.4`, `27.3`, `27`](https://github.com/erlang/docker-erlang-otp/blob/097d328ca6fb3a9fbcdf1971ea74a39c24370c01/27/Dockerfile)
 
--	[`27.3.4.15-slim`, `27.3.4-slim`, `27.3-slim`, `27-slim`](https://github.com/erlang/docker-erlang-otp/blob/023b069bdcc139d8b85bead3e93a73b01192a12d/27/slim/Dockerfile)
+-	[`27.3.4.16-slim`, `27.3.4-slim`, `27.3-slim`, `27-slim`](https://github.com/erlang/docker-erlang-otp/blob/097d328ca6fb3a9fbcdf1971ea74a39c24370c01/27/slim/Dockerfile)
 
--	[`27.3.4.15-alpine`, `27.3.4-alpine`, `27.3-alpine`, `27-alpine`](https://github.com/erlang/docker-erlang-otp/blob/023b069bdcc139d8b85bead3e93a73b01192a12d/27/alpine/Dockerfile)
+-	[`27.3.4.16-alpine`, `27.3.4-alpine`, `27.3-alpine`, `27-alpine`](https://github.com/erlang/docker-erlang-otp/blob/097d328ca6fb3a9fbcdf1971ea74a39c24370c01/27/alpine/Dockerfile)
 
 -	[`26.2.5.21`, `26.2.5`, `26.2`, `26`](https://github.com/erlang/docker-erlang-otp/blob/42dc30d58e6daad4656375b1b746625d4fe30614/26/Dockerfile)
 
@@ -66,7 +66,7 @@ WARNING:
 	[https://github.com/erlang/docker-erlang-otp/issues](https://github.com/erlang/docker-erlang-otp/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/erlang/), [`arm32v5`](https://hub.docker.com/r/arm32v5/erlang/), [`arm32v7`](https://hub.docker.com/r/arm32v7/erlang/), [`arm64v8`](https://hub.docker.com/r/arm64v8/erlang/), [`i386`](https://hub.docker.com/r/i386/erlang/), [`ppc64le`](https://hub.docker.com/r/ppc64le/erlang/), [`s390x`](https://hub.docker.com/r/s390x/erlang/), `mips64le`
+	[`amd64`](https://hub.docker.com/r/amd64/erlang/), [`arm32v5`](https://hub.docker.com/r/arm32v5/erlang/), [`arm32v7`](https://hub.docker.com/r/arm32v7/erlang/), [`arm64v8`](https://hub.docker.com/r/arm64v8/erlang/), [`i386`](https://hub.docker.com/r/i386/erlang/), [`ppc64le`](https://hub.docker.com/r/ppc64le/erlang/), [`s390x`](https://hub.docker.com/r/s390x/erlang/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/erlang/` directory](https://github.com/docker-library/repo-info/blob/master/repos/erlang) ([history](https://github.com/docker-library/repo-info/commits/master/repos/erlang))  
