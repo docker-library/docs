@@ -10,6 +10,8 @@ The intent is also to maintain high compatibility with MySQL, ensuring a library
 
 The %%IMAGE%% has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
 
+Note for [amd64][ubi]: Please note the minimum required microarchitecture level is x86-64-v3 ([more info](https://access.redhat.com/solutions/7066628)).
+
 ## Running the container
 
 ### Configuration
