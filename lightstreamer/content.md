@@ -8,7 +8,19 @@ For more information and related downloads for Lightstreamer Server and other Li
 
 # How to use this image
 
-## Up and Running
+## Image editions
+
+Every version is published as two editions:
+
+-	**`%%IMAGE%%:<version>`** (aliased as `latest`) — the full server. Runs standalone out of the box; use this to try Lightstreamer out or for one-off deployments.
+-	**`%%IMAGE%%:<version>-base`** (aliased as `base`) — a leaner image intended as a starting point for integrators building a customized Lightstreamer image. The factory config XMLs, welcome page, demo adapters, and PDF documentation are stripped, so the server **will not start standalone** — downstream images must supply their own `conf/*.xml` (and any adapters they need).
+
+Two paths follow — pick one:
+
+-	**Running the image as-is?** → [Running the full image](#running-the-full-image).
+-	**Packaging a self-contained custom image?** → [Packaging a custom image](#packaging-a-custom-image).
+
+## Running the full image
 
 Launch the container with the default configuration:
 
@@ -16,109 +28,90 @@ Launch the container with the default configuration:
 $ docker run --name ls-server -d -p 80:8080 %%IMAGE%%
 ```
 
-This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page showing real-time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](https://demos.lightstreamer.com).
+This will map port 8080 inside the container to port 80 on the host. Point your browser at `http://localhost` to watch the Welcome page showing real-time data flowing in from the bundled demo application — a first overview of Lightstreamer's features. More examples are available at the [demo site](https://demos.lightstreamer.com).
 
-## Custom settings
+### File permissions for bind mounts
 
-It is possible to customize each aspect of the Lightstreamer instance running into the container. For example, a specific configuration file may be supplied as follows:
+The container runs as UID `10000` and GID `10000` (and is a member of GID `0` for OpenShift compatibility). Any host file or directory you bind-mount must be readable by that user — either grant read (and traverse for directories) on the host path with `chmod -R +rX /path`, or use the *Packaging a custom image* approach below (which lets you assign ownership via `COPY --chown=lightstreamer:root`).
+
+### Custom configuration
+
+Supply a specific configuration file:
 
 ```console
 $ docker run --name ls-server -v /path/to/my-lightstreamer_conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 %%IMAGE%%
 ```
 
-In the same way, you could provide a custom logging configuration, maybe in this case also specifying a dedicated volume to ensure both the persistence of log files and better performance of the container:
+Supply a custom logging configuration together with a host-side logs directory (useful for persistence and I/O performance):
 
 ```console
 $ docker run --name ls-server -v /path/to/my-lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/logs:/lightstreamer/logs -d -p 80:8080 %%IMAGE%%
 ```
 
-If you also change in your `my-lightstreamer_log_conf.xml` file the default logging path from `../logs` to `/path/to/dest/logs`:
+For the full list of settings, read the inline documentation in `lightstreamer_conf.xml` and `lightstreamer_log_conf.xml` under `/lightstreamer/conf/` inside the container.
 
-```console
-$ docker run --name ls-server -v /path/to/my-lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/hosted/logs:/path/to/dest/logs -d -p 80:8080 %%IMAGE%%
-```
+### Custom Adapter Sets
 
-Alternatively, the above tasks can be executed by deriving a new image through a `Dockerfile` as the following:
-
-```dockerfile
-FROM %%IMAGE%%
-
-# Please specify a COPY command only for the required custom configuration file
-COPY my-lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
-COPY my-lightstreamer_log_conf.xml /lightstreamer/conf/lightstreamer_log_conf.xml
-```
-
-where `my-lightstreamer_conf.xml` and `my-lightstreamer_log_conf.xml` are your custom configuration files, placed in the same directory as the Dockerfile. By simply running the command:
-
-```console
-$ docker build -t my-lightstreamer .
-```
-
-the new image will be built along with the provided files. After that, launch the container:
-
-```console
-$ docker run --name ls-server -d -p 80:8080 my-lightstreamer
-```
-
-To get more detailed information on how to configure the Lightstreamer server, please see the inline documentation in the `lightstreamer_conf.xml` and `lightstreamer_log_conf.xml` files you can find under the `conf` folder of the installation directory.
-
-## Deployment of Adapter Sets
-
-You might want to use this image even with any Adapter Set, either developed by yourself or provided by third parties.
-
-To accomplish such goal, you may use similar strategies to those illustrated above:
-
-### Deployment of a single Adapter Set
-
-To deploy a single custom Adapter Set, the simplest way is to attach its files into the factory adapters folder, as follows:
+Attach a single custom Adapter Set to the factory adapters folder:
 
 ```console
 $ docker run --name ls-server -v /path/to/my-adapter-set:/lightstreamer/adapters/my-adapter-set -d -p 80:8080 %%IMAGE%%
 ```
 
-### Full replacement of the "adapters" folder
-
-In the case you have many custom Adapter Sets to deploy, a more appropriate strategy is to replace the factory adapters folder with the one located in your host machine:
+Or replace the whole factory adapters folder with your own:
 
 ```console
 $ docker run --name ls-server -v /path/to/my-adapters:/lightstreamer/adapters -d -p 80:8080 %%IMAGE%%
 ```
 
-In this case, the `/path/to/my-adapters` folder has to be structured with the required layout for an adapters folder:
+The host directory must follow the layout Lightstreamer expects:
 
 ```console
-/path/to/my-adapters+
-                    +my_adapter_set_1
-                    +my_adapter_set_2
-                    ...
-                    +my_adapter_set_N
+/path/to/my-adapters/
+├── my_adapter_set_1/
+├── my_adapter_set_2/
+└── my_adapter_set_N/
 ```
 
-### Building a new image
+### Custom web server pages
 
-Once again, a linear and clean approach is to make a new image including all needed files.
-
-In this case, you could write a simple Docker file in which the list of all your Adapter Sets configuration files is provided:
-
-```dockerfile
-FROM %%IMAGE%%
-
-# Will copy the contents of N Adapter Sets into the factory adapters folder
-COPY my-adapter-set-1 /lightstreamer/adapters/my-adapter-set-1
-COPY my-adapter-set-2 /lightstreamer/adapters/my-adapter-set-2
-COPY my-adapter-set-3 /lightstreamer/adapters/my-adapter-set-3
-```
-
-Then, just build and start the container as already explained.
-
-## Deployment of web server pages
-
-There might be some circumstances where you would like to provide custom pages for the internal web server of the Lightstreamer Server. Even in this case, it is possible to customize the container by employing the same techniques as above.
-
-For example, with the following command you will be able to fully replace the factory `pages` folder:
+Replace the factory `pages` folder with your own:
 
 ```console
 $ docker run --name ls-server -v /path/to/custom/pages:/lightstreamer/pages -d -p 80:8080 %%IMAGE%%
 ```
 
-where `/path/to/custom/pages` is the path in your host machine containing the replacing web content files.
+## Packaging a custom image
+
+To build a self-contained custom image that carries only your own configuration and adapters — with no factory content in the production layer — start from the `-base` edition. The factory configuration, welcome page, and demo adapters are stripped, so any required file you forget to supply becomes an explicit startup failure rather than a silent fall-back to a factory default.
+
+Alternatively, use `FROM %%IMAGE%%` (the full edition) as your base: same Dockerfile pattern below, except your custom files land alongside the factory content, and missing configuration files won't cause a startup failure (the server falls back to the factory defaults instead). This is what most customers do; `-base` is just the leaner option.
+
+The `-base` image keeps the `conf/` directory in place but empties out its factory `*.xml` files. You must populate it with at least `lightstreamer_conf.xml` (invoked directly by the launch script), plus the logging and edition configurations it references (typically `lightstreamer_log_conf.xml` and `lightstreamer_edition_conf.xml`). Their exact names and paths can be changed by editing `lightstreamer_conf.xml`, but the files themselves cannot be skipped.
+
+A typical downstream Dockerfile:
+
+```dockerfile
+FROM %%IMAGE%%:base
+
+# Factory-level configuration
+COPY --chown=lightstreamer:root my-conf/     /lightstreamer/conf/
+
+# Zero or more custom Adapter Sets
+COPY --chown=lightstreamer:root my-adapter/  /lightstreamer/adapters/my-adapter/
+
+# Optional: custom web server pages
+COPY --chown=lightstreamer:root my-pages/    /lightstreamer/pages/
+```
+
+Two notes on the Dockerfile above:
+
+-	**`--chown=lightstreamer:root`** matches the ownership pattern already used inside the image and keeps everything readable both under plain Docker (`USER 10000:10000`) and under OpenShift-style deployments (arbitrary UID with GID `0`).
+-	**`COPY my-conf/ /lightstreamer/conf/`** is one convenient way to populate the required configuration files at once; you can also `COPY` files individually if that better fits your build layout.
+
+Build and run as usual:
+
+```console
+$ docker build -t my-lightstreamer .
+$ docker run --name ls-server -d -p 80:8080 my-lightstreamer
+```
