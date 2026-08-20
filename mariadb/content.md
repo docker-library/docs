@@ -10,7 +10,15 @@ The intent is also to maintain high compatibility with MySQL, ensuring a library
 
 The %%IMAGE%% has a number of tags, and of note is `latest`, as the latest stable version, and `lts`, as the last long term support release.
 
-Note for [amd64][ubi]: Please note the minimum required microarchitecture level is x86-64-v3 ([more info](https://access.redhat.com/solutions/7066628)).
+Image architecture requirements:
+
+| MariaDB version | Distribution | Release | amd64 / x86-64 | aarch64 / arm64 | ppc64le | s390x |
+|---|---|---:|---|---|---|---|
+| **10.6 / 10.11** | Ubuntu LTS | **22.04** | [x86-64 baseline](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) | [ARMv8-A](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) | [POWER9+](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) | [z13+](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) |
+| **11.4 - 12.3** | Ubuntu LTS | **24.04** | [x86-64 baseline](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) | [ARMv8-A](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) | [POWER9+](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) | [z13+](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) |
+| **13.0+** | Ubuntu LTS | **26.04** | [x86-64 baseline](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) | [ARMv8-A](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) | [POWER9+](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) | [z15+](https://ubuntu.com/project/docs/how-ubuntu-is-made/concepts/supported-architectures/) |
+| **10.6 - 11.8** | RHEL / UBI | **9** | [x86-64-v2](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/considerations_in_adopting_rhel_9/ref_architectures_considerations-in-adopting-rhel-9) | [ARMv8.0-A](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/considerations_in_adopting_rhel_9/ref_architectures_considerations-in-adopting-rhel-9) | [POWER9](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/considerations_in_adopting_rhel_9/ref_architectures_considerations-in-adopting-rhel-9) | [z14](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/considerations_in_adopting_rhel_9/ref_architectures_considerations-in-adopting-rhel-9) |
+| **12.3+** | RHEL / UBI | **10** | [x86-64-v3](https://access.redhat.com/solutions/7066628) | [ARMv8.0-A](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/10.0_release_notes/architectures) | [POWER10+](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/10.1_release_notes/architectures) | [z15+](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/10.1_release_notes/architectures) |
 
 ## Running the container
 
