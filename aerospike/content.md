@@ -45,7 +45,7 @@ The following sections describe both advanced options.
 
 You can inject parameters into the configuration template using container-side environment variables with the `-e` flag.
 
-For example, to set the default [namespace](https://www.aerospike.com/docs/architecture/data-model.html) name to *demo*:
+For example, to set the default [namespace](https://docs.aerospike.com/docs/architecture/data-model.html) name to *demo*:
 
 ```console
 docker run -d --name aerospike -e "NAMESPACE=demo" -p 3000-3002:3000-3002 -v /my/dir:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc/features.conf" %%IMAGE%%:ee-[version]
@@ -55,28 +55,28 @@ Injecting configuration parameters into the configuration template isn't compati
 
 #### List of template variables
 
--	`FEATURE_KEY_FILE` - the [`feature_key_file`](https://www.aerospike.com/docs/reference/configuration/index.html#feature-key-file) is only required for the EE image. Default: /etc/aerospike/features.conf
--	`SERVICE_THREADS` - the [`service_threads`](https://www.aerospike.com/docs/reference/configuration/index.html#service-threads). Default: Number of vCPUs
--	`LOGFILE` - the [`file`](https://www.aerospike.com/docs/reference/configuration/index.html#file) param of the `logging` context. Default: /dev/null, do not log to file, log to stdout
--	`SERVICE_ADDRESS` - the bind [`address`](https://www.aerospike.com/docs/reference/configuration/index.html#address) of the `networking.service` subcontext. Default: any
--	`SERVICE_PORT` - the [`port`](https://www.aerospike.com/docs/reference/configuration/index.html#port) of the `networking.service` subcontext. Default: 3000
--	`HB_ADDRESS` - the `networking.heartbeat` [`address`](https://www.aerospike.com/docs/reference/configuration/index.html#address) for cross cluster mesh. Default: any
--	`HB_PORT` - the [`port`](https://www.aerospike.com/docs/reference/configuration/index.html#port) for `networking.heartbeat` communications. Default: 3002
--	`FABRIC_ADDRESS` - the [`address`](https://www.aerospike.com/docs/reference/configuration/index.html#address) of the `networking.fabric` subcontext. Default: any
--	`FABRIC_PORT` - the [`port`](https://www.aerospike.com/docs/reference/configuration/index.html#port) of the `networking.fabric` subcontext. Default: 3001
+-	`FEATURE_KEY_FILE` - the [`feature_key_file`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#feature-key-file) is only required for the EE image. Default: /etc/aerospike/features.conf
+-	`SERVICE_THREADS` - the [`service_threads`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#service-threads). Default: Number of vCPUs
+-	`LOGFILE` - the [`file`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#file) param of the `logging` context. Default: /dev/null, do not log to file, log to stdout
+-	`SERVICE_ADDRESS` - the bind [`address`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#address) of the `networking.service` subcontext. Default: any
+-	`SERVICE_PORT` - the [`port`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#port) of the `networking.service` subcontext. Default: 3000
+-	`HB_ADDRESS` - the `networking.heartbeat` [`address`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#address) for cross cluster mesh. Default: any
+-	`HB_PORT` - the [`port`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#port) for `networking.heartbeat` communications. Default: 3002
+-	`FABRIC_ADDRESS` - the [`address`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#address) of the `networking.fabric` subcontext. Default: any
+-	`FABRIC_PORT` - the [`port`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#port) of the `networking.fabric` subcontext. Default: 3001
 
-The single preconfigured namespace is [in-memory with filesystem persistence](https://www.aerospike.com/docs/operations/configure/namespace/storage/#recipe-for-a-hdd-storage-engine-with-data-in-index-engine)
+The single preconfigured namespace is [in-memory with filesystem persistence](https://docs.aerospike.com/docs/operations/configure/namespace/storage/#recipe-for-a-hdd-storage-engine-with-data-in-index-engine)
 
 -	`NAMESPACE` - the name of the namespace. Default: test
--	`REPL_FACTOR` - the namespace [`replication-factor`](https://www.aerospike.com/docs/reference/configuration/index.html#replication-factor). Default: 2
--	`MEM_GB` - the namespace [`memory-size`](https://www.aerospike.com/docs/reference/configuration/index.html#memory-size). Default: 1, the unit is always `G` (GB)
--	`DEFAULT_TTL` - the namespace [`default-ttl`](https://www.aerospike.com/docs/reference/configuration/index.html#default-ttl). Default: 30d
+-	`REPL_FACTOR` - the namespace [`replication-factor`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#replication-factor). Default: 2
+-	`MEM_GB` - the namespace [`memory-size`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#memory-size). Default: 1, the unit is always `G` (GB)
+-	`DEFAULT_TTL` - the namespace [`default-ttl`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#default-ttl). Default: 30d
 -	`STORAGE_GB` - the namespace persistence `file` size. Default: 4, the unit is always `G` (GB)
--	`NSUP_PERIOD` - the namespace [`nsup-period`](https://www.aerospike.com/docs/reference/configuration/index.html#nsup-period). Default: 120 , nsup-period in seconds
+-	`NSUP_PERIOD` - the namespace [`nsup-period`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#nsup-period). Default: 120 , nsup-period in seconds
 
 ### Using a custom configuration file
 
-You can override the use of the configuration file template by providing your own aerospike.conf, as described in [Configuring Aerospike Database](https://www.aerospike.com/docs/operations/configure/index.html).
+You can override the use of the configuration file template by providing your own aerospike.conf, as described in [Configuring Aerospike Database](https://docs.aerospike.com/docs/operations/configure/index.html).
 
 You should first `-v` map a local directory, which Docker will bind mount. Next, drop your aerospike.conf file into this directory. Finally, use the `--config-file` option to tell Aerospike where in the container the configuration file is (the default path is /etc/aerospike/aerospike.conf). Remember that the feature key file is required, so use `feature-key-file` in your config file to point to a mounted path (such as /opt/aerospike/etc/feature.conf).
 
@@ -149,7 +149,7 @@ Developers using the Aerospike EE single-node evaluation, and most others using 
 
 ### Configuring the node's access address
 
-In order for the Aerospike node to properly broadcast its address to the cluster and applications, the [`access-address`](https://www.aerospike.com/docs/reference/configuration/index.html#access-address) configuration parameter needs to be set in the configuration file. If it is not set, then the IP address within the container will be used, which is not accessible to other nodes.
+In order for the Aerospike node to properly broadcast its address to the cluster and applications, the [`access-address`](https://docs.aerospike.com/docs/reference/configuration/index.html?show-removed=1#access-address) configuration parameter needs to be set in the configuration file. If it is not set, then the IP address within the container will be used, which is not accessible to other nodes.
 
 	    network {
 	        service {
@@ -162,8 +162,8 @@ In order for the Aerospike node to properly broadcast its address to the cluster
 
 Mesh networking requires setting up links between each node in the cluster. This can be achieved in two ways:
 
-1.	Add a configuration for each node in the cluster, as defined in [Network Heartbeat Configuration](http://www.aerospike.com/docs/operations/configure/network/heartbeat/#mesh-unicast-heartbeat).
-2.	Use `asinfo` to send the `tip` command, to make the node aware of another node, as defined in [tip command in asinfo](http://www.aerospike.com/docs/tools/asinfo/#tip).
+1.	Add a configuration for each node in the cluster, as defined in [Network Heartbeat Configuration](http://docs.aerospike.com/docs/operations/configure/network/heartbeat/#mesh-unicast-heartbeat).
+2.	Use `asinfo` to send the `tip` command, to make the node aware of another node, as defined in [tip command in asinfo](http://docs.aerospike.com/docs/tools/asinfo/#tip).
 
 For more, see [How do I get a 2 nodes Aerospike cluster running quickly in Docker without editing a single file?](https://medium.com/aerospike-developer-blog/how-do-i-get-a-2-node-aerospike-cluster-running-quickly-in-docker-without-editing-a-single-file-1c2a94564a99?source=friends_link&sk=4ff6a22f0106596c42aa4b77d6cdc3a5)
 
@@ -173,11 +173,11 @@ These images are based on [ubuntu:24.04](https://hub.docker.com/_/ubuntu).
 
 ### ee-[version]
 
-These tags are for Aerospike EE images, and will require a feature key file, such as the one you get with the single-node EE evaluation, or one associated with a commercial enterprise license agreement.
+These [tags](https://hub.docker.com/r/aerospike/aerospike-server-enterprise/tags?page=1&ordering=last_updated) are for Aerospike EE images, and will require a feature key file, such as the one you get with the single-node EE evaluation, or one associated with a commercial enterprise license agreement.
 
 ### ce-[version]
 
-These tags are for Aerospike CE images, and do not require a feature key file to start. As mentioned above, the developer API for both is the same, but the editions differ in operational features.
+These [tags](https://hub.docker.com/r/aerospike/aerospike-server/tags?page=1&ordering=last_updated) are for Aerospike CE images, and do not require a feature key file to start. As mentioned above, the developer API for both is the same, but the editions differ in operational features.
 
 ## Reporting Issues
 
