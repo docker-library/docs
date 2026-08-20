@@ -24,23 +24,23 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.20.2`, `1.20`, `latest`, `1.20.2-otp-29`, `1.20-otp-29`, `otp-29`](https://github.com/erlef/docker-elixir/blob/028c5d2a903c15a5cd9a3ed31377a0837c12219d/1.20/Dockerfile)
+-	[`1.20.3`, `1.20`, `latest`, `1.20.3-otp-29`, `1.20-otp-29`, `otp-29`](https://github.com/erlef/docker-elixir/blob/a5547803aa5eda2e61f2a5a398324c97e0a82773/1.20/Dockerfile)
 
--	[`1.20.2-slim`, `1.20-slim`, `slim`, `1.20.2-otp-29-slim`, `1.20-otp-29-slim`, `otp-29-slim`](https://github.com/erlef/docker-elixir/blob/028c5d2a903c15a5cd9a3ed31377a0837c12219d/1.20/slim/Dockerfile)
+-	[`1.20.3-slim`, `1.20-slim`, `slim`, `1.20.3-otp-29-slim`, `1.20-otp-29-slim`, `otp-29-slim`](https://github.com/erlef/docker-elixir/blob/a5547803aa5eda2e61f2a5a398324c97e0a82773/1.20/slim/Dockerfile)
 
--	[`1.20.2-alpine`, `1.20-alpine`, `alpine`, `1.20.2-otp-29-alpine`, `1.20-otp-29-alpine`, `otp-29-alpine`](https://github.com/erlef/docker-elixir/blob/028c5d2a903c15a5cd9a3ed31377a0837c12219d/1.20/alpine/Dockerfile)
+-	[`1.20.3-alpine`, `1.20-alpine`, `alpine`, `1.20.3-otp-29-alpine`, `1.20-otp-29-alpine`, `otp-29-alpine`](https://github.com/erlef/docker-elixir/blob/a5547803aa5eda2e61f2a5a398324c97e0a82773/1.20/alpine/Dockerfile)
 
--	[`1.20.2-otp-27`, `1.20-otp-27`, `otp-27`](https://github.com/erlef/docker-elixir/blob/028c5d2a903c15a5cd9a3ed31377a0837c12219d/1.20/otp-27/Dockerfile)
+-	[`1.20.3-otp-27`, `1.20-otp-27`, `otp-27`](https://github.com/erlef/docker-elixir/blob/a5547803aa5eda2e61f2a5a398324c97e0a82773/1.20/otp-27/Dockerfile)
 
--	[`1.20.2-otp-27-alpine`, `1.20-otp-27-alpine`, `otp-27-alpine`](https://github.com/erlef/docker-elixir/blob/028c5d2a903c15a5cd9a3ed31377a0837c12219d/1.20/otp-27-alpine/Dockerfile)
+-	[`1.20.3-otp-27-alpine`, `1.20-otp-27-alpine`, `otp-27-alpine`](https://github.com/erlef/docker-elixir/blob/a5547803aa5eda2e61f2a5a398324c97e0a82773/1.20/otp-27-alpine/Dockerfile)
 
--	[`1.20.2-otp-27-slim`, `1.20-otp-27-slim`, `otp-27-slim`](https://github.com/erlef/docker-elixir/blob/028c5d2a903c15a5cd9a3ed31377a0837c12219d/1.20/otp-27-slim/Dockerfile)
+-	[`1.20.3-otp-27-slim`, `1.20-otp-27-slim`, `otp-27-slim`](https://github.com/erlef/docker-elixir/blob/a5547803aa5eda2e61f2a5a398324c97e0a82773/1.20/otp-27-slim/Dockerfile)
 
--	[`1.20.2-otp-28`, `1.20-otp-28`, `otp-28`](https://github.com/erlef/docker-elixir/blob/028c5d2a903c15a5cd9a3ed31377a0837c12219d/1.20/otp-28/Dockerfile)
+-	[`1.20.3-otp-28`, `1.20-otp-28`, `otp-28`](https://github.com/erlef/docker-elixir/blob/a5547803aa5eda2e61f2a5a398324c97e0a82773/1.20/otp-28/Dockerfile)
 
--	[`1.20.2-otp-28-alpine`, `1.20-otp-28-alpine`, `otp-28-alpine`](https://github.com/erlef/docker-elixir/blob/028c5d2a903c15a5cd9a3ed31377a0837c12219d/1.20/otp-28-alpine/Dockerfile)
+-	[`1.20.3-otp-28-alpine`, `1.20-otp-28-alpine`, `otp-28-alpine`](https://github.com/erlef/docker-elixir/blob/a5547803aa5eda2e61f2a5a398324c97e0a82773/1.20/otp-28-alpine/Dockerfile)
 
--	[`1.20.2-otp-28-slim`, `1.20-otp-28-slim`, `otp-28-slim`](https://github.com/erlef/docker-elixir/blob/028c5d2a903c15a5cd9a3ed31377a0837c12219d/1.20/otp-28-slim/Dockerfile)
+-	[`1.20.3-otp-28-slim`, `1.20-otp-28-slim`, `otp-28-slim`](https://github.com/erlef/docker-elixir/blob/a5547803aa5eda2e61f2a5a398324c97e0a82773/1.20/otp-28-slim/Dockerfile)
 
 -	[`1.19.5`, `1.19`, `1.19.5-otp-28`, `1.19-otp-28`](https://github.com/erlef/docker-elixir/blob/77e28bff70ca14c08151f9850d98ae44d6204429/1.19/Dockerfile)
 
@@ -126,7 +126,7 @@ WARNING:
 	[https://github.com/erlef/docker-elixir/issues](https://github.com/erlef/docker-elixir/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/elixir/), [`arm32v7`](https://hub.docker.com/r/arm32v7/elixir/), [`arm64v8`](https://hub.docker.com/r/arm64v8/elixir/), [`i386`](https://hub.docker.com/r/i386/elixir/), [`ppc64le`](https://hub.docker.com/r/ppc64le/elixir/), [`s390x`](https://hub.docker.com/r/s390x/elixir/)
+	[`amd64`](https://hub.docker.com/r/amd64/elixir/), [`arm32v7`](https://hub.docker.com/r/arm32v7/elixir/), [`arm64v8`](https://hub.docker.com/r/arm64v8/elixir/), [`i386`](https://hub.docker.com/r/i386/elixir/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/elixir/` directory](https://github.com/docker-library/repo-info/blob/master/repos/elixir) ([history](https://github.com/docker-library/repo-info/commits/master/repos/elixir))  
