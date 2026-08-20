@@ -2,19 +2,17 @@
 
 Amazon Linux is provided by Amazon Web Services (AWS). It is designed to provide a stable, secure, and high-performance execution environment for applications running on Amazon EC2. The full distribution includes packages that enable easy integration with AWS, including launch configuration tools and many popular AWS libraries and tools. AWS provides ongoing security and maintenance updates to all instances running Amazon Linux.
 
-The Amazon Linux container image contains a minimal set of packages. To install additional packages, [use `yum`](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-software.html).
+The Amazon Linux container image contains a minimal set of packages. To install additional packages, [use `dnf`](https://docs.aws.amazon.com/linux/al2023/ug/package-management.html).
 
-AWS provides three versions of Amazon Linux:
+Supported major versions of Amazon Linux:
 
 -	[Amazon Linux 2023](https://aws.amazon.com/linux/amazon-linux-2023/) (recommended, latest)
--	[Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/)
--	[Amazon Linux AMI](https://aws.amazon.com/amazon-linux-ami/)
+
+Amazon Linux 2 reached end of life on June 30, 2026 (see [AL2 FAQs](https://aws.amazon.com/amazon-linux-2/faqs/)). Amazon Linux AMI (AL1) reached end of life on December 31, 2023. Please migrate to Amazon Linux 2023.
 
 For information on security updates for Amazon Linux, please refer to:
 
 -	[Amazon Linux 2023 Security Advisories](https://alas.aws.amazon.com/alas2023.html)
--	[Amazon Linux 2 Security Advisories](https://alas.aws.amazon.com/alas2.html)
--	[Amazon Linux AMI Security Advisories](https://alas.aws.amazon.com/)
 
 Note that Docker Hub's vulnerability scanning for Amazon Linux is currently based on RPM versions, which does not reflect the state of backported patches for vulnerabilities.
 
@@ -42,25 +40,16 @@ Similar to the Amazon Linux images for AWS EC2 and on-premises use, Amazon Linux
 
 ## What support is available for Amazon Linux outside AWS?
 
--	GitHub Issues: https://github.com/amazonlinux/container-images/issues
--	Documentation: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-linux-ami-basics.html
--	Amazon Linux Forums: https://forums.aws.amazon.com/forum.jspa?forumID=228
+-	GitHub Issues: https://github.com/amazonlinux/amazon-linux-2023/issues
+-	Documentation: https://docs.aws.amazon.com/linux/
 -	Paid Support from AWS: https://aws.amazon.com/premiumsupport/
 
 ## Will AWS support the current versions of Amazon Linux going forward?
 
-Yes; in order to avoid any disruption to your existing applications and to facilitate migration to Amazon Linux 2023, AWS will provide regular security updates for Amazon Linux 2 and Amazon Linux 2018.03. Please refer to their FAQs for more information. You can also use all your existing support channels such as AWS Premium Support and Amazon Linux Discussion Forum to continue to submit support requests.
+Yes; Amazon Linux 2023 receives ongoing security and maintenance updates. Amazon Linux 2 reached end of life on June 30, 2026, and Amazon Linux AMI (AL1) reached end of life on December 31, 2023. Please migrate to Amazon Linux 2023.
 
 ## FAQs
 
 ### Amazon Linux 2023
 
 -	FAQs: https://aws.amazon.com/linux/amazon-linux-2023/faqs/
-
-### Amazon Linux 2
-
--	FAQs: https://aws.amazon.com/amazon-linux-2/faqs/
-
-### Amazon Linux 1
-
--	FAQs: https://aws.amazon.com/amazon-linux-ami/faqs/
