@@ -32,10 +32,6 @@ ENV LANG en_US.utf8
 
 Starting from [Ubuntu 24.10 "Oracular Oriole"](https://discourse.ubuntu.com/t/oracular-oriole-release-notes/44878#unminimize), the `unminimize` command will no longer be shipped by default on minimal images. It has now been moved to a dedicated package which can be installed via `apt-get install -y unminimize`.
 
-## Pebble
-
-Starting from Ubuntu 26.04 LTS "Resolute Raccoon", these images are built as [rocks](https://github.com/canonical/rockcraft) and therefore bundle [Pebble](https://github.com/canonical/pebble), a lightweight, API-driven service manager, at `/usr/bin/pebble`. Note that Pebble is not set as the image's default entrypoint: the entrypoint is left empty and the default command is `/bin/bash`, preserving the existing entrypoint behavior.
-
 # How is the rootfs built?
 
 ## Ubuntu 25.10 "Questing Quokka" and earlier
@@ -48,4 +44,4 @@ The tarballs published by Canonical, referenced by `dist-*` tags in https://git.
 
 ## Ubuntu 26.04 LTS "Resolute Raccoon" and later
 
-Starting from Ubuntu 26.04 LTS, the rootfs is no longer built via `livefs`. Instead, it is built directly with [Rockcraft](https://github.com/canonical/rockcraft) from the recipe on the `main` branch of the same [ubuntu-base repo](https://git.launchpad.net/cloud-images/+oci/ubuntu-base). Rockcraft runs the build on Launchpad via `rockcraft remote-build`, producing a `.rock` OCI archive that is then unpacked into the rootfs tarball published under the `dist-*` tags.
+Starting from Ubuntu 26.04 LTS, the rootfs is no longer built via `livefs`. Instead, the image is built directly with [Rockcraft](https://github.com/canonical/rockcraft) from the recipe on the `main` branch of the same [ubuntu-base repo](https://git.launchpad.net/cloud-images/+oci/ubuntu-base), and the rootfs tarballs under the `dist-*` tags of the [ubuntu-base repo](https://git.launchpad.net/cloud-images/+oci/ubuntu-base) are exported from the Rockcraft build artifacts.
