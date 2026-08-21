@@ -40,7 +40,6 @@ The tarballs published by Canonical, referenced by `dist-*` tags in https://git.
 
 -	[Jammy](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/jammy/ubuntu-oci)
 -	[Noble](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/noble/ubuntu-oci)
--	[Questing](https://launchpad.net/~cloud-images-release-managers/+livefs/ubuntu/questing/ubuntu-oci)
 
 ## Ubuntu 26.04 LTS "Resolute Raccoon" and later
 
