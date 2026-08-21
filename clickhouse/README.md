@@ -24,15 +24,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `26.7`, `26.7-jammy`, `26.7.3`, `26.7.3-jammy`, `26.7.3.19`, `26.7.3.19-jammy`](https://github.com/ClickHouse/docker-library/blob/9d3f97b6126a2212ca91c4aca667324cace2755a/server/26.7.3.19/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `26.7`, `26.7-jammy`, `26.7.5`, `26.7.5-jammy`, `26.7.5.10`, `26.7.5.10-jammy`](https://github.com/ClickHouse/docker-library/blob/c33ee124b43a98255e45b07227f7c7030937eeda/server/26.7.5.10/Dockerfile.ubuntu)
 
--	[`26.6`, `26.6-jammy`, `26.6.2`, `26.6.2-jammy`, `26.6.2.160`, `26.6.2.160-jammy`](https://github.com/ClickHouse/docker-library/blob/9d3f97b6126a2212ca91c4aca667324cace2755a/server/26.6.2.160/Dockerfile.ubuntu)
+-	[`26.6`, `26.6-jammy`, `26.6.3`, `26.6.3-jammy`, `26.6.3.62`, `26.6.3.62-jammy`](https://github.com/ClickHouse/docker-library/blob/c33ee124b43a98255e45b07227f7c7030937eeda/server/26.6.3.62/Dockerfile.ubuntu)
 
--	[`26.5`, `26.5-jammy`, `26.5.6`, `26.5.6-jammy`, `26.5.6.113`, `26.5.6.113-jammy`](https://github.com/ClickHouse/docker-library/blob/9d3f97b6126a2212ca91c4aca667324cace2755a/server/26.5.6.113/Dockerfile.ubuntu)
+-	[`26.5`, `26.5-jammy`, `26.5.7`, `26.5.7-jammy`, `26.5.7.64`, `26.5.7.64-jammy`](https://github.com/ClickHouse/docker-library/blob/c33ee124b43a98255e45b07227f7c7030937eeda/server/26.5.7.64/Dockerfile.ubuntu)
 
--	[`lts`, `lts-jammy`, `26.3`, `26.3-jammy`, `26.3.17`, `26.3.17-jammy`, `26.3.17.110`, `26.3.17.110-jammy`](https://github.com/ClickHouse/docker-library/blob/9d3f97b6126a2212ca91c4aca667324cace2755a/server/26.3.17.110/Dockerfile.ubuntu)
+-	[`lts`, `lts-jammy`, `26.3`, `26.3-jammy`, `26.3.20`, `26.3.20-jammy`, `26.3.20.7`, `26.3.20.7-jammy`](https://github.com/ClickHouse/docker-library/blob/c33ee124b43a98255e45b07227f7c7030937eeda/server/26.3.20.7/Dockerfile.ubuntu)
 
--	[`25.8`, `25.8-jammy`, `25.8.29`, `25.8.29-jammy`, `25.8.29.51`, `25.8.29.51-jammy`](https://github.com/ClickHouse/docker-library/blob/9d3f97b6126a2212ca91c4aca667324cace2755a/server/25.8.29.51/Dockerfile.ubuntu)
+-	[`25.8`, `25.8-jammy`, `25.8.32`, `25.8.32-jammy`, `25.8.32.4`, `25.8.32.4-jammy`](https://github.com/ClickHouse/docker-library/blob/c33ee124b43a98255e45b07227f7c7030937eeda/server/25.8.32.4/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
@@ -75,7 +75,7 @@ For more information and documentation see https://clickhouse.com/.
 
 -	The amd64 image requires support for the [x86-64-v3 microarchitecture level](https://en.wikipedia.org/wiki/X86-64#Microarchitecture_levels) (AVX2, BMI1, BMI2, F16C, FMA, LZCNT, MOVBE, XSAVE). Virtually all x86 CPUs after 2015 support x86-64-v3.
 -	The arm64 image requires support for the [ARMv8.2-A architecture](https://en.wikipedia.org/wiki/AArch64#ARMv8.2-A) and additionally the Load-Acquire RCpc register. The register is optional in version ARMv8.2-A and mandatory in [ARMv8.3-A](https://en.wikipedia.org/wiki/AArch64#ARMv8.3-A). Supported in Graviton >=2, Azure and GCP instances. Examples for unsupported devices are Raspberry Pi 4 (ARMv8.0-A) and Jetson AGX Xavier/Orin (ARMv8.2-A).
--	Since the Clickhouse 24.11 Ubuntu images started using `ubuntu:22.04` as its base image. It requires docker version >= `20.10.10` containing [patch](https://github.com/moby/moby/commit/977283509f75303bc6612665a04abf76ff1d2468). As a workaround you could use `docker run --security-opt seccomp=unconfined` instead, however that has security implications.
+-	Since the ClickHouse 24.11 Ubuntu images started using `ubuntu:22.04` as its base image. It requires docker version >= `20.10.10` containing [patch](https://github.com/moby/moby/commit/977283509f75303bc6612665a04abf76ff1d2468). As a workaround you could use `docker run --security-opt seccomp=unconfined` instead, however that has security implications.
 
 ## How to use this image
 
