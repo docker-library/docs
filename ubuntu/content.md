@@ -44,4 +44,4 @@ The tarballs published by Canonical, referenced by `dist-*` tags in https://git.
 
 ## Ubuntu 26.04 LTS "Resolute Raccoon" and later
 
-Starting from Ubuntu 26.04 LTS, the rootfs is no longer built via `livefs`. Instead, the image is built directly with [Rockcraft](https://github.com/canonical/rockcraft) from the recipe on the `main` branch of the same [ubuntu-base repo](https://git.launchpad.net/cloud-images/+oci/ubuntu-base), and the rootfs tarballs under the `dist-*` tags of the [ubuntu-base repo](https://git.launchpad.net/cloud-images/+oci/ubuntu-base) are exported from the Rockcraft build artifacts.
+Starting from Ubuntu 26.04 LTS, the rootfs is no longer built via `livefs`. Instead, the image is built directly with [Rockcraft](https://github.com/canonical/rockcraft) from the recipe on the `main` branch of the same [ubuntu-base repo](https://git.launchpad.net/cloud-images/+oci/ubuntu-base), and the rootfs tarballs under the `<codename>-<release>` tags of the [ubuntu-base repo](https://git.launchpad.net/cloud-images/+oci/ubuntu-base) are exported from the Rockcraft build artifacts.
