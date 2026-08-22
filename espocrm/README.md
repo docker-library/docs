@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `espocrm` official image](https://hub.docker.com/_/espocrm) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -60,7 +62,7 @@ EspoCRM is a highly customizable open source CRM software that allows users to s
 The basic pattern for starting an `espocrm` instance is:
 
 ```console
-$ docker run --name some-espocrm -d espocrm
+$ docker run --name some-espocrm -d amd64/espocrm
 ```
 
 ## Quick start
@@ -92,14 +94,14 @@ docker run \
   -v espocrm-custom:/var/www/html/custom \
   -v espocrm-custom-client:/var/www/html/client/custom \
   -p 8080:80 \
-  -d espocrm && \
+  -d amd64/espocrm && \
 docker run \
   --name espocrm-daemon \
   --network espocrm-network \
   --restart unless-stopped \
   --volumes-from espocrm \
   --entrypoint docker-daemon.sh \
-  -d espocrm
+  -d amd64/espocrm
 ```
 
 Then, access it via `http://localhost:8080` or `http://YOUR_IP_ADDRESS:8080` with credentials `admin` and `your_admin_password`.
@@ -118,7 +120,7 @@ docker run \
   -e ESPOCRM_ADMIN_USERNAME=admin \
   -e ESPOCRM_ADMIN_PASSWORD=your_admin_password \
   -e ESPOCRM_SITE_URL=http://192.168.0.100:8080 \
-  -d espocrm
+  -d amd64/espocrm
 ```
 
 Then, access it via `http://192.168.0.100:8080` with credentials `admin` and `your_admin_password`.
@@ -233,7 +235,7 @@ To upgrade EspoCRM when using Docker Run:
 
 ```bash
 docker pull mariadb
-docker pull espocrm
+docker pull amd64/espocrm
 ```
 
 2\. Stop all running containers:
@@ -274,7 +276,7 @@ $ docker run \
   --network some-network \
   -e ESPOCRM_DATABASE_PASSWORD_FILE=/run/secrets/espocrm_db_password \
   -e ESPOCRM_ADMIN_PASSWORD_FILE=/run/secrets/espocrm_admin_password \
-  -d espocrm
+  -d amd64/espocrm
 ```
 
 ## Environment variables
@@ -376,15 +378,15 @@ ESPOCRM_CONFIG_CURRENCY_DECIMAL_PLACES: 'null'
 
 # Image Variants
 
-The `espocrm` images come in many flavors, each designed for a specific use case.
+The `amd64/espocrm` images come in many flavors, each designed for a specific use case.
 
-## `espocrm:<version>`
+## `amd64/espocrm:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-## `espocrm:<version>-alpine`
+## `amd64/espocrm:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
