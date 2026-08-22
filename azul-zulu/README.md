@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `azul-zulu` official image](https://hub.docker.com/_/azul-zulu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -222,7 +224,7 @@ To run a container of your choice and validate its version, use the command belo
 Using Azul Zulu based on Debian:
 
 ```bash
-docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
+docker run -it --rm arm64v8/azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -version
 ```
 
 ### Building a Container With Your Own Application
@@ -230,7 +232,7 @@ docker run -it --rm azul-zulu:<ZULU_VERSION>-debian<DISTRO_VERSION> java -versio
 To build a Debian Docker container with a pre-built jar file with, use the following example Dockerfile:
 
 ```text
-FROM azul-zulu:<VERSION>
+FROM arm64v8/azul-zulu:<VERSION>
 COPY my-app.jar /opt/my-app/
 CMD ["java", "-jar", "/opt/my-app/my-app.jar"]
 ```
@@ -244,13 +246,13 @@ docker run -it --rm my-app-container
 
 # Image Variants
 
-The `azul-zulu` images come in many flavors, each designed for a specific use case.
+The `arm64v8/azul-zulu` images come in many flavors, each designed for a specific use case.
 
-## `azul-zulu:<version>`
+## `arm64v8/azul-zulu:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `azul-zulu:<version>-alpine`
+## `arm64v8/azul-zulu:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
