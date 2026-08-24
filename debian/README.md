@@ -24,61 +24,61 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`bookworm`, `bookworm-20260803`, `12.15`, `12`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/bookworm/oci/index.json)
+-	[`bookworm`, `bookworm-20260824`, `12.15`, `12`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/bookworm/oci/index.json)
 
--	[`bookworm-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/bookworm/backports/Dockerfile)
+-	[`bookworm-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/bookworm/backports/Dockerfile)
 
--	[`bookworm-slim`, `bookworm-20260803-slim`, `12.15-slim`, `12-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/bookworm/slim/oci/index.json)
+-	[`bookworm-slim`, `bookworm-20260824-slim`, `12.15-slim`, `12-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/bookworm/slim/oci/index.json)
 
--	[`bullseye`, `bullseye-20260803`, `11.11`, `11`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/bullseye/oci/index.json)
+-	[`bullseye`, `bullseye-20260824`, `11.11`, `11`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/bullseye/oci/index.json)
 
--	[`bullseye-slim`, `bullseye-20260803-slim`, `11.11-slim`, `11-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/bullseye/slim/oci/index.json)
+-	[`bullseye-slim`, `bullseye-20260824-slim`, `11.11-slim`, `11-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/bullseye/slim/oci/index.json)
 
--	[`experimental`, `experimental-20260803`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/experimental/Dockerfile)
+-	[`experimental`, `experimental-20260824`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/experimental/Dockerfile)
 
--	[`forky`, `forky-20260803`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/forky/oci/index.json)
+-	[`forky`, `forky-20260824`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/forky/oci/index.json)
 
--	[`forky-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/forky/backports/Dockerfile)
+-	[`forky-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/forky/backports/Dockerfile)
 
--	[`forky-slim`, `forky-20260803-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/forky/slim/oci/index.json)
+-	[`forky-slim`, `forky-20260824-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/forky/slim/oci/index.json)
 
--	[`oldoldstable`, `oldoldstable-20260803`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/oldoldstable/oci/index.json)
+-	[`oldoldstable`, `oldoldstable-20260824`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/oldoldstable/oci/index.json)
 
--	[`oldoldstable-slim`, `oldoldstable-20260803-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/oldoldstable/slim/oci/index.json)
+-	[`oldoldstable-slim`, `oldoldstable-20260824-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/oldoldstable/slim/oci/index.json)
 
--	[`oldstable`, `oldstable-20260803`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/oldstable/oci/index.json)
+-	[`oldstable`, `oldstable-20260824`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/oldstable/oci/index.json)
 
--	[`oldstable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/oldstable/backports/Dockerfile)
+-	[`oldstable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/oldstable/backports/Dockerfile)
 
--	[`oldstable-slim`, `oldstable-20260803-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/oldstable/slim/oci/index.json)
+-	[`oldstable-slim`, `oldstable-20260824-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/oldstable/slim/oci/index.json)
 
--	[`rc-buggy`, `rc-buggy-20260803`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/rc-buggy/Dockerfile)
+-	[`rc-buggy`, `rc-buggy-20260824`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/rc-buggy/Dockerfile)
 
--	[`sid`, `sid-20260803`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/sid/oci/index.json)
+-	[`sid`, `sid-20260824`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/sid/oci/index.json)
 
--	[`sid-slim`, `sid-20260803-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/sid/slim/oci/index.json)
+-	[`sid-slim`, `sid-20260824-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/sid/slim/oci/index.json)
 
--	[`stable`, `stable-20260803`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/stable/oci/index.json)
+-	[`stable`, `stable-20260824`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/stable/oci/index.json)
 
--	[`stable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/stable/backports/Dockerfile)
+-	[`stable-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/stable/backports/Dockerfile)
 
--	[`stable-slim`, `stable-20260803-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/stable/slim/oci/index.json)
+-	[`stable-slim`, `stable-20260824-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/stable/slim/oci/index.json)
 
--	[`testing`, `testing-20260803`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/testing/oci/index.json)
+-	[`testing`, `testing-20260824`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/testing/oci/index.json)
 
--	[`testing-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/testing/backports/Dockerfile)
+-	[`testing-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/testing/backports/Dockerfile)
 
--	[`testing-slim`, `testing-20260803-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/testing/slim/oci/index.json)
+-	[`testing-slim`, `testing-20260824-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/testing/slim/oci/index.json)
 
--	[`trixie`, `trixie-20260803`, `13.6`, `13`, `latest`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/trixie/oci/index.json)
+-	[`trixie`, `trixie-20260824`, `13.6`, `13`, `latest`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/trixie/oci/index.json)
 
--	[`trixie-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/trixie/backports/Dockerfile)
+-	[`trixie-backports`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/trixie/backports/Dockerfile)
 
--	[`trixie-slim`, `trixie-20260803-slim`, `13.6-slim`, `13-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/trixie/slim/oci/index.json)
+-	[`trixie-slim`, `trixie-20260824-slim`, `13.6-slim`, `13-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/trixie/slim/oci/index.json)
 
--	[`unstable`, `unstable-20260803`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/unstable/oci/index.json)
+-	[`unstable`, `unstable-20260824`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/unstable/oci/index.json)
 
--	[`unstable-slim`, `unstable-20260803-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/b09f23ad7aab0cafa864c696dfbf130128e5e452/unstable/slim/oci/index.json)
+-	[`unstable-slim`, `unstable-20260824-slim`](https://github.com/debuerreotype/docker-debian-artifacts/blob/bae6d64d90b4068b09ff9d8b564c2773ef5d8d83/unstable/slim/oci/index.json)
 
 # Quick reference (cont.)
 
