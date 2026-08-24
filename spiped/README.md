@@ -26,7 +26,7 @@ WARNING:
 
 -	[`1.6.4`, `1.6`, `1`, `latest`](https://github.com/TimWolla/docker-spiped/blob/f7100845a437d5e72c79d384113cd657ca6f93de/1.6/Dockerfile)
 
--	[`1.6.4-alpine`, `1.6-alpine`, `1-alpine`, `alpine`](https://github.com/TimWolla/docker-spiped/blob/2a6429d25e5ebccc2a8075cb8ec85d5dd951579e/1.6/alpine/Dockerfile)
+-	[`1.6.4-alpine`, `1.6-alpine`, `1-alpine`, `alpine`](https://github.com/TimWolla/docker-spiped/blob/af958fb8e729be83ec9da82d9bd854fab7a74728/1.6/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
