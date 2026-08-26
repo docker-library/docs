@@ -61,7 +61,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon OS 5.0 as the base of an image, specify `FROM photon:5.0`.
 
 ## Support
 
@@ -75,7 +75,7 @@ For more general user questions, visit the Photon OS user forum in our [Photon O
 
 # License
 
-View [license information](https://github.com/vmware/photon/blob/master/LICENSE) for the software contained in this image.
+View [license information](https://github.com/vmware/photon/blob/5.0/LICENSE.md) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 
