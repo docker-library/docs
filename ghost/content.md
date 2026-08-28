@@ -115,7 +115,7 @@ When Ghost 7.0 ships, this layout becomes the plain `%%IMAGE%%:<version>` image 
 
 -	**Configuration ships with the image.** `config.production.json` is a file baked into the image instead of being generated at build time by Ghost-CLI. It sets the same defaults, minus the Ghost-CLI-only `process` key, and every value remains overridable via `__` environment variables.
 
--	**Smaller runtime image.** The build is multi-stage: the final image is plain `debian:bookworm-slim` (or `alpine:3.23`) with Node.js and a pruned Ghost install copied in, so build toolchains, package manager caches, TypeScript sources and vendored C/C++ are not shipped.
+-	**Smaller runtime image.** The build doesn't include Ghost-CLI and ships a pruned Ghost install, so build toolchains, package manager caches, TypeScript sources and vendored C/C++ are not shipped.
 
 ## Production mode
 
