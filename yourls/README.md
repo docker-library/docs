@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.10.4-apache`, `1.10-apache`, `1-apache`, `apache`, `1.10.4`, `1.10`, `1`, `latest`](https://github.com/YOURLS/containers/blob/da811947acac487e9eae4f4ccc73509b5eea5eeb/apache/Dockerfile)
+-	[`1.10.5-apache`, `1.10-apache`, `1-apache`, `apache`, `1.10.5`, `1.10`, `1`, `latest`](https://github.com/YOURLS/containers/blob/0e20dada42a19a11f0980d9a307f5e9662e3c89a/apache/Dockerfile)
 
--	[`1.10.4-fpm`, `1.10-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/containers/blob/da811947acac487e9eae4f4ccc73509b5eea5eeb/fpm/Dockerfile)
+-	[`1.10.5-fpm`, `1.10-fpm`, `1-fpm`, `fpm`](https://github.com/YOURLS/containers/blob/0e20dada42a19a11f0980d9a307f5e9662e3c89a/fpm/Dockerfile)
 
--	[`1.10.4-fpm-alpine`, `1.10-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/containers/blob/da811947acac487e9eae4f4ccc73509b5eea5eeb/fpm-alpine/Dockerfile)
+-	[`1.10.5-fpm-alpine`, `1.10-fpm-alpine`, `1-fpm-alpine`, `fpm-alpine`](https://github.com/YOURLS/containers/blob/0e20dada42a19a11f0980d9a307f5e9662e3c89a/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
