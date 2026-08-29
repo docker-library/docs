@@ -28,7 +28,13 @@ If all goes well, you'll be able to access your new site on `http://localhost:30
 
 You will want to ensure you are running the latest minor version of Ghost before upgrading major versions. Otherwise, you may run into database errors.
 
-For upgrading your Ghost container you will want to mount your data to the appropriate path in the predecessor container (see below): import your content from the admin panel, stop the container, and then re-mount your content to the successor container you are upgrading into; you can then export your content from the admin panel.
+Before upgrading major versions of your Ghost container, export site content with the following procedure:
+1.  Data should be mounted to the appropriate path in the predecessor container (see below)
+1.  Access the admin panel and export site content to a JSON file
+1.  Stop the predecessor container
+1.  Start the successor container, mounting data to the successor container
+1.  Access the admin panel and inspect the site
+1.  If issues are encountered, reset and import site content from the JSON file via the admin panel
 
 ## Stateful
 
