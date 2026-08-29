@@ -70,6 +70,7 @@ $ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
     --log-driver=none \
     -v $HOME/.irssi:/home/user/.irssi:ro \
     -v /etc/localtime:/etc/localtime:ro \
+    --detach-keys="ctrl-q,ctrl-q" \
     irssi
 ```
 
@@ -81,10 +82,14 @@ On a Mac OS X system, run the same image using:
 $ docker run -it --name my-running-irssi -e TERM -u $(id -u):$(id -g) \
     --log-driver=none \
     -v $HOME/.irssi:/home/user/.irssi:ro \
+    --detach-keys="ctrl-q,ctrl-q" \
     irssi
 ```
 
-You omit `/etc/localtime` on Mac OS X because `boot2docker` doesn't use this file.
+We omit `/etc/localtime` on Mac OS X because `boot2docker` doesn't use this file.
+
+We set `--detach-keys` to avoid a conflict between default irssi keybindings and
+the default docker PTY detach escape sequence.
 
 # Image Variants
 
