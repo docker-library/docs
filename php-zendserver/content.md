@@ -12,10 +12,9 @@ Zend Server is the platform that enables Continuous Delivery, which provides con
 
 ### Additional Resources
 
--	[http://www.zend.com/](http://www.zend.com/)
--	[http://support.roguewave.com/](http://support.roguewave.com/)
--	[http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm](http://files.zend.com/help/Zend-Server/zend-server.htm#faqs.htm)
--	[http://files.zend.com/help/Zend-Server/zend-server.htm#getting\_started.htm](http://files.zend.com/help/Zend-Server/zend-server.htm#getting_started.htm)
+-	[https://www.zend.com/products/zend-server](https://www.zend.com/products/zend-server)
+-	[https://help.zend.com/zend/current/content/faqs.htm](https://help.zend.com/zend/current/content/faqs.htm)
+-	[https://help.zend.com/zend/current/content/getting\_started.htm](https://help.zend.com/zend/current/content/getting_started.htm)
 
 # PHP-ZendServer
 
@@ -35,16 +34,9 @@ To start a single Zend Server instance, execute:
 
 	    $ docker run %%IMAGE%%
 
--	You can specify the PHP and Zend Server version by adding ':<php-version>' or ':&lt;ZS-version&gt;-php&lt;version&gt;' to the 'docker run' command.
-
-		for example: 
-		$docker run %%IMAGE%%:8.5-php5.6
-
 #### Availible versions:
 
--	Zend Server 8
--	Zend Server 9 (With PHP 7 GA)(Default version)
--	Zend Server 2019 with multi PHP Version Support (7.1, 7.2 & 7.3)
+-	Zend Server 2021 with multi PHP Version Support (7.1, 7.2, 7.3, 7.4)
 
 ##### Cluster
 
