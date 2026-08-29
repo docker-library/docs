@@ -4,7 +4,12 @@ The images in this repository contain OpenJDK binaries that are built by IBM Sem
 
 # What is IBM Semeru Runtimes ?
 
-The IBM Semeru Runtimes are free production-ready open source binaries built with the OpenJDK class libraries and the Eclipse OpenJ9 JVM, which delivers the power and performance to run your Java applications, when you need it most.
+IBM Semeru Runtimes is available in two editions with different licenses:
+
+```editions
+IBM Semeru Runtime Open Edition has an open source license (GPLv2+Classpath extension).
+IBM Semeru Runtime™ Certified Edition has an IBM license (International License Agreement for Non-Warranted Programs) and is a Java Platform, Standard Edition compatible implementation.
+```
 
 # How to use this Image
 
