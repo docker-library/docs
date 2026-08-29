@@ -24,9 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.60.0-bookworm`, `6.60.0`, `6.60-bookworm`, `6.60`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/TryGhost/docker-library-ghost/blob/4a9626af1d9f6a8f903ab6246fda29e56dcf106f/6/bookworm/Dockerfile)
+-	[`6.61.0-bookworm`, `6.61.0`, `6.61-bookworm`, `6.61`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/TryGhost/docker-library-ghost/blob/653aed98404d4e3428aa09a77347a2d3d7d775f2/6/bookworm/Dockerfile)
 
--	[`6.60.0-alpine3.23`, `6.60.0-alpine`, `6.60-alpine3.23`, `6.60-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/TryGhost/docker-library-ghost/blob/4a9626af1d9f6a8f903ab6246fda29e56dcf106f/6/alpine3.23/Dockerfile)
+-	[`6.61.0-alpine3.23`, `6.61.0-alpine`, `6.61-alpine3.23`, `6.61-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/TryGhost/docker-library-ghost/blob/653aed98404d4e3428aa09a77347a2d3d7d775f2/6/alpine3.23/Dockerfile)
+
+-	[`6.61.0-next-bookworm`, `6.61.0-next`, `6.61-next-bookworm`, `6.61-next`, `6-next-bookworm`, `6-next`, `next-bookworm`, `next`](https://github.com/TryGhost/docker-library-ghost/blob/653aed98404d4e3428aa09a77347a2d3d7d775f2/6-next/bookworm/Dockerfile)
+
+-	[`6.61.0-next-alpine3.23`, `6.61.0-next-alpine`, `6.61-next-alpine3.23`, `6.61-next-alpine`, `6-next-alpine3.23`, `6-next-alpine`, `next-alpine3.23`, `next-alpine`](https://github.com/TryGhost/docker-library-ghost/blob/653aed98404d4e3428aa09a77347a2d3d7d775f2/6-next/alpine3.23/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -131,6 +135,40 @@ $ docker exec <container-id> node --version
 ## Note about Ghost-CLI
 
 While the Docker images do have Ghost-CLI available and do use some of its commands to set up the base Ghost image, many of the other Ghost-CLI commands won't work correctly, and really aren't designed/intended to. For more info see [docker-library/ghost#156 (comment)](https://github.com/docker-library/ghost/issues/156#issuecomment-428159861)
+
+Ghost-CLI is not included in the `next` variant at all (see below).
+
+## The `next` variant
+
+The `next` tags (`ghost:next`, `ghost:6-next`, `ghost:next-alpine`, plus fully qualified variants such as `ghost:6.61.0-next-alpine3.23`) are a preview of the image that will become the standard `ghost` image in **Ghost 7.0**. They track the same stable upstream Ghost releases as the default tags; what differs is how the image is built and laid out, not which version of Ghost is inside. The `next` tags never carry `latest`.
+
+When Ghost 7.0 ships, this layout becomes the plain `ghost:<version>` image and the `next` tags go away, so trying `next` now is the way to find breakage in your setup ahead of that switch.
+
+### Differences from the default variant
+
+-	**Ghost is installed at `/home/ghost` instead of `/var/lib/ghost`**, so content lives at `/home/ghost/content`:
+
+	```console
+	$ docker run -d \
+	    --name some-ghost \
+	    -e NODE_ENV=development \
+	    -e database__connection__filename='/home/ghost/content/data/ghost.db' \
+	    -p 3001:2368 \
+	    -v some-ghost-data:/home/ghost/content \
+	    ghost:next
+	```
+
+	If a volume with existing Ghost content is still mounted at the old `/var/lib/ghost/content`, the container refuses to start rather than quietly booting an empty site alongside it; an empty mount at the old path only prints a warning. Nothing at the old path is modified either way.
+
+-	**No Ghost-CLI.** Ghost is installed from the tarball attached to its GitHub release, using the lockfile shipped in that tarball, rather than through `ghost install`. The `ghost` command is not present in the image. All configuration is still done with environment variables as described above.
+
+-	**Ghost is at the root of the install directory**, not in a `current/` subdirectory, and the default command is `node index.js` rather than `node current/index.js`.
+
+-	**Ghost runs as the `ghost` user** rather than `node`. It keeps uid/gid 1000, so existing bind mounts continue to work once they point at the new path.
+
+-	**Configuration ships with the image.** `config.production.json` is a file baked into the image instead of being generated at build time by Ghost-CLI. It sets the same defaults, minus the Ghost-CLI-only `process` key, and every value remains overridable via `__` environment variables.
+
+-	**Smaller runtime image.** The build doesn't include Ghost-CLI and ships a pruned Ghost install, so build toolchains, package manager caches, TypeScript sources and vendored C/C++ are not shipped.
 
 ## Production mode
 
