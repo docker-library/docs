@@ -70,6 +70,27 @@ $ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://some-gho
 
 (There are further configuration examples in the `compose.yaml` listed below.)
 
+## Docker Secrets
+
+As an alternative to passing sensitive configuration values via environment variables, `_FILE` may be appended to a Ghost configuration environment variable, causing Ghost to read that value from a file in the container instead. In particular, this can be used to load secrets from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
+
+```console
+$ docker run -d \
+	--name some-ghost \
+	-e database__client=mysql \
+	-e database__connection__host=some-mysql \
+	-e database__connection__user=ghost \
+	-e database__connection__password_FILE=/run/secrets/ghost-db-password \
+	-e database__connection__database=ghost \
+	%%IMAGE%%
+```
+
+This is supported for any nested configuration key (that is, any key containing at least one `__` separator), such as `database__connection__password` or `mail__options__auth__pass`. Top-level keys such as `url` are deliberately excluded, so that unrelated variables like `SSL_CERT_FILE` are not mistaken for Ghost configuration.
+
+A single trailing newline is stripped from the file's contents (matching `$(cat file)` behavior); any other surrounding whitespace is preserved, in case it is part of the secret. Setting both `foo__bar` and `foo__bar_FILE`, or pointing two variables which resolve to the same configuration key at different files, is an error and Ghost will refuse to start.
+
+Note: this requires Ghost 6.58.0 or newer.
+
 ## What is the Node.js version?
 
 When opening a ticket at https://github.com/TryGhost/Ghost/issues it becomes necessary to know the version of Node.js in use:
