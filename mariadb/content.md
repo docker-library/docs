@@ -179,7 +179,7 @@ $ docker run --name some-%%REPO%% -e MARIADB_ROOT_PASSWORD=my-secret-pw -d %%IMA
 If you would like to see a complete list of available options, just run:
 
 ```console
-$ docker run -it --rm %%IMAGE%%:latest --verbose --help
+$ docker run --rm %%IMAGE%%:latest --verbose --help
 ```
 
 ## Environment Variables
