@@ -1,7 +1,3 @@
-# Notice
-
-On September 15, 2026, the latest tag for InfluxDB will point to InfluxDB 3 Core. To avoid unexpected upgrades, use specific version tags in your deployments.
-
 # What is InfluxDB?
 
 %%LOGO%%
