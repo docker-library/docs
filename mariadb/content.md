@@ -253,7 +253,6 @@ This is documented on [MariaDB Knowledge Base : Adding Plugins to the Docker Off
 # Related Images
 
 -	[MariaDB MaxScale](https://hub.docker.com/r/mariadb/maxscale/tags)
--	[MariaDB ColumnStore](https://hub.docker.com/r/mariadb/columnstore/tags)
 
 # Compose File Examples
 
