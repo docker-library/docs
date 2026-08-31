@@ -232,7 +232,7 @@ If there is no database initialized when the container starts, then a default da
 
 ## Health/Liveness/Readiness Checking
 
-See [the "Official Images" FAQ](https://github.com/docker-library/faq#healthcheck) for why there is no default `HEALTHCHECK` directive. However, you can use the `healthcheck.sh` script to choose from a (non-exhaustive) list of tests to check for whatever you consider health/liveness/readiness. Refer to the [MariaDB Knowledge Base : Using Healthcheck.sh](https://mariadb.com/kb/en/using-healthcheck-sh-script/) to learn about how to use it and which exact tests are provided.
+See [the "Official Images" FAQ](https://github.com/docker-library/faq#healthcheck) for why there is no default `HEALTHCHECK` directive. However, you can use the `healthcheck.sh` script to choose from a (non-exhaustive) list of tests to check for whatever you consider health/liveness/readiness. Refer to the [MariaDB Documentation : Using Healthcheck.sh](https://mariadb.com/docs/server/server-management/automated-mariadb-deployment-and-administration/docker-and-mariadb/using-healthcheck-sh) to learn about how to use it and which exact tests are provided.
 
 ## Usage against an existing database
 
@@ -240,15 +240,15 @@ If you start your `%%IMAGE%%` container instance with a data directory that alre
 
 ## Backups and Restores
 
-Backing up and restoring databases is important in containers too. The documentation on how to do this can be found on the [MariaDB Knowledge Base : Container Backup and Restoration](https://mariadb.com/kb/en/backups-and-restoration/).
+Backing up and restoring databases is important in containers too. The documentation on how to do this can be found on the [MariaDB Documentation : Container Backup and Restoration](https://mariadb.com/docs/server/server-management/automated-mariadb-deployment-and-administration/docker-and-mariadb/container-backup-and-restoration).
 
 ## Frequently Asked Questions / How to reset root and user passwords
 
-This is documented on [MariaDB Knowledge Base : Frequenty Asked Questions of Docker Official Image](https://mariadb.com/kb/en/frequenty-asked-questions-of-docker-official-image/#how-to-reset-passwords).
+This is documented on [MariaDB Documentation : Frequenty Asked Questions of Docker Official Image](https://mariadb.com/docs/server/server-management/automated-mariadb-deployment-and-administration/docker-and-mariadb/docker-official-image-frequently-asked-questions#how-to-reset-passwords).
 
 ## How to install MariaDB plugins
 
-This is documented on [MariaDB Knowledge Base : Adding Plugins to the Docker Official Image](https://mariadb.com/kb/en/adding-plugins-to-the-mariadb-docker-official-image/).
+This is documented on [MariaDB Documentation : Adding Plugins to the Docker Official Image](https://mariadb.com/docs/server/server-management/automated-mariadb-deployment-and-administration/docker-and-mariadb/adding-plugins-to-the-mariadb-docker-official-image).
 
 # Related Images
 
