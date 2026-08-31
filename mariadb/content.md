@@ -165,7 +165,7 @@ These disable the authentication of `user@hostname` users. To re-enable the `ski
 To view the resulting configuration of your `%%IMAGE%%` container:
 
 ```console
-$ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d --rm %%IMAGE%%:latest my_print_defaults --mysqld
+$ docker run --name some-%%REPO%% -v /my/custom:/etc/mysql/conf.d --rm %%IMAGE%%:latest my_print_defaults --mariadbd
 ```
 
 ### Configuration without a `cnf` file
