@@ -97,35 +97,35 @@ $ docker run -it --rm %%IMAGE%% mariadb --host <server container IP> --user exam
 That will give you a standard MariaDB prompt. You can test it with:
 
 ```console
-MariaDB [(none)]> \s
+MariaDB [test]> \s
 --------------
-client/mariadb  Ver 15.1 Distrib 10.6.16-MariaDB, for Linux (x86_64) using  EditLine wrapper
+mariadb from 12.3.3-MariaDB, client 15.2 for debian-linux-gnu (x86_64) using  EditLine wrapper
 
-Connection id:		20
+Connection id:		5
 Current database:	test
-Current user:		example-user@bark
-SSL:			Not in use
+Current user:		example-user@10.89.0.5
+SSL:			Cipher in use is TLS_AES_256_GCM_SHA384, cert is OK
 Current pager:		stdout
 Using outfile:		''
 Using delimiter:	;
 Server:			MariaDB
-Server version:		10.6.16-MariaDB Source distribution
+Server version:		12.3.3-MariaDB-ubu2404 mariadb.org binary distribution
 Protocol version:	10
-Connection:		192.168.178.73 via TCP/IP
-Server characterset:	latin1
-Db     characterset:	latin1
-Client characterset:	utf8mb3
-Conn.  characterset:	utf8mb3
+Connection:		m via TCP/IP
+Server characterset:	utf8mb4
+Db     characterset:	utf8mb4
+Client characterset:	utf8mb4
+Conn.  characterset:	utf8mb4
 TCP port:		3306
-Uptime:			6 min 4 sec
+Uptime:			3 min 7 sec
 
-Threads: 1  Questions: 32  Slow queries: 0  Opens: 20  Open tables: 13  Queries per second avg: 0.087
+Threads: 1  Questions: 12  Slow queries: 0  Opens: 17  Open tables: 10  Queries per second avg: 0.064
 --------------
 ```
 
 ... which will give you the version and connection information. You can then use `exit` to leave the MariaDB command line client and the client container.
 
-More information about the MariaDB command-line client can be found in the [MariaDB Knowledge Base : MariaDB Command Line Client](https://mariadb.com/kb/en/mariadb-command-line-client/).
+More information about the MariaDB command-line client can be found in the [MariaDB Documentation : MariaDB Command Line Client](https://mariadb.com/docs/server/clients-and-utilities/mariadb-client/mariadb-command-line-client).
 
 ## Container shell access
 
