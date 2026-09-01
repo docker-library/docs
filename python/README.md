@@ -30,15 +30,15 @@ WARNING:
 
 -	[`3.15.0rc1-trixie`, `3.15-rc-trixie`](https://github.com/docker-library/python/blob/9950175fe6f74b450230a95a31d7afca1adfbce7/3.15-rc/trixie/Dockerfile)
 
--	[`3.15.0rc1-slim-trixie`, `3.15-rc-slim-trixie`, `3.15.0rc1-slim`, `3.15-rc-slim`](https://github.com/docker-library/python/blob/9950175fe6f74b450230a95a31d7afca1adfbce7/3.15-rc/slim-trixie/Dockerfile)
+-	[`3.15.0rc1-slim-trixie`, `3.15-rc-slim-trixie`, `3.15.0rc1-slim`, `3.15-rc-slim`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.15-rc/slim-trixie/Dockerfile)
 
 -	[`3.15.0rc1-bookworm`, `3.15-rc-bookworm`](https://github.com/docker-library/python/blob/9950175fe6f74b450230a95a31d7afca1adfbce7/3.15-rc/bookworm/Dockerfile)
 
--	[`3.15.0rc1-slim-bookworm`, `3.15-rc-slim-bookworm`](https://github.com/docker-library/python/blob/9950175fe6f74b450230a95a31d7afca1adfbce7/3.15-rc/slim-bookworm/Dockerfile)
+-	[`3.15.0rc1-slim-bookworm`, `3.15-rc-slim-bookworm`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.15-rc/slim-bookworm/Dockerfile)
 
--	[`3.15.0rc1-alpine3.24`, `3.15-rc-alpine3.24`, `3.15.0rc1-alpine`, `3.15-rc-alpine`](https://github.com/docker-library/python/blob/9950175fe6f74b450230a95a31d7afca1adfbce7/3.15-rc/alpine3.24/Dockerfile)
+-	[`3.15.0rc1-alpine3.24`, `3.15-rc-alpine3.24`, `3.15.0rc1-alpine`, `3.15-rc-alpine`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.15-rc/alpine3.24/Dockerfile)
 
--	[`3.15.0rc1-alpine3.23`, `3.15-rc-alpine3.23`](https://github.com/docker-library/python/blob/9950175fe6f74b450230a95a31d7afca1adfbce7/3.15-rc/alpine3.23/Dockerfile)
+-	[`3.15.0rc1-alpine3.23`, `3.15-rc-alpine3.23`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.15-rc/alpine3.23/Dockerfile)
 
 -	[`3.15.0rc1-windowsservercore-ltsc2025`, `3.15-rc-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/9950175fe6f74b450230a95a31d7afca1adfbce7/3.15-rc/windows/windowsservercore-ltsc2025/Dockerfile)
 
@@ -46,15 +46,15 @@ WARNING:
 
 -	[`3.14.7-trixie`, `3.14-trixie`, `3-trixie`, `trixie`](https://github.com/docker-library/python/blob/228f71e70a42ba9f9a092321b971031603bb88ff/3.14/trixie/Dockerfile)
 
--	[`3.14.7-slim-trixie`, `3.14-slim-trixie`, `3-slim-trixie`, `slim-trixie`, `3.14.7-slim`, `3.14-slim`, `3-slim`, `slim`](https://github.com/docker-library/python/blob/228f71e70a42ba9f9a092321b971031603bb88ff/3.14/slim-trixie/Dockerfile)
+-	[`3.14.7-slim-trixie`, `3.14-slim-trixie`, `3-slim-trixie`, `slim-trixie`, `3.14.7-slim`, `3.14-slim`, `3-slim`, `slim`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.14/slim-trixie/Dockerfile)
 
 -	[`3.14.7-bookworm`, `3.14-bookworm`, `3-bookworm`, `bookworm`](https://github.com/docker-library/python/blob/228f71e70a42ba9f9a092321b971031603bb88ff/3.14/bookworm/Dockerfile)
 
--	[`3.14.7-slim-bookworm`, `3.14-slim-bookworm`, `3-slim-bookworm`, `slim-bookworm`](https://github.com/docker-library/python/blob/228f71e70a42ba9f9a092321b971031603bb88ff/3.14/slim-bookworm/Dockerfile)
+-	[`3.14.7-slim-bookworm`, `3.14-slim-bookworm`, `3-slim-bookworm`, `slim-bookworm`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.14/slim-bookworm/Dockerfile)
 
--	[`3.14.7-alpine3.24`, `3.14-alpine3.24`, `3-alpine3.24`, `alpine3.24`, `3.14.7-alpine`, `3.14-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/python/blob/228f71e70a42ba9f9a092321b971031603bb88ff/3.14/alpine3.24/Dockerfile)
+-	[`3.14.7-alpine3.24`, `3.14-alpine3.24`, `3-alpine3.24`, `alpine3.24`, `3.14.7-alpine`, `3.14-alpine`, `3-alpine`, `alpine`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.14/alpine3.24/Dockerfile)
 
--	[`3.14.7-alpine3.23`, `3.14-alpine3.23`, `3-alpine3.23`, `alpine3.23`](https://github.com/docker-library/python/blob/228f71e70a42ba9f9a092321b971031603bb88ff/3.14/alpine3.23/Dockerfile)
+-	[`3.14.7-alpine3.23`, `3.14-alpine3.23`, `3-alpine3.23`, `alpine3.23`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.14/alpine3.23/Dockerfile)
 
 -	[`3.14.7-windowsservercore-ltsc2025`, `3.14-windowsservercore-ltsc2025`, `3-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/228f71e70a42ba9f9a092321b971031603bb88ff/3.14/windows/windowsservercore-ltsc2025/Dockerfile)
 
@@ -62,15 +62,15 @@ WARNING:
 
 -	[`3.13.15-trixie`, `3.13-trixie`](https://github.com/docker-library/python/blob/3cb2fbae63fab2184343a01e4bd63a7540462999/3.13/trixie/Dockerfile)
 
--	[`3.13.15-slim-trixie`, `3.13-slim-trixie`, `3.13.15-slim`, `3.13-slim`](https://github.com/docker-library/python/blob/3cb2fbae63fab2184343a01e4bd63a7540462999/3.13/slim-trixie/Dockerfile)
+-	[`3.13.15-slim-trixie`, `3.13-slim-trixie`, `3.13.15-slim`, `3.13-slim`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.13/slim-trixie/Dockerfile)
 
 -	[`3.13.15-bookworm`, `3.13-bookworm`](https://github.com/docker-library/python/blob/3cb2fbae63fab2184343a01e4bd63a7540462999/3.13/bookworm/Dockerfile)
 
--	[`3.13.15-slim-bookworm`, `3.13-slim-bookworm`](https://github.com/docker-library/python/blob/3cb2fbae63fab2184343a01e4bd63a7540462999/3.13/slim-bookworm/Dockerfile)
+-	[`3.13.15-slim-bookworm`, `3.13-slim-bookworm`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.13/slim-bookworm/Dockerfile)
 
--	[`3.13.15-alpine3.24`, `3.13-alpine3.24`, `3.13.15-alpine`, `3.13-alpine`](https://github.com/docker-library/python/blob/3cb2fbae63fab2184343a01e4bd63a7540462999/3.13/alpine3.24/Dockerfile)
+-	[`3.13.15-alpine3.24`, `3.13-alpine3.24`, `3.13.15-alpine`, `3.13-alpine`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.13/alpine3.24/Dockerfile)
 
--	[`3.13.15-alpine3.23`, `3.13-alpine3.23`](https://github.com/docker-library/python/blob/3cb2fbae63fab2184343a01e4bd63a7540462999/3.13/alpine3.23/Dockerfile)
+-	[`3.13.15-alpine3.23`, `3.13-alpine3.23`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.13/alpine3.23/Dockerfile)
 
 -	[`3.13.15-windowsservercore-ltsc2025`, `3.13-windowsservercore-ltsc2025`](https://github.com/docker-library/python/blob/3cb2fbae63fab2184343a01e4bd63a7540462999/3.13/windows/windowsservercore-ltsc2025/Dockerfile)
 
@@ -78,39 +78,39 @@ WARNING:
 
 -	[`3.12.14-trixie`, `3.12-trixie`](https://github.com/docker-library/python/blob/f2c5d1b8a6adecb5b00b3c9331d4f863beade6b3/3.12/trixie/Dockerfile)
 
--	[`3.12.14-slim-trixie`, `3.12-slim-trixie`, `3.12.14-slim`, `3.12-slim`](https://github.com/docker-library/python/blob/f2c5d1b8a6adecb5b00b3c9331d4f863beade6b3/3.12/slim-trixie/Dockerfile)
+-	[`3.12.14-slim-trixie`, `3.12-slim-trixie`, `3.12.14-slim`, `3.12-slim`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.12/slim-trixie/Dockerfile)
 
 -	[`3.12.14-bookworm`, `3.12-bookworm`](https://github.com/docker-library/python/blob/f2c5d1b8a6adecb5b00b3c9331d4f863beade6b3/3.12/bookworm/Dockerfile)
 
--	[`3.12.14-slim-bookworm`, `3.12-slim-bookworm`](https://github.com/docker-library/python/blob/f2c5d1b8a6adecb5b00b3c9331d4f863beade6b3/3.12/slim-bookworm/Dockerfile)
+-	[`3.12.14-slim-bookworm`, `3.12-slim-bookworm`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.12/slim-bookworm/Dockerfile)
 
--	[`3.12.14-alpine3.24`, `3.12-alpine3.24`, `3.12.14-alpine`, `3.12-alpine`](https://github.com/docker-library/python/blob/f2c5d1b8a6adecb5b00b3c9331d4f863beade6b3/3.12/alpine3.24/Dockerfile)
+-	[`3.12.14-alpine3.24`, `3.12-alpine3.24`, `3.12.14-alpine`, `3.12-alpine`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.12/alpine3.24/Dockerfile)
 
--	[`3.12.14-alpine3.23`, `3.12-alpine3.23`](https://github.com/docker-library/python/blob/f2c5d1b8a6adecb5b00b3c9331d4f863beade6b3/3.12/alpine3.23/Dockerfile)
+-	[`3.12.14-alpine3.23`, `3.12-alpine3.23`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.12/alpine3.23/Dockerfile)
 
 -	[`3.11.16-trixie`, `3.11-trixie`](https://github.com/docker-library/python/blob/fe89472bda6128fef7e964d1f1991534e32dcfb7/3.11/trixie/Dockerfile)
 
--	[`3.11.16-slim-trixie`, `3.11-slim-trixie`, `3.11.16-slim`, `3.11-slim`](https://github.com/docker-library/python/blob/fe89472bda6128fef7e964d1f1991534e32dcfb7/3.11/slim-trixie/Dockerfile)
+-	[`3.11.16-slim-trixie`, `3.11-slim-trixie`, `3.11.16-slim`, `3.11-slim`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.11/slim-trixie/Dockerfile)
 
 -	[`3.11.16-bookworm`, `3.11-bookworm`](https://github.com/docker-library/python/blob/fe89472bda6128fef7e964d1f1991534e32dcfb7/3.11/bookworm/Dockerfile)
 
--	[`3.11.16-slim-bookworm`, `3.11-slim-bookworm`](https://github.com/docker-library/python/blob/fe89472bda6128fef7e964d1f1991534e32dcfb7/3.11/slim-bookworm/Dockerfile)
+-	[`3.11.16-slim-bookworm`, `3.11-slim-bookworm`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.11/slim-bookworm/Dockerfile)
 
--	[`3.11.16-alpine3.24`, `3.11-alpine3.24`, `3.11.16-alpine`, `3.11-alpine`](https://github.com/docker-library/python/blob/fe89472bda6128fef7e964d1f1991534e32dcfb7/3.11/alpine3.24/Dockerfile)
+-	[`3.11.16-alpine3.24`, `3.11-alpine3.24`, `3.11.16-alpine`, `3.11-alpine`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.11/alpine3.24/Dockerfile)
 
--	[`3.11.16-alpine3.23`, `3.11-alpine3.23`](https://github.com/docker-library/python/blob/fe89472bda6128fef7e964d1f1991534e32dcfb7/3.11/alpine3.23/Dockerfile)
+-	[`3.11.16-alpine3.23`, `3.11-alpine3.23`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.11/alpine3.23/Dockerfile)
 
 -	[`3.10.21-trixie`, `3.10-trixie`](https://github.com/docker-library/python/blob/c6f8aefd7764bf9943d8ecb62696666503514b34/3.10/trixie/Dockerfile)
 
--	[`3.10.21-slim-trixie`, `3.10-slim-trixie`, `3.10.21-slim`, `3.10-slim`](https://github.com/docker-library/python/blob/c6f8aefd7764bf9943d8ecb62696666503514b34/3.10/slim-trixie/Dockerfile)
+-	[`3.10.21-slim-trixie`, `3.10-slim-trixie`, `3.10.21-slim`, `3.10-slim`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.10/slim-trixie/Dockerfile)
 
 -	[`3.10.21-bookworm`, `3.10-bookworm`](https://github.com/docker-library/python/blob/c6f8aefd7764bf9943d8ecb62696666503514b34/3.10/bookworm/Dockerfile)
 
--	[`3.10.21-slim-bookworm`, `3.10-slim-bookworm`](https://github.com/docker-library/python/blob/c6f8aefd7764bf9943d8ecb62696666503514b34/3.10/slim-bookworm/Dockerfile)
+-	[`3.10.21-slim-bookworm`, `3.10-slim-bookworm`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.10/slim-bookworm/Dockerfile)
 
--	[`3.10.21-alpine3.24`, `3.10-alpine3.24`, `3.10.21-alpine`, `3.10-alpine`](https://github.com/docker-library/python/blob/c6f8aefd7764bf9943d8ecb62696666503514b34/3.10/alpine3.24/Dockerfile)
+-	[`3.10.21-alpine3.24`, `3.10-alpine3.24`, `3.10.21-alpine`, `3.10-alpine`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.10/alpine3.24/Dockerfile)
 
--	[`3.10.21-alpine3.23`, `3.10-alpine3.23`](https://github.com/docker-library/python/blob/c6f8aefd7764bf9943d8ecb62696666503514b34/3.10/alpine3.23/Dockerfile)
+-	[`3.10.21-alpine3.23`, `3.10-alpine3.23`](https://github.com/docker-library/python/blob/688a0b86bb44289df16a363e9f41d90514c1a5f9/3.10/alpine3.23/Dockerfile)
 
 ## Shared Tags
 
