@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `espocrm` official image](https://hub.docker.com/_/espocrm) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`apache`, `apache-trixie`, `10.0.7-apache`, `10.0.7-apache-trixie`, `10.0-apache`, `10.0-apache-trixie`, `10-apache`, `10-apache-trixie`, `latest`, `10.0.7`, `10.0`, `10`](https://github.com/espocrm/espocrm-docker/blob/be0aa6944a9df2d4863b2186fe7c1e8173745257/latest/apache/Dockerfile)
-
--	[`fpm`, `fpm-trixie`, `10.0.7-fpm`, `10.0.7-fpm-trixie`, `10.0-fpm`, `10.0-fpm-trixie`, `10-fpm`, `10-fpm-trixie`](https://github.com/espocrm/espocrm-docker/blob/be0aa6944a9df2d4863b2186fe7c1e8173745257/latest/fpm/Dockerfile)
-
--	[`fpm-alpine`, `fpm-alpine3.23`, `10.0.7-fpm-alpine`, `10.0.7-fpm-alpine3.23`, `10.0-fpm-alpine`, `10.0-fpm-alpine3.23`, `10-fpm-alpine`, `10-fpm-alpine3.23`](https://github.com/espocrm/espocrm-docker/blob/be0aa6944a9df2d4863b2186fe7c1e8173745257/latest/fpm-alpine/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -60,7 +58,7 @@ EspoCRM is a highly customizable open source CRM software that allows users to s
 The basic pattern for starting an `espocrm` instance is:
 
 ```console
-$ docker run --name some-espocrm -d espocrm
+$ docker run --name some-espocrm -d s390x/espocrm
 ```
 
 ## Quick start
@@ -92,14 +90,14 @@ docker run \
   -v espocrm-custom:/var/www/html/custom \
   -v espocrm-custom-client:/var/www/html/client/custom \
   -p 8080:80 \
-  -d espocrm && \
+  -d s390x/espocrm && \
 docker run \
   --name espocrm-daemon \
   --network espocrm-network \
   --restart unless-stopped \
   --volumes-from espocrm \
   --entrypoint docker-daemon.sh \
-  -d espocrm
+  -d s390x/espocrm
 ```
 
 Then, access it via `http://localhost:8080` or `http://YOUR_IP_ADDRESS:8080` with credentials `admin` and `your_admin_password`.
@@ -118,7 +116,7 @@ docker run \
   -e ESPOCRM_ADMIN_USERNAME=admin \
   -e ESPOCRM_ADMIN_PASSWORD=your_admin_password \
   -e ESPOCRM_SITE_URL=http://192.168.0.100:8080 \
-  -d espocrm
+  -d s390x/espocrm
 ```
 
 Then, access it via `http://192.168.0.100:8080` with credentials `admin` and `your_admin_password`.
@@ -233,7 +231,7 @@ To upgrade EspoCRM when using Docker Run:
 
 ```bash
 docker pull mariadb
-docker pull espocrm
+docker pull s390x/espocrm
 ```
 
 2\. Stop all running containers:
@@ -274,7 +272,7 @@ $ docker run \
   --network some-network \
   -e ESPOCRM_DATABASE_PASSWORD_FILE=/run/secrets/espocrm_db_password \
   -e ESPOCRM_ADMIN_PASSWORD_FILE=/run/secrets/espocrm_admin_password \
-  -d espocrm
+  -d s390x/espocrm
 ```
 
 ## Environment variables
@@ -373,24 +371,6 @@ ESPOCRM_CONFIG_USE_WEB_SOCKET: 'true'
 ```yaml
 ESPOCRM_CONFIG_CURRENCY_DECIMAL_PLACES: 'null'
 ```
-
-# Image Variants
-
-The `espocrm` images come in many flavors, each designed for a specific use case.
-
-## `espocrm:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `espocrm:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
