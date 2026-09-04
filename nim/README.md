@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `riscv64` builds of [the `nim` official image](https://hub.docker.com/_/nim) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,33 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.10`, `2.2`, `2`, `latest`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.2.10/Dockerfile)
-
--	[`2.2.8`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.2.8/Dockerfile)
-
--	[`2.2.6`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.2.6/Dockerfile)
-
--	[`2.2.4`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.2.4/Dockerfile)
-
--	[`2.2.2`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.2.2/Dockerfile)
-
--	[`2.2.0`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.2.0/Dockerfile)
-
--	[`2.0.14`, `2.0`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.0.14/Dockerfile)
-
--	[`2.0.12`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.0.12/Dockerfile)
-
--	[`2.0.10`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.0.10/Dockerfile)
-
--	[`2.0.8`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.0.8/Dockerfile)
-
--	[`2.0.6`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.0.6/Dockerfile)
-
--	[`2.0.4`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.0.4/Dockerfile)
-
--	[`2.0.2`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.0.2/Dockerfile)
-
--	[`2.0.0`](https://github.com/nim-lang/docker-images/blob/9b7d458808d9ab20f456f557a389e67a0b20e5dd/dockerfiles/2.0.0/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `riscv64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -86,7 +62,7 @@ WARNING:
 To compile a file named `main.nim` and execute it immediately:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim c -r main.nim
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app riscv64/nim nim c -r main.nim
 ```
 
 ## Compile to JavaScript
@@ -94,13 +70,13 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim c -r main.nim
 Nim can compile to JavaScript:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim js main.nim
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app riscv64/nim nim js main.nim
 ```
 
 To compile and run, use a multi-stage Dockerfile with Node.js:
 
 ```dockerfile
-FROM nim AS builder
+FROM riscv64/nim AS builder
 COPY . .
 RUN nim js -o:app.js src/app.nim
 
@@ -114,13 +90,13 @@ CMD ["node", "app.js"]
 The image is configured with SSL support to allow Nimble to install packages from remote repositories:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nimble install -y
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app riscv64/nim nimble install -y
 ```
 
 ## Dockerfile example
 
 ```dockerfile
-FROM nim
+FROM riscv64/nim
 
 WORKDIR /usr/src/app
 
