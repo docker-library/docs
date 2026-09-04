@@ -24,15 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `26.7`, `26.7-jammy`, `26.7.5`, `26.7.5-jammy`, `26.7.5.10`, `26.7.5.10-jammy`](https://github.com/ClickHouse/docker-library/blob/e5d1f8ef9115cb42bb1a38f9a0e5a099bfe5d6a1/server/26.7.5.10/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `lts`, `lts-jammy`, `26.8`, `26.8-jammy`, `26.8.2`, `26.8.2-jammy`, `26.8.2.7`, `26.8.2.7-jammy`](https://github.com/ClickHouse/docker-library/blob/e0d01891a279d0c8c03d92255aa24734729e1edf/server/26.8.2.7/Dockerfile.ubuntu)
 
--	[`26.6`, `26.6-jammy`, `26.6.3`, `26.6.3-jammy`, `26.6.3.62`, `26.6.3.62-jammy`](https://github.com/ClickHouse/docker-library/blob/e5d1f8ef9115cb42bb1a38f9a0e5a099bfe5d6a1/server/26.6.3.62/Dockerfile.ubuntu)
+-	[`26.7`, `26.7-jammy`, `26.7.6`, `26.7.6-jammy`, `26.7.6.57`, `26.7.6.57-jammy`](https://github.com/ClickHouse/docker-library/blob/e0d01891a279d0c8c03d92255aa24734729e1edf/server/26.7.6.57/Dockerfile.ubuntu)
 
--	[`26.5`, `26.5-jammy`, `26.5.7`, `26.5.7-jammy`, `26.5.7.64`, `26.5.7.64-jammy`](https://github.com/ClickHouse/docker-library/blob/e5d1f8ef9115cb42bb1a38f9a0e5a099bfe5d6a1/server/26.5.7.64/Dockerfile.ubuntu)
+-	[`26.6`, `26.6-jammy`, `26.6.4`, `26.6.4-jammy`, `26.6.4.55`, `26.6.4.55-jammy`](https://github.com/ClickHouse/docker-library/blob/e0d01891a279d0c8c03d92255aa24734729e1edf/server/26.6.4.55/Dockerfile.ubuntu)
 
--	[`lts`, `lts-jammy`, `26.3`, `26.3-jammy`, `26.3.25`, `26.3.25-jammy`, `26.3.25.2`, `26.3.25.2-jammy`](https://github.com/ClickHouse/docker-library/blob/e5d1f8ef9115cb42bb1a38f9a0e5a099bfe5d6a1/server/26.3.25.2/Dockerfile.ubuntu)
-
--	[`25.8`, `25.8-jammy`, `25.8.33`, `25.8.33-jammy`, `25.8.33.6`, `25.8.33.6-jammy`](https://github.com/ClickHouse/docker-library/blob/e5d1f8ef9115cb42bb1a38f9a0e5a099bfe5d6a1/server/25.8.33.6/Dockerfile.ubuntu)
+-	[`26.3`, `26.3-jammy`, `26.3.29`, `26.3.29-jammy`, `26.3.29.7`, `26.3.29.7-jammy`](https://github.com/ClickHouse/docker-library/blob/e0d01891a279d0c8c03d92255aa24734729e1edf/server/26.3.29.7/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
