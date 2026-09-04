@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `ghost` official image](https://hub.docker.com/_/ghost) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.62.0-bookworm`, `6.62.0`, `6.62-bookworm`, `6.62`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/TryGhost/docker-library-ghost/blob/aa41ad81c41b2594a77125c9311f84ddbcd727ee/6/bookworm/Dockerfile)
-
--	[`6.62.0-alpine3.23`, `6.62.0-alpine`, `6.62-alpine3.23`, `6.62-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/TryGhost/docker-library-ghost/blob/aa41ad81c41b2594a77125c9311f84ddbcd727ee/6/alpine3.23/Dockerfile)
-
--	[`6.62.0-next-bookworm`, `6.62.0-next`, `6.62-next-bookworm`, `6.62-next`, `6-next-bookworm`, `6-next`, `next-bookworm`, `next`](https://github.com/TryGhost/docker-library-ghost/blob/aa41ad81c41b2594a77125c9311f84ddbcd727ee/6-next/bookworm/Dockerfile)
-
--	[`6.62.0-next-alpine3.23`, `6.62.0-next-alpine`, `6.62-next-alpine3.23`, `6.62-next-alpine`, `6-next-alpine3.23`, `6-next-alpine`, `next-alpine3.23`, `next-alpine`](https://github.com/TryGhost/docker-library-ghost/blob/aa41ad81c41b2594a77125c9311f84ddbcd727ee/6-next/alpine3.23/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -64,7 +60,7 @@ Ghost is an independent platform for publishing online by web and email newslett
 This will start a Ghost development instance listening on the default Ghost port of 2368.
 
 ```console
-$ docker run -d --name some-ghost -e NODE_ENV=development ghost
+$ docker run -d --name some-ghost -e NODE_ENV=development winamd64/ghost
 ```
 
 ## Custom port
@@ -72,7 +68,7 @@ $ docker run -d --name some-ghost -e NODE_ENV=development ghost
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://localhost:3001 -p 3001:2368 ghost
+$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://localhost:3001 -p 3001:2368 winamd64/ghost
 ```
 
 If all goes well, you'll be able to access your new site on `http://localhost:3001` and `http://localhost:3001/ghost` to access Ghost Admin (or `http://host-ip:3001` and `http://host-ip:3001/ghost`, respectively).
@@ -94,7 +90,7 @@ $ docker run -d \
 	-e database__connection__filename='/var/lib/ghost/content/data/ghost.db' \
 	-p 3001:2368 \
 	-v /path/to/ghost/blog:/var/lib/ghost/content \
-	ghost:alpine
+	winamd64/ghost:alpine
 ```
 
 Note: `database__connection__filename` is only valid in development mode and is the location for the SQLite database file. If using development mode, it should be set to a writeable path within a persistent folder (bind mount or volume). It is not available in production mode because an external MySQL server is required (see the Docker Compose example below).
@@ -110,7 +106,7 @@ $ docker run -d \
 	-e database__connection__filename='/var/lib/ghost/content/data/ghost.db' \
 	-p 3001:2368 \
 	-v some-ghost-data:/var/lib/ghost/content \
-	ghost
+	winamd64/ghost
 ```
 
 ## Configuration
@@ -118,7 +114,7 @@ $ docker run -d \
 All Ghost configuration parameters (such as `url`) can be specified via environment variables. See [the Ghost documentation](https://ghost.org/docs/concepts/config/#running-ghost-with-config-env-variables) for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
 
 ```console
-$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://some-ghost.example.com ghost
+$ docker run -d --name some-ghost -e NODE_ENV=development -e url=http://some-ghost.example.com winamd64/ghost
 ```
 
 (There are further configuration examples in the `compose.yaml` listed below.)
@@ -135,7 +131,7 @@ $ docker run -d \
 	-e database__connection__user=ghost \
 	-e database__connection__password_FILE=/run/secrets/ghost-db-password \
 	-e database__connection__database=ghost \
-	ghost
+	winamd64/ghost
 ```
 
 This is supported for any nested configuration key (that is, any key containing at least one `__` separator), such as `database__connection__password` or `mail__options__auth__pass`. Top-level keys such as `url` are deliberately excluded, so that unrelated variables like `SSL_CERT_FILE` are not mistaken for Ghost configuration.
@@ -161,9 +157,9 @@ Ghost-CLI is not included in the `next` variant at all (see below).
 
 ## The `next` variant
 
-The `next` tags (`ghost:next`, `ghost:6-next`, `ghost:next-alpine`, plus fully qualified variants such as `ghost:6.61.0-next-alpine3.23`) are a preview of the image that will become the standard `ghost` image in **Ghost 7.0**. They track the same stable upstream Ghost releases as the default tags; what differs is how the image is built and laid out, not which version of Ghost is inside. The `next` tags never carry `latest`.
+The `next` tags (`winamd64/ghost:next`, `winamd64/ghost:6-next`, `winamd64/ghost:next-alpine`, plus fully qualified variants such as `winamd64/ghost:6.61.0-next-alpine3.23`) are a preview of the image that will become the standard `winamd64/ghost` image in **Ghost 7.0**. They track the same stable upstream Ghost releases as the default tags; what differs is how the image is built and laid out, not which version of Ghost is inside. The `next` tags never carry `latest`.
 
-When Ghost 7.0 ships, this layout becomes the plain `ghost:<version>` image and the `next` tags go away, so trying `next` now is the way to find breakage in your setup ahead of that switch.
+When Ghost 7.0 ships, this layout becomes the plain `winamd64/ghost:<version>` image and the `next` tags go away, so trying `next` now is the way to find breakage in your setup ahead of that switch.
 
 ### Differences from the default variant
 
@@ -176,7 +172,7 @@ When Ghost 7.0 ships, this layout becomes the plain `ghost:<version>` image and 
 	    -e database__connection__filename='/home/ghost/content/data/ghost.db' \
 	    -p 3001:2368 \
 	    -v some-ghost-data:/home/ghost/content \
-	    ghost:next
+	    winamd64/ghost:next
 	```
 
 	If a volume with existing Ghost content is still mounted at the old `/var/lib/ghost/content`, the container refuses to start rather than quietly booting an empty site alongside it; an empty mount at the old path only prints a warning. Nothing at the old path is modified either way.
@@ -237,24 +233,6 @@ volumes:
 ```
 
 Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
-
-# Image Variants
-
-The `ghost` images come in many flavors, each designed for a specific use case.
-
-## `ghost:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-## `ghost:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
