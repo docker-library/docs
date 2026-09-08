@@ -44,7 +44,7 @@ WARNING:
 
 -	[`4.3.7-alpine3.21`, `4.3-alpine3.21`](https://github.com/HaxeFoundation/docker-library-haxe/blob/29c1c10f60a3d5d96c92c23ed8d07f5393c962b5/4.3/alpine3.21/Dockerfile)
 
--	[`5.0.0-preview.1-trixie`, `5.0.0-trixie`, `5.0-trixie`](https://github.com/HaxeFoundation/docker-library-haxe/blob/2204a501180eac277a5c25375fdf2f8ee107ed3a/5.0/trixie/Dockerfile)
+-	[`5.0.0-preview.1-trixie`, `5.0.0-trixie`, `5.0-trixie`](https://github.com/HaxeFoundation/docker-library-haxe/blob/aca4363c144c332aa3ab1905330d395d7f43a298/5.0/trixie/Dockerfile)
 
 -	[`5.0.0-preview.1-bookworm`, `5.0.0-bookworm`, `5.0-bookworm`](https://github.com/HaxeFoundation/docker-library-haxe/blob/2204a501180eac277a5c25375fdf2f8ee107ed3a/5.0/bookworm/Dockerfile)
 
@@ -89,7 +89,7 @@ WARNING:
 
 -	`5.0.0-preview.1`, `5.0.0`, `5.0`:
 
-	-	[`5.0.0-preview.1-trixie`](https://github.com/HaxeFoundation/docker-library-haxe/blob/2204a501180eac277a5c25375fdf2f8ee107ed3a/5.0/trixie/Dockerfile)
+	-	[`5.0.0-preview.1-trixie`](https://github.com/HaxeFoundation/docker-library-haxe/blob/aca4363c144c332aa3ab1905330d395d7f43a298/5.0/trixie/Dockerfile)
 	-	[`5.0.0-preview.1-windowsservercore-ltsc2025`](https://github.com/HaxeFoundation/docker-library-haxe/blob/4e5b49d4004e4996d1d405de45967da6d36bdd94/5.0/windowsservercore-ltsc2025/Dockerfile)
 	-	[`5.0.0-preview.1-windowsservercore-ltsc2022`](https://github.com/HaxeFoundation/docker-library-haxe/blob/2636eee6b67d0c99730e4ab1d0d752d66809e3fa/5.0/windowsservercore-ltsc2022/Dockerfile)
 
