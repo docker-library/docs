@@ -24,25 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1-bullseye`, `1.98-bullseye`, `1.98.0-bullseye`, `bullseye`](https://github.com/rust-lang/docker-rust/blob/7e8ce3f02e3f0292a54b9212ccad6204bde54289/stable/bullseye/Dockerfile)
+-	[`1-bookworm`, `1.98-bookworm`, `1.98.1-bookworm`, `bookworm`](https://github.com/rust-lang/docker-rust/blob/0fc94fa4d5bac5532a9adf8e4f8b0fe6deca7d44/stable/bookworm/Dockerfile)
 
--	[`1-slim-bullseye`, `1.98-slim-bullseye`, `1.98.0-slim-bullseye`, `slim-bullseye`](https://github.com/rust-lang/docker-rust/blob/7e8ce3f02e3f0292a54b9212ccad6204bde54289/stable/bullseye/slim/Dockerfile)
+-	[`1-slim-bookworm`, `1.98-slim-bookworm`, `1.98.1-slim-bookworm`, `slim-bookworm`](https://github.com/rust-lang/docker-rust/blob/0fc94fa4d5bac5532a9adf8e4f8b0fe6deca7d44/stable/bookworm/slim/Dockerfile)
 
--	[`1-bookworm`, `1.98-bookworm`, `1.98.0-bookworm`, `bookworm`](https://github.com/rust-lang/docker-rust/blob/7e8ce3f02e3f0292a54b9212ccad6204bde54289/stable/bookworm/Dockerfile)
+-	[`1-trixie`, `1.98-trixie`, `1.98.1-trixie`, `trixie`, `1`, `1.98`, `1.98.1`, `latest`](https://github.com/rust-lang/docker-rust/blob/0fc94fa4d5bac5532a9adf8e4f8b0fe6deca7d44/stable/trixie/Dockerfile)
 
--	[`1-slim-bookworm`, `1.98-slim-bookworm`, `1.98.0-slim-bookworm`, `slim-bookworm`](https://github.com/rust-lang/docker-rust/blob/7e8ce3f02e3f0292a54b9212ccad6204bde54289/stable/bookworm/slim/Dockerfile)
+-	[`1-slim-trixie`, `1.98-slim-trixie`, `1.98.1-slim-trixie`, `slim-trixie`, `1-slim`, `1.98-slim`, `1.98.1-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/0fc94fa4d5bac5532a9adf8e4f8b0fe6deca7d44/stable/trixie/slim/Dockerfile)
 
--	[`1-trixie`, `1.98-trixie`, `1.98.0-trixie`, `trixie`, `1`, `1.98`, `1.98.0`, `latest`](https://github.com/rust-lang/docker-rust/blob/7e8ce3f02e3f0292a54b9212ccad6204bde54289/stable/trixie/Dockerfile)
+-	[`1-alpine3.21`, `1.98-alpine3.21`, `1.98.1-alpine3.21`, `alpine3.21`](https://github.com/rust-lang/docker-rust/blob/0fc94fa4d5bac5532a9adf8e4f8b0fe6deca7d44/stable/alpine3.21/Dockerfile)
 
--	[`1-slim-trixie`, `1.98-slim-trixie`, `1.98.0-slim-trixie`, `slim-trixie`, `1-slim`, `1.98-slim`, `1.98.0-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/7e8ce3f02e3f0292a54b9212ccad6204bde54289/stable/trixie/slim/Dockerfile)
+-	[`1-alpine3.22`, `1.98-alpine3.22`, `1.98.1-alpine3.22`, `alpine3.22`](https://github.com/rust-lang/docker-rust/blob/0fc94fa4d5bac5532a9adf8e4f8b0fe6deca7d44/stable/alpine3.22/Dockerfile)
 
--	[`1-alpine3.21`, `1.98-alpine3.21`, `1.98.0-alpine3.21`, `alpine3.21`](https://github.com/rust-lang/docker-rust/blob/7e8ce3f02e3f0292a54b9212ccad6204bde54289/stable/alpine3.21/Dockerfile)
+-	[`1-alpine3.23`, `1.98-alpine3.23`, `1.98.1-alpine3.23`, `alpine3.23`](https://github.com/rust-lang/docker-rust/blob/0fc94fa4d5bac5532a9adf8e4f8b0fe6deca7d44/stable/alpine3.23/Dockerfile)
 
--	[`1-alpine3.22`, `1.98-alpine3.22`, `1.98.0-alpine3.22`, `alpine3.22`](https://github.com/rust-lang/docker-rust/blob/7e8ce3f02e3f0292a54b9212ccad6204bde54289/stable/alpine3.22/Dockerfile)
-
--	[`1-alpine3.23`, `1.98-alpine3.23`, `1.98.0-alpine3.23`, `alpine3.23`](https://github.com/rust-lang/docker-rust/blob/7e8ce3f02e3f0292a54b9212ccad6204bde54289/stable/alpine3.23/Dockerfile)
-
--	[`1-alpine3.24`, `1.98-alpine3.24`, `1.98.0-alpine3.24`, `alpine3.24`, `1-alpine`, `1.98-alpine`, `1.98.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/7e8ce3f02e3f0292a54b9212ccad6204bde54289/stable/alpine3.24/Dockerfile)
+-	[`1-alpine3.24`, `1.98-alpine3.24`, `1.98.1-alpine3.24`, `alpine3.24`, `1-alpine`, `1.98-alpine`, `1.98.1-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/0fc94fa4d5bac5532a9adf8e4f8b0fe6deca7d44/stable/alpine3.24/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -133,7 +129,7 @@ The `rust` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm, bullseye, or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
 
