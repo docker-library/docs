@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.63.0-bookworm`, `6.63.0`, `6.63-bookworm`, `6.63`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/TryGhost/docker-library-ghost/blob/5deb5f61ead677a9d4acb3007289071ae2b7f558/6/bookworm/Dockerfile)
+-	[`6.63.0-bookworm`, `6.63.0`, `6.63-bookworm`, `6.63`, `6-bookworm`, `6`, `bookworm`, `latest`](https://github.com/TryGhost/docker-library-ghost/blob/bf283c39f99329242ea095b56ab886dcc978d150/6/bookworm/Dockerfile)
 
--	[`6.63.0-alpine3.23`, `6.63.0-alpine`, `6.63-alpine3.23`, `6.63-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/TryGhost/docker-library-ghost/blob/5deb5f61ead677a9d4acb3007289071ae2b7f558/6/alpine3.23/Dockerfile)
+-	[`6.63.0-alpine3.23`, `6.63.0-alpine`, `6.63-alpine3.23`, `6.63-alpine`, `6-alpine3.23`, `6-alpine`, `alpine3.23`, `alpine`](https://github.com/TryGhost/docker-library-ghost/blob/bf283c39f99329242ea095b56ab886dcc978d150/6/alpine3.23/Dockerfile)
 
--	[`6.63.0-next-bookworm`, `6.63.0-next`, `6.63-next-bookworm`, `6.63-next`, `6-next-bookworm`, `6-next`, `next-bookworm`, `next`](https://github.com/TryGhost/docker-library-ghost/blob/5deb5f61ead677a9d4acb3007289071ae2b7f558/6-next/bookworm/Dockerfile)
+-	[`6.63.0-next-bookworm`, `6.63.0-next`, `6.63-next-bookworm`, `6.63-next`, `6-next-bookworm`, `6-next`, `next-bookworm`, `next`](https://github.com/TryGhost/docker-library-ghost/blob/bf283c39f99329242ea095b56ab886dcc978d150/6-next/bookworm/Dockerfile)
 
--	[`6.63.0-next-alpine3.23`, `6.63.0-next-alpine`, `6.63-next-alpine3.23`, `6.63-next-alpine`, `6-next-alpine3.23`, `6-next-alpine`, `next-alpine3.23`, `next-alpine`](https://github.com/TryGhost/docker-library-ghost/blob/5deb5f61ead677a9d4acb3007289071ae2b7f558/6-next/alpine3.23/Dockerfile)
+-	[`6.63.0-next-alpine3.23`, `6.63.0-next-alpine`, `6.63-next-alpine3.23`, `6.63-next-alpine`, `6-next-alpine3.23`, `6-next-alpine`, `next-alpine3.23`, `next-alpine`](https://github.com/TryGhost/docker-library-ghost/blob/bf283c39f99329242ea095b56ab886dcc978d150/6-next/alpine3.23/Dockerfile)
 
 # Quick reference (cont.)
 
