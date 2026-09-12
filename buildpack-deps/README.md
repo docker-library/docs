@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `buildpack-deps` official image](https://hub.docker.com/_/buildpack-deps) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -23,18 +25,6 @@ WARNING:
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
-
--	[`bookworm-curl`, `oldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/3e18c3af1f5dce6a48abf036857f9097b6bd79cc/debian/bookworm/curl/Dockerfile)
-
--	[`bookworm-scm`, `oldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bookworm/scm/Dockerfile)
-
--	[`bookworm`, `oldstable`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bookworm/Dockerfile)
-
--	[`bullseye-curl`, `oldoldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/debian/bullseye/curl/Dockerfile)
-
--	[`bullseye-scm`, `oldoldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bullseye/scm/Dockerfile)
-
--	[`bullseye`, `oldoldstable`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bullseye/Dockerfile)
 
 -	[`forky-curl`, `testing-curl`](https://github.com/docker-library/buildpack-deps/blob/6fbd1fd6aa17031b10f11a97c31b9da1ac09db76/debian/forky/curl/Dockerfile)
 

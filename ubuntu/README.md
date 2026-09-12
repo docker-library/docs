@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22.04`, `jammy-20260901.2`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20260901.2-a8341737&id=a83417371289ef90e16cdacabc2a27d52ea58fe8)
+-	[`22.04`, `jammy-20260901.2`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-s390x-20260901.2-6df0ad0d&id=6df0ad0d9b44fdaff45d08501e3197f96d992f22)
 
--	[`24.04`, `noble-20260905`, `noble`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20260905-6383cb93&id=6383cb9311557af20b051ccc7f8d2907c39a30d4)
+-	[`24.04`, `noble-20260905`, `noble`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-s390x-20260905-e3ab58a0&id=e3ab58a0ca693bdf16fd773b4eaccf30bc6e1661)
 
--	[`26.04`, `resolute-20260901`, `resolute`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-amd64-20260901-c2e81311&id=c2e81311c58b330ed4967c9f8e4884602563815e)
+-	[`26.04`, `resolute-20260901`, `resolute`, `latest`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-s390x-20260901-992ccaeb&id=992ccaeb2ddb7bca4e7ea9eb45a720790eccf9d2)
 
--	[`26.10`, `stonking-20260901.1`, `stonking`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-stonking-amd64-20260901.1-e14184e0&id=e14184e0b82f3bed6d4ae5058662e0e6aeb646d8)
+-	[`26.10`, `stonking-20260901.1`, `stonking`, `devel`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-stonking-s390x-20260901.1-fc24b186&id=fc24b186324e359c2e897005c665fa03c7d61f29)
 
 # Quick reference (cont.)
 
@@ -65,9 +67,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `s390x/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `s390x/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `s390x/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 

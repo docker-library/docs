@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `yourls` official image](https://hub.docker.com/_/yourls) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -59,7 +61,7 @@ YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener
 
 # How to use this image
 
-## Start a `yourls` server instance
+## Start a `s390x/yourls` server instance
 
 ```bash
 docker run \
@@ -69,7 +71,7 @@ docker run \
     --env YOURLS_SITE="https://example.com" \
     --env YOURLS_USER="example_username" \
     --env YOURLS_PASS="example_password" \
-    yourls
+    s390x/yourls
 ```
 
 The YOURLS instance accepts a number of environment variables for configuration, see *Environment Variables* section below.
@@ -83,7 +85,7 @@ docker run \
     --env YOURLS_DB_HOST=... \
     --env YOURLS_DB_USER=... \
     --env YOURLS_DB_PASS=... \
-    yourls
+    s390x/yourls
 ```
 
 ## Connect to the YOURLS administration interface
@@ -96,7 +98,7 @@ docker run \
     --detach \
     --network some-network \
     --publish 8080:8080 \
-    yourls
+    s390x/yourls
 ```
 
 Then, access it via `http://localhost:8080/admin/` or `http://<host-ip>:8080/admin/` in a browser.
@@ -155,7 +157,7 @@ docker run \
     --name some-yourls \
     --detach \
     --env YOURLS_DB_PASS_FILE=/run/secrets/mysql-root \
-    yourls
+    s390x/yourls
 ```
 
 Currently, this is supported for `YOURLS_DB_HOST`, `YOURLS_DB_USER`, `YOURLS_DB_PASS`, `YOURLS_DB_NAME`, `YOURLS_DB_PREFIX`, `YOURLS_SITE`, `YOURLS_USER`, and `YOURLS_PASS`.
@@ -209,13 +211,13 @@ If you wish to provide additional content in an image for deploying in multiple 
 
 # Image Variants
 
-The `yourls` images come in many flavors, each designed for a specific use case.
+The `s390x/yourls` images come in many flavors, each designed for a specific use case.
 
-## `yourls:<version>`
+## `s390x/yourls:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `yourls:<version>-fpm`
+## `s390x/yourls:<version>-fpm`
 
 This variant contains [PHP's FastCGI Process Manager (FPM)](https://www.php.net/fpm), which is the recommended FastCGI implementation for PHP.
 
