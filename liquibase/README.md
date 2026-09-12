@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `liquibase` official image](https://hub.docker.com/_/liquibase) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 With the release of Liquibase 5.0, this repository is officially deprecated and will not receive any further releases beyond patch updates.
@@ -77,20 +79,20 @@ $ liquibase update --driver=org.postgresql.Driver --url="jdbc:postgresql://<DATA
 The only change to use this docker image, is to use `docker run ...` and mount the folder containing your changelog.xml (or .yml or .json or .sql) to `/liquibase/changelog` in the Liquibase container
 
 ```console
-$ docker run -v /home/user/changelog:/liquibase/changelog liquibase --driver=org.postgresql.Driver --url="jdbc:postgresql://<DATABASE_IP>:<DATABASE_PORT>/<DATABASE>" --changeLogFile=/liquibase/changelog/changelog.xml --username=<USERNAME> --password=<PASSWORD>
+$ docker run -v /home/user/changelog:/liquibase/changelog arm64v8/liquibase --driver=org.postgresql.Driver --url="jdbc:postgresql://<DATABASE_IP>:<DATABASE_PORT>/<DATABASE>" --changeLogFile=/liquibase/changelog/changelog.xml --username=<USERNAME> --password=<PASSWORD>
 ```
 
 All Liquibase commands, such as `rollback`, `updateSQL`, and others, are available, as well.
 
 # Image Variants
 
-The `liquibase` images come in many flavors, each designed for a specific use case.
+The `arm64v8/liquibase` images come in many flavors, each designed for a specific use case.
 
-## `liquibase:<version>`
+## `arm64v8/liquibase:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `liquibase:<version>-alpine`
+## `arm64v8/liquibase:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
