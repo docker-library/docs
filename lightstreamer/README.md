@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `windows-amd64` builds of [the `lightstreamer` official image](https://hub.docker.com/_/lightstreamer) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,69 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`6.0.3-jdk8`, `6.0-jdk8`, `6.0.3-jdk8-temurin`, `6.0-jdk8-temurin`, `6.0.3`, `6.0`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/6.0/jdk8/Dockerfile)
-
--	[`6.0.3-jdk8-base`, `6.0-jdk8-base`, `6.0.3-jdk8-temurin-base`, `6.0-jdk8-temurin-base`, `6.0.3-base`, `6.0-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/6.0/jdk8-base/Dockerfile)
-
--	[`6.1.0-jdk8`, `6.1-jdk8`, `6.1.0-jdk8-temurin`, `6.1-jdk8-temurin`, `6-jdk8`, `6-jdk8-temurin`, `6.1.0`, `6.1`, `6`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/6.1/jdk8/Dockerfile)
-
--	[`6.1.0-jdk8-base`, `6.1-jdk8-base`, `6.1.0-jdk8-temurin-base`, `6.1-jdk8-temurin-base`, `6-jdk8-base`, `6-jdk8-temurin-base`, `6.1.0-base`, `6.1-base`, `6-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/6.1/jdk8-base/Dockerfile)
-
--	[`7.0.3-jdk8`, `7.0-jdk8`, `7.0.3-jdk8-temurin`, `7.0-jdk8-temurin`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.0/jdk8/Dockerfile)
-
--	[`7.0.3-jdk8-base`, `7.0-jdk8-base`, `7.0.3-jdk8-temurin-base`, `7.0-jdk8-temurin-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.0/jdk8-base/Dockerfile)
-
--	[`7.0.3-jdk11`, `7.0-jdk11`, `7.0.3-jdk11-temurin`, `7.0-jdk11-temurin`, `7.0.3`, `7.0`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.0/jdk11/Dockerfile)
-
--	[`7.0.3-jdk11-base`, `7.0-jdk11-base`, `7.0.3-jdk11-temurin-base`, `7.0-jdk11-temurin-base`, `7.0.3-base`, `7.0-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.0/jdk11-base/Dockerfile)
-
--	[`7.1.3-jdk8`, `7.1-jdk8`, `7.1.3-jdk8-temurin`, `7.1-jdk8-temurin`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.1/jdk8/Dockerfile)
-
--	[`7.1.3-jdk8-base`, `7.1-jdk8-base`, `7.1.3-jdk8-temurin-base`, `7.1-jdk8-temurin-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.1/jdk8-base/Dockerfile)
-
--	[`7.1.3-jdk11`, `7.1-jdk11`, `7.1.3-jdk11-temurin`, `7.1-jdk11-temurin`, `7.1.3`, `7.1`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.1/jdk11/Dockerfile)
-
--	[`7.1.3-jdk11-base`, `7.1-jdk11-base`, `7.1.3-jdk11-temurin-base`, `7.1-jdk11-temurin-base`, `7.1.3-base`, `7.1-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.1/jdk11-base/Dockerfile)
-
--	[`7.2.2-jdk8`, `7.2-jdk8`, `7.2.2-jdk8-temurin`, `7.2-jdk8-temurin`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.2/jdk8/Dockerfile)
-
--	[`7.2.2-jdk8-base`, `7.2-jdk8-base`, `7.2.2-jdk8-temurin-base`, `7.2-jdk8-temurin-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.2/jdk8-base/Dockerfile)
-
--	[`7.2.2-jdk11`, `7.2-jdk11`, `7.2.2-jdk11-temurin`, `7.2-jdk11-temurin`, `7.2.2`, `7.2`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.2/jdk11/Dockerfile)
-
--	[`7.2.2-jdk11-base`, `7.2-jdk11-base`, `7.2.2-jdk11-temurin-base`, `7.2-jdk11-temurin-base`, `7.2.2-base`, `7.2-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.2/jdk11-base/Dockerfile)
-
--	[`7.3.3-jdk8`, `7.3-jdk8`, `7.3.3-jdk8-temurin`, `7.3-jdk8-temurin`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.3/jdk8/Dockerfile)
-
--	[`7.3.3-jdk8-base`, `7.3-jdk8-base`, `7.3.3-jdk8-temurin-base`, `7.3-jdk8-temurin-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.3/jdk8-base/Dockerfile)
-
--	[`7.3.3-jdk11`, `7.3-jdk11`, `7.3.3-jdk11-temurin`, `7.3-jdk11-temurin`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.3/jdk11/Dockerfile)
-
--	[`7.3.3-jdk11-base`, `7.3-jdk11-base`, `7.3.3-jdk11-temurin-base`, `7.3-jdk11-temurin-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.3/jdk11-base/Dockerfile)
-
--	[`7.3.3-jdk17`, `7.3-jdk17`, `7.3.3-jdk17-temurin`, `7.3-jdk17-temurin`, `7.3.3`, `7.3`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.3/jdk17/Dockerfile)
-
--	[`7.3.3-jdk17-base`, `7.3-jdk17-base`, `7.3.3-jdk17-temurin-base`, `7.3-jdk17-temurin-base`, `7.3.3-base`, `7.3-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.3/jdk17-base/Dockerfile)
-
--	[`7.4.8-jdk8`, `7.4-jdk8`, `7.4.8-jdk8-temurin`, `7.4-jdk8-temurin`, `7-jdk8`, `7-jdk8-temurin`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.4/jdk8/Dockerfile)
-
--	[`7.4.8-jdk8-base`, `7.4-jdk8-base`, `7.4.8-jdk8-temurin-base`, `7.4-jdk8-temurin-base`, `7-jdk8-base`, `7-jdk8-temurin-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.4/jdk8-base/Dockerfile)
-
--	[`7.4.8-jdk11`, `7.4-jdk11`, `7.4.8-jdk11-temurin`, `7.4-jdk11-temurin`, `7-jdk11`, `7-jdk11-temurin`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.4/jdk11/Dockerfile)
-
--	[`7.4.8-jdk11-base`, `7.4-jdk11-base`, `7.4.8-jdk11-temurin-base`, `7.4-jdk11-temurin-base`, `7-jdk11-base`, `7-jdk11-temurin-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.4/jdk11-base/Dockerfile)
-
--	[`7.4.8-jdk17`, `7.4-jdk17`, `7.4.8-jdk17-temurin`, `7.4-jdk17-temurin`, `7-jdk17`, `7-jdk17-temurin`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.4/jdk17/Dockerfile)
-
--	[`7.4.8-jdk17-base`, `7.4-jdk17-base`, `7.4.8-jdk17-temurin-base`, `7.4-jdk17-temurin-base`, `7-jdk17-base`, `7-jdk17-temurin-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.4/jdk17-base/Dockerfile)
-
--	[`7.4.8-jdk21`, `7.4-jdk21`, `7.4.8-jdk21-temurin`, `7.4-jdk21-temurin`, `7-jdk21`, `7-jdk21-temurin`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.4/jdk21/Dockerfile)
-
--	[`7.4.8-jdk21-base`, `7.4-jdk21-base`, `7.4.8-jdk21-temurin-base`, `7.4-jdk21-temurin-base`, `7-jdk21-base`, `7-jdk21-temurin-base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.4/jdk21-base/Dockerfile)
-
--	[`7.4.8-jdk25`, `7.4-jdk25`, `7.4.8-jdk25-temurin`, `7.4-jdk25-temurin`, `7-jdk25`, `7-jdk25-temurin`, `7.4.8`, `7.4`, `7`, `latest`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.4/jdk25/Dockerfile)
-
--	[`7.4.8-jdk25-base`, `7.4-jdk25-base`, `7.4.8-jdk25-temurin-base`, `7.4-jdk25-temurin-base`, `7-jdk25-base`, `7-jdk25-temurin-base`, `7.4.8-base`, `7.4-base`, `7-base`, `base`](https://github.com/Lightstreamer/Docker/blob/52bdda2121071588ab5cb36be7bc5a01eaf89e6e/7.4/jdk25-base/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `windows-amd64` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -122,7 +62,7 @@ For more information and related downloads for Lightstreamer Server and other Li
 Launch the container with the default configuration:
 
 ```console
-$ docker run --name ls-server -d -p 80:8080 lightstreamer
+$ docker run --name ls-server -d -p 80:8080 winamd64/lightstreamer
 ```
 
 This will map port 8080 inside the container to port 80 on local host. Then point your browser to `http://localhost` and watch the Welcome page showing real-time data flowing in from the locally deployed demo application, which is a first overview of the unique features offered by the Lightstreamer technology. More examples are available online at the [demo site](https://demos.lightstreamer.com).
@@ -132,25 +72,25 @@ This will map port 8080 inside the container to port 80 on local host. Then poin
 It is possible to customize each aspect of the Lightstreamer instance running into the container. For example, a specific configuration file may be supplied as follows:
 
 ```console
-$ docker run --name ls-server -v /path/to/my-lightstreamer_conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 lightstreamer
+$ docker run --name ls-server -v /path/to/my-lightstreamer_conf.xml:/lightstreamer/conf/lightstreamer_conf.xml -d -p 80:8080 winamd64/lightstreamer
 ```
 
 In the same way, you could provide a custom logging configuration, maybe in this case also specifying a dedicated volume to ensure both the persistence of log files and better performance of the container:
 
 ```console
-$ docker run --name ls-server -v /path/to/my-lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/logs:/lightstreamer/logs -d -p 80:8080 lightstreamer
+$ docker run --name ls-server -v /path/to/my-lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/logs:/lightstreamer/logs -d -p 80:8080 winamd64/lightstreamer
 ```
 
 If you also change in your `my-lightstreamer_log_conf.xml` file the default logging path from `../logs` to `/path/to/dest/logs`:
 
 ```console
-$ docker run --name ls-server -v /path/to/my-lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/hosted/logs:/path/to/dest/logs -d -p 80:8080 lightstreamer
+$ docker run --name ls-server -v /path/to/my-lightstreamer_log_conf.xml:/lightstreamer/conf/lightstreamer_log_conf.xml -v /path/to/hosted/logs:/path/to/dest/logs -d -p 80:8080 winamd64/lightstreamer
 ```
 
 Alternatively, the above tasks can be executed by deriving a new image through a `Dockerfile` as the following:
 
 ```dockerfile
-FROM lightstreamer
+FROM winamd64/lightstreamer
 
 # Please specify a COPY command only for the required custom configuration file
 COPY my-lightstreamer_conf.xml /lightstreamer/conf/lightstreamer_conf.xml
@@ -182,7 +122,7 @@ To accomplish such goal, you may use similar strategies to those illustrated abo
 To deploy a single custom Adapter Set, the simplest way is to attach its files into the factory adapters folder, as follows:
 
 ```console
-$ docker run --name ls-server -v /path/to/my-adapter-set:/lightstreamer/adapters/my-adapter-set -d -p 80:8080 lightstreamer
+$ docker run --name ls-server -v /path/to/my-adapter-set:/lightstreamer/adapters/my-adapter-set -d -p 80:8080 winamd64/lightstreamer
 ```
 
 ### Full replacement of the "adapters" folder
@@ -190,7 +130,7 @@ $ docker run --name ls-server -v /path/to/my-adapter-set:/lightstreamer/adapters
 In the case you have many custom Adapter Sets to deploy, a more appropriate strategy is to replace the factory adapters folder with the one located in your host machine:
 
 ```console
-$ docker run --name ls-server -v /path/to/my-adapters:/lightstreamer/adapters -d -p 80:8080 lightstreamer
+$ docker run --name ls-server -v /path/to/my-adapters:/lightstreamer/adapters -d -p 80:8080 winamd64/lightstreamer
 ```
 
 In this case, the `/path/to/my-adapters` folder has to be structured with the required layout for an adapters folder:
@@ -210,7 +150,7 @@ Once again, a linear and clean approach is to make a new image including all nee
 In this case, you could write a simple Docker file in which the list of all your Adapter Sets configuration files is provided:
 
 ```dockerfile
-FROM lightstreamer
+FROM winamd64/lightstreamer
 
 # Will copy the contents of N Adapter Sets into the factory adapters folder
 COPY my-adapter-set-1 /lightstreamer/adapters/my-adapter-set-1
@@ -227,7 +167,7 @@ There might be some circumstances where you would like to provide custom pages f
 For example, with the following command you will be able to fully replace the factory `pages` folder:
 
 ```console
-$ docker run --name ls-server -v /path/to/custom/pages:/lightstreamer/pages -d -p 80:8080 lightstreamer
+$ docker run --name ls-server -v /path/to/custom/pages:/lightstreamer/pages -d -p 80:8080 winamd64/lightstreamer
 ```
 
 where `/path/to/custom/pages` is the path in your host machine containing the replacing web content files.
