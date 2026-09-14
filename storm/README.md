@@ -24,13 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.8.9-jre17`, `2.8-jre17`, `2.8.9`, `2.8`](https://github.com/apache/storm-docker/blob/d6fd2bc163a48be40cac2b5a1142c5d317d2d438/2.8.9/Dockerfile)
+-	[`3.1.0-jre25`, `3.1-jre25`, `3.1.0`, `3.1`, `latest`](https://github.com/apache/storm-docker/blob/31a83426d69a1e3c5bfc0b77fc135da2ed3a79fd/3.1.0/Dockerfile)
 
--	[`2.8.9-jre21`, `2.8-jre21`](https://github.com/apache/storm-docker/blob/d6fd2bc163a48be40cac2b5a1142c5d317d2d438/2.8.9-jre21/Dockerfile)
-
--	[`3.0.0-jre25`, `3.0-jre25`, `3.0.0`, `3.0`, `latest`](https://github.com/apache/storm-docker/blob/1e325fe56337922f3c06a5f790a5c4f7170acb4f/3.0.0/Dockerfile)
-
--	[`3.0.0-lite-jre25`, `3.0-lite-jre25`, `3.0.0-lite`, `3.0-lite`](https://github.com/apache/storm-docker/blob/1e325fe56337922f3c06a5f790a5c4f7170acb4f/3.0.0-lite/Dockerfile)
+-	[`3.1.0-lite-jre25`, `3.1-lite-jre25`, `3.1.0-lite`, `3.1-lite`](https://github.com/apache/storm-docker/blob/31a83426d69a1e3c5bfc0b77fc135da2ed3a79fd/3.1.0-lite/Dockerfile)
 
 # Quick reference (cont.)
 
