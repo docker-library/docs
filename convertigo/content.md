@@ -175,8 +175,8 @@ docker run --name C8O2 -v /my-shared-workspace:/workspace -d -p 28082:28080 \
 
 At each container start, the image copies the contents of these workspace directories into the Convertigo web application before Tomcat starts:
 
-- `/workspace/lib/` to `WEB-INF/lib/` for JAR files and their dependencies
-- `/workspace/classes/` to `WEB-INF/classes/` for compiled classes and resources
+-	`/workspace/lib/` to `WEB-INF/lib/` for JAR files and their dependencies
+-	`/workspace/classes/` to `WEB-INF/classes/` for compiled classes and resources
 
 The directory structure is preserved and overlays the files provided by the image; it does not remove existing web-application files. For classes, keep the package directory structure below `/workspace/classes/` (for example, `com/example/MyClass.class`). Restart or recreate the container after adding or updating these files. To remove an injected file, remove it from the workspace and recreate the container, since a restart does not delete files already copied into the web application.
 
