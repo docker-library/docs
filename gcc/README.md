@@ -30,7 +30,7 @@ WARNING:
 
 -	[`14.4.0`, `14.4`, `14`, `14.4.0-trixie`, `14.4-trixie`, `14-trixie`](https://github.com/docker-library/gcc/blob/5719f2f1af9000a4129748ce85656c7964b76c31/14/Dockerfile)
 
--	[`13.4.0`, `13.4`, `13`, `13.4.0-bookworm`, `13.4-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/5719f2f1af9000a4129748ce85656c7964b76c31/13/Dockerfile)
+-	[`13.5.0`, `13.5`, `13`, `13.5.0-bookworm`, `13.5-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/cf5c03c266c89d12e1760b78b4914ad8b6c1e868/13/Dockerfile)
 
 -	[`12.5.0`, `12.5`, `12`, `12.5.0-bookworm`, `12.5-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/5719f2f1af9000a4129748ce85656c7964b76c31/12/Dockerfile)
 
