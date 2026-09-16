@@ -24,21 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.5.1`, `8.5`, `8`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/1c3e8bb69e9b09980e3129f201beaca6d65f756b/8.5/Dockerfile)
+-	[`8.8.1`, `8.8`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa/8.8/Dockerfile)
 
--	[`8.4.4`, `8.4`](https://github.com/RocketChat/Docker.Official.Image/blob/1c3e8bb69e9b09980e3129f201beaca6d65f756b/8.4/Dockerfile)
+-	[`8.7.1`, `8.7`](https://github.com/RocketChat/Docker.Official.Image/blob/2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa/8.7/Dockerfile)
 
--	[`8.3.6`, `8.3`](https://github.com/RocketChat/Docker.Official.Image/blob/1c3e8bb69e9b09980e3129f201beaca6d65f756b/8.3/Dockerfile)
+-	[`8.6.2`, `8.6`](https://github.com/RocketChat/Docker.Official.Image/blob/2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa/8.6/Dockerfile)
 
--	[`8.2.6`, `8.2`](https://github.com/RocketChat/Docker.Official.Image/blob/1c3e8bb69e9b09980e3129f201beaca6d65f756b/8.2/Dockerfile)
+-	[`8.5.3`, `8.5`](https://github.com/RocketChat/Docker.Official.Image/blob/2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa/8.5/Dockerfile)
 
--	[`8.1.6`, `8.1`](https://github.com/RocketChat/Docker.Official.Image/blob/1c3e8bb69e9b09980e3129f201beaca6d65f756b/8.1/Dockerfile)
+-	[`8.4.6`, `8.4`](https://github.com/RocketChat/Docker.Official.Image/blob/2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa/8.4/Dockerfile)
 
--	[`8.0.7`, `8.0`](https://github.com/RocketChat/Docker.Official.Image/blob/1c3e8bb69e9b09980e3129f201beaca6d65f756b/8.0/Dockerfile)
+-	[`8.3.8`, `8.3`](https://github.com/RocketChat/Docker.Official.Image/blob/2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa/8.3/Dockerfile)
 
--	[`7.13.9`, `7.13`, `7`](https://github.com/RocketChat/Docker.Official.Image/blob/1c3e8bb69e9b09980e3129f201beaca6d65f756b/7.13/Dockerfile)
+-	[`8.2.8`, `8.2`](https://github.com/RocketChat/Docker.Official.Image/blob/2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa/8.2/Dockerfile)
 
--	[`7.10.9`, `7.10`](https://github.com/RocketChat/Docker.Official.Image/blob/2f4945d910dade78b5d1ad6e5b7a351b7d6ae939/7.10/Dockerfile)
+-	[`7.10.15`, `7.10`](https://github.com/RocketChat/Docker.Official.Image/blob/2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa/7.10/Dockerfile)
 
 # Quick reference (cont.)
 

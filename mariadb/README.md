@@ -26,13 +26,13 @@ Also see the ["Getting Help with MariaDB" article on the MariaDB Knowledge Base]
 
 # Supported tags and respective `Dockerfile` links
 
--	[`13.0.1-ubi10-rc`, `13.0-ubi10-rc`, `13.0.1-ubi-rc`, `13.0-ubi-rc`](https://github.com/MariaDB/mariadb-docker/blob/063eb10da092170beea08d2c629b6eb79d28cceb/13.0-ubi/Dockerfile)
+-	[`13.0.2-ubi10`, `13.0-ubi10`, `13-ubi10`, `13.0.2-ubi`, `13.0-ubi`, `13-ubi`](https://github.com/MariaDB/mariadb-docker/blob/7359e74de2aa6ef63dd3b8545db5c7e177e72618/13.0-ubi/Dockerfile)
 
--	[`13.0.1-resolute-rc`, `13.0-resolute-rc`, `13.0.1-rc`, `13.0-rc`](https://github.com/MariaDB/mariadb-docker/blob/af9b72baa083d6c40b2e0741ec65fd74adacde68/13.0/Dockerfile)
+-	[`13.0.2-resolute`, `13.0-resolute`, `13-resolute`, `resolute`, `13.0.2`, `13.0`, `13`, `latest`](https://github.com/MariaDB/mariadb-docker/blob/7359e74de2aa6ef63dd3b8545db5c7e177e72618/13.0/Dockerfile)
 
 -	[`12.3.3-ubi10`, `12.3-ubi10`, `12-ubi10`, `lts-ubi10`, `12.3.3-ubi`, `12.3-ubi`, `12-ubi`, `lts-ubi`](https://github.com/MariaDB/mariadb-docker/blob/bdfe641466a5312bb97d06a1a4e1fb411c49e6b6/12.3-ubi/Dockerfile)
 
--	[`12.3.3-noble`, `12.3-noble`, `12-noble`, `noble`, `lts-noble`, `12.3.3`, `12.3`, `12`, `latest`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/bdfe641466a5312bb97d06a1a4e1fb411c49e6b6/12.3/Dockerfile)
+-	[`12.3.3-noble`, `12.3-noble`, `12-noble`, `lts-noble`, `12.3.3`, `12.3`, `12`, `lts`](https://github.com/MariaDB/mariadb-docker/blob/bdfe641466a5312bb97d06a1a4e1fb411c49e6b6/12.3/Dockerfile)
 
 -	[`11.8.9-ubi9`, `11.8-ubi9`, `11-ubi9`, `11.8.9-ubi`, `11.8-ubi`, `11-ubi`](https://github.com/MariaDB/mariadb-docker/blob/bdfe641466a5312bb97d06a1a4e1fb411c49e6b6/11.8-ubi/Dockerfile)
 
