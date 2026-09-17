@@ -24,41 +24,41 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0.7-trixie`, `4.0-trixie`, `4-trixie`, `trixie`, `4.0.7`, `4.0`, `4`, `latest`](https://github.com/docker-library/ruby/blob/d99f2b881184595750e2e9420fe77a577bf24b4d/4.0/trixie/Dockerfile)
+-	[`4.0.7-trixie`, `4.0-trixie`, `4-trixie`, `trixie`, `4.0.7`, `4.0`, `4`, `latest`](https://github.com/docker-library/ruby/blob/6c27e82b81200000d7fef10ed3831a6e67c1d352/4.0/trixie/Dockerfile)
 
--	[`4.0.7-slim-trixie`, `4.0-slim-trixie`, `4-slim-trixie`, `slim-trixie`, `4.0.7-slim`, `4.0-slim`, `4-slim`, `slim`](https://github.com/docker-library/ruby/blob/d99f2b881184595750e2e9420fe77a577bf24b4d/4.0/slim-trixie/Dockerfile)
+-	[`4.0.7-slim-trixie`, `4.0-slim-trixie`, `4-slim-trixie`, `slim-trixie`, `4.0.7-slim`, `4.0-slim`, `4-slim`, `slim`](https://github.com/docker-library/ruby/blob/6c27e82b81200000d7fef10ed3831a6e67c1d352/4.0/slim-trixie/Dockerfile)
 
--	[`4.0.7-bookworm`, `4.0-bookworm`, `4-bookworm`, `bookworm`](https://github.com/docker-library/ruby/blob/d99f2b881184595750e2e9420fe77a577bf24b4d/4.0/bookworm/Dockerfile)
+-	[`4.0.7-bookworm`, `4.0-bookworm`, `4-bookworm`, `bookworm`](https://github.com/docker-library/ruby/blob/6c27e82b81200000d7fef10ed3831a6e67c1d352/4.0/bookworm/Dockerfile)
 
--	[`4.0.7-slim-bookworm`, `4.0-slim-bookworm`, `4-slim-bookworm`, `slim-bookworm`](https://github.com/docker-library/ruby/blob/d99f2b881184595750e2e9420fe77a577bf24b4d/4.0/slim-bookworm/Dockerfile)
+-	[`4.0.7-slim-bookworm`, `4.0-slim-bookworm`, `4-slim-bookworm`, `slim-bookworm`](https://github.com/docker-library/ruby/blob/6c27e82b81200000d7fef10ed3831a6e67c1d352/4.0/slim-bookworm/Dockerfile)
 
--	[`4.0.7-alpine3.24`, `4.0-alpine3.24`, `4-alpine3.24`, `alpine3.24`, `4.0.7-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/d99f2b881184595750e2e9420fe77a577bf24b4d/4.0/alpine3.24/Dockerfile)
+-	[`4.0.7-alpine3.24`, `4.0-alpine3.24`, `4-alpine3.24`, `alpine3.24`, `4.0.7-alpine`, `4.0-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/ruby/blob/6c27e82b81200000d7fef10ed3831a6e67c1d352/4.0/alpine3.24/Dockerfile)
 
--	[`4.0.7-alpine3.23`, `4.0-alpine3.23`, `4-alpine3.23`, `alpine3.23`](https://github.com/docker-library/ruby/blob/d99f2b881184595750e2e9420fe77a577bf24b4d/4.0/alpine3.23/Dockerfile)
+-	[`4.0.7-alpine3.23`, `4.0-alpine3.23`, `4-alpine3.23`, `alpine3.23`](https://github.com/docker-library/ruby/blob/6c27e82b81200000d7fef10ed3831a6e67c1d352/4.0/alpine3.23/Dockerfile)
 
--	[`3.4.10-trixie`, `3.4-trixie`, `3-trixie`, `3.4.10`, `3.4`, `3`](https://github.com/docker-library/ruby/blob/4ea2e7e222ba458994a266920e8815140bc2c901/3.4/trixie/Dockerfile)
+-	[`3.4.10-trixie`, `3.4-trixie`, `3-trixie`, `3.4.10`, `3.4`, `3`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.4/trixie/Dockerfile)
 
--	[`3.4.10-slim-trixie`, `3.4-slim-trixie`, `3-slim-trixie`, `3.4.10-slim`, `3.4-slim`, `3-slim`](https://github.com/docker-library/ruby/blob/4ea2e7e222ba458994a266920e8815140bc2c901/3.4/slim-trixie/Dockerfile)
+-	[`3.4.10-slim-trixie`, `3.4-slim-trixie`, `3-slim-trixie`, `3.4.10-slim`, `3.4-slim`, `3-slim`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.4/slim-trixie/Dockerfile)
 
--	[`3.4.10-bookworm`, `3.4-bookworm`, `3-bookworm`](https://github.com/docker-library/ruby/blob/4ea2e7e222ba458994a266920e8815140bc2c901/3.4/bookworm/Dockerfile)
+-	[`3.4.10-bookworm`, `3.4-bookworm`, `3-bookworm`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.4/bookworm/Dockerfile)
 
--	[`3.4.10-slim-bookworm`, `3.4-slim-bookworm`, `3-slim-bookworm`](https://github.com/docker-library/ruby/blob/4ea2e7e222ba458994a266920e8815140bc2c901/3.4/slim-bookworm/Dockerfile)
+-	[`3.4.10-slim-bookworm`, `3.4-slim-bookworm`, `3-slim-bookworm`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.4/slim-bookworm/Dockerfile)
 
--	[`3.4.10-alpine3.24`, `3.4-alpine3.24`, `3-alpine3.24`, `3.4.10-alpine`, `3.4-alpine`, `3-alpine`](https://github.com/docker-library/ruby/blob/4ea2e7e222ba458994a266920e8815140bc2c901/3.4/alpine3.24/Dockerfile)
+-	[`3.4.10-alpine3.24`, `3.4-alpine3.24`, `3-alpine3.24`, `3.4.10-alpine`, `3.4-alpine`, `3-alpine`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.4/alpine3.24/Dockerfile)
 
--	[`3.4.10-alpine3.23`, `3.4-alpine3.23`, `3-alpine3.23`](https://github.com/docker-library/ruby/blob/4ea2e7e222ba458994a266920e8815140bc2c901/3.4/alpine3.23/Dockerfile)
+-	[`3.4.10-alpine3.23`, `3.4-alpine3.23`, `3-alpine3.23`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.4/alpine3.23/Dockerfile)
 
--	[`3.3.12-trixie`, `3.3-trixie`, `3.3.12`, `3.3`](https://github.com/docker-library/ruby/blob/31475ec8e3682c1b3d3d78e222f264f564657b25/3.3/trixie/Dockerfile)
+-	[`3.3.12-trixie`, `3.3-trixie`, `3.3.12`, `3.3`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.3/trixie/Dockerfile)
 
--	[`3.3.12-slim-trixie`, `3.3-slim-trixie`, `3.3.12-slim`, `3.3-slim`](https://github.com/docker-library/ruby/blob/31475ec8e3682c1b3d3d78e222f264f564657b25/3.3/slim-trixie/Dockerfile)
+-	[`3.3.12-slim-trixie`, `3.3-slim-trixie`, `3.3.12-slim`, `3.3-slim`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.3/slim-trixie/Dockerfile)
 
--	[`3.3.12-bookworm`, `3.3-bookworm`](https://github.com/docker-library/ruby/blob/31475ec8e3682c1b3d3d78e222f264f564657b25/3.3/bookworm/Dockerfile)
+-	[`3.3.12-bookworm`, `3.3-bookworm`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.3/bookworm/Dockerfile)
 
--	[`3.3.12-slim-bookworm`, `3.3-slim-bookworm`](https://github.com/docker-library/ruby/blob/31475ec8e3682c1b3d3d78e222f264f564657b25/3.3/slim-bookworm/Dockerfile)
+-	[`3.3.12-slim-bookworm`, `3.3-slim-bookworm`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.3/slim-bookworm/Dockerfile)
 
--	[`3.3.12-alpine3.24`, `3.3-alpine3.24`, `3.3.12-alpine`, `3.3-alpine`](https://github.com/docker-library/ruby/blob/31475ec8e3682c1b3d3d78e222f264f564657b25/3.3/alpine3.24/Dockerfile)
+-	[`3.3.12-alpine3.24`, `3.3-alpine3.24`, `3.3.12-alpine`, `3.3-alpine`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.3/alpine3.24/Dockerfile)
 
--	[`3.3.12-alpine3.23`, `3.3-alpine3.23`](https://github.com/docker-library/ruby/blob/31475ec8e3682c1b3d3d78e222f264f564657b25/3.3/alpine3.23/Dockerfile)
+-	[`3.3.12-alpine3.23`, `3.3-alpine3.23`](https://github.com/docker-library/ruby/blob/11b46206a6d5d4755df64cdd0bb433b3dfe87e2d/3.3/alpine3.23/Dockerfile)
 
 # Quick reference (cont.)
 
