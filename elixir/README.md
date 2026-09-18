@@ -147,7 +147,7 @@ Elixir leverages the Erlang VM, known for running low-latency, distributed and f
 
 > [en.wikipedia.org/wiki/Elixir_(programming_language)](https://en.wikipedia.org/wiki/Elixir_%28programming_language%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/f3ee5318992592f987a289cd72d63ac1807f569d/elixir/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/8a898296db1dc44068d093c917d5e2d1f5beb052/elixir/logo.svg?sanitize=true)
 
 # How to use this image
 
