@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `i386` builds of [the `almalinux` official image](https://hub.docker.com/_/almalinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +26,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10-kitten`, `10-kitten-20260902`](https://github.com/AlmaLinux/container-images/blob/6d775fba32697c65cca7c569c9cbf37bc2ba92f1/default/amd64/Dockerfile)
+-	[`10-kitten`, `10-kitten-20260902`](https://github.com/AlmaLinux/container-images/blob/6d775fba32697c65cca7c569c9cbf37bc2ba92f1/default/386/Dockerfile)
 
--	[`10-kitten-minimal`, `10-kitten-minimal-20260902`](https://github.com/AlmaLinux/container-images/blob/6d775fba32697c65cca7c569c9cbf37bc2ba92f1/minimal/amd64/Dockerfile)
+-	[`10-kitten-minimal`, `10-kitten-minimal-20260902`](https://github.com/AlmaLinux/container-images/blob/6d775fba32697c65cca7c569c9cbf37bc2ba92f1/minimal/386/Dockerfile)
 
--	[`latest`, `10`, `10.2`, `10.2-20260902`](https://github.com/AlmaLinux/container-images/blob/1cdff885ce89957138d5a3e74e4d859a5cc72ef1/default/amd64/Dockerfile)
+-	[`latest`, `10`, `10.2`, `10.2-20260902`](https://github.com/AlmaLinux/container-images/blob/1cdff885ce89957138d5a3e74e4d859a5cc72ef1/default/386/Dockerfile)
 
--	[`minimal`, `10-minimal`, `10.2-minimal`, `10.2-minimal-20260902`](https://github.com/AlmaLinux/container-images/blob/1cdff885ce89957138d5a3e74e4d859a5cc72ef1/minimal/amd64/Dockerfile)
-
--	[`8`, `8.10`, `8.10-20260902`](https://github.com/AlmaLinux/container-images/blob/6354e6b6eed13b21e9af74ff8e6b323b2a8bc00b/default/amd64/Dockerfile)
-
--	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20260902`](https://github.com/AlmaLinux/container-images/blob/6354e6b6eed13b21e9af74ff8e6b323b2a8bc00b/minimal/amd64/Dockerfile)
-
--	[`9`, `9.8`, `9.8-20260902`](https://github.com/AlmaLinux/container-images/blob/63d735dd65253cced0e6777e1415e36a384ffc64/default/amd64/Dockerfile)
-
--	[`9-minimal`, `9.8-minimal`, `9.8-minimal-20260902`](https://github.com/AlmaLinux/container-images/blob/63d735dd65253cced0e6777e1415e36a384ffc64/minimal/amd64/Dockerfile)
+-	[`minimal`, `10-minimal`, `10.2-minimal`, `10.2-minimal-20260902`](https://github.com/AlmaLinux/container-images/blob/1cdff885ce89957138d5a3e74e4d859a5cc72ef1/minimal/386/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -71,13 +65,13 @@ WARNING:
 
 The default (platform) image is a general-purpose image with a full DNF stack and basic tools like find, tar, vi, etc.
 
-The `almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `almalinux:8` or `almalinux:8.4`).
+The `i386/almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `i386/almalinux:8` or `i386/almalinux:8.4`).
 
 ## Minimal image
 
 The minimal image is a stripped-down image that uses the microdnf package manager and contains a very limited package set. It is designed for applications that come with their own dependencies bundled (e.g. NodeJS, Python).
 
-The `almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `almalinux:8-minimal`) and minor (e.g. `almalinux:8.4-minimal`) releases are also available.
+The `i386/almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `i386/almalinux:8-minimal`) and minor (e.g. `i386/almalinux:8.4-minimal`) releases are also available.
 
 ### Upgrade policy
 
