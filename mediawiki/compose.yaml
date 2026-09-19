@@ -12,8 +12,8 @@ services:
     volumes:
       - images:/var/www/html/images
       # After initial setup, download LocalSettings.php to the same directory as
-      # this yaml and uncomment the following line and use compose to restart
-      # the mediawiki service
+      # this yaml, uncomment the following line, and run `docker compose up --build`
+      # to recreate the mediawiki service with the new volume.
       # - ./LocalSettings.php:/var/www/html/LocalSettings.php
   database: # <- This key defines the name of the database during setup
     image: mariadb
