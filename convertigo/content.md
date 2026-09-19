@@ -26,21 +26,61 @@ You can access the Server admin console on `http://[dockerhost]:28080/convertigo
 
 The Server can also be accessed by HTTPS on `https://[dockerhost]:28443/convertigo` if SSL is configured (see the **HTTPS** section below).
 
-## Link Convertigo to a CouchDB database for FullSync (Convertigo EE only)
+## Connect Convertigo to a CouchDB database for FullSync (Convertigo EE only)
 
-Convertigo FullSync module uses Apache CouchDB 3.2.2 as NoSQL repository. You can use the **[couchdb](https://hub.docker.com/_/couchdb/)** docker image and link to it convertigo this way
+Convertigo FullSync uses Apache CouchDB 3.2.2 as its NoSQL repository.
 
-Launch CouchDB container and name it 'fullsync'
+For modern Docker setups, prefer one of these approaches:
+
+-	another container on the same Docker network
+-	a service running directly on the Docker host
+
+### CouchDB running on the Docker host
+
+With Docker Desktop, `host.docker.internal` is available by default:
 
 ```console
-$ docker run -d --name fullsync couchdb:3.2.2
+$ docker run -d --name C8O \
+    -e JAVA_OPTS="-Dconvertigo.engine.fullsync.couch.url=http://host.docker.internal:5984" \
+    -p 28080:28080 %%IMAGE%%
 ```
 
-Then launch Convertigo and link it to the running 'fullsync' container. Convertigo Low Code sever will automatically use it as its fullsync repository.
+On Docker Engine for Linux, add:
 
 ```console
-$ docker run -d --name C8O --link fullsync:couchdb -p 28080:28080 %%IMAGE%%
+--add-host host.docker.internal:host-gateway
 ```
+
+Example:
+
+```console
+$ docker run -d --name C8O \
+    --add-host host.docker.internal:host-gateway \
+    -e JAVA_OPTS="-Dconvertigo.engine.fullsync.couch.url=http://host.docker.internal:5984" \
+    -p 28080:28080 %%IMAGE%%
+```
+
+### CouchDB running in another container
+
+Create a user-defined Docker network and run both containers on it:
+
+```console
+$ docker network create c8o-net
+```
+
+```console
+$ docker run -d --name fullsync --network c8o-net couchdb:3.2.2
+```
+
+```console
+$ docker run -d --name C8O --network c8o-net \
+    -e JAVA_OPTS="-Dconvertigo.engine.fullsync.couch.url=http://fullsync:5984" \
+    -p 28080:28080 %%IMAGE%%
+```
+
+The legacy `--link` option may still work, but it is no longer the recommended Docker approach.
+
+For compatibility with existing deployments, the image also detects a resolvable host named `couchdb` at startup and configures it as `http://couchdb:5984`. Prefer an explicit `JAVA_OPTS` setting and a user-defined network for new deployments.
 
 ## Use embedded PouchDB as FullSync engine (not for production)
 
@@ -49,23 +89,28 @@ Convertigo FullSync is designed to use CouchDB server or cluster. Convertigo Ful
 It can be enabled directly at startup:
 
 ```console
-$ docker run -d --name C8O -e JAVA_OPTS="-Dconvertigo.engine.fullsync.pouchdb=true" -p 28080:28080 %%IMAGE%%
+docker run -d --name C8O -e JAVA_OPTS="-Dconvertigo.engine.fullsync.pouchdb=true" -p 28080:28080 %%IMAGE%%
 ```
 
-## Link Convertigo Low Code Server to a Billing & Analytics database
+## Connect Convertigo Low Code Server to a Billing & Analytics database
 
 ### MySQL
 
-MySQL is the recommended database for holding Convertigo Low Code server analytics. You can use this command to run convertigo and link it to a running MySQL container. Change `[mysql-container]` to the container name, and `[username for the c8oAnalytics db]`, `[password for specified db user]` with the values for your MySQL configuration.
+MySQL is the recommended database for holding Convertigo analytics data.
+
+If the database runs on the Docker host, use `host.docker.internal`:
 
 ```console
-$ docker run -d --name C8O --link [mysql-container]:mysql -p 28080:28080                             \
-    -e JAVA_OPTS="-Dconvertigo.engine.billing.enabled=true                                           \ 
-            -Dconvertigo.engine.billing.persistence.jdbc.username=[username for the c8oAnalytics db] \
-            -Dconvertigo.engine.billing.persistence.jdbc.password=[password for specified db user]   \
-            -Dconvertigo.engine.billing.persistence.jdbc.url=jdbc:mysql://mysql:3306/c8oAnalytics"   \
-%%IMAGE%%
+$ docker run -d --name C8O \
+    --add-host host.docker.internal:host-gateway \
+    -e JAVA_OPTS="-Dconvertigo.engine.billing.enabled=true \
+                  -Dconvertigo.engine.billing.persistence.jdbc.username=[username for the c8oAnalytics db] \
+                  -Dconvertigo.engine.billing.persistence.jdbc.password=[password for specified db user] \
+                  -Dconvertigo.engine.billing.persistence.jdbc.url=jdbc:mysql://host.docker.internal:3306/c8oAnalytics" \
+    -p 28080:28080 %%IMAGE%%
 ```
+
+If the database runs in another container, connect both containers to the same user-defined Docker network and use the container name in the JDBC URL.
 
 ## Where is Convertigo Low Code server storing deployed projects
 
@@ -79,12 +124,96 @@ You can share the same workspace by all Convertigo containers. In this case, whe
 
 **Be sure to have a really fast file sharing between instances !!! We have experienced that Azure File Share is not fast enough**
 
-To avoid log and cache mixing, you have to add 2 variables for instance specific paths:
+Shared-workspace deployments can also propagate a subset of administration changes at runtime without restarting every instance. This synchronization is disabled by default and must only be enabled when all instances really share the same Convertigo workspace (for example via NFS or another RWX volume).
+
+Enable it with:
+
+```console
+-Dconvertigo.engine.session.shared_workspace.sync.enabled=true
+```
+
+Current runtime synchronization scope:
+
+-	project deploy / import URL / delete
+-	global symbols
+-	`engine.properties` runtime replay, including logger levels
+-	users / roles definitions (`user_roles.db`) for future logins
+-	cache configure / cache clear
+
+This shared-workspace sync does **not** cover separate workspaces per pod, Redis-specific notifications, certificates, scheduler, or broader clustered admin forwarding.
+
+The shared workspace is intended for projects, configuration, and runtime sync markers. Logs and file cache must not be shared between instances.
+
+For plain Docker multi-instance setups sharing the same `/workspace` mount, use instance-specific paths:
 
 ```console
 -Dconvertigo.engine.cache_manager.filecache.directory=/workspace/cache/[instance name]
--Dconvertigo.engine.log4j.appender.CemsAppender.File=/workspace/logs/[instance name]/engine.log
+-Dlog.directory=/workspace/logs/[instance name]
 ```
+
+For Kubernetes and Helm deployments, prefer pod-local paths such as `/tmp/convertigo-cache` and `/tmp/convertigo-logs` instead of shared-workspace subdirectories.
+
+Recommended multi-instance example:
+
+```console
+$ docker run --name C8O1 -v /my-shared-workspace:/workspace -d -p 28081:28080 \
+    -e JAVA_OPTS="-Dconvertigo.engine.session.shared_workspace.sync.enabled=true \
+                  -Dconvertigo.engine.cache_manager.filecache.directory=/workspace/cache/server1 \
+                  -Dlog.directory=/workspace/logs/server1" \
+    %%IMAGE%%
+```
+
+```console
+$ docker run --name C8O2 -v /my-shared-workspace:/workspace -d -p 28082:28080 \
+    -e JAVA_OPTS="-Dconvertigo.engine.session.shared_workspace.sync.enabled=true \
+                  -Dconvertigo.engine.cache_manager.filecache.directory=/workspace/cache/server2 \
+                  -Dlog.directory=/workspace/logs/server2" \
+    %%IMAGE%%
+```
+
+## Add custom Java libraries or classes
+
+At each container start, the image copies the contents of these workspace directories into the Convertigo web application before Tomcat starts:
+
+-	`/workspace/lib/` to `WEB-INF/lib/` for JAR files and their dependencies
+-	`/workspace/classes/` to `WEB-INF/classes/` for compiled classes and resources
+
+The directory structure is preserved and overlays the files provided by the image; it does not remove existing web-application files. For classes, keep the package directory structure below `/workspace/classes/` (for example, `com/example/MyClass.class`). Restart or recreate the container after adding or updating these files. To remove an injected file, remove it from the workspace and recreate the container, since a restart does not delete files already copied into the web application.
+
+For example, prepare a workspace and mount it into the container:
+
+```console
+$ mkdir -p workspace/lib workspace/classes/com/example
+$ cp my-driver.jar workspace/lib/
+$ cp build/classes/java/main/com/example/MyClass.class workspace/classes/com/example/
+$ docker run --name C8O -v "$(pwd)/workspace:/workspace" -d -p 28080:28080 %%IMAGE%%
+```
+
+This is also useful when iterating on a custom Java extension without building a derived Convertigo image. Ensure that the mounted workspace is writable by the container at startup.
+
+## Trust custom certificate authorities
+
+To trust private root or intermediate certificate authorities, mount a dedicated directory at `/cacerts`. At startup, the image copies the JDK default truststore to a temporary location, imports every regular file in this directory with `keytool`, then configures the JVM to use the generated truststore. Certificate files must be X.509 certificates in a format accepted by `keytool` (typically PEM or DER).
+
+For example:
+
+```console
+$ mkdir -p custom-ca
+$ cp company-root-ca.pem custom-ca/
+$ cp partner-intermediate-ca.crt custom-ca/
+$ docker run --name C8O \
+    -v "$(pwd)/workspace:/workspace" \
+    -v "$(pwd)/custom-ca:/cacerts:ro" \
+    -d -p 28080:28080 convertigo
+```
+
+Keep this directory outside the Convertigo workspace and mount it read-only. In Kubernetes, mount a ConfigMap or Secret read-only at `/cacerts`. The image only reads custom CAs from this dedicated mount; files in `/workspace` are not considered.
+
+`/cacerts` is a convenience to add private or corporate certificate authorities to the standard JDK trust anchors, typically behind a corporate proxy performing TLS inspection, without modifying the JDK installation (the container may run as an arbitrary non-root user). Users who need full control can still provide their own complete JVM truststore through the standard Java configuration, for example `-e JAVA_OPTS="-Djavax.net.ssl.trustStore=/path/to/truststore -Djavax.net.ssl.trustStorePassword=..."`: when `javax.net.ssl.trustStore` is already set in `JAVA_OPTS`, the image keeps that configuration unchanged and ignores `/cacerts` (an informational message is logged at startup).
+
+The standard JDK certificate authorities are retained. The generated truststore is not persisted: restart or recreate the container after adding, replacing, or removing a certificate. If a file cannot be imported, the image logs a warning and continues to start with the certificates successfully imported so far.
+
+This configuration is independent from the Tomcat HTTPS server certificate configured through `/ssl`.
 
 ## Make image with pre-deployed projects
 
@@ -125,6 +254,8 @@ You can change the default administration account :
 $ docker run -d --name C8O -e CONVERTIGO_ADMIN_USER=administrator -e CONVERTIGO_ADMIN_PASSWORD=s3cret -p 28080:28080 %%IMAGE%%
 ```
 
+These variables are startup conveniences. If `/workspace/configuration/engine.properties` already defines `admin.username` or `admin.password`, the matching environment variable is ignored to preserve the persisted configuration.
+
 ### `CONVERTIGO_ANONYMOUS_DASHBOARD` Environment variable
 
 You can allow anonymous access to `/convertigo/dashboard/` by setting:
@@ -132,6 +263,18 @@ You can allow anonymous access to `/convertigo/dashboard/` by setting:
 ```console
 $ docker run -d --name C8O -e CONVERTIGO_ANONYMOUS_DASHBOARD=true -p 28080:28080 %%IMAGE%%
 ```
+
+If `/workspace/configuration/engine.properties` already defines `anonymous.dashboard`, `CONVERTIGO_ANONYMOUS_DASHBOARD` is ignored.
+
+### `PUBLIC_DOMAINS` Environment variable
+
+For production CORS configuration, you can replace the default `cors.policy = =Origin` behavior with an explicit list of public origins:
+
+```console
+$ docker run -d --name C8O -e PUBLIC_DOMAINS="https://app.example.com#https://admin.example.com" -p 28080:28080 %%IMAGE%%
+```
+
+Values must match the full browser `Origin` header, including scheme and optional port. Multiple origins are separated with `#`. If `/workspace/configuration/engine.properties` already defines `cors.policy`, `PUBLIC_DOMAINS` is ignored. Use `JAVA_OPTS=-Dconvertigo.engine.cors.policy=...` only when you need an explicit JVM-level override.
 
 ## HTTPS / SSL Configuration
 
@@ -166,9 +309,9 @@ If you cannot mount a volume, you can probably add environment variables of prev
 -	`SSL_CHAIN_B64` : the optional chain of certificates not included in `cert.pem` using the base64 PEM format
 
 ```console
-$ SSL_KEY_B64=$(base64 key.pem)
-$ SSL_CERT_B64=$(base64 cert.pem)
-$ SSL_CHAIN_B64=$(base64 chain.pem)
+SSL_KEY_B64=$(base64 key.pem)
+SSL_CERT_B64=$(base64 cert.pem)
+SSL_CHAIN_B64=$(base64 chain.pem)
 $ docker run -d --name C8O -e SSL_KEY_B64="$SSL_KEY_B64" -e SSL_CERT_B64="$SSL_CERT_B64" -e SSL_CHAIN_B64="$SSL_CHAIN_B64" -p 28443:28443 %%IMAGE%%
 ```
 
@@ -190,7 +333,7 @@ $ docker run -d --name C8O -v <my empty SSL folder>:/ssl -e SSL_SELFSIGNED=mycom
 
 ## `JAVA_OPTS` Environment variable
 
-Convertigo is based on a **Java** process with some defaults **JVM** options. You can override our defaults **JVM** options with you own.
+Convertigo is based on a **Java** process with default **JVM** options. You can add your own JVM options with this variable; the image keeps its required runtime options.
 
 Add any **Java JVM** options such as -D[something] :
 
@@ -207,14 +350,16 @@ Convertigo generates many logs in a **engine.log** file that can be consulted vi
 Log file still exists until you add the `LOG_FILE=false` environment variable :
 
 ```console
-    docker run -d --name C8O -e LOG_STDOUT=true -e LOG_FILE=false -p 28080:28080 convertigo
+$ docker run -d --name C8O -e LOG_STDOUT=true -e LOG_FILE=false -p 28080:28080 %%IMAGE%%
 ```
 
 ## `JXMX` Environment variable
 
-Convertigo tries to allocate this amount of memory in the container and will automatically reduce it until the value is compatible for the Docker memory constraints. Once the best value found, it is used as `-Xmx=${JXMX}m` parameter for the JVM.
+Set `JXMX` to define the JVM heap size in MiB. The image then adds `-Xms128m -Xmx=${JXMX}m` to the JVM options. Make sure the container memory limit leaves room for memory outside the Java heap.
 
-The default `JXMX` value is `2048` and can be defined :
+When `JXMX` is not set, the image uses `-XX:MaxRAMPercentage=80` instead.
+
+For example:
 
 ```console
 $ docker run -d --name C8O -e JXMX="4096" -p 28080:28080 %%IMAGE%%
@@ -281,8 +426,10 @@ Convertigo operates using the JVM (Java Virtual Machine). To enable remote debug
 The default `ENABLE_JDWP_DEBUG` value is **false** and can be defined this way:
 
 ```console
-$ docker run -d –name C8O -e ENABLE_JDWP_DEBUG=true -p 28080:28080 %%IMAGE%%
+$ docker run -d --name C8O -e ENABLE_JDWP_DEBUG=true -p 28080:28080 -p 8000:8000 %%IMAGE%%
 ```
+
+Do not expose port 8000 outside a trusted development network.
 
 ## Pre configurated `docker compose` stack
 
