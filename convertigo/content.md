@@ -89,7 +89,7 @@ Convertigo FullSync is designed to use CouchDB server or cluster. Convertigo Ful
 It can be enabled directly at startup:
 
 ```console
-docker run -d --name C8O -e JAVA_OPTS="-Dconvertigo.engine.fullsync.pouchdb=true" -p 28080:28080 %%IMAGE%%
+$ docker run -d --name C8O -e JAVA_OPTS="-Dconvertigo.engine.fullsync.pouchdb=true" -p 28080:28080 %%IMAGE%%
 ```
 
 ## Connect Convertigo Low Code Server to a Billing & Analytics database
