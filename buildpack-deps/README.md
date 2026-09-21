@@ -30,12 +30,6 @@ WARNING:
 
 -	[`bookworm`, `oldstable`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bookworm/Dockerfile)
 
--	[`bullseye-curl`, `oldoldstable-curl`](https://github.com/docker-library/buildpack-deps/blob/93d6db0797f91ab674535553b7e0e762941a02d0/debian/bullseye/curl/Dockerfile)
-
--	[`bullseye-scm`, `oldoldstable-scm`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bullseye/scm/Dockerfile)
-
--	[`bullseye`, `oldoldstable`](https://github.com/docker-library/buildpack-deps/blob/d0ecd4b7313e9bc6b00d9a4fe62ad5787bc197ae/debian/bullseye/Dockerfile)
-
 -	[`forky-curl`, `testing-curl`](https://github.com/docker-library/buildpack-deps/blob/6fbd1fd6aa17031b10f11a97c31b9da1ac09db76/debian/forky/curl/Dockerfile)
 
 -	[`forky-scm`, `testing-scm`](https://github.com/docker-library/buildpack-deps/blob/6fbd1fd6aa17031b10f11a97c31b9da1ac09db76/debian/forky/scm/Dockerfile)
