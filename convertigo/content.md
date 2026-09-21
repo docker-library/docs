@@ -309,9 +309,9 @@ If you cannot mount a volume, you can probably add environment variables of prev
 -	`SSL_CHAIN_B64` : the optional chain of certificates not included in `cert.pem` using the base64 PEM format
 
 ```console
-SSL_KEY_B64=$(base64 key.pem)
-SSL_CERT_B64=$(base64 cert.pem)
-SSL_CHAIN_B64=$(base64 chain.pem)
+$ SSL_KEY_B64=$(base64 key.pem)
+$ SSL_CERT_B64=$(base64 cert.pem)
+$ SSL_CHAIN_B64=$(base64 chain.pem)
 $ docker run -d --name C8O -e SSL_KEY_B64="$SSL_KEY_B64" -e SSL_CERT_B64="$SSL_CERT_B64" -e SSL_CHAIN_B64="$SSL_CHAIN_B64" -p 28443:28443 %%IMAGE%%
 ```
 
