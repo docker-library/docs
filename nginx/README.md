@@ -17,7 +17,7 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the NGINX Docker Maintainers](https://github.com/nginxinc/docker-nginx)
+	[the NGINX Docker Maintainers](https://github.com/nginx/docker-nginx)
 
 -	**Where to get help**:  
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
@@ -55,7 +55,7 @@ WARNING:
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/nginxinc/docker-nginx/issues](https://github.com/nginxinc/docker-nginx/issues?q=is:issue+is:pr)
+	[https://github.com/nginx/docker-nginx/issues](https://github.com/nginx/docker-nginx/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/nginx/), [`arm32v5`](https://hub.docker.com/r/arm32v5/nginx/), [`arm32v6`](https://hub.docker.com/r/arm32v6/nginx/), [`arm32v7`](https://hub.docker.com/r/arm32v7/nginx/), [`arm64v8`](https://hub.docker.com/r/arm64v8/nginx/), [`i386`](https://hub.docker.com/r/i386/nginx/), [`ppc64le`](https://hub.docker.com/r/ppc64le/nginx/), [`riscv64`](https://hub.docker.com/r/riscv64/nginx/), [`s390x`](https://hub.docker.com/r/s390x/nginx/)
@@ -77,7 +77,7 @@ Nginx (pronounced "engine-x") is an open source reverse proxy server for HTTP, H
 
 > [wikipedia.org/wiki/Nginx](https://en.wikipedia.org/wiki/Nginx)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/nginx/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/1afe031236eb18e740e55727df39b9a216806207/nginx/logo.svg?sanitize=true)
 
 # How to use this image
 
