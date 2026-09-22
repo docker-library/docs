@@ -5,6 +5,7 @@ services:
     ports:
       - 9987:9987/udp
       - 10011:10011
+      - 10022:10022
       - 30033:30033
     environment:
       TS3SERVER_DB_PLUGIN: ts3db_mariadb
@@ -15,6 +16,8 @@ services:
       TS3SERVER_DB_NAME: teamspeak
       TS3SERVER_DB_WAITUNTILREADY: 30
       TS3SERVER_LICENSE: accept
+      TS3SERVER_QUERY_PROTOCOLS: ssh,raw
+      TS3SERVER_SERVERADMIN_PASSWORD: example
   db:
     image: mariadb
     restart: always
