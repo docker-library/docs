@@ -34,7 +34,7 @@ WARNING:
 
 -	[`1.31.6-alpine-perl`, `mainline-alpine-perl`, `1-alpine-perl`, `1.31-alpine-perl`, `alpine-perl`, `1.31.6-alpine3.24-perl`, `mainline-alpine3.24-perl`, `1-alpine3.24-perl`, `1.31-alpine3.24-perl`, `alpine3.24-perl`](https://github.com/nginx/docker-nginx/blob/a16f1329e13e7273c4103f75d863ca625b75109e/mainline/alpine-perl/Dockerfile)
 
--	[`1.31.6-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.31-alpine-slim`, `alpine-slim`, `1.31.6-alpine3.24-slim`, `mainline-alpine3.24-slim`, `1-alpine3.24-slim`, `1.31-alpine3.24-slim`, `alpine3.24-slim`](https://github.com/nginx/docker-nginx/blob/a16f1329e13e7273c4103f75d863ca625b75109e/mainline/alpine-slim/Dockerfile)
+-	[`1.31.6-alpine-slim`, `mainline-alpine-slim`, `1-alpine-slim`, `1.31-alpine-slim`, `alpine-slim`, `1.31.6-alpine3.24-slim`, `mainline-alpine3.24-slim`, `1-alpine3.24-slim`, `1.31-alpine3.24-slim`, `alpine3.24-slim`](https://github.com/nginx/docker-nginx/blob/ef5a25a6314e652a2dcfbce6074bef729f4d9639/mainline/alpine-slim/Dockerfile)
 
 -	[`1.31.6-alpine-otel`, `mainline-alpine-otel`, `1-alpine-otel`, `1.31-alpine-otel`, `alpine-otel`, `1.31.6-alpine3.24-otel`, `mainline-alpine3.24-otel`, `1-alpine3.24-otel`, `1.31-alpine3.24-otel`, `alpine3.24-otel`](https://github.com/nginx/docker-nginx/blob/a16f1329e13e7273c4103f75d863ca625b75109e/mainline/alpine-otel/Dockerfile)
 
@@ -48,7 +48,7 @@ WARNING:
 
 -	[`1.30.5-alpine-perl`, `stable-alpine-perl`, `1.30-alpine-perl`, `1.30.5-alpine3.24-perl`, `stable-alpine3.24-perl`, `1.30-alpine3.24-perl`](https://github.com/nginx/docker-nginx/blob/a16f1329e13e7273c4103f75d863ca625b75109e/stable/alpine-perl/Dockerfile)
 
--	[`1.30.5-alpine-slim`, `stable-alpine-slim`, `1.30-alpine-slim`, `1.30.5-alpine3.24-slim`, `stable-alpine3.24-slim`, `1.30-alpine3.24-slim`](https://github.com/nginx/docker-nginx/blob/a16f1329e13e7273c4103f75d863ca625b75109e/stable/alpine-slim/Dockerfile)
+-	[`1.30.5-alpine-slim`, `stable-alpine-slim`, `1.30-alpine-slim`, `1.30.5-alpine3.24-slim`, `stable-alpine3.24-slim`, `1.30-alpine3.24-slim`](https://github.com/nginx/docker-nginx/blob/ef5a25a6314e652a2dcfbce6074bef729f4d9639/stable/alpine-slim/Dockerfile)
 
 -	[`1.30.5-alpine-otel`, `stable-alpine-otel`, `1.30-alpine-otel`, `1.30.5-alpine3.24-otel`, `stable-alpine3.24-otel`, `1.30-alpine3.24-otel`](https://github.com/nginx/docker-nginx/blob/a16f1329e13e7273c4103f75d863ca625b75109e/stable/alpine-otel/Dockerfile)
 
