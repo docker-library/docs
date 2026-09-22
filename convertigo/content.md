@@ -193,27 +193,21 @@ This is also useful when iterating on a custom Java extension without building a
 
 ## Trust custom certificate authorities
 
-To trust private root or intermediate certificate authorities, mount a dedicated directory at `/cacerts`. At startup, the image copies the JDK default truststore to a temporary location, imports every regular file in this directory with `keytool`, then configures the JVM to use the generated truststore. Certificate files must be X.509 certificates in a format accepted by `keytool` (typically PEM or DER).
-
-For example:
+The image is based on the Eclipse Temurin JDK image, which ships an entrypoint able to add certificate authorities to the JVM truststore. It is opt-in: set the `USE_SYSTEM_CA_CERTS` environment variable and mount the certificates, in PEM format with a `.crt` extension, in the `/certificates` directory. A file may contain several certificates.
 
 ```console
 $ mkdir -p custom-ca
-$ cp company-root-ca.pem custom-ca/
+$ cp company-root-ca.crt custom-ca/
 $ cp partner-intermediate-ca.crt custom-ca/
 $ docker run --name C8O \
-    -v "$(pwd)/workspace:/workspace" \
-    -v "$(pwd)/custom-ca:/cacerts:ro" \
+    -e USE_SYSTEM_CA_CERTS=1 \
+    -v "$(pwd)/custom-ca:/certificates:ro" \
     -d -p 28080:28080 convertigo
 ```
 
-Keep this directory outside the Convertigo workspace and mount it read-only. In Kubernetes, mount a ConfigMap or Secret read-only at `/cacerts`. The image only reads custom CAs from this dedicated mount; files in `/workspace` are not considered.
+At startup, the certificates are imported into a copy of the JDK truststore (the JDK installation is not modified, so this also works with an arbitrary non-root user) and the JVM is configured to use that copy through `JAVA_TOOL_OPTIONS`. The system certificate authorities of the image are imported as well. When the container runs as `root`, the certificates are also added to the system trust store, so command-line tools such as `curl` trust them too. In Kubernetes, mount a ConfigMap or Secret read-only at `/certificates`. The truststore is rebuilt at every container start: restart or recreate the container after adding, replacing or removing a certificate. The JVM reports the truststore it uses with a `Picked up JAVA_TOOL_OPTIONS` line at startup.
 
-`/cacerts` is a convenience to add private or corporate certificate authorities to the standard JDK trust anchors, typically behind a corporate proxy performing TLS inspection, without modifying the JDK installation (the container may run as an arbitrary non-root user). Users who need full control can still provide their own complete JVM truststore through the standard Java configuration, for example `-e JAVA_OPTS="-Djavax.net.ssl.trustStore=/path/to/truststore -Djavax.net.ssl.trustStorePassword=..."`: when `javax.net.ssl.trustStore` is already set in `JAVA_OPTS`, the image keeps that configuration unchanged and ignores `/cacerts` (an informational message is logged at startup).
-
-The standard JDK certificate authorities are retained. The generated truststore is not persisted: restart or recreate the container after adding, replacing, or removing a certificate. If a file cannot be imported, the image logs a warning and continues to start with the certificates successfully imported so far.
-
-This configuration is independent from the Tomcat HTTPS server certificate configured through `/ssl`.
+This mechanism is documented by the [Eclipse Temurin image](https://hub.docker.com/_/eclipse-temurin) and is meant for the common case of a private or corporate certificate authority, typically behind a proxy performing TLS inspection. Users who need full control can provide their own complete JVM truststore through the standard Java configuration instead, for example `-e JAVA_OPTS="-Djavax.net.ssl.trustStore=/path/to/truststore -Djavax.net.ssl.trustStorePassword=..."`: options given in `JAVA_OPTS` take precedence over `JAVA_TOOL_OPTIONS`.
 
 ## Make image with pre-deployed projects
 
