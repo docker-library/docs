@@ -104,6 +104,10 @@ Number of seconds before a query connection is disconnected because of inactivit
 
 Path to the `ssh_host_rsa_key` to be used by query. If it does not exist, it will be created when the server is starting up.
 
+### `TS3SERVER_SERVERADMIN_PASSWORD`
+
+Specify the password for the serveradmin user for remote management over telnet/SSH (10011,10022).
+
 # Caveats
 
 ## Inserting license file
