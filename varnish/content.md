@@ -168,7 +168,11 @@ This can notably be used to extract logs using [varnishncsa or varnishlog](https
 
 ## Vmods
 
-The docker image is built with a collection of "`VCL` modules" or "vmods" that extend Varnish capability. We've already covered `vmod-fileserver` (file backend) and `vmod-reqwest` (dynamic backends), but more are available and can be used in your custom `VCL` with `import <vmod_name>`. Please refer to the documentation of each vmod for more information.
+The docker image is built with a collection of "`VCL` modules" or "vmods" that extend Varnish capability.
+
+We've already covered `vmod-fileserver` (file backend) and `vmod-reqwest` (dynamic backends), but more are available and can be used in your custom `VCL` with `import <vmod_name>`. Please refer to the documentation of each vmod for more information.
+
+The full list can be found on the [varnish/pkg-varnish-cache repository on github](https://github.com/varnish/pkg-varnish-cache).
 
 # ulimit and tmpfs notes
 
