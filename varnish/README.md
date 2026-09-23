@@ -24,11 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`fresh`, `latest`, `9.0.4-5`, `9.0.4`, `9.0`, `9`](https://github.com/varnish/docker-varnish/blob/e94ffea53d5e1c26f7a5388f9ae2843421761558/fresh/debian/Dockerfile)
+-	[`fresh`, `latest`, `9.1.0-2`, `9.1.0`, `9.1`, `9`](https://github.com/varnish/docker-varnish/blob/e22ef74d6d17c811709290e58844caf90e34a3db/fresh/debian/Dockerfile)
 
--	[`old`, `8.0.2-1`, `8.0.2`, `8.0`, `8`](https://github.com/varnish/docker-varnish/blob/40cfe05d7eba91c1d6588f9bb40ed64ee84312fe/old/debian/Dockerfile)
-
--	[`old-alpine`, `8.0.2-alpine`, `8.0-alpine`, `8-alpine`](https://github.com/varnish/docker-varnish/blob/40cfe05d7eba91c1d6588f9bb40ed64ee84312fe/old/alpine/Dockerfile)
+-	[`old`, `9.0.4-5`, `9.0.4`, `9.0`](https://github.com/varnish/docker-varnish/blob/bbf9c9fc658b1c61da64e1bfe82a50b20d4e66b5/old/debian/Dockerfile)
 
 -	[`stable`, `6.0.18-1`, `6.0.18`, `6.0`, `6`](https://github.com/varnish/docker-varnish/blob/c9eabe6cdbfbf5f5c2ee9959f42d926cbcc234c1/stable/debian/Dockerfile)
 
@@ -229,22 +227,6 @@ Varnish uses [memory-mapped files](https://docs.varnish-software.com/varnish-ent
 
 -	mount the working directory as `tmpfs` to make sure disk I/O isn't a bottleneck; that's what the `--tmpfs` switch does
 -	allow Varnish to lock those memory-mapped files so they aren't paged out by the kernel; hence the `--ulimit` switch
-
-# Image Variants
-
-The `varnish` images come in many flavors, each designed for a specific use case.
-
-## `varnish:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `varnish:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is useful when final image size being as small as possible is your primary concern. The main caveat to note is that it does use [musl libc](https://musl.libc.org) instead of [glibc and friends](https://www.etalabs.net/compare_libcs.html), so software will often run into issues depending on the depth of their libc requirements/assumptions. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
 # License
 
