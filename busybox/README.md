@@ -24,21 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.38.0-glibc`, `1.38-glibc`, `1-glibc`, `unstable-glibc`, `glibc`](https://github.com/docker-library/busybox/blob/70ce0fb98bee360bbcce132660d727bf6ce55a99/latest/glibc/amd64/index.json)
+-	[`1.38.0-glibc`, `1.38-glibc`, `1-glibc`, `unstable-glibc`, `glibc`](https://github.com/docker-library/busybox/blob/066dbf90090ab2dbb905310fac2fa10ea39a7ba6/latest/glibc/amd64/index.json)
 
--	[`1.38.0-uclibc`, `1.38-uclibc`, `1-uclibc`, `unstable-uclibc`, `uclibc`](https://github.com/docker-library/busybox/blob/70ce0fb98bee360bbcce132660d727bf6ce55a99/latest/uclibc/amd64/index.json)
+-	[`1.38.0-uclibc`, `1.38-uclibc`, `1-uclibc`, `unstable-uclibc`, `uclibc`](https://github.com/docker-library/busybox/blob/066dbf90090ab2dbb905310fac2fa10ea39a7ba6/latest/uclibc/amd64/index.json)
 
--	[`1.38.0-musl`, `1.38-musl`, `1-musl`, `unstable-musl`, `musl`](https://github.com/docker-library/busybox/blob/70ce0fb98bee360bbcce132660d727bf6ce55a99/latest/musl/amd64/index.json)
+-	[`1.38.0-musl`, `1.38-musl`, `1-musl`, `unstable-musl`, `musl`](https://github.com/docker-library/busybox/blob/066dbf90090ab2dbb905310fac2fa10ea39a7ba6/latest/musl/amd64/index.json)
 
--	[`1.38.0`, `1.38`, `1`, `unstable`, `latest`](https://github.com/docker-library/busybox/blob/70ce0fb98bee360bbcce132660d727bf6ce55a99/latest/glibc/amd64/index.json)
+-	[`1.38.0`, `1.38`, `1`, `unstable`, `latest`](https://github.com/docker-library/busybox/blob/066dbf90090ab2dbb905310fac2fa10ea39a7ba6/latest/glibc/amd64/index.json)
 
--	[`1.37.0-glibc`, `1.37-glibc`](https://github.com/docker-library/busybox/blob/70ce0fb98bee360bbcce132660d727bf6ce55a99/latest-1/glibc/amd64/index.json)
+-	[`1.37.0-glibc`, `1.37-glibc`](https://github.com/docker-library/busybox/blob/066dbf90090ab2dbb905310fac2fa10ea39a7ba6/latest-1/glibc/amd64/index.json)
 
--	[`1.37.0-uclibc`, `1.37-uclibc`](https://github.com/docker-library/busybox/blob/70ce0fb98bee360bbcce132660d727bf6ce55a99/latest-1/uclibc/amd64/index.json)
+-	[`1.37.0-uclibc`, `1.37-uclibc`](https://github.com/docker-library/busybox/blob/066dbf90090ab2dbb905310fac2fa10ea39a7ba6/latest-1/uclibc/amd64/index.json)
 
--	[`1.37.0-musl`, `1.37-musl`](https://github.com/docker-library/busybox/blob/70ce0fb98bee360bbcce132660d727bf6ce55a99/latest-1/musl/amd64/index.json)
+-	[`1.37.0-musl`, `1.37-musl`](https://github.com/docker-library/busybox/blob/066dbf90090ab2dbb905310fac2fa10ea39a7ba6/latest-1/musl/amd64/index.json)
 
--	[`1.37.0`, `1.37`](https://github.com/docker-library/busybox/blob/70ce0fb98bee360bbcce132660d727bf6ce55a99/latest-1/glibc/amd64/index.json)
+-	[`1.37.0`, `1.37`](https://github.com/docker-library/busybox/blob/066dbf90090ab2dbb905310fac2fa10ea39a7ba6/latest-1/glibc/amd64/index.json)
 
 # Quick reference (cont.)
 
