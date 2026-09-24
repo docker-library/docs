@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1.1`, `3.1`, `3`, `latest`](https://github.com/distribution/distribution-library-image/blob/0c2328319a030d953c159f57e4ad7693a9a08a8a/Dockerfile)
+-	[`3.1.2`, `3.1`, `3`, `latest`](https://github.com/distribution/distribution-library-image/blob/775973b655bb4b11561db92a1cf50113148ce530/Dockerfile)
 
 # Quick reference (cont.)
 
