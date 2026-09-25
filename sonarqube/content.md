@@ -37,7 +37,7 @@ To run a cluster with the SonarQube Server Data Center Edition, please refer to 
 
 ### Long-Term Active (LTA) versions
 
-[LTA](https://www.sonarsource.com/products/sonarqube/downloads/lta/) refers to the version of SonarQube Server that will stay active for a longer period of time. Currently, `2026.1` is the latest LTA version and should be used when LTA version is preferred. To install the latest LTA, you can pull one of the `2026-lta-<edition>` tags.
+[LTA](https://www.sonarsource.com/products/sonarqube/downloads/lta/) refers to the version of SonarQube Server that will stay active for a longer period of time. Currently, `2026.5` is the latest LTA version and should be used when LTA version is preferred. To install the latest LTA, you can pull one of the `2026.5-lta-<edition>` tags.
 
 ## Configuration
 
