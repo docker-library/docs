@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `dart` official image](https://hub.docker.com/_/dart) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.13.4-sdk`, `3.13-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.13.4`, `3.13`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/e24d1dbb4a994f649180431e1a0276741c8eefb4/stable/trixie/Dockerfile)
-
--	[`3.14.0-211.1.beta-sdk`, `beta-sdk`, `3.14.0-211.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/e24d1dbb4a994f649180431e1a0276741c8eefb4/beta/trixie/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
 # Quick reference (cont.)
 
