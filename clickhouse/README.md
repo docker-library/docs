@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`latest`, `jammy`, `lts`, `lts-jammy`, `26.8`, `26.8-jammy`, `26.8.6`, `26.8.6-jammy`, `26.8.6.5`, `26.8.6.5-jammy`](https://github.com/ClickHouse/docker-library/blob/bf866170a6cc753c87d4b5ec919aea1ffe33644a/server/26.8.6.5/Dockerfile.ubuntu)
+-	[`latest`, `jammy`, `26.9`, `26.9-jammy`, `26.9.2`, `26.9.2-jammy`, `26.9.2.8`, `26.9.2.8-jammy`](https://github.com/ClickHouse/docker-library/blob/16e8c1ffe624430ddfa1aaeae952c8c12523b722/server/26.9.2.8/Dockerfile.ubuntu)
 
--	[`26.7`, `26.7-jammy`, `26.7.10`, `26.7.10-jammy`, `26.7.10.6`, `26.7.10.6-jammy`](https://github.com/ClickHouse/docker-library/blob/bf866170a6cc753c87d4b5ec919aea1ffe33644a/server/26.7.10.6/Dockerfile.ubuntu)
+-	[`lts`, `lts-jammy`, `26.8`, `26.8-jammy`, `26.8.11`, `26.8.11-jammy`, `26.8.11.7`, `26.8.11.7-jammy`](https://github.com/ClickHouse/docker-library/blob/16e8c1ffe624430ddfa1aaeae952c8c12523b722/server/26.8.11.7/Dockerfile.ubuntu)
 
--	[`26.6`, `26.6-jammy`, `26.6.8`, `26.6.8-jammy`, `26.6.8.7`, `26.6.8.7-jammy`](https://github.com/ClickHouse/docker-library/blob/bf866170a6cc753c87d4b5ec919aea1ffe33644a/server/26.6.8.7/Dockerfile.ubuntu)
+-	[`26.7`, `26.7-jammy`, `26.7.14`, `26.7.14-jammy`, `26.7.14.3`, `26.7.14.3-jammy`](https://github.com/ClickHouse/docker-library/blob/16e8c1ffe624430ddfa1aaeae952c8c12523b722/server/26.7.14.3/Dockerfile.ubuntu)
 
--	[`26.3`, `26.3-jammy`, `26.3.33`, `26.3.33-jammy`, `26.3.33.24`, `26.3.33.24-jammy`](https://github.com/ClickHouse/docker-library/blob/bf866170a6cc753c87d4b5ec919aea1ffe33644a/server/26.3.33.24/Dockerfile.ubuntu)
+-	[`26.3`, `26.3-jammy`, `26.3.33`, `26.3.33-jammy`, `26.3.33.24`, `26.3.33.24-jammy`](https://github.com/ClickHouse/docker-library/blob/16e8c1ffe624430ddfa1aaeae952c8c12523b722/server/26.3.33.24/Dockerfile.ubuntu)
 
 # Quick reference (cont.)
 
@@ -73,7 +73,7 @@ For more information and documentation see https://clickhouse.com/.
 
 -	The amd64 image requires support for the [x86-64-v3 microarchitecture level](https://en.wikipedia.org/wiki/X86-64#Microarchitecture_levels) (AVX2, BMI1, BMI2, F16C, FMA, LZCNT, MOVBE, XSAVE). Virtually all x86 CPUs after 2015 support x86-64-v3.
 -	The arm64 image requires support for the [ARMv8.2-A architecture](https://en.wikipedia.org/wiki/AArch64#ARMv8.2-A) and additionally the Load-Acquire RCpc register. The register is optional in version ARMv8.2-A and mandatory in [ARMv8.3-A](https://en.wikipedia.org/wiki/AArch64#ARMv8.3-A). Supported in Graviton >=2, Azure and GCP instances. Examples for unsupported devices are Raspberry Pi 4 (ARMv8.0-A) and Jetson AGX Xavier/Orin (ARMv8.2-A).
--	Since the ClickHouse 24.11 Ubuntu images started using `ubuntu:22.04` as its base image. It requires docker version >= `20.10.10` containing [patch](https://github.com/moby/moby/commit/977283509f75303bc6612665a04abf76ff1d2468). As a workaround you could use `docker run --security-opt seccomp=unconfined` instead, however that has security implications.
+-	Since the ClickHouse 24.11 Ubuntu images started using `ubuntu:22.04` as their base image. It requires docker version >= `20.10.10` containing [patch](https://github.com/moby/moby/commit/977283509f75303bc6612665a04abf76ff1d2468). As a workaround you could use `docker run --security-opt seccomp=unconfined` instead, however that has security implications.
 
 ## How to use this image
 
@@ -85,7 +85,7 @@ docker run -d --name some-clickhouse-server --ulimit nofile=262144:262144 clickh
 
 By default, ClickHouse will be accessible only via the Docker network. See the **networking** section below.
 
-By default, starting above server instance will be run as the `default` user without password.
+By default, the server instance runs as the `default` user without a password.
 
 ### connect to it from a native client
 
