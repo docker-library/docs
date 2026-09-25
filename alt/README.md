@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `alt` official image](https://hub.docker.com/_/alt) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`p10`](https://github.com/alt-cloud/docker-brew-alt/blob/c5d8d87b063942f6fa101b0ae3f6c723d170ca40/x86_64/Dockerfile)
-
--	[`sisyphus`](https://github.com/alt-cloud/docker-brew-alt/blob/e58ed9ba13273b5e6ece45599b992df85dec1ed3/x86_64/Dockerfile)
-
--	[`p11`, `latest`](https://github.com/alt-cloud/docker-brew-alt/blob/7489c566c2fdb0a83c941525c80444132e750e52/x86_64/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -73,7 +71,7 @@ As said above, Sisyphus is a frequently updated repository mainly designed for d
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
+The `arm32v7/alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `arm32v7/alt:p9`).
 
 ## How It's Made
 
