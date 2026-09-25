@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `neo4j` official image](https://hub.docker.com/_/neo4j) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,25 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2026.09.0-community-trixie`, `2026.09-community-trixie`, `2026-community-trixie`, `2026.09.0-community`, `2026.09-community`, `2026-community`, `2026.09.0-trixie`, `2026.09-trixie`, `2026-trixie`, `2026.09.0`, `2026.09`, `2026`, `community-trixie`, `community`, `trixie`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/32e4b7cfe361a4d8a6debf7bc1a6ed8d71507356/2026.09.0/trixie/community/Dockerfile)
-
--	[`2026.09.0-enterprise-trixie`, `2026.09-enterprise-trixie`, `2026-enterprise-trixie`, `2026.09.0-enterprise`, `2026.09-enterprise`, `2026-enterprise`, `enterprise-trixie`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/32e4b7cfe361a4d8a6debf7bc1a6ed8d71507356/2026.09.0/trixie/enterprise/Dockerfile)
-
--	[`2026.09.0-community-ubi10`, `2026.09-community-ubi10`, `2026-community-ubi10`, `2026.09.0-ubi10`, `2026.09-ubi10`, `2026-ubi10`, `community-ubi10`, `ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/32e4b7cfe361a4d8a6debf7bc1a6ed8d71507356/2026.09.0/ubi10/community/Dockerfile)
-
--	[`2026.09.0-enterprise-ubi10`, `2026.09-enterprise-ubi10`, `2026-enterprise-ubi10`, `enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/32e4b7cfe361a4d8a6debf7bc1a6ed8d71507356/2026.09.0/ubi10/enterprise/Dockerfile)
-
--	[`5.26.31-community-trixie`, `5.26-community-trixie`, `5-community-trixie`, `5.26.31-community`, `5.26-community`, `5-community`, `5.26.31-trixie`, `5.26-trixie`, `5-trixie`, `5.26.31`, `5.26`, `5`](https://github.com/neo4j/docker-neo4j-publish/blob/93ddc4b85e7b7869bf96ceb991b8dd25683a37ea/5.26.31/trixie/community/Dockerfile)
-
--	[`5.26.31-enterprise-trixie`, `5.26-enterprise-trixie`, `5-enterprise-trixie`, `5.26.31-enterprise`, `5.26-enterprise`, `5-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/93ddc4b85e7b7869bf96ceb991b8dd25683a37ea/5.26.31/trixie/enterprise/Dockerfile)
-
--	[`5.26.31-community-ubi10`, `5.26-community-ubi10`, `5-community-ubi10`, `5.26.31-ubi10`, `5.26-ubi10`, `5-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/93ddc4b85e7b7869bf96ceb991b8dd25683a37ea/5.26.31/ubi10/community/Dockerfile)
-
--	[`5.26.31-enterprise-ubi10`, `5.26-enterprise-ubi10`, `5-enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/93ddc4b85e7b7869bf96ceb991b8dd25683a37ea/5.26.31/ubi10/enterprise/Dockerfile)
-
--	[`4.4.48`, `4.4.48-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/e6e3ab90f7bfad797c084e52a36961608aa7de18/4.4.48/trixie/community/Dockerfile)
-
--	[`4.4.48-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/e6e3ab90f7bfad797c084e52a36961608aa7de18/4.4.48/trixie/enterprise/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -77,7 +61,7 @@ You can start a Neo4j container like this:
 docker run \
     --publish=7474:7474 --publish=7687:7687 \
     --volume=$HOME/neo4j/data:/data \
-    neo4j
+    s390x/neo4j
 ```
 
 This binds two ports (`7474` and `7687`) for HTTP and Bolt access to the Neo4j API. A volume is bound to `/data` to allow the database to be persisted outside the container. Once running, you can use the [Neo4j Aura console](https://console.neo4j.io/ce) which includes graph tools for visualizations, data exploration, and monitoring for free. No subscription is required. Simply create a self-managed instance and specify `bolt://localhost:7687` or `http://localhost:7474` in the "Add Deployment" UI.
