@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2026.4.1-developer`, `2026.4-developer`, `developer`](https://github.com/SonarSource/docker-sonarqube/blob/a2bebd86441f6c4779c8c35c94179bcdca70a9aa/commercial-editions/developer/Dockerfile)
+-	[`2026.5.0-developer`, `2026.5-developer`, `developer`, `2026.5-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/b394de0d151e6f37581052c9f56e885c318d7d8c/commercial-editions/developer/Dockerfile)
 
--	[`2026.4.1-enterprise`, `2026.4-enterprise`, `enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/a2bebd86441f6c4779c8c35c94179bcdca70a9aa/commercial-editions/enterprise/Dockerfile)
+-	[`2026.5.0-enterprise`, `2026.5-enterprise`, `enterprise`, `2026.5-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/b394de0d151e6f37581052c9f56e885c318d7d8c/commercial-editions/enterprise/Dockerfile)
 
--	[`2026.4.1-datacenter-app`, `2026.4-datacenter-app`, `datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/a2bebd86441f6c4779c8c35c94179bcdca70a9aa/commercial-editions/datacenter/app/Dockerfile)
+-	[`2026.5.0-datacenter-app`, `2026.5-datacenter-app`, `datacenter-app`, `2026.5-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/b394de0d151e6f37581052c9f56e885c318d7d8c/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2026.4.1-datacenter-search`, `2026.4-datacenter-search`, `datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/a2bebd86441f6c4779c8c35c94179bcdca70a9aa/commercial-editions/datacenter/search/Dockerfile)
+-	[`2026.5.0-datacenter-search`, `2026.5-datacenter-search`, `datacenter-search`, `2026.5-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/b394de0d151e6f37581052c9f56e885c318d7d8c/commercial-editions/datacenter/search/Dockerfile)
 
 -	[`2026.1.6-developer`, `2026.1-developer`, `2026-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/32fc9b7df91d6222136af6be4ea46eaa4fafff8d/commercial-editions/developer/Dockerfile)
 
@@ -47,14 +47,6 @@ WARNING:
 -	[`2025.4.9-datacenter-app`, `2025.4-datacenter-app`, `2025.4-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/cae3cdf85c6c43a4260f9d46f41781b997f400b1/commercial-editions/datacenter/app/Dockerfile)
 
 -	[`2025.4.9-datacenter-search`, `2025.4-datacenter-search`, `2025.4-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/cae3cdf85c6c43a4260f9d46f41781b997f400b1/commercial-editions/datacenter/search/Dockerfile)
-
--	[`2025.1.8-developer`, `2025.1-developer`, `2025-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/24038659701d0a53c0f494d57f09c4da67274020/commercial-editions/developer/Dockerfile)
-
--	[`2025.1.8-enterprise`, `2025.1-enterprise`, `2025-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/24038659701d0a53c0f494d57f09c4da67274020/commercial-editions/enterprise/Dockerfile)
-
--	[`2025.1.8-datacenter-app`, `2025.1-datacenter-app`, `2025-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/24038659701d0a53c0f494d57f09c4da67274020/commercial-editions/datacenter/app/Dockerfile)
-
--	[`2025.1.8-datacenter-search`, `2025.1-datacenter-search`, `2025-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/24038659701d0a53c0f494d57f09c4da67274020/commercial-editions/datacenter/search/Dockerfile)
 
 -	[`26.9.0.129388-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/8f5ff7b0395d201cbc09dd95f8463eb11c8abc61/community-build/Dockerfile)
 
@@ -116,7 +108,7 @@ To run a cluster with the SonarQube Server Data Center Edition, please refer to 
 
 ### Long-Term Active (LTA) versions
 
-[LTA](https://www.sonarsource.com/products/sonarqube/downloads/lta/) refers to the version of SonarQube Server that will stay active for a longer period of time. Currently, `2026.1` is the latest LTA version and should be used when LTA version is preferred. To install the latest LTA, you can pull one of the `2026-lta-<edition>` tags.
+[LTA](https://www.sonarsource.com/products/sonarqube/downloads/lta/) refers to the version of SonarQube Server that will stay active for a longer period of time. Currently, `2026.5` is the latest LTA version and should be used when LTA version is preferred. To install the latest LTA, you can pull one of the `2026.5-lta-<edition>` tags.
 
 ## Configuration
 
