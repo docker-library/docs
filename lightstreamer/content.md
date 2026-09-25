@@ -17,8 +17,8 @@ Every version is published as two editions:
 
 Two paths follow — pick one:
 
--	**Running the image as-is?** → [Running the full image](#running-the-full-image).
--	**Packaging a self-contained custom image?** → [Packaging a custom image](#packaging-a-custom-image).
+-	**Running the image as-is?** → see *Running the full image* below.
+-	**Packaging a self-contained custom image?** → see *Packaging a custom image* below.
 
 ## Running the full image
 
