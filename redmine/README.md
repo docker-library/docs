@@ -24,21 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.1`, `7.0`, `7`, `latest`, `7.0.1-trixie`, `7.0-trixie`, `7-trixie`, `trixie`](https://github.com/docker-library/redmine/blob/491f23cf08234391b075e5e9f604f5cc44734853/7.0/trixie/Dockerfile)
+-	[`7.0.2`, `7.0`, `7`, `latest`, `7.0.2-trixie`, `7.0-trixie`, `7-trixie`, `trixie`](https://github.com/docker-library/redmine/blob/df0d3284a3da8a77363a086cecba5eeed7f4f1f9/7.0/trixie/Dockerfile)
 
--	[`7.0.1-bookworm`, `7.0-bookworm`, `7-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/491f23cf08234391b075e5e9f604f5cc44734853/7.0/bookworm/Dockerfile)
+-	[`7.0.2-bookworm`, `7.0-bookworm`, `7-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/df0d3284a3da8a77363a086cecba5eeed7f4f1f9/7.0/bookworm/Dockerfile)
 
--	[`7.0.1-alpine3.24`, `7.0-alpine3.24`, `7-alpine3.24`, `alpine3.24`, `7.0.1-alpine`, `7.0-alpine`, `7-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/491f23cf08234391b075e5e9f604f5cc44734853/7.0/alpine3.24/Dockerfile)
+-	[`7.0.2-alpine3.24`, `7.0-alpine3.24`, `7-alpine3.24`, `alpine3.24`, `7.0.2-alpine`, `7.0-alpine`, `7-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/df0d3284a3da8a77363a086cecba5eeed7f4f1f9/7.0/alpine3.24/Dockerfile)
 
--	[`7.0.1-alpine3.23`, `7.0-alpine3.23`, `7-alpine3.23`, `alpine3.23`](https://github.com/docker-library/redmine/blob/491f23cf08234391b075e5e9f604f5cc44734853/7.0/alpine3.23/Dockerfile)
+-	[`7.0.2-alpine3.23`, `7.0-alpine3.23`, `7-alpine3.23`, `alpine3.23`](https://github.com/docker-library/redmine/blob/df0d3284a3da8a77363a086cecba5eeed7f4f1f9/7.0/alpine3.23/Dockerfile)
 
--	[`6.1.4`, `6.1`, `6`, `6.1.4-trixie`, `6.1-trixie`, `6-trixie`](https://github.com/docker-library/redmine/blob/3ecd6499350c69a269e14f3520ce1754346202c7/6.1/trixie/Dockerfile)
+-	[`6.1.5`, `6.1`, `6`, `6.1.5-trixie`, `6.1-trixie`, `6-trixie`](https://github.com/docker-library/redmine/blob/036136eaa4720bdd157399cb4bc53725aa391f26/6.1/trixie/Dockerfile)
 
--	[`6.1.4-bookworm`, `6.1-bookworm`, `6-bookworm`](https://github.com/docker-library/redmine/blob/3ecd6499350c69a269e14f3520ce1754346202c7/6.1/bookworm/Dockerfile)
+-	[`6.1.5-bookworm`, `6.1-bookworm`, `6-bookworm`](https://github.com/docker-library/redmine/blob/036136eaa4720bdd157399cb4bc53725aa391f26/6.1/bookworm/Dockerfile)
 
--	[`6.1.4-alpine3.24`, `6.1-alpine3.24`, `6-alpine3.24`, `6.1.4-alpine`, `6.1-alpine`, `6-alpine`](https://github.com/docker-library/redmine/blob/3ecd6499350c69a269e14f3520ce1754346202c7/6.1/alpine3.24/Dockerfile)
+-	[`6.1.5-alpine3.24`, `6.1-alpine3.24`, `6-alpine3.24`, `6.1.5-alpine`, `6.1-alpine`, `6-alpine`](https://github.com/docker-library/redmine/blob/036136eaa4720bdd157399cb4bc53725aa391f26/6.1/alpine3.24/Dockerfile)
 
--	[`6.1.4-alpine3.23`, `6.1-alpine3.23`, `6-alpine3.23`](https://github.com/docker-library/redmine/blob/3ecd6499350c69a269e14f3520ce1754346202c7/6.1/alpine3.23/Dockerfile)
+-	[`6.1.5-alpine3.23`, `6.1-alpine3.23`, `6-alpine3.23`](https://github.com/docker-library/redmine/blob/036136eaa4720bdd157399cb4bc53725aa391f26/6.1/alpine3.23/Dockerfile)
 
 -	[`6.0.11`, `6.0`, `6.0.11-trixie`, `6.0-trixie`](https://github.com/docker-library/redmine/blob/feb60f49763f0921a85092111c7202e5c484994c/6.0/trixie/Dockerfile)
 
