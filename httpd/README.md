@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.4.68`, `2.4`, `2`, `latest`, `2.4.68-trixie`, `2.4-trixie`, `2-trixie`, `trixie`](https://github.com/docker-library/httpd/blob/4da43810a4429c552e19c43f8e513248c34cfc84/2.4/Dockerfile)
+-	[`2.4.69`, `2.4`, `2`, `latest`, `2.4.69-trixie`, `2.4-trixie`, `2-trixie`, `trixie`](https://github.com/docker-library/httpd/blob/c5248004fec9acf8c96ecd74fb6f5bd7d53237dc/2.4/Dockerfile)
 
--	[`2.4.68-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.68-alpine3.24`, `2.4-alpine3.24`, `2-alpine3.24`, `alpine3.24`](https://github.com/docker-library/httpd/blob/fa08e9cebebdf197ac94126fdfc0bc1680fbfb7c/2.4/alpine/Dockerfile)
+-	[`2.4.69-alpine`, `2.4-alpine`, `2-alpine`, `alpine`, `2.4.69-alpine3.24`, `2.4-alpine3.24`, `2-alpine3.24`, `alpine3.24`](https://github.com/docker-library/httpd/blob/c5248004fec9acf8c96ecd74fb6f5bd7d53237dc/2.4/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
