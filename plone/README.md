@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `plone` official image](https://hub.docker.com/_/plone) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # ⚠️ DEPRECATION NOTICE ⚠️
 
 -	Plone 4.x is no longer supported.
@@ -38,7 +40,7 @@ For Docker image usage, see [Plone 6 Documentation](https://6.docs.plone.org/ins
 
 # Supported tags and respective `Dockerfile` links
 
-**No supported tags**
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -79,7 +81,7 @@ For Docker image usage, see [Plone 6 Documentation](https://6.docs.plone.org/ins
 This will download and start the latest Plone 5 container, based on [Debian](https://www.debian.org/).
 
 ```shell
-docker run -p 8080:8080 plone
+docker run -p 8080:8080 s390x/plone
 ```
 
 This image includes `EXPOSE 8080` (the Plone port), so standard container linking will make it automatically available to the linked containers. Now you can add a Plone Site at http://localhost:8080. The default Zope user and password are `admin/admin`.
@@ -91,14 +93,14 @@ A ZEO cluster is best suited for production setups. You will **need** a load bal
 Start ZEO server in the background.
 
 ```shell
-docker run --name=zeo plone zeo
+docker run --name=zeo s390x/plone zeo
 ```
 
 Start two Plone clients, also in the background.
 
 ```shell
-docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8081:8080 plone
-docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 plone
+docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8081:8080 s390x/plone
+docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 s390x/plone
 ```
 
 ### Start Plone in debug mode
@@ -106,7 +108,7 @@ docker run --link=zeo -e ZEO_ADDRESS=zeo:8080 -p 8082:8080 plone
 You can also start Plone in debug mode (`fg`) by running the following command.
 
 ```shell
-docker run -p 8080:8080 plone fg
+docker run -p 8080:8080 s390x/plone fg
 ```
 
 ### Add-ons
@@ -114,7 +116,7 @@ docker run -p 8080:8080 plone fg
 You can enable Plone add-ons via the `ADDONS` environment variable.
 
 ```shell
-docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" plone
+docker run -p 8080:8080 -e PLONE_ADDONS="eea.facetednavigation Products.PloneFormGen" s390x/plone
 ```
 
 For more information on how to extend this image with your own custom settings, adding more add-ons, building it, or mounting volumes, please refer to the [Plone 5 documentation](https://5.docs.plone.org/manage/docker/docs/index.html).
@@ -133,7 +135,7 @@ The Plone image uses several environment variables.
 Run Plone and install two add-ons (`eea.facetednavigation` and `collective.easyform`).
 
 ```shell
-docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" plone
+docker run -p 8080:8080 -e SITE="mysite" -e ADDONS="eea.facetednavigation collective.easyform" s390x/plone
 ```
 
 To use specific add-on versions, change the environment variable arguments as shown.
@@ -146,7 +148,7 @@ To use specific add-on versions, change the environment variable arguments as sh
 To use Plone REST API, start the Plone Docker image, then issue a command to `curl`.
 
 ```shell
-docker run -p 8080:8080 -e SITE=plone plone
+docker run -p 8080:8080 -e SITE=plone s390x/plone
 curl -H 'Accept: application/json' http://localhost:8080/plone
 ```
 
