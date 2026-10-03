@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `alt` official image](https://hub.docker.com/_/alt) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -73,7 +75,7 @@ As said above, Sisyphus is a frequently updated repository mainly designed for d
 
 # About this image
 
-The `alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `alt:p9`).
+The `amd64/alt:latest` tag will always point the latest stable release (which is, at the time of this writing, `amd64/alt:p9`).
 
 ## How It's Made
 
