@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `phpmyadmin` official image](https://hub.docker.com/_/phpmyadmin) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -94,7 +96,7 @@ We provide three variations:
 First you need to run a MySQL or MariaDB server in Docker, and the phpMyAdmin image needs to be linked to the running database container:
 
 ```sh
-docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 arm32v7/phpmyadmin
 ```
 
 ## Usage with external server
@@ -102,7 +104,7 @@ docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 phpmyadmin
 You can specify a MySQL host in the `PMA_HOST` environment variable. You can also use `PMA_PORT` to specify the port of the server in case it's not the default one:
 
 ```sh
-docker run --name phpmyadmin -d -e PMA_HOST=dbhost -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d -e PMA_HOST=dbhost -p 8080:80 arm32v7/phpmyadmin
 ```
 
 ## Usage with arbitrary server
@@ -110,7 +112,7 @@ docker run --name phpmyadmin -d -e PMA_HOST=dbhost -p 8080:80 phpmyadmin
 You can use arbitrary servers by adding the environment variable `PMA_ARBITRARY=1` to the startup command:
 
 ```sh
-docker run --name phpmyadmin -d -e PMA_ARBITRARY=1 -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d -e PMA_ARBITRARY=1 -p 8080:80 arm32v7/phpmyadmin
 ```
 
 ## Usage with `docker compose` and an arbitrary server
@@ -149,7 +151,7 @@ You can add your own custom config.inc.php settings (such as Configuration Stora
 On the `docker run` line like this:
 
 ```sh
-docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php phpmyadmin
+docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php arm32v7/phpmyadmin
 ```
 
 Be sure to have `<?php` as your first line of the configuration file or the contents will not be detected as PHP code.
@@ -174,7 +176,7 @@ you can also consider storing your custom configuration files in the folder `/et
 On the `docker run` line like this:
 
 ```sh
-docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/conf.d:/etc/phpmyadmin/conf.d:ro phpmyadmin
+docker run --name phpmyadmin -d --link mysql_db_server:db -p 8080:80 -v /some/local/directory/conf.d:/etc/phpmyadmin/conf.d:ro arm32v7/phpmyadmin
 ```
 
 ## Usage behind a reverse proxy
@@ -194,11 +196,11 @@ In order to keep your sessions active between container updates you will need to
 Set the variable `PMA_SSL` to `1` to enable SSL usage from phpMyAdmin to the MySQL server. The default value is `0`. The variable `PMA_SSLS` can be used as a comma seperated sequence of `0` and `1` where multiple hosts are mentioned. Values order must follow the `PMA_HOSTS` and will be computed accordingly.
 
 ```sh
-docker run --name phpmyadmin -d -e PMA_HOSTS=sslhost -e PMA_SSL=1 -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d -e PMA_HOSTS=sslhost -e PMA_SSL=1 -p 8080:80 arm32v7/phpmyadmin
 ```
 
 ```sh
-docker run --name phpmyadmin -d -e PMA_HOSTS='sslhost,nosslhost' -e PMA_SSLS='1,0' -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d -e PMA_HOSTS='sslhost,nosslhost' -e PMA_SSLS='1,0' -p 8080:80 arm32v7/phpmyadmin
 ```
 
 ## Environment variables summary
@@ -246,7 +248,7 @@ docker run --name phpmyadmin -d -e PMA_HOSTS='sslhost,nosslhost' -e PMA_SSLS='1,
 For usage with Docker secrets, appending `_FILE` to the `PMA_PASSWORD` environment variable is allowed (it overrides `PMA_PASSWORD` if it is set):
 
 ```sh
-docker run --name phpmyadmin -d -e PMA_PASSWORD_FILE=/run/secrets/db_password.txt -p 8080:80 phpmyadmin
+docker run --name phpmyadmin -d -e PMA_PASSWORD_FILE=/run/secrets/db_password.txt -p 8080:80 arm32v7/phpmyadmin
 ```
 
 #### Variables that can store the file contents using `_BASE64`
@@ -282,13 +284,13 @@ Please report any issues with phpMyAdmin to https://github.com/phpmyadmin/phpmya
 
 # Image Variants
 
-The `phpmyadmin` images come in many flavors, each designed for a specific use case.
+The `arm32v7/phpmyadmin` images come in many flavors, each designed for a specific use case.
 
-## `phpmyadmin:<version>`
+## `arm32v7/phpmyadmin:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `phpmyadmin:<version>-alpine`
+## `arm32v7/phpmyadmin:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
