@@ -26,43 +26,59 @@ WARNING:
 
 -	[`3.10.0-eclipse-temurin-11-alpine`, `3.10-eclipse-temurin-11-alpine`, `3-eclipse-temurin-11-alpine`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-11-alpine/Dockerfile)
 
--	[`3.10.0-eclipse-temurin-11-noble`, `3.10.0-eclipse-temurin-11`, `3.10-eclipse-temurin-11-noble`, `3.10-eclipse-temurin-11`, `3-eclipse-temurin-11-noble`, `3-eclipse-temurin-11`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-11-noble/Dockerfile)
+-	[`3.10.0-eclipse-temurin-11-noble`, `3.10-eclipse-temurin-11-noble`, `3-eclipse-temurin-11-noble`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-11-noble/Dockerfile)
+
+-	[`3.10.0-eclipse-temurin-11-resolute`, `3.10.0-eclipse-temurin-11`, `3.10-eclipse-temurin-11-resolute`, `3.10-eclipse-temurin-11`, `3-eclipse-temurin-11-resolute`, `3-eclipse-temurin-11`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-11-resolute/Dockerfile)
 
 -	[`3.10.0-eclipse-temurin-17-alpine`, `3.10-eclipse-temurin-17-alpine`, `3-eclipse-temurin-17-alpine`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-17-alpine/Dockerfile)
 
 -	[`4.0.0-rc-7-eclipse-temurin-17-alpine`](https://github.com/carlossg/docker-maven/blob/1a4d2d539bac81f9b137e3fa115cb4642b500087/eclipse-temurin-17-alpine-maven-4/Dockerfile)
 
--	[`3.10.0-eclipse-temurin-17-noble`, `3.10.0-eclipse-temurin-17`, `3.10-eclipse-temurin-17-noble`, `3.10-eclipse-temurin-17`, `3-eclipse-temurin-17-noble`, `3-eclipse-temurin-17`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-17-noble/Dockerfile)
+-	[`3.10.0-eclipse-temurin-17-noble`, `3.10-eclipse-temurin-17-noble`, `3-eclipse-temurin-17-noble`](https://github.com/carlossg/docker-maven/blob/8ef234bed02d88f4edcc1907880f567db1362a76/eclipse-temurin-17-noble/Dockerfile)
 
--	[`4.0.0-rc-7-eclipse-temurin-17-noble`, `4.0.0-rc-7-eclipse-temurin-17`](https://github.com/carlossg/docker-maven/blob/1a4d2d539bac81f9b137e3fa115cb4642b500087/eclipse-temurin-17-noble-maven-4/Dockerfile)
+-	[`4.0.0-rc-7-eclipse-temurin-17-noble`](https://github.com/carlossg/docker-maven/blob/8ef234bed02d88f4edcc1907880f567db1362a76/eclipse-temurin-17-noble-maven-4/Dockerfile)
+
+-	[`3.10.0-eclipse-temurin-17-resolute`, `3.10.0-eclipse-temurin-17`, `3.10-eclipse-temurin-17-resolute`, `3.10-eclipse-temurin-17`, `3-eclipse-temurin-17-resolute`, `3-eclipse-temurin-17`](https://github.com/carlossg/docker-maven/blob/8ef234bed02d88f4edcc1907880f567db1362a76/eclipse-temurin-17-resolute/Dockerfile)
+
+-	[`4.0.0-rc-7-eclipse-temurin-17-resolute`, `4.0.0-rc-7-eclipse-temurin-17`](https://github.com/carlossg/docker-maven/blob/8ef234bed02d88f4edcc1907880f567db1362a76/eclipse-temurin-17-resolute-maven-4/Dockerfile)
 
 -	[`3.10.0-eclipse-temurin-21-alpine`, `3.10-eclipse-temurin-21-alpine`, `3-eclipse-temurin-21-alpine`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-21-alpine/Dockerfile)
 
 -	[`4.0.0-rc-7-eclipse-temurin-21-alpine`](https://github.com/carlossg/docker-maven/blob/1a4d2d539bac81f9b137e3fa115cb4642b500087/eclipse-temurin-21-alpine-maven-4/Dockerfile)
 
--	[`3.10.0-eclipse-temurin-21-noble`, `3.10.0-eclipse-temurin-21`, `3.10-eclipse-temurin-21-noble`, `3.10-eclipse-temurin-21`, `3-eclipse-temurin-21-noble`, `3-eclipse-temurin-21`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-21-noble/Dockerfile)
+-	[`3.10.0-eclipse-temurin-21-noble`, `3.10-eclipse-temurin-21-noble`, `3-eclipse-temurin-21-noble`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-21-noble/Dockerfile)
 
--	[`4.0.0-rc-7-eclipse-temurin-21-noble`, `4.0.0-rc-7-eclipse-temurin-21`](https://github.com/carlossg/docker-maven/blob/1a4d2d539bac81f9b137e3fa115cb4642b500087/eclipse-temurin-21-noble-maven-4/Dockerfile)
+-	[`4.0.0-rc-7-eclipse-temurin-21-noble`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-21-noble-maven-4/Dockerfile)
+
+-	[`3.10.0-eclipse-temurin-21-resolute`, `3.10.0-eclipse-temurin-21`, `3.10-eclipse-temurin-21-resolute`, `3.10-eclipse-temurin-21`, `3-eclipse-temurin-21-resolute`, `3-eclipse-temurin-21`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-21-resolute/Dockerfile)
+
+-	[`4.0.0-rc-7-eclipse-temurin-21-resolute`, `4.0.0-rc-7-eclipse-temurin-21`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-21-resolute-maven-4/Dockerfile)
 
 -	[`3.10.0-eclipse-temurin-25-alpine`, `3.10-eclipse-temurin-25-alpine`, `3-eclipse-temurin-25-alpine`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-25-alpine/Dockerfile)
 
 -	[`4.0.0-rc-7-eclipse-temurin-25-alpine`](https://github.com/carlossg/docker-maven/blob/1a4d2d539bac81f9b137e3fa115cb4642b500087/eclipse-temurin-25-alpine-maven-4/Dockerfile)
 
--	[`3.10.0-eclipse-temurin-25-noble`, `3.10.0-eclipse-temurin-25`, `3.10-eclipse-temurin-25-noble`, `3.10-eclipse-temurin-25`, `3-eclipse-temurin-25-noble`, `3-eclipse-temurin-25`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-25-noble/Dockerfile)
+-	[`3.10.0-eclipse-temurin-25-noble`, `3.10-eclipse-temurin-25-noble`, `3-eclipse-temurin-25-noble`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-25-noble/Dockerfile)
 
--	[`4.0.0-rc-7-eclipse-temurin-25-noble`, `4.0.0-rc-7-eclipse-temurin-25`](https://github.com/carlossg/docker-maven/blob/1a4d2d539bac81f9b137e3fa115cb4642b500087/eclipse-temurin-25-noble-maven-4/Dockerfile)
+-	[`4.0.0-rc-7-eclipse-temurin-25-noble`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-25-noble-maven-4/Dockerfile)
 
--	[`3.10.0-eclipse-temurin-26-alpine`, `3.10-eclipse-temurin-26-alpine`, `3-eclipse-temurin-26-alpine`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-26-alpine/Dockerfile)
+-	[`3.10.0-eclipse-temurin-25-resolute`, `3.10.0-eclipse-temurin-25`, `3.10-eclipse-temurin-25-resolute`, `3.10-eclipse-temurin-25`, `3-eclipse-temurin-25-resolute`, `3-eclipse-temurin-25`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-25-resolute/Dockerfile)
 
--	[`4.0.0-rc-7-eclipse-temurin-26-alpine`](https://github.com/carlossg/docker-maven/blob/1a4d2d539bac81f9b137e3fa115cb4642b500087/eclipse-temurin-26-alpine-maven-4/Dockerfile)
+-	[`4.0.0-rc-7-eclipse-temurin-25-resolute`, `4.0.0-rc-7-eclipse-temurin-25`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-25-resolute-maven-4/Dockerfile)
 
--	[`3.10.0-eclipse-temurin-26-noble`, `3.10.0`, `3.10.0-eclipse-temurin`, `3.10.0-eclipse-temurin-26`, `3.10-eclipse-temurin-26-noble`, `3.10`, `3.10-eclipse-temurin`, `3.10-eclipse-temurin-26`, `3-eclipse-temurin-26-noble`, `3`, `latest`, `3-eclipse-temurin`, `eclipse-temurin`, `3-eclipse-temurin-26`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-26-noble/Dockerfile)
+-	[`3.10.0-eclipse-temurin-27-alpine`, `3.10-eclipse-temurin-27-alpine`, `3-eclipse-temurin-27-alpine`](https://github.com/carlossg/docker-maven/blob/e24ced7068df551af172a630f329595db574b6e4/eclipse-temurin-27-alpine/Dockerfile)
 
--	[`4.0.0-rc-7-eclipse-temurin-26-noble`, `4.0.0-rc-7`, `4.0.0-rc-7-eclipse-temurin`, `4.0.0-rc-7-eclipse-temurin-26`](https://github.com/carlossg/docker-maven/blob/1a4d2d539bac81f9b137e3fa115cb4642b500087/eclipse-temurin-26-noble-maven-4/Dockerfile)
+-	[`4.0.0-rc-7-eclipse-temurin-27-alpine`](https://github.com/carlossg/docker-maven/blob/e24ced7068df551af172a630f329595db574b6e4/eclipse-temurin-27-alpine-maven-4/Dockerfile)
+
+-	[`3.10.0-eclipse-temurin-27-resolute`, `3.10.0`, `3.10.0-eclipse-temurin`, `3.10.0-eclipse-temurin-27`, `3.10-eclipse-temurin-27-resolute`, `3.10`, `3.10-eclipse-temurin`, `3.10-eclipse-temurin-27`, `3-eclipse-temurin-27-resolute`, `3`, `latest`, `3-eclipse-temurin`, `eclipse-temurin`, `3-eclipse-temurin-27`](https://github.com/carlossg/docker-maven/blob/e24ced7068df551af172a630f329595db574b6e4/eclipse-temurin-27-resolute/Dockerfile)
+
+-	[`4.0.0-rc-7-eclipse-temurin-27-resolute`, `4.0.0-rc-7`, `4.0.0-rc-7-eclipse-temurin`, `4.0.0-rc-7-eclipse-temurin-27`](https://github.com/carlossg/docker-maven/blob/e24ced7068df551af172a630f329595db574b6e4/eclipse-temurin-27-resolute-maven-4/Dockerfile)
 
 -	[`3.10.0-eclipse-temurin-8-alpine`, `3.10-eclipse-temurin-8-alpine`, `3-eclipse-temurin-8-alpine`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-8-alpine/Dockerfile)
 
--	[`3.10.0-eclipse-temurin-8-noble`, `3.10.0-eclipse-temurin-8`, `3.10-eclipse-temurin-8-noble`, `3.10-eclipse-temurin-8`, `3-eclipse-temurin-8-noble`, `3-eclipse-temurin-8`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/eclipse-temurin-8-noble/Dockerfile)
+-	[`3.10.0-eclipse-temurin-8-noble`, `3.10-eclipse-temurin-8-noble`, `3-eclipse-temurin-8-noble`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-8-noble/Dockerfile)
+
+-	[`3.10.0-eclipse-temurin-8-resolute`, `3.10.0-eclipse-temurin-8`, `3.10-eclipse-temurin-8-resolute`, `3.10-eclipse-temurin-8`, `3-eclipse-temurin-8-resolute`, `3-eclipse-temurin-8`](https://github.com/carlossg/docker-maven/blob/4bcc1dea6507fba8ec40c602bf1bfdb963e21288/eclipse-temurin-8-resolute/Dockerfile)
 
 -	[`3.10.0-ibmjava-8`, `3.10.0-ibmjava`, `3.10-ibmjava-8`, `3.10-ibmjava`, `3-ibmjava-8`, `3-ibmjava`, `ibmjava`](https://github.com/carlossg/docker-maven/blob/6b179e3a37bb4aa699e11d9dbb2431fcc55030fd/ibmjava-8/Dockerfile)
 
@@ -234,7 +250,7 @@ This is the defacto image. If you are unsure about what your needs are, you prob
 
 Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
-Some of these tags may have names like noble in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
+Some of these tags may have names like noble or resolute in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
 ## `maven:<version>-alpine`
 
