@@ -26,6 +26,10 @@ You can access the Server admin console on `http://[dockerhost]:28080/convertigo
 
 The Server can also be accessed by HTTPS on `https://[dockerhost]:28443/convertigo` if SSL is configured (see the **HTTPS** section below).
 
+## Production deployment
+
+Before exposing the server to end users, change the default administration credentials and review the [Production deployment recommendations](https://doc.convertigo.com/documentation/latest/operating-guide/production-deployment-recommendations/) in the Operating Guide. The guide covers HTTPS termination and HSTS at the reverse proxy or load balancer, restrictions on administration and optional API discovery, explicit CORS origins (`PUBLIC_DOMAINS`), error-response details, product-version disclosure and project files protected with `.httpignore` (8.4.4+). These are settings to choose for your deployment, not changes to the image defaults.
+
 ## Connect Convertigo to a CouchDB database for FullSync (Convertigo EE only)
 
 Convertigo FullSync uses Apache CouchDB 3.2.2 as its NoSQL repository.
