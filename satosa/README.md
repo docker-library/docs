@@ -28,15 +28,15 @@ WARNING:
 
 ## Simple Tags
 
--	[`8.5.1-bookworm`, `8.5-bookworm`, `8-bookworm`, `bookworm`](https://github.com/IdentityPython/satosa-docker/blob/8420c19d43d36f132e015a981df54f30dc54980f/8.5/bookworm/Dockerfile)
+-	[`8.6.0-trixie`, `8.6-trixie`, `8-trixie`, `trixie`](https://github.com/IdentityPython/satosa-docker/blob/b371d344831cc50c3fc98a50320b73166f8ebf0f/8.6/trixie/Dockerfile)
 
--	[`8.5.1-alpine3.22`, `8.5-alpine3.22`, `8-alpine3.22`, `alpine3.22`, `8.5.1-alpine`, `8.5-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/8420c19d43d36f132e015a981df54f30dc54980f/8.5/alpine3.22/Dockerfile)
+-	[`8.6.0-alpine3.24`, `8.6-alpine3.24`, `8-alpine3.24`, `alpine3.24`, `8.6.0-alpine`, `8.6-alpine`, `8-alpine`, `alpine`](https://github.com/IdentityPython/satosa-docker/blob/b371d344831cc50c3fc98a50320b73166f8ebf0f/8.6/alpine3.24/Dockerfile)
 
 ## Shared Tags
 
--	`8.5.1`, `8.5`, `8`, `latest`:
+-	`8.6.0`, `8.6`, `8`, `latest`:
 
-	-	[`8.5.1-bookworm`](https://github.com/IdentityPython/satosa-docker/blob/8420c19d43d36f132e015a981df54f30dc54980f/8.5/bookworm/Dockerfile)
+	-	[`8.6.0-trixie`](https://github.com/IdentityPython/satosa-docker/blob/b371d344831cc50c3fc98a50320b73166f8ebf0f/8.6/trixie/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -135,7 +135,7 @@ The `satosa` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `satosa:<version>-alpine`
 
