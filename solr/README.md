@@ -28,13 +28,13 @@ WARNING:
 
 -	[`10.0.0-slim`, `10.0-slim`, `10-slim`, `slim`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0-slim/Dockerfile)
 
--	[`9.10.1`, `9.10`, `9`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10/Dockerfile)
+-	[`9.11.0`, `9.11`, `9`](https://github.com/apache/solr-docker/blob/13c8b3c91d1b67db15b2addea387803d5eb2b246/9.11/Dockerfile)
 
--	[`9.10.1-slim`, `9.10-slim`, `9-slim`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10-slim/Dockerfile)
+-	[`9.11.0-slim`, `9.11-slim`, `9-slim`](https://github.com/apache/solr-docker/blob/13c8b3c91d1b67db15b2addea387803d5eb2b246/9.11-slim/Dockerfile)
 
--	[`9.9.0`, `9.9`](https://github.com/apache/solr-docker/blob/aa51c522c3e74cd1b2886209ea249358a34d324a/9.9/Dockerfile)
+-	[`9.10.1`, `9.10`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10/Dockerfile)
 
--	[`9.9.0-slim`, `9.9-slim`](https://github.com/apache/solr-docker/blob/aa51c522c3e74cd1b2886209ea249358a34d324a/9.9-slim/Dockerfile)
+-	[`9.10.1-slim`, `9.10-slim`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10-slim/Dockerfile)
 
 # Quick reference (cont.)
 
