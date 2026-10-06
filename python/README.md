@@ -100,18 +100,6 @@ WARNING:
 
 -	[`3.11.17-alpine3.23`, `3.11-alpine3.23`](https://github.com/docker-library/python/blob/cede844ace77284e32c03b61ebc35cdfc945e862/3.11/alpine3.23/Dockerfile)
 
--	[`3.10.22-trixie`, `3.10-trixie`](https://github.com/docker-library/python/blob/31a6d5e069fd199a791d183071ef75d3c17e3cd3/3.10/trixie/Dockerfile)
-
--	[`3.10.22-slim-trixie`, `3.10-slim-trixie`, `3.10.22-slim`, `3.10-slim`](https://github.com/docker-library/python/blob/31a6d5e069fd199a791d183071ef75d3c17e3cd3/3.10/slim-trixie/Dockerfile)
-
--	[`3.10.22-bookworm`, `3.10-bookworm`](https://github.com/docker-library/python/blob/31a6d5e069fd199a791d183071ef75d3c17e3cd3/3.10/bookworm/Dockerfile)
-
--	[`3.10.22-slim-bookworm`, `3.10-slim-bookworm`](https://github.com/docker-library/python/blob/31a6d5e069fd199a791d183071ef75d3c17e3cd3/3.10/slim-bookworm/Dockerfile)
-
--	[`3.10.22-alpine3.24`, `3.10-alpine3.24`, `3.10.22-alpine`, `3.10-alpine`](https://github.com/docker-library/python/blob/31a6d5e069fd199a791d183071ef75d3c17e3cd3/3.10/alpine3.24/Dockerfile)
-
--	[`3.10.22-alpine3.23`, `3.10-alpine3.23`](https://github.com/docker-library/python/blob/31a6d5e069fd199a791d183071ef75d3c17e3cd3/3.10/alpine3.23/Dockerfile)
-
 ## Shared Tags
 
 -	`3.15.0rc3`, `3.15-rc`:
@@ -154,10 +142,6 @@ WARNING:
 -	`3.11.17`, `3.11`:
 
 	-	[`3.11.17-trixie`](https://github.com/docker-library/python/blob/cede844ace77284e32c03b61ebc35cdfc945e862/3.11/trixie/Dockerfile)
-
--	`3.10.22`, `3.10`:
-
-	-	[`3.10.22-trixie`](https://github.com/docker-library/python/blob/31a6d5e069fd199a791d183071ef75d3c17e3cd3/3.10/trixie/Dockerfile)
 
 # Quick reference (cont.)
 
