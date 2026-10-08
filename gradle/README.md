@@ -24,117 +24,117 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.8.0-jdk25`, `9.8-jdk25`, `9-jdk25`, `jdk25`, `9.8.0-jdk25-resolute`, `9.8-jdk25-resolute`, `9-jdk25-resolute`, `jdk25-resolute`, `latest`, `9.8.0-jdk`, `9.8-jdk`, `9-jdk`, `jdk`, `9.8.0`, `9.8`, `9`, `9.8.0-jdk-resolute`, `9.8-jdk-resolute`, `9-jdk-resolute`, `jdk-resolute`, `9.8.0-resolute`, `9.8-resolute`, `9-resolute`, `resolute`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk25-resolute/Dockerfile)
+-	[`9.8.1-jdk25`, `9.8-jdk25`, `9-jdk25`, `jdk25`, `9.8.1-jdk25-resolute`, `9.8-jdk25-resolute`, `9-jdk25-resolute`, `jdk25-resolute`, `latest`, `9.8.1-jdk`, `9.8-jdk`, `9-jdk`, `jdk`, `9.8.1`, `9.8`, `9`, `9.8.1-jdk-resolute`, `9.8-jdk-resolute`, `9-jdk-resolute`, `jdk-resolute`, `9.8.1-resolute`, `9.8-resolute`, `9-resolute`, `resolute`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk25-resolute/Dockerfile)
 
--	[`9.8.0-jdk25-noble`, `9.8-jdk25-noble`, `9-jdk25-noble`, `jdk25-noble`, `9.8.0-jdk-noble`, `9.8-jdk-noble`, `9-jdk-noble`, `jdk-noble`, `9.8.0-noble`, `9.8-noble`, `9-noble`, `noble`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk25-noble/Dockerfile)
+-	[`9.8.1-jdk25-noble`, `9.8-jdk25-noble`, `9-jdk25-noble`, `jdk25-noble`, `9.8.1-jdk-noble`, `9.8-jdk-noble`, `9-jdk-noble`, `jdk-noble`, `9.8.1-noble`, `9.8-noble`, `9-noble`, `noble`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk25-noble/Dockerfile)
 
--	[`9.8.0-jdk25-alpine`, `9.8-jdk25-alpine`, `9-jdk25-alpine`, `jdk25-alpine`, `9.8.0-jdk-alpine`, `9.8-jdk-alpine`, `9-jdk-alpine`, `jdk-alpine`, `9.8.0-alpine`, `9.8-alpine`, `9-alpine`, `alpine`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk25-alpine/Dockerfile)
+-	[`9.8.1-jdk25-alpine`, `9.8-jdk25-alpine`, `9-jdk25-alpine`, `jdk25-alpine`, `9.8.1-jdk-alpine`, `9.8-jdk-alpine`, `9-jdk-alpine`, `jdk-alpine`, `9.8.1-alpine`, `9.8-alpine`, `9-alpine`, `alpine`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk25-alpine/Dockerfile)
 
--	[`9.8.0-jdk25-corretto`, `9.8-jdk25-corretto`, `9-jdk25-corretto`, `jdk25-corretto`, `corretto`, `9.8.0-jdk25-corretto-al2023`, `9.8-jdk25-corretto-al2023`, `9-jdk25-corretto-al2023`, `jdk25-corretto-al2023`, `corretto-al2023`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk25-corretto/Dockerfile)
+-	[`9.8.1-jdk25-corretto`, `9.8-jdk25-corretto`, `9-jdk25-corretto`, `jdk25-corretto`, `corretto`, `9.8.1-jdk25-corretto-al2023`, `9.8-jdk25-corretto-al2023`, `9-jdk25-corretto-al2023`, `jdk25-corretto-al2023`, `corretto-al2023`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk25-corretto/Dockerfile)
 
--	[`9.8.0-jdk25-ubi`, `9.8-jdk25-ubi`, `9-jdk25-ubi`, `jdk25-ubi`, `ubi`, `9.8.0-jdk25-ubi10`, `9.8-jdk25-ubi10`, `9-jdk25-ubi10`, `jdk25-ubi10`, `ubi10`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk25-ubi10/Dockerfile)
+-	[`9.8.1-jdk25-ubi`, `9.8-jdk25-ubi`, `9-jdk25-ubi`, `jdk25-ubi`, `ubi`, `9.8.1-jdk25-ubi10`, `9.8-jdk25-ubi10`, `9-jdk25-ubi10`, `jdk25-ubi10`, `ubi10`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk25-ubi10/Dockerfile)
 
--	[`9.8.0-jdk25-graal`, `9.8-jdk25-graal`, `9-jdk25-graal`, `jdk25-graal`, `9.8.0-jdk-graal`, `9.8-jdk-graal`, `9-jdk-graal`, `jdk-graal`, `9.8.0-graal`, `9.8-graal`, `9-graal`, `graal`, `9.8.0-jdk25-graal-resolute`, `9.8-jdk25-graal-resolute`, `9-jdk25-graal-resolute`, `jdk25-graal-resolute`, `9.8.0-jdk-graal-resolute`, `9.8-jdk-graal-resolute`, `9-jdk-graal-resolute`, `jdk-graal-resolute`, `9.8.0-graal-resolute`, `9.8-graal-resolute`, `9-graal-resolute`, `graal-resolute`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk25-resolute-graal/Dockerfile)
+-	[`9.8.1-jdk25-graal`, `9.8-jdk25-graal`, `9-jdk25-graal`, `jdk25-graal`, `9.8.1-jdk-graal`, `9.8-jdk-graal`, `9-jdk-graal`, `jdk-graal`, `9.8.1-graal`, `9.8-graal`, `9-graal`, `graal`, `9.8.1-jdk25-graal-resolute`, `9.8-jdk25-graal-resolute`, `9-jdk25-graal-resolute`, `jdk25-graal-resolute`, `9.8.1-jdk-graal-resolute`, `9.8-jdk-graal-resolute`, `9-jdk-graal-resolute`, `jdk-graal-resolute`, `9.8.1-graal-resolute`, `9.8-graal-resolute`, `9-graal-resolute`, `graal-resolute`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk25-resolute-graal/Dockerfile)
 
--	[`9.8.0-jdk25-graal-noble`, `9.8-jdk25-graal-noble`, `9-jdk25-graal-noble`, `jdk25-graal-noble`, `9.8.0-jdk-graal-noble`, `9.8-jdk-graal-noble`, `9-jdk-graal-noble`, `jdk-graal-noble`, `9.8.0-graal-noble`, `9.8-graal-noble`, `9-graal-noble`, `graal-noble`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk25-noble-graal/Dockerfile)
+-	[`9.8.1-jdk25-graal-noble`, `9.8-jdk25-graal-noble`, `9-jdk25-graal-noble`, `jdk25-graal-noble`, `9.8.1-jdk-graal-noble`, `9.8-jdk-graal-noble`, `9-jdk-graal-noble`, `jdk-graal-noble`, `9.8.1-graal-noble`, `9.8-graal-noble`, `9-graal-noble`, `graal-noble`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk25-noble-graal/Dockerfile)
 
--	[`9.8.0-jdk21`, `9.8-jdk21`, `9-jdk21`, `jdk21`, `9.8.0-jdk21-resolute`, `9.8-jdk21-resolute`, `9-jdk21-resolute`, `jdk21-resolute`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk21-resolute/Dockerfile)
+-	[`9.8.1-jdk21`, `9.8-jdk21`, `9-jdk21`, `jdk21`, `9.8.1-jdk21-resolute`, `9.8-jdk21-resolute`, `9-jdk21-resolute`, `jdk21-resolute`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk21-resolute/Dockerfile)
 
--	[`9.8.0-jdk21-noble`, `9.8-jdk21-noble`, `9-jdk21-noble`, `jdk21-noble`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk21-noble/Dockerfile)
+-	[`9.8.1-jdk21-noble`, `9.8-jdk21-noble`, `9-jdk21-noble`, `jdk21-noble`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk21-noble/Dockerfile)
 
--	[`9.8.0-jdk21-jammy`, `9.8-jdk21-jammy`, `9-jdk21-jammy`, `jdk21-jammy`, `9.8.0-jdk-jammy`, `9.8-jdk-jammy`, `9-jdk-jammy`, `jdk-jammy`, `9.8.0-jammy`, `9.8-jammy`, `9-jammy`, `jammy`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk21-jammy/Dockerfile)
+-	[`9.8.1-jdk21-jammy`, `9.8-jdk21-jammy`, `9-jdk21-jammy`, `jdk21-jammy`, `9.8.1-jdk-jammy`, `9.8-jdk-jammy`, `9-jdk-jammy`, `jdk-jammy`, `9.8.1-jammy`, `9.8-jammy`, `9-jammy`, `jammy`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk21-jammy/Dockerfile)
 
--	[`9.8.0-jdk21-alpine`, `9.8-jdk21-alpine`, `9-jdk21-alpine`, `jdk21-alpine`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk21-alpine/Dockerfile)
+-	[`9.8.1-jdk21-alpine`, `9.8-jdk21-alpine`, `9-jdk21-alpine`, `jdk21-alpine`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk21-alpine/Dockerfile)
 
--	[`9.8.0-jdk21-corretto`, `9.8-jdk21-corretto`, `9-jdk21-corretto`, `jdk21-corretto`, `9.8.0-jdk21-corretto-al2023`, `9.8-jdk21-corretto-al2023`, `9-jdk21-corretto-al2023`, `jdk21-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk21-corretto/Dockerfile)
+-	[`9.8.1-jdk21-corretto`, `9.8-jdk21-corretto`, `9-jdk21-corretto`, `jdk21-corretto`, `9.8.1-jdk21-corretto-al2023`, `9.8-jdk21-corretto-al2023`, `9-jdk21-corretto-al2023`, `jdk21-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk21-corretto/Dockerfile)
 
--	[`9.8.0-jdk21-ubi`, `9.8-jdk21-ubi`, `9-jdk21-ubi`, `jdk21-ubi`, `9.8.0-jdk21-ubi10`, `9.8-jdk21-ubi10`, `9-jdk21-ubi10`, `jdk21-ubi10`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk21-ubi10/Dockerfile)
+-	[`9.8.1-jdk21-ubi`, `9.8-jdk21-ubi`, `9-jdk21-ubi`, `jdk21-ubi`, `9.8.1-jdk21-ubi10`, `9.8-jdk21-ubi10`, `9-jdk21-ubi10`, `jdk21-ubi10`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk21-ubi10/Dockerfile)
 
--	[`9.8.0-jdk21-ubi9`, `9.8-jdk21-ubi9`, `9-jdk21-ubi9`, `jdk21-ubi9`, `ubi9`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk21-ubi9/Dockerfile)
+-	[`9.8.1-jdk21-ubi9`, `9.8-jdk21-ubi9`, `9-jdk21-ubi9`, `jdk21-ubi9`, `ubi9`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk21-ubi9/Dockerfile)
 
--	[`9.8.0-jdk21-graal`, `9.8-jdk21-graal`, `9-jdk21-graal`, `jdk21-graal`, `9.8.0-jdk21-graal-resolute`, `9.8-jdk21-graal-resolute`, `9-jdk21-graal-resolute`, `jdk21-graal-resolute`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk21-resolute-graal/Dockerfile)
+-	[`9.8.1-jdk21-graal`, `9.8-jdk21-graal`, `9-jdk21-graal`, `jdk21-graal`, `9.8.1-jdk21-graal-resolute`, `9.8-jdk21-graal-resolute`, `9-jdk21-graal-resolute`, `jdk21-graal-resolute`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk21-resolute-graal/Dockerfile)
 
--	[`9.8.0-jdk21-graal-noble`, `9.8-jdk21-graal-noble`, `9-jdk21-graal-noble`, `jdk21-graal-noble`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk21-noble-graal/Dockerfile)
+-	[`9.8.1-jdk21-graal-noble`, `9.8-jdk21-graal-noble`, `9-jdk21-graal-noble`, `jdk21-graal-noble`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk21-noble-graal/Dockerfile)
 
--	[`9.8.0-jdk21-graal-jammy`, `9.8-jdk21-graal-jammy`, `9-jdk21-graal-jammy`, `jdk21-graal-jammy`, `9.8.0-jdk-graal-jammy`, `9.8-jdk-graal-jammy`, `9-jdk-graal-jammy`, `jdk-graal-jammy`, `9.8.0-graal-jammy`, `9.8-graal-jammy`, `9-graal-jammy`, `graal-jammy`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk21-jammy-graal/Dockerfile)
+-	[`9.8.1-jdk21-graal-jammy`, `9.8-jdk21-graal-jammy`, `9-jdk21-graal-jammy`, `jdk21-graal-jammy`, `9.8.1-jdk-graal-jammy`, `9.8-jdk-graal-jammy`, `9-jdk-graal-jammy`, `jdk-graal-jammy`, `9.8.1-graal-jammy`, `9.8-graal-jammy`, `9-graal-jammy`, `graal-jammy`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk21-jammy-graal/Dockerfile)
 
--	[`9.8.0-jdk17`, `9.8-jdk17`, `9-jdk17`, `jdk17`, `9.8.0-jdk17-resolute`, `9.8-jdk17-resolute`, `9-jdk17-resolute`, `jdk17-resolute`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk17-resolute/Dockerfile)
+-	[`9.8.1-jdk17`, `9.8-jdk17`, `9-jdk17`, `jdk17`, `9.8.1-jdk17-resolute`, `9.8-jdk17-resolute`, `9-jdk17-resolute`, `jdk17-resolute`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk17-resolute/Dockerfile)
 
--	[`9.8.0-jdk17-noble`, `9.8-jdk17-noble`, `9-jdk17-noble`, `jdk17-noble`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk17-noble/Dockerfile)
+-	[`9.8.1-jdk17-noble`, `9.8-jdk17-noble`, `9-jdk17-noble`, `jdk17-noble`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk17-noble/Dockerfile)
 
--	[`9.8.0-jdk17-jammy`, `9.8-jdk17-jammy`, `9-jdk17-jammy`, `jdk17-jammy`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk17-jammy/Dockerfile)
+-	[`9.8.1-jdk17-jammy`, `9.8-jdk17-jammy`, `9-jdk17-jammy`, `jdk17-jammy`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk17-jammy/Dockerfile)
 
--	[`9.8.0-jdk17-alpine`, `9.8-jdk17-alpine`, `9-jdk17-alpine`, `jdk17-alpine`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk17-alpine/Dockerfile)
+-	[`9.8.1-jdk17-alpine`, `9.8-jdk17-alpine`, `9-jdk17-alpine`, `jdk17-alpine`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk17-alpine/Dockerfile)
 
--	[`9.8.0-jdk17-corretto`, `9.8-jdk17-corretto`, `9-jdk17-corretto`, `jdk17-corretto`, `9.8.0-jdk17-corretto-al2023`, `9.8-jdk17-corretto-al2023`, `9-jdk17-corretto-al2023`, `jdk17-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk17-corretto/Dockerfile)
+-	[`9.8.1-jdk17-corretto`, `9.8-jdk17-corretto`, `9-jdk17-corretto`, `jdk17-corretto`, `9.8.1-jdk17-corretto-al2023`, `9.8-jdk17-corretto-al2023`, `9-jdk17-corretto-al2023`, `jdk17-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk17-corretto/Dockerfile)
 
--	[`9.8.0-jdk17-ubi`, `9.8-jdk17-ubi`, `9-jdk17-ubi`, `jdk17-ubi`, `9.8.0-jdk17-ubi10`, `9.8-jdk17-ubi10`, `9-jdk17-ubi10`, `jdk17-ubi10`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk17-ubi10/Dockerfile)
+-	[`9.8.1-jdk17-ubi`, `9.8-jdk17-ubi`, `9-jdk17-ubi`, `jdk17-ubi`, `9.8.1-jdk17-ubi10`, `9.8-jdk17-ubi10`, `9-jdk17-ubi10`, `jdk17-ubi10`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk17-ubi10/Dockerfile)
 
--	[`9.8.0-jdk17-ubi9`, `9.8-jdk17-ubi9`, `9-jdk17-ubi9`, `jdk17-ubi9`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk17-ubi9/Dockerfile)
+-	[`9.8.1-jdk17-ubi9`, `9.8-jdk17-ubi9`, `9-jdk17-ubi9`, `jdk17-ubi9`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk17-ubi9/Dockerfile)
 
--	[`9.8.0-jdk17-graal`, `9.8-jdk17-graal`, `9-jdk17-graal`, `jdk17-graal`, `9.8.0-jdk17-graal-resolute`, `9.8-jdk17-graal-resolute`, `9-jdk17-graal-resolute`, `jdk17-graal-resolute`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk17-resolute-graal/Dockerfile)
+-	[`9.8.1-jdk17-graal`, `9.8-jdk17-graal`, `9-jdk17-graal`, `jdk17-graal`, `9.8.1-jdk17-graal-resolute`, `9.8-jdk17-graal-resolute`, `9-jdk17-graal-resolute`, `jdk17-graal-resolute`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk17-resolute-graal/Dockerfile)
 
--	[`9.8.0-jdk17-graal-noble`, `9.8-jdk17-graal-noble`, `9-jdk17-graal-noble`, `jdk17-graal-noble`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk17-noble-graal/Dockerfile)
+-	[`9.8.1-jdk17-graal-noble`, `9.8-jdk17-graal-noble`, `9-jdk17-graal-noble`, `jdk17-graal-noble`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk17-noble-graal/Dockerfile)
 
--	[`9.8.0-jdk17-graal-jammy`, `9.8-jdk17-graal-jammy`, `9-jdk17-graal-jammy`, `jdk17-graal-jammy`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk17-jammy-graal/Dockerfile)
+-	[`9.8.1-jdk17-graal-jammy`, `9.8-jdk17-graal-jammy`, `9-jdk17-graal-jammy`, `jdk17-graal-jammy`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk17-jammy-graal/Dockerfile)
 
--	[`9.8.0-jdk27`, `9.8-jdk27`, `9-jdk27`, `jdk27`, `9.8.0-jdk27-resolute`, `9.8-jdk27-resolute`, `9-jdk27-resolute`, `jdk27-resolute`](https://github.com/gradle/docker-gradle/blob/c5b67edcf880ca149c86bb41ed69679748c8cb77/jdk27-resolute/Dockerfile)
+-	[`9.8.1-jdk27`, `9.8-jdk27`, `9-jdk27`, `jdk27`, `9.8.1-jdk27-resolute`, `9.8-jdk27-resolute`, `9-jdk27-resolute`, `jdk27-resolute`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk27-resolute/Dockerfile)
 
--	[`9.8.0-jdk27-alpine`, `9.8-jdk27-alpine`, `9-jdk27-alpine`, `jdk27-alpine`](https://github.com/gradle/docker-gradle/blob/c5b67edcf880ca149c86bb41ed69679748c8cb77/jdk27-alpine/Dockerfile)
+-	[`9.8.1-jdk27-alpine`, `9.8-jdk27-alpine`, `9-jdk27-alpine`, `jdk27-alpine`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk27-alpine/Dockerfile)
 
--	[`9.8.0-jdk27-corretto`, `9.8-jdk27-corretto`, `9-jdk27-corretto`, `jdk27-corretto`, `9.8.0-jdk27-corretto-al2023`, `9.8-jdk27-corretto-al2023`, `9-jdk27-corretto-al2023`, `jdk27-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/c5b67edcf880ca149c86bb41ed69679748c8cb77/jdk27-corretto/Dockerfile)
+-	[`9.8.1-jdk27-corretto`, `9.8-jdk27-corretto`, `9-jdk27-corretto`, `jdk27-corretto`, `9.8.1-jdk27-corretto-al2023`, `9.8-jdk27-corretto-al2023`, `9-jdk27-corretto-al2023`, `jdk27-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk27-corretto/Dockerfile)
 
--	[`9.8.0-jdk27-ubi`, `9.8-jdk27-ubi`, `9-jdk27-ubi`, `jdk27-ubi`, `9.8.0-jdk27-ubi10`, `9.8-jdk27-ubi10`, `9-jdk27-ubi10`, `jdk27-ubi10`](https://github.com/gradle/docker-gradle/blob/c5b67edcf880ca149c86bb41ed69679748c8cb77/jdk27-ubi10/Dockerfile)
+-	[`9.8.1-jdk27-ubi`, `9.8-jdk27-ubi`, `9-jdk27-ubi`, `jdk27-ubi`, `9.8.1-jdk27-ubi10`, `9.8-jdk27-ubi10`, `9-jdk27-ubi10`, `jdk27-ubi10`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk27-ubi10/Dockerfile)
 
--	[`9.8.0-jdk-lts-and-current`, `9.8-jdk-lts-and-current`, `9-jdk-lts-and-current`, `jdk-lts-and-current`, `9.8.0-jdk-lts-and-current-resolute`, `9.8-jdk-lts-and-current-resolute`, `9-jdk-lts-and-current-resolute`, `jdk-lts-and-current-resolute`, `9.8.0-jdk-25-and-27`, `9.8-jdk-25-and-27`, `9-jdk-25-and-27`, `jdk-25-and-27`, `9.8.0-jdk-25-and-27-resolute`, `9.8-jdk-25-and-27-resolute`, `9-jdk-25-and-27-resolute`, `jdk-25-and-27-resolute`](https://github.com/gradle/docker-gradle/blob/c5b67edcf880ca149c86bb41ed69679748c8cb77/jdk-lts-and-current/Dockerfile)
+-	[`9.8.1-jdk-lts-and-current`, `9.8-jdk-lts-and-current`, `9-jdk-lts-and-current`, `jdk-lts-and-current`, `9.8.1-jdk-lts-and-current-resolute`, `9.8-jdk-lts-and-current-resolute`, `9-jdk-lts-and-current-resolute`, `jdk-lts-and-current-resolute`, `9.8.1-jdk-25-and-27`, `9.8-jdk-25-and-27`, `9-jdk-25-and-27`, `jdk-25-and-27`, `9.8.1-jdk-25-and-27-resolute`, `9.8-jdk-25-and-27-resolute`, `9-jdk-25-and-27-resolute`, `jdk-25-and-27-resolute`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk-lts-and-current/Dockerfile)
 
--	[`9.8.0-jdk-lts-and-current-alpine`, `9.8-jdk-lts-and-current-alpine`, `9-jdk-lts-and-current-alpine`, `jdk-lts-and-current-alpine`, `9.8.0-jdk-25-and-27-alpine`, `9.8-jdk-25-and-27-alpine`, `9-jdk-25-and-27-alpine`, `jdk-25-and-27-alpine`](https://github.com/gradle/docker-gradle/blob/c5b67edcf880ca149c86bb41ed69679748c8cb77/jdk-lts-and-current-alpine/Dockerfile)
+-	[`9.8.1-jdk-lts-and-current-alpine`, `9.8-jdk-lts-and-current-alpine`, `9-jdk-lts-and-current-alpine`, `jdk-lts-and-current-alpine`, `9.8.1-jdk-25-and-27-alpine`, `9.8-jdk-25-and-27-alpine`, `9-jdk-25-and-27-alpine`, `jdk-25-and-27-alpine`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk-lts-and-current-alpine/Dockerfile)
 
--	[`9.8.0-jdk-lts-and-current-corretto`, `9.8-jdk-lts-and-current-corretto`, `9-jdk-lts-and-current-corretto`, `jdk-lts-and-current-corretto`, `9.8.0-jdk-lts-and-current-corretto-al2023`, `9.8-jdk-lts-and-current-corretto-al2023`, `9-jdk-lts-and-current-corretto-al2023`, `jdk-lts-and-current-corretto-al2023`, `9.8.0-jdk-25-and-27-corretto`, `9.8-jdk-25-and-27-corretto`, `9-jdk-25-and-27-corretto`, `jdk-25-and-27-corretto`, `9.8.0-jdk-25-and-27-corretto-al2023`, `9.8-jdk-25-and-27-corretto-al2023`, `9-jdk-25-and-27-corretto-al2023`, `jdk-25-and-27-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/c5b67edcf880ca149c86bb41ed69679748c8cb77/jdk-lts-and-current-corretto/Dockerfile)
+-	[`9.8.1-jdk-lts-and-current-corretto`, `9.8-jdk-lts-and-current-corretto`, `9-jdk-lts-and-current-corretto`, `jdk-lts-and-current-corretto`, `9.8.1-jdk-lts-and-current-corretto-al2023`, `9.8-jdk-lts-and-current-corretto-al2023`, `9-jdk-lts-and-current-corretto-al2023`, `jdk-lts-and-current-corretto-al2023`, `9.8.1-jdk-25-and-27-corretto`, `9.8-jdk-25-and-27-corretto`, `9-jdk-25-and-27-corretto`, `jdk-25-and-27-corretto`, `9.8.1-jdk-25-and-27-corretto-al2023`, `9.8-jdk-25-and-27-corretto-al2023`, `9-jdk-25-and-27-corretto-al2023`, `jdk-25-and-27-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk-lts-and-current-corretto/Dockerfile)
 
--	[`9.8.0-jdk-lts-and-current-graal`, `9.8-jdk-lts-and-current-graal`, `9-jdk-lts-and-current-graal`, `jdk-lts-and-current-graal`, `9.8.0-jdk-lts-and-current-graal-resolute`, `9.8-jdk-lts-and-current-graal-resolute`, `9-jdk-lts-and-current-graal-resolute`, `jdk-lts-and-current-graal-resolute`, `9.8.0-jdk-25-and-25-graal`, `9.8-jdk-25-and-25-graal`, `9-jdk-25-and-25-graal`, `jdk-25-and-25-graal`, `9.8.0-jdk-25-and-25-graal-resolute`, `9.8-jdk-25-and-25-graal-resolute`, `9-jdk-25-and-25-graal-resolute`, `jdk-25-and-25-graal-resolute`](https://github.com/gradle/docker-gradle/blob/f12d842f8acf34d4dde0e687af3e870e387154fd/jdk-lts-and-current-graal/Dockerfile)
+-	[`9.8.1-jdk-lts-and-current-graal`, `9.8-jdk-lts-and-current-graal`, `9-jdk-lts-and-current-graal`, `jdk-lts-and-current-graal`, `9.8.1-jdk-lts-and-current-graal-resolute`, `9.8-jdk-lts-and-current-graal-resolute`, `9-jdk-lts-and-current-graal-resolute`, `jdk-lts-and-current-graal-resolute`, `9.8.1-jdk-25-and-25-graal`, `9.8-jdk-25-and-25-graal`, `9-jdk-25-and-25-graal`, `jdk-25-and-25-graal`, `9.8.1-jdk-25-and-25-graal-resolute`, `9.8-jdk-25-and-25-graal-resolute`, `9-jdk-25-and-25-graal-resolute`, `jdk-25-and-25-graal-resolute`](https://github.com/gradle/docker-gradle/blob/6709ede0a3413e336f103f53522eb755094ca4b0/jdk-lts-and-current-graal/Dockerfile)
 
--	[`8.14.5-jdk21`, `8.14-jdk21`, `8-jdk21`, `8.14.5-jdk21-noble`, `8.14-jdk21-noble`, `8-jdk21-noble`, `8.14.5-jdk`, `8.14-jdk`, `8-jdk`, `8.14.5`, `8.14`, `8`, `8.14.5-jdk-noble`, `8.14-jdk-noble`, `8-jdk-noble`, `8.14.5-noble`, `8.14-noble`, `8-noble`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk21-noble/Dockerfile)
+-	[`8.14.6-jdk21`, `8.14-jdk21`, `8-jdk21`, `8.14.6-jdk21-noble`, `8.14-jdk21-noble`, `8-jdk21-noble`, `8.14.6-jdk`, `8.14-jdk`, `8-jdk`, `8.14.6`, `8.14`, `8`, `8.14.6-jdk-noble`, `8.14-jdk-noble`, `8-jdk-noble`, `8.14.6-noble`, `8.14-noble`, `8-noble`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk21-noble/Dockerfile)
 
--	[`8.14.5-jdk21-jammy`, `8.14-jdk21-jammy`, `8-jdk21-jammy`, `8.14.5-jdk-jammy`, `8.14-jdk-jammy`, `8-jdk-jammy`, `8.14.5-jammy`, `8.14-jammy`, `8-jammy`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk21-jammy/Dockerfile)
+-	[`8.14.6-jdk21-jammy`, `8.14-jdk21-jammy`, `8-jdk21-jammy`, `8.14.6-jdk-jammy`, `8.14-jdk-jammy`, `8-jdk-jammy`, `8.14.6-jammy`, `8.14-jammy`, `8-jammy`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk21-jammy/Dockerfile)
 
--	[`8.14.5-jdk21-alpine`, `8.14-jdk21-alpine`, `8-jdk21-alpine`, `8.14.5-jdk-alpine`, `8.14-jdk-alpine`, `8-jdk-alpine`, `8.14.5-alpine`, `8.14-alpine`, `8-alpine`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk21-alpine/Dockerfile)
+-	[`8.14.6-jdk21-alpine`, `8.14-jdk21-alpine`, `8-jdk21-alpine`, `8.14.6-jdk-alpine`, `8.14-jdk-alpine`, `8-jdk-alpine`, `8.14.6-alpine`, `8.14-alpine`, `8-alpine`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk21-alpine/Dockerfile)
 
--	[`8.14.5-jdk21-corretto`, `8.14-jdk21-corretto`, `8-jdk21-corretto`, `8.14.5-jdk21-corretto-al2023`, `8.14-jdk21-corretto-al2023`, `8-jdk21-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk21-corretto/Dockerfile)
+-	[`8.14.6-jdk21-corretto`, `8.14-jdk21-corretto`, `8-jdk21-corretto`, `8.14.6-jdk21-corretto-al2023`, `8.14-jdk21-corretto-al2023`, `8-jdk21-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk21-corretto/Dockerfile)
 
--	[`8.14.5-jdk21-ubi`, `8.14-jdk21-ubi`, `8-jdk21-ubi`, `8.14.5-jdk21-ubi9`, `8.14-jdk21-ubi9`, `8-jdk21-ubi9`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk21-ubi9/Dockerfile)
+-	[`8.14.6-jdk21-ubi`, `8.14-jdk21-ubi`, `8-jdk21-ubi`, `8.14.6-jdk21-ubi9`, `8.14-jdk21-ubi9`, `8-jdk21-ubi9`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk21-ubi9/Dockerfile)
 
--	[`8.14.5-jdk21-graal`, `8.14-jdk21-graal`, `8-jdk21-graal`, `8.14.5-jdk-graal`, `8.14-jdk-graal`, `8-jdk-graal`, `8.14.5-graal`, `8.14-graal`, `8-graal`, `8.14.5-jdk21-graal-noble`, `8.14-jdk21-graal-noble`, `8-jdk21-graal-noble`, `8.14.5-jdk-graal-noble`, `8.14-jdk-graal-noble`, `8-jdk-graal-noble`, `8.14.5-graal-noble`, `8.14-graal-noble`, `8-graal-noble`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk21-noble-graal/Dockerfile)
+-	[`8.14.6-jdk21-graal`, `8.14-jdk21-graal`, `8-jdk21-graal`, `8.14.6-jdk-graal`, `8.14-jdk-graal`, `8-jdk-graal`, `8.14.6-graal`, `8.14-graal`, `8-graal`, `8.14.6-jdk21-graal-noble`, `8.14-jdk21-graal-noble`, `8-jdk21-graal-noble`, `8.14.6-jdk-graal-noble`, `8.14-jdk-graal-noble`, `8-jdk-graal-noble`, `8.14.6-graal-noble`, `8.14-graal-noble`, `8-graal-noble`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk21-noble-graal/Dockerfile)
 
--	[`8.14.5-jdk21-graal-jammy`, `8.14-jdk21-graal-jammy`, `8-jdk21-graal-jammy`, `8.14.5-jdk-graal-jammy`, `8.14-jdk-graal-jammy`, `8-jdk-graal-jammy`, `8.14.5-graal-jammy`, `8.14-graal-jammy`, `8-graal-jammy`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk21-jammy-graal/Dockerfile)
+-	[`8.14.6-jdk21-graal-jammy`, `8.14-jdk21-graal-jammy`, `8-jdk21-graal-jammy`, `8.14.6-jdk-graal-jammy`, `8.14-jdk-graal-jammy`, `8-jdk-graal-jammy`, `8.14.6-graal-jammy`, `8.14-graal-jammy`, `8-graal-jammy`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk21-jammy-graal/Dockerfile)
 
--	[`8.14.5-jdk17`, `8.14-jdk17`, `8-jdk17`, `8.14.5-jdk17-noble`, `8.14-jdk17-noble`, `8-jdk17-noble`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk17-noble/Dockerfile)
+-	[`8.14.6-jdk17`, `8.14-jdk17`, `8-jdk17`, `8.14.6-jdk17-noble`, `8.14-jdk17-noble`, `8-jdk17-noble`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk17-noble/Dockerfile)
 
--	[`8.14.5-jdk17-jammy`, `8.14-jdk17-jammy`, `8-jdk17-jammy`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk17-jammy/Dockerfile)
+-	[`8.14.6-jdk17-jammy`, `8.14-jdk17-jammy`, `8-jdk17-jammy`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk17-jammy/Dockerfile)
 
--	[`8.14.5-jdk17-alpine`, `8.14-jdk17-alpine`, `8-jdk17-alpine`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk17-alpine/Dockerfile)
+-	[`8.14.6-jdk17-alpine`, `8.14-jdk17-alpine`, `8-jdk17-alpine`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk17-alpine/Dockerfile)
 
--	[`8.14.5-jdk17-corretto`, `8.14-jdk17-corretto`, `8-jdk17-corretto`, `8.14.5-jdk17-corretto-al2023`, `8.14-jdk17-corretto-al2023`, `8-jdk17-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk17-corretto/Dockerfile)
+-	[`8.14.6-jdk17-corretto`, `8.14-jdk17-corretto`, `8-jdk17-corretto`, `8.14.6-jdk17-corretto-al2023`, `8.14-jdk17-corretto-al2023`, `8-jdk17-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk17-corretto/Dockerfile)
 
--	[`8.14.5-jdk17-ubi`, `8.14-jdk17-ubi`, `8-jdk17-ubi`, `8.14.5-jdk17-ubi9`, `8.14-jdk17-ubi9`, `8-jdk17-ubi9`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk17-ubi9/Dockerfile)
+-	[`8.14.6-jdk17-ubi`, `8.14-jdk17-ubi`, `8-jdk17-ubi`, `8.14.6-jdk17-ubi9`, `8.14-jdk17-ubi9`, `8-jdk17-ubi9`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk17-ubi9/Dockerfile)
 
--	[`8.14.5-jdk17-graal`, `8.14-jdk17-graal`, `8-jdk17-graal`, `8.14.5-jdk17-graal-noble`, `8.14-jdk17-graal-noble`, `8-jdk17-graal-noble`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk17-noble-graal/Dockerfile)
+-	[`8.14.6-jdk17-graal`, `8.14-jdk17-graal`, `8-jdk17-graal`, `8.14.6-jdk17-graal-noble`, `8.14-jdk17-graal-noble`, `8-jdk17-graal-noble`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk17-noble-graal/Dockerfile)
 
--	[`8.14.5-jdk17-graal-jammy`, `8.14-jdk17-graal-jammy`, `8-jdk17-graal-jammy`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk17-jammy-graal/Dockerfile)
+-	[`8.14.6-jdk17-graal-jammy`, `8.14-jdk17-graal-jammy`, `8-jdk17-graal-jammy`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk17-jammy-graal/Dockerfile)
 
--	[`8.14.5-jdk11`, `8.14-jdk11`, `8-jdk11`, `jdk11`, `8.14.5-jdk11-jammy`, `8.14-jdk11-jammy`, `8-jdk11-jammy`, `jdk11-jammy`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk11-jammy/Dockerfile)
+-	[`8.14.6-jdk11`, `8.14-jdk11`, `8-jdk11`, `jdk11`, `8.14.6-jdk11-jammy`, `8.14-jdk11-jammy`, `8-jdk11-jammy`, `jdk11-jammy`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk11-jammy/Dockerfile)
 
--	[`8.14.5-jdk11-alpine`, `8.14-jdk11-alpine`, `8-jdk11-alpine`, `jdk11-alpine`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk11-alpine/Dockerfile)
+-	[`8.14.6-jdk11-alpine`, `8.14-jdk11-alpine`, `8-jdk11-alpine`, `jdk11-alpine`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk11-alpine/Dockerfile)
 
--	[`8.14.5-jdk11-corretto`, `8.14-jdk11-corretto`, `8-jdk11-corretto`, `jdk11-corretto`, `8.14.5-jdk11-corretto-al2023`, `8.14-jdk11-corretto-al2023`, `8-jdk11-corretto-al2023`, `jdk11-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk11-corretto/Dockerfile)
+-	[`8.14.6-jdk11-corretto`, `8.14-jdk11-corretto`, `8-jdk11-corretto`, `jdk11-corretto`, `8.14.6-jdk11-corretto-al2023`, `8.14-jdk11-corretto-al2023`, `8-jdk11-corretto-al2023`, `jdk11-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk11-corretto/Dockerfile)
 
--	[`8.14.5-jdk11-ubi`, `8.14-jdk11-ubi`, `8-jdk11-ubi`, `jdk11-ubi`, `8.14.5-jdk11-ubi9`, `8.14-jdk11-ubi9`, `8-jdk11-ubi9`, `jdk11-ubi9`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk11-ubi9/Dockerfile)
+-	[`8.14.6-jdk11-ubi`, `8.14-jdk11-ubi`, `8-jdk11-ubi`, `jdk11-ubi`, `8.14.6-jdk11-ubi9`, `8.14-jdk11-ubi9`, `8-jdk11-ubi9`, `jdk11-ubi9`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk11-ubi9/Dockerfile)
 
--	[`8.14.5-jdk8`, `8.14-jdk8`, `8-jdk8`, `jdk8`, `8.14.5-jdk8-jammy`, `8.14-jdk8-jammy`, `8-jdk8-jammy`, `jdk8-jammy`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk8-jammy/Dockerfile)
+-	[`8.14.6-jdk8`, `8.14-jdk8`, `8-jdk8`, `jdk8`, `8.14.6-jdk8-jammy`, `8.14-jdk8-jammy`, `8-jdk8-jammy`, `jdk8-jammy`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk8-jammy/Dockerfile)
 
--	[`8.14.5-jdk8-corretto`, `8.14-jdk8-corretto`, `8-jdk8-corretto`, `jdk8-corretto`, `8.14.5-jdk8-corretto-al2023`, `8.14-jdk8-corretto-al2023`, `8-jdk8-corretto-al2023`, `jdk8-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk8-corretto/Dockerfile)
+-	[`8.14.6-jdk8-corretto`, `8.14-jdk8-corretto`, `8-jdk8-corretto`, `jdk8-corretto`, `8.14.6-jdk8-corretto-al2023`, `8.14-jdk8-corretto-al2023`, `8-jdk8-corretto-al2023`, `jdk8-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk8-corretto/Dockerfile)
 
--	[`8.14.5-jdk8-ubi`, `8.14-jdk8-ubi`, `8-jdk8-ubi`, `jdk8-ubi`, `8.14.5-jdk8-ubi9`, `8.14-jdk8-ubi9`, `8-jdk8-ubi9`, `jdk8-ubi9`](https://github.com/gradle/docker-gradle/blob/c3b0e90b720093d0aeaacd4552c60afbcad950c8/jdk8-ubi9/Dockerfile)
+-	[`8.14.6-jdk8-ubi`, `8.14-jdk8-ubi`, `8-jdk8-ubi`, `jdk8-ubi`, `8.14.6-jdk8-ubi9`, `8.14-jdk8-ubi9`, `8-jdk8-ubi9`, `jdk8-ubi9`](https://github.com/gradle/docker-gradle/blob/288ff8f72ce2aac284d6be7bd0054cbe86e765e7/jdk8-ubi9/Dockerfile)
 
 -	[`7.6.6-jdk17`, `7.6-jdk17`, `7-jdk17`, `7.6.6-jdk17-noble`, `7.6-jdk17-noble`, `7-jdk17-noble`, `7.6.6-jdk`, `7.6-jdk`, `7-jdk`, `7.6.6`, `7.6`, `7`, `7.6.6-jdk-noble`, `7.6-jdk-noble`, `7-jdk-noble`, `7.6.6-noble`, `7.6-noble`, `7-noble`](https://github.com/gradle/docker-gradle/blob/692045c708bc589ff8fa26fb083bdf1b23c0f8a5/jdk17-noble/Dockerfile)
 
