@@ -38,14 +38,18 @@
 #
 # Check "docker run" for more information.
 
-$ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%%
+# To make it easy for other containers (such as additional cluster nodes) to
+# reach this server by name, create a user-defined network first.
+$ docker network create nats
+
+$ docker run -d --name nats-main --network nats -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%%
 [INF] Starting nats-server
 [INF]   Version:  2.9.8
 [INF]   Git:      [60e335a]
 [INF]   Cluster:  my_cluster
 [INF]   Name:     NB3YN6SPZF6MWTLPGYLRE2AD5VVWSW443RO43YR5GC62I463QPYGOL5C
 [INF]   ID:       NB3YN6SPZF6MWTLPGYLRE2AD5VVWSW443RO43YR5GC62I463QPYGOL5C
-[INF] Using configuration file: /etc/nats/nats-server.conf
+[INF] Using configuration file: nats-server.conf
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
 [INF] Server is ready
@@ -56,11 +60,14 @@ $ docker run -d --name nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%
 # To run a second server and cluster them together..
 # Note that since you are passing arguments, this overrides the CMD section
 # of the Dockerfile, so you need to pass all arguments, including the
-# config file.
-$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%% -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
+# config file. In the default image the config file is /nats-server.conf
+# (in the -alpine variant it is /etc/nats/nats-server.conf).
+# The host ports are already published by nats-main, so they are not
+# published again here; both containers talk over the "nats" network.
+$ docker run -d --name=nats-2 --network nats %%IMAGE%% -c /nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222
 
 # If you want to verify the routes are connected, try this instead:
-$ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222:8222 %%IMAGE%% -c /etc/nats/nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
+$ docker run -d --name=nats-2 --network nats %%IMAGE%% -c /nats-server.conf --routes=nats-route://ruser:T0pS3cr3t@nats-main:6222 -DV
 [INF] Starting nats-server
 [INF]   Version:  2.9.8
 [INF]   Git:      [60e335a]
@@ -68,7 +75,7 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 [INF]   Cluster:  my_cluster
 [INF]   Name:     NDFNAUTD4RKS2O7CMKMDMTV3DW5NIKFCQDDMXW2A5YXLUZWWX7RYFCKB
 [INF]   ID:       NDFNAUTD4RKS2O7CMKMDMTV3DW5NIKFCQDDMXW2A5YXLUZWWX7RYFCKB
-[INF] Using configuration file: /etc/nats/nats-server.conf
+[INF] Using configuration file: /nats-server.conf
 [DBG] Created system account: "$SYS"
 [INF] Starting http monitor on 0.0.0.0:8222
 [INF] Listening for client connections on 0.0.0.0:4222
@@ -85,7 +92,7 @@ $ docker run -d --name=nats-2 --link nats-main -p 4222:4222 -p 6222:6222 -p 8222
 [DBG] 172.17.0.3:6222 - rid:4 - Sent local subscriptions to route
 ```
 
-The server will load the configuration file below. Any command line flags can override these values.
+The server will load the configuration file below (`/nats-server.conf` in the default image, `/etc/nats/nats-server.conf` in the `-alpine` variant). Any command line flags can override these values.
 
 ## Default Configuration File
 
