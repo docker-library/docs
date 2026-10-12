@@ -24,7 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.4.5`, `8.4`, `latest`](https://github.com/convertigo/convertigo/blob/a88d3732ccc395b4a769e618d7e5cad71e4b4ed8/docker/default/Dockerfile)
+-	[`8.4.6`, `8.4`, `latest`](https://github.com/convertigo/convertigo/blob/e0d6a5ab9a642ea9db24f32f21650063b41ac0ec/docker/default/Dockerfile)
+
+-	[`8.3.14`, `8.3`](https://github.com/convertigo/convertigo/blob/6f80dacf263413bb1e03b27ffba6d6dfb09e2a35/docker/default/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -79,7 +81,7 @@ Before exposing the server to end users, change the default administration crede
 
 ## Connect Convertigo to a CouchDB database for FullSync (Convertigo EE only)
 
-Convertigo FullSync uses Apache CouchDB 3.2.2 as its NoSQL repository.
+Convertigo FullSync uses Apache CouchDB 3.5 as its NoSQL repository.
 
 For modern Docker setups, prefer one of these approaches:
 
@@ -120,7 +122,7 @@ $ docker network create c8o-net
 ```
 
 ```console
-$ docker run -d --name fullsync --network c8o-net couchdb:3.2.2
+$ docker run -d --name fullsync --network c8o-net couchdb:3.5
 ```
 
 ```console
@@ -168,7 +170,7 @@ If the database runs in another container, connect both containers to the same u
 Projects are deployed in the Convertigo workspace, a simple file system directory. You can map the docker container **/workspace** to your physical system by using:
 
 ```console
-$ docker run --name C8O -v $(pwd):/workspace -d -p 28080:28080 convertigo
+$ docker run --name C8O -v $PWD:/workspace -d -p 28080:28080 convertigo
 ```
 
 You can share the same workspace by all Convertigo containers. In this case, when you deploy a project on a Convertigo container, it will be seen by others. This is the best way to build multi-instance load balanced Convertigo server farms.
@@ -226,8 +228,10 @@ $ docker run --name C8O2 -v /my-shared-workspace:/workspace -d -p 28082:28080 \
 
 At each container start, the image copies the contents of these workspace directories into the Convertigo web application before Tomcat starts:
 
--	`/workspace/lib/` to `WEB-INF/lib/` for JAR files and their dependencies
+-	`/workspace/lib/` to `WEB-INF/lib/` for JAR files, their dependencies and native libraries
 -	`/workspace/classes/` to `WEB-INF/classes/` for compiled classes and resources
+
+`WEB-INF/lib/` is also added to the JVM native library path, so a native library dropped in `/workspace/lib/` is found without extra configuration. This is the place for the libraries the server itself loads and cannot ship, such as the official JDBC driver of the database cache (`ojdbc.jar`, `mysql-connector.jar` or `db2jcc.jar`, replacing the placeholder of the same name) or the SAP Java Connector (`sapjco3.jar`, kept under this exact name, with its `libsapjco3.so`). A library used only by the projects (SQL connectors) belongs to `/workspace/libs/` instead; a `README.md` in each of these workspace directories gives the details.
 
 The directory structure is preserved and overlays the files provided by the image; it does not remove existing web-application files. For classes, keep the package directory structure below `/workspace/classes/` (for example, `com/example/MyClass.class`). Restart or recreate the container after adding or updating these files. To remove an injected file, remove it from the workspace and recreate the container, since a restart does not delete files already copied into the web application.
 
@@ -237,7 +241,7 @@ For example, prepare a workspace and mount it into the container:
 $ mkdir -p workspace/lib workspace/classes/com/example
 $ cp my-driver.jar workspace/lib/
 $ cp build/classes/java/main/com/example/MyClass.class workspace/classes/com/example/
-$ docker run --name C8O -v "$(pwd)/workspace:/workspace" -d -p 28080:28080 convertigo
+$ docker run --name C8O -v "$PWD/workspace:/workspace" -d -p 28080:28080 convertigo
 ```
 
 This is also useful when iterating on a custom Java extension without building a derived Convertigo image. Ensure that the mounted workspace is writable by the container at startup.
@@ -252,7 +256,7 @@ $ cp company-root-ca.crt custom-ca/
 $ cp partner-intermediate-ca.crt custom-ca/
 $ docker run --name C8O \
     -e USE_SYSTEM_CA_CERTS=1 \
-    -v "$(pwd)/custom-ca:/certificates:ro" \
+    -v "$PWD/custom-ca:/certificates:ro" \
     -d -p 28080:28080 convertigo
 ```
 
@@ -397,6 +401,8 @@ Log file still exists until you add the `LOG_FILE=false` environment variable :
 ```console
 $ docker run -d --name C8O -e LOG_STDOUT=true -e LOG_FILE=false -p 28080:28080 convertigo
 ```
+
+To ship these logs to a log platform (Elasticsearch / Kibana, Graylog, IBM Cloud Logs...), let the collector of your infrastructure read the container's standard output: the log format, the multi-line rule and a Fluent Bit example are described in the [Centralize the logs](https://doc.convertigo.com/documentation/latest/operating-guide/production-deployment-recommendations/#centralize-the-logs) section of the Operating Guide.
 
 ## `JXMX` Environment variable
 
