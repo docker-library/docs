@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `spark` official image](https://hub.docker.com/_/spark) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,77 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.0-scala2.13-java21-python3-ubuntu`, `4.2.0-java21-python3`, `4.2.0-python3`, `4.2.0`, `python3`, `latest`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java21-python3-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java21-r-ubuntu`, `4.2.0-java21-r`, `4.2.0-r`, `r`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java21-r-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java21-ubuntu`, `4.2.0-java21-scala`, `4.2.0-scala`, `scala`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java21-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java21-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java21-python3-r-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java17-python3-ubuntu`, `4.2.0-java17`, `python3-java17`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java17-python3-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java17-r-ubuntu`, `4.2.0-java17-r`, `r-java17`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java17-r-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java17-ubuntu`, `4.2.0-scala-java17`, `scala-java17`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java17-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java17-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java17-python3-r-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java25-python3-ubuntu`, `4.2.0-java25`, `python3-java25`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java25-python3-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java25-r-ubuntu`, `4.2.0-java25-r`, `r-java25`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java25-r-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java25-ubuntu`, `4.2.0-scala-java25`, `scala-java25`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java25-ubuntu/Dockerfile)
-
--	[`4.2.0-scala2.13-java25-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/d3d8851fbbf64aa6f056d3a402eee1f4bf5781d0/4.2.0/scala2.13-java25-python3-r-ubuntu/Dockerfile)
-
--	[`4.1.3-scala2.13-java21-python3-ubuntu`, `4.1.3-java21-python3`, `4.1.3-java21`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.1.3/scala2.13-java21-python3-ubuntu/Dockerfile)
-
--	[`4.1.3-scala2.13-java21-r-ubuntu`, `4.1.3-java21-r`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.1.3/scala2.13-java21-r-ubuntu/Dockerfile)
-
--	[`4.1.3-scala2.13-java21-ubuntu`, `4.1.3-java21-scala`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.1.3/scala2.13-java21-ubuntu/Dockerfile)
-
--	[`4.1.3-scala2.13-java21-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.1.3/scala2.13-java21-python3-r-ubuntu/Dockerfile)
-
--	[`4.1.3-scala2.13-java17-python3-ubuntu`, `4.1.3-java17`, `4.1.3-python3`, `4.1.3`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.1.3/scala2.13-java17-python3-ubuntu/Dockerfile)
-
--	[`4.1.3-scala2.13-java17-r-ubuntu`, `4.1.3-java17-r`, `4.1.3-r`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.1.3/scala2.13-java17-r-ubuntu/Dockerfile)
-
--	[`4.1.3-scala2.13-java17-ubuntu`, `4.1.3-scala-java17`, `4.1.3-scala`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.1.3/scala2.13-java17-ubuntu/Dockerfile)
-
--	[`4.1.3-scala2.13-java17-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.1.3/scala2.13-java17-python3-r-ubuntu/Dockerfile)
-
--	[`4.0.4-scala2.13-java21-python3-ubuntu`, `4.0.4-java21-python3`, `4.0.4-java21`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.0.4/scala2.13-java21-python3-ubuntu/Dockerfile)
-
--	[`4.0.4-scala2.13-java21-r-ubuntu`, `4.0.4-java21-r`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.0.4/scala2.13-java21-r-ubuntu/Dockerfile)
-
--	[`4.0.4-scala2.13-java21-ubuntu`, `4.0.4-java21-scala`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.0.4/scala2.13-java21-ubuntu/Dockerfile)
-
--	[`4.0.4-scala2.13-java21-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.0.4/scala2.13-java21-python3-r-ubuntu/Dockerfile)
-
--	[`4.0.4-scala2.13-java17-python3-ubuntu`, `4.0.4-python3`, `4.0.4`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.0.4/scala2.13-java17-python3-ubuntu/Dockerfile)
-
--	[`4.0.4-scala2.13-java17-r-ubuntu`, `4.0.4-r`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.0.4/scala2.13-java17-r-ubuntu/Dockerfile)
-
--	[`4.0.4-scala2.13-java17-ubuntu`, `4.0.4-scala`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.0.4/scala2.13-java17-ubuntu/Dockerfile)
-
--	[`4.0.4-scala2.13-java17-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/4.0.4/scala2.13-java17-python3-r-ubuntu/Dockerfile)
-
--	[`3.5.9-scala2.12-java17-python3-ubuntu`, `3.5.9-java17-python3`, `3.5.9-java17`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/3.5.9/scala2.12-java17-python3-ubuntu/Dockerfile)
-
--	[`3.5.9-scala2.12-java17-r-ubuntu`, `3.5.9-java17-r`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/3.5.9/scala2.12-java17-r-ubuntu/Dockerfile)
-
--	[`3.5.9-scala2.12-java17-ubuntu`, `3.5.9-java17-scala`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/3.5.9/scala2.12-java17-ubuntu/Dockerfile)
-
--	[`3.5.9-scala2.12-java17-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/3.5.9/scala2.12-java17-python3-r-ubuntu/Dockerfile)
-
--	[`3.5.9-scala2.12-java11-python3-ubuntu`, `3.5.9-python3`, `3.5.9`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/3.5.9/scala2.12-java11-python3-ubuntu/Dockerfile)
-
--	[`3.5.9-scala2.12-java11-r-ubuntu`, `3.5.9-r`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/3.5.9/scala2.12-java11-r-ubuntu/Dockerfile)
-
--	[`3.5.9-scala2.12-java11-ubuntu`, `3.5.9-scala`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/3.5.9/scala2.12-java11-ubuntu/Dockerfile)
-
--	[`3.5.9-scala2.12-java11-python3-r-ubuntu`](https://github.com/apache/spark-docker/blob/994aa3719a9d6f759d50d7d9d4ba5ad23f30cb7f/3.5.9/scala2.12-java11-python3-r-ubuntu/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
 # Quick reference (cont.)
 
@@ -130,7 +62,7 @@ You can find the latest Spark documentation, including a programming guide, on t
 The easiest way to start using Spark is through the Scala shell:
 
 ```console
-docker run -it spark /opt/spark/bin/spark-shell
+docker run -it arm32v6/spark /opt/spark/bin/spark-shell
 ```
 
 Try the following command, which should return 1,000,000,000:
@@ -144,7 +76,7 @@ scala> spark.range(1000 * 1000 * 1000).count()
 The easiest way to start using PySpark is through the Python shell:
 
 ```console
-docker run -it spark:python3 /opt/spark/bin/pyspark
+docker run -it arm32v6/spark:python3 /opt/spark/bin/pyspark
 ```
 
 And run the following command, which should also return 1,000,000,000:
@@ -158,7 +90,7 @@ And run the following command, which should also return 1,000,000,000:
 The easiest way to start using R on Spark is through the R shell:
 
 ```console
-docker run -it spark:r /opt/spark/bin/sparkR
+docker run -it arm32v6/spark:r /opt/spark/bin/sparkR
 ```
 
 ## Running Spark on Kubernetes
