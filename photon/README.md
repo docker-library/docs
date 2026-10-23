@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `photon` official image](https://hub.docker.com/_/photon) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0`, `5.0-20261022`, `latest`](https://github.com/vmware/photon-docker-image/blob/89b5a8247abd8dee50a411cfb319909500945357/docker/Dockerfile)
+-	[`5.0`, `5.0-20261022`, `latest`](https://github.com/vmware/photon-docker-image/blob/79bf8797fa8978bad89072687148748f307e29e1/docker/Dockerfile)
 
--	[`4.0`, `4.0-20261022`](https://github.com/vmware/photon-docker-image/blob/6bd881f641d8e2dff69de0483f9436fd29260181/docker/Dockerfile)
+-	[`4.0`, `4.0-20261022`](https://github.com/vmware/photon-docker-image/blob/57d0e8a203380b1c53d0fc912ac6f8386ed8f692/docker/Dockerfile)
 
--	[`3.0`, `3.0-20250316`](https://github.com/vmware/photon-docker-image/blob/f848d5df815c0afe76b42a608d49df0e87af51c2/docker/Dockerfile)
+-	[`3.0`, `3.0-20250316`](https://github.com/vmware/photon-docker-image/blob/93a0c62b9b7790fc27d1413f65073ef1a2894bab/docker/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -61,7 +63,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon OS 5.0 as the base of an image, specify `FROM photon:5.0`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon OS 5.0 as the base of an image, specify `FROM arm64v8/photon:5.0`.
 
 ## Support
 
