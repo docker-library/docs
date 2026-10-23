@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `rabbitmq` official image](https://hub.docker.com/_/rabbitmq) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,41 +26,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.4.0`, `4.4`, `4`, `latest`](https://github.com/docker-library/rabbitmq/blob/4ad287295317ea1d9a577396fa28466a1bbf3430/4.4/ubuntu/Dockerfile)
-
--	[`4.4.0-management`, `4.4-management`, `4-management`, `management`](https://github.com/docker-library/rabbitmq/blob/4ad287295317ea1d9a577396fa28466a1bbf3430/4.4/ubuntu/management/Dockerfile)
-
 -	[`4.4.0-alpine`, `4.4-alpine`, `4-alpine`, `alpine`](https://github.com/docker-library/rabbitmq/blob/4ad287295317ea1d9a577396fa28466a1bbf3430/4.4/alpine/Dockerfile)
 
 -	[`4.4.0-management-alpine`, `4.4-management-alpine`, `4-management-alpine`, `management-alpine`](https://github.com/docker-library/rabbitmq/blob/4ad287295317ea1d9a577396fa28466a1bbf3430/4.4/alpine/management/Dockerfile)
-
--	[`4.3.7`, `4.3`](https://github.com/docker-library/rabbitmq/blob/0b2a146a189d6d604a77e5a474e3f12f46abdbe4/4.3/ubuntu/Dockerfile)
-
--	[`4.3.7-management`, `4.3-management`](https://github.com/docker-library/rabbitmq/blob/a2d49841fbcf81713cf0e1c279facbce545e2292/4.3/ubuntu/management/Dockerfile)
 
 -	[`4.3.7-alpine`, `4.3-alpine`](https://github.com/docker-library/rabbitmq/blob/0b2a146a189d6d604a77e5a474e3f12f46abdbe4/4.3/alpine/Dockerfile)
 
 -	[`4.3.7-management-alpine`, `4.3-management-alpine`](https://github.com/docker-library/rabbitmq/blob/a2d49841fbcf81713cf0e1c279facbce545e2292/4.3/alpine/management/Dockerfile)
 
--	[`4.2.9`, `4.2`](https://github.com/docker-library/rabbitmq/blob/3ae27f3f0f9bec99dac40ad3519e4a1ebccf17b1/4.2/ubuntu/Dockerfile)
-
--	[`4.2.9-management`, `4.2-management`](https://github.com/docker-library/rabbitmq/blob/1e39120acefdff683137abc064a21bc17731a84f/4.2/ubuntu/management/Dockerfile)
-
 -	[`4.2.9-alpine`, `4.2-alpine`](https://github.com/docker-library/rabbitmq/blob/3ae27f3f0f9bec99dac40ad3519e4a1ebccf17b1/4.2/alpine/Dockerfile)
 
 -	[`4.2.9-management-alpine`, `4.2-management-alpine`](https://github.com/docker-library/rabbitmq/blob/1e39120acefdff683137abc064a21bc17731a84f/4.2/alpine/management/Dockerfile)
 
--	[`4.1.8`, `4.1`](https://github.com/docker-library/rabbitmq/blob/cae318a5893831eacca4bca1124f9f78f8856538/4.1/ubuntu/Dockerfile)
-
--	[`4.1.8-management`, `4.1-management`](https://github.com/docker-library/rabbitmq/blob/77700515643c9fc8c93421b828758401f1a7b953/4.1/ubuntu/management/Dockerfile)
-
 -	[`4.1.8-alpine`, `4.1-alpine`](https://github.com/docker-library/rabbitmq/blob/cae318a5893831eacca4bca1124f9f78f8856538/4.1/alpine/Dockerfile)
 
 -	[`4.1.8-management-alpine`, `4.1-management-alpine`](https://github.com/docker-library/rabbitmq/blob/77700515643c9fc8c93421b828758401f1a7b953/4.1/alpine/management/Dockerfile)
-
--	[`4.0.9`, `4.0`](https://github.com/docker-library/rabbitmq/blob/e651df4e913d43d95b552cba7f29155e5cd000e5/4.0/ubuntu/Dockerfile)
-
--	[`4.0.9-management`, `4.0-management`](https://github.com/docker-library/rabbitmq/blob/453af2d84b44206ae685da6b341aef6bf8fda4ae/4.0/ubuntu/management/Dockerfile)
 
 -	[`4.0.9-alpine`, `4.0-alpine`](https://github.com/docker-library/rabbitmq/blob/e651df4e913d43d95b552cba7f29155e5cd000e5/4.0/alpine/Dockerfile)
 
@@ -98,7 +80,7 @@ RabbitMQ is open source message broker software (sometimes called message-orient
 One of the important things to note about RabbitMQ is that it stores data based on what it calls the "Node Name", which defaults to the hostname. What this means for usage in Docker is that we should specify `-h`/`--hostname` explicitly for each daemon so that we don't get a random hostname and can keep track of our data:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3
+$ docker run -d --hostname my-rabbit --name some-rabbit arm32v6/rabbitmq:3
 ```
 
 This will start a RabbitMQ container listening on the default port of 5672. If you give that a minute, then do `docker logs some-rabbit`, you'll see in the output a block similar to:
@@ -149,7 +131,7 @@ $ docker run --detach --hostname my-rabbit --name some-rabbit \
     --env RABBITMQ_DEFAULT_PASS=password \
     --publish 15672:15672 \
     --publish 5672:5672 \
-     rabbitmq:management
+     arm32v6/rabbitmq:management
 ```
 
 You can then go to `http://localhost:15672` or `http://host-ip:15672` in a browser and use `user`/`password` to gain access to the [management UI](https://www.rabbitmq.com/docs/management).
@@ -159,7 +141,7 @@ You can then go to `http://localhost:15672` or `http://host-ip:15672` in a brows
 If you wish to change the default vhost, you can do so with the `RABBITMQ_DEFAULT_VHOST` environmental variables:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit -e RABBITMQ_DEFAULT_VHOST=my_vhost arm32v6/rabbitmq:3-management
 ```
 
 ### Memory Limits
@@ -175,7 +157,7 @@ See the [RabbitMQ "Clustering Guide"](https://www.rabbitmq.com/clustering.html#e
 For example, you can provide the cookie via a file (such as with [Docker Secrets](https://docs.docker.com/engine/swarm/secrets/)):
 
 ```console
-docker service create ... --secret source=my-erlang-cookie,target=/var/lib/rabbitmq/.erlang.cookie ... rabbitmq
+docker service create ... --secret source=my-erlang-cookie,target=/var/lib/rabbitmq/.erlang.cookie ... arm32v6/rabbitmq
 ```
 
 (Note that it will likely also be necessary to specify `uid=XXX,gid=XXX,mode=0600` in order for Erlang in the container to be able to read the cookie file properly. See [Docker's `--secret` documentation for more details](https://docs.docker.com/reference/cli/docker/service/create/#secret).)
@@ -185,13 +167,13 @@ docker service create ... --secret source=my-erlang-cookie,target=/var/lib/rabbi
 There is a second set of tags provided with the [management plugin](https://www.rabbitmq.com/management.html) installed and enabled by default, which is available on the standard management port of 15672, with the default username and password of `guest` / `guest`:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit arm32v6/rabbitmq:3-management
 ```
 
 You can access it by visiting `http://container-ip:15672` in a browser or, if you need access outside the host, on port 8080:
 
 ```console
-$ docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 rabbitmq:3-management
+$ docker run -d --hostname my-rabbit --name some-rabbit -p 8080:15672 arm32v6/rabbitmq:3-management
 ```
 
 You can then go to `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -225,13 +207,13 @@ See [the "Official Images" FAQ](https://github.com/docker-library/faq#healthchec
 
 # Image Variants
 
-The `rabbitmq` images come in many flavors, each designed for a specific use case.
+The `arm32v6/rabbitmq` images come in many flavors, each designed for a specific use case.
 
-## `rabbitmq:<version>`
+## `arm32v6/rabbitmq:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `rabbitmq:<version>-alpine`
+## `arm32v6/rabbitmq:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
