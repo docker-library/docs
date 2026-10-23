@@ -24,25 +24,25 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2026.10.0-community-trixie`, `2026.10-community-trixie`, `2026-community-trixie`, `2026.10.0-community`, `2026.10-community`, `2026-community`, `2026.10.0-trixie`, `2026.10-trixie`, `2026-trixie`, `2026.10.0`, `2026.10`, `2026`, `community-trixie`, `community`, `trixie`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/fa24a35aa27615358bfd97e97a40c64b0e42927a/2026.10.0/trixie/community/Dockerfile)
+-	[`2026.10.1-community-trixie`, `2026.10-community-trixie`, `2026-community-trixie`, `2026.10.1-community`, `2026.10-community`, `2026-community`, `2026.10.1-trixie`, `2026.10-trixie`, `2026-trixie`, `2026.10.1`, `2026.10`, `2026`, `community-trixie`, `community`, `trixie`, `latest`](https://github.com/neo4j/docker-neo4j-publish/blob/17816bc092097f6c4df6392afb8e77ef79e68be2/2026.10.1/trixie/community/Dockerfile)
 
--	[`2026.10.0-enterprise-trixie`, `2026.10-enterprise-trixie`, `2026-enterprise-trixie`, `2026.10.0-enterprise`, `2026.10-enterprise`, `2026-enterprise`, `enterprise-trixie`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/fa24a35aa27615358bfd97e97a40c64b0e42927a/2026.10.0/trixie/enterprise/Dockerfile)
+-	[`2026.10.1-enterprise-trixie`, `2026.10-enterprise-trixie`, `2026-enterprise-trixie`, `2026.10.1-enterprise`, `2026.10-enterprise`, `2026-enterprise`, `enterprise-trixie`, `enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/17816bc092097f6c4df6392afb8e77ef79e68be2/2026.10.1/trixie/enterprise/Dockerfile)
 
--	[`2026.10.0-community-ubi10`, `2026.10-community-ubi10`, `2026-community-ubi10`, `2026.10.0-ubi10`, `2026.10-ubi10`, `2026-ubi10`, `community-ubi10`, `ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/fa24a35aa27615358bfd97e97a40c64b0e42927a/2026.10.0/ubi10/community/Dockerfile)
+-	[`2026.10.1-community-ubi10`, `2026.10-community-ubi10`, `2026-community-ubi10`, `2026.10.1-ubi10`, `2026.10-ubi10`, `2026-ubi10`, `community-ubi10`, `ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/17816bc092097f6c4df6392afb8e77ef79e68be2/2026.10.1/ubi10/community/Dockerfile)
 
--	[`2026.10.0-enterprise-ubi10`, `2026.10-enterprise-ubi10`, `2026-enterprise-ubi10`, `enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/fa24a35aa27615358bfd97e97a40c64b0e42927a/2026.10.0/ubi10/enterprise/Dockerfile)
+-	[`2026.10.1-enterprise-ubi10`, `2026.10-enterprise-ubi10`, `2026-enterprise-ubi10`, `enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/17816bc092097f6c4df6392afb8e77ef79e68be2/2026.10.1/ubi10/enterprise/Dockerfile)
 
--	[`5.26.32-community-trixie`, `5.26-community-trixie`, `5-community-trixie`, `5.26.32-community`, `5.26-community`, `5-community`, `5.26.32-trixie`, `5.26-trixie`, `5-trixie`, `5.26.32`, `5.26`, `5`](https://github.com/neo4j/docker-neo4j-publish/blob/3abe11cd8b22f68279adf33ba879c73e10581802/5.26.32/trixie/community/Dockerfile)
+-	[`5.26.32-community-trixie`, `5.26-community-trixie`, `5-community-trixie`, `5.26.32-community`, `5.26-community`, `5-community`, `5.26.32-trixie`, `5.26-trixie`, `5-trixie`, `5.26.32`, `5.26`, `5`](https://github.com/neo4j/docker-neo4j-publish/blob/8985460d27950ea786f1af5770520de2dbd832a1/5.26.32/trixie/community/Dockerfile)
 
--	[`5.26.32-enterprise-trixie`, `5.26-enterprise-trixie`, `5-enterprise-trixie`, `5.26.32-enterprise`, `5.26-enterprise`, `5-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/3abe11cd8b22f68279adf33ba879c73e10581802/5.26.32/trixie/enterprise/Dockerfile)
+-	[`5.26.32-enterprise-trixie`, `5.26-enterprise-trixie`, `5-enterprise-trixie`, `5.26.32-enterprise`, `5.26-enterprise`, `5-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/8985460d27950ea786f1af5770520de2dbd832a1/5.26.32/trixie/enterprise/Dockerfile)
 
 -	[`5.26.32-community-ubi10`, `5.26-community-ubi10`, `5-community-ubi10`, `5.26.32-ubi10`, `5.26-ubi10`, `5-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/3abe11cd8b22f68279adf33ba879c73e10581802/5.26.32/ubi10/community/Dockerfile)
 
 -	[`5.26.32-enterprise-ubi10`, `5.26-enterprise-ubi10`, `5-enterprise-ubi10`](https://github.com/neo4j/docker-neo4j-publish/blob/3abe11cd8b22f68279adf33ba879c73e10581802/5.26.32/ubi10/enterprise/Dockerfile)
 
--	[`4.4.48`, `4.4.48-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/e6e3ab90f7bfad797c084e52a36961608aa7de18/4.4.48/trixie/community/Dockerfile)
+-	[`4.4.48`, `4.4.48-community`, `4.4`, `4.4-community`](https://github.com/neo4j/docker-neo4j-publish/blob/17816bc092097f6c4df6392afb8e77ef79e68be2/4.4.48/trixie/community/Dockerfile)
 
--	[`4.4.48-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/e6e3ab90f7bfad797c084e52a36961608aa7de18/4.4.48/trixie/enterprise/Dockerfile)
+-	[`4.4.48-enterprise`, `4.4-enterprise`](https://github.com/neo4j/docker-neo4j-publish/blob/17816bc092097f6c4df6392afb8e77ef79e68be2/4.4.48/trixie/enterprise/Dockerfile)
 
 # Quick reference (cont.)
 
