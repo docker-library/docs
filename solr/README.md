@@ -24,9 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.0.0`, `10.0`, `10`, `latest`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0/Dockerfile)
+-	[`10.1.0`, `10.1`, `10`, `latest`](https://github.com/apache/solr-docker/blob/54546d2126d4cfea7d7b6698cb86b12776cc043a/10.1/Dockerfile)
 
--	[`10.0.0-slim`, `10.0-slim`, `10-slim`, `slim`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0-slim/Dockerfile)
+-	[`10.1.0-slim`, `10.1-slim`, `10-slim`, `slim`](https://github.com/apache/solr-docker/blob/54546d2126d4cfea7d7b6698cb86b12776cc043a/10.1-slim/Dockerfile)
+
+-	[`10.0.0`, `10.0`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0/Dockerfile)
+
+-	[`10.0.0-slim`, `10.0-slim`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0-slim/Dockerfile)
 
 -	[`9.11.0`, `9.11`, `9`](https://github.com/apache/solr-docker/blob/13c8b3c91d1b67db15b2addea387803d5eb2b246/9.11/Dockerfile)
 
