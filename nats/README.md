@@ -28,49 +28,49 @@ WARNING:
 
 ## Simple Tags
 
--	[`2.15.1-alpine3.22`, `2.15-alpine3.22`, `2-alpine3.22`, `alpine3.22`, `2.15.1-alpine`, `2.15-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.15.x/alpine3.22/Dockerfile)
+-	[`2.15.2-alpine3.22`, `2.15-alpine3.22`, `2-alpine3.22`, `alpine3.22`, `2.15.2-alpine`, `2.15-alpine`, `2-alpine`, `alpine`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.15.x/alpine3.22/Dockerfile)
 
--	[`2.15.1-scratch`, `2.15-scratch`, `2-scratch`, `scratch`, `2.15.1-linux`, `2.15-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.15.x/scratch/Dockerfile)
+-	[`2.15.2-scratch`, `2.15-scratch`, `2-scratch`, `scratch`, `2.15.2-linux`, `2.15-linux`, `2-linux`, `linux`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.15.x/scratch/Dockerfile)
 
--	[`2.15.1-windowsservercore-ltsc2022`, `2.15-windowsservercore-ltsc2022`, `2-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.15.x/windowsservercore-ltsc2022/Dockerfile)
+-	[`2.15.2-windowsservercore-ltsc2022`, `2.15-windowsservercore-ltsc2022`, `2-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.15.x/windowsservercore-ltsc2022/Dockerfile)
 
--	[`2.15.1-nanoserver-ltsc2022`, `2.15-nanoserver-ltsc2022`, `2-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.15.x/nanoserver-ltsc2022/Dockerfile)
+-	[`2.15.2-nanoserver-ltsc2022`, `2.15-nanoserver-ltsc2022`, `2-nanoserver-ltsc2022`, `nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.15.x/nanoserver-ltsc2022/Dockerfile)
 
--	[`2.14.8-alpine3.22`, `2.14-alpine3.22`, `2.14.8-alpine`, `2.14-alpine`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.14.x/alpine3.22/Dockerfile)
+-	[`2.14.9-alpine3.22`, `2.14-alpine3.22`, `2.14.9-alpine`, `2.14-alpine`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.14.x/alpine3.22/Dockerfile)
 
--	[`2.14.8-scratch`, `2.14-scratch`, `2.14.8-linux`, `2.14-linux`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.14.x/scratch/Dockerfile)
+-	[`2.14.9-scratch`, `2.14-scratch`, `2.14.9-linux`, `2.14-linux`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.14.x/scratch/Dockerfile)
 
--	[`2.14.8-windowsservercore-ltsc2022`, `2.14-windowsservercore-ltsc2022`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.14.x/windowsservercore-ltsc2022/Dockerfile)
+-	[`2.14.9-windowsservercore-ltsc2022`, `2.14-windowsservercore-ltsc2022`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.14.x/windowsservercore-ltsc2022/Dockerfile)
 
--	[`2.14.8-nanoserver-ltsc2022`, `2.14-nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.14.x/nanoserver-ltsc2022/Dockerfile)
+-	[`2.14.9-nanoserver-ltsc2022`, `2.14-nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.14.x/nanoserver-ltsc2022/Dockerfile)
 
 ## Shared Tags
 
--	`2.15.1`, `2.15`, `2`, `latest`:
+-	`2.15.2`, `2.15`, `2`, `latest`:
 
-	-	[`2.15.1-scratch`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.15.x/scratch/Dockerfile)
-	-	[`2.15.1-nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.15.x/nanoserver-ltsc2022/Dockerfile)
+	-	[`2.15.2-scratch`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.15.x/scratch/Dockerfile)
+	-	[`2.15.2-nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.15.x/nanoserver-ltsc2022/Dockerfile)
 
--	`2.15.1-windowsservercore`, `2.15-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
+-	`2.15.2-windowsservercore`, `2.15-windowsservercore`, `2-windowsservercore`, `windowsservercore`:
 
-	-	[`2.15.1-windowsservercore-ltsc2022`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.15.x/windowsservercore-ltsc2022/Dockerfile)
+	-	[`2.15.2-windowsservercore-ltsc2022`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.15.x/windowsservercore-ltsc2022/Dockerfile)
 
--	`2.15.1-nanoserver`, `2.15-nanoserver`, `2-nanoserver`, `nanoserver`:
+-	`2.15.2-nanoserver`, `2.15-nanoserver`, `2-nanoserver`, `nanoserver`:
 
-	-	[`2.15.1-nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.15.x/nanoserver-ltsc2022/Dockerfile)
+	-	[`2.15.2-nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.15.x/nanoserver-ltsc2022/Dockerfile)
 
--	`2.14.8`, `2.14`:
+-	`2.14.9`, `2.14`:
 
-	-	[`2.14.8-scratch`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.14.x/scratch/Dockerfile)
-	-	[`2.14.8-nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.14.x/nanoserver-ltsc2022/Dockerfile)
+	-	[`2.14.9-scratch`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.14.x/scratch/Dockerfile)
+	-	[`2.14.9-nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.14.x/nanoserver-ltsc2022/Dockerfile)
 
--	`2.14.8-windowsservercore`, `2.14-windowsservercore`:
+-	`2.14.9-windowsservercore`, `2.14-windowsservercore`:
 
-	-	[`2.14.8-windowsservercore-ltsc2022`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.14.x/windowsservercore-ltsc2022/Dockerfile)
+	-	[`2.14.9-windowsservercore-ltsc2022`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.14.x/windowsservercore-ltsc2022/Dockerfile)
 
--	`2.14.8-nanoserver`, `2.14-nanoserver`:
+-	`2.14.9-nanoserver`, `2.14-nanoserver`:
 
-	-	[`2.14.8-nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/57332cb1aea214fbf8aca7683ffae4c5751c0409/2.14.x/nanoserver-ltsc2022/Dockerfile)
+	-	[`2.14.9-nanoserver-ltsc2022`](https://github.com/nats-io/nats-docker/blob/2027d0acef4a2c603c0324dde7d4f3c4a8bf27c6/2.14.x/nanoserver-ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 
