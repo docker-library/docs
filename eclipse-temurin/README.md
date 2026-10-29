@@ -184,145 +184,105 @@ WARNING:
 
 -	[`17.0.20.1_1-jre-nanoserver-ltsc2025`, `17-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/17/jre/windows/nanoserver-ltsc2025/Dockerfile)
 
--	[`21.0.12.1_1-jdk-alpine-3.24`, `21-jdk-alpine-3.24`, `21-alpine-3.24`, `21.0.12.1_1-jdk-alpine`, `21-jdk-alpine`, `21-alpine`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/alpine/3.24/Dockerfile)
+-	[`21.0.13_9-jdk-alpine-3.24`, `21-jdk-alpine-3.24`, `21-alpine-3.24`, `21.0.13_9-jdk-alpine`, `21-jdk-alpine`, `21-alpine`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/alpine/3.24/Dockerfile)
 
--	[`21.0.12.1_1-jdk-alpine-3.23`, `21-jdk-alpine-3.23`, `21-alpine-3.23`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/alpine/3.23/Dockerfile)
+-	[`21.0.13_9-jdk-alpine-3.23`, `21-jdk-alpine-3.23`, `21-alpine-3.23`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/alpine/3.23/Dockerfile)
 
--	[`21.0.12.1_1-jdk-alpine-3.22`, `21-jdk-alpine-3.22`, `21-alpine-3.22`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/alpine/3.22/Dockerfile)
+-	[`21.0.13_9-jdk-alpine-3.22`, `21-jdk-alpine-3.22`, `21-alpine-3.22`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/alpine/3.22/Dockerfile)
 
--	[`21.0.12.1_1-jdk-alpine-3.21`, `21-jdk-alpine-3.21`, `21-alpine-3.21`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/alpine/3.21/Dockerfile)
+-	[`21.0.13_9-jdk-alpine-3.21`, `21-jdk-alpine-3.21`, `21-alpine-3.21`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/alpine/3.21/Dockerfile)
 
--	[`21.0.12.1_1-jdk-resolute`, `21-jdk-resolute`, `21-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/ubuntu/resolute/Dockerfile)
+-	[`21.0.13_9-jdk-resolute`, `21-jdk-resolute`, `21-resolute`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/ubuntu/resolute/Dockerfile)
 
--	[`21.0.12.1_1-jdk-noble`, `21-jdk-noble`, `21-noble`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/ubuntu/noble/Dockerfile)
+-	[`21.0.13_9-jdk-noble`, `21-jdk-noble`, `21-noble`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/ubuntu/noble/Dockerfile)
 
--	[`21.0.12.1_1-jdk-jammy`, `21-jdk-jammy`, `21-jammy`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/ubuntu/jammy/Dockerfile)
+-	[`21.0.13_9-jdk-jammy`, `21-jdk-jammy`, `21-jammy`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/ubuntu/jammy/Dockerfile)
 
--	[`21.0.12.1_1-jdk-ubi10-minimal`, `21-jdk-ubi10-minimal`, `21-ubi10-minimal`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/ubi/ubi10-minimal/Dockerfile)
+-	[`21.0.13_9-jdk-ubi10-minimal`, `21-jdk-ubi10-minimal`, `21-ubi10-minimal`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/ubi/ubi10-minimal/Dockerfile)
 
--	[`21.0.12.1_1-jdk-ubi9-minimal`, `21-jdk-ubi9-minimal`, `21-ubi9-minimal`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/ubi/ubi9-minimal/Dockerfile)
+-	[`21.0.13_9-jdk-ubi9-minimal`, `21-jdk-ubi9-minimal`, `21-ubi9-minimal`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/ubi/ubi9-minimal/Dockerfile)
 
--	[`21.0.12.1_1-jdk-windowsservercore-ltsc2022`, `21-jdk-windowsservercore-ltsc2022`, `21-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`21.0.13_9-jdk-windowsservercore-ltsc2022`, `21-jdk-windowsservercore-ltsc2022`, `21-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	[`21.0.12.1_1-jdk-nanoserver-ltsc2022`, `21-jdk-nanoserver-ltsc2022`, `21-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`21.0.13_9-jdk-nanoserver-ltsc2022`, `21-jdk-nanoserver-ltsc2022`, `21-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`21.0.12.1_1-jdk-windowsservercore-ltsc2025`, `21-jdk-windowsservercore-ltsc2025`, `21-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`21.0.13_9-jdk-windowsservercore-ltsc2025`, `21-jdk-windowsservercore-ltsc2025`, `21-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	[`21.0.12.1_1-jdk-nanoserver-ltsc2025`, `21-jdk-nanoserver-ltsc2025`, `21-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/windows/nanoserver-ltsc2025/Dockerfile)
+-	[`21.0.13_9-jdk-nanoserver-ltsc2025`, `21-jdk-nanoserver-ltsc2025`, `21-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/windows/nanoserver-ltsc2025/Dockerfile)
 
--	[`21.0.12.1_1-jre-alpine-3.24`, `21-jre-alpine-3.24`, `21.0.12.1_1-jre-alpine`, `21-jre-alpine`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/alpine/3.24/Dockerfile)
+-	[`21.0.13_9-jre-alpine-3.24`, `21-jre-alpine-3.24`, `21.0.13_9-jre-alpine`, `21-jre-alpine`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/alpine/3.24/Dockerfile)
 
--	[`21.0.12.1_1-jre-alpine-3.23`, `21-jre-alpine-3.23`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/alpine/3.23/Dockerfile)
+-	[`21.0.13_9-jre-alpine-3.23`, `21-jre-alpine-3.23`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/alpine/3.23/Dockerfile)
 
--	[`21.0.12.1_1-jre-alpine-3.22`, `21-jre-alpine-3.22`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/alpine/3.22/Dockerfile)
+-	[`21.0.13_9-jre-alpine-3.22`, `21-jre-alpine-3.22`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/alpine/3.22/Dockerfile)
 
--	[`21.0.12.1_1-jre-alpine-3.21`, `21-jre-alpine-3.21`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/alpine/3.21/Dockerfile)
+-	[`21.0.13_9-jre-alpine-3.21`, `21-jre-alpine-3.21`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/alpine/3.21/Dockerfile)
 
--	[`21.0.12.1_1-jre-resolute`, `21-jre-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/ubuntu/resolute/Dockerfile)
+-	[`21.0.13_9-jre-resolute`, `21-jre-resolute`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/ubuntu/resolute/Dockerfile)
 
--	[`21.0.12.1_1-jre-noble`, `21-jre-noble`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/ubuntu/noble/Dockerfile)
+-	[`21.0.13_9-jre-noble`, `21-jre-noble`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/ubuntu/noble/Dockerfile)
 
--	[`21.0.12.1_1-jre-jammy`, `21-jre-jammy`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/ubuntu/jammy/Dockerfile)
+-	[`21.0.13_9-jre-jammy`, `21-jre-jammy`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/ubuntu/jammy/Dockerfile)
 
--	[`21.0.12.1_1-jre-ubi10-minimal`, `21-jre-ubi10-minimal`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/ubi/ubi10-minimal/Dockerfile)
+-	[`21.0.13_9-jre-ubi10-minimal`, `21-jre-ubi10-minimal`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/ubi/ubi10-minimal/Dockerfile)
 
--	[`21.0.12.1_1-jre-ubi9-minimal`, `21-jre-ubi9-minimal`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/ubi/ubi9-minimal/Dockerfile)
+-	[`21.0.13_9-jre-ubi9-minimal`, `21-jre-ubi9-minimal`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/ubi/ubi9-minimal/Dockerfile)
 
--	[`21.0.12.1_1-jre-windowsservercore-ltsc2022`, `21-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`21.0.13_9-jre-windowsservercore-ltsc2022`, `21-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	[`21.0.12.1_1-jre-nanoserver-ltsc2022`, `21-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`21.0.13_9-jre-nanoserver-ltsc2022`, `21-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`21.0.12.1_1-jre-windowsservercore-ltsc2025`, `21-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`21.0.13_9-jre-windowsservercore-ltsc2025`, `21-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	[`21.0.12.1_1-jre-nanoserver-ltsc2025`, `21-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/windows/nanoserver-ltsc2025/Dockerfile)
+-	[`21.0.13_9-jre-nanoserver-ltsc2025`, `21-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/windows/nanoserver-ltsc2025/Dockerfile)
 
--	[`25.0.4.1_1-jdk-alpine-3.24`, `25-jdk-alpine-3.24`, `25-alpine-3.24`, `25.0.4.1_1-jdk-alpine`, `25-jdk-alpine`, `25-alpine`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/alpine/3.24/Dockerfile)
+-	[`25.0.5_8-jdk-alpine-3.24`, `25-jdk-alpine-3.24`, `25-alpine-3.24`, `25.0.5_8-jdk-alpine`, `25-jdk-alpine`, `25-alpine`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/alpine/3.24/Dockerfile)
 
--	[`25.0.4.1_1-jdk-alpine-3.23`, `25-jdk-alpine-3.23`, `25-alpine-3.23`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/alpine/3.23/Dockerfile)
+-	[`25.0.5_8-jdk-alpine-3.23`, `25-jdk-alpine-3.23`, `25-alpine-3.23`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/alpine/3.23/Dockerfile)
 
--	[`25.0.4.1_1-jdk-alpine-3.22`, `25-jdk-alpine-3.22`, `25-alpine-3.22`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/alpine/3.22/Dockerfile)
+-	[`25.0.5_8-jdk-alpine-3.22`, `25-jdk-alpine-3.22`, `25-alpine-3.22`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/alpine/3.22/Dockerfile)
 
--	[`25.0.4.1_1-jdk-alpine-3.21`, `25-jdk-alpine-3.21`, `25-alpine-3.21`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/alpine/3.21/Dockerfile)
+-	[`25.0.5_8-jdk-alpine-3.21`, `25-jdk-alpine-3.21`, `25-alpine-3.21`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/alpine/3.21/Dockerfile)
 
--	[`25.0.4.1_1-jdk-resolute`, `25-jdk-resolute`, `25-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/ubuntu/resolute/Dockerfile)
+-	[`25.0.5_8-jdk-resolute`, `25-jdk-resolute`, `25-resolute`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/ubuntu/resolute/Dockerfile)
 
--	[`25.0.4.1_1-jdk-noble`, `25-jdk-noble`, `25-noble`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/ubuntu/noble/Dockerfile)
+-	[`25.0.5_8-jdk-noble`, `25-jdk-noble`, `25-noble`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/ubuntu/noble/Dockerfile)
 
--	[`25.0.4.1_1-jdk-jammy`, `25-jdk-jammy`, `25-jammy`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/ubuntu/jammy/Dockerfile)
+-	[`25.0.5_8-jdk-jammy`, `25-jdk-jammy`, `25-jammy`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/ubuntu/jammy/Dockerfile)
 
--	[`25.0.4.1_1-jdk-ubi10-minimal`, `25-jdk-ubi10-minimal`, `25-ubi10-minimal`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/ubi/ubi10-minimal/Dockerfile)
+-	[`25.0.5_8-jdk-ubi10-minimal`, `25-jdk-ubi10-minimal`, `25-ubi10-minimal`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/ubi/ubi10-minimal/Dockerfile)
 
--	[`25.0.4.1_1-jdk-windowsservercore-ltsc2022`, `25-jdk-windowsservercore-ltsc2022`, `25-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`25.0.5_8-jdk-windowsservercore-ltsc2022`, `25-jdk-windowsservercore-ltsc2022`, `25-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	[`25.0.4.1_1-jdk-nanoserver-ltsc2022`, `25-jdk-nanoserver-ltsc2022`, `25-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`25.0.5_8-jdk-nanoserver-ltsc2022`, `25-jdk-nanoserver-ltsc2022`, `25-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`25.0.4.1_1-jdk-windowsservercore-ltsc2025`, `25-jdk-windowsservercore-ltsc2025`, `25-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`25.0.5_8-jdk-windowsservercore-ltsc2025`, `25-jdk-windowsservercore-ltsc2025`, `25-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	[`25.0.4.1_1-jdk-nanoserver-ltsc2025`, `25-jdk-nanoserver-ltsc2025`, `25-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
+-	[`25.0.5_8-jdk-nanoserver-ltsc2025`, `25-jdk-nanoserver-ltsc2025`, `25-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
 
--	[`25.0.4.1_1-jre-alpine-3.24`, `25-jre-alpine-3.24`, `25.0.4.1_1-jre-alpine`, `25-jre-alpine`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/alpine/3.24/Dockerfile)
+-	[`25.0.5_8-jre-alpine-3.24`, `25-jre-alpine-3.24`, `25.0.5_8-jre-alpine`, `25-jre-alpine`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/alpine/3.24/Dockerfile)
 
--	[`25.0.4.1_1-jre-alpine-3.23`, `25-jre-alpine-3.23`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/alpine/3.23/Dockerfile)
+-	[`25.0.5_8-jre-alpine-3.23`, `25-jre-alpine-3.23`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/alpine/3.23/Dockerfile)
 
--	[`25.0.4.1_1-jre-alpine-3.22`, `25-jre-alpine-3.22`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/alpine/3.22/Dockerfile)
+-	[`25.0.5_8-jre-alpine-3.22`, `25-jre-alpine-3.22`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/alpine/3.22/Dockerfile)
 
--	[`25.0.4.1_1-jre-alpine-3.21`, `25-jre-alpine-3.21`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/alpine/3.21/Dockerfile)
+-	[`25.0.5_8-jre-alpine-3.21`, `25-jre-alpine-3.21`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/alpine/3.21/Dockerfile)
 
--	[`25.0.4.1_1-jre-resolute`, `25-jre-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/ubuntu/resolute/Dockerfile)
+-	[`25.0.5_8-jre-resolute`, `25-jre-resolute`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/ubuntu/resolute/Dockerfile)
 
--	[`25.0.4.1_1-jre-noble`, `25-jre-noble`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/ubuntu/noble/Dockerfile)
+-	[`25.0.5_8-jre-noble`, `25-jre-noble`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/ubuntu/noble/Dockerfile)
 
--	[`25.0.4.1_1-jre-jammy`, `25-jre-jammy`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/ubuntu/jammy/Dockerfile)
+-	[`25.0.5_8-jre-jammy`, `25-jre-jammy`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/ubuntu/jammy/Dockerfile)
 
--	[`25.0.4.1_1-jre-ubi10-minimal`, `25-jre-ubi10-minimal`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/ubi/ubi10-minimal/Dockerfile)
+-	[`25.0.5_8-jre-ubi10-minimal`, `25-jre-ubi10-minimal`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/ubi/ubi10-minimal/Dockerfile)
 
--	[`25.0.4.1_1-jre-windowsservercore-ltsc2022`, `25-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`25.0.5_8-jre-windowsservercore-ltsc2022`, `25-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/windows/windowsservercore-ltsc2022/Dockerfile)
 
--	[`25.0.4.1_1-jre-nanoserver-ltsc2022`, `25-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/windows/nanoserver-ltsc2022/Dockerfile)
+-	[`25.0.5_8-jre-nanoserver-ltsc2022`, `25-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/windows/nanoserver-ltsc2022/Dockerfile)
 
--	[`25.0.4.1_1-jre-windowsservercore-ltsc2025`, `25-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`25.0.5_8-jre-windowsservercore-ltsc2025`, `25-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	[`25.0.4.1_1-jre-nanoserver-ltsc2025`, `25-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/windows/nanoserver-ltsc2025/Dockerfile)
-
--	[`26.0.2.1_1-jdk-alpine-3.24`, `26-jdk-alpine-3.24`, `26-alpine-3.24`, `26.0.2.1_1-jdk-alpine`, `26-jdk-alpine`, `26-alpine`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/alpine/3.24/Dockerfile)
-
--	[`26.0.2.1_1-jdk-alpine-3.23`, `26-jdk-alpine-3.23`, `26-alpine-3.23`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/alpine/3.23/Dockerfile)
-
--	[`26.0.2.1_1-jdk-resolute`, `26-jdk-resolute`, `26-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/ubuntu/resolute/Dockerfile)
-
--	[`26.0.2.1_1-jdk-noble`, `26-jdk-noble`, `26-noble`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/ubuntu/noble/Dockerfile)
-
--	[`26.0.2.1_1-jdk-jammy`, `26-jdk-jammy`, `26-jammy`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/ubuntu/jammy/Dockerfile)
-
--	[`26.0.2.1_1-jdk-ubi10-minimal`, `26-jdk-ubi10-minimal`, `26-ubi10-minimal`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/ubi/ubi10-minimal/Dockerfile)
-
--	[`26.0.2.1_1-jdk-windowsservercore-ltsc2022`, `26-jdk-windowsservercore-ltsc2022`, `26-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`26.0.2.1_1-jdk-nanoserver-ltsc2022`, `26-jdk-nanoserver-ltsc2022`, `26-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/windows/nanoserver-ltsc2022/Dockerfile)
-
--	[`26.0.2.1_1-jdk-windowsservercore-ltsc2025`, `26-jdk-windowsservercore-ltsc2025`, `26-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`26.0.2.1_1-jdk-nanoserver-ltsc2025`, `26-jdk-nanoserver-ltsc2025`, `26-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/windows/nanoserver-ltsc2025/Dockerfile)
-
--	[`26.0.2.1_1-jre-alpine-3.24`, `26-jre-alpine-3.24`, `26.0.2.1_1-jre-alpine`, `26-jre-alpine`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/alpine/3.24/Dockerfile)
-
--	[`26.0.2.1_1-jre-alpine-3.23`, `26-jre-alpine-3.23`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/alpine/3.23/Dockerfile)
-
--	[`26.0.2.1_1-jre-resolute`, `26-jre-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/ubuntu/resolute/Dockerfile)
-
--	[`26.0.2.1_1-jre-noble`, `26-jre-noble`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/ubuntu/noble/Dockerfile)
-
--	[`26.0.2.1_1-jre-jammy`, `26-jre-jammy`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/ubuntu/jammy/Dockerfile)
-
--	[`26.0.2.1_1-jre-ubi10-minimal`, `26-jre-ubi10-minimal`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/ubi/ubi10-minimal/Dockerfile)
-
--	[`26.0.2.1_1-jre-windowsservercore-ltsc2022`, `26-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/windows/windowsservercore-ltsc2022/Dockerfile)
-
--	[`26.0.2.1_1-jre-nanoserver-ltsc2022`, `26-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/windows/nanoserver-ltsc2022/Dockerfile)
-
--	[`26.0.2.1_1-jre-windowsservercore-ltsc2025`, `26-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	[`26.0.2.1_1-jre-nanoserver-ltsc2025`, `26-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/windows/nanoserver-ltsc2025/Dockerfile)
+-	[`25.0.5_8-jre-nanoserver-ltsc2025`, `25-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/windows/nanoserver-ltsc2025/Dockerfile)
 
 -	[`27_35-jdk-alpine-3.24`, `27-jdk-alpine-3.24`, `27-alpine-3.24`, `27_35-jdk-alpine`, `27-jdk-alpine`, `27-alpine`](https://github.com/adoptium/containers/blob/cfc1406fdee2ea6b7bb74c5f45035b97b38f0fcf/27/jdk/alpine/3.24/Dockerfile)
 
@@ -450,101 +410,69 @@ WARNING:
 	-	[`17.0.20.1_1-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/17/jre/windows/nanoserver-ltsc2022/Dockerfile)
 	-	[`17.0.20.1_1-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/17/jre/windows/nanoserver-ltsc2025/Dockerfile)
 
--	`21.0.12.1_1-jdk`, `21-jdk`, `21`:
+-	`21.0.13_9-jdk`, `21-jdk`, `21`:
 
-	-	[`21.0.12.1_1-jdk-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/ubuntu/resolute/Dockerfile)
-	-	[`21.0.12.1_1-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`21.0.12.1_1-jdk-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`21.0.13_9-jdk-resolute`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/ubuntu/resolute/Dockerfile)
+	-	[`21.0.13_9-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`21.0.13_9-jdk-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	`21.0.12.1_1-jdk-windowsservercore`, `21-jdk-windowsservercore`, `21-windowsservercore`:
+-	`21.0.13_9-jdk-windowsservercore`, `21-jdk-windowsservercore`, `21-windowsservercore`:
 
-	-	[`21.0.12.1_1-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`21.0.12.1_1-jdk-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`21.0.13_9-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`21.0.13_9-jdk-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	`21.0.12.1_1-jdk-nanoserver`, `21-jdk-nanoserver`, `21-nanoserver`:
+-	`21.0.13_9-jdk-nanoserver`, `21-jdk-nanoserver`, `21-nanoserver`:
 
-	-	[`21.0.12.1_1-jdk-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`21.0.12.1_1-jdk-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jdk/windows/nanoserver-ltsc2025/Dockerfile)
+	-	[`21.0.13_9-jdk-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`21.0.13_9-jdk-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jdk/windows/nanoserver-ltsc2025/Dockerfile)
 
--	`21.0.12.1_1-jre`, `21-jre`:
+-	`21.0.13_9-jre`, `21-jre`:
 
-	-	[`21.0.12.1_1-jre-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/ubuntu/resolute/Dockerfile)
-	-	[`21.0.12.1_1-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`21.0.12.1_1-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`21.0.13_9-jre-resolute`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/ubuntu/resolute/Dockerfile)
+	-	[`21.0.13_9-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`21.0.13_9-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	`21.0.12.1_1-jre-windowsservercore`, `21-jre-windowsservercore`:
+-	`21.0.13_9-jre-windowsservercore`, `21-jre-windowsservercore`:
 
-	-	[`21.0.12.1_1-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`21.0.12.1_1-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`21.0.13_9-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`21.0.13_9-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	`21.0.12.1_1-jre-nanoserver`, `21-jre-nanoserver`:
+-	`21.0.13_9-jre-nanoserver`, `21-jre-nanoserver`:
 
-	-	[`21.0.12.1_1-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`21.0.12.1_1-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/21/jre/windows/nanoserver-ltsc2025/Dockerfile)
+	-	[`21.0.13_9-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`21.0.13_9-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/a240a79c19afb3da535529e29ab3156d5c08a6e0/21/jre/windows/nanoserver-ltsc2025/Dockerfile)
 
--	`25.0.4.1_1-jdk`, `25-jdk`, `25`, `latest`:
+-	`25.0.5_8-jdk`, `25-jdk`, `25`, `latest`:
 
-	-	[`25.0.4.1_1-jdk-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/ubuntu/resolute/Dockerfile)
-	-	[`25.0.4.1_1-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`25.0.4.1_1-jdk-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`25.0.5_8-jdk-resolute`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/ubuntu/resolute/Dockerfile)
+	-	[`25.0.5_8-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`25.0.5_8-jdk-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	`25.0.4.1_1-jdk-windowsservercore`, `25-jdk-windowsservercore`, `25-windowsservercore`:
+-	`25.0.5_8-jdk-windowsservercore`, `25-jdk-windowsservercore`, `25-windowsservercore`:
 
-	-	[`25.0.4.1_1-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`25.0.4.1_1-jdk-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`25.0.5_8-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`25.0.5_8-jdk-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	`25.0.4.1_1-jdk-nanoserver`, `25-jdk-nanoserver`, `25-nanoserver`:
+-	`25.0.5_8-jdk-nanoserver`, `25-jdk-nanoserver`, `25-nanoserver`:
 
-	-	[`25.0.4.1_1-jdk-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`25.0.4.1_1-jdk-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
+	-	[`25.0.5_8-jdk-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`25.0.5_8-jdk-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jdk/windows/nanoserver-ltsc2025/Dockerfile)
 
--	`25.0.4.1_1-jre`, `25-jre`:
+-	`25.0.5_8-jre`, `25-jre`:
 
-	-	[`25.0.4.1_1-jre-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/ubuntu/resolute/Dockerfile)
-	-	[`25.0.4.1_1-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`25.0.4.1_1-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`25.0.5_8-jre-resolute`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/ubuntu/resolute/Dockerfile)
+	-	[`25.0.5_8-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`25.0.5_8-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	`25.0.4.1_1-jre-windowsservercore`, `25-jre-windowsservercore`:
+-	`25.0.5_8-jre-windowsservercore`, `25-jre-windowsservercore`:
 
-	-	[`25.0.4.1_1-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`25.0.4.1_1-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`25.0.5_8-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`25.0.5_8-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	`25.0.4.1_1-jre-nanoserver`, `25-jre-nanoserver`:
+-	`25.0.5_8-jre-nanoserver`, `25-jre-nanoserver`:
 
-	-	[`25.0.4.1_1-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`25.0.4.1_1-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/25/jre/windows/nanoserver-ltsc2025/Dockerfile)
-
--	`26.0.2.1_1-jdk`, `26-jdk`, `26`:
-
-	-	[`26.0.2.1_1-jdk-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/ubuntu/resolute/Dockerfile)
-	-	[`26.0.2.1_1-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`26.0.2.1_1-jdk-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	`26.0.2.1_1-jdk-windowsservercore`, `26-jdk-windowsservercore`, `26-windowsservercore`:
-
-	-	[`26.0.2.1_1-jdk-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`26.0.2.1_1-jdk-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	`26.0.2.1_1-jdk-nanoserver`, `26-jdk-nanoserver`, `26-nanoserver`:
-
-	-	[`26.0.2.1_1-jdk-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`26.0.2.1_1-jdk-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jdk/windows/nanoserver-ltsc2025/Dockerfile)
-
--	`26.0.2.1_1-jre`, `26-jre`:
-
-	-	[`26.0.2.1_1-jre-resolute`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/ubuntu/resolute/Dockerfile)
-	-	[`26.0.2.1_1-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`26.0.2.1_1-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	`26.0.2.1_1-jre-windowsservercore`, `26-jre-windowsservercore`:
-
-	-	[`26.0.2.1_1-jre-windowsservercore-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`26.0.2.1_1-jre-windowsservercore-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/windows/windowsservercore-ltsc2025/Dockerfile)
-
--	`26.0.2.1_1-jre-nanoserver`, `26-jre-nanoserver`:
-
-	-	[`26.0.2.1_1-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/windows/nanoserver-ltsc2022/Dockerfile)
-	-	[`26.0.2.1_1-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/511f9356dc4d50932a0a5f8cfb0f87ed1aef4f07/26/jre/windows/nanoserver-ltsc2025/Dockerfile)
+	-	[`25.0.5_8-jre-nanoserver-ltsc2022`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/windows/nanoserver-ltsc2022/Dockerfile)
+	-	[`25.0.5_8-jre-nanoserver-ltsc2025`](https://github.com/adoptium/containers/blob/86e89ce20ba391b588e243844d0c0d996071b3ed/25/jre/windows/nanoserver-ltsc2025/Dockerfile)
 
 -	`27_35-jdk`, `27-jdk`, `27`:
 
