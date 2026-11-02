@@ -26,7 +26,7 @@ WARNING:
 
 -	[`5.0`, `5.0-20261022`, `latest`](https://github.com/vmware/photon-docker-image/blob/89b5a8247abd8dee50a411cfb319909500945357/docker/Dockerfile)
 
--	[`4.0`, `4.0-20261025`](https://github.com/vmware/photon-docker-image/blob/b72b321ed508486e4fe46987076b751d1e73238d/docker/Dockerfile)
+-	[`4.0`, `4.0-20261101`](https://github.com/vmware/photon-docker-image/blob/e4f95f029e4f8e308d279de57fb89647d294b278/docker/Dockerfile)
 
 -	[`3.0`, `3.0-20250316`](https://github.com/vmware/photon-docker-image/blob/f848d5df815c0afe76b42a608d49df0e87af51c2/docker/Dockerfile)
 

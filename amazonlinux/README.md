@@ -28,11 +28,11 @@ The `1`, `2018.03`, and `2018.03.0.20231218.0` tags of this image are EOL ([Dece
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2023`, `latest`, `2023.12.20261021.0`](https://github.com/amazonlinux/container-images/blob/6d95820d9fb57ddc347e5b291f9c60f754d1c918/Dockerfile)
+-	[`2023`, `latest`, `2023.12.20261102.0`](https://github.com/amazonlinux/container-images/blob/5f5ad757c2e668573a3ba2804841bdc8afc6eb19/Dockerfile)
 
--	[`2`, `2.0.20261021.0`](https://github.com/amazonlinux/container-images/blob/feacc125e96531aeed2cf639a0f220ddb5d0cd2b/Dockerfile)
+-	[`2`, `2.0.20261102.0`](https://github.com/amazonlinux/container-images/blob/f14bf89f502d0a551b4da6d1bac54f711aa22d83/Dockerfile)
 
--	[`2027`, `2027.0.20261021.0`](https://github.com/amazonlinux/container-images/blob/5ec86134ee1cb72143face8a9fbfb941d120ff34/Dockerfile)
+-	[`2027`, `2027.0.20261027.0`](https://github.com/amazonlinux/container-images/blob/adea22863b2d22b0f7c4a2445ea783a54a711788/Dockerfile)
 
 # Quick reference (cont.)
 
