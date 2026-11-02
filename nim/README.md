@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.2.12`, `2.2`, `2`, `latest`](https://github.com/nim-lang/docker-images/blob/6f1fe6f6b7069e29ee5fd1b3fe1ddb5c613603c5/dockerfiles/2.2.12/Dockerfile)
+-	[`2.4.0`, `2.4`, `2`, `latest`](https://github.com/nim-lang/docker-images/blob/af310b49a97b13145fbc0aa0875d23788f88e4ee/dockerfiles/2.4.0/Dockerfile)
 
--	[`2.0.14`, `2.0`](https://github.com/nim-lang/docker-images/blob/6f1fe6f6b7069e29ee5fd1b3fe1ddb5c613603c5/dockerfiles/2.0.14/Dockerfile)
+-	[`2.2.14`, `2.2`](https://github.com/nim-lang/docker-images/blob/af310b49a97b13145fbc0aa0875d23788f88e4ee/dockerfiles/2.2.14/Dockerfile)
 
 # Quick reference (cont.)
 
