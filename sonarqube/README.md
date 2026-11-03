@@ -24,21 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2026.5.3-developer`, `2026.5-developer`, `developer`, `2026.5-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/690e05e3cd23341292765fb1d7c2bb8fdbc9e075/commercial-editions/developer/Dockerfile)
+-	[`2026.5.4-developer`, `2026.5-developer`, `developer`, `2026.5-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/960100fd6f575e69cf07c9eb99c46ee7b5397115/commercial-editions/developer/Dockerfile)
 
--	[`2026.5.3-enterprise`, `2026.5-enterprise`, `enterprise`, `2026.5-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/690e05e3cd23341292765fb1d7c2bb8fdbc9e075/commercial-editions/enterprise/Dockerfile)
+-	[`2026.5.4-enterprise`, `2026.5-enterprise`, `enterprise`, `2026.5-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/960100fd6f575e69cf07c9eb99c46ee7b5397115/commercial-editions/enterprise/Dockerfile)
 
--	[`2026.5.3-datacenter-app`, `2026.5-datacenter-app`, `datacenter-app`, `2026.5-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/690e05e3cd23341292765fb1d7c2bb8fdbc9e075/commercial-editions/datacenter/app/Dockerfile)
+-	[`2026.5.4-datacenter-app`, `2026.5-datacenter-app`, `datacenter-app`, `2026.5-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/960100fd6f575e69cf07c9eb99c46ee7b5397115/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2026.5.3-datacenter-search`, `2026.5-datacenter-search`, `datacenter-search`, `2026.5-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/690e05e3cd23341292765fb1d7c2bb8fdbc9e075/commercial-editions/datacenter/search/Dockerfile)
+-	[`2026.5.4-datacenter-search`, `2026.5-datacenter-search`, `datacenter-search`, `2026.5-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/960100fd6f575e69cf07c9eb99c46ee7b5397115/commercial-editions/datacenter/search/Dockerfile)
 
--	[`2026.1.7-developer`, `2026.1-developer`, `2026-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/afc92f5fa424774c468c7dc87ad9ad33e9a8833d/commercial-editions/developer/Dockerfile)
+-	[`2026.1.8-developer`, `2026.1-developer`, `2026-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/15362dc5fbaf558f48094730ec75d2418310547d/commercial-editions/developer/Dockerfile)
 
--	[`2026.1.7-enterprise`, `2026.1-enterprise`, `2026-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/afc92f5fa424774c468c7dc87ad9ad33e9a8833d/commercial-editions/enterprise/Dockerfile)
+-	[`2026.1.8-enterprise`, `2026.1-enterprise`, `2026-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/15362dc5fbaf558f48094730ec75d2418310547d/commercial-editions/enterprise/Dockerfile)
 
--	[`2026.1.7-datacenter-app`, `2026.1-datacenter-app`, `2026-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/afc92f5fa424774c468c7dc87ad9ad33e9a8833d/commercial-editions/datacenter/app/Dockerfile)
+-	[`2026.1.8-datacenter-app`, `2026.1-datacenter-app`, `2026-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/15362dc5fbaf558f48094730ec75d2418310547d/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2026.1.7-datacenter-search`, `2026.1-datacenter-search`, `2026-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/afc92f5fa424774c468c7dc87ad9ad33e9a8833d/commercial-editions/datacenter/search/Dockerfile)
+-	[`2026.1.8-datacenter-search`, `2026.1-datacenter-search`, `2026-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/15362dc5fbaf558f48094730ec75d2418310547d/commercial-editions/datacenter/search/Dockerfile)
 
 -	[`2025.4.10-developer`, `2025.4-developer`, `2025.4-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/e034ca9d0289fc546f8a23a154faa4ccfb5e2871/commercial-editions/developer/Dockerfile)
 
