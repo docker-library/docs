@@ -40,15 +40,15 @@ WARNING:
 
 -	[`2026.1.8-datacenter-search`, `2026.1-datacenter-search`, `2026-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/15362dc5fbaf558f48094730ec75d2418310547d/commercial-editions/datacenter/search/Dockerfile)
 
--	[`2025.4.10-developer`, `2025.4-developer`, `2025.4-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/e034ca9d0289fc546f8a23a154faa4ccfb5e2871/commercial-editions/developer/Dockerfile)
+-	[`2025.4.11-developer`, `2025.4-developer`, `2025.4-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/32713325d07557a6f54346e4caa31a2222272077/commercial-editions/developer/Dockerfile)
 
--	[`2025.4.10-enterprise`, `2025.4-enterprise`, `2025.4-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/e034ca9d0289fc546f8a23a154faa4ccfb5e2871/commercial-editions/enterprise/Dockerfile)
+-	[`2025.4.11-enterprise`, `2025.4-enterprise`, `2025.4-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/32713325d07557a6f54346e4caa31a2222272077/commercial-editions/enterprise/Dockerfile)
 
--	[`2025.4.10-datacenter-app`, `2025.4-datacenter-app`, `2025.4-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/e034ca9d0289fc546f8a23a154faa4ccfb5e2871/commercial-editions/datacenter/app/Dockerfile)
+-	[`2025.4.11-datacenter-app`, `2025.4-datacenter-app`, `2025.4-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/32713325d07557a6f54346e4caa31a2222272077/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2025.4.10-datacenter-search`, `2025.4-datacenter-search`, `2025.4-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/e034ca9d0289fc546f8a23a154faa4ccfb5e2871/commercial-editions/datacenter/search/Dockerfile)
+-	[`2025.4.11-datacenter-search`, `2025.4-datacenter-search`, `2025.4-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/32713325d07557a6f54346e4caa31a2222272077/commercial-editions/datacenter/search/Dockerfile)
 
--	[`26.10.0.133078-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/a8c0d2b3d7131ef5da07f513c9bd5a716b0a9bbe/community-build/Dockerfile)
+-	[`26.11.0.134175-community`, `community`, `latest`](https://github.com/SonarSource/docker-sonarqube/blob/fa565e45fe6569f4a0326d2d6731e847ceae15c4/community-build/Dockerfile)
 
 # Quick reference (cont.)
 
