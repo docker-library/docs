@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `joomla` official image](https://hub.docker.com/_/joomla) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -54,11 +56,7 @@ WARNING:
 
 -	[`5.4.10-php8.3-fpm`, `5.4-php8.3-fpm`, `5-php8.3-fpm`](https://github.com/joomla-docker/docker-joomla/blob/4a92e529e4f9795a11ee8469370171f705d5c52a/5.4/php8.3/fpm/Dockerfile)
 
--	[`4.4.14`, `4.4`, `4`, `4.4.14-apache`, `4.4-apache`, `4-apache`, `4.4.14-php8.2`, `4.4-php8.2`, `4-php8.2`, `4.4.14-php8.2-apache`, `4.4-php8.2-apache`, `4-php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/c46c028c70bdd37a5526d72566cf6c52449b7fad/4.4/php8.2/apache/Dockerfile)
-
 -	[`4.4.14-php8.2-fpm-alpine`, `4.4-php8.2-fpm-alpine`, `4-php8.2-fpm-alpine`](https://github.com/joomla-docker/docker-joomla/blob/c46c028c70bdd37a5526d72566cf6c52449b7fad/4.4/php8.2/fpm-alpine/Dockerfile)
-
--	[`4.4.14-php8.2-fpm`, `4.4-php8.2-fpm`, `4-php8.2-fpm`](https://github.com/joomla-docker/docker-joomla/blob/c46c028c70bdd37a5526d72566cf6c52449b7fad/4.4/php8.2/fpm/Dockerfile)
 
 -	[`4.4.13`, `4.4.13-apache`, `4.4.13-php8.2`, `4.4.13-php8.2-apache`](https://github.com/joomla-docker/docker-joomla/blob/2b32f0a2ba4ad99f15c0acd26b2f862c038ff3f5/4.4/php8.2/apache/Dockerfile)
 
@@ -96,7 +94,7 @@ Joomla is a free and open-source content management system (CMS) for publishing 
 # How to use this image
 
 ```console
-$ docker run --name some-joomla --network some-network -d joomla
+$ docker run --name some-joomla --network some-network -d s390x/joomla
 ```
 
 The following environment variables are honored for configuring your Joomla instance:
@@ -125,7 +123,7 @@ The following environment variables are also honored for configuring auto deploy
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-joomla --network some-network -p 8080:80 -d joomla
+$ docker run --name some-joomla --network some-network -p 8080:80 -d s390x/joomla
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -134,7 +132,7 @@ If you'd like to use an external database instead of a MySQL container, specify 
 
 ```console
 $ docker run --name some-joomla --network some-network -e JOOMLA_DB_HOST=10.1.2.3:3306 \
-    -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d joomla
+    -e JOOMLA_DB_USER=... -e JOOMLA_DB_PASSWORD=... -d s390x/joomla
 ```
 
 ## ... via [`docker compose`](https://github.com/docker/compose)
@@ -199,13 +197,13 @@ The following Docker Hub features can help with the task of keeping your depende
 
 # Image Variants
 
-The `joomla` images come in many flavors, each designed for a specific use case.
+The `s390x/joomla` images come in many flavors, each designed for a specific use case.
 
-## `joomla:<version>`
+## `s390x/joomla:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `joomla:<version>-alpine`
+## `s390x/joomla:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
