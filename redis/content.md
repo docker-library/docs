@@ -77,3 +77,13 @@ $ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis %%IMAGE%% redi
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
 
 The mapped directory should be writable, as depending on the configuration and mode of operation, Redis may need to create additional configuration files or rewrite existing ones.
+
+### CONFIG REWRITE behavior
+
+Starting with image version 8.12-rc2, pass `--config-rewrite-source-aware yes` directly to `redis-server` to prevent `CONFIG REWRITE` from copying command-line settings and unchanged settings from included files into the main `redis.conf`. In particular, this prevents [duplicate module loading on restart](https://github.com/redis/redis/issues/14178).
+
+```console
+$ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis %%IMAGE%%:8.12-rc2 redis-server /usr/local/etc/redis/redis.conf --config-rewrite-source-aware yes
+```
+
+Redis’s [`config-rewrite-source-aware`](https://github.com/redis/redis/pull/16009) option is experimental. This behavior is expected to become the default in the next major release.
