@@ -24,6 +24,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
+-	[`8.12-rc2`, `8.12-rc2-trixie`](https://github.com/redis/docker-library-redis/blob/958dbeaca4436773438aa2c72f3e89cb8c5bece5/debian/Dockerfile)
+
+-	[`8.12-rc2-alpine`, `8.12-rc2-alpine3.23`](https://github.com/redis/docker-library-redis/blob/958dbeaca4436773438aa2c72f3e89cb8c5bece5/alpine/Dockerfile)
+
 -	[`8.10.3`, `8.10`, `8`, `8.10.3-trixie`, `8.10-trixie`, `8-trixie`, `latest`, `trixie`](https://github.com/redis/docker-library-redis/blob/8fd1238a62e5a6090d826e6d5fc53de6ce5f8a82/debian/Dockerfile)
 
 -	[`8.10.3-alpine`, `8.10-alpine`, `8-alpine`, `8.10.3-alpine3.23`, `8.10-alpine3.23`, `8-alpine3.23`, `alpine`, `alpine3.23`](https://github.com/redis/docker-library-redis/blob/8fd1238a62e5a6090d826e6d5fc53de6ce5f8a82/alpine/Dockerfile)
@@ -44,17 +48,17 @@ WARNING:
 
 -	[`8.2.11-alpine`, `8.2-alpine`, `8.2.11-alpine3.22`, `8.2-alpine3.22`](https://github.com/redis/docker-library-redis/blob/ffe34ace97d06343e05e3f39eb8a43f829dded24/alpine/Dockerfile)
 
--	[`7.4.12`, `7.4`, `7`, `7.4.12-bookworm`, `7.4-bookworm`, `7-bookworm`](https://github.com/redis/docker-library-redis/blob/786872f8c248c1f0990f93244cbcb3949329016d/debian/Dockerfile)
+-	[`7.4.12`, `7.4`, `7`, `7.4.12-bookworm`, `7.4-bookworm`, `7-bookworm`](https://github.com/redis/docker-library-redis/blob/346d38e447b5f2266de15081b60f952448c93594/debian/Dockerfile)
 
--	[`7.4.12-alpine`, `7.4-alpine`, `7-alpine`, `7.4.12-alpine3.21`, `7.4-alpine3.21`, `7-alpine3.21`](https://github.com/redis/docker-library-redis/blob/786872f8c248c1f0990f93244cbcb3949329016d/alpine/Dockerfile)
+-	[`7.4.12-alpine`, `7.4-alpine`, `7-alpine`, `7.4.12-alpine3.22`, `7.4-alpine3.22`, `7-alpine3.22`](https://github.com/redis/docker-library-redis/blob/346d38e447b5f2266de15081b60f952448c93594/alpine/Dockerfile)
 
--	[`7.2.17`, `7.2`, `7.2.17-bookworm`, `7.2-bookworm`](https://github.com/redis/docker-library-redis/blob/41bd5f7bdf101142b029865bf727a97810ca8e02/debian/Dockerfile)
+-	[`7.2.17`, `7.2`, `7.2.17-bookworm`, `7.2-bookworm`](https://github.com/redis/docker-library-redis/blob/f40d1b25dbd4ab13868e764644d5e7298b3440c8/debian/Dockerfile)
 
--	[`7.2.17-alpine`, `7.2-alpine`, `7.2.17-alpine3.21`, `7.2-alpine3.21`](https://github.com/redis/docker-library-redis/blob/41bd5f7bdf101142b029865bf727a97810ca8e02/alpine/Dockerfile)
+-	[`7.2.17-alpine`, `7.2-alpine`, `7.2.17-alpine3.22`, `7.2-alpine3.22`](https://github.com/redis/docker-library-redis/blob/f40d1b25dbd4ab13868e764644d5e7298b3440c8/alpine/Dockerfile)
 
--	[`6.2.24`, `6.2`, `6`, `6.2.24-bookworm`, `6.2-bookworm`, `6-bookworm`](https://github.com/redis/docker-library-redis/blob/d452a755b3fa51c0a8d26e254f29a25bf2272e3c/debian/Dockerfile)
+-	[`6.2.24`, `6.2`, `6`, `6.2.24-bookworm`, `6.2-bookworm`, `6-bookworm`](https://github.com/redis/docker-library-redis/blob/d7e6fa4aed5f32798da5fbb59fc5028bdeaec137/debian/Dockerfile)
 
--	[`6.2.24-alpine`, `6.2-alpine`, `6-alpine`, `6.2.24-alpine3.21`, `6.2-alpine3.21`, `6-alpine3.21`](https://github.com/redis/docker-library-redis/blob/d452a755b3fa51c0a8d26e254f29a25bf2272e3c/alpine/Dockerfile)
+-	[`6.2.24-alpine`, `6.2-alpine`, `6-alpine`, `6.2.24-alpine3.22`, `6.2-alpine3.22`, `6-alpine3.22`](https://github.com/redis/docker-library-redis/blob/d7e6fa4aed5f32798da5fbb59fc5028bdeaec137/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -154,6 +158,16 @@ $ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis redis redis-se
 Where `/myredis/conf/` is a local directory containing your `redis.conf` file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
 
 The mapped directory should be writable, as depending on the configuration and mode of operation, Redis may need to create additional configuration files or rewrite existing ones.
+
+### CONFIG REWRITE behavior
+
+Starting with image version 8.12-rc2, pass `--config-rewrite-source-aware yes` directly to `redis-server` to prevent `CONFIG REWRITE` from copying command-line settings and unchanged settings from included files into the main `redis.conf`. In particular, this prevents [duplicate module loading on restart](https://github.com/redis/redis/issues/14178).
+
+```console
+$ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis redis:8.12-rc2 redis-server /usr/local/etc/redis/redis.conf --config-rewrite-source-aware yes
+```
+
+Redis’s [`config-rewrite-source-aware`](https://github.com/redis/redis/pull/16009) option is experimental. This behavior is expected to become the default in the next major release.
 
 # Image Variants
 
