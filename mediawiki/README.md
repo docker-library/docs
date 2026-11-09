@@ -150,6 +150,8 @@ volumes:
 
 Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
+When specifying the database host as part of the wiki setup process, make sure to use `database://localhost`.
+
 ## Adding additional libraries / extensions
 
 This image does not provide any additional PHP extensions or other libraries, even if they are required by popular plugins. There are an infinite number of possible plugins, and they potentially require any extension PHP supports. Including every PHP extension that exists would dramatically increase the image size.
