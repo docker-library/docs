@@ -93,6 +93,9 @@ RUN --mount=type=bind,from=ghcr.io/php/pie:bin,source=/pie,target=/usr/local/bin
 
 ### PECL extensions
 
+⚠️ Note: Installation of PEAR and thus also PECL with PHP is deprecated and thus subject to removal in a future PHP version; see also https://wiki.php.net/rfc/sunset_pecl.
+This option is unavailable from official images as of PHP 8.6; see also https://github.com/docker-library/php/pull/1654.
+
 Some extensions are not provided with the PHP source, but are instead available through [PECL](https://pecl.php.net/). To install a PECL extension, use `pecl install` to download and compile it, then use `docker-php-ext-enable` to enable it:
 
 ```dockerfile
