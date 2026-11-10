@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`apache`, `apache-trixie`, `10.0.12-apache`, `10.0.12-apache-trixie`, `10.0-apache`, `10.0-apache-trixie`, `10-apache`, `10-apache-trixie`, `latest`, `10.0.12`, `10.0`, `10`](https://github.com/espocrm/espocrm-docker/blob/1577961e358f3abba32010852898d0bb585ea181/latest/apache/Dockerfile)
+-	[`apache`, `apache-trixie`, `10.1.1-apache`, `10.1.1-apache-trixie`, `10.1-apache`, `10.1-apache-trixie`, `10-apache`, `10-apache-trixie`, `latest`, `10.1.1`, `10.1`, `10`](https://github.com/espocrm/espocrm-docker/blob/743fcfc0d6d58ac1e3e9813487c25626df4fa0e0/latest/apache/Dockerfile)
 
--	[`fpm`, `fpm-trixie`, `10.0.12-fpm`, `10.0.12-fpm-trixie`, `10.0-fpm`, `10.0-fpm-trixie`, `10-fpm`, `10-fpm-trixie`](https://github.com/espocrm/espocrm-docker/blob/1577961e358f3abba32010852898d0bb585ea181/latest/fpm/Dockerfile)
+-	[`fpm`, `fpm-trixie`, `10.1.1-fpm`, `10.1.1-fpm-trixie`, `10.1-fpm`, `10.1-fpm-trixie`, `10-fpm`, `10-fpm-trixie`](https://github.com/espocrm/espocrm-docker/blob/743fcfc0d6d58ac1e3e9813487c25626df4fa0e0/latest/fpm/Dockerfile)
 
--	[`fpm-alpine`, `fpm-alpine3.23`, `10.0.12-fpm-alpine`, `10.0.12-fpm-alpine3.23`, `10.0-fpm-alpine`, `10.0-fpm-alpine3.23`, `10-fpm-alpine`, `10-fpm-alpine3.23`](https://github.com/espocrm/espocrm-docker/blob/1577961e358f3abba32010852898d0bb585ea181/latest/fpm-alpine/Dockerfile)
+-	[`fpm-alpine`, `fpm-alpine3.23`, `10.1.1-fpm-alpine`, `10.1.1-fpm-alpine3.23`, `10.1-fpm-alpine`, `10.1-fpm-alpine3.23`, `10-fpm-alpine`, `10-fpm-alpine3.23`](https://github.com/espocrm/espocrm-docker/blob/743fcfc0d6d58ac1e3e9813487c25626df4fa0e0/latest/fpm-alpine/Dockerfile)
 
 # Quick reference (cont.)
 
