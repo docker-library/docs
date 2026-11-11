@@ -213,6 +213,8 @@ This variant is useful when final image size being as small as possible is your 
 
 To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
 
+`-alpine-slim` uses `jlink` to keep all Java modules and `javac`, while removing man pages, JNI headers, debug info, `jmods`, and the prebuilt CDS archive. Corretto 17 on x64 example: ~298 MB (alpine) vs. ~162 MB (alpine-slim), uncompressed. Use `-alpine` when you need JNI headers or `jmods`.
+
 # License
 
 Amazon Corretto is released under the same open source license as OpenJDK, which is licensed under the GNU Public License version 2 with the Class Path Exception ([GPLv2 with CPE](https://openjdk.java.net/legal/gplv2+ce.html)).
