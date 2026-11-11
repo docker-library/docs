@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.1.0-jre25`, `3.1-jre25`, `3.1.0`, `3.1`, `latest`](https://github.com/apache/storm-docker/blob/31a83426d69a1e3c5bfc0b77fc135da2ed3a79fd/3.1.0/Dockerfile)
+-	[`3.2.0-jre25`, `3.2-jre25`, `3.2.0`, `3.2`, `latest`](https://github.com/apache/storm-docker/blob/49e37a9ac677a2104d3ad0738631a3ef2102b5ac/3.2.0/Dockerfile)
 
--	[`3.1.0-lite-jre25`, `3.1-lite-jre25`, `3.1.0-lite`, `3.1-lite`](https://github.com/apache/storm-docker/blob/31a83426d69a1e3c5bfc0b77fc135da2ed3a79fd/3.1.0-lite/Dockerfile)
+-	[`3.2.0-lite-jre25`, `3.2-lite-jre25`, `3.2.0-lite`, `3.2-lite`](https://github.com/apache/storm-docker/blob/49e37a9ac677a2104d3ad0738631a3ef2102b5ac/3.2.0-lite/Dockerfile)
 
 # Quick reference (cont.)
 
