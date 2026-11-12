@@ -24,17 +24,17 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`27.0.0-alpha.0.0.0-alpine3.23`](https://github.com/nodejs/docker-node/blob/c4620c722cfd5e5b93d644d0825b9ce813639433/27/alpine3.23/Dockerfile)
+-	[`27.0.0-alpha.0.1.0-alpine3.23`](https://github.com/nodejs/docker-node/blob/f22b383ace896085d8599203f63f3e62e719c59e/27/alpine3.23/Dockerfile)
 
--	[`27.0.0-alpha.0.0.0-alpine3.24`](https://github.com/nodejs/docker-node/blob/c4620c722cfd5e5b93d644d0825b9ce813639433/27/alpine3.24/Dockerfile)
+-	[`27.0.0-alpha.0.1.0-alpine3.24`](https://github.com/nodejs/docker-node/blob/f22b383ace896085d8599203f63f3e62e719c59e/27/alpine3.24/Dockerfile)
 
--	[`27.0.0-alpha.0.0.0-bookworm`](https://github.com/nodejs/docker-node/blob/c4620c722cfd5e5b93d644d0825b9ce813639433/27/bookworm/Dockerfile)
+-	[`27.0.0-alpha.0.1.0-bookworm`](https://github.com/nodejs/docker-node/blob/f22b383ace896085d8599203f63f3e62e719c59e/27/bookworm/Dockerfile)
 
--	[`27.0.0-alpha.0.0.0-bookworm-slim`](https://github.com/nodejs/docker-node/blob/c4620c722cfd5e5b93d644d0825b9ce813639433/27/bookworm-slim/Dockerfile)
+-	[`27.0.0-alpha.0.1.0-bookworm-slim`](https://github.com/nodejs/docker-node/blob/f22b383ace896085d8599203f63f3e62e719c59e/27/bookworm-slim/Dockerfile)
 
--	[`27.0.0-alpha.0.0.0-trixie`](https://github.com/nodejs/docker-node/blob/c4620c722cfd5e5b93d644d0825b9ce813639433/27/trixie/Dockerfile)
+-	[`27.0.0-alpha.0.1.0-trixie`](https://github.com/nodejs/docker-node/blob/f22b383ace896085d8599203f63f3e62e719c59e/27/trixie/Dockerfile)
 
--	[`27.0.0-alpha.0.0.0-trixie-slim`](https://github.com/nodejs/docker-node/blob/c4620c722cfd5e5b93d644d0825b9ce813639433/27/trixie-slim/Dockerfile)
+-	[`27.0.0-alpha.0.1.0-trixie-slim`](https://github.com/nodejs/docker-node/blob/f22b383ace896085d8599203f63f3e62e719c59e/27/trixie-slim/Dockerfile)
 
 -	[`26-alpine3.23`, `26.13-alpine3.23`, `26.13.1-alpine3.23`, `alpine3.23`, `current-alpine3.23`, `lithium-alpine3.23`, `lts-alpine3.23`](https://github.com/nodejs/docker-node/blob/1274f3ee37d4d0e59d308ea25b83d9e21e4db862/26/alpine3.23/Dockerfile)
 
