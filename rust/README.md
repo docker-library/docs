@@ -24,21 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1-bookworm`, `1.99-bookworm`, `1.99.1-bookworm`, `bookworm`](https://github.com/rust-lang/docker-rust/blob/f6c59bee4a6e34a154c2122895ecd7833507f705/stable/bookworm/Dockerfile)
+-	[`1-bookworm`, `1.100-bookworm`, `1.100.0-bookworm`, `bookworm`](https://github.com/rust-lang/docker-rust/blob/3f4c9cd699d3671ee657c75b5e592f6eb0b93824/stable/bookworm/Dockerfile)
 
--	[`1-slim-bookworm`, `1.99-slim-bookworm`, `1.99.1-slim-bookworm`, `slim-bookworm`](https://github.com/rust-lang/docker-rust/blob/f6c59bee4a6e34a154c2122895ecd7833507f705/stable/bookworm/slim/Dockerfile)
+-	[`1-slim-bookworm`, `1.100-slim-bookworm`, `1.100.0-slim-bookworm`, `slim-bookworm`](https://github.com/rust-lang/docker-rust/blob/3f4c9cd699d3671ee657c75b5e592f6eb0b93824/stable/bookworm/slim/Dockerfile)
 
--	[`1-trixie`, `1.99-trixie`, `1.99.1-trixie`, `trixie`, `1`, `1.99`, `1.99.1`, `latest`](https://github.com/rust-lang/docker-rust/blob/f6c59bee4a6e34a154c2122895ecd7833507f705/stable/trixie/Dockerfile)
+-	[`1-trixie`, `1.100-trixie`, `1.100.0-trixie`, `trixie`, `1`, `1.100`, `1.100.0`, `latest`](https://github.com/rust-lang/docker-rust/blob/3f4c9cd699d3671ee657c75b5e592f6eb0b93824/stable/trixie/Dockerfile)
 
--	[`1-slim-trixie`, `1.99-slim-trixie`, `1.99.1-slim-trixie`, `slim-trixie`, `1-slim`, `1.99-slim`, `1.99.1-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/f6c59bee4a6e34a154c2122895ecd7833507f705/stable/trixie/slim/Dockerfile)
+-	[`1-slim-trixie`, `1.100-slim-trixie`, `1.100.0-slim-trixie`, `slim-trixie`, `1-slim`, `1.100-slim`, `1.100.0-slim`, `slim`](https://github.com/rust-lang/docker-rust/blob/3f4c9cd699d3671ee657c75b5e592f6eb0b93824/stable/trixie/slim/Dockerfile)
 
--	[`1-alpine3.21`, `1.99-alpine3.21`, `1.99.1-alpine3.21`, `alpine3.21`](https://github.com/rust-lang/docker-rust/blob/f6c59bee4a6e34a154c2122895ecd7833507f705/stable/alpine3.21/Dockerfile)
+-	[`1-alpine3.21`, `1.100-alpine3.21`, `1.100.0-alpine3.21`, `alpine3.21`](https://github.com/rust-lang/docker-rust/blob/3f4c9cd699d3671ee657c75b5e592f6eb0b93824/stable/alpine3.21/Dockerfile)
 
--	[`1-alpine3.22`, `1.99-alpine3.22`, `1.99.1-alpine3.22`, `alpine3.22`](https://github.com/rust-lang/docker-rust/blob/f6c59bee4a6e34a154c2122895ecd7833507f705/stable/alpine3.22/Dockerfile)
+-	[`1-alpine3.22`, `1.100-alpine3.22`, `1.100.0-alpine3.22`, `alpine3.22`](https://github.com/rust-lang/docker-rust/blob/3f4c9cd699d3671ee657c75b5e592f6eb0b93824/stable/alpine3.22/Dockerfile)
 
--	[`1-alpine3.23`, `1.99-alpine3.23`, `1.99.1-alpine3.23`, `alpine3.23`](https://github.com/rust-lang/docker-rust/blob/f6c59bee4a6e34a154c2122895ecd7833507f705/stable/alpine3.23/Dockerfile)
+-	[`1-alpine3.23`, `1.100-alpine3.23`, `1.100.0-alpine3.23`, `alpine3.23`](https://github.com/rust-lang/docker-rust/blob/3f4c9cd699d3671ee657c75b5e592f6eb0b93824/stable/alpine3.23/Dockerfile)
 
--	[`1-alpine3.24`, `1.99-alpine3.24`, `1.99.1-alpine3.24`, `alpine3.24`, `1-alpine`, `1.99-alpine`, `1.99.1-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/f6c59bee4a6e34a154c2122895ecd7833507f705/stable/alpine3.24/Dockerfile)
+-	[`1-alpine3.24`, `1.100-alpine3.24`, `1.100.0-alpine3.24`, `alpine3.24`, `1-alpine`, `1.100-alpine`, `1.100.0-alpine`, `alpine`](https://github.com/rust-lang/docker-rust/blob/3f4c9cd699d3671ee657c75b5e592f6eb0b93824/stable/alpine3.24/Dockerfile)
 
 # Quick reference (cont.)
 
