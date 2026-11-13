@@ -24,7 +24,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.7.2-2`, `9.7`, `9`, `ps-9.7.2-2`, `ps-9.7`, `ps-9`](https://github.com/percona/percona-docker/blob/62ed23682e21404033e3106c96a03a57cc134af5/percona-server-9.x/Dockerfile-dockerhub)
+-	[`9.7.2-3`, `9.7`, `9`, `ps-9.7.2-3`, `ps-9.7`, `ps-9`](https://github.com/percona/percona-docker/blob/91391598878bb16a47a2655147cb85878858ca36/percona-server-9.x/Dockerfile-dockerhub)
 
 -	[`8.0.46-37-centos`, `8.0-centos`, `8-centos`, `8.0.46-37`, `8.0`, `8`, `ps-8.0.46-37`, `ps-8.0`, `ps-8`](https://github.com/percona/percona-docker/blob/be7be52aa71cf58828246b526bd3271379dbe42f/percona-server-8.0/Dockerfile-dockerhub)
 
