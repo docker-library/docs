@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `matomo` official image](https://hub.docker.com/_/matomo) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -66,7 +68,7 @@ WARNING:
 You can run the Matomo container and service like so:
 
 ```bash
-docker run -d --link some-mysql:db matomo
+docker run -d --link some-mysql:db ppc64le/matomo
 ```
 
 This assumes you've already launched a suitable MySQL or MariaDB database container.
@@ -76,7 +78,7 @@ This assumes you've already launched a suitable MySQL or MariaDB database contai
 Use a Docker volume to keep persistent data:
 
 ```bash
-docker run -d -p 8080:80 --link some-mysql:db -v matomo:/var/www/html matomo
+docker run -d -p 8080:80 --link some-mysql:db -v matomo:/var/www/html ppc64le/matomo
 ```
 
 ## Matomo Installation
@@ -127,13 +129,13 @@ We'd love to hear your feedback and suggestions in the issue tracker: [[https://
 
 # Image Variants
 
-The `matomo` images come in many flavors, each designed for a specific use case.
+The `ppc64le/matomo` images come in many flavors, each designed for a specific use case.
 
-## `matomo:<version>`
+## `ppc64le/matomo:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `matomo:<version>-alpine`
+## `ppc64le/matomo:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
