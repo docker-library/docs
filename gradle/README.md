@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm64v8` builds of [the `gradle` official image](https://hub.docker.com/_/gradle) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -64,8 +66,6 @@ WARNING:
 
 -	[`9.9.1-jdk17-jammy`, `9.9-jdk17-jammy`, `9-jdk17-jammy`, `jdk17-jammy`](https://github.com/gradle/docker-gradle/blob/a382861c50c5550526a595ca5edfbb594a63e0be/jdk17-jammy/Dockerfile)
 
--	[`9.9.1-jdk17-alpine`, `9.9-jdk17-alpine`, `9-jdk17-alpine`, `jdk17-alpine`](https://github.com/gradle/docker-gradle/blob/a382861c50c5550526a595ca5edfbb594a63e0be/jdk17-alpine/Dockerfile)
-
 -	[`9.9.1-jdk17-corretto`, `9.9-jdk17-corretto`, `9-jdk17-corretto`, `jdk17-corretto`, `9.9.1-jdk17-corretto-al2023`, `9.9-jdk17-corretto-al2023`, `9-jdk17-corretto-al2023`, `jdk17-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/a382861c50c5550526a595ca5edfbb594a63e0be/jdk17-corretto/Dockerfile)
 
 -	[`9.9.1-jdk17-ubi`, `9.9-jdk17-ubi`, `9-jdk17-ubi`, `jdk17-ubi`, `9.9.1-jdk17-ubi10`, `9.9-jdk17-ubi10`, `9-jdk17-ubi10`, `jdk17-ubi10`](https://github.com/gradle/docker-gradle/blob/a382861c50c5550526a595ca5edfbb594a63e0be/jdk17-ubi10/Dockerfile)
@@ -110,8 +110,6 @@ WARNING:
 
 -	[`8.14.7-jdk17-jammy`, `8.14-jdk17-jammy`, `8-jdk17-jammy`](https://github.com/gradle/docker-gradle/blob/9b40a70500f9231327403fec42aad883b19a8c85/jdk17-jammy/Dockerfile)
 
--	[`8.14.7-jdk17-alpine`, `8.14-jdk17-alpine`, `8-jdk17-alpine`](https://github.com/gradle/docker-gradle/blob/9b40a70500f9231327403fec42aad883b19a8c85/jdk17-alpine/Dockerfile)
-
 -	[`8.14.7-jdk17-corretto`, `8.14-jdk17-corretto`, `8-jdk17-corretto`, `8.14.7-jdk17-corretto-al2023`, `8.14-jdk17-corretto-al2023`, `8-jdk17-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/9b40a70500f9231327403fec42aad883b19a8c85/jdk17-corretto/Dockerfile)
 
 -	[`8.14.7-jdk17-ubi`, `8.14-jdk17-ubi`, `8-jdk17-ubi`, `8.14.7-jdk17-ubi9`, `8.14-jdk17-ubi9`, `8-jdk17-ubi9`](https://github.com/gradle/docker-gradle/blob/9b40a70500f9231327403fec42aad883b19a8c85/jdk17-ubi9/Dockerfile)
@@ -121,8 +119,6 @@ WARNING:
 -	[`8.14.7-jdk17-graal-jammy`, `8.14-jdk17-graal-jammy`, `8-jdk17-graal-jammy`](https://github.com/gradle/docker-gradle/blob/9b40a70500f9231327403fec42aad883b19a8c85/jdk17-jammy-graal/Dockerfile)
 
 -	[`8.14.7-jdk11`, `8.14-jdk11`, `8-jdk11`, `jdk11`, `8.14.7-jdk11-jammy`, `8.14-jdk11-jammy`, `8-jdk11-jammy`, `jdk11-jammy`](https://github.com/gradle/docker-gradle/blob/9b40a70500f9231327403fec42aad883b19a8c85/jdk11-jammy/Dockerfile)
-
--	[`8.14.7-jdk11-alpine`, `8.14-jdk11-alpine`, `8-jdk11-alpine`, `jdk11-alpine`](https://github.com/gradle/docker-gradle/blob/9b40a70500f9231327403fec42aad883b19a8c85/jdk11-alpine/Dockerfile)
 
 -	[`8.14.7-jdk11-corretto`, `8.14-jdk11-corretto`, `8-jdk11-corretto`, `jdk11-corretto`, `8.14.7-jdk11-corretto-al2023`, `8.14-jdk11-corretto-al2023`, `8-jdk11-corretto-al2023`, `jdk11-corretto-al2023`](https://github.com/gradle/docker-gradle/blob/9b40a70500f9231327403fec42aad883b19a8c85/jdk11-corretto/Dockerfile)
 
@@ -169,22 +165,22 @@ From your project directory:
 docker run --rm -u gradle \
   -v "$PWD":/home/gradle/project \
   -w /home/gradle/project \
-  gradle gradle <task>
+  arm64v8/gradle gradle <task>
 ```
 
 Replace `<task>` with your desired Gradle task, e.g., `build`.
 
 # Image Variants
 
-The `gradle` images come in many flavors, each designed for a specific use case.
+The `arm64v8/gradle` images come in many flavors, each designed for a specific use case.
 
-## `gradle:<version>`
+## `arm64v8/gradle:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
 Some of these tags may have names like jammy, noble, or resolute in them. These are the suite code names for releases of [Ubuntu](https://wiki.ubuntu.com/Releases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Ubuntu.
 
-## `gradle:<version>-alpine`
+## `arm64v8/gradle:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](https://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
