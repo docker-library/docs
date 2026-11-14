@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `amazonlinux` official image](https://hub.docker.com/_/amazonlinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # **DEPRECATION NOTICE**
 
 The `1`, `2018.03`, and `2018.03.0.20231218.0` tags of this image are EOL ([December 31, 2023](https://aws.amazon.com/amazon-linux-ami/) / [docker-library/official-images#22075](https://github.com/docker-library/official-images/pull/22075), although the last meaningful update was December 18, 2023). Please migrate to `amazonlinux:2023`. See [the AL2023 migration guide](https://docs.aws.amazon.com/linux/al2023/ug/what-is-amazon-linux.html) for details.
@@ -28,11 +30,7 @@ The `1`, `2018.03`, and `2018.03.0.20231218.0` tags of this image are EOL ([Dece
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2023`, `latest`, `2023.12.20261102.0`](https://github.com/amazonlinux/container-images/blob/5f5ad757c2e668573a3ba2804841bdc8afc6eb19/Dockerfile)
-
--	[`2`, `2.0.20261102.0`](https://github.com/amazonlinux/container-images/blob/f14bf89f502d0a551b4da6d1bac54f711aa22d83/Dockerfile)
-
--	[`2027`, `2027.0.20261027.0`](https://github.com/amazonlinux/container-images/blob/adea22863b2d22b0f7c4a2445ea783a54a711788/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v7` ARCHITECTURE
 
 # Quick reference (cont.)
 
