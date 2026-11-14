@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `dart` official image](https://hub.docker.com/_/dart) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,9 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.14.0-sdk`, `3.14-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.14.0`, `3.14`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/e8fb8445bb2682127292a486f25a45a21b0d0f35/stable/trixie/Dockerfile)
-
--	[`3.15.0-118.1.beta-sdk`, `beta-sdk`, `3.15.0-118.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/e8fb8445bb2682127292a486f25a45a21b0d0f35/beta/trixie/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
 
 # Quick reference (cont.)
 
