@@ -14,10 +14,6 @@ WARNING:
 
 -->
 
-# IMPORTANT NOTE
-
-The Docker team curates the Official Images program, and there are currently some technical constraints preventing Rocky Linux from publishing updates here. For the most up-to-date container images, please refer to the [Rocky Linux Docker Hub repository](https://hub.docker.com/r/rockylinux/rockylinux) for now.
-
 # Quick reference
 
 -	**Maintained by**:  
@@ -28,13 +24,17 @@ The Docker team curates the Official Images program, and there are currently som
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.3.20231119`, `9.3`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/53416a9aaea6ac6ded18c2047d51e26983160faf/Dockerfile)
+-	[`10.3.20261112`, `10.3`, `10`, `latest`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/e97a0074c037152e4950ac634fdd224d621f582c/index.json)
 
--	[`9.3.20231119-minimal`, `9.3-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/e784104b999a1ff6b66cb0aeee0408fb030c840b/Dockerfile)
+-	[`10.3.20261112-minimal`, `10.3-minimal`, `10-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/14e1052600daaf146ad8036405fdedf2384dc5e2/index.json)
 
--	[`8.9.20231119`, `8.9`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/2085c6419637bf970a532888141569c5865ae61f/Dockerfile)
+-	[`9.9.20261112`, `9.9`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/411d43c7f31cda939bedd8de3ef2bcc1110bb8f9/index.json)
 
--	[`8.9.20231119-minimal`, `8.9-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/6d81e6b46e052158df83357c569c8a6773a81e78/Dockerfile)
+-	[`9.9.20261112-minimal`, `9.9-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/7c4576898bc0addd63f98e887d5899df984ceb17/index.json)
+
+-	[`8.10.20240528`, `8.10`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/a344458c7c810d02f7a1ee370ed065160caa9ed7/Dockerfile)
+
+-	[`8.10.20240528-minimal`, `8.10-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/27400c231e2095ac005f2e14b86eeb79dd147912/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -42,7 +42,7 @@ The Docker team curates the Official Images program, and there are currently som
 	[https://bugs.rockylinux.org](https://bugs.rockylinux.org) or [GitHub](https://github.com/rocky-linux/sig-cloud-instance-images/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/rockylinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rockylinux/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rockylinux/), [`s390x`](https://hub.docker.com/r/s390x/rockylinux/)
+	[`amd64`](https://hub.docker.com/r/amd64/rockylinux/), [`arm64v8`](https://hub.docker.com/r/arm64v8/rockylinux/), [`ppc64le`](https://hub.docker.com/r/ppc64le/rockylinux/), [`riscv64`](https://hub.docker.com/r/riscv64/rockylinux/), [`s390x`](https://hub.docker.com/r/s390x/rockylinux/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/rockylinux/` directory](https://github.com/docker-library/repo-info/blob/master/repos/rockylinux) ([history](https://github.com/docker-library/repo-info/commits/master/repos/rockylinux))  
@@ -68,7 +68,9 @@ Thank you for using Rocky Linux! We appreciate your feedback and welcome you to 
 
 # Rocky Linux image documentation
 
-The `rockylinux:latest` tag is intentionally missing. Please choose a major version (currently 8 or 9) tag, or a more specific tag to ensure you are pulling the version of Rocky Linux you want: e.g. `rockylinux:8` or `rockylinux:9`
+`rockylinux:latest` tracks the newest major version, currently 10. Pin a major version tag to control when you move between them: e.g. `rockylinux:8`, `rockylinux:9` or `rockylinux:10`.
+
+Rocky Linux 10 on x86_64 requires a CPU supporting the **x86-64-v3** microarchitecture level, which excludes most hardware released before 2015. Use `rockylinux:9` on older CPUs.
 
 ## Minimal variant
 
@@ -76,17 +78,17 @@ In addition to the Base container, a Minimal container with microdnf and a strip
 
 ## Rolling builds
 
-Rocky Linux offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull rockylinux:8`.
+Rocky Linux offers regularly updated images for all active releases. These images are rebuilt alongside point releases and as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull rockylinux:8`.
 
 ## Minor tags
 
 Additionally, images with minor version tags that correspond to install media are also offered. **These images DO NOT receive updates** as they are intended to match installation iso contents. If you choose to use these images it is highly recommended that you include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise address any potential security concerns. To use these images, please specify the minor version tag:
 
-For example: `docker pull rockylinux:8.4`
+For example: `docker pull rockylinux:9.9`
 
 # Package documentation
 
-By default, the Rocky Linux containers are built using yum's `nodocs` option, which helps reduce the size of the image. If you install a package and discover files missing, please comment out the line `tsflags=nodocs` in `/etc/yum.conf` and reinstall your package.
+By default, the Rocky Linux containers are built with the `nodocs` option, which helps reduce the size of the image. If you install a package and discover files missing, please comment out the line `tsflags=nodocs` in `/etc/dnf/dnf.conf` and reinstall your package.
 
 # License
 
