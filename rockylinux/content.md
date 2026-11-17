@@ -11,7 +11,9 @@ Thank you for using Rocky Linux! We appreciate your feedback and welcome you to 
 
 # Rocky Linux image documentation
 
-The `%%IMAGE%%:latest` tag is intentionally missing. Please choose a major version (currently 8 or 9) tag, or a more specific tag to ensure you are pulling the version of Rocky Linux you want: e.g. `%%IMAGE%%:8` or `%%IMAGE%%:9`
+`%%IMAGE%%:latest` tracks the newest major version, currently 10. Pin a major version tag to control when you move between them: e.g. `%%IMAGE%%:8`, `%%IMAGE%%:9` or `%%IMAGE%%:10`.
+
+Rocky Linux 10 on x86_64 requires a CPU supporting the **x86-64-v3** microarchitecture level, which excludes most hardware released before 2015. Use `%%IMAGE%%:9` on older CPUs.
 
 ## Minimal variant
 
@@ -19,14 +21,14 @@ In addition to the Base container, a Minimal container with microdnf and a strip
 
 ## Rolling builds
 
-Rocky Linux offers regularly updated images for all active releases. These images will be updated monthly or as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull %%IMAGE%%:8`.
+Rocky Linux offers regularly updated images for all active releases. These images are rebuilt alongside point releases and as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull %%IMAGE%%:8`.
 
 ## Minor tags
 
 Additionally, images with minor version tags that correspond to install media are also offered. **These images DO NOT receive updates** as they are intended to match installation iso contents. If you choose to use these images it is highly recommended that you include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise address any potential security concerns. To use these images, please specify the minor version tag:
 
-For example: `docker pull %%IMAGE%%:8.4`
+For example: `docker pull %%IMAGE%%:9.9`
 
 # Package documentation
 
-By default, the Rocky Linux containers are built using yum's `nodocs` option, which helps reduce the size of the image. If you install a package and discover files missing, please comment out the line `tsflags=nodocs` in `/etc/yum.conf` and reinstall your package.
+By default, the Rocky Linux containers are built with the `nodocs` option, which helps reduce the size of the image. If you install a package and discover files missing, please comment out the line `tsflags=nodocs` in `/etc/dnf/dnf.conf` and reinstall your package.
