@@ -24,11 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.2-alpine`, `2.1-alpine`, `alpine`, `2`, `latest`](https://github.com/eclipse-mosquitto/mosquitto/blob/5b74cce8a4fe2a73b57df6c703bfde2cfd535d60/docker/2.1-alpine/Dockerfile)
+-	[`2.1.4-alpine`, `2.1-alpine`, `alpine`, `2`, `latest`](https://github.com/eclipse-mosquitto/mosquitto/blob/32079a6019fcd80e3fb9ba99efaf03a12787a0f5/docker/2.1-alpine/Dockerfile)
 
--	[`2.0.22`, `2.0.22-openssl`, `2.0`, `2.0-openssl`, `2-openssl`, `openssl`](https://github.com/eclipse-mosquitto/mosquitto/blob/5b74cce8a4fe2a73b57df6c703bfde2cfd535d60/docker/2.0-openssl/Dockerfile)
-
--	[`1.6.15-openssl`, `1.6-openssl`](https://github.com/eclipse-mosquitto/mosquitto/blob/5b74cce8a4fe2a73b57df6c703bfde2cfd535d60/docker/1.6-openssl/Dockerfile)
+-	[`2.0.23`, `2.0.23-openssl`, `2.0`, `2.0-openssl`, `2-openssl`, `openssl`](https://github.com/eclipse-mosquitto/mosquitto/blob/32079a6019fcd80e3fb9ba99efaf03a12787a0f5/docker/2.0-openssl/Dockerfile)
 
 # Quick reference (cont.)
 
