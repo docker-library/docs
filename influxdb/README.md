@@ -68,14 +68,6 @@ WARNING:
 
 -	[`2-alpine`, `2.9-alpine`, `2.9.1-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/dbb93ea6275b192cfd5c760f92d46b01af56f465/influxdb/2.9/alpine/Dockerfile)
 
--	[`3.9-core`, `3.9.13-core`](https://github.com/influxdata/influxdata-docker/blob/dbb93ea6275b192cfd5c760f92d46b01af56f465/influxdb/3.9-core/Dockerfile)
-
--	[`3.9-enterprise`, `3.9.13-enterprise`](https://github.com/influxdata/influxdata-docker/blob/dbb93ea6275b192cfd5c760f92d46b01af56f465/influxdb/3.9-enterprise/Dockerfile)
-
--	[`3.10-core`, `3.10.6-core`](https://github.com/influxdata/influxdata-docker/blob/dbb93ea6275b192cfd5c760f92d46b01af56f465/influxdb/3.10-core/Dockerfile)
-
--	[`3.10-enterprise`, `3.10.6-enterprise`](https://github.com/influxdata/influxdata-docker/blob/dbb93ea6275b192cfd5c760f92d46b01af56f465/influxdb/3.10-enterprise/Dockerfile)
-
 -	[`3.11-core`, `3.11.8-core`](https://github.com/influxdata/influxdata-docker/blob/dbb93ea6275b192cfd5c760f92d46b01af56f465/influxdb/3.11-core/Dockerfile)
 
 -	[`3.11-enterprise`, `3.11.9-enterprise`](https://github.com/influxdata/influxdata-docker/blob/dbb93ea6275b192cfd5c760f92d46b01af56f465/influxdb/3.11-enterprise/Dockerfile)
