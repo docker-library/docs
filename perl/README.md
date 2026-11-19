@@ -24,77 +24,77 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.44.0`, `5.44`, `5`, `latest`, `stable`, `5.44.0-trixie`, `5.44-trixie`, `5-trixie`, `trixie`, `stable-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.044.000-main-trixie/Dockerfile)
+-	[`5.44.0`, `5.44`, `5`, `latest`, `stable`, `5.44.0-trixie`, `5.44-trixie`, `5-trixie`, `trixie`, `stable-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.044.000-main-trixie/Dockerfile)
 
--	[`5.44.0-bookworm`, `5.44-bookworm`, `5-bookworm`, `bookworm`, `stable-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.044.000-main-bookworm/Dockerfile)
+-	[`5.44.0-bookworm`, `5.44-bookworm`, `5-bookworm`, `bookworm`, `stable-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.044.000-main-bookworm/Dockerfile)
 
--	[`5.44.0-slim`, `5.44-slim`, `5-slim`, `slim`, `stable-slim`, `5.44.0-slim-trixie`, `5.44-slim-trixie`, `5-slim-trixie`, `slim-trixie`, `stable-slim-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.044.000-slim-trixie/Dockerfile)
+-	[`5.44.0-slim`, `5.44-slim`, `5-slim`, `slim`, `stable-slim`, `5.44.0-slim-trixie`, `5.44-slim-trixie`, `5-slim-trixie`, `slim-trixie`, `stable-slim-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.044.000-slim-trixie/Dockerfile)
 
--	[`5.44.0-slim-bookworm`, `5.44-slim-bookworm`, `5-slim-bookworm`, `slim-bookworm`, `stable-slim-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.044.000-slim-bookworm/Dockerfile)
+-	[`5.44.0-slim-bookworm`, `5.44-slim-bookworm`, `5-slim-bookworm`, `slim-bookworm`, `stable-slim-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.044.000-slim-bookworm/Dockerfile)
 
--	[`5.44.0-threaded`, `5.44-threaded`, `5-threaded`, `threaded`, `stable-threaded`, `5.44.0-threaded-trixie`, `5.44-threaded-trixie`, `5-threaded-trixie`, `threaded-trixie`, `stable-threaded-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.044.000-main,threaded-trixie/Dockerfile)
+-	[`5.44.0-threaded`, `5.44-threaded`, `5-threaded`, `threaded`, `stable-threaded`, `5.44.0-threaded-trixie`, `5.44-threaded-trixie`, `5-threaded-trixie`, `threaded-trixie`, `stable-threaded-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.044.000-main,threaded-trixie/Dockerfile)
 
--	[`5.44.0-threaded-bookworm`, `5.44-threaded-bookworm`, `5-threaded-bookworm`, `threaded-bookworm`, `stable-threaded-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.044.000-main,threaded-bookworm/Dockerfile)
+-	[`5.44.0-threaded-bookworm`, `5.44-threaded-bookworm`, `5-threaded-bookworm`, `threaded-bookworm`, `stable-threaded-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.044.000-main,threaded-bookworm/Dockerfile)
 
--	[`5.44.0-slim-threaded`, `5.44-slim-threaded`, `5-slim-threaded`, `slim-threaded`, `stable-slim-threaded`, `5.44.0-slim-threaded-trixie`, `5.44-slim-threaded-trixie`, `5-slim-threaded-trixie`, `slim-threaded-trixie`, `stable-slim-threaded-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.044.000-slim,threaded-trixie/Dockerfile)
+-	[`5.44.0-slim-threaded`, `5.44-slim-threaded`, `5-slim-threaded`, `slim-threaded`, `stable-slim-threaded`, `5.44.0-slim-threaded-trixie`, `5.44-slim-threaded-trixie`, `5-slim-threaded-trixie`, `slim-threaded-trixie`, `stable-slim-threaded-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.044.000-slim,threaded-trixie/Dockerfile)
 
--	[`5.44.0-slim-threaded-bookworm`, `5.44-slim-threaded-bookworm`, `5-slim-threaded-bookworm`, `slim-threaded-bookworm`, `stable-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.044.000-slim,threaded-bookworm/Dockerfile)
+-	[`5.44.0-slim-threaded-bookworm`, `5.44-slim-threaded-bookworm`, `5-slim-threaded-bookworm`, `slim-threaded-bookworm`, `stable-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.044.000-slim,threaded-bookworm/Dockerfile)
 
--	[`5.42.3`, `5.42`, `5.42.3-trixie`, `5.42-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.042.003-main-trixie/Dockerfile)
+-	[`5.42.3`, `5.42`, `5.42.3-trixie`, `5.42-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.042.003-main-trixie/Dockerfile)
 
--	[`5.42.3-bookworm`, `5.42-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.042.003-main-bookworm/Dockerfile)
+-	[`5.42.3-bookworm`, `5.42-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.042.003-main-bookworm/Dockerfile)
 
--	[`5.42.3-slim`, `5.42-slim`, `5.42.3-slim-trixie`, `5.42-slim-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.042.003-slim-trixie/Dockerfile)
+-	[`5.42.3-slim`, `5.42-slim`, `5.42.3-slim-trixie`, `5.42-slim-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.042.003-slim-trixie/Dockerfile)
 
--	[`5.42.3-slim-bookworm`, `5.42-slim-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.042.003-slim-bookworm/Dockerfile)
+-	[`5.42.3-slim-bookworm`, `5.42-slim-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.042.003-slim-bookworm/Dockerfile)
 
--	[`5.42.3-threaded`, `5.42-threaded`, `5.42.3-threaded-trixie`, `5.42-threaded-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.042.003-main,threaded-trixie/Dockerfile)
+-	[`5.42.3-threaded`, `5.42-threaded`, `5.42.3-threaded-trixie`, `5.42-threaded-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.042.003-main,threaded-trixie/Dockerfile)
 
--	[`5.42.3-threaded-bookworm`, `5.42-threaded-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.042.003-main,threaded-bookworm/Dockerfile)
+-	[`5.42.3-threaded-bookworm`, `5.42-threaded-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.042.003-main,threaded-bookworm/Dockerfile)
 
--	[`5.42.3-slim-threaded`, `5.42-slim-threaded`, `5.42.3-slim-threaded-trixie`, `5.42-slim-threaded-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.042.003-slim,threaded-trixie/Dockerfile)
+-	[`5.42.3-slim-threaded`, `5.42-slim-threaded`, `5.42.3-slim-threaded-trixie`, `5.42-slim-threaded-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.042.003-slim,threaded-trixie/Dockerfile)
 
--	[`5.42.3-slim-threaded-bookworm`, `5.42-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.042.003-slim,threaded-bookworm/Dockerfile)
+-	[`5.42.3-slim-threaded-bookworm`, `5.42-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.042.003-slim,threaded-bookworm/Dockerfile)
 
--	[`5.40.5`, `5.40`, `5.40.5-trixie`, `5.40-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.040.005-main-trixie/Dockerfile)
+-	[`5.40.5`, `5.40`, `5.40.5-trixie`, `5.40-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.040.005-main-trixie/Dockerfile)
 
--	[`5.40.5-bookworm`, `5.40-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.040.005-main-bookworm/Dockerfile)
+-	[`5.40.5-bookworm`, `5.40-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.040.005-main-bookworm/Dockerfile)
 
--	[`5.40.5-slim`, `5.40-slim`, `5.40.5-slim-trixie`, `5.40-slim-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.040.005-slim-trixie/Dockerfile)
+-	[`5.40.5-slim`, `5.40-slim`, `5.40.5-slim-trixie`, `5.40-slim-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.040.005-slim-trixie/Dockerfile)
 
--	[`5.40.5-slim-bookworm`, `5.40-slim-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.040.005-slim-bookworm/Dockerfile)
+-	[`5.40.5-slim-bookworm`, `5.40-slim-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.040.005-slim-bookworm/Dockerfile)
 
--	[`5.40.5-threaded`, `5.40-threaded`, `5.40.5-threaded-trixie`, `5.40-threaded-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.040.005-main,threaded-trixie/Dockerfile)
+-	[`5.40.5-threaded`, `5.40-threaded`, `5.40.5-threaded-trixie`, `5.40-threaded-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.040.005-main,threaded-trixie/Dockerfile)
 
--	[`5.40.5-threaded-bookworm`, `5.40-threaded-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.040.005-main,threaded-bookworm/Dockerfile)
+-	[`5.40.5-threaded-bookworm`, `5.40-threaded-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.040.005-main,threaded-bookworm/Dockerfile)
 
--	[`5.40.5-slim-threaded`, `5.40-slim-threaded`, `5.40.5-slim-threaded-trixie`, `5.40-slim-threaded-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.040.005-slim,threaded-trixie/Dockerfile)
+-	[`5.40.5-slim-threaded`, `5.40-slim-threaded`, `5.40.5-slim-threaded-trixie`, `5.40-slim-threaded-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.040.005-slim,threaded-trixie/Dockerfile)
 
--	[`5.40.5-slim-threaded-bookworm`, `5.40-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.040.005-slim,threaded-bookworm/Dockerfile)
+-	[`5.40.5-slim-threaded-bookworm`, `5.40-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.040.005-slim,threaded-bookworm/Dockerfile)
 
--	[`5.45.4`, `5.45`, `devel`, `5.45.4-trixie`, `5.45-trixie`, `devel-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-main-trixie/Dockerfile)
+-	[`5.45.5`, `5.45`, `devel`, `5.45.5-trixie`, `5.45-trixie`, `devel-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-main-trixie/Dockerfile)
 
--	[`5.45.4-bookworm`, `5.45-bookworm`, `devel-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-main-bookworm/Dockerfile)
+-	[`5.45.5-bookworm`, `5.45-bookworm`, `devel-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-main-bookworm/Dockerfile)
 
--	[`5.45.4-forky`, `5.45-forky`, `devel-forky`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-main-forky/Dockerfile)
+-	[`5.45.5-forky`, `5.45-forky`, `devel-forky`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-main-forky/Dockerfile)
 
--	[`5.45.4-slim`, `5.45-slim`, `devel-slim`, `5.45.4-slim-trixie`, `5.45-slim-trixie`, `devel-slim-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-slim-trixie/Dockerfile)
+-	[`5.45.5-slim`, `5.45-slim`, `devel-slim`, `5.45.5-slim-trixie`, `5.45-slim-trixie`, `devel-slim-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-slim-trixie/Dockerfile)
 
--	[`5.45.4-slim-bookworm`, `5.45-slim-bookworm`, `devel-slim-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-slim-bookworm/Dockerfile)
+-	[`5.45.5-slim-bookworm`, `5.45-slim-bookworm`, `devel-slim-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-slim-bookworm/Dockerfile)
 
--	[`5.45.4-slim-forky`, `5.45-slim-forky`, `devel-slim-forky`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-slim-forky/Dockerfile)
+-	[`5.45.5-slim-forky`, `5.45-slim-forky`, `devel-slim-forky`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-slim-forky/Dockerfile)
 
--	[`5.45.4-threaded`, `5.45-threaded`, `devel-threaded`, `5.45.4-threaded-trixie`, `5.45-threaded-trixie`, `devel-threaded-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-main,threaded-trixie/Dockerfile)
+-	[`5.45.5-threaded`, `5.45-threaded`, `devel-threaded`, `5.45.5-threaded-trixie`, `5.45-threaded-trixie`, `devel-threaded-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-main,threaded-trixie/Dockerfile)
 
--	[`5.45.4-threaded-bookworm`, `5.45-threaded-bookworm`, `devel-threaded-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-main,threaded-bookworm/Dockerfile)
+-	[`5.45.5-threaded-bookworm`, `5.45-threaded-bookworm`, `devel-threaded-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-main,threaded-bookworm/Dockerfile)
 
--	[`5.45.4-threaded-forky`, `5.45-threaded-forky`, `devel-threaded-forky`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-main,threaded-forky/Dockerfile)
+-	[`5.45.5-threaded-forky`, `5.45-threaded-forky`, `devel-threaded-forky`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-main,threaded-forky/Dockerfile)
 
--	[`5.45.4-slim-threaded`, `5.45-slim-threaded`, `devel-slim-threaded`, `5.45.4-slim-threaded-trixie`, `5.45-slim-threaded-trixie`, `devel-slim-threaded-trixie`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-slim,threaded-trixie/Dockerfile)
+-	[`5.45.5-slim-threaded`, `5.45-slim-threaded`, `devel-slim-threaded`, `5.45.5-slim-threaded-trixie`, `5.45-slim-threaded-trixie`, `devel-slim-threaded-trixie`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-slim,threaded-trixie/Dockerfile)
 
--	[`5.45.4-slim-threaded-bookworm`, `5.45-slim-threaded-bookworm`, `devel-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-slim,threaded-bookworm/Dockerfile)
+-	[`5.45.5-slim-threaded-bookworm`, `5.45-slim-threaded-bookworm`, `devel-slim-threaded-bookworm`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-slim,threaded-bookworm/Dockerfile)
 
--	[`5.45.4-slim-threaded-forky`, `5.45-slim-threaded-forky`, `devel-slim-threaded-forky`](https://github.com/perl/docker-perl/blob/c70ec86540497d3b37c646853412f6c63bd98f24/5.045.004-slim,threaded-forky/Dockerfile)
+-	[`5.45.5-slim-threaded-forky`, `5.45-slim-threaded-forky`, `devel-slim-threaded-forky`](https://github.com/perl/docker-perl/blob/377256c7921a4571a228cf82462fc068c9d79d10/5.045.005-slim,threaded-forky/Dockerfile)
 
 # Quick reference (cont.)
 
