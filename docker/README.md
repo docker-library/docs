@@ -72,7 +72,7 @@ Although running Docker inside Docker is generally not recommended, there are so
 
 > [wikipedia.org/wiki/Docker_(software)](https://en.wikipedia.org/wiki/Docker_%28software%29)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/c350af05d3fac7b5c3f6327ac82fe4d990d8729c/docker/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/5726438d5c010fb891575d0222e90927861b3aa1/docker/logo.svg?sanitize=true)
 
 Before running Docker-in-Docker, be sure to read through [Jérôme Petazzoni's excellent blog post on the subject](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/), where he outlines some of the pros and cons of doing so (and some nasty gotchas you might run into).
 
