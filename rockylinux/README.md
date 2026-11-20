@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `rockylinux` official image](https://hub.docker.com/_/rockylinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,17 +26,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10.3.20261112`, `10.3`, `10`, `latest`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/e97a0074c037152e4950ac634fdd224d621f582c/index.json)
+-	[`10.3.20261112`, `10.3`, `10`, `latest`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/2d438d2e6bec5bcaee3ac51a53f9cc430a72279b/index.json)
 
--	[`10.3.20261112-minimal`, `10.3-minimal`, `10-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/14e1052600daaf146ad8036405fdedf2384dc5e2/index.json)
+-	[`10.3.20261112-minimal`, `10.3-minimal`, `10-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/13a25c8598475dcc7b7ea418a1f50f78706d5c99/index.json)
 
--	[`9.9.20261112`, `9.9`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/411d43c7f31cda939bedd8de3ef2bcc1110bb8f9/index.json)
+-	[`9.9.20261112`, `9.9`, `9`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/77f728cf80e38b09503aa17ee1b7f3333f7a5bc2/index.json)
 
--	[`9.9.20261112-minimal`, `9.9-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/7c4576898bc0addd63f98e887d5899df984ceb17/index.json)
-
--	[`8.10.20240528`, `8.10`, `8`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/a344458c7c810d02f7a1ee370ed065160caa9ed7/Dockerfile)
-
--	[`8.10.20240528-minimal`, `8.10-minimal`, `8-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/27400c231e2095ac005f2e14b86eeb79dd147912/Dockerfile)
+-	[`9.9.20261112-minimal`, `9.9-minimal`, `9-minimal`](https://github.com/rocky-linux/sig-cloud-instance-images/blob/696ffd08b631eeac3d8c2b69b58289b41bbce50b/index.json)
 
 # Quick reference (cont.)
 
@@ -68,23 +66,23 @@ Thank you for using Rocky Linux! We appreciate your feedback and welcome you to 
 
 # Rocky Linux image documentation
 
-`rockylinux:latest` tracks the newest major version, currently 10. Pin a major version tag to control when you move between them: e.g. `rockylinux:8`, `rockylinux:9` or `rockylinux:10`.
+`s390x/rockylinux:latest` tracks the newest major version, currently 10. Pin a major version tag to control when you move between them: e.g. `s390x/rockylinux:8`, `s390x/rockylinux:9` or `s390x/rockylinux:10`.
 
-Rocky Linux 10 on x86_64 requires a CPU supporting the **x86-64-v3** microarchitecture level, which excludes most hardware released before 2015. Use `rockylinux:9` on older CPUs.
+Rocky Linux 10 on x86_64 requires a CPU supporting the **x86-64-v3** microarchitecture level, which excludes most hardware released before 2015. Use `s390x/rockylinux:9` on older CPUs.
 
 ## Minimal variant
 
-In addition to the Base container, a Minimal container with microdnf and a stripped down dependency set is available by using any of the `-minimal` tags e.g. `rockylinux:9-minimal`
+In addition to the Base container, a Minimal container with microdnf and a stripped down dependency set is available by using any of the `-minimal` tags e.g. `s390x/rockylinux:9-minimal`
 
 ## Rolling builds
 
-Rocky Linux offers regularly updated images for all active releases. These images are rebuilt alongside point releases and as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull rockylinux:8`.
+Rocky Linux offers regularly updated images for all active releases. These images are rebuilt alongside point releases and as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull s390x/rockylinux:8`.
 
 ## Minor tags
 
 Additionally, images with minor version tags that correspond to install media are also offered. **These images DO NOT receive updates** as they are intended to match installation iso contents. If you choose to use these images it is highly recommended that you include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise address any potential security concerns. To use these images, please specify the minor version tag:
 
-For example: `docker pull rockylinux:9.9`
+For example: `docker pull s390x/rockylinux:9.9`
 
 # Package documentation
 
