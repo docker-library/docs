@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`22.04`, `jammy-20261114.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-amd64-20261114.1-426445ec&id=426445ec112630b45a6e2e5a0c09ada1a1a8407a)
+-	[`22.04`, `jammy-20261114.1`, `jammy`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-jammy-ppc64le-20261114.1-4294d248&id=4294d248e3604c288e6115fddc8552aad0d45716)
 
--	[`24.04`, `noble-20261110.1`, `noble`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-amd64-20261110.1-3160ed72&id=3160ed726dafb8da2af14f4a2b3420c9e9886fb6)
+-	[`24.04`, `noble-20261110.1`, `noble`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-noble-ppc64le-20261110.1-e672a952&id=e672a9529a33a515e620eeafa666ccc6331e1247)
 
--	[`26.04`, `resolute-20261105.1`, `resolute`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-amd64-20261105.1-953a9720&id=953a97207f60cb0bca021a65d0417b7256f243af)
+-	[`26.04`, `resolute-20261105.1`, `resolute`, `latest`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-resolute-ppc64le-20261105.1-ba8605e1&id=ba8605e151de1f5ce252571f87d3723ae263d2e0)
 
--	[`26.10`, `stonking-20261117.1`, `stonking`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-stonking-amd64-20261117.1-bd7451d4&id=bd7451d411fcdc8f935559033216b92d7757aa97)
+-	[`26.10`, `stonking-20261117.1`, `stonking`, `rolling`](https://git.launchpad.net/cloud-images/+oci/ubuntu-base/tree/oci/index.json?h=refs/tags/dist-stonking-ppc64le-20261117.1-8f0c5a17&id=8f0c5a17520fd7214424da3555a35f9a5701ca7e)
 
 # Quick reference (cont.)
 
@@ -65,9 +67,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (see `dist-*` tags at https://git.launchpad.net/cloud-images/+oci/ubuntu-base).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `ppc64le/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ppc64le/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `ppc64le/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
