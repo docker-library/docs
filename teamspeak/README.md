@@ -147,13 +147,13 @@ This variable controls how many concurrent connections to the database are being
 
 This variable is the amount of days that the TeamSpeak server will keep unused user identities. Users that have been added to a group will not be pruned, but guests will be.
 
-### `TS3SERVER_IP_WHITELIST`
+### `TS3SERVER_IP_ALLOWLIST`
 
-This variable controls where the whitelist is found. The file contains a list of IP addresses which are exempt from the flood protection system. Warning: Do not add any IP addresses that you don't trust, as it will allow them to flood the server.
+This variable controls where the allowlist is found. The file contains a list of IP addresses which are exempt from the flood protection system. Warning: Do not add any IP addresses that you don't trust, as it will allow them to flood the server.
 
-### `TS3SERVER_IP_BLACKLIST`
+### `TS3SERVER_IP_BLOCKLIST`
 
-This variable controls where the blacklist is found. The file contains a list of IP addresses that, no matter what, can't connect to the server query interface, even after a server restart.
+This variable controls where the blocklist is found. The file contains a list of IP addresses that, no matter what, can't connect to the server query interface, even after a server restart.
 
 ### `TS3SERVER_LOG_PATH`
 
