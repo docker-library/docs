@@ -24,11 +24,11 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`26.10.0`, `26.10`, `26`, `innovation`, `latest`, `26.10.0-oraclelinux9`, `26.10-oraclelinux9`, `26-oraclelinux9`, `innovation-oraclelinux9`, `oraclelinux9`, `26.10.0-oracle`, `26.10-oracle`, `26-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/9b6c81572125a4ff828e3037c71940f3f8311978/innovation/Dockerfile.oracle)
+-	[`26.10.0.1`, `26.10.0`, `26.10`, `26`, `innovation`, `latest`, `26.10.0.1-oraclelinux9`, `26.10.0-oraclelinux9`, `26.10-oraclelinux9`, `26-oraclelinux9`, `innovation-oraclelinux9`, `oraclelinux9`, `26.10.0.1-oracle`, `26.10.0-oracle`, `26.10-oracle`, `26-oracle`, `innovation-oracle`, `oracle`](https://github.com/docker-library/mysql/blob/144f16cd0e72046391dc2b72e7d71f8a2f26974a/innovation/Dockerfile.oracle)
 
--	[`9.7.4`, `9.7`, `9`, `lts`, `9.7.4-oraclelinux9`, `9.7-oraclelinux9`, `9-oraclelinux9`, `lts-oraclelinux9`, `9.7.4-oracle`, `9.7-oracle`, `9-oracle`, `lts-oracle`](https://github.com/docker-library/mysql/blob/7a5178e831cfd80d8097d928f48aacbe77c31c0f/9.7/Dockerfile.oracle)
+-	[`9.7.4.1`, `9.7.4`, `9.7`, `9`, `lts`, `9.7.4.1-oraclelinux9`, `9.7.4-oraclelinux9`, `9.7-oraclelinux9`, `9-oraclelinux9`, `lts-oraclelinux9`, `9.7.4.1-oracle`, `9.7.4-oracle`, `9.7-oracle`, `9-oracle`, `lts-oracle`](https://github.com/docker-library/mysql/blob/29b648c890ff14ad11697b077f44f2bd3e018ae4/9.7/Dockerfile.oracle)
 
--	[`8.4.13`, `8.4`, `8`, `8.4.13-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `8.4.13-oracle`, `8.4-oracle`, `8-oracle`](https://github.com/docker-library/mysql/blob/c92fbc392511086e6c1500f28a21421413f0bb51/8.4/Dockerfile.oracle)
+-	[`8.4.13.1`, `8.4.13`, `8.4`, `8`, `8.4.13.1-oraclelinux9`, `8.4.13-oraclelinux9`, `8.4-oraclelinux9`, `8-oraclelinux9`, `8.4.13.1-oracle`, `8.4.13-oracle`, `8.4-oracle`, `8-oracle`](https://github.com/docker-library/mysql/blob/b5f66ae30918ed92c170f6c9ba5dd662fccbe66c/8.4/Dockerfile.oracle)
 
 # Quick reference (cont.)
 
