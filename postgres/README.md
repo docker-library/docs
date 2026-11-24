@@ -24,9 +24,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`19.0`, `19`, `latest`, `19.0-trixie`, `19-trixie`, `trixie`](https://github.com/docker-library/postgres/blob/8672300fdf4f4ce8a8eac7511031fd08b6d2c886/19/trixie/Dockerfile)
+-	[`19.0`, `19`, `latest`, `19.0-trixie`, `19-trixie`, `trixie`](https://github.com/docker-library/postgres/blob/431640c75318610961eabb6417cd3ea8140c643f/19/trixie/Dockerfile)
 
--	[`19.0-bookworm`, `19-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/8672300fdf4f4ce8a8eac7511031fd08b6d2c886/19/bookworm/Dockerfile)
+-	[`19.0-bookworm`, `19-bookworm`, `bookworm`](https://github.com/docker-library/postgres/blob/431640c75318610961eabb6417cd3ea8140c643f/19/bookworm/Dockerfile)
 
 -	[`19.0-alpine3.24`, `19-alpine3.24`, `alpine3.24`, `19.0-alpine`, `19-alpine`, `alpine`](https://github.com/docker-library/postgres/blob/8672300fdf4f4ce8a8eac7511031fd08b6d2c886/19/alpine3.24/Dockerfile)
 
