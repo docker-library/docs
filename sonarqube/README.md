@@ -24,13 +24,13 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2026.5.5-developer`, `2026.5-developer`, `developer`, `2026.5-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/d16c1ebd66d2932c3589b8d176db0d42e4158b2e/commercial-editions/developer/Dockerfile)
+-	[`2026.5.6-developer`, `2026.5-developer`, `developer`, `2026.5-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/d88f780f20fe775e6044caa7695d6176a13da294/commercial-editions/developer/Dockerfile)
 
--	[`2026.5.5-enterprise`, `2026.5-enterprise`, `enterprise`, `2026.5-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/d16c1ebd66d2932c3589b8d176db0d42e4158b2e/commercial-editions/enterprise/Dockerfile)
+-	[`2026.5.6-enterprise`, `2026.5-enterprise`, `enterprise`, `2026.5-lta-enterprise`](https://github.com/SonarSource/docker-sonarqube/blob/d88f780f20fe775e6044caa7695d6176a13da294/commercial-editions/enterprise/Dockerfile)
 
--	[`2026.5.5-datacenter-app`, `2026.5-datacenter-app`, `datacenter-app`, `2026.5-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/d16c1ebd66d2932c3589b8d176db0d42e4158b2e/commercial-editions/datacenter/app/Dockerfile)
+-	[`2026.5.6-datacenter-app`, `2026.5-datacenter-app`, `datacenter-app`, `2026.5-lta-datacenter-app`](https://github.com/SonarSource/docker-sonarqube/blob/d88f780f20fe775e6044caa7695d6176a13da294/commercial-editions/datacenter/app/Dockerfile)
 
--	[`2026.5.5-datacenter-search`, `2026.5-datacenter-search`, `datacenter-search`, `2026.5-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/d16c1ebd66d2932c3589b8d176db0d42e4158b2e/commercial-editions/datacenter/search/Dockerfile)
+-	[`2026.5.6-datacenter-search`, `2026.5-datacenter-search`, `datacenter-search`, `2026.5-lta-datacenter-search`](https://github.com/SonarSource/docker-sonarqube/blob/d88f780f20fe775e6044caa7695d6176a13da294/commercial-editions/datacenter/search/Dockerfile)
 
 -	[`2026.1.9-developer`, `2026.1-developer`, `2026-lta-developer`](https://github.com/SonarSource/docker-sonarqube/blob/74e38c75d9dc596a1f426eaba9b68e83ceed2e2a/commercial-editions/developer/Dockerfile)
 
