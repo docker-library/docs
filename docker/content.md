@@ -47,7 +47,7 @@ $ docker run --privileged --name some-docker -d \
 
 **Note:** `--privileged` is required for Docker-in-Docker to function properly, but it should be used with care as it provides full access to the host environment, as explained [in the relevant section of the Docker documentation](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 
-**Note:** avoid combining `--privileged` with `--network=host` when the host itself runs Docker. The daemon inside the container manages iptables in whatever network namespace it runs in, and on startup it flushes and recreates Docker's chains (`DOCKER`, `DOCKER-FORWARD`, `DOCKER-CT`, `DOCKER-BRIDGE`, and `DOCKER` in the `nat` table). With `--network=host` those are the host daemon's chains, so containers on the host's bridge networks can lose outbound access and published ports until the host daemon is restarted.
+**Warning:** do not run `%%IMAGE%%:dind` with `--network=host`. The Docker daemon manages iptables rules in whatever network namespace it runs in, and on startup it removes Docker's `DOCKER*` chains and recreates only the rules for its own networks. With `--network=host`, that namespace is the host's, so the chains it removes are the host's own Docker daemon's: containers on the host's bridge networks can lose outbound access, and published ports can stop working, until the host's daemon recreates its rules.
 
 ## Connect to it from a second container
 
