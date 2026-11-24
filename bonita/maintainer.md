@@ -1,1 +1,1 @@
-[Bonitasoft Community](%%GITHUB-REPO%%)
+[Ofelia Community](%%GITHUB-REPO%%)

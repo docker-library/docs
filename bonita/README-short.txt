@@ -1,1 +1,1 @@
-Bonita is an open-source business process management and workflow suite
+Bonita BPM, the open source business process automation platform from Ofelia

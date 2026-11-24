@@ -1,1 +1,1 @@
-[Bonita official documentation](https://documentation.bonitasoft.com), [StackOverflow](https://stackoverflow.com/tags/bonita), [Bonitasoft Community forum](https://community.bonitasoft.com/questions-and-answers)
+[Bonita official documentation](https://documentation.ofelia.com/bonita/latest/), [StackOverflow](https://stackoverflow.com/tags/bonita), [Ofelia Community forum](https://community.ofelia.com/c/q-a/6)
