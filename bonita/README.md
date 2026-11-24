@@ -17,10 +17,10 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Bonitasoft Community](https://github.com/bonitasoft/bonita-distrib)
+	[Ofelia Community](https://github.com/bonitasoft/bonita-distrib)
 
 -	**Where to get help**:  
-	[Bonita official documentation](https://documentation.bonitasoft.com), [StackOverflow](https://stackoverflow.com/tags/bonita), [Bonitasoft Community forum](https://community.bonitasoft.com/questions-and-answers)
+	[Bonita official documentation](https://documentation.ofelia.com/bonita/latest/), [StackOverflow](https://stackoverflow.com/tags/bonita), [Ofelia Community forum](https://community.ofelia.com/c/q-a/6)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -47,9 +47,7 @@ WARNING:
 
 # What is Bonita?
 
-Bonita is an open-source business process management and workflow suite created in 2001. It was started in France National Institute for Research in Computer Science, and then had incubated several years inside the French computer science company Groupe Bull. Since 2009, the development of Bonita is supported by a company dedicated to this activity: Bonitasoft.
-
-> [wikipedia.org/wiki/Bonita_BPM](http://en.wikipedia.org/wiki/Bonita_BPM)
+Bonita is an open-source business process management and workflow suite created in 2001. It was started in France National Institute for Research in Computer Science, and then had incubated several years inside the French computer science company Groupe Bull. Since 2009, the development of Bonita is supported by a company dedicated to this activity: Ofelia, named Bonitasoft until May 2026.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/2a1bd671d71a525b06dacfa8be39ce9656814c40/bonita/logo.png)
 
@@ -61,7 +59,7 @@ Bonita is an open-source business process management and workflow suite created 
 $ docker run --name bonita -d -p 8080:8080 bonita
 ```
 
-This will start a container running [Bonita runtime](https://documentation.bonitasoft.com/bonita/latest/tomcat-bundle): a Tomcat bundle with Bonita Engine + Bonita Portal. With no environment variables specified, it's as if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
+This will start a container running [Bonita runtime](https://documentation.ofelia.com/bonita/latest/runtime/tomcat-bundle): a Tomcat bundle with Bonita Engine + Bonita Portal. With no environment variables specified, it's as if you have launched the bundle on your host using startup.{sh|bat} (with security hardening on REST and HTTP APIs, cf Security part). Bonita uses a H2 database here.
 
 You can access the Bonita Portal on http://localhost:8080/bonita and login using the default credentials: install / install
 
@@ -75,7 +73,7 @@ As PostgreSQL is the recommended database for qualification and production envir
 
 From Bonita 2022.1 onwards, the Bonita docker image does not include configuration scripts to automatically create databases and users anymore.
 
-Therefore, the PostgreSQL container needs to be configured to work with Bonita before starting the Bonita container. The configuration of a PostgreSQL database to work with Bonita is described in details in the [database configuration page](https://documentation.bonitasoft.com/bonita/latest/runtime/database-configuration#postgres_setup). + Alternatively, Bonita provides a preconfigured [PostgreSQL image](https://hub.docker.com/r/bonitasoft/bonita-postgres) on docker-hub. + You can run the image with the following command:
+Therefore, the PostgreSQL container needs to be configured to work with Bonita before starting the Bonita container. The configuration of a PostgreSQL database to work with Bonita is described in details in the [database configuration page](https://documentation.ofelia.com/bonita/latest/runtime/database-configuration#postgres_setup). + Alternatively, Bonita provides a preconfigured [PostgreSQL image](https://hub.docker.com/r/bonitasoft/bonita-postgres) on docker-hub. + You can run the image with the following command:
 
 ```bash
 docker run --name mydbpostgres -h <hostname> -d bonitasoft/bonita-postgres:16.4
@@ -209,7 +207,7 @@ This optional environment variable is used to enable/disable the access to the [
 
 ### REMOTE_IP_VALVE_ENABLED
 
-This optional environment variable allows to activate/deactivate [reverse proxy redirection](https://documentation.bonitasoft.com/bonita/latest/runtime/reverse-proxy-configuration). Default value is `false`.
+This optional environment variable allows to activate/deactivate [reverse proxy redirection](https://documentation.ofelia.com/bonita/latest/runtime/reverse-proxy-configuration). Default value is `false`.
 
 ### ACCESSLOGS_STDOUT_ENABLED
 
@@ -259,7 +257,7 @@ These variables are used in conjunction to define how Bonita should access its d
 
 ### BIZ_DB_NAME, BIZ_DB_USER, BIZ_DB_PASS
 
-These variables are used in conjunction to define how Bonita should access the [Business Data](https://documentation.bonitasoft.com/bonita/latest/data/define-and-deploy-the-bdm) database.
+These variables are used in conjunction to define how Bonita should access the [Business Data](https://documentation.ofelia.com/bonita/latest/data/define-and-deploy-the-bdm) database.
 
 `BIZ_DB_NAME` default value is businessdb.
 
@@ -271,7 +269,7 @@ These variables are used in conjunction to define how Bonita should access the [
 
 **Since 2025.2-u3**
 
-This optional environment variable is used to enable/disable the [Java Security Policy](https://documentation.bonitasoft.com/bonita/latest/security/java-security-policy) (using ProGrade). The default value is *true*, which activates the security policy protecting against malicious Groovy script execution. Set to *false* to disable the security policy (not recommended).
+This optional environment variable is used to enable/disable the [Java Security Policy](https://documentation.ofelia.com/bonita/latest/security/java-security-policy) (using ProGrade). The default value is *true*, which activates the security policy protecting against malicious Groovy script execution. Set to *false* to disable the security policy (not recommended).
 
 ## Logger configuration
 
@@ -289,9 +287,9 @@ This Docker image activates both static and dynamic authorization checks by defa
 
 -	REST API authorization
 
-	-	[Static authorization checking](https://documentation.bonitasoft.com/bonita/latest/rest-api-authorization#static_authorization)
+	-	[Static authorization checking](https://documentation.ofelia.com/bonita/latest/identity/rest-api-authorization#static_authorization)
 
--	[HTTP API](https://documentation.bonitasoft.com/bonita/latest/rest-api-authorization#_activating_and_deactivating_authorization)
+-	[HTTP API](https://documentation.ofelia.com/bonita/latest/identity/rest-api-authorization#_activating_and_deactivating_authorization)
 
 For specific needs you can override this behavior by setting HTTP_API to true:
 
@@ -301,7 +299,7 @@ $ docker run  -e HTTP_API=true -e HTTP_API_PASSWORD="My-Cust0m_S3cR3T" --name bo
 
 ## Update from an earlier version of Bonita
 
-For updating from a version before 7.10.0, please refer to the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/update-with-migration-tool)
+For updating from a version before 7.10.0, please refer to the [documentation](https://documentation.ofelia.com/bonita/latest/version-update/update-with-migration-tool)
 
 -	Stop the container to perform a database backup
 
@@ -335,7 +333,7 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 	$ cat /tmp/bonitadb.sql | psql -U newbonitauser -h 172.17.0.26 newbonitadb
 	```
 
--	Retrieve the last update tool archive from https://www.bonitasoft.com/downloads
+-	Retrieve the last update tool archive from https://www.ofelia.com/downloads
 
 	```console
 	unzip bonita-update-tool-3.10.0.zip
@@ -376,7 +374,7 @@ For updating from a version before 7.10.0, please refer to the [documentation](h
 	$ docker run --name=bonita --link mydbpostgres:postgres -e "DB_NAME=newbonitadb" -e "DB_USER=newbonitauser" -e "DB_PASS=newbonitapass" -d -p 8081:8080 bonita:2026.2-u0
 	```
 
-For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.bonitasoft.com/bonita/latest/version-update/migrate-from-an-earlier-version-of-bonita).
+For more details regarding Bonita update and for version before 7.10.0, see the [documentation](https://documentation.ofelia.com/bonita/latest/version-update/update-overview).
 
 # License
 
