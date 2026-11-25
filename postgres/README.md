@@ -127,6 +127,10 @@ Example `compose.yaml` for `postgres`:
 
 ```yaml
 # Use postgres/example user/password credentials
+# WARNING: for local testing only. As written, Adminer is published on port 8080 on
+# every interface and the database password is "example", so anyone who can reach
+# this host on port 8080 can log in to the database as its superuser. Change the
+# password and publish the port on localhost only (127.0.0.1:8080:8080) otherwise.
 
 services:
 
