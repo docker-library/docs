@@ -28,22 +28,22 @@ WARNING:
 
 ## Simple Tags
 
--	[`29.10.0-cli`, `29.10-cli`, `29-cli`, `cli`, `29.10.0-cli-alpine3.24`](https://github.com/docker-library/docker/blob/70cd6b52204a3bf037510cb750e099c34b081bd4/29/cli/Dockerfile)
+-	[`29.10.1-cli`, `29.10-cli`, `29-cli`, `cli`, `29.10.1-cli-alpine3.24`](https://github.com/docker-library/docker/blob/5582709f55958f4485de248399d2a4b6129450ea/29/cli/Dockerfile)
 
--	[`29.10.0-dind`, `29.10-dind`, `29-dind`, `dind`, `29.10.0-dind-alpine3.24`, `29.10.0`, `29.10`, `29`, `latest`, `29.10.0-alpine3.24`](https://github.com/docker-library/docker/blob/70cd6b52204a3bf037510cb750e099c34b081bd4/29/dind/Dockerfile)
+-	[`29.10.1-dind`, `29.10-dind`, `29-dind`, `dind`, `29.10.1-dind-alpine3.24`, `29.10.1`, `29.10`, `29`, `latest`, `29.10.1-alpine3.24`](https://github.com/docker-library/docker/blob/5582709f55958f4485de248399d2a4b6129450ea/29/dind/Dockerfile)
 
--	[`29.10.0-dind-rootless`, `29.10-dind-rootless`, `29-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/70cd6b52204a3bf037510cb750e099c34b081bd4/29/dind-rootless/Dockerfile)
+-	[`29.10.1-dind-rootless`, `29.10-dind-rootless`, `29-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/5582709f55958f4485de248399d2a4b6129450ea/29/dind-rootless/Dockerfile)
 
--	[`29.10.0-windowsservercore-ltsc2025`, `29.10-windowsservercore-ltsc2025`, `29-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/70cd6b52204a3bf037510cb750e099c34b081bd4/29/windows/windowsservercore-ltsc2025/Dockerfile)
+-	[`29.10.1-windowsservercore-ltsc2025`, `29.10-windowsservercore-ltsc2025`, `29-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/5582709f55958f4485de248399d2a4b6129450ea/29/windows/windowsservercore-ltsc2025/Dockerfile)
 
--	[`29.10.0-windowsservercore-ltsc2022`, `29.10-windowsservercore-ltsc2022`, `29-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/70cd6b52204a3bf037510cb750e099c34b081bd4/29/windows/windowsservercore-ltsc2022/Dockerfile)
+-	[`29.10.1-windowsservercore-ltsc2022`, `29.10-windowsservercore-ltsc2022`, `29-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/5582709f55958f4485de248399d2a4b6129450ea/29/windows/windowsservercore-ltsc2022/Dockerfile)
 
 ## Shared Tags
 
--	`29.10.0-windowsservercore`, `29.10-windowsservercore`, `29-windowsservercore`, `windowsservercore`:
+-	`29.10.1-windowsservercore`, `29.10-windowsservercore`, `29-windowsservercore`, `windowsservercore`:
 
-	-	[`29.10.0-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/70cd6b52204a3bf037510cb750e099c34b081bd4/29/windows/windowsservercore-ltsc2025/Dockerfile)
-	-	[`29.10.0-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/70cd6b52204a3bf037510cb750e099c34b081bd4/29/windows/windowsservercore-ltsc2022/Dockerfile)
+	-	[`29.10.1-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/5582709f55958f4485de248399d2a4b6129450ea/29/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`29.10.1-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/5582709f55958f4485de248399d2a4b6129450ea/29/windows/windowsservercore-ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -51,7 +51,7 @@ WARNING:
 	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm32v7`](https://hub.docker.com/r/arm32v7/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`ppc64le`](https://hub.docker.com/r/ppc64le/docker/), [`s390x`](https://hub.docker.com/r/s390x/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
+	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm32v7`](https://hub.docker.com/r/arm32v7/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`ppc64le`](https://hub.docker.com/r/ppc64le/docker/), [`riscv64`](https://hub.docker.com/r/riscv64/docker/), [`s390x`](https://hub.docker.com/r/s390x/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  
