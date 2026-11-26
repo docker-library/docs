@@ -24,19 +24,19 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.38`, `1.38.4`](https://github.com/influxdata/influxdata-docker/blob/e1f46905e9368e1da6094f4668ef1839068c96e1/telegraf/1.38/Dockerfile)
+-	[`1.38`, `1.38.4`](https://github.com/influxdata/influxdata-docker/blob/2c1cbf719472aa46f4b2a430949564b73c184dec/telegraf/1.38/Dockerfile)
 
--	[`1.38-alpine`, `1.38.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/e1f46905e9368e1da6094f4668ef1839068c96e1/telegraf/1.38/alpine/Dockerfile)
+-	[`1.38-alpine`, `1.38.4-alpine`](https://github.com/influxdata/influxdata-docker/blob/2c1cbf719472aa46f4b2a430949564b73c184dec/telegraf/1.38/alpine/Dockerfile)
 
--	[`1.39`, `1.39.3`](https://github.com/influxdata/influxdata-docker/blob/e1f46905e9368e1da6094f4668ef1839068c96e1/telegraf/1.39/Dockerfile)
+-	[`1.39`, `1.39.3`](https://github.com/influxdata/influxdata-docker/blob/2c1cbf719472aa46f4b2a430949564b73c184dec/telegraf/1.39/Dockerfile)
 
--	[`1.39-alpine`, `1.39.3-alpine`](https://github.com/influxdata/influxdata-docker/blob/e1f46905e9368e1da6094f4668ef1839068c96e1/telegraf/1.39/alpine/Dockerfile)
+-	[`1.39-alpine`, `1.39.3-alpine`](https://github.com/influxdata/influxdata-docker/blob/2c1cbf719472aa46f4b2a430949564b73c184dec/telegraf/1.39/alpine/Dockerfile)
 
--	[`1.40`, `1.40.3`, `latest`](https://github.com/influxdata/influxdata-docker/blob/e1f46905e9368e1da6094f4668ef1839068c96e1/telegraf/1.40/Dockerfile)
+-	[`1.40`, `1.40.4`, `latest`](https://github.com/influxdata/influxdata-docker/blob/2c1cbf719472aa46f4b2a430949564b73c184dec/telegraf/1.40/Dockerfile)
 
--	[`1.40-alpine`, `1.40.3-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/e1f46905e9368e1da6094f4668ef1839068c96e1/telegraf/1.40/alpine/Dockerfile)
+-	[`1.40-alpine`, `1.40.4-alpine`, `alpine`](https://github.com/influxdata/influxdata-docker/blob/2c1cbf719472aa46f4b2a430949564b73c184dec/telegraf/1.40/alpine/Dockerfile)
 
--	[`1.40-scratch`, `1.40.3-scratch`, `scratch`](https://github.com/influxdata/influxdata-docker/blob/e1f46905e9368e1da6094f4668ef1839068c96e1/telegraf/1.40/scratch/Dockerfile)
+-	[`1.40-scratch`, `1.40.4-scratch`, `scratch`](https://github.com/influxdata/influxdata-docker/blob/2c1cbf719472aa46f4b2a430949564b73c184dec/telegraf/1.40/scratch/Dockerfile)
 
 # Quick reference (cont.)
 
