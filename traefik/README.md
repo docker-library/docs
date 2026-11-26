@@ -208,6 +208,22 @@ You can find the complete documentation:
 
 A community support is available at [https://community.traefik.io](https://community.traefik.io)
 
+# Image Variants
+
+The `traefik` images come in many flavors, each designed for a specific use case.
+
+## `traefik:<version>`
+
+This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+
+## `traefik:<version>-windowsservercore`
+
+This image is based on [Windows Server Core (`mcr.microsoft.com/windows/servercore`)](https://hub.docker.com/r/microsoft/windows-servercore). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
+
+For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
+
+-	[Windows Containers Quick Start](https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=dockerce)
+
 # License
 
 View [license information](https://github.com/traefik/traefik/blob/master/LICENSE.md) for the software contained in this image.
