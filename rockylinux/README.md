@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `amd64` builds of [the `rockylinux` official image](https://hub.docker.com/_/rockylinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -68,23 +70,23 @@ Thank you for using Rocky Linux! We appreciate your feedback and welcome you to 
 
 # Rocky Linux image documentation
 
-`rockylinux:latest` tracks the newest major version, currently 10. Pin a major version tag to control when you move between them: e.g. `rockylinux:8`, `rockylinux:9` or `rockylinux:10`.
+`amd64/rockylinux:latest` tracks the newest major version, currently 10. Pin a major version tag to control when you move between them: e.g. `amd64/rockylinux:8`, `amd64/rockylinux:9` or `amd64/rockylinux:10`.
 
-Rocky Linux 10 on x86_64 requires a CPU supporting the **x86-64-v3** microarchitecture level, which excludes most hardware released before 2015. Use `rockylinux:9` on older CPUs.
+Rocky Linux 10 on x86_64 requires a CPU supporting the **x86-64-v3** microarchitecture level, which excludes most hardware released before 2015. Use `amd64/rockylinux:9` on older CPUs.
 
 ## Minimal variant
 
-In addition to the Base container, a Minimal container with microdnf and a stripped down dependency set is available by using any of the `-minimal` tags e.g. `rockylinux:9-minimal`
+In addition to the Base container, a Minimal container with microdnf and a stripped down dependency set is available by using any of the `-minimal` tags e.g. `amd64/rockylinux:9-minimal`
 
 ## Rolling builds
 
-Rocky Linux offers regularly updated images for all active releases. These images are rebuilt alongside point releases and as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull rockylinux:8`.
+Rocky Linux offers regularly updated images for all active releases. These images are rebuilt alongside point releases and as needed for emergency fixes. These rolling updates are tagged with the major version number only. For example: `docker pull amd64/rockylinux:8`.
 
 ## Minor tags
 
 Additionally, images with minor version tags that correspond to install media are also offered. **These images DO NOT receive updates** as they are intended to match installation iso contents. If you choose to use these images it is highly recommended that you include `RUN yum -y update && yum clean all` in your Dockerfile, or otherwise address any potential security concerns. To use these images, please specify the minor version tag:
 
-For example: `docker pull rockylinux:9.9`
+For example: `docker pull amd64/rockylinux:9.9`
 
 # Package documentation
 
