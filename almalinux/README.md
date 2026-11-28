@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `almalinux` official image](https://hub.docker.com/_/almalinux) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,21 +26,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`10-kitten`, `10-kitten-20261114`](https://github.com/AlmaLinux/container-images/blob/fe53e40c8d0ec5152d3d79f783a7de63342fddbe/default/amd64/Dockerfile)
+-	[`10-kitten`, `10-kitten-20261114`](https://github.com/AlmaLinux/container-images/blob/fe53e40c8d0ec5152d3d79f783a7de63342fddbe/default/ppc64le/Dockerfile)
 
--	[`10-kitten-minimal`, `10-kitten-minimal-20261114`](https://github.com/AlmaLinux/container-images/blob/fe53e40c8d0ec5152d3d79f783a7de63342fddbe/minimal/amd64/Dockerfile)
+-	[`10-kitten-minimal`, `10-kitten-minimal-20261114`](https://github.com/AlmaLinux/container-images/blob/fe53e40c8d0ec5152d3d79f783a7de63342fddbe/minimal/ppc64le/Dockerfile)
 
--	[`latest`, `10`, `10.3`, `10.3-20261116`](https://github.com/AlmaLinux/container-images/blob/319b1c7681d3f02b3225667cc198734bc46769f0/default/amd64/Dockerfile)
+-	[`latest`, `10`, `10.3`, `10.3-20261116`](https://github.com/AlmaLinux/container-images/blob/319b1c7681d3f02b3225667cc198734bc46769f0/default/ppc64le/Dockerfile)
 
--	[`minimal`, `10-minimal`, `10.3-minimal`, `10.3-minimal-20261116`](https://github.com/AlmaLinux/container-images/blob/319b1c7681d3f02b3225667cc198734bc46769f0/minimal/amd64/Dockerfile)
+-	[`minimal`, `10-minimal`, `10.3-minimal`, `10.3-minimal-20261116`](https://github.com/AlmaLinux/container-images/blob/319b1c7681d3f02b3225667cc198734bc46769f0/minimal/ppc64le/Dockerfile)
 
--	[`8`, `8.10`, `8.10-20261114`](https://github.com/AlmaLinux/container-images/blob/dd3c26600c9ce07ed680f83d46d1fc9e3e7eb891/default/amd64/Dockerfile)
+-	[`8`, `8.10`, `8.10-20261114`](https://github.com/AlmaLinux/container-images/blob/dd3c26600c9ce07ed680f83d46d1fc9e3e7eb891/default/ppc64le/Dockerfile)
 
--	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20261114`](https://github.com/AlmaLinux/container-images/blob/dd3c26600c9ce07ed680f83d46d1fc9e3e7eb891/minimal/amd64/Dockerfile)
+-	[`8-minimal`, `8.10-minimal`, `8.10-minimal-20261114`](https://github.com/AlmaLinux/container-images/blob/dd3c26600c9ce07ed680f83d46d1fc9e3e7eb891/minimal/ppc64le/Dockerfile)
 
--	[`9`, `9.9`, `9.9-20261116`](https://github.com/AlmaLinux/container-images/blob/4c7693aeaade1d62fa407b3b37b500f55ee51871/default/amd64/Dockerfile)
+-	[`9`, `9.9`, `9.9-20261116`](https://github.com/AlmaLinux/container-images/blob/4c7693aeaade1d62fa407b3b37b500f55ee51871/default/ppc64le/Dockerfile)
 
--	[`9-minimal`, `9.9-minimal`, `9.9-minimal-20261116`](https://github.com/AlmaLinux/container-images/blob/4c7693aeaade1d62fa407b3b37b500f55ee51871/minimal/amd64/Dockerfile)
+-	[`9-minimal`, `9.9-minimal`, `9.9-minimal-20261116`](https://github.com/AlmaLinux/container-images/blob/4c7693aeaade1d62fa407b3b37b500f55ee51871/minimal/ppc64le/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -71,13 +73,13 @@ WARNING:
 
 The default (platform) image is a general-purpose image with a full DNF stack and basic tools like find, tar, vi, etc.
 
-The `almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `almalinux:8` or `almalinux:8.4`).
+The `ppc64le/almalinux:latest` tag will always point to the latest stable release of the default image. Major releases and minor releases are also tagged with their version (e.g. `ppc64le/almalinux:8` or `ppc64le/almalinux:8.4`).
 
 ## Minimal image
 
 The minimal image is a stripped-down image that uses the microdnf package manager and contains a very limited package set. It is designed for applications that come with their own dependencies bundled (e.g. NodeJS, Python).
 
-The `almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `almalinux:8-minimal`) and minor (e.g. `almalinux:8.4-minimal`) releases are also available.
+The `ppc64le/almalinux:minimal` tag always points to the most recent version of the minimal image. Tags for major (e.g. `ppc64le/almalinux:8-minimal`) and minor (e.g. `ppc64le/almalinux:8.4-minimal`) releases are also available.
 
 ### Upgrade policy
 
