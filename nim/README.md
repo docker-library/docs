@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v7` builds of [the `nim` official image](https://hub.docker.com/_/nim) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -23,8 +25,6 @@ WARNING:
 	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
-
--	[`2.4.0`, `2.4`, `2`, `latest`](https://github.com/nim-lang/docker-images/blob/af310b49a97b13145fbc0aa0875d23788f88e4ee/dockerfiles/2.4.0/Dockerfile)
 
 -	[`2.2.14`, `2.2`](https://github.com/nim-lang/docker-images/blob/af310b49a97b13145fbc0aa0875d23788f88e4ee/dockerfiles/2.2.14/Dockerfile)
 
@@ -62,7 +62,7 @@ WARNING:
 To compile a file named `main.nim` and execute it immediately:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim c -r main.nim
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app arm32v7/nim nim c -r main.nim
 ```
 
 ## Compile to JavaScript
@@ -70,13 +70,13 @@ $ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim c -r main.nim
 Nim can compile to JavaScript:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nim js main.nim
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app arm32v7/nim nim js main.nim
 ```
 
 To compile and run, use a multi-stage Dockerfile with Node.js:
 
 ```dockerfile
-FROM nim AS builder
+FROM arm32v7/nim AS builder
 COPY . .
 RUN nim js -o:app.js src/app.nim
 
@@ -90,13 +90,13 @@ CMD ["node", "app.js"]
 The image is configured with SSL support to allow Nimble to install packages from remote repositories:
 
 ```console
-$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app nim nimble install -y
+$ docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app arm32v7/nim nimble install -y
 ```
 
 ## Dockerfile example
 
 ```dockerfile
-FROM nim
+FROM arm32v7/nim
 
 WORKDIR /usr/src/app
 
