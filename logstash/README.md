@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `arm32v6` builds of [the `logstash` official image](https://hub.docker.com/_/logstash) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,11 +26,7 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.19.26`](https://github.com/elastic/dockerfiles/blob/22204e26db12bcbff1e065802ebee56596c4e5a9/logstash/Dockerfile)
-
--	[`9.4.10`](https://github.com/elastic/dockerfiles/blob/e4976750e5ec36dba7766f18bbc4075e09a42e35/logstash/Dockerfile)
-
--	[`9.5.7`](https://github.com/elastic/dockerfiles/blob/b9742ef0ae5f20c1db11a085dddbbc8c0dfce48a/logstash/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v6` ARCHITECTURE
 
 # Quick reference (cont.)
 
